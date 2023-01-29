@@ -1,5 +1,5 @@
 ﻿using Assets.Scripts.PeroTools.Nice.Events;
-
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.UI;
@@ -239,11 +239,21 @@ namespace MuseDashMirror
             txt.color = ToggleTextColor;
             var rect = txt.transform.Cast<RectTransform>();
             var vect = rect.offsetMax;
-            rect.offsetMax = new Vector2(txt.preferredWidth + 10, vect.y);
+            rect.offsetMax = new Vector2(name.Length * 25, vect.y);
 
             checkBox.color = ToggleCheckBoxColor;
             checkMark.color = ToggleCheckMarkColor;
 
+            return toggle;
+        }
+
+        /// <summary>
+        /// Create Toggle at PnlMenu with custom local scale
+        /// </summary>
+        public static unsafe GameObject CreatePnlMenuToggle(string name, Vector3 position, bool* isEnabled, string text, Vector3 localScale)
+        {
+            var toggle = CreatePnlMenuToggle(name, position, isEnabled, text);
+            toggle.transform.localScale = localScale;
             return toggle;
         }
 
