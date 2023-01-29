@@ -1,5 +1,4 @@
 ﻿using Assets.Scripts.PeroTools.Nice.Events;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.UI;

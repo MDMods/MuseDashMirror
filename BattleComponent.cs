@@ -3,6 +3,7 @@ using Assets.Scripts.GameCore.HostComponent;
 using Assets.Scripts.PeroTools.Commons;
 using FormulaBase;
 using GameLogic;
+using MuseDashMirror.Patch;
 using System.Collections.Generic;
 
 namespace MuseDashMirror
@@ -16,27 +17,27 @@ namespace MuseDashMirror
         /// <summary>
         /// Chart name, only changed when entering the chart
         /// </summary>
-        public static string ChartName { get; set; }
+        public static string ChartName { get => GetLocalPatch.ChartName; }
 
         /// <summary>
         /// Level of the chart, only changed when entering the chart
         /// </summary>
-        public static string ChartLevel { get; set; }
+        public static string ChartLevel { get => HideBmsCheckPatch.ChartLevel; }
 
         /// <summary>
         /// Difficulty of the chart (easy, hard, master, hidden, touhou), only changed when entering the chart
         /// </summary>
-        public static int Difficulty { get; set; }
+        public static int Difficulty { get => HideBmsCheckPatch.Difficulty; }
 
         /// <summary>
         /// Music author, only changed when entering the chart
         /// </summary>
-        public static string MusicAuthor { get; set; }
+        public static string MusicAuthor { get => HideBmsCheckPatch.MusicAuthor; }
 
         /// <summary>
         /// Charter, only changed when entering the chart
         /// </summary>
-        public static string Charter { get; set; }
+        public static string Charter { get => HideBmsCheckPatch.Charter; }
 
         /// <summary>
         /// The name for album package
@@ -105,7 +106,7 @@ namespace MuseDashMirror
         /// <summary>
         /// Music datas for the chart, only changed when entering the chart
         /// </summary>
-        public static List<MusicData> MusicDatas { get; set; } = new List<MusicData>();
+        public static List<MusicData> MusicDatas { get => StageBattleComponentPatch.MusicDatas; }
 
         #endregion GameInfo
 

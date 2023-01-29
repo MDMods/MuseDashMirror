@@ -1,7 +1,6 @@
 ﻿global using HarmonyLib;
 using MelonLoader;
 using static MuseDashMirror.SceneInfo;
-using static MuseDashMirror.UICreate;
 
 namespace MuseDashMirror
 {
