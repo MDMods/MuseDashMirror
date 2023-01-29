@@ -16,7 +16,7 @@ Singleton<ConfigManager>.instance.GetJson("elfin", true)[SelectedElfinIndex]["na
 PlayerData.SelectedElfinName;
 ```
 
-Also supports change some settings.
+Also supports change some settings like changing characters.
 
 ```c#
 // Normal way to do
@@ -32,7 +32,7 @@ PlayerData.SetCharacter(characterIndex);
 
 Instead of using harmony patching on your own, you can use BattleComponent class to access many datas when in the chart.
 
-For Example, the chart name.
+For example, the chart name.
 
 ```C#
 // Normal way to do
@@ -87,7 +87,7 @@ BattleComponent.MusicDatas;
 
 * UICreate class support 4 default fonts: **SnapsTaste, Normal, SourceHanSansCN-Heavy, MiniSimpleSuperThickBlack**
 
-  -If you want to use the default font, invoke `` LoadFonts()`` before you use the font. Then after using invoke ``UnloadFonts()``.
+  -If you want to use the default font, invoke `` LoadFonts()`` before you use the font. Then after use invoke ``UnloadFonts()``.
 
 * UICreate class also support 5 default colors: **Blue, Silver, ToggleTextColor, ToggleCheckBoxColor, ToggleCheckMarkColor**
 
@@ -101,7 +101,7 @@ BattleComponent.MusicDatas;
 
 * UICreate class has ``CreateTextGameObject()`` method, which has 4 overloads.
 
-  -The necessary parameters are the canvas name you want the text gameobject to set parent,  the gameobject name, the gameobject text, the alignment, and the position is local position or not, the position, the size delta of the transform, and the font size
+  -The necessary parameters are: the canvas name you want, the text gameobject to set parent,  the gameobject name, the gameobject text, the alignment, and the position is local position or not, the position, the size delta of the transform, and the font size
 
   -You can use custom font, custom text color and custom local scale for the gameobject with following 3 overloads
 
