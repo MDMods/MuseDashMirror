@@ -7,13 +7,13 @@ namespace MuseDashMirror.Patch
     [HarmonyPatch(typeof(StageBattleComponent), "GameStart")]
     internal static class StageBattleComponentPatch
     {
-        internal static List<MusicData> MusicDatas { get; set; } = new List<MusicData>();
+        internal static List<MusicData> musicDatas { get; set; } = new List<MusicData>();
 
         private static void Postfix(StageBattleComponent __instance)
         {
             foreach (var musicdata in __instance.GetMusicData())
             {
-                MusicDatas.Add(musicdata);
+                musicDatas.Add(musicdata);
             }
         }
     }

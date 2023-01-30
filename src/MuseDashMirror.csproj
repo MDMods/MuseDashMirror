@@ -91,6 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BattleComponent.cs" />
+    <Compile Include="CommonPatchs.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="MelonBuildInfo.cs" />
     <Compile Include="Patch\StageBattleComponentPatch.cs" />
