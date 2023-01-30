@@ -1,12 +1,11 @@
 name: Bug Report
 description: Tell us a bug
 labels: "bug"
-
 body:
   - type: checkboxes
     id: checking1
     attributes:
-      label: I'm using the latest build release of Muse Dash Mirror and this problem still exsits
+      label: I'm using the latest build release of Muse Dash Mirror and this problem still exists.
       options:
         - label: "Yes"
           required: true
@@ -42,7 +41,7 @@ body:
     validations:
       required: true
 
-- type: textarea
+  - type: textarea
     id: version
     attributes:
       label: Game version and Melonloader version
