@@ -17,27 +17,27 @@ namespace MuseDashMirror
         /// <summary>
         /// Chart name, only changed when entering the chart
         /// </summary>
-        public static string ChartName { get => GetLocalPatch.ChartName; }
+        public static string ChartName { get => GetLocalPatch.chartName; }
 
         /// <summary>
         /// Level of the chart, only changed when entering the chart
         /// </summary>
-        public static string ChartLevel { get => HideBmsCheckPatch.ChartLevel; }
+        public static string ChartLevel { get => HideBmsCheckPatch.chartLevel; }
 
         /// <summary>
         /// Difficulty of the chart (easy, hard, master, hidden, touhou), only changed when entering the chart
         /// </summary>
-        public static int Difficulty { get => HideBmsCheckPatch.Difficulty; }
+        public static int Difficulty { get => HideBmsCheckPatch.difficulty; }
 
         /// <summary>
         /// Music author, only changed when entering the chart
         /// </summary>
-        public static string MusicAuthor { get => HideBmsCheckPatch.MusicAuthor; }
+        public static string MusicAuthor { get => HideBmsCheckPatch.musicAuthor; }
 
         /// <summary>
         /// Charter, only changed when entering the chart
         /// </summary>
-        public static string Charter { get => HideBmsCheckPatch.Charter; }
+        public static string Charter { get => HideBmsCheckPatch.charter; }
 
         /// <summary>
         /// The name for album package
@@ -106,7 +106,7 @@ namespace MuseDashMirror
         /// <summary>
         /// Music datas for the chart, only changed when entering the chart
         /// </summary>
-        public static List<MusicData> MusicDatas { get => StageBattleComponentPatch.MusicDatas; }
+        public static List<MusicData> MusicDatas { get => StageBattleComponentPatch.musicDatas; }
 
         #endregion GameInfo
 

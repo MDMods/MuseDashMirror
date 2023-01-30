@@ -6,6 +6,13 @@ namespace MuseDashMirror
 {
     public class Main : MelonMod
     {
+        internal static HarmonyLib.Harmony harmony { get; set; }
+
+        public override void OnInitializeMelon()
+        {
+            harmony = HarmonyInstance;
+        }
+
         public override void OnSceneWasLoaded(int buildIndex, string sceneName)
         {
             if (sceneName == "GameMain")

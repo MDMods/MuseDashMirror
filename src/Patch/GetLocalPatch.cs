@@ -5,11 +5,11 @@ namespace MuseDashMirror.Patch
     [HarmonyPatch(typeof(MusicInfo), "GetLocal")]
     internal static class GetLocalPatch
     {
-        internal static string ChartName { get; set; }
+        internal static string chartName { get; set; }
 
         private static void Postfix(LocalALBUMInfo __result)
         {
-            ChartName = __result.name;
+            chartName = __result.name;
         }
     }
 }
