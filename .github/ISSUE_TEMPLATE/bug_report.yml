@@ -45,7 +45,7 @@ body:
     id: version
     attributes:
       label: Game version and Melonloader version
-      placeholder: Game version: [e.g. 3.0.0] Melonloader version: [e.g. 0.5.7]
+      placeholder: "Game version: [e.g. 3.0.0] Melonloader version: [e.g. 0.5.7]"
     validations:
       required: true
 
