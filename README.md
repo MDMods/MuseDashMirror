@@ -30,7 +30,7 @@ PlayerData.SetCharacter(characterIndex);
 
 ## To Access Battle Component
 
-Instead of using harmony patching on your own, you can use BattleComponent class to access many datas when in the chart.
+Instead of using harmony patching on your own, you can use BattleComponent class to access many data when in the chart.
 
 For example, the chart name.
 
@@ -79,6 +79,62 @@ BattleComponent.Perfect;
 
 // New way to do
 BattleComponent.MusicDatas;
+```
+
+---
+
+## To Better Invoke Patching Methods
+
+Now you can use the default events or manual patching methods in MuseDashMirror.CommonPatches to easier invoke the methods at some common point.
+
+For example, to invoke methods when PnlMenu's Awake method invokes:
+
+```c#
+// Normal way to do
+[HarmonyPatch(typeof(PnlMenu), "Awake")]
+    internal static class PnlMenuPatch
+    {
+        private static void Postfix(PnlMenu __instance)
+        {
+            YourMethod();
+        }
+    }
+
+// New way to do
+// Instead, just add your methods to the events in OnInitializeMelon method
+public override void OnInitializeMelon()
+        {
+            PatchEvents.PnlMenuEvent += new Action<PnlMenu>(YourMethod);
+        }
+
+// Or you want to use manual patching
+ManualPatches.PnlMenuPatch(typeof(YourClass), "MethodName");
+```
+
+---
+
+## To Better Invoke Methods When Scene Load/Unload
+
+As with Patching methods, you can also add methods to events in SceneInfo class.
+
+To invoke methods when entering the game scene:
+
+```c#
+// Normal way to do
+public override void OnSceneWasLoaded(int buildIndex, string sceneName)
+        {
+            if (sceneName == "GameMain")
+            {
+                YourMethod();
+            }
+		}
+
+// New way to do
+// Same with patching events, in the OnInitializeMelon method
+public override void OnInitializeMelon()
+        {
+            SceneInfo.EnterGameScene += new Action(YourMethod);
+        }
 ```
 
 ---
