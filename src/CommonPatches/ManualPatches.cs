@@ -3,9 +3,9 @@ using Assets.Scripts.UI.Specials;
 using System;
 using static MuseDashMirror.Utils;
 
-namespace MuseDashMirror
+namespace MuseDashMirror.CommonPatches
 {
-    public static class CommonPatchs
+    public static class ManualPatches
     {
         /// <summary>
         /// Quick manual patch for pnlmenu

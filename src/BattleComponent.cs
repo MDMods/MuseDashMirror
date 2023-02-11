@@ -10,8 +10,6 @@ namespace MuseDashMirror
 {
     public static class BattleComponent
     {
-        private static TaskStageTarget tst = Singleton<TaskStageTarget>.instance;
-
         #region ChartInfo
 
         /// <summary>
@@ -76,32 +74,32 @@ namespace MuseDashMirror
         /// <summary>
         /// Perfect count
         /// </summary>
-        public static int Perfect { get => tst.m_PerfectResult; }
+        public static int Perfect { get => Singleton<TaskStageTarget>.instance.m_PerfectResult; }
 
         /// <summary>
         /// Great count
         /// </summary>
-        public static int Great { get => tst.m_GreatResult; }
+        public static int Great { get => Singleton<TaskStageTarget>.instance.m_GreatResult; }
 
         /// <summary>
         /// Miss count (hurt miss)
         /// </summary>
-        public static int Miss { get => tst.m_MissResult; }
+        public static int Miss { get => Singleton<TaskStageTarget>.instance.m_MissResult; }
 
         /// <summary>
         /// Blue collectable notes count
         /// </summary>
-        public static int Get { get => tst.m_CoolResult; }
+        public static int Get { get => Singleton<TaskStageTarget>.instance.m_CoolResult; }
 
         /// <summary>
         /// Heart count
         /// </summary>
-        public static int Heart { get => tst.m_Blood; }
+        public static int Heart { get => Singleton<TaskStageTarget>.instance.m_Blood; }
 
         /// <summary>
         /// Jumpover count
         /// </summary>
-        public static int JumpOver { get => tst.m_JumpOverResult; }
+        public static int JumpOver { get => Singleton<TaskStageTarget>.instance.m_JumpOverResult; }
 
         /// <summary>
         /// Music datas for the chart, only changed when entering the chart
