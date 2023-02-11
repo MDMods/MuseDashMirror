@@ -25,5 +25,12 @@ namespace MuseDashMirror.CommonPatches
         public static event Action SwitchLanguagesEvent;
 
         internal static void SwitchLanguagesEventInvoke() => SwitchLanguagesEvent?.Invoke();
+
+        /// <summary>
+        /// An event to invoke methods when switching menu
+        /// </summary>
+        public static event Action<int, int, bool> MenuSelectEvent;
+
+        internal static void MenuSelectEventInvoke(int listIndex, int index, bool isOn) => MenuSelectEvent?.Invoke(listIndex, index, isOn);
     }
 }

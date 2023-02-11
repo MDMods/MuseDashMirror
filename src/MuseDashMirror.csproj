@@ -94,6 +94,7 @@
     <Compile Include="CommonPatches\ManualPatches.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="MelonBuildInfo.cs" />
+    <Compile Include="Patch\MenuSelectPatch.cs" />
     <Compile Include="Patch\PnlMenuPatch.cs" />
     <Compile Include="Patch\PnlStagePatch.cs" />
     <Compile Include="Patch\StageBattleComponentPatch.cs" />
