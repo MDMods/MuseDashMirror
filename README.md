@@ -141,13 +141,15 @@ public override void OnInitializeMelon()
 
 ## To Create UI Elements
 
-* UICreate class support 4 default fonts: **SnapsTaste, Normal, SourceHanSansCN-Heavy, MiniSimpleSuperThickBlack**
+In UICreate namespace there are classes for supporting easier ui create
+
+* Fonts class support 4 default fonts: **SnapsTaste, Normal, SourceHanSansCN-Heavy, MiniSimpleSuperThickBlack**
 
   -If you want to use the default font, invoke `` LoadFonts()`` before you use the font. Then after use invoke ``UnloadFonts()``.
 
-* UICreate class also support 5 default colors: **Blue, Silver, ToggleTextColor, ToggleCheckBoxColor, ToggleCheckMarkColor**
+* Colors class support 5 default colors: **Blue, Silver, ToggleTextColor, ToggleCheckBoxColor, ToggleCheckMarkColor**
 
-* UICreate class has ``CreateCanvas()``method, which has 3 overloads. 
+* CanvasCreate class has ``CreateCanvas()``method, which has 3 overloads. 
 
   -If only give the canvas name the canvas will be a ScreenSpaceOverlay canvas.
 
@@ -155,7 +157,7 @@ public override void OnInitializeMelon()
 
   -The left one overload is for custom setting reference resolution.
 
-* UICreate class has ``CreateTextGameObject()`` method, which has 4 overloads.
+* TextGameObjectCreate class has ``CreateTextGameObject()`` method, which has 4 overloads.
 
   -The necessary parameters are: the canvas name you want, the text gameobject to set parent,  the gameobject name, the gameobject text, the alignment, and the position is local position or not, the position, the size delta of the transform, and the font size
 
