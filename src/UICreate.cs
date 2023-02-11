@@ -98,6 +98,8 @@ namespace MuseDashMirror
 
         #endregion Color
 
+        // 去掉最后，parent设置两个重载，名字和gameobject
+
         #region Create Canvas
 
         /// <summary>
@@ -142,6 +144,8 @@ namespace MuseDashMirror
         }
 
         #endregion Create Canvas
+
+        // 去掉最后，parent设置两个重载，名字和gameobject
 
         #region Create Text GameObject
 
@@ -207,6 +211,8 @@ namespace MuseDashMirror
         }
 
         #endregion Create Text GameObject
+
+        // 去掉最后，parent设置两个重载，名字和gameobject
 
         #region Create PnlMenu Toggle
 

@@ -17,29 +17,41 @@ namespace MuseDashMirror
         {
             if (sceneName == "GameMain")
             {
-                IsGameScene = true;
-            }
-            else
-            {
-                IsGameScene = false;
+                isGameScene = true;
+                EnterGameSceneInvoke();
             }
 
             if (sceneName == "UISystem_PC")
             {
-                IsMainScene = true;
-            }
-            else
-            {
-                IsMainScene = false;
+                isMainScene = true;
+                EnterMainSceneInvoke();
             }
 
             if (sceneName == "Loading")
             {
-                IsLoadingScene = true;
+                isLoadingScene = true;
+                EnterLoadingSceneInvoke();
             }
-            else
+        }
+
+        public override void OnSceneWasUnloaded(int buildIndex, string sceneName)
+        {
+            if (sceneName == "GameMain")
             {
-                IsLoadingScene = false;
+                isGameScene = false;
+                ExitGameSceneInvoke();
+            }
+
+            if (sceneName == "UISystem_PC")
+            {
+                isMainScene = false;
+                ExitMainSceneInvoke();
+            }
+
+            if (sceneName == "Loading")
+            {
+                isLoadingScene = false;
+                ExitLoadingSceneInvoke();
             }
         }
     }
