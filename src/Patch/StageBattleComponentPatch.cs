@@ -11,6 +11,7 @@ namespace MuseDashMirror.Patch
 
         private static void Postfix(StageBattleComponent __instance)
         {
+            BattleComponent.GameStartEventInvoke();
             foreach (var musicdata in __instance.GetMusicData())
             {
                 musicDatas.Add(musicdata);
