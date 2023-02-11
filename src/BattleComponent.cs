@@ -4,6 +4,7 @@ using Assets.Scripts.PeroTools.Commons;
 using FormulaBase;
 using GameLogic;
 using MuseDashMirror.Patch;
+using System;
 using System.Collections.Generic;
 
 namespace MuseDashMirror
@@ -60,6 +61,13 @@ namespace MuseDashMirror
         #endregion ChartInfo
 
         #region GameInfo
+
+        /// <summary>
+        /// An event to invoke methods when game starts
+        /// </summary>
+        public static event Action GameStartEvent;
+
+        internal static void GameStartEventInvoke() => GameStartEvent?.Invoke();
 
         /// <summary>
         /// Becomes true when "ready go" finished

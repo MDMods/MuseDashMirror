@@ -4,10 +4,10 @@
     {
         public const string Name = "Muse Dash Mirror";
 
-        public const string Description = "A mod which makes modders easy access game datas";
+        public const string Description = "A mod which makes muse dash modding easier";
 
         public const string Author = "lxy";
 
-        public const string Version = "1.0.1";
+        public const string Version = "1.0.2";
     }
 }
