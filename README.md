@@ -159,8 +159,11 @@ In UICreate namespace there are classes for supporting easier ui create
 * TextGameObjectCreate class has ``CreateTextGameObject()`` method, which has 8 overloads.
 
   * 4 of the reloads use string to find the parent GameObject in scene, and for the other 4 reloads you can pass the existing GameObject as parent.
+  
   * The necessary parameters are:  
+  
     * The parent for the text GameObject
+  
     * The GameObject name
     * The text of GameObject
     * The alignment (use TextAnchor enum)
@@ -168,6 +171,7 @@ In UICreate namespace there are classes for supporting easier ui create
     * The position
     * The size delta of the transform
     * The font size
+  
   * You can use custom font, custom text color for the gameobject with following 3 overloads
   
 * ToggleCreate class offers the general toggle create method `CreateToggle` with 18 overloads
