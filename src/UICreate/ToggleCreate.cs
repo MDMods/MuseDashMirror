@@ -295,18 +295,18 @@ namespace MuseDashMirror.UICreate
         #region PnlMenu Toggle Create
 
         private static List<string> Texts = new();
-        private static Vector3[] Positions = new[] { new Vector3(-6.8f, -2.55f, 100f), new Vector3(-6.8f, -3.35f, 100f), new Vector3(-6.8f, -4.15f, 100f) };
+        private static Vector3[] Positions = new[] { new Vector3(-6.8f, -2.55f, 100f), new Vector3(-6.8f, -3.35f, 100f), new Vector3(-6.8f, -4.15f, 100f), new Vector3(-6.8f, -4.95f, 100f) };
 
         internal static void Reset()
         {
             Texts.Clear();
-            Positions = new[] { new Vector3(-6.8f, -2.55f, 100f), new Vector3(-6.8f, -3.35f, 100f), new Vector3(-6.8f, -4.15f, 100f) };
+            Positions = new[] { new Vector3(-6.8f, -2.55f, 100f), new Vector3(-6.8f, -3.35f, 100f), new Vector3(-6.8f, -4.15f, 100f), new Vector3(-6.8f, -4.95f, 100f) };
         }
 
         private static void SetPosition(string text)
         {
             Texts.Add(text);
-            if (Texts.Count == 3)
+            if (Texts.Count == 4)
             {
                 string longest = string.Empty;
                 foreach (var txt in Texts)

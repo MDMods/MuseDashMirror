@@ -162,4 +162,5 @@ In UICreate namespace there are classes for supporting easier ui create
   -The necessary parameters are: the canvas name you want, the text gameobject to set parent,  the gameobject name, the gameobject text, the alignment, and the position is local position or not, the position, the size delta of the transform, and the font size
 
   -You can use custom font, custom text color and custom local scale for the gameobject with following 3 overloads
-
+  
+* ToggleCreate class offers the general toggle create method `ToggleCreate`
