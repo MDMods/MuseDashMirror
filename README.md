@@ -186,3 +186,4 @@ In UICreate namespace there are classes for supporting easier ui create
 
   * The class also offers the specific method `CreatePnlMenuToggle`, without needing set the position of the toggle, all you need is pass the name of the toggle, and bool pointer, and the text of the toggle. 
     * The other two overloads are for more custom settings, like font size and text color.
+    * You can also use the left 2 overloads to set your toggle in ToggleGroup ea
