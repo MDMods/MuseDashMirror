@@ -145,22 +145,40 @@ In UICreate namespace there are classes for supporting easier ui create
 
 * Fonts class support 4 default fonts: **SnapsTaste, Normal, SourceHanSansCN-Heavy, MiniSimpleSuperThickBlack**
 
-  -If you want to use the default font, invoke `` LoadFonts()`` before you use the font. Then after use invoke ``UnloadFonts()``.
-
+  * If you want to use the default font, invoke `` LoadFonts()`` before you use the font. Then after use invoke ``UnloadFonts()``.
+  
 * Colors class support 5 default colors: **Blue, Silver, ToggleTextColor, ToggleCheckBoxColor, ToggleCheckMarkColor**
 
-* CanvasCreate class has ``CreateCanvas()``method, which has 3 overloads. 
+* CanvasCreate class has ``CreateCanvas()``method, which has 4 overloads. 
 
-  -If only give the canvas name the canvas will be a ScreenSpaceOverlay canvas.
-
-  -If give canvas name and corresponding camera name the canvas will be a ScreenSpaceCamera canvas. 
-
-  -The left one overload is for custom setting reference resolution.
-
-* TextGameObjectCreate class has ``CreateTextGameObject()`` method, which has 4 overloads.
-
-  -The necessary parameters are: the canvas name you want, the text gameobject to set parent,  the gameobject name, the gameobject text, the alignment, and the position is local position or not, the position, the size delta of the transform, and the font size
-
-  -You can use custom font, custom text color and custom local scale for the gameobject with following 3 overloads
+  * If only give the canvas name the canvas will be a ScreenSpaceOverlay canvas.
+  * If giving canvas name and corresponding camera name the canvas will be a ScreenSpaceCamera canvas. 
+  * You can also use the string to set the canvas parent with the parent name.
+  * Or use the final reload, passing an existing GameObject as the parent of the canvas.
   
-* ToggleCreate class offers the general toggle create method `ToggleCreate`
+* TextGameObjectCreate class has ``CreateTextGameObject()`` method, which has 8 overloads.
+
+  * 4 of the reloads use string to find the parent GameObject in scene, and for the other 4 reloads you can pass the existing GameObject as parent.
+  * The necessary parameters are:  
+    * The parent for the text GameObject
+    * The GameObject name
+    * The text of GameObject
+    * The alignment (use TextAnchor enum)
+    * The position is local position or not 
+    * The position
+    * The size delta of the transform
+    * The font size
+  * You can use custom font, custom text color for the gameobject with following 3 overloads
+  
+* ToggleCreate class offers the general toggle create method `CreateToggle` with 18 overloads
+
+  * The necessary parameters are:
+    * The name of the toggle
+    * The position of the toggle
+    * The bool pointer you want to pass
+    * The text of the toggle
+    * The parent (with 6 overloads using parent name string, 6 overloads using parent GameObject, 6 overloads using parent Transform)
+  * With the left 5 overloads for each scenario, you could set the custom font size, color and toggle group.
+
+  * The class also offers the specific method `CreatePnlMenuToggle`, without needing set the position of the toggle, all you need is pass the name of the toggle, and bool pointer, and the text of the toggle. 
+    * The other two overloads are for more custom settings, like font size and text color.
