@@ -127,7 +127,7 @@ public override void OnSceneWasLoaded(int buildIndex, string sceneName)
             {
                 YourMethod();
             }
-		}
+        }
 
 // New way to do
 // Same with patching events, in the OnInitializeMelon method

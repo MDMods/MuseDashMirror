@@ -5,13 +5,10 @@ namespace MuseDashMirror.UICreate
 {
     public static class CanvasCreate
     {
-        // 去掉最后，parent设置两个重载，名字和gameobject
-
         /// <summary>
         /// Create a screenspace overlay canvas
         /// </summary>
-
-        public static void CreateCanvas(string canvasName)
+        public static GameObject CreateCanvas(string canvasName)
         {
             var canvas = new GameObject();
             canvas.name = canvasName;
@@ -19,6 +16,7 @@ namespace MuseDashMirror.UICreate
             canvas.AddComponent<CanvasScaler>();
             canvas.AddComponent<GraphicRaycaster>();
             canvas.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
+            return canvas;
         }
 
         /// <summary>
@@ -40,12 +38,24 @@ namespace MuseDashMirror.UICreate
         }
 
         /// <summary>
-        /// Create a screenspace camera canvas with specified reference resolution
+        /// Create a screenspace camera canvas with specified parent using name
         /// </summary>
-        public static void CreateCanvas(string canvasName, string cameraName, Vector2 referenceResolution)
+        public static GameObject CreateCanvas(string canvasName, string cameraName, string parentName)
         {
             var canvas = CreateCanvas(canvasName, cameraName);
-            canvas.GetComponent<CanvasScaler>().referenceResolution = referenceResolution;
+            var parent = GameObject.Find(parentName);
+            canvas.transform.SetParent(parent.transform);
+            return canvas;
+        }
+
+        /// <summary>
+        /// Create a screenspace camera canvas with specified parent
+        /// </summary>
+        public static GameObject CreateCanvas(string canvasName, string cameraName, GameObject parent)
+        {
+            var canvas = CreateCanvas(canvasName, cameraName);
+            canvas.transform.SetParent(parent.transform);
+            return canvas;
         }
     }
 }
