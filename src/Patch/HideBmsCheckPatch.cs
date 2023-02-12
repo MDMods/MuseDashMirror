@@ -1,21 +1,20 @@
 ﻿using Assets.Scripts.Database;
 
-namespace MuseDashMirror.Patch
-{
-    [HarmonyPatch(typeof(SpecialSongManager), "HideBmsCheck")]
-    internal static class HideBmsCheckPatch
-    {
-        internal static int difficulty { get; set; }
-        internal static string musicAuthor { get; set; }
-        internal static string chartLevel { get; set; }
-        internal static string charter { get; set; }
+namespace MuseDashMirror.Patch;
 
-        private static void Postfix(MusicInfo selectedMusic, ref int selectedDifficulty)
-        {
-            difficulty = selectedDifficulty;
-            musicAuthor = selectedMusic.author;
-            chartLevel = selectedMusic.GetMusicLevelStringByDiff(selectedDifficulty);
-            charter = selectedMusic.GetLevelDesignerStringByIndex(selectedDifficulty);
-        }
+[HarmonyPatch(typeof(SpecialSongManager), "HideBmsCheck")]
+internal static class HideBmsCheckPatch
+{
+    internal static int Difficulty { get; set; }
+    internal static string MusicAuthor { get; set; }
+    internal static string ChartLevel { get; set; }
+    internal static string Charter { get; set; }
+
+    private static void Postfix(MusicInfo selectedMusic, ref int selectedDifficulty)
+    {
+        Difficulty = selectedDifficulty;
+        MusicAuthor = selectedMusic.author;
+        ChartLevel = selectedMusic.GetMusicLevelStringByDiff(selectedDifficulty);
+        Charter = selectedMusic.GetLevelDesignerStringByIndex(selectedDifficulty);
     }
 }
