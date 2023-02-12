@@ -57,7 +57,7 @@ namespace MuseDashMirror.UICreate
         public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName, ToggleGroup toggleGroup)
         {
             var toggle = CreateToggle(name, position, isEnabled, text, parentName);
-            toggleGroup.RegisterToggle(toggle.GetComponent<Toggle>());
+            toggle.GetComponent<Toggle>().group = toggleGroup;
             return toggle;
         }
 
@@ -79,7 +79,7 @@ namespace MuseDashMirror.UICreate
         public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName, int fontSize, Color textColor, ToggleGroup toggleGroup)
         {
             var toggle = CreateToggle(name, position, isEnabled, text, parentName, fontSize, textColor);
-            toggleGroup.RegisterToggle(toggle.GetComponent<Toggle>());
+            toggle.GetComponent<Toggle>().group = toggleGroup;
             return toggle;
         }
 
@@ -102,7 +102,7 @@ namespace MuseDashMirror.UICreate
         public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName, int fontSize, Color textColor, Color checkBoxColor, Color checkMarkColor, ToggleGroup toggleGroup)
         {
             var toggle = CreateToggle(name, position, isEnabled, text, parentName, fontSize, textColor, checkBoxColor, checkMarkColor);
-            toggleGroup.RegisterToggle(toggle.GetComponent<Toggle>());
+            toggle.GetComponent<Toggle>().group = toggleGroup;
             return toggle;
         }
 
@@ -149,7 +149,7 @@ namespace MuseDashMirror.UICreate
         public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent, ToggleGroup toggleGroup)
         {
             var toggle = CreateToggle(name, position, isEnabled, text, parent);
-            toggleGroup.RegisterToggle(toggle.GetComponent<Toggle>());
+            toggle.GetComponent<Toggle>().group = toggleGroup;
             return toggle;
         }
 
@@ -171,7 +171,7 @@ namespace MuseDashMirror.UICreate
         public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent, int fontSize, Color textColor, ToggleGroup toggleGroup)
         {
             var toggle = CreateToggle(name, position, isEnabled, text, parent, fontSize, textColor);
-            toggleGroup.RegisterToggle(toggle.GetComponent<Toggle>());
+            toggle.GetComponent<Toggle>().group = toggleGroup;
             return toggle;
         }
 
@@ -194,7 +194,7 @@ namespace MuseDashMirror.UICreate
         public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent, int fontSize, Color textColor, Color checkBoxColor, Color checkMarkColor, ToggleGroup toggleGroup)
         {
             var toggle = CreateToggle(name, position, isEnabled, text, parent, fontSize, textColor, checkBoxColor, checkMarkColor);
-            toggleGroup.RegisterToggle(toggle.GetComponent<Toggle>());
+            toggle.GetComponent<Toggle>().group = toggleGroup;
             return toggle;
         }
 
@@ -241,7 +241,7 @@ namespace MuseDashMirror.UICreate
         public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent, ToggleGroup toggleGroup)
         {
             var toggle = CreateToggle(name, position, isEnabled, text, parent);
-            toggleGroup.RegisterToggle(toggle.GetComponent<Toggle>());
+            toggle.GetComponent<Toggle>().group = toggleGroup;
             return toggle;
         }
 
@@ -263,7 +263,7 @@ namespace MuseDashMirror.UICreate
         public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent, int fontSize, Color textColor, ToggleGroup toggleGroup)
         {
             var toggle = CreateToggle(name, position, isEnabled, text, parent, fontSize, textColor);
-            toggleGroup.RegisterToggle(toggle.GetComponent<Toggle>());
+            toggle.GetComponent<Toggle>().group = toggleGroup;
             return toggle;
         }
 
@@ -286,7 +286,7 @@ namespace MuseDashMirror.UICreate
         public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent, int fontSize, Color textColor, Color checkBoxColor, Color checkMarkColor, ToggleGroup toggleGroup)
         {
             var toggle = CreateToggle(name, position, isEnabled, text, parent, fontSize, textColor, checkBoxColor, checkMarkColor);
-            toggleGroup.RegisterToggle(toggle.GetComponent<Toggle>());
+            toggle.GetComponent<Toggle>().group = toggleGroup;
             return toggle;
         }
 
@@ -331,6 +331,28 @@ namespace MuseDashMirror.UICreate
         {
             var toggle = CreateToggle(name, Positions[Texts.Count], isEnabled, text, "PnlMenu");
             SetPosition(text);
+            return toggle;
+        }
+
+        /// <summary>
+        /// Create Toggle at PnlMenu with toggle group
+        /// </summary>
+        public static unsafe GameObject CreatePnlMenuToggle(string name, bool* isEnabled, string text, string parentName, ToggleGroup toggleGroup)
+        {
+            var toggle = CreatePnlMenuToggle(name, isEnabled, text);
+            toggle.transform.SetParent(GameObject.Find(parentName).transform);
+            toggle.GetComponent<Toggle>().group = toggleGroup;
+            return toggle;
+        }
+
+        /// <summary>
+        /// Create Toggle at PnlMenu with toggle group
+        /// </summary>
+        public static unsafe GameObject CreatePnlMenuToggle(string name, bool* isEnabled, string text, GameObject parent, ToggleGroup toggleGroup)
+        {
+            var toggle = CreatePnlMenuToggle(name, isEnabled, text);
+            toggle.transform.SetParent(parent.transform);
+            toggle.GetComponent<Toggle>().group = toggleGroup;
             return toggle;
         }
 
