@@ -1,21 +1,20 @@
-﻿using FormulaBase;
+﻿using System.Collections.Generic;
+using FormulaBase;
 using GameLogic;
-using System.Collections.Generic;
 
-namespace MuseDashMirror.Patch
+namespace MuseDashMirror.Patch;
+
+[HarmonyPatch(typeof(StageBattleComponent), "GameStart")]
+internal static class StageBattleComponentPatch
 {
-    [HarmonyPatch(typeof(StageBattleComponent), "GameStart")]
-    internal static class StageBattleComponentPatch
-    {
-        internal static List<MusicData> musicDatas { get; set; } = new List<MusicData>();
+    internal static List<MusicData> MusicDatas { get; set; } = new();
 
-        private static void Postfix(StageBattleComponent __instance)
+    private static void Postfix(StageBattleComponent __instance)
+    {
+        BattleComponent.GameStartEventInvoke();
+        foreach (var musicdata in __instance.GetMusicData())
         {
-            BattleComponent.GameStartEventInvoke();
-            foreach (var musicdata in __instance.GetMusicData())
-            {
-                musicDatas.Add(musicdata);
-            }
+            MusicDatas.Add(musicdata);
         }
     }
 }

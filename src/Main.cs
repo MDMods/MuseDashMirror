@@ -3,58 +3,57 @@ using MelonLoader;
 using MuseDashMirror.UICreate;
 using static MuseDashMirror.SceneInfo;
 
-namespace MuseDashMirror
+namespace MuseDashMirror;
+
+public class Main : MelonMod
 {
-    public class Main : MelonMod
+    internal static HarmonyLib.Harmony harmony { get; set; }
+
+    public override void OnInitializeMelon()
     {
-        internal static HarmonyLib.Harmony harmony { get; set; }
+        harmony = HarmonyInstance;
+    }
 
-        public override void OnInitializeMelon()
+    public override void OnSceneWasLoaded(int buildIndex, string sceneName)
+    {
+        switch (sceneName)
         {
-            harmony = HarmonyInstance;
-        }
-
-        public override void OnSceneWasLoaded(int buildIndex, string sceneName)
-        {
-            if (sceneName == "GameMain")
-            {
+            case "GameMain":
                 isGameScene = true;
                 EnterGameSceneInvoke();
-            }
+                break;
 
-            if (sceneName == "UISystem_PC")
-            {
+            case "UISystem_PC":
                 isMainScene = true;
                 EnterMainSceneInvoke();
-            }
+                break;
 
-            if (sceneName == "Loading")
-            {
+            case "Loading":
                 isLoadingScene = true;
                 EnterLoadingSceneInvoke();
-            }
+                break;
         }
+    }
 
-        public override void OnSceneWasUnloaded(int buildIndex, string sceneName)
+    public override void OnSceneWasUnloaded(int buildIndex, string sceneName)
+    {
+        switch (sceneName)
         {
-            if (sceneName == "GameMain")
-            {
+            case "GameMain":
                 isGameScene = false;
                 ExitGameSceneInvoke();
                 ToggleCreate.Reset();
-            }
+                break;
 
-            if (sceneName == "UISystem_PC")
-            {
+            case "UISystem_PC":
                 isMainScene = false;
                 ExitMainSceneInvoke();
-            }
+                break;
 
-            if (sceneName == "Loading")
-            {
+            case "Loading":
                 isLoadingScene = false;
                 ExitLoadingSceneInvoke();
-            }
+                break;
         }
     }
 }
