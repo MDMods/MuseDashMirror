@@ -64,7 +64,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent using name, with custom fontsize and text color
+    /// Create general toggle with specific parent using name, with custom font size and text color
     /// </summary>
     public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName, int fontSize, Color textColor)
     {
@@ -76,7 +76,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent using name, with specified toggle group, custom fontsize and text color
+    /// Create general toggle with specific parent using name, with specified toggle group, custom font size and text color
     /// </summary>
     public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName, int fontSize, Color textColor, ToggleGroup toggleGroup)
     {
@@ -86,7 +86,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent using name, with custom fontSize, textcolor, checkbox color and checkmark color
+    /// Create general toggle with specific parent using name, with custom fontSize, text color, checkbox color and checkmark color
     /// </summary>
     public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName, int fontSize, Color textColor, Color checkBoxColor, Color checkMarkColor)
     {
@@ -99,7 +99,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent using name, with custom fontSize, textcolor, checkbox color, checkmark color and toggle group
+    /// Create general toggle with specific parent using name, with custom fontSize, text color, checkbox color, checkmark color and toggle group
     /// </summary>
     public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName, int fontSize, Color textColor, Color checkBoxColor, Color checkMarkColor, ToggleGroup toggleGroup)
     {
@@ -156,7 +156,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent, with custom fontsize and text color
+    /// Create general toggle with specific parent, with custom font size and text color
     /// </summary>
     public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent, int fontSize, Color textColor)
     {
@@ -168,7 +168,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent, with specified toggle group, custom fontsize and text color
+    /// Create general toggle with specific parent, with specified toggle group, custom font size and text color
     /// </summary>
     public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent, int fontSize, Color textColor, ToggleGroup toggleGroup)
     {
@@ -178,7 +178,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent, with custom fontSize, textcolor, checkbox color and checkmark color
+    /// Create general toggle with specific parent, with custom fontSize, text color, checkbox color and checkmark color
     /// </summary>
     public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent, int fontSize, Color textColor, Color checkBoxColor, Color checkMarkColor)
     {
@@ -191,7 +191,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent, with custom fontSize, textcolor, checkbox color, checkmark color and toggle group
+    /// Create general toggle with specific parent, with custom fontSize, text color, checkbox color, checkmark color and toggle group
     /// </summary>
     public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent, int fontSize, Color textColor, Color checkBoxColor, Color checkMarkColor, ToggleGroup toggleGroup)
     {
@@ -248,7 +248,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent transform, with custom fontsize and text color
+    /// Create general toggle with specific parent transform, with custom font size and text color
     /// </summary>
     public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent, int fontSize, Color textColor)
     {
@@ -260,7 +260,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent transform, with specified toggle group, custom fontsize and text color
+    /// Create general toggle with specific parent transform, with specified toggle group, custom font size and text color
     /// </summary>
     public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent, int fontSize, Color textColor, ToggleGroup toggleGroup)
     {
@@ -270,7 +270,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent transform, with custom fontSize, textcolor, checkbox color and checkmark color
+    /// Create general toggle with specific parent transform, with custom fontSize, text color, checkbox color and checkmark color
     /// </summary>
     public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent, int fontSize, Color textColor, Color checkBoxColor, Color checkMarkColor)
     {
@@ -283,7 +283,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent transform, with custom fontSize, textcolor, checkbox color, checkmark color and toggle group
+    /// Create general toggle with specific parent transform, with custom fontSize, text color, checkbox color, checkmark color and toggle group
     /// </summary>
     public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent, int fontSize, Color textColor, Color checkBoxColor, Color checkMarkColor, ToggleGroup toggleGroup)
     {
@@ -329,7 +329,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create Toggle at PnlMenu with fontsize 40
+    /// Create Toggle at PnlMenu with font size 40
     /// </summary>
     public static unsafe GameObject CreatePnlMenuToggle(string name, bool* isEnabled, string text)
     {
@@ -361,7 +361,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create Toggle at PnlMenu with custom fontsize and text color
+    /// Create Toggle at PnlMenu with custom font size and text color
     /// </summary>
     public static unsafe GameObject CreatePnlMenuToggle(string name, bool* isEnabled, string text, int fontSize, Color textColor)
     {
@@ -373,7 +373,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create Toggle at PnlMenu with custom fontSize, textcolor, checkbox color and checkmark color
+    /// Create Toggle at PnlMenu with custom fontSize, text color, checkbox color and checkmark color
     /// </summary>
     public static unsafe GameObject CreatePnlMenuToggle(string name, bool* isEnabled, string text, int fontSize, Color textColor, Color checkBoxColor, Color checkMarkColor)
     {

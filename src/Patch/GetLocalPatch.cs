@@ -7,8 +7,5 @@ internal static class GetLocalPatch
 {
     internal static string ChartName { get; set; }
 
-    private static void Postfix(LocalALBUMInfo __result)
-    {
-        ChartName = __result.name;
-    }
+    private static void Postfix(LocalALBUMInfo __result) => ChartName = __result.name;
 }

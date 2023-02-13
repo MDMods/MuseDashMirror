@@ -94,13 +94,16 @@
     <Compile Include="CommonPatches\ManualPatches.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="MelonBuildInfo.cs" />
+    <Compile Include="Patch\GameMissPlayPatch.cs" />
     <Compile Include="Patch\MenuSelectPatch.cs" />
+    <Compile Include="Patch\PnlVictoryPatch.cs" />
     <Compile Include="Patch\PnlMenuPatch.cs" />
     <Compile Include="Patch\PnlStagePatch.cs" />
     <Compile Include="Patch\StageBattleComponentPatch.cs" />
     <Compile Include="Patch\GetLocalPatch.cs" />
     <Compile Include="Patch\HideBmsCheckPatch.cs" />
     <Compile Include="Patch\SwitchLanguagesPatch.cs" />
+    <Compile Include="Patch\TaskStageTargetPatch.cs" />
     <Compile Include="PlayerData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SceneInfo.cs" />

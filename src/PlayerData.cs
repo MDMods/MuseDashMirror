@@ -59,7 +59,7 @@ public static class PlayerData
     /// <summary>
     /// Set character with index
     /// </summary>
-    public static void SetCharacter(int characterIndex) => Singleton<DataManager>.instance["Account"]["SelectedRoleIndex"].Set(new Int32() { m_value = characterIndex }.BoxIl2CppObject());
+    public static void SetCharacter(int characterIndex) => DataHelper.selectedRoleIndex = characterIndex;
 
     /// <summary>
     /// Set elfin with index
