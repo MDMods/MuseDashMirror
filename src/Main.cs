@@ -1,5 +1,6 @@
 ﻿global using HarmonyLib;
 using MelonLoader;
+using MuseDashMirror.Patch;
 using MuseDashMirror.UICreate;
 using static MuseDashMirror.SceneInfo;
 
@@ -43,6 +44,7 @@ public class Main : MelonMod
                 isGameScene = false;
                 ExitGameSceneInvoke();
                 ToggleCreate.Reset();
+                GameMissPlayPatch.Reset();
                 break;
 
             case "UISystem_PC":

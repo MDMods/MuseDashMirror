@@ -14,18 +14,12 @@ public static class BattleComponent
     /// <summary>
     /// Restart the current chart
     /// </summary>
-    public static void Restart()
-    {
-        BattleHelper.GameRestart();
-    }
+    public static void Restart() => BattleHelper.GameRestart();
 
     /// <summary>
     /// Exit the current chart
     /// </summary>
-    public static void Exit()
-    {
-        BattleHelper.GameFinish();
-    }
+    public static void Exit() => BattleHelper.GameFinish();
 
     #region ChartInfo
 
@@ -83,7 +77,25 @@ public static class BattleComponent
     /// </summary>
     public static event Action GameStartEvent;
 
+    /// <summary>
+    /// An event to invoke methods on victory screen
+    /// </summary>
+    public static event Action OnVictoryEvent;
+
+    /// <summary>
+    /// An event to invoke methods when adding score
+    /// </summary>
+    public static event Action AddScoreEvent;
+
+    /// <summary>
+    /// An event to invoke methods when missing notes
+    /// </summary>
+    public static event Action MissCubeEvent;
+
     internal static void GameStartEventInvoke() => GameStartEvent?.Invoke();
+    internal static void OnVictoryEventInvoke() => OnVictoryEvent?.Invoke();
+    internal static void AddScoreEventInvoke() => AddScoreEvent?.Invoke();
+    internal static void MissCubeEventInvoke() => MissCubeEvent?.Invoke();
 
     /// <summary>
     /// Becomes true when "ready go" finished
@@ -91,29 +103,44 @@ public static class BattleComponent
     public static bool IsInGame => Singleton<StageBattleComponent>.instance.isInGame;
 
     /// <summary>
-    /// 3 decimal places number for game play time, start when "ready go" finished
+    /// 3 decimal places number for game play time, start after isInGame
     /// </summary>
     public static float Tick => Singleton<StageBattleComponent>.instance.realTimeTick;
 
     /// <summary>
     /// Perfect count
     /// </summary>
-    public static int Perfect => Singleton<TaskStageTarget>.instance.m_PerfectResult;
+    public static int PerfectNum => Singleton<TaskStageTarget>.instance.m_PerfectResult;
 
     /// <summary>
     /// Great count
     /// </summary>
-    public static int Great => Singleton<TaskStageTarget>.instance.m_GreatResult;
+    public static int GreatNum => Singleton<TaskStageTarget>.instance.m_GreatResult;
 
     /// <summary>
-    /// Miss count (hurt miss)
+    /// Normal miss count (without ghost and collectable note miss)
     /// </summary>
-    public static int Miss => Singleton<TaskStageTarget>.instance.m_MissResult;
+    public static int NormalMissNum => GameMissPlayPatch.NormalMiss;
+
+    /// <summary>
+    /// Ghost miss count
+    /// </summary>
+    public static int GhostMissNum => GameMissPlayPatch.GhostMiss;
+
+    /// <summary>
+    /// Collectable note miss count
+    /// </summary>
+    public static int CollectableNoteMissNum => GameMissPlayPatch.CollectableNoteMiss;
+
+    /// <summary>
+    /// Total miss count
+    /// </summary>
+    public static int TotalMissNum => GameMissPlayPatch.TotalMiss;
 
     /// <summary>
     /// Blue collectable notes count
     /// </summary>
-    public static int Get => Singleton<TaskStageTarget>.instance.m_CoolResult;
+    public static int Get => Singleton<TaskStageTarget>.instance.m_MusicCount + 1;
 
     /// <summary>
     /// Heart count
@@ -121,12 +148,12 @@ public static class BattleComponent
     public static int Heart => Singleton<TaskStageTarget>.instance.m_Blood;
 
     /// <summary>
-    /// Jumpover count
+    /// Jump over count
     /// </summary>
     public static int JumpOver => Singleton<TaskStageTarget>.instance.m_JumpOverResult;
 
     /// <summary>
-    /// Music datas for the chart, only changed when entering the chart
+    /// Music data for the chart, only changed when entering the chart
     /// </summary>
     public static List<MusicData> MusicDatas => StageBattleComponentPatch.MusicDatas;
 
