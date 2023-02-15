@@ -158,12 +158,11 @@ In UICreate namespace there are classes for supporting easier ui create
   
 * TextGameObjectCreate class has ``CreateTextGameObject()`` method, which has 8 overloads.
 
-  * 4 of the reloads use string to find the parent GameObject in scene, and for the other 4 reloads you can pass the existing GameObject as parent.
+  * 4 of the overloads use string to find the parent GameObject in scene, and for the other 4 overloads you can pass the existing GameObject as parent.
   
   * The necessary parameters are:  
   
-    * The parent for the text GameObject
-  
+    * The parent for the text GameObject 
     * The GameObject name
     * The text of GameObject
     * The alignment (use TextAnchor enum)
