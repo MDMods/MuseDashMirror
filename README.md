@@ -158,12 +158,11 @@ In UICreate namespace there are classes for supporting easier ui create
   
 * TextGameObjectCreate class has ``CreateTextGameObject()`` method, which has 8 overloads.
 
-  * 4 of the reloads use string to find the parent GameObject in scene, and for the other 4 reloads you can pass the existing GameObject as parent.
+  * 4 of the overloads use string to find the parent GameObject in scene, and for the other 4 overloads you can pass the existing GameObject as parent.
   
   * The necessary parameters are:  
   
-    * The parent for the text GameObject
-  
+    * The parent for the text GameObject 
     * The GameObject name
     * The text of GameObject
     * The alignment (use TextAnchor enum)
@@ -185,5 +184,5 @@ In UICreate namespace there are classes for supporting easier ui create
   * With the left 5 overloads for each scenario, you could set the custom font size, color and toggle group.
 
   * The class also offers the specific method `CreatePnlMenuToggle`, without needing set the position of the toggle, all you need is pass the name of the toggle, and bool pointer, and the text of the toggle. 
-    * The other two overloads are for more custom settings, like font size and text color.
-    * You can also use the left 2 overloads to set your toggle in ToggleGroup ea
+    * The 2 overloads are for more custom settings, like font size and text color.
+    * You can also use the left 2 overloads to set your toggle in ToggleGroup
