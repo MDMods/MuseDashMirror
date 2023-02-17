@@ -1,8 +1,6 @@
 ﻿using Assets.Scripts.Database;
 using Assets.Scripts.PeroTools.Commons;
 using Assets.Scripts.PeroTools.Managers;
-using Assets.Scripts.PeroTools.Nice.Datas;
-using Il2CppSystem;
 using Il2CppSystem.Collections.Generic;
 
 namespace MuseDashMirror;
@@ -56,6 +54,8 @@ public static class PlayerData
 
     public static int Offset => DataHelper.offset;
 
+    public static bool IsAutoFever => DataHelper.isAutoFever;
+
     /// <summary>
     /// Set character with index
     /// </summary>
@@ -64,15 +64,15 @@ public static class PlayerData
     /// <summary>
     /// Set elfin with index
     /// </summary>
-    public static void SetElfin(int elfinIndex) => Singleton<DataManager>.instance["Account"]["SelectedElfinIndex"].Set(new Int32() { m_value = elfinIndex }.BoxIl2CppObject());
+    public static void SetElfin(int elfinIndex) => DataHelper.selectedElfinIndex = elfinIndex;
 
     /// <summary>
     /// Set music offset
     /// </summary>
-    public static void SetOffset(int offset) => Singleton<DataManager>.instance["GameConfig"]["Offset"].Set(new Int32() { m_value = offset }.BoxIl2CppObject());
+    public static void SetOffset(int offset) => DataHelper.offset = offset;
 
     /// <summary>
     /// Set auto fever
     /// </summary>
-    public static void SetAutoFever(bool autoFever) => Singleton<DataManager>.instance["Account"]["IsAutoFever"].Set(new Boolean() { m_value = autoFever }.BoxIl2CppObject());
+    public static void SetAutoFever(bool autoFever) => DataHelper.isAutoFever = autoFever;
 }

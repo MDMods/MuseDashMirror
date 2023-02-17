@@ -9,11 +9,6 @@ namespace MuseDashMirror.Patch;
 [HarmonyPatch(typeof(GameMissPlay), "MissCube")]
 internal static class GameMissPlayPatch
 {
-    internal static int GhostMiss { get; set; }
-    internal static int CollectableNoteMiss { get; set; }
-    internal static int NormalMiss { get; set; }
-    internal static int TotalMiss { get; set; }
-
     private static void Postfix(int idx, decimal currentTick)
     {
         int result = Singleton<BattleEnemyManager>.instance.GetPlayResult(idx);
@@ -25,14 +20,14 @@ internal static class GameMissPlayPatch
                 {
                     // air ghost miss
                     case 4:
-                        GhostMiss++;
-                        TotalMiss++;
+                        GhostMissNum++;
+                        TotalMissNum++;
                         break;
 
                     // air collectable note miss
                     case 6 or 7:
-                        CollectableNoteMiss++;
-                        TotalMiss++;
+                        CollectableNoteMissNum++;
+                        TotalMissNum++;
                         break;
 
                     // normal miss
@@ -40,8 +35,8 @@ internal static class GameMissPlayPatch
                     {
                         if (musicDataByIdx.noteData.type != 2 && !musicDataByIdx.isDouble)
                         {
-                            NormalMiss++;
-                            TotalMiss++;
+                            NormalMissNum++;
+                            TotalMissNum++;
                         }
 
                         break;
@@ -55,20 +50,20 @@ internal static class GameMissPlayPatch
                 {
                     // ground ghost miss
                     case 4:
-                        GhostMiss++;
-                        TotalMiss++;
+                        GhostMissNum++;
+                        TotalMissNum++;
                         break;
 
                     // ground collectable note miss
                     case 6 or 7:
-                        CollectableNoteMiss++;
-                        TotalMiss++;
+                        CollectableNoteMissNum++;
+                        TotalMissNum++;
                         break;
 
                     // normal miss
                     default:
-                        NormalMiss++;
-                        TotalMiss++;
+                        NormalMissNum++;
+                        TotalMissNum++;
                         break;
                 }
 
@@ -76,14 +71,6 @@ internal static class GameMissPlayPatch
         }
 
         MissCubeEventInvoke();
-    }
-
-    internal static void Reset()
-    {
-        GhostMiss = 0;
-        CollectableNoteMiss = 0;
-        NormalMiss = 0;
-        TotalMiss = 0;
     }
 
     // Hold miss
@@ -95,8 +82,8 @@ internal static class GameMissPlayPatch
             var musicDataByIdx = Singleton<StageBattleComponent>.instance.GetMusicDataByIdx(idx);
             if (result == 1 && musicDataByIdx.noteData.type == 3)
             {
-                NormalMiss++;
-                TotalMiss++;
+                NormalMissNum++;
+                TotalMissNum++;
             }
         }
     }
