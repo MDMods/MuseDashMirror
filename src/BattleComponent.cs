@@ -5,7 +5,6 @@ using Assets.Scripts.GameCore.HostComponent;
 using Assets.Scripts.PeroTools.Commons;
 using FormulaBase;
 using GameLogic;
-using MuseDashMirror.Patch;
 
 namespace MuseDashMirror;
 
@@ -26,27 +25,27 @@ public static class BattleComponent
     /// <summary>
     /// Chart name, only changed when entering the chart
     /// </summary>
-    public static string ChartName => GetLocalPatch.ChartName;
+    public static string ChartName { get; internal set; }
 
     /// <summary>
     /// Level of the chart, only changed when entering the chart
     /// </summary>
-    public static string ChartLevel => HideBmsCheckPatch.ChartLevel;
+    public static string ChartLevel { get; internal set; }
 
     /// <summary>
     /// Difficulty of the chart (easy, hard, master, hidden, touhou), only changed when entering the chart
     /// </summary>
-    public static int Difficulty => HideBmsCheckPatch.Difficulty;
+    public static int Difficulty { get; internal set; }
 
     /// <summary>
     /// Music author, only changed when entering the chart
     /// </summary>
-    public static string MusicAuthor => HideBmsCheckPatch.MusicAuthor;
+    public static string MusicAuthor { get; internal set; }
 
     /// <summary>
     /// Charter, only changed when entering the chart
     /// </summary>
-    public static string Charter => HideBmsCheckPatch.Charter;
+    public static string Charter { get; internal set; }
 
     /// <summary>
     /// The name for album package
@@ -93,8 +92,11 @@ public static class BattleComponent
     public static event Action MissCubeEvent;
 
     internal static void GameStartEventInvoke() => GameStartEvent?.Invoke();
+
     internal static void OnVictoryEventInvoke() => OnVictoryEvent?.Invoke();
+
     internal static void AddScoreEventInvoke() => AddScoreEvent?.Invoke();
+
     internal static void MissCubeEventInvoke() => MissCubeEvent?.Invoke();
 
     /// <summary>
@@ -120,22 +122,22 @@ public static class BattleComponent
     /// <summary>
     /// Normal miss count (without ghost and collectable note miss)
     /// </summary>
-    public static int NormalMissNum => GameMissPlayPatch.NormalMiss;
+    public static int NormalMissNum { get; internal set; }
 
     /// <summary>
     /// Ghost miss count
     /// </summary>
-    public static int GhostMissNum => GameMissPlayPatch.GhostMiss;
+    public static int GhostMissNum { get; internal set; }
 
     /// <summary>
     /// Collectable note miss count
     /// </summary>
-    public static int CollectableNoteMissNum => GameMissPlayPatch.CollectableNoteMiss;
+    public static int CollectableNoteMissNum { get; internal set; }
 
     /// <summary>
     /// Total miss count
     /// </summary>
-    public static int TotalMissNum => GameMissPlayPatch.TotalMiss;
+    public static int TotalMissNum { get; internal set; }
 
     /// <summary>
     /// Blue collectable notes count
@@ -155,7 +157,15 @@ public static class BattleComponent
     /// <summary>
     /// Music data for the chart, only changed when entering the chart
     /// </summary>
-    public static List<MusicData> MusicDatas => StageBattleComponentPatch.MusicDatas;
+    public static List<MusicData> MusicDatas { get; internal set; } = new();
+
+    internal static void Reset()
+    {
+        NormalMissNum = 0;
+        GhostMissNum = 0;
+        CollectableNoteMissNum = 0;
+        TotalMissNum = 0;
+    }
 
     #endregion GameInfo
 }
