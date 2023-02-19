@@ -38,4 +38,4 @@ using Main = MuseDashMirror.Main;
 [assembly: AssemblyFileVersion(Version)]
 [assembly: MelonInfo(typeof(Main), Name, Version, Author)]
 [assembly: MelonGame("PeroPeroGames", "MuseDash")]
-[assembly: MelonPriority(-10)]
+[assembly: MelonPriority(-100)]

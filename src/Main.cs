@@ -2,6 +2,7 @@
 using MelonLoader;
 using MuseDashMirror.UICreate;
 using static MuseDashMirror.SceneInfo;
+using static MuseDashMirror.UICreate.Fonts;
 
 namespace MuseDashMirror;
 
@@ -12,6 +13,12 @@ public class Main : MelonMod
     public override void OnInitializeMelon()
     {
         harmony = HarmonyInstance;
+        LoadFonts();
+    }
+
+    public override void OnDeinitializeMelon()
+    {
+        UnloadFonts();
     }
 
     public override void OnSceneWasLoaded(int buildIndex, string sceneName)
