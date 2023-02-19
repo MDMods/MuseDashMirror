@@ -145,8 +145,6 @@ In UICreate namespace there are classes for supporting easier ui create
 
 * Fonts class support 4 default fonts: **SnapsTaste, Normal, SourceHanSansCN-Heavy, MiniSimpleSuperThickBlack**
 
-  * If you want to use the default font, invoke `` LoadFonts()`` before you use the font. Then after use invoke ``UnloadFonts()``.
-  
 * Colors class support 5 default colors: **Blue, Silver, ToggleTextColor, ToggleCheckBoxColor, ToggleCheckMarkColor**
 
 * CanvasCreate class has ``CreateCanvas()``method, which has 4 overloads. 
