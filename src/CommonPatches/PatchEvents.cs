@@ -3,6 +3,9 @@ using Assets.Scripts.UI.Panels;
 
 namespace MuseDashMirror.CommonPatches;
 
+/// <summary>
+/// Common events for patching
+/// </summary>
 public static class PatchEvents
 {
     /// <summary>

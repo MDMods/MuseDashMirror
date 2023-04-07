@@ -5,6 +5,9 @@ using static MuseDashMirror.Utils;
 
 namespace MuseDashMirror.CommonPatches;
 
+/// <summary>
+/// Common manual patches
+/// </summary>
 public static class ManualPatches
 {
     /// <summary>

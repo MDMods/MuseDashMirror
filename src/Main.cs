@@ -6,60 +6,75 @@ using static MuseDashMirror.UICreate.Fonts;
 
 namespace MuseDashMirror;
 
+/// <summary>
+/// Main class inherit from MelonMod
+/// </summary>
 public class Main : MelonMod
 {
     internal static HarmonyLib.Harmony harmony { get; set; }
 
+    /// <summary>
+    /// Load Fonts
+    /// </summary>
     public override void OnInitializeMelon()
     {
         harmony = HarmonyInstance;
         LoadFonts();
     }
 
+    /// <summary>
+    /// Unload Fonts
+    /// </summary>
     public override void OnDeinitializeMelon()
     {
         UnloadFonts();
     }
 
+    /// <summary>
+    /// Scene load event
+    /// </summary>
     public override void OnSceneWasLoaded(int buildIndex, string sceneName)
     {
         switch (sceneName)
         {
             case "GameMain":
-                isGameScene = true;
+                IsGameScene = true;
                 EnterGameSceneInvoke();
                 break;
 
             case "UISystem_PC":
-                isMainScene = true;
+                IsMainScene = true;
                 EnterMainSceneInvoke();
                 break;
 
             case "Loading":
-                isLoadingScene = true;
+                IsLoadingScene = true;
                 EnterLoadingSceneInvoke();
                 break;
         }
     }
 
+    /// <summary>
+    /// Scene unload event
+    /// </summary>
     public override void OnSceneWasUnloaded(int buildIndex, string sceneName)
     {
         switch (sceneName)
         {
             case "GameMain":
-                isGameScene = false;
+                IsGameScene = false;
                 ExitGameSceneInvoke();
                 ToggleCreate.Reset();
                 BattleComponent.Reset();
                 break;
 
             case "UISystem_PC":
-                isMainScene = false;
+                IsMainScene = false;
                 ExitMainSceneInvoke();
                 break;
 
             case "Loading":
-                isLoadingScene = false;
+                IsLoadingScene = false;
                 ExitLoadingSceneInvoke();
                 break;
         }
