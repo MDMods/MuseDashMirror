@@ -6,6 +6,9 @@ using Type = System.Type;
 
 namespace MuseDashMirror;
 
+/// <summary>
+/// Extension methods and patch methods
+/// </summary>
 public static class Utils
 {
     /// <summary>

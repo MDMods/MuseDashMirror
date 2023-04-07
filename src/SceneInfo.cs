@@ -2,12 +2,17 @@
 
 namespace MuseDashMirror;
 
+/// <summary>
+/// Scene load/unload events
+/// </summary>
 public static class SceneInfo
 {
     #region MainScene
 
-    internal static bool isMainScene { get; set; }
-    public static bool IsMainScene => isMainScene;
+    /// <summary>
+    /// Is in the Main Scene
+    /// </summary>
+    public static bool IsMainScene { get; internal set; }
 
     /// <summary>
     /// An event to invoke methods when entering main scene
@@ -27,8 +32,10 @@ public static class SceneInfo
 
     #region GameScene
 
-    internal static bool isGameScene { get; set; }
-    public static bool IsGameScene => isGameScene;
+    /// <summary>
+    /// Is in the Game Scene
+    /// </summary>
+    public static bool IsGameScene { get; internal set; }
 
     /// <summary>
     /// An event to invoke methods when entering game scene
@@ -48,8 +55,10 @@ public static class SceneInfo
 
     #region LoadingScene
 
-    internal static bool isLoadingScene { get; set; }
-    public static bool IsLoadingScene => isLoadingScene;
+    /// <summary>
+    /// Is in the loading scene
+    /// </summary>
+    public static bool IsLoadingScene { get; internal set; }
 
     /// <summary>
     /// An event to invoke methods when entering loading scene

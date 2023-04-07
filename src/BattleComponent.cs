@@ -8,6 +8,9 @@ using GameLogic;
 
 namespace MuseDashMirror;
 
+/// <summary>
+/// Data inside game scene for battle
+/// </summary>
 public static class BattleComponent
 {
     /// <summary>

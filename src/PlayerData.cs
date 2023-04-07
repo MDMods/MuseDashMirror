@@ -5,6 +5,9 @@ using Il2CppSystem.Collections.Generic;
 
 namespace MuseDashMirror;
 
+/// <summary>
+/// Player data
+/// </summary>
 public static class PlayerData
 {
     /// <summary>
@@ -52,8 +55,14 @@ public static class PlayerData
     /// </summary>
     public static string SelectedCharacterName => Singleton<ConfigManager>.instance.GetJson("character", true)[SelectedCharacterIndex]["cosName"].ToString();
 
+    /// <summary>
+    /// Offset
+    /// </summary>
     public static int Offset => DataHelper.offset;
 
+    /// <summary>
+    /// Auto fever
+    /// </summary>
     public static bool IsAutoFever => DataHelper.isAutoFever;
 
     /// <summary>

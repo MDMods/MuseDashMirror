@@ -8,9 +8,9 @@ internal static class StageBattleComponentPatch
     private static void Postfix(StageBattleComponent __instance)
     {
         BattleComponent.GameStartEventInvoke();
-        foreach (var musicdata in __instance.GetMusicData())
+        foreach (var musicData in __instance.GetMusicData())
         {
-            BattleComponent.MusicDatas.Add(musicdata);
+            BattleComponent.MusicDatas.Add(musicData);
         }
     }
 }
