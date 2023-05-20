@@ -3,6 +3,9 @@ using UnityEngine.AddressableAssets;
 
 namespace MuseDashMirror.UICreate;
 
+/// <summary>
+/// Default fonts
+/// </summary>
 public static class Fonts
 {
     /// <summary>

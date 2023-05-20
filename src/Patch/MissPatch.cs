@@ -7,7 +7,7 @@ using static MuseDashMirror.BattleComponent;
 namespace MuseDashMirror.Patch;
 
 [HarmonyPatch(typeof(GameMissPlay), "MissCube")]
-internal static class GameMissPlayPatch
+internal static class MissPatch
 {
     private static void Postfix(int idx, decimal currentTick)
     {
@@ -85,6 +85,8 @@ internal static class GameMissPlayPatch
                 NormalMissNum++;
                 TotalMissNum++;
             }
+            
+            MissCubeEventInvoke();
         }
     }
 }

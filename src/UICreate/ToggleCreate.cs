@@ -8,8 +8,14 @@ using Object = UnityEngine.Object;
 
 namespace MuseDashMirror.UICreate;
 
+/// <summary>
+/// Methods for creating toggle
+/// </summary>
 public static class ToggleCreate
 {
+    /// <summary>
+    /// Invoked when toggle is clicked
+    /// </summary>
     public static event Action OnToggleClick;
 
     private static void OnToggleClickInvoke(bool val) => OnToggleClick?.Invoke();

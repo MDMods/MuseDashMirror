@@ -3,6 +3,9 @@ using UnityEngine.UI;
 
 namespace MuseDashMirror.UICreate;
 
+/// <summary>
+/// Methods for creating text GameObject
+/// </summary>
 public static class TextGameObjectCreate
 {
     /// <summary>
