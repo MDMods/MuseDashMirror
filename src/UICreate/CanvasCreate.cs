@@ -3,6 +3,9 @@ using UnityEngine.UI;
 
 namespace MuseDashMirror.UICreate;
 
+/// <summary>
+/// Methods for creating canvas
+/// </summary>
 public static class CanvasCreate
 {
     /// <summary>

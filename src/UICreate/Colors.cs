@@ -2,6 +2,9 @@
 
 namespace MuseDashMirror.UICreate;
 
+/// <summary>
+/// Default colors
+/// </summary>
 public static class Colors
 {
     /// <summary>
