@@ -6,5 +6,5 @@ internal static class MelonBuildInfo
 
     public const string Author = "lxy";
 
-    public const string Version = "1.1.6";
+    public const string Version = "1.1.7";
 }
