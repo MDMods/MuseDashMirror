@@ -13,12 +13,6 @@ namespace MuseDashMirror.UICreate;
 /// </summary>
 public static class ToggleCreate
 {
-    /// <summary>
-    /// Invoked when toggle is clicked
-    /// </summary>
-    public static event Action OnToggleClick;
-
-    private static void OnToggleClickInvoke(bool val) => OnToggleClick?.Invoke();
 
     #region General Toggle Create
 
@@ -42,7 +36,6 @@ public static class ToggleCreate
         var enabled = *isEnabled;
         var toggleComp = toggle.GetComponent<Toggle>();
         toggleComp.onValueChanged.AddListener((Action<bool>)((val) => *isEnabled = val));
-        toggleComp.onValueChanged.AddListener((UnityAction<bool>)OnToggleClickInvoke);
         toggleComp.group = null;
         toggleComp.SetIsOnWithoutNotify(enabled);
 
@@ -134,7 +127,6 @@ public static class ToggleCreate
         var enabled = *isEnabled;
         var toggleComp = toggle.GetComponent<Toggle>();
         toggleComp.onValueChanged.AddListener((Action<bool>)((val) => *isEnabled = val));
-        toggleComp.onValueChanged.AddListener((UnityAction<bool>)OnToggleClickInvoke);
         toggleComp.group = null;
         toggleComp.SetIsOnWithoutNotify(enabled);
 
@@ -226,7 +218,6 @@ public static class ToggleCreate
         var enabled = *isEnabled;
         var toggleComp = toggle.GetComponent<Toggle>();
         toggleComp.onValueChanged.AddListener((Action<bool>)((val) => *isEnabled = val));
-        toggleComp.onValueChanged.AddListener((UnityAction<bool>)OnToggleClickInvoke);
         toggleComp.group = null;
         toggleComp.SetIsOnWithoutNotify(enabled);
 
