@@ -1,16 +1,19 @@
-﻿using FormulaBase;
+﻿using Il2CppFormulaBase;
 
 namespace MuseDashMirror.Patch;
 
-[HarmonyPatch(typeof(StageBattleComponent), "GameStart")]
+[HarmonyPatch(typeof(StageBattleComponent), nameof(StageBattleComponent.GameStart))]
 internal static class StageBattleComponentPatch
 {
     private static void Postfix(StageBattleComponent __instance)
     {
         BattleComponent.GameStartEventInvoke();
-        foreach (var musicData in __instance.GetMusicData())
+        Task.Run(() =>
         {
-            BattleComponent.MusicDatas.Add(musicData);
-        }
+            foreach (var musicData in __instance.GetMusicData())
+            {
+                BattleComponent.MusicDataList.Add(musicData);
+            }
+        });
     }
 }

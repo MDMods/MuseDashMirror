@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Assets.Scripts.PeroTools.Nice.Events;
+﻿/*using Il2CppAssets.Scripts.PeroTools.Nice.Events;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
 
@@ -383,4 +380,5 @@ public static class ToggleCreate
     }
 
     #endregion PnlMenu Toggle Create
-}
+}*/
+

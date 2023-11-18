@@ -1,29 +1,24 @@
-﻿global using HarmonyLib;
-using MelonLoader;
-using MuseDashMirror.UICreate;
-using static MuseDashMirror.SceneInfo;
+﻿using MelonLoader;
 using static MuseDashMirror.UICreate.Fonts;
+using static MuseDashMirror.AttributeProcessor;
 
 namespace MuseDashMirror;
 
 /// <summary>
-/// Main class inherit from MelonMod
+///     Main class inherit from MelonMod
 /// </summary>
 public class Main : MelonMod
 {
-    internal static HarmonyLib.Harmony harmony { get; set; }
-
     /// <summary>
-    /// Load Fonts
+    ///     Load Fonts
     /// </summary>
     public override void OnInitializeMelon()
     {
-        harmony = HarmonyInstance;
         LoadFonts();
     }
 
     /// <summary>
-    /// Unload Fonts
+    ///     Unload Fonts
     /// </summary>
     public override void OnDeinitializeMelon()
     {
@@ -31,7 +26,7 @@ public class Main : MelonMod
     }
 
     /// <summary>
-    /// Scene load event
+    ///     Scene load event
     /// </summary>
     public override void OnSceneWasLoaded(int buildIndex, string sceneName)
     {
@@ -39,23 +34,27 @@ public class Main : MelonMod
         {
             case "GameMain":
                 IsGameScene = true;
-                EnterGameSceneInvoke();
+                OnEnterGameSceneInvoke(buildIndex, sceneName);
                 break;
 
             case "UISystem_PC":
                 IsMainScene = true;
-                EnterMainSceneInvoke();
+                OnEnterMainSceneInvoke(buildIndex, sceneName);
                 break;
 
             case "Loading":
                 IsLoadingScene = true;
-                EnterLoadingSceneInvoke();
+                OnEnterLoadingSceneInvoke(buildIndex, sceneName);
+                break;
+
+            case "Welcome":
+                ProcessAttributeFromAssemblies();
                 break;
         }
     }
 
     /// <summary>
-    /// Scene unload event
+    ///     Scene unload event
     /// </summary>
     public override void OnSceneWasUnloaded(int buildIndex, string sceneName)
     {
@@ -63,19 +62,19 @@ public class Main : MelonMod
         {
             case "GameMain":
                 IsGameScene = false;
-                ExitGameSceneInvoke();
-                ToggleCreate.Reset();
+                OnExitGameSceneInvoke(buildIndex, sceneName);
+                //ToggleCreate.Reset();
                 BattleComponent.Reset();
                 break;
 
             case "UISystem_PC":
                 IsMainScene = false;
-                ExitMainSceneInvoke();
+                OnExitMainSceneInvoke(buildIndex, sceneName);
                 break;
 
             case "Loading":
                 IsLoadingScene = false;
-                ExitLoadingSceneInvoke();
+                OnExitLoadingSceneInvoke(buildIndex, sceneName);
                 break;
         }
     }

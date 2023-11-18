@@ -1,35 +1,34 @@
-﻿using UnityEngine;
-using UnityEngine.AddressableAssets;
+﻿using UnityEngine.AddressableAssets;
 
 namespace MuseDashMirror.UICreate;
 
 /// <summary>
-/// Default fonts
+///     Default fonts
 /// </summary>
 public static class Fonts
 {
     /// <summary>
-    /// Snaps Taste font
+    ///     Snaps Taste font
     /// </summary>
-    public static Font SnapsTasteFont { get; set; }
+    public static Font? SnapsTasteFont { get; set; }
 
     /// <summary>
-    /// Normal font
+    ///     Normal font
     /// </summary>
-    public static Font NormalFont { get; set; }
+    public static Font? NormalFont { get; set; }
 
     /// <summary>
-    /// SourceHanSansCN-Heavy Font
+    ///     SourceHanSansCN-Heavy Font
     /// </summary>
-    public static Font SourceHanSansCN_HeavyFont { get; set; }
+    public static Font? SourceHanSansCnHeavyFont { get; set; }
 
     /// <summary>
-    /// MiniSimpleSuperThickBlack Font
+    ///     MiniSimpleSuperThickBlack Font
     /// </summary>
-    public static Font MiniSimpleSuperThickBlackFont { get; set; }
+    public static Font? MiniSimpleSuperThickBlackFont { get; set; }
 
     /// <summary>
-    /// Load 4 default fonts
+    ///     Load 4 default fonts
     /// </summary>
     public static void LoadFonts()
     {
@@ -38,13 +37,13 @@ public static class Fonts
         var normal = Addressables.LoadAssetAsync<Font>("Normal");
         NormalFont = normal.WaitForCompletion();
         var arial = Addressables.LoadAssetAsync<Font>("SourceHanSansCN-Heavy");
-        SourceHanSansCN_HeavyFont = arial.WaitForCompletion();
+        SourceHanSansCnHeavyFont = arial.WaitForCompletion();
         var arialbold = Addressables.LoadAssetAsync<Font>("MiniSimpleSuperThickBlack");
         MiniSimpleSuperThickBlackFont = arialbold.WaitForCompletion();
     }
 
     /// <summary>
-    /// Release memory after using 4 default fonts
+    ///     Release memory after using 4 default fonts
     /// </summary>
     public static void UnloadFonts()
     {
@@ -58,9 +57,9 @@ public static class Fonts
             Addressables.Release(NormalFont);
         }
 
-        if (SourceHanSansCN_HeavyFont != null)
+        if (SourceHanSansCnHeavyFont != null)
         {
-            Addressables.Release(SourceHanSansCN_HeavyFont);
+            Addressables.Release(SourceHanSansCnHeavyFont);
         }
 
         if (MiniSimpleSuperThickBlackFont != null)

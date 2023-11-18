@@ -1,10 +1,9 @@
-﻿using Assets.Scripts.UI.Panels;
-using MuseDashMirror.CommonPatches;
+﻿using Il2CppAssets.Scripts.UI.Panels;
 
 namespace MuseDashMirror.Patch;
 
-[HarmonyPatch(typeof(PnlMenu), "Awake")]
+[HarmonyPatch(typeof(PnlMenu), nameof(PnlMenu.Awake))]
 internal static class PnlMenuPatch
 {
-    private static void Postfix(PnlMenu __instance) => PatchEvents.PnlMenuEventInvoke(__instance);
+    private static void Postfix() => PnlMenuEventInvoke();
 }

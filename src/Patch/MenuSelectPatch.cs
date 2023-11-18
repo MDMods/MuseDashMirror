@@ -1,9 +1,7 @@
-﻿using MuseDashMirror.CommonPatches;
+﻿namespace MuseDashMirror.Patch;
 
-namespace MuseDashMirror.Patch;
-
-[HarmonyPatch(typeof(MenuSelect), "OnToggleChanged")]
+[HarmonyPatch(typeof(MenuSelect), nameof(MenuSelect.OnToggleChanged))]
 internal static class MenuSelectPatch
 {
-    private static void Postfix(int listIndex, int index, bool isOn) => PatchEvents.MenuSelectEventInvoke(listIndex, index, isOn);
+    private static void Postfix(int listIndex, int index, bool isOn) => MenuSelectEventInvoke(listIndex, index, isOn);
 }

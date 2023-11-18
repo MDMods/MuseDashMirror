@@ -1,78 +1,84 @@
-﻿using System;
+﻿using MuseDashMirror.EventArguments;
 
 namespace MuseDashMirror;
 
 /// <summary>
-/// Scene load/unload events
+///     Scene load/unload events
 /// </summary>
 public static class SceneInfo
 {
     #region MainScene
 
     /// <summary>
-    /// Is in the Main Scene
+    ///     Is in the Main Scene
     /// </summary>
     public static bool IsMainScene { get; internal set; }
 
     /// <summary>
-    /// An event to invoke methods when entering main scene
+    ///     An event to invoke methods when entering main scene
     /// </summary>
-    public static event Action EnterMainScene;
+    public static event EventHandler<SceneEventArgs>? OnEnterMainScene;
 
     /// <summary>
-    /// An event to invoke methods when exiting main scene
+    ///     An event to invoke methods when exiting main scene
     /// </summary>
-    public static event Action ExitMainScene;
+    public static event EventHandler<SceneEventArgs>? OnExitMainScene;
 
-    internal static void EnterMainSceneInvoke() => EnterMainScene?.Invoke();
+    internal static void OnEnterMainSceneInvoke(int buildIndex, string sceneName) =>
+        OnEnterMainScene?.Invoke(null, new SceneEventArgs(buildIndex, sceneName));
 
-    internal static void ExitMainSceneInvoke() => ExitMainScene?.Invoke();
+    internal static void OnExitMainSceneInvoke(int buildIndex, string sceneName) =>
+        OnExitMainScene?.Invoke(null, new SceneEventArgs(buildIndex, sceneName));
 
     #endregion MainScene
 
     #region GameScene
 
     /// <summary>
-    /// Is in the Game Scene
+    ///     Is in the Game Scene
     /// </summary>
     public static bool IsGameScene { get; internal set; }
 
     /// <summary>
-    /// An event to invoke methods when entering game scene
+    ///     An event to invoke methods when entering game scene
     /// </summary>
-    public static event Action EnterGameScene;
+    public static event EventHandler<SceneEventArgs>? OnEnterGameScene;
 
     /// <summary>
-    /// An event to invoke methods when exiting game scene
+    ///     An event to invoke methods when exiting game scene
     /// </summary>
-    public static event Action ExitGameScene;
+    public static event EventHandler<SceneEventArgs>? OnExitGameScene;
 
-    internal static void EnterGameSceneInvoke() => EnterGameScene?.Invoke();
+    internal static void OnEnterGameSceneInvoke(int buildIndex, string sceneName) =>
+        OnEnterGameScene?.Invoke(null, new SceneEventArgs(buildIndex, sceneName));
 
-    internal static void ExitGameSceneInvoke() => ExitGameScene?.Invoke();
+    internal static void OnExitGameSceneInvoke(int buildIndex, string sceneName) =>
+        OnExitGameScene?.Invoke(null, new SceneEventArgs(buildIndex, sceneName));
 
     #endregion GameScene
 
     #region LoadingScene
 
     /// <summary>
-    /// Is in the loading scene
+    ///     Is in the loading scene
     /// </summary>
     public static bool IsLoadingScene { get; internal set; }
 
     /// <summary>
-    /// An event to invoke methods when entering loading scene
+    ///     An event to invoke methods when entering loading scene
     /// </summary>
-    public static event Action EnterLoadingScene;
+    public static event EventHandler<SceneEventArgs>? OnEnterLoadingScene;
 
     /// <summary>
-    /// An event to invoke methods when exiting loading scene
+    ///     An event to invoke methods when exiting loading scene
     /// </summary>
-    public static event Action ExitLoadingScene;
+    public static event EventHandler<SceneEventArgs>? OnExitLoadingScene;
 
-    internal static void EnterLoadingSceneInvoke() => EnterLoadingScene?.Invoke();
+    internal static void OnEnterLoadingSceneInvoke(int buildIndex, string sceneName) =>
+        OnEnterLoadingScene?.Invoke(null, new SceneEventArgs(buildIndex, sceneName));
 
-    internal static void ExitLoadingSceneInvoke() => ExitLoadingScene?.Invoke();
+    internal static void OnExitLoadingSceneInvoke(int buildIndex, string sceneName) =>
+        OnExitLoadingScene?.Invoke(null, new SceneEventArgs(buildIndex, sceneName));
 
     #endregion LoadingScene
 }
