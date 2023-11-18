@@ -1,10 +1,9 @@
-﻿using Assets.Scripts.UI.Specials;
-using MuseDashMirror.CommonPatches;
+﻿using Il2CppAssets.Scripts.UI.Specials;
 
 namespace MuseDashMirror.Patch;
 
-[HarmonyPatch(typeof(SwitchLanguages), "OnClick")]
+[HarmonyPatch(typeof(SwitchLanguages), nameof(SwitchLanguages.OnClick))]
 internal static class SwitchLanguagesPatch
 {
-    private static void Postfix() => PatchEvents.SwitchLanguagesEventInvoke();
+    private static void Postfix() => SwitchLanguagesEventInvoke();
 }

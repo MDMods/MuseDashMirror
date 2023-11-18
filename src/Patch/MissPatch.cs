@@ -1,12 +1,12 @@
-﻿using Assets.Scripts.GameCore.HostComponent;
-using Assets.Scripts.PeroTools.Commons;
-using FormulaBase;
-using GameLogic;
+﻿using Il2CppAssets.Scripts.GameCore.HostComponent;
+using Il2CppAssets.Scripts.PeroTools.Commons;
+using Il2CppFormulaBase;
+using Il2CppGameLogic;
 using static MuseDashMirror.BattleComponent;
 
 namespace MuseDashMirror.Patch;
 
-[HarmonyPatch(typeof(GameMissPlay), "MissCube")]
+[HarmonyPatch(typeof(GameMissPlay), nameof(GameMissPlay.MissCube))]
 internal static class MissPatch
 {
     private static void Postfix(int idx, decimal currentTick)
@@ -85,7 +85,7 @@ internal static class MissPatch
                 NormalMissNum++;
                 TotalMissNum++;
             }
-            
+
             MissCubeEventInvoke();
         }
     }

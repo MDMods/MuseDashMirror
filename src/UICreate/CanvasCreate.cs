@@ -1,15 +1,14 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine.UI;
 
 namespace MuseDashMirror.UICreate;
 
 /// <summary>
-/// Methods for creating canvas
+///     Methods for creating canvas
 /// </summary>
 public static class CanvasCreate
 {
     /// <summary>
-    /// Create a screenspace overlay canvas
+    ///     Create a screenspace overlay canvas
     /// </summary>
     public static GameObject CreateCanvas(string canvasName)
     {
@@ -22,7 +21,7 @@ public static class CanvasCreate
     }
 
     /// <summary>
-    /// Create a screenspace camera canvas with 1920*1080 reference resolution
+    ///     Create a screenspace camera canvas with 1920*1080 reference resolution
     /// </summary>
     public static GameObject CreateCanvas(string canvasName, string cameraName)
     {
@@ -39,7 +38,7 @@ public static class CanvasCreate
     }
 
     /// <summary>
-    /// Create a screenspace camera canvas with specified parent using name
+    ///     Create a screenspace camera canvas with specified parent using name
     /// </summary>
     public static GameObject CreateCanvas(string canvasName, string cameraName, string parentName)
     {
@@ -50,7 +49,7 @@ public static class CanvasCreate
     }
 
     /// <summary>
-    /// Create a screenspace camera canvas with specified parent
+    ///     Create a screenspace camera canvas with specified parent
     /// </summary>
     public static GameObject CreateCanvas(string canvasName, string cameraName, GameObject parent)
     {
