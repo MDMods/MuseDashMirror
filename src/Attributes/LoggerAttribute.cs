@@ -15,5 +15,5 @@ namespace MuseDashMirror.Attributes;
 ///         </code>
 ///     </example>
 /// </summary>
-[AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+[AttributeUsage(AttributeTargets.Class)]
 public class LoggerAttribute : Attribute;
