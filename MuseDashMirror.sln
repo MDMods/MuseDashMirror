@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuseDashMirror", "src\MuseDashMirror.csproj", "{6DF5EC88-4A30-4DE3-A1BC-DF2C5593E6AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuseDashMirror.SourceGenerators", "MuseDashMirror.SourceGenerators\MuseDashMirror.SourceGenerators.csproj", "{3FC6E351-C5D1-49C9-A992-B313C3565256}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{6DF5EC88-4A30-4DE3-A1BC-DF2C5593E6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DF5EC88-4A30-4DE3-A1BC-DF2C5593E6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DF5EC88-4A30-4DE3-A1BC-DF2C5593E6AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FC6E351-C5D1-49C9-A992-B313C3565256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FC6E351-C5D1-49C9-A992-B313C3565256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FC6E351-C5D1-49C9-A992-B313C3565256}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FC6E351-C5D1-49C9-A992-B313C3565256}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

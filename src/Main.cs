@@ -1,6 +1,5 @@
 ﻿using MelonLoader;
 using static MuseDashMirror.UICreate.Fonts;
-using static MuseDashMirror.AttributeProcessor;
 
 namespace MuseDashMirror;
 
@@ -45,10 +44,6 @@ public class Main : MelonMod
             case "Loading":
                 IsLoadingScene = true;
                 OnEnterLoadingSceneInvoke(buildIndex, sceneName);
-                break;
-
-            case "Welcome":
-                ProcessAttributeFromAssemblies();
                 break;
         }
     }
