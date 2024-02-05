@@ -1,6 +1,4 @@
-﻿using UnityEngine.UI;
-
-namespace MuseDashMirror.UICreate;
+﻿namespace MuseDashMirror.UICreate;
 
 /// <summary>
 ///     Methods for creating text GameObject

@@ -1,4 +1,3 @@
-using Il2CppAssets.Scripts.PeroTools.Nice.Interface;
 using Object = Il2CppSystem.Object;
 
 namespace MuseDashMirror.Extensions;

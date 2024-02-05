@@ -1,5 +1,4 @@
 using System.Reflection;
-using Il2CppAssets.Scripts.UI.Specials;
 
 namespace MuseDashMirror.Attributes.EventAttributes;
 

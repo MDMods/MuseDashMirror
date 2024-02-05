@@ -1,5 +1,4 @@
-﻿using Il2CppAssets.Scripts.Database;
-using static MuseDashMirror.BattleComponent;
+﻿using static MuseDashMirror.BattleComponent;
 
 namespace MuseDashMirror.Patch;
 

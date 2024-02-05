@@ -1,8 +1,4 @@
-﻿using Il2CppAssets.Scripts.Database;
-using Il2CppAssets.Scripts.PeroTools.Commons;
-using Il2CppAssets.Scripts.PeroTools.Managers;
-
-namespace MuseDashMirror;
+﻿namespace MuseDashMirror;
 
 /// <summary>
 ///     Player data

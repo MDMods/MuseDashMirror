@@ -1,11 +1,10 @@
 using System.Reflection;
-using Il2CppAssets.Scripts.UI.Panels;
 
 namespace MuseDashMirror.Attributes.EventAttributes;
 
 /// <summary>
 ///     <para>
-///         Add this attribute to a method to make it run after <see cref="PnlStage.Awake" /><br />
+///         Add this attribute to a method to make it run after <see cref="PnlMenu.Awake" /><br />
 ///         Method can be any accessibility level but must be static
 ///     </para>
 ///     <example>
@@ -16,14 +15,14 @@ namespace MuseDashMirror.Attributes.EventAttributes;
 ///     </example>
 /// </summary>
 [AttributeUsage(AttributeTargets.Method)]
-public class PnlStageEventAttribute : Attribute, IEventAttribute
+public class PnlMenuEventAttribute : Attribute, IEventAttribute
 {
     /// <summary>
-    ///     Register method to <see cref="PnlStageEvent" />
+    ///     Register the method to <see cref="PnlMenuEvent" />
     /// </summary>
     /// <param name="method"></param>
     public void Register(MethodInfo method)
     {
-        PnlStageEvent += (EventHandler)Delegate.CreateDelegate(typeof(EventHandler), method);
+        PnlMenuEvent += (EventHandler)Delegate.CreateDelegate(typeof(EventHandler), method);
     }
 }
