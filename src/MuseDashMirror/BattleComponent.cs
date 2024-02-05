@@ -1,4 +1,10 @@
-﻿namespace MuseDashMirror;
+﻿using Il2CppAssets.Scripts.Database;
+using Il2CppAssets.Scripts.GameCore.HostComponent;
+using Il2CppAssets.Scripts.PeroTools.Commons;
+using Il2CppFormulaBase;
+using Il2CppGameLogic;
+
+namespace MuseDashMirror;
 
 /// <summary>
 ///     Data inside game scene for battle
@@ -20,12 +26,12 @@ public static class BattleComponent
     /// <summary>
     ///     Chart name, only changed when entering the chart
     /// </summary>
-    public static string? ChartName { get; internal set; }
+    public static string ChartName { get; internal set; }
 
     /// <summary>
     ///     Level of the chart, only changed when entering the chart
     /// </summary>
-    public static string? ChartLevel { get; internal set; }
+    public static string ChartLevel { get; internal set; }
 
     /// <summary>
     ///     Difficulty of the chart (easy, hard, master, hidden, touhou), only changed when entering the chart
@@ -35,12 +41,12 @@ public static class BattleComponent
     /// <summary>
     ///     Music author, only changed when entering the chart
     /// </summary>
-    public static string? MusicAuthor { get; internal set; }
+    public static string MusicAuthor { get; internal set; }
 
     /// <summary>
     ///     Charter, only changed when entering the chart
     /// </summary>
-    public static string? Charter { get; internal set; }
+    public static string Charter { get; internal set; }
 
     /// <summary>
     ///     The name for album package
@@ -69,22 +75,22 @@ public static class BattleComponent
     /// <summary>
     ///     An event to invoke methods when game starts
     /// </summary>
-    public static event Action? GameStartEvent;
+    public static event Action GameStartEvent;
 
     /// <summary>
     ///     An event to invoke methods on victory screen
     /// </summary>
-    public static event Action? OnVictoryEvent;
+    public static event Action OnVictoryEvent;
 
     /// <summary>
     ///     An event to invoke methods when adding score
     /// </summary>
-    public static event Action? AddScoreEvent;
+    public static event Action AddScoreEvent;
 
     /// <summary>
     ///     An event to invoke methods when missing notes
     /// </summary>
-    public static event Action? MissCubeEvent;
+    public static event Action MissCubeEvent;
 
     internal static void GameStartEventInvoke() => GameStartEvent?.Invoke();
 

@@ -1,4 +1,6 @@
-﻿namespace MuseDashMirror.Patch;
+﻿using Il2CppAssets.Scripts.GameCore.HostComponent;
+
+namespace MuseDashMirror.Patch;
 
 [HarmonyPatch(typeof(TaskStageTarget), nameof(TaskStageTarget.AddScore))]
 internal static class TaskStageTargetPatch

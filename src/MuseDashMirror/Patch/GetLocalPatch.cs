@@ -1,4 +1,6 @@
-﻿namespace MuseDashMirror.Patch;
+﻿using Il2CppAssets.Scripts.Database;
+
+namespace MuseDashMirror.Patch;
 
 [HarmonyPatch(typeof(MusicInfo), nameof(MusicInfo.GetLocal))]
 internal static class GetLocalPatch

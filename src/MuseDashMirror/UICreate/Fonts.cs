@@ -1,4 +1,6 @@
-﻿namespace MuseDashMirror.UICreate;
+﻿using UnityEngine.AddressableAssets;
+
+namespace MuseDashMirror.UICreate;
 
 /// <summary>
 ///     Default fonts
@@ -8,22 +10,22 @@ public static class Fonts
     /// <summary>
     ///     Snaps Taste font
     /// </summary>
-    public static Font? SnapsTasteFont { get; set; }
+    public static Font SnapsTasteFont { get; set; }
 
     /// <summary>
     ///     Normal font
     /// </summary>
-    public static Font? NormalFont { get; set; }
+    public static Font NormalFont { get; set; }
 
     /// <summary>
     ///     SourceHanSansCN-Heavy Font
     /// </summary>
-    public static Font? SourceHanSansCnHeavyFont { get; set; }
+    public static Font SourceHanSansCnHeavyFont { get; set; }
 
     /// <summary>
     ///     MiniSimpleSuperThickBlack Font
     /// </summary>
-    public static Font? MiniSimpleSuperThickBlackFont { get; set; }
+    public static Font MiniSimpleSuperThickBlackFont { get; set; }
 
     /// <summary>
     ///     Load 4 default fonts
