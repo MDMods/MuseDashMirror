@@ -1,24 +1,24 @@
-﻿/*using Il2CppAssets.Scripts.PeroTools.Nice.Events;
-using UnityEngine;
+﻿using Il2CppAssets.Scripts.PeroTools.Nice.Events;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
 
 namespace MuseDashMirror.UICreate;
 
 /// <summary>
-/// Methods for creating toggle
+///     Methods for creating toggle
 /// </summary>
 public static class ToggleCreate
 {
-
     #region General Toggle Create
 
     /// <summary>
-    /// Create general toggle with specific parent using name
+    ///     Create general toggle with specific parent using name
     /// </summary>
     public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName)
     {
-        var toggle = Object.Instantiate(GameObject.Find("Forward").transform.Find("PnlVolume").Find("LogoSetting").Find("Toggles").Find("TglOn").gameObject, GameObject.Find(parentName).transform);
+        var toggle = Object.Instantiate(
+            GameObject.Find("Forward").transform.Find("PnlVolume").Find("LogoSetting").Find("Toggles").Find("TglOn").gameObject,
+            GameObject.Find(parentName).transform);
         toggle.name = name;
 
         var txt = toggle.transform.Find("Txt").GetComponent<Text>();
@@ -32,7 +32,7 @@ public static class ToggleCreate
 
         var enabled = *isEnabled;
         var toggleComp = toggle.GetComponent<Toggle>();
-        toggleComp.onValueChanged.AddListener((Action<bool>)((val) => *isEnabled = val));
+        toggleComp.onValueChanged.AddListener((Action<bool>)(val => *isEnabled = val));
         toggleComp.group = null;
         toggleComp.SetIsOnWithoutNotify(enabled);
 
@@ -50,9 +50,10 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent using name, with specified toggle group
+    ///     Create general toggle with specific parent using name, with specified toggle group
     /// </summary>
-    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName, ToggleGroup toggleGroup)
+    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName,
+        ToggleGroup toggleGroup)
     {
         var toggle = CreateToggle(name, position, isEnabled, text, parentName);
         toggle.GetComponent<Toggle>().group = toggleGroup;
@@ -60,9 +61,10 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent using name, with custom font size and text color
+    ///     Create general toggle with specific parent using name, with custom font size and text color
     /// </summary>
-    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName, int fontSize, Color textColor)
+    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName, int fontSize,
+        Color textColor)
     {
         var toggle = CreateToggle(name, position, isEnabled, text, parentName);
         var txt = toggle.transform.Find("Txt").GetComponent<Text>();
@@ -72,9 +74,10 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent using name, with specified toggle group, custom font size and text color
+    ///     Create general toggle with specific parent using name, with specified toggle group, custom font size and text color
     /// </summary>
-    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName, int fontSize, Color textColor, ToggleGroup toggleGroup)
+    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName, int fontSize,
+        Color textColor, ToggleGroup toggleGroup)
     {
         var toggle = CreateToggle(name, position, isEnabled, text, parentName, fontSize, textColor);
         toggle.GetComponent<Toggle>().group = toggleGroup;
@@ -82,9 +85,10 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent using name, with custom fontSize, text color, checkbox color and checkmark color
+    ///     Create general toggle with specific parent using name, with custom fontSize, text color, checkbox color and checkmark color
     /// </summary>
-    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName, int fontSize, Color textColor, Color checkBoxColor, Color checkMarkColor)
+    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName, int fontSize,
+        Color textColor, Color checkBoxColor, Color checkMarkColor)
     {
         var toggle = CreateToggle(name, position, isEnabled, text, parentName, fontSize, textColor);
         var checkBox = toggle.transform.Find("Background").GetComponent<Image>();
@@ -95,9 +99,10 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent using name, with custom fontSize, text color, checkbox color, checkmark color and toggle group
+    ///     Create general toggle with specific parent using name, with custom fontSize, text color, checkbox color, checkmark color and toggle group
     /// </summary>
-    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName, int fontSize, Color textColor, Color checkBoxColor, Color checkMarkColor, ToggleGroup toggleGroup)
+    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, string parentName, int fontSize,
+        Color textColor, Color checkBoxColor, Color checkMarkColor, ToggleGroup toggleGroup)
     {
         var toggle = CreateToggle(name, position, isEnabled, text, parentName, fontSize, textColor, checkBoxColor, checkMarkColor);
         toggle.GetComponent<Toggle>().group = toggleGroup;
@@ -105,11 +110,13 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent
+    ///     Create general toggle with specific parent
     /// </summary>
     public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent)
     {
-        var toggle = Object.Instantiate(GameObject.Find("Forward").transform.Find("PnlVolume").Find("LogoSetting").Find("Toggles").Find("TglOn").gameObject, parent.transform);
+        var toggle = Object.Instantiate(
+            GameObject.Find("Forward").transform.Find("PnlVolume").Find("LogoSetting").Find("Toggles").Find("TglOn").gameObject,
+            parent.transform);
         toggle.name = name;
 
         var txt = toggle.transform.Find("Txt").GetComponent<Text>();
@@ -123,7 +130,7 @@ public static class ToggleCreate
 
         var enabled = *isEnabled;
         var toggleComp = toggle.GetComponent<Toggle>();
-        toggleComp.onValueChanged.AddListener((Action<bool>)((val) => *isEnabled = val));
+        toggleComp.onValueChanged.AddListener((Action<bool>)(val => *isEnabled = val));
         toggleComp.group = null;
         toggleComp.SetIsOnWithoutNotify(enabled);
 
@@ -141,9 +148,10 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent, with specified toggle group
+    ///     Create general toggle with specific parent, with specified toggle group
     /// </summary>
-    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent, ToggleGroup toggleGroup)
+    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent,
+        ToggleGroup toggleGroup)
     {
         var toggle = CreateToggle(name, position, isEnabled, text, parent);
         toggle.GetComponent<Toggle>().group = toggleGroup;
@@ -151,9 +159,10 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent, with custom font size and text color
+    ///     Create general toggle with specific parent, with custom font size and text color
     /// </summary>
-    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent, int fontSize, Color textColor)
+    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent, int fontSize,
+        Color textColor)
     {
         var toggle = CreateToggle(name, position, isEnabled, text, parent);
         var txt = toggle.transform.Find("Txt").GetComponent<Text>();
@@ -163,9 +172,10 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent, with specified toggle group, custom font size and text color
+    ///     Create general toggle with specific parent, with specified toggle group, custom font size and text color
     /// </summary>
-    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent, int fontSize, Color textColor, ToggleGroup toggleGroup)
+    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent, int fontSize,
+        Color textColor, ToggleGroup toggleGroup)
     {
         var toggle = CreateToggle(name, position, isEnabled, text, parent, fontSize, textColor);
         toggle.GetComponent<Toggle>().group = toggleGroup;
@@ -173,9 +183,10 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent, with custom fontSize, text color, checkbox color and checkmark color
+    ///     Create general toggle with specific parent, with custom fontSize, text color, checkbox color and checkmark color
     /// </summary>
-    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent, int fontSize, Color textColor, Color checkBoxColor, Color checkMarkColor)
+    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent, int fontSize,
+        Color textColor, Color checkBoxColor, Color checkMarkColor)
     {
         var toggle = CreateToggle(name, position, isEnabled, text, parent, fontSize, textColor);
         var checkBox = toggle.transform.Find("Background").GetComponent<Image>();
@@ -186,9 +197,10 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent, with custom fontSize, text color, checkbox color, checkmark color and toggle group
+    ///     Create general toggle with specific parent, with custom fontSize, text color, checkbox color, checkmark color and toggle group
     /// </summary>
-    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent, int fontSize, Color textColor, Color checkBoxColor, Color checkMarkColor, ToggleGroup toggleGroup)
+    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, GameObject parent, int fontSize,
+        Color textColor, Color checkBoxColor, Color checkMarkColor, ToggleGroup toggleGroup)
     {
         var toggle = CreateToggle(name, position, isEnabled, text, parent, fontSize, textColor, checkBoxColor, checkMarkColor);
         toggle.GetComponent<Toggle>().group = toggleGroup;
@@ -196,11 +208,12 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent transform
+    ///     Create general toggle with specific parent transform
     /// </summary>
     public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent)
     {
-        var toggle = Object.Instantiate(GameObject.Find("Forward").transform.Find("PnlVolume").Find("LogoSetting").Find("Toggles").Find("TglOn").gameObject, parent);
+        var toggle = Object.Instantiate(
+            GameObject.Find("Forward").transform.Find("PnlVolume").Find("LogoSetting").Find("Toggles").Find("TglOn").gameObject, parent);
         toggle.name = name;
 
         var txt = toggle.transform.Find("Txt").GetComponent<Text>();
@@ -214,7 +227,7 @@ public static class ToggleCreate
 
         var enabled = *isEnabled;
         var toggleComp = toggle.GetComponent<Toggle>();
-        toggleComp.onValueChanged.AddListener((Action<bool>)((val) => *isEnabled = val));
+        toggleComp.onValueChanged.AddListener((Action<bool>)(val => *isEnabled = val));
         toggleComp.group = null;
         toggleComp.SetIsOnWithoutNotify(enabled);
 
@@ -232,9 +245,10 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent transform, with specified toggle group
+    ///     Create general toggle with specific parent transform, with specified toggle group
     /// </summary>
-    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent, ToggleGroup toggleGroup)
+    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent,
+        ToggleGroup toggleGroup)
     {
         var toggle = CreateToggle(name, position, isEnabled, text, parent);
         toggle.GetComponent<Toggle>().group = toggleGroup;
@@ -242,9 +256,10 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent transform, with custom font size and text color
+    ///     Create general toggle with specific parent transform, with custom font size and text color
     /// </summary>
-    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent, int fontSize, Color textColor)
+    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent, int fontSize,
+        Color textColor)
     {
         var toggle = CreateToggle(name, position, isEnabled, text, parent);
         var txt = toggle.transform.Find("Txt").GetComponent<Text>();
@@ -254,9 +269,10 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent transform, with specified toggle group, custom font size and text color
+    ///     Create general toggle with specific parent transform, with specified toggle group, custom font size and text color
     /// </summary>
-    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent, int fontSize, Color textColor, ToggleGroup toggleGroup)
+    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent, int fontSize,
+        Color textColor, ToggleGroup toggleGroup)
     {
         var toggle = CreateToggle(name, position, isEnabled, text, parent, fontSize, textColor);
         toggle.GetComponent<Toggle>().group = toggleGroup;
@@ -264,9 +280,10 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent transform, with custom fontSize, text color, checkbox color and checkmark color
+    ///     Create general toggle with specific parent transform, with custom fontSize, text color, checkbox color and checkmark color
     /// </summary>
-    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent, int fontSize, Color textColor, Color checkBoxColor, Color checkMarkColor)
+    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent, int fontSize,
+        Color textColor, Color checkBoxColor, Color checkMarkColor)
     {
         var toggle = CreateToggle(name, position, isEnabled, text, parent, fontSize, textColor);
         var checkBox = toggle.transform.Find("Background").GetComponent<Image>();
@@ -277,9 +294,10 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create general toggle with specific parent transform, with custom fontSize, text color, checkbox color, checkmark color and toggle group
+    ///     Create general toggle with specific parent transform, with custom fontSize, text color, checkbox color, checkmark color and toggle group
     /// </summary>
-    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent, int fontSize, Color textColor, Color checkBoxColor, Color checkMarkColor, ToggleGroup toggleGroup)
+    public static unsafe GameObject CreateToggle(string name, Vector3 position, bool* isEnabled, string text, Transform parent, int fontSize,
+        Color textColor, Color checkBoxColor, Color checkMarkColor, ToggleGroup toggleGroup)
     {
         var toggle = CreateToggle(name, position, isEnabled, text, parent, fontSize, textColor, checkBoxColor, checkMarkColor);
         toggle.GetComponent<Toggle>().group = toggleGroup;
@@ -291,12 +309,17 @@ public static class ToggleCreate
     #region PnlMenu Toggle Create
 
     private static readonly List<string> Texts = new();
-    private static Vector3[] Positions = new[] { new Vector3(-6.8f, -2.55f, 100f), new Vector3(-6.8f, -3.35f, 100f), new Vector3(-6.8f, -4.15f, 100f), new Vector3(-6.8f, -4.95f, 100f) };
+
+    private static Vector3[] Positions =
+        { new(-6.8f, -2.55f, 100f), new(-6.8f, -3.35f, 100f), new(-6.8f, -4.15f, 100f), new(-6.8f, -4.95f, 100f) };
 
     internal static void Reset()
     {
         Texts.Clear();
-        Positions = new[] { new Vector3(-6.8f, -2.55f, 100f), new Vector3(-6.8f, -3.35f, 100f), new Vector3(-6.8f, -4.15f, 100f), new Vector3(-6.8f, -4.95f, 100f) };
+        Positions = new[]
+        {
+            new Vector3(-6.8f, -2.55f, 100f), new Vector3(-6.8f, -3.35f, 100f), new Vector3(-6.8f, -4.15f, 100f), new Vector3(-6.8f, -4.95f, 100f)
+        };
     }
 
     private static void SetPosition(string text)
@@ -323,7 +346,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create Toggle at PnlMenu with font size 40
+    ///     Create Toggle at PnlMenu with font size 40
     /// </summary>
     public static unsafe GameObject CreatePnlMenuToggle(string name, bool* isEnabled, string text)
     {
@@ -333,7 +356,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create Toggle at PnlMenu with toggle group
+    ///     Create Toggle at PnlMenu with toggle group
     /// </summary>
     public static unsafe GameObject CreatePnlMenuToggle(string name, bool* isEnabled, string text, string parentName, ToggleGroup toggleGroup)
     {
@@ -344,7 +367,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create Toggle at PnlMenu with toggle group
+    ///     Create Toggle at PnlMenu with toggle group
     /// </summary>
     public static unsafe GameObject CreatePnlMenuToggle(string name, bool* isEnabled, string text, GameObject parent, ToggleGroup toggleGroup)
     {
@@ -355,7 +378,7 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create Toggle at PnlMenu with custom font size and text color
+    ///     Create Toggle at PnlMenu with custom font size and text color
     /// </summary>
     public static unsafe GameObject CreatePnlMenuToggle(string name, bool* isEnabled, string text, int fontSize, Color textColor)
     {
@@ -367,9 +390,10 @@ public static class ToggleCreate
     }
 
     /// <summary>
-    /// Create Toggle at PnlMenu with custom fontSize, text color, checkbox color and checkmark color
+    ///     Create Toggle at PnlMenu with custom fontSize, text color, checkbox color and checkmark color
     /// </summary>
-    public static unsafe GameObject CreatePnlMenuToggle(string name, bool* isEnabled, string text, int fontSize, Color textColor, Color checkBoxColor, Color checkMarkColor)
+    public static unsafe GameObject CreatePnlMenuToggle(string name, bool* isEnabled, string text, int fontSize, Color textColor,
+        Color checkBoxColor, Color checkMarkColor)
     {
         var toggle = CreatePnlMenuToggle(name, isEnabled, text, fontSize, textColor);
         var checkBox = toggle.transform.Find("Background").GetComponent<Image>();
@@ -380,5 +404,4 @@ public static class ToggleCreate
     }
 
     #endregion PnlMenu Toggle Create
-}*/
-
+}

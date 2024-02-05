@@ -2,79 +2,72 @@
 
     <PropertyGroup>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
+        <Nullable>disable</Nullable>
         <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
-        <LangVersion>12</LangVersion>
+        <LangVersion>latest</LangVersion>
         <TargetFramework>net6.0</TargetFramework>
-    </PropertyGroup>
-
-    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-        <Optimize>true</Optimize>
+        <ReferencePath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash</ReferencePath>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        <DocumentationFile>bin\Debug\MuseDashMirror.xml</DocumentationFile>
     </PropertyGroup>
 
-    <Target Name="CopyDLLs" AfterTargets="Build">
-        <Copy SourceFiles="$(TargetDir)$(ProjectName).dll" DestinationFolder="..\..\..\..\MD\Mods"/>
-    </Target>
+    <ItemDefinitionGroup>
+        <PackageReference PrivateAssets="all" ExcludeAssets="runtime"/>
+        <Reference Private="false"/>
+    </ItemDefinitionGroup>
 
     <ItemGroup>
         <Reference Include="0Harmony">
-            <HintPath>..\..\..\..\MD\MelonLoader\net6\0Harmony.dll</HintPath>
-            <Private>False</Private>
+            <HintPath>$(ReferencePath)\MelonLoader\net6\0Harmony.dll</HintPath>
         </Reference>
         <Reference Include="Assembly-CSharp">
-            <HintPath>..\..\..\..\MD\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
-            <Private>False</Private>
+            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
         </Reference>
         <Reference Include="Assembly-CSharp-firstpass">
-            <HintPath>..\..\..\..\MD\MelonLoader\Il2CppAssemblies\Assembly-CSharp-firstpass.dll</HintPath>
-            <Private>False</Private>
+            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\Assembly-CSharp-firstpass.dll</HintPath>
         </Reference>
         <Reference Include="Il2CppInterop.Runtime">
-            <HintPath>..\..\..\..\MD\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath>
-            <Private>False</Private>
+            <HintPath>$(ReferencePath)\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath>
         </Reference>
         <Reference Include="Il2Cppmscorlib">
-            <HintPath>..\..\..\..\MD\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
-            <Private>False</Private>
+            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
         </Reference>
         <Reference Include="Il2CppNewtonsoft.Json">
-            <HintPath>..\..\..\..\MD\MelonLoader\Il2CppAssemblies\Il2CppNewtonsoft.Json.dll</HintPath>
-            <Private>False</Private>
+            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\Il2CppNewtonsoft.Json.dll</HintPath>
         </Reference>
         <Reference Include="Il2CppSirenix.Serialization">
-            <HintPath>..\..\..\..\MD\MelonLoader\Il2CppAssemblies\Il2CppSirenix.Serialization.dll</HintPath>
-            <Private>False</Private>
+            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\Il2CppSirenix.Serialization.dll</HintPath>
         </Reference>
         <Reference Include="MelonLoader">
-            <HintPath>..\..\..\..\MD\MelonLoader\net6\MelonLoader.dll</HintPath>
-            <Private>False</Private>
+            <HintPath>$(ReferencePath)\MelonLoader\net6\MelonLoader.dll</HintPath>
+        </Reference>
+        <Reference Include="Tomlet">
+            <HintPath>$(ReferencePath)\MelonLoader\net6\Tomlet.dll</HintPath>
         </Reference>
         <Reference Include="Unity.Addressables">
-            <HintPath>..\..\..\..\MD\MelonLoader\Il2CppAssemblies\Unity.Addressables.dll</HintPath>
-            <Private>False</Private>
+            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\Unity.Addressables.dll</HintPath>
         </Reference>
         <Reference Include="Unity.ResourceManager">
-            <HintPath>..\..\..\..\MD\MelonLoader\Il2CppAssemblies\Unity.ResourceManager.dll</HintPath>
-            <Private>False</Private>
+            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\Unity.ResourceManager.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.CoreModule">
-            <HintPath>..\..\..\..\MD\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
-            <Private>False</Private>
+            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.InputLegacyModule">
+            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\UnityEngine.InputLegacyModule.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.TextRenderingModule">
-            <HintPath>..\..\..\..\MD\MelonLoader\Il2CppAssemblies\UnityEngine.TextRenderingModule.dll</HintPath>
-            <Private>False</Private>
+            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\UnityEngine.TextRenderingModule.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.UI">
-            <HintPath>..\..\..\..\MD\MelonLoader\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
-            <Private>False</Private>
+            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.UIModule">
-            <HintPath>..\..\..\..\MD\MelonLoader\Il2CppAssemblies\UnityEngine.UIModule.dll</HintPath>
-            <Private>False</Private>
+            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\UnityEngine.UIModule.dll</HintPath>
         </Reference>
     </ItemGroup>
 
+    <Target Name="CopyMods" AfterTargets="Build">
+        <Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="$(ReferencePath)\Mods"/>
+        <Message Text="Copied DLL -&gt; $(ReferencePath)\Mods\$(ProjectName).dll" Importance="High"/>
+    </Target>
 </Project>

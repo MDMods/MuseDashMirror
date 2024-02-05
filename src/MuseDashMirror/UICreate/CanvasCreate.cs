@@ -1,4 +1,6 @@
-﻿namespace MuseDashMirror.UICreate;
+﻿using UnityEngine.UI;
+
+namespace MuseDashMirror.UICreate;
 
 /// <summary>
 ///     Methods for creating canvas

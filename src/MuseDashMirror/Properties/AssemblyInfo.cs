@@ -1,3 +1,4 @@
+using MelonLoader;
 using Main = MuseDashMirror.Main;
 using static MuseDashMirror.MelonBuildInfo;
 

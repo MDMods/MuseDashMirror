@@ -11,7 +11,7 @@ public static class CollectionExtension
     /// <param name="sequence"></param>
     /// <param name="action"></param>
     /// <typeparam name="T"></typeparam>
-    public static void Execute<T>(this IEnumerable<T>? sequence, Action<T> action)
+    public static void Execute<T>(this IEnumerable<T> sequence, Action<T> action)
     {
         if (sequence is null)
         {
