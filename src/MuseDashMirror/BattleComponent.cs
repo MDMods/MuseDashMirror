@@ -1,10 +1,4 @@
-﻿using Il2CppAssets.Scripts.Database;
-using Il2CppAssets.Scripts.GameCore.HostComponent;
-using Il2CppAssets.Scripts.PeroTools.Commons;
-using Il2CppFormulaBase;
-using Il2CppGameLogic;
-
-namespace MuseDashMirror;
+﻿namespace MuseDashMirror;
 
 /// <summary>
 ///     Data inside game scene for battle

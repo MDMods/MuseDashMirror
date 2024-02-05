@@ -1,6 +1,4 @@
-﻿using Il2CppFormulaBase;
-
-namespace MuseDashMirror.Patch;
+﻿namespace MuseDashMirror.Patch;
 
 [HarmonyPatch(typeof(StageBattleComponent), nameof(StageBattleComponent.GameStart))]
 internal static class StageBattleComponentPatch
