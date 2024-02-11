@@ -1,19 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>disable</Nullable>
-        <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
-        <LangVersion>latest</LangVersion>
         <TargetFramework>net6.0</TargetFramework>
         <ReferencePath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash</ReferencePath>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
-
-    <ItemDefinitionGroup>
-        <PackageReference PrivateAssets="all" ExcludeAssets="runtime"/>
-        <Reference Private="false"/>
-    </ItemDefinitionGroup>
 
     <ItemGroup>
         <Reference Include="0Harmony">
@@ -64,6 +56,10 @@
         <Reference Include="UnityEngine.UIModule">
             <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\UnityEngine.UIModule.dll</HintPath>
         </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\MuseDashMirror.SourceGenerators\MuseDashMirror.SourceGenerators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
     </ItemGroup>
 
     <Target Name="CopyMods" AfterTargets="Build">

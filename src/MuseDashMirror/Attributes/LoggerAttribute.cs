@@ -1,19 +1,24 @@
 namespace MuseDashMirror.Attributes;
 
 /// <summary>
-///     <para>Set a field or property as a MelonLogger with the name of the class it is in</para>
-///     <para>
-///         The field or property can be any accessibility level but has to be static and cannot be readonly<br />
-///         The type should be <see cref="MelonLoader.MelonLogger.Instance" />
-///     </para>
+///     <para>Create a MelonLogger with the name of the class</para>
 ///     <example>
 ///         <code>
-///         [Logger] private static MelonLogger.Instance Logger;
+///         [Logger]
+///         internal partial class ExampleClass; 
 ///         </code>
 ///         <code>
-///         [Logger] private static MelonLogger.Instance Logger { get; set; }
+///         [Logger(LoggerType.StaticReadonly)]
+///         internal static partial class ExampleClass;
 ///         </code>
 ///     </example>
 /// </summary>
 [AttributeUsage(AttributeTargets.Class)]
-public class LoggerAttribute : Attribute;
+public class LoggerAttribute(LoggerType type) : Attribute
+{
+    private LoggerType Type { get; set; } = type;
+
+    public LoggerAttribute() : this(LoggerType.Readonly)
+    {
+    }
+}

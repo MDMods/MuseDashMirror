@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SourceGenerator": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\MuseDashMirror\\MuseDashMirror.csproj"
+    }
+  }
+}
