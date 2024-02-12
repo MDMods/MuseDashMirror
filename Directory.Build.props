@@ -2,10 +2,14 @@
     <PropertyGroup>
         <ImplicitUsings>enable</ImplicitUsings>
         <LangVersion>latest</LangVersion>
+        <GameFolder Condition="Exists('$(MD_DIRECTORY)')">$(MD_DIRECTORY)</GameFolder>
+        <MelonLoader>$(GameFolder)\MelonLoader\</MelonLoader>
+        <MelonNET6>$(MelonLoader)\net6\</MelonNET6>
+        <MelonAssemblies>$(MelonLoader)\Il2CppAssemblies\</MelonAssemblies>
     </PropertyGroup>
-
     <ItemDefinitionGroup>
-        <PackageReference PrivateAssets="all" ExcludeAssets="runtime"/>
+        <PackageReference PrivateAssets="all"
+                          ExcludeAssets="runtime"/>
         <Reference Private="false"/>
     </ItemDefinitionGroup>
 </Project>

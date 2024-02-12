@@ -3,58 +3,109 @@
     <PropertyGroup>
         <Nullable>disable</Nullable>
         <TargetFramework>net6.0</TargetFramework>
-        <ReferencePath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash</ReferencePath>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     </PropertyGroup>
 
     <ItemGroup>
         <Reference Include="0Harmony">
-            <HintPath>$(ReferencePath)\MelonLoader\net6\0Harmony.dll</HintPath>
+            <HintPath>$(MelonNET6)\0Harmony.dll</HintPath>
         </Reference>
         <Reference Include="Assembly-CSharp">
-            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
+            <HintPath>$(MelonAssemblies)\Assembly-CSharp.dll</HintPath>
         </Reference>
         <Reference Include="Assembly-CSharp-firstpass">
-            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\Assembly-CSharp-firstpass.dll</HintPath>
+            <HintPath>$(MelonAssemblies)\Assembly-CSharp-firstpass.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2CppDOTween">
+            <HintPath>$(MelonAssemblies)\Il2CppDOTween.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2CppGoogle.Protobuf">
+            <HintPath>$(MelonAssemblies)\Il2CppGoogle.Protobuf.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2CppInterop.Common">
+            <HintPath>$(MelonNET6)\Il2CppInterop.Common.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2CppInterop.Generator">
+            <HintPath>$(MelonNET6)\Il2CppInterop.Generator.dll</HintPath>
         </Reference>
         <Reference Include="Il2CppInterop.Runtime">
-            <HintPath>$(ReferencePath)\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath>
+            <HintPath>$(MelonNET6)\Il2CppInterop.Runtime.dll</HintPath>
         </Reference>
         <Reference Include="Il2Cppmscorlib">
-            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+            <HintPath>$(MelonAssemblies)\Il2Cppmscorlib.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2CppNAudio">
+            <HintPath>$(MelonAssemblies)\Il2CppNAudio.dll</HintPath>
         </Reference>
         <Reference Include="Il2CppNewtonsoft.Json">
-            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\Il2CppNewtonsoft.Json.dll</HintPath>
+            <HintPath>$(MelonAssemblies)\Il2CppNewtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2CppPeroString">
+            <HintPath>$(MelonAssemblies)\Il2CppPeroString.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2CppPeroTools2">
+            <HintPath>$(MelonAssemblies)\Il2CppPeroTools2.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2CppPeroTools2.Account">
+            <HintPath>$(MelonAssemblies)\Il2CppPeroTools2.Account.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2CppPeroTools2.Resources">
+            <HintPath>$(MelonAssemblies)\Il2CppPeroTools2.Resources.dll</HintPath>
         </Reference>
         <Reference Include="Il2CppSirenix.Serialization">
-            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\Il2CppSirenix.Serialization.dll</HintPath>
+            <HintPath>$(MelonAssemblies)\Il2CppSirenix.Serialization.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2Cppspine-unity">
+            <HintPath>$(MelonAssemblies)\Il2Cppspine-unity.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2CppSystem">
+            <HintPath>$(MelonAssemblies)\Il2CppSystem.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2CppSystem.Core">
+            <HintPath>$(MelonAssemblies)\Il2CppSystem.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2CppSystem.Runtime.InteropServices">
+            <HintPath>$(MelonAssemblies)\Il2CppSystem.Runtime.InteropServices.dll</HintPath>
         </Reference>
         <Reference Include="MelonLoader">
-            <HintPath>$(ReferencePath)\MelonLoader\net6\MelonLoader.dll</HintPath>
+            <HintPath>$(MelonNET6)\MelonLoader.dll</HintPath>
         </Reference>
         <Reference Include="Tomlet">
-            <HintPath>$(ReferencePath)\MelonLoader\net6\Tomlet.dll</HintPath>
+            <HintPath>$(MelonNet6)\Tomlet.dll</HintPath>
         </Reference>
         <Reference Include="Unity.Addressables">
-            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\Unity.Addressables.dll</HintPath>
+            <HintPath>$(MelonAssemblies)\Unity.Addressables.dll</HintPath>
         </Reference>
         <Reference Include="Unity.ResourceManager">
-            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\Unity.ResourceManager.dll</HintPath>
+            <HintPath>$(MelonAssemblies)\Unity.ResourceManager.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AnimationModule">
+            <HintPath>$(MelonAssemblies)\UnityEngine.AnimationModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AudioModule">
+            <HintPath>$(MelonAssemblies)\UnityEngine.AudioModule.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.CoreModule">
-            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
+            <HintPath>$(MelonAssemblies)\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ImageConversionModule">
+            <HintPath>$(MelonAssemblies)\UnityEngine.ImageConversionModule.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.InputLegacyModule">
-            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\UnityEngine.InputLegacyModule.dll</HintPath>
+            <HintPath>$(MelonAssemblies)\UnityEngine.InputLegacyModule.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.TextRenderingModule">
-            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\UnityEngine.TextRenderingModule.dll</HintPath>
+            <HintPath>$(MelonAssemblies)\UnityEngine.TextRenderingModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestModule">
+            <HintPath>$(MelonAssemblies)\UnityEngine.UnityWebRequestModule.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.UI">
-            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
+            <HintPath>$(MelonAssemblies)\UnityEngine.UI.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.UIModule">
-            <HintPath>$(ReferencePath)\MelonLoader\Il2CppAssemblies\UnityEngine.UIModule.dll</HintPath>
+            <HintPath>$(MelonAssemblies)\UnityEngine.UIModule.dll</HintPath>
         </Reference>
     </ItemGroup>
 

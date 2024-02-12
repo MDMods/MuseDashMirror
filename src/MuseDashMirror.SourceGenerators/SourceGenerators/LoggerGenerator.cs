@@ -1,10 +1,8 @@
-namespace MuseDashMirror.SourceGenerators;
+namespace MuseDashMirror.SourceGenerators.SourceGenerators;
 
 [Generator(LanguageNames.CSharp)]
 public sealed class LoggerGenerator : IIncrementalGenerator
 {
-    private const string LoggerAttributeName = "MuseDashMirror.Attributes.LoggerAttribute";
-
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
         context.RegisterSourceOutput(
