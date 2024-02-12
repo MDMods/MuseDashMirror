@@ -1,5 +1,4 @@
 using System.Reflection;
-using MuseDashMirror.EventArguments;
 
 namespace MuseDashMirror.Attributes.EventAttributes;
 

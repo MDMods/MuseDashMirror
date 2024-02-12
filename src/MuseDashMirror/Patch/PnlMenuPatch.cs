@@ -5,5 +5,5 @@ namespace MuseDashMirror.Patch;
 [HarmonyPatch(typeof(PnlMenu), nameof(PnlMenu.Awake))]
 internal static class PnlMenuPatch
 {
-    private static void Postfix() => PnlMenuEventInvoke();
+    private static void Postfix(PnlMenu __instance) => PnlMenuEventInvoke(__instance);
 }

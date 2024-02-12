@@ -1,6 +1,4 @@
-﻿using MuseDashMirror.EventArguments;
-
-namespace MuseDashMirror;
+﻿namespace MuseDashMirror;
 
 /// <summary>
 ///     Scene load/unload events

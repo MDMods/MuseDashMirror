@@ -10,61 +10,52 @@ public static class Fonts
     /// <summary>
     ///     Snaps Taste font
     /// </summary>
-    public static Font SnapsTasteFont { get; set; }
+    public static Font SnapsTasteFont { get; private set; }
 
     /// <summary>
     ///     Normal font
     /// </summary>
-    public static Font NormalFont { get; set; }
+    public static Font NormalFont { get; private set; }
 
     /// <summary>
     ///     SourceHanSansCN-Heavy Font
     /// </summary>
-    public static Font SourceHanSansCnHeavyFont { get; set; }
+    public static Font SourceHanSansCnHeavyFont { get; private set; }
 
     /// <summary>
     ///     MiniSimpleSuperThickBlack Font
     /// </summary>
-    public static Font MiniSimpleSuperThickBlackFont { get; set; }
+    public static Font MiniSimpleSuperThickBlackFont { get; private set; }
 
     /// <summary>
     ///     Load 4 default fonts
     /// </summary>
-    public static void LoadFonts()
+    internal static void LoadFonts()
     {
-        var snapstaste = Addressables.LoadAssetAsync<Font>("Snaps Taste");
-        SnapsTasteFont = snapstaste.WaitForCompletion();
-        var normal = Addressables.LoadAssetAsync<Font>("Normal");
-        NormalFont = normal.WaitForCompletion();
-        var arial = Addressables.LoadAssetAsync<Font>("SourceHanSansCN-Heavy");
-        SourceHanSansCnHeavyFont = arial.WaitForCompletion();
-        var arialbold = Addressables.LoadAssetAsync<Font>("MiniSimpleSuperThickBlack");
-        MiniSimpleSuperThickBlackFont = arialbold.WaitForCompletion();
+        SnapsTasteFont = LoadFont("Snaps Taste");
+        NormalFont = LoadFont("Normal");
+        SourceHanSansCnHeavyFont = LoadFont("SourceHanSansCN-Heavy");
+        MiniSimpleSuperThickBlackFont = LoadFont("MiniSimpleSuperThickBlack");
     }
 
     /// <summary>
     ///     Release memory after using 4 default fonts
     /// </summary>
-    public static void UnloadFonts()
+    internal static void UnloadFonts()
     {
-        if (SnapsTasteFont != null)
-        {
-            Addressables.Release(SnapsTasteFont);
-        }
+        UnloadFont(SnapsTasteFont);
+        UnloadFont(NormalFont);
+        UnloadFont(SourceHanSansCnHeavyFont);
+        UnloadFont(MiniSimpleSuperThickBlackFont);
+    }
 
-        if (NormalFont != null)
-        {
-            Addressables.Release(NormalFont);
-        }
+    private static Font LoadFont(string fontName) => Addressables.LoadAssetAsync<Font>(fontName).WaitForCompletion();
 
-        if (SourceHanSansCnHeavyFont != null)
+    private static void UnloadFont(Font font)
+    {
+        if (font != null)
         {
-            Addressables.Release(SourceHanSansCnHeavyFont);
-        }
-
-        if (MiniSimpleSuperThickBlackFont != null)
-        {
-            Addressables.Release(MiniSimpleSuperThickBlackFont);
+            Addressables.Release(font);
         }
     }
 }
