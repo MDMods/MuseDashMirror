@@ -1,4 +1,4 @@
-﻿using MuseDashMirror.EventArguments;
+﻿using Il2CppAssets.Scripts.UI.Panels;
 
 namespace MuseDashMirror.Patch;
 
@@ -10,16 +10,16 @@ public static class PatchEvents
     /// <summary>
     ///     An event to invoke methods when PnlMenu Awake method invokes
     /// </summary>
-    public static event EventHandler PnlMenuEvent;
+    public static event EventHandler<PnlMenuEventArgs> PnlMenuEvent;
 
-    internal static void PnlMenuEventInvoke() => PnlMenuEvent?.Invoke(null, EventArgs.Empty);
+    internal static void PnlMenuEventInvoke(PnlMenu __instance) => PnlMenuEvent?.Invoke(null, new PnlMenuEventArgs(__instance));
 
     /// <summary>
     ///     An event to invoke methods when PnlStage Awake method invokes
     /// </summary>
-    public static event EventHandler PnlStageEvent;
+    public static event EventHandler<PnlStageEventArgs> PnlStageEvent;
 
-    internal static void PnlStageEventInvoke() => PnlStageEvent?.Invoke(null, EventArgs.Empty);
+    internal static void PnlStageEventInvoke(PnlStage __instance) => PnlStageEvent?.Invoke(null, new PnlStageEventArgs(__instance));
 
     /// <summary>
     ///     An event to invoke methods when switching languages
