@@ -1,3 +1,5 @@
+// ReSharper disable All
+
 namespace System.Runtime.CompilerServices;
 
 /// <summary>
