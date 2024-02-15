@@ -4,3 +4,5 @@ global using Microsoft.CodeAnalysis.CSharp.Syntax;
 global using Microsoft.CodeAnalysis.Diagnostics;
 global using MuseDashMirror.Core;
 global using static MuseDashMirror.SourceGenerators.AttributeFullNames;
+global using static MuseDashMirror.SourceGenerators.BuildInfo;
+global using static MuseDashMirror.SourceGenerators.SourceGenerationTexts;
