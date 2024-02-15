@@ -26,4 +26,6 @@ internal static class SourceGenerationTexts
 
                                                }
                                                """;
+
+    internal static string GetFullName(string generatorName) => $"{SourceGeneratorNamespace}.{generatorName}";
 }

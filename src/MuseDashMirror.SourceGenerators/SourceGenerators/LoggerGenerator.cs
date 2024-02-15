@@ -51,12 +51,13 @@ public sealed class LoggerGenerator : IIncrementalGenerator
         }
 
         spc.AddSource(classDeclaration.Identifier.ValueText + "_Logger.g.cs",
-            SourceGenerationTexts.Header +
+            Header +
             $$"""
               namespace {{@namespace}};
 
               partial class {{className}}
               {
+                  [global::System.CodeDom.Compiler.GeneratedCodeAttribute("{{GetFullName(nameof(LoggerGenerator))}}", "{{SourceGeneratorVersion}}")]
                   private {{modifier}} global::MelonLoader.MelonLogger.Instance Logger = new("{{className}}");
               }
               """);
