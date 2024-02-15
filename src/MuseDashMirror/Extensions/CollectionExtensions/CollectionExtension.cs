@@ -1,7 +1,7 @@
 namespace MuseDashMirror.Extensions.CollectionExtensions;
 
 /// <summary>
-///     Collection Extension methods for any Type />.
+///     Collection Extension methods for any Type
 /// </summary>
 public static class CollectionExtension
 {
