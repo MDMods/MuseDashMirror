@@ -1,4 +1,4 @@
-namespace MuseDashMirror.AttributeEnums;
+namespace MuseDashMirror.Core;
 
 public enum LoggerType
 {

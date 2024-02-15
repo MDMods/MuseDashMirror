@@ -8,7 +8,7 @@ namespace MuseDashMirror.UICreate;
 public static class CanvasCreate
 {
     /// <summary>
-    ///     Create a screenspace overlay canvas
+    ///     Create a Screen Space Overlay canvas
     /// </summary>
     public static GameObject CreateCanvas(string canvasName)
     {
@@ -21,7 +21,7 @@ public static class CanvasCreate
     }
 
     /// <summary>
-    ///     Create a screenspace camera canvas with 1920*1080 reference resolution
+    ///     Create a Screen Space camera canvas with 1920*1080 reference resolution
     /// </summary>
     public static GameObject CreateCanvas(string canvasName, string cameraName)
     {
@@ -38,7 +38,7 @@ public static class CanvasCreate
     }
 
     /// <summary>
-    ///     Create a screenspace camera canvas with specified parent using name
+    ///     Create a Screen Space camera canvas with specified parent using name
     /// </summary>
     public static GameObject CreateCanvas(string canvasName, string cameraName, string parentName)
     {
@@ -49,7 +49,7 @@ public static class CanvasCreate
     }
 
     /// <summary>
-    ///     Create a screenspace camera canvas with specified parent
+    ///     Create a Screen Space camera canvas with specified parent
     /// </summary>
     public static GameObject CreateCanvas(string canvasName, string cameraName, GameObject parent)
     {
