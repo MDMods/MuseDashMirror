@@ -1,10 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuseDashMirror", "src\MuseDashMirror\MuseDashMirror.csproj", "{6DF5EC88-4A30-4DE3-A1BC-DF2C5593E6AE}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MuseDashMirror", "src\MuseDashMirror\MuseDashMirror.csproj", "{6DF5EC88-4A30-4DE3-A1BC-DF2C5593E6AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuseDashMirror.SourceGenerators", "src\MuseDashMirror.SourceGenerators\MuseDashMirror.SourceGenerators.csproj", "{3FC6E351-C5D1-49C9-A992-B313C3565256}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MuseDashMirror.SourceGenerators", "src\MuseDashMirror.SourceGenerators\MuseDashMirror.SourceGenerators.csproj", "{3FC6E351-C5D1-49C9-A992-B313C3565256}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuseDashMirror.Core", "src\MuseDashMirror.Core\MuseDashMirror.Core.csproj", "{A1DE1E05-673A-44DD-8275-5DF50D9E31EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MuseDashMirror.Core", "src\MuseDashMirror.Core\MuseDashMirror.Core.csproj", "{A1DE1E05-673A-44DD-8275-5DF50D9E31EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DD949F8F-42E3-4D1A-8BF3-6731A2F4BC23}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +34,11 @@ Global
 		{A1DE1E05-673A-44DD-8275-5DF50D9E31EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1DE1E05-673A-44DD-8275-5DF50D9E31EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1DE1E05-673A-44DD-8275-5DF50D9E31EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3CD1E31-61B4-4A13-BCC4-4BEB393D23E3}
 	EndGlobalSection
 EndGlobal
