@@ -3,7 +3,7 @@ using System.Collections.Immutable;
 namespace MuseDashMirror.SourceGenerators.Analyzers;
 
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
-public class LoggerAnalyzer : DiagnosticAnalyzer
+public sealed class LoggerAnalyzer : DiagnosticAnalyzer
 {
     private const string DiagnosticId = "MM0000";
     private const string Title = "LoggerAttribute should be used on partial class";
