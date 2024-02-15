@@ -57,7 +57,7 @@ public sealed class LoggerGenerator : IIncrementalGenerator
 
               partial class {{className}}
               {
-                  [global::System.CodeDom.Compiler.GeneratedCodeAttribute("{{GetFullName(nameof(LoggerGenerator))}}", "{{SourceGeneratorVersion}}")]
+                  {{GetGeneratedCodeAttribute(nameof(LoggerGenerator))}}
                   private {{modifier}} global::MelonLoader.MelonLogger.Instance Logger = new("{{className}}");
               }
               """);

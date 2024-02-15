@@ -17,15 +17,6 @@ internal static class SourceGenerationTexts
 
                                    """;
 
-    internal const string Attribute = Header + """
-                                               namespace MuseDashMirror.Attributes;
-
-                                               [global::System.AttributeUsage(global::System.AttributeTargets.Property)]
-                                               public class PnlAAAAAttribute : global::System.Attribute
-                                               {
-
-                                               }
-                                               """;
-
-    internal static string GetFullName(string generatorName) => $"{SourceGeneratorNamespace}.{generatorName}";
+    internal static string GetGeneratedCodeAttribute(string generatorName) =>
+        $"""[global::System.CodeDom.Compiler.GeneratedCodeAttribute("{SourceGeneratorNamespace}.{generatorName}", "{SourceGeneratorVersion}")]""";
 }
