@@ -30,7 +30,7 @@ public sealed class LoggerGenerator : IIncrementalGenerator
         var loggerType = isStatic ? LoggerType.StaticReadonly : LoggerType.Readonly;
         if (attribute.ConstructorArguments is not [] and var argument)
         {
-            loggerType = (LoggerType)argument.First().Value!;
+            loggerType = (LoggerType)argument.Single().Value!;
         }
 
         var modifier = loggerType switch
