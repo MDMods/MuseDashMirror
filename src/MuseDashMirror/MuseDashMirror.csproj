@@ -110,6 +110,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\MuseDashMirror.Core\MuseDashMirror.Core.csproj"/>
         <ProjectReference Include="..\MuseDashMirror.SourceGenerators\MuseDashMirror.SourceGenerators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
     </ItemGroup>
 

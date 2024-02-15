@@ -26,16 +26,17 @@ public sealed class LoggerGenerator : IIncrementalGenerator
         }
 
         var attribute = attributes.First(x => x.AttributeClass!.ToDisplayString() == LoggerAttributeName);
-        var value = isStatic ? 1 : 0;
+
+        var loggerType = isStatic ? LoggerType.StaticReadonly : LoggerType.Readonly;
         if (attribute.ConstructorArguments is not [] and var argument)
         {
-            value = (int)argument.First().Value!;
+            loggerType = (LoggerType)argument.First().Value!;
         }
 
-        var modifier = value switch
+        var modifier = loggerType switch
         {
-            0 => "readonly",
-            1 => "static readonly",
+            LoggerType.Readonly => "readonly",
+            LoggerType.StaticReadonly => "static readonly",
             _ => string.Empty
         };
 

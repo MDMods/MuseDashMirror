@@ -1,6 +1,6 @@
 global using HarmonyLib;
 global using Il2Cpp;
-global using MuseDashMirror.AttributeEnums;
+global using MuseDashMirror.Core;
 global using MuseDashMirror.EventArguments;
 global using MuseDashMirror.Interfaces;
 global using UnityEngine;

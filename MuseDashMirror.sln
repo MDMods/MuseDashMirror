@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuseDashMirror", "src\MuseD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuseDashMirror.SourceGenerators", "src\MuseDashMirror.SourceGenerators\MuseDashMirror.SourceGenerators.csproj", "{3FC6E351-C5D1-49C9-A992-B313C3565256}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuseDashMirror.Core", "src\MuseDashMirror.Core\MuseDashMirror.Core.csproj", "{A1DE1E05-673A-44DD-8275-5DF50D9E31EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{3FC6E351-C5D1-49C9-A992-B313C3565256}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FC6E351-C5D1-49C9-A992-B313C3565256}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FC6E351-C5D1-49C9-A992-B313C3565256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1DE1E05-673A-44DD-8275-5DF50D9E31EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1DE1E05-673A-44DD-8275-5DF50D9E31EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1DE1E05-673A-44DD-8275-5DF50D9E31EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1DE1E05-673A-44DD-8275-5DF50D9E31EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
