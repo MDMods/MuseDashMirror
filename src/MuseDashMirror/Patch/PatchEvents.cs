@@ -12,14 +12,14 @@ public static class PatchEvents
     /// </summary>
     public static event EventHandler<PnlMenuEventArgs> PnlMenuEvent;
 
-    internal static void PnlMenuEventInvoke(PnlMenu __instance) => PnlMenuEvent?.Invoke(null, new PnlMenuEventArgs(__instance));
+    internal static void PnlMenuEventInvoke(PnlMenu pnlMenu) => PnlMenuEvent?.Invoke(null, new PnlMenuEventArgs(pnlMenu));
 
     /// <summary>
     ///     An event to invoke methods when PnlStage Awake method invokes
     /// </summary>
     public static event EventHandler<PnlStageEventArgs> PnlStageEvent;
 
-    internal static void PnlStageEventInvoke(PnlStage __instance) => PnlStageEvent?.Invoke(null, new PnlStageEventArgs(__instance));
+    internal static void PnlStageEventInvoke(PnlStage pnlStage) => PnlStageEvent?.Invoke(null, new PnlStageEventArgs(pnlStage));
 
     /// <summary>
     ///     An event to invoke methods when switching languages

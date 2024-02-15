@@ -2,6 +2,6 @@
 
 ### New Rules
 
-| Rule ID | Category        | Severity | Notes                                            |
-|---------|-----------------|----------|--------------------------------------------------|
-| MM0000  | SourceGenerator | Error    | LoggerAttribute should be used on partial class. |
+| Rule ID | Category | Severity | Notes                                            |
+|---------|----------|----------|--------------------------------------------------|
+| MDM0000 | Usage    | Error    | LoggerAttribute should be used on partial class. |

@@ -2,7 +2,7 @@ using Il2CppAssets.Scripts.UI.Panels;
 
 namespace MuseDashMirror.EventArguments;
 
-public class PnlMenuEventArgs(PnlMenu __instance) : EventArgs
+public class PnlMenuEventArgs(PnlMenu pnlMenu) : EventArgs
 {
-    public PnlMenu PnlMenu { get; set; } = __instance;
+    public PnlMenu PnlMenu { get; set; } = pnlMenu;
 }

@@ -1,21 +1,18 @@
-using System.Collections.Immutable;
-
 namespace MuseDashMirror.SourceGenerators.Analyzers;
 
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 public sealed class LoggerAnalyzer : DiagnosticAnalyzer
 {
-    private const string DiagnosticId = "MM0000";
-    private const string Title = "LoggerAttribute should be used on partial class";
-    private const string MessageFormat = "Class {0} must have partial keyword in its declaration";
-    private const string Category = "SourceGenerator";
-    private const string Description = "LoggerAttribute should be used on partial class.";
+    private const string DiagnosticId = "MDM0000";
+    private const string Category = "Usage";
+    private static readonly LocalizableString Title = GetLocalizableString(nameof(MDM0000Title));
+    private static readonly LocalizableString MessageFormat = GetLocalizableString(nameof(MDM0000MessageFormat));
+    private static readonly LocalizableString Description = GetLocalizableString(nameof(MDM0000Description));
 
     private static readonly DiagnosticDescriptor Rule = new(DiagnosticId, Title, MessageFormat, Category, DiagnosticSeverity.Error, true,
         Description);
 
-    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get; } =
-        ImmutableArray.Create(Rule);
+    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(Rule);
 
     public override void Initialize(AnalysisContext context)
     {
