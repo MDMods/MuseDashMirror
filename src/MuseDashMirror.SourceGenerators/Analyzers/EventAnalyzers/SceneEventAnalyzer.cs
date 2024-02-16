@@ -1,13 +1,15 @@
+using System.Text.RegularExpressions;
+
 namespace MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers;
 
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
-public sealed class ExitLoadingSceneAnalyzer : DiagnosticAnalyzer
+public sealed class SceneEventAnalyzer : DiagnosticAnalyzer
 {
-    private const string DiagnosticId = "MDM0107";
+    private const string DiagnosticId = "MDM0103";
     private const string Category = "Usage";
-    private static readonly LocalizableString Title = GetLocalizableString(nameof(MDM0107Title));
-    private static readonly LocalizableString MessageFormat = GetLocalizableString(nameof(MDM0107MessageFormat));
-    private static readonly LocalizableString Description = GetLocalizableString(nameof(MDM0107Description));
+    private static readonly LocalizableString Title = GetLocalizableString(nameof(MDM0103Title));
+    private static readonly LocalizableString MessageFormat = GetLocalizableString(nameof(MDM0103MessageFormat));
+    private static readonly LocalizableString Description = GetLocalizableString(nameof(MDM0103Description));
 
     private static readonly DiagnosticDescriptor Rule = new(DiagnosticId, Title, MessageFormat, Category, DiagnosticSeverity.Error, true,
         Description);
@@ -34,7 +36,16 @@ public sealed class ExitLoadingSceneAnalyzer : DiagnosticAnalyzer
             return;
         }
 
-        var hasAttribute = symbol.GetAttributes().Any(x => x.AttributeClass!.ToDisplayString() == ExitLoadingSceneAttributeName);
+        var regex = new Regex(@"MuseDashMirror\.Attributes\.EventAttributes\.(.+Scene)Attribute");
+        var attribute = symbol.GetAttributes().FirstOrDefault(x => regex.Match(x.AttributeClass!.ToDisplayString()).Success);
+        if (attribute is null)
+        {
+            return;
+        }
+
+        var match = regex.Match(attribute.AttributeClass!.ToDisplayString());
+        var sceneName = match.Groups[1].Value;
+
         var correctParameters = parameters is
         [
             {
@@ -51,9 +62,9 @@ public sealed class ExitLoadingSceneAnalyzer : DiagnosticAnalyzer
             }
         ];
 
-        if (hasAttribute && !correctParameters)
+        if (!correctParameters)
         {
-            context.ReportDiagnostic(Diagnostic.Create(Rule, node.Identifier.GetLocation(), symbol.Name));
+            context.ReportDiagnostic(Diagnostic.Create(Rule, node.Identifier.GetLocation(), symbol.Name, sceneName));
         }
     }
 }
