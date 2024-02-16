@@ -16,7 +16,7 @@ namespace MuseDashMirror.Attributes.EventAttributes;
 ///     </example>
 /// </summary>
 [AttributeUsage(AttributeTargets.Method)]
-public class PnlStageEventAttribute : Attribute, IEventAttribute
+public sealed class PnlStageEventAttribute : Attribute, IEventAttribute
 {
     /// <summary>
     ///     Register method to <see cref="PnlStageEvent" />

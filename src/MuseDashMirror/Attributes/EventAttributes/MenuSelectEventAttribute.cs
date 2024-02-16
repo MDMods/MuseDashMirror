@@ -15,7 +15,7 @@ namespace MuseDashMirror.Attributes.EventAttributes;
 ///     </example>
 /// </summary>
 [AttributeUsage(AttributeTargets.Method)]
-public class MenuSelectEventAttribute : Attribute, IEventAttribute
+public sealed class MenuSelectEventAttribute : Attribute, IEventAttribute
 {
     /// <summary>
     ///     Register the method to <see cref="MenuSelectEvent" />

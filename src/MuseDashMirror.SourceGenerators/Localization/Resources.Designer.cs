@@ -60,7 +60,7 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LoggerAttribute should be used on partial class..
+        ///   Looks up a localized string similar to LoggerAttribute can only be used on partial class..
         /// </summary>
         internal static string MDM0000Description {
             get {
@@ -78,11 +78,308 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LoggerAttribute should be used on partial class.
+        ///   Looks up a localized string similar to LoggerAttribute can only be used on partial class.
         /// </summary>
         internal static string MDM0000Title {
             get {
                 return ResourceManager.GetString("MDM0000Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method with PnlMenuEvent attribute should have parameters of object and PnlMenuArgs types..
+        /// </summary>
+        internal static string MDM0100Description {
+            get {
+                return ResourceManager.GetString("MDM0100Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method {0}&apos;s parameter types must be object and PnlMenuArgs.
+        /// </summary>
+        internal static string MDM0100MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0100MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect usage of PnlMenuEvent Attribute.
+        /// </summary>
+        internal static string MDM0100Title {
+            get {
+                return ResourceManager.GetString("MDM0100Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method with PnlStageEvent attribute should have parameters of object and PnlStageArgs types..
+        /// </summary>
+        internal static string MDM0101Description {
+            get {
+                return ResourceManager.GetString("MDM0101Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method {0}&apos;s parameter types must be object and PnlStageArgs.
+        /// </summary>
+        internal static string MDM0101MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0101MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect usage of PnlStageEvent Attribute.
+        /// </summary>
+        internal static string MDM0101Title {
+            get {
+                return ResourceManager.GetString("MDM0101Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method with MenuSelectEvent attribute should have parameters of object and MenuSelectEventArgs types..
+        /// </summary>
+        internal static string MDM0102Description {
+            get {
+                return ResourceManager.GetString("MDM0102Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method {0}&apos;s parameter types must be object and MenuSelectEventArgs.
+        /// </summary>
+        internal static string MDM0102MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0102MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect usage of MenuSelectEvent Attribute.
+        /// </summary>
+        internal static string MDM0102Title {
+            get {
+                return ResourceManager.GetString("MDM0102Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method with EnterGameScene attribute should have parameters of object and SceneEventArgs types..
+        /// </summary>
+        internal static string MDM0103Description {
+            get {
+                return ResourceManager.GetString("MDM0103Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method {0}&apos;s parameter types must be object and SceneEventArgs.
+        /// </summary>
+        internal static string MDM0103MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0103MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect usage of EnterGameScene Attribute.
+        /// </summary>
+        internal static string MDM0103Title {
+            get {
+                return ResourceManager.GetString("MDM0103Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method with EnterLoadingScene attribute should have parameters of object and SceneEventArgs types..
+        /// </summary>
+        internal static string MDM0104Description {
+            get {
+                return ResourceManager.GetString("MDM0104Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method {0}&apos;s parameter types must be object and SceneEventArgs.
+        /// </summary>
+        internal static string MDM0104MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0104MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect usage of EnterLoadingScene Attribute.
+        /// </summary>
+        internal static string MDM0104Title {
+            get {
+                return ResourceManager.GetString("MDM0104Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method with EnterMainScene attribute should have parameters of object and SceneEventArgs types..
+        /// </summary>
+        internal static string MDM0105Description {
+            get {
+                return ResourceManager.GetString("MDM0105Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method {0}&apos;s parameter types must be object and SceneEventArgs.
+        /// </summary>
+        internal static string MDM0105MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0105MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect usage of EnterMainScene Attribute.
+        /// </summary>
+        internal static string MDM0105Title {
+            get {
+                return ResourceManager.GetString("MDM0105Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method with ExitGameScene attribute should have parameters of object and SceneEventArgs types..
+        /// </summary>
+        internal static string MDM0106Description {
+            get {
+                return ResourceManager.GetString("MDM0106Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method {0}&apos;s parameter types must be object and SceneEventArgs.
+        /// </summary>
+        internal static string MDM0106MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0106MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect usage of ExitGameScene Attribute.
+        /// </summary>
+        internal static string MDM0106Title {
+            get {
+                return ResourceManager.GetString("MDM0106Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method with ExitLoadingScene attribute should have parameters of object and SceneEventArgs types..
+        /// </summary>
+        internal static string MDM0107Description {
+            get {
+                return ResourceManager.GetString("MDM0107Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method {0}&apos;s parameter types must be object and SceneEventArgs.
+        /// </summary>
+        internal static string MDM0107MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0107MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect usage of ExitLoadingScene Attribute.
+        /// </summary>
+        internal static string MDM0107Title {
+            get {
+                return ResourceManager.GetString("MDM0107Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method with ExitMainScene attribute should have parameters of object and SceneEventArgs types..
+        /// </summary>
+        internal static string MDM0108Description {
+            get {
+                return ResourceManager.GetString("MDM0108Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method {0}&apos;s parameter types must be object and SceneEventArgs.
+        /// </summary>
+        internal static string MDM0108MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0108MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect usage of ExitMainScene Attribute.
+        /// </summary>
+        internal static string MDM0108Title {
+            get {
+                return ResourceManager.GetString("MDM0108Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method with EnterWelcomeScene attribute should have parameters of object and SceneEventArgs types..
+        /// </summary>
+        internal static string MDM0109Description {
+            get {
+                return ResourceManager.GetString("MDM0109Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method {0}&apos;s parameter types must be object and SceneEventArgs.
+        /// </summary>
+        internal static string MDM0109MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0109MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect usage of EnterWelcomeScene Attribute.
+        /// </summary>
+        internal static string MDM0109Title {
+            get {
+                return ResourceManager.GetString("MDM0109Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method with ExitWelcomeScene attribute should have parameters of object and SceneEventArgs types..
+        /// </summary>
+        internal static string MDM0110Description {
+            get {
+                return ResourceManager.GetString("MDM0110Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method {0}&apos;s parameter types must be object and SceneEventArgs.
+        /// </summary>
+        internal static string MDM0110MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0110MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect usage of ExitWelcomeScene Attribute.
+        /// </summary>
+        internal static string MDM0110Title {
+            get {
+                return ResourceManager.GetString("MDM0110Title", resourceCulture);
             }
         }
     }

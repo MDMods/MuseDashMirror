@@ -14,7 +14,7 @@ namespace MuseDashMirror.Attributes;
 ///     </example>
 /// </summary>
 [AttributeUsage(AttributeTargets.Class)]
-public class LoggerAttribute(LoggerType type) : Attribute
+public sealed class LoggerAttribute(LoggerType type) : Attribute
 {
     private LoggerType Type { get; set; } = type;
 

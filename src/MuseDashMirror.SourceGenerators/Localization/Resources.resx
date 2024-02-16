@@ -22,13 +22,111 @@
     </resheader>
 
     <data name="MDM0000Description" xml:space="preserve">
-        <value>LoggerAttribute should be used on partial class.</value>
+        <value>LoggerAttribute can only be used on partial class.</value>
     </data>
     <data name="MDM0000MessageFormat" xml:space="preserve">
         <value>Class {0} must have partial keyword in its declaration</value>
     </data>
     <data name="MDM0000Title" xml:space="preserve">
-        <value>LoggerAttribute should be used on partial class</value>
+        <value>LoggerAttribute can only be used on partial class</value>
     </data>
-
+    <data name="MDM0100Title" xml:space="preserve">
+        <value>Incorrect usage of PnlMenuEvent Attribute</value>
+    </data>
+    <data name="MDM0100Description" xml:space="preserve">
+        <value>Method with PnlMenuEvent attribute should have parameters of object and PnlMenuArgs types.</value>
+    </data>
+    <data name="MDM0100MessageFormat" xml:space="preserve">
+        <value>Method {0}'s parameter types must be object and PnlMenuArgs</value>
+    </data>
+    <data name="MDM0101Description" xml:space="preserve">
+        <value>Method with PnlStageEvent attribute should have parameters of object and PnlStageArgs types.</value>
+    </data>
+    <data name="MDM0101MessageFormat" xml:space="preserve">
+        <value>Method {0}'s parameter types must be object and PnlStageArgs</value>
+    </data>
+    <data name="MDM0101Title" xml:space="preserve">
+        <value>Incorrect usage of PnlStageEvent Attribute</value>
+    </data>
+    <data name="MDM0102Description" xml:space="preserve">
+        <value>Method with MenuSelectEvent attribute should have parameters of object and MenuSelectEventArgs types.</value>
+    </data>
+    <data name="MDM0102MessageFormat" xml:space="preserve">
+        <value>Method {0}'s parameter types must be object and MenuSelectEventArgs</value>
+    </data>
+    <data name="MDM0102Title" xml:space="preserve">
+        <value>Incorrect usage of MenuSelectEvent Attribute</value>
+    </data>
+    <data name="MDM0103Description" xml:space="preserve">
+        <value>Method with EnterGameScene attribute should have parameters of object and SceneEventArgs types.</value>
+    </data>
+    <data name="MDM0103MessageFormat" xml:space="preserve">
+        <value>Method {0}'s parameter types must be object and SceneEventArgs</value>
+    </data>
+    <data name="MDM0103Title" xml:space="preserve">
+        <value>Incorrect usage of EnterGameScene Attribute</value>
+    </data>
+    <data name="MDM0104Description" xml:space="preserve">
+        <value>Method with EnterLoadingScene attribute should have parameters of object and SceneEventArgs types.</value>
+    </data>
+    <data name="MDM0104MessageFormat" xml:space="preserve">
+        <value>Method {0}'s parameter types must be object and SceneEventArgs</value>
+    </data>
+    <data name="MDM0104Title" xml:space="preserve">
+        <value>Incorrect usage of EnterLoadingScene Attribute</value>
+    </data>
+    <data name="MDM0105Description" xml:space="preserve">
+        <value>Method with EnterMainScene attribute should have parameters of object and SceneEventArgs types.</value>
+    </data>
+    <data name="MDM0105MessageFormat" xml:space="preserve">
+        <value>Method {0}'s parameter types must be object and SceneEventArgs</value>
+    </data>
+    <data name="MDM0105Title" xml:space="preserve">
+        <value>Incorrect usage of EnterMainScene Attribute</value>
+    </data>
+    <data name="MDM0106Description" xml:space="preserve">
+        <value>Method with ExitGameScene attribute should have parameters of object and SceneEventArgs types.</value>
+    </data>
+    <data name="MDM0106MessageFormat" xml:space="preserve">
+        <value>Method {0}'s parameter types must be object and SceneEventArgs</value>
+    </data>
+    <data name="MDM0106Title" xml:space="preserve">
+        <value>Incorrect usage of ExitGameScene Attribute</value>
+    </data>
+    <data name="MDM0107Description" xml:space="preserve">
+        <value>Method with ExitLoadingScene attribute should have parameters of object and SceneEventArgs types.</value>
+    </data>
+    <data name="MDM0107MessageFormat" xml:space="preserve">
+        <value>Method {0}'s parameter types must be object and SceneEventArgs</value>
+    </data>
+    <data name="MDM0107Title" xml:space="preserve">
+        <value>Incorrect usage of ExitLoadingScene Attribute</value>
+    </data>
+    <data name="MDM0108Description" xml:space="preserve">
+        <value>Method with ExitMainScene attribute should have parameters of object and SceneEventArgs types.</value>
+    </data>
+    <data name="MDM0108MessageFormat" xml:space="preserve">
+        <value>Method {0}'s parameter types must be object and SceneEventArgs</value>
+    </data>
+    <data name="MDM0108Title" xml:space="preserve">
+        <value>Incorrect usage of ExitMainScene Attribute</value>
+    </data>
+    <data name="MDM0109Description" xml:space="preserve">
+        <value>Method with EnterWelcomeScene attribute should have parameters of object and SceneEventArgs types.</value>
+    </data>
+    <data name="MDM0109MessageFormat" xml:space="preserve">
+        <value>Method {0}'s parameter types must be object and SceneEventArgs</value>
+    </data>
+    <data name="MDM0109Title" xml:space="preserve">
+        <value>Incorrect usage of EnterWelcomeScene Attribute</value>
+    </data>
+    <data name="MDM0110Description" xml:space="preserve">
+        <value>Method with ExitWelcomeScene attribute should have parameters of object and SceneEventArgs types.</value>
+    </data>
+    <data name="MDM0110MessageFormat" xml:space="preserve">
+        <value>Method {0}'s parameter types must be object and SceneEventArgs</value>
+    </data>
+    <data name="MDM0110Title" xml:space="preserve">
+        <value>Incorrect usage of ExitWelcomeScene Attribute</value>
+    </data>
 </root>
