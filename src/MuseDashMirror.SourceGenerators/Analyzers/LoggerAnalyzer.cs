@@ -34,9 +34,9 @@ public sealed class LoggerAnalyzer : DiagnosticAnalyzer
             return;
         }
 
-        var hasLoggerAttribute = symbol.GetAttributes().Any(x => x.AttributeClass!.ToDisplayString() == LoggerAttributeName);
+        var hasAttribute = symbol.GetAttributes().Any(x => x.AttributeClass!.ToDisplayString() == LoggerAttributeName);
 
-        if (hasLoggerAttribute && !modifiers.Any(SyntaxKind.PartialKeyword))
+        if (hasAttribute && !modifiers.Any(SyntaxKind.PartialKeyword))
         {
             context.ReportDiagnostic(Diagnostic.Create(Rule, node.Identifier.GetLocation(), symbol.Name));
         }

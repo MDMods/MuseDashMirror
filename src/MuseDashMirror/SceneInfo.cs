@@ -79,4 +79,29 @@ public static class SceneInfo
         OnExitLoadingScene?.Invoke(null, new SceneEventArgs(buildIndex, sceneName));
 
     #endregion LoadingScene
+
+    #region WelcomScene
+
+    /// <summary>
+    ///     Is in the Welcome Scene
+    /// </summary>
+    public static bool IsWelcomeScene { get; internal set; }
+
+    /// <summary>
+    ///     An event to invoke methods when entering welcome scene
+    /// </summary>
+    public static event EventHandler<SceneEventArgs> OnEnterWelcomeScene;
+
+    /// <summary>
+    ///     An event to invoke methods when exiting welcome scene
+    /// </summary>
+    public static event EventHandler<SceneEventArgs> OnExitWelcomeScene;
+
+    internal static void OnEnterWelcomeSceneInvoke(int buildIndex, string sceneName) =>
+        OnEnterWelcomeScene?.Invoke(null, new SceneEventArgs(buildIndex, sceneName));
+
+    internal static void OnExitWelcomeSceneInvoke(int buildIndex, string sceneName) =>
+        OnExitWelcomeScene?.Invoke(null, new SceneEventArgs(buildIndex, sceneName));
+
+    #endregion
 }

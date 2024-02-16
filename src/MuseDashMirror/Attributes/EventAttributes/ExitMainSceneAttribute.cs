@@ -15,7 +15,7 @@ namespace MuseDashMirror.Attributes.EventAttributes;
 ///     </example>
 /// </summary>
 [AttributeUsage(AttributeTargets.Method)]
-public class ExitMainSceneAttribute : Attribute, IEventAttribute
+public sealed class ExitMainSceneAttribute : Attribute, IEventAttribute
 {
     /// <summary>
     ///     Register the method to <see cref="OnExitMainScene" />

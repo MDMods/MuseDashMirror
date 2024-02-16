@@ -45,6 +45,11 @@ public class Main : MelonMod
                 IsLoadingScene = true;
                 OnEnterLoadingSceneInvoke(buildIndex, sceneName);
                 break;
+
+            case "Welcome":
+                IsWelcomeScene = true;
+                OnEnterWelcomeSceneInvoke(buildIndex, sceneName);
+                break;
         }
     }
 
@@ -70,6 +75,11 @@ public class Main : MelonMod
             case "Loading":
                 IsLoadingScene = false;
                 OnExitLoadingSceneInvoke(buildIndex, sceneName);
+                break;
+
+            case "Welcome":
+                IsWelcomeScene = false;
+                OnExitWelcomeSceneInvoke(buildIndex, sceneName);
                 break;
         }
     }

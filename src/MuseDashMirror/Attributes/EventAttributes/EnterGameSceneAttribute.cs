@@ -15,7 +15,7 @@ namespace MuseDashMirror.Attributes.EventAttributes;
 ///     </example>
 /// </summary>
 [AttributeUsage(AttributeTargets.Method)]
-public class EnterGameSceneAttribute : Attribute, IEventAttribute
+public sealed class EnterGameSceneAttribute : Attribute, IEventAttribute
 {
     /// <summary>
     ///     Register the method to <see cref="OnEnterGameScene" />

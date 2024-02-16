@@ -22,4 +22,103 @@
     <data name="MDM0000Title" xml:space="preserve">
         <value>Logger 特性只能被用在 partial 类上</value>
     </data>
+    <data name="MDM0100Title" xml:space="preserve">
+        <value>PnlMenuEvent 特性使用错误</value>
+    </data>
+    <data name="MDM0100Description" xml:space="preserve">
+        <value>带有 PnlMenuEvent 特性的方法参数类型必须为 object 和 PnlMenuArgs。</value>
+    </data>
+    <data name="MDM0100MessageFormat" xml:space="preserve">
+        <value>方法 {0} 的参数必须为 object 和 PnlMenuArgs</value>
+    </data>
+    <data name="MDM0101Title" xml:space="preserve">
+        <value>PnlStageEvent 特性使用错误</value>
+    </data>
+    <data name="MDM0102Title" xml:space="preserve">
+        <value>MenuSelectEvent 特性使用错误</value>
+    </data>
+    <data name="MDM0103Title" xml:space="preserve">
+        <value>EnterGameScene 特性使用错误</value>
+    </data>
+    <data name="MDM0104Title" xml:space="preserve">
+        <value>EnterLoadingScene 特性使用错误</value>
+    </data>
+    <data name="MDM0105Title" xml:space="preserve">
+        <value>EnterMainScene 特性使用错误</value>
+    </data>
+    <data name="MDM0106Title" xml:space="preserve">
+        <value>ExitGameScene 特性使用错误</value>
+    </data>
+    <data name="MDM0107Title" xml:space="preserve">
+        <value>ExitLoadingScene 特性使用错误</value>
+    </data>
+    <data name="MDM0108Title" xml:space="preserve">
+        <value>ExitMainScene 特性使用错误</value>
+    </data>
+    <data name="MDM0109Title" xml:space="preserve">
+        <value>EnterWelcomeScene 特性使用错误</value>
+    </data>
+    <data name="MDM0110Title" xml:space="preserve">
+        <value>ExitWelcomeScene 特性使用错误</value>
+    </data>
+    <data name="MDM0101MessageFormat" xml:space="preserve">
+        <value>方法 {0} 的参数必须为 object 和 PnlStageArgs</value>
+    </data>
+    <data name="MDM0102MessageFormat" xml:space="preserve">
+        <value>方法 {0} 的参数必须为 object 和 MenuSelectEventArgs</value>
+    </data>
+    <data name="MDM0103MessageFormat" xml:space="preserve">
+        <value>方法 {0} 的参数必须为 object 和 SceneEventArgs</value>
+    </data>
+    <data name="MDM0104MessageFormat" xml:space="preserve">
+        <value>方法 {0} 的参数必须为 object 和 SceneEventArgs</value>
+    </data>
+    <data name="MDM0105MessageFormat" xml:space="preserve">
+        <value>方法 {0} 的参数必须为 object 和 SceneEventArgs</value>
+    </data>
+    <data name="MDM0106MessageFormat" xml:space="preserve">
+        <value>方法 {0} 的参数必须为 object 和 SceneEventArgs</value>
+    </data>
+    <data name="MDM0107MessageFormat" xml:space="preserve">
+        <value>方法 {0} 的参数必须为 object 和 SceneEventArgs</value>
+    </data>
+    <data name="MDM0108MessageFormat" xml:space="preserve">
+        <value>方法 {0} 的参数必须为 object 和 SceneEventArgs</value>
+    </data>
+    <data name="MDM0109MessageFormat" xml:space="preserve">
+        <value>方法 {0} 的参数必须为 object 和 SceneEventArgs</value>
+    </data>
+    <data name="MDM0110MessageFormat" xml:space="preserve">
+        <value>方法 {0} 的参数必须为 object 和 SceneEventArgs</value>
+    </data>
+    <data name="MDM0101Description" xml:space="preserve">
+        <value>带有 PnlStageEvent 特性的方法参数类型必须为 object 和 PnlStageArgs。</value>
+    </data>
+    <data name="MDM0102Description" xml:space="preserve">
+        <value>带有 MenuSelectEvent 特性的方法参数类型必须为 object 和 MenuSelectEventArgs。</value>
+    </data>
+    <data name="MDM0103Description" xml:space="preserve">
+        <value>带有 EnterGameScene 特性的方法参数类型必须为 object 和 SceneEventArgs。</value>
+    </data>
+    <data name="MDM0104Description" xml:space="preserve">
+        <value>带有 EnterLoadingScene 特性的方法参数类型必须为 object 和 SceneEventArgs。</value>
+    </data>
+    <data name="MDM0105Description" xml:space="preserve">
+        <value>带有 EnterMainScene 特性的方法参数类型必须为 object 和 SceneEventArgs。</value>
+    </data>
+    <data name="MDM0106Description" xml:space="preserve">
+        <value>带有 ExitGameScene 特性的方法参数类型必须为 object 和 SceneEventArgs。</value>
+    </data>
+    <data name="MDM0107Description" xml:space="preserve">
+        <value>带有 ExitLoadingScene 特性的方法参数类型必须为 object 和 SceneEventArgs。</value>
+    </data>
+    <data name="MDM0108Description" xml:space="preserve">
+        <value>带有 ExitMainScene 特性的方法参数类型必须为 object 和 SceneEventArgs。</value>
+    </data>
+    <data name="MDM0109Description" xml:space="preserve">
+        <value>带有 EnterWelcomeScene 特性的方法参数类型必须为 object 和 SceneEventArgs。</value>
+    </data>
+    <data name="MDM0110Description" xml:space="preserve">
+        <value>带有 ExitWelcomeScene 特性的方法参数类型必须为 object 和 SceneEventArgs。</value>
+    </data>
 </root>
