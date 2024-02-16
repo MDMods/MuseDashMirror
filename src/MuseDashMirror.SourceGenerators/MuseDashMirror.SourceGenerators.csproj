@@ -8,7 +8,22 @@
         <CompilerGeneratedFilesOutputPath>Generated</CompilerGeneratedFilesOutputPath>
         <IsRoslynComponent>true</IsRoslynComponent>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>MuseDashMirror.SourceGenerators</PackageId>
+        <Title>MuseDashMirror.SourceGenerators</Title>
+        <Authors>lxy</Authors>
+        <RepositoryUrl>https://github.com/MDMods/MuseDashMirror</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false"/>
+        <None Include="$(OutputPath)\zh-Hans\$(AssemblyName).resources.dll" Pack="true" PackagePath="analyzers/dotnet/cs/zh-Hans" Visible="false"/>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="IndexRange" Version="1.0.3"/>
