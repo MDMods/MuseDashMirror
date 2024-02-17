@@ -5,7 +5,20 @@
         <TargetFramework>net6.0</TargetFramework>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>MuseDashMirror</PackageId>
+        <Title>MuseDashMirror</Title>
+        <Authors>lxy</Authors>
+        <PackageVersion>1.0.0-beta</PackageVersion>
+        <PackageProjectUrl>https://github.com/MDMods/MuseDashMirror</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/MDMods/MuseDashMirror</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
 
     <ItemGroup>
         <Reference Include="0Harmony">
@@ -114,8 +127,8 @@
     </ItemGroup>
 
     <Target Name="CopyMods" AfterTargets="Build">
-        <Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="$(ReferencePath)\Mods"/>
-        <Message Text="Copied DLL -&gt; $(ReferencePath)\Mods\$(ProjectName).dll" Importance="High"/>
+        <Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="$(GameFolder)\Mods"/>
+        <Message Text="Copied DLL -&gt; $(GameFolder)\Mods\$(ProjectName).dll" Importance="High"/>
     </Target>
 
     <Import Project="..\MuseDashMirror.Shared\MuseDashMirror.Shared.projitems" Label="Shared"/>
