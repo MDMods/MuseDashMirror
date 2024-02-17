@@ -35,10 +35,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\MuseDashMirror.Core\MuseDashMirror.Core.csproj" OutputItemType="Analyzer" ReferenceOutAssembly="true"/>
-    </ItemGroup>
-
-    <ItemGroup>
         <EmbeddedResource Update="Localization\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -52,5 +48,7 @@
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
     </ItemGroup>
+
+    <Import Project="..\MuseDashMirror.Shared\MuseDashMirror.Shared.projitems" Label="Shared"/>
 
 </Project>

@@ -110,7 +110,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\MuseDashMirror.Core\MuseDashMirror.Core.csproj"/>
         <ProjectReference Include="..\MuseDashMirror.SourceGenerators\MuseDashMirror.SourceGenerators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
     </ItemGroup>
 
@@ -118,4 +117,6 @@
         <Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="$(ReferencePath)\Mods"/>
         <Message Text="Copied DLL -&gt; $(ReferencePath)\Mods\$(ProjectName).dll" Importance="High"/>
     </Target>
+
+    <Import Project="..\MuseDashMirror.Shared\MuseDashMirror.Shared.projitems" Label="Shared"/>
 </Project>
