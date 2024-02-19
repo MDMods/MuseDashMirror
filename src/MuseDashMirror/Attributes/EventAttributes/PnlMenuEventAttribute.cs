@@ -1,4 +1,3 @@
-using System.Reflection;
 using Il2CppAssets.Scripts.UI.Panels;
 
 namespace MuseDashMirror.Attributes.EventAttributes;
@@ -16,14 +15,4 @@ namespace MuseDashMirror.Attributes.EventAttributes;
 ///     </example>
 /// </summary>
 [AttributeUsage(AttributeTargets.Method)]
-public sealed class PnlMenuEventAttribute : Attribute, IEventAttribute
-{
-    /// <summary>
-    ///     Register the method to <see cref="PnlMenuEvent" />
-    /// </summary>
-    /// <param name="method"></param>
-    public void Register(MethodInfo method)
-    {
-        PnlMenuEvent += (EventHandler<PnlMenuEventArgs>)Delegate.CreateDelegate(typeof(EventHandler<PnlMenuEventArgs>), method);
-    }
-}
+public sealed class PnlMenuEventAttribute : Attribute;

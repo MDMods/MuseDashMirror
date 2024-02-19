@@ -1,5 +1,3 @@
-using System.Reflection;
-
 namespace MuseDashMirror.Attributes.EventAttributes;
 
 /// <summary>
@@ -15,14 +13,4 @@ namespace MuseDashMirror.Attributes.EventAttributes;
 ///     </example>
 /// </summary>
 [AttributeUsage(AttributeTargets.Method)]
-public sealed class ExitMainSceneAttribute : Attribute, IEventAttribute
-{
-    /// <summary>
-    ///     Register the method to <see cref="OnExitMainScene" />
-    /// </summary>
-    /// <param name="method"></param>
-    public void Register(MethodInfo method)
-    {
-        OnExitMainScene += (EventHandler<SceneEventArgs>)Delegate.CreateDelegate(typeof(EventHandler<SceneEventArgs>), method);
-    }
-}
+public sealed class ExitMainSceneAttribute : Attribute;

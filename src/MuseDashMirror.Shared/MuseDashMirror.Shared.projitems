@@ -9,6 +9,7 @@
         <Import_RootNamespace>MuseDashMirror.Shared</Import_RootNamespace>
     </PropertyGroup>
     <ItemGroup>
+        <Compile Include="$(MSBuildThisFileDirectory)ConstructorType.cs"/>
         <Compile Include="$(MSBuildThisFileDirectory)LoggerType.cs"/>
     </ItemGroup>
 </Project>

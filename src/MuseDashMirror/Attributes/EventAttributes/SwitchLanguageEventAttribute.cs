@@ -1,4 +1,3 @@
-using System.Reflection;
 using Il2CppAssets.Scripts.UI.Specials;
 
 namespace MuseDashMirror.Attributes.EventAttributes;
@@ -16,14 +15,4 @@ namespace MuseDashMirror.Attributes.EventAttributes;
 ///     </example>
 /// </summary>
 [AttributeUsage(AttributeTargets.Method)]
-public sealed class SwitchLanguageEventAttribute : Attribute, IEventAttribute
-{
-    /// <summary>
-    ///     Register the method to <see cref="SwitchLanguagesEvent" />
-    /// </summary>
-    /// <param name="method"></param>
-    public void Register(MethodInfo method)
-    {
-        SwitchLanguagesEvent += (EventHandler)Delegate.CreateDelegate(typeof(EventHandler), method);
-    }
-}
+public sealed class SwitchLanguageEventAttribute : Attribute;
