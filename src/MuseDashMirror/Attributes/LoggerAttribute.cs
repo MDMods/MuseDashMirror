@@ -13,11 +13,10 @@ namespace MuseDashMirror.Attributes;
 ///         </code>
 ///     </example>
 /// </summary>
+/// <param name="type">Logger Type</param>
 [AttributeUsage(AttributeTargets.Class)]
 public sealed class LoggerAttribute(LoggerType type) : Attribute
 {
-    private LoggerType Type { get; set; } = type;
-
     public LoggerAttribute() : this(LoggerType.Readonly)
     {
     }
