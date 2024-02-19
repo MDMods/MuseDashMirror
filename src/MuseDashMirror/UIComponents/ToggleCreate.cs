@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
 
-namespace MuseDashMirror.UICreate;
+namespace MuseDashMirror.UIComponents;
 
 /// <summary>
 ///     Methods for creating toggle

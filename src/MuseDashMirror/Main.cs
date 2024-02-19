@@ -1,5 +1,6 @@
 ﻿using MelonLoader;
-using static MuseDashMirror.UICreate.Fonts;
+using MuseDashMirror.UIComponents;
+using static MuseDashMirror.UIComponents.Fonts;
 
 namespace MuseDashMirror;
 
@@ -58,12 +59,13 @@ public class Main : MelonMod
     /// </summary>
     public override void OnSceneWasUnloaded(int buildIndex, string sceneName)
     {
+        CanvasUtils.CameraCache.Clear();
         switch (sceneName)
         {
             case "GameMain":
                 IsGameScene = false;
                 OnExitGameSceneInvoke(buildIndex, sceneName);
-                //ToggleCreate.Reset();
+                ToggleCreate.Reset();
                 BattleComponent.Reset();
                 break;
 

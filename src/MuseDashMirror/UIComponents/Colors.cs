@@ -1,4 +1,4 @@
-﻿namespace MuseDashMirror.UICreate;
+﻿namespace MuseDashMirror.UIComponents;
 
 /// <summary>
 ///     Default colors

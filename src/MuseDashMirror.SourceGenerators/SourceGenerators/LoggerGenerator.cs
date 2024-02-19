@@ -1,4 +1,4 @@
-namespace MuseDashMirror.SourceGenerators.SourceGenerators;
+namespace MuseDashMirror.SourceGenerators;
 
 [Generator(LanguageNames.CSharp)]
 public sealed class LoggerGenerator : IIncrementalGenerator
