@@ -10,3 +10,4 @@ using static MuseDashMirror.MelonBuildInfo;
 [assembly: AssemblyFileVersion(ModVersion)]
 [assembly: MelonInfo(typeof(Main), Name, ModVersion, Author)]
 [assembly: MelonGame("PeroPeroGames", "MuseDash")]
+[assembly: MelonPriority(int.MinValue)]
