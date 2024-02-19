@@ -7,7 +7,8 @@ public sealed class LoggerGenerator : IIncrementalGenerator
     {
         context.RegisterSourceOutput(
             context.SyntaxProvider.ForAttributeWithMetadataName(
-                LoggerAttributeName, FilterNode, ExtractDataFromContext), GenerateFromData);
+                LoggerAttributeName, FilterNode, ExtractDataFromContext),
+            GenerateFromData);
     }
 
     private static bool FilterNode(SyntaxNode node, CancellationToken _) =>
@@ -17,8 +18,8 @@ public sealed class LoggerGenerator : IIncrementalGenerator
     {
         if (ctx is not
             {
-                TargetNode: ClassDeclarationSyntax node,
-                TargetSymbol: INamedTypeSymbol { IsStatic: var isStatic, Name: var typeName, ContainingNamespace: var @namespace },
+                TargetNode: ClassDeclarationSyntax,
+                TargetSymbol: INamedTypeSymbol { IsStatic: var isStatic, Name: var className, ContainingNamespace: var @namespace },
                 Attributes: var attributes
             })
         {
@@ -40,17 +41,17 @@ public sealed class LoggerGenerator : IIncrementalGenerator
             _ => string.Empty
         };
 
-        return new LoggerData(@namespace.ToDisplayString(), typeName, modifier, node);
+        return new LoggerData(@namespace.ToDisplayString(), className, modifier);
     }
 
     private static void GenerateFromData(SourceProductionContext spc, LoggerData? data)
     {
-        if (data is not var (@namespace, className, modifier, classDeclaration))
+        if (data is not var (@namespace, className, modifier))
         {
             return;
         }
 
-        spc.AddSource(classDeclaration.Identifier.ValueText + "_Logger.g.cs",
+        spc.AddSource($"{className}_Logger.g.cs",
             Header +
             $$"""
               namespace {{@namespace}};
@@ -63,5 +64,5 @@ public sealed class LoggerGenerator : IIncrementalGenerator
               """);
     }
 
-    private sealed record LoggerData(string Namespace, string ClassName, string Modifier, ClassDeclarationSyntax ClassDeclaration);
+    private sealed record LoggerData(string Namespace, string ClassName, string Modifier);
 }
