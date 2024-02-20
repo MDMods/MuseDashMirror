@@ -19,7 +19,7 @@ public sealed class LoggerGenerator : IIncrementalGenerator
         if (ctx is not
             {
                 TargetNode: ClassDeclarationSyntax,
-                TargetSymbol: INamedTypeSymbol { IsStatic: var isStatic, Name: var className, ContainingNamespace: var @namespace },
+                TargetSymbol: INamedTypeSymbol { Name: var className, ContainingNamespace: var @namespace },
                 Attributes: var attributes
             })
         {
@@ -27,13 +27,7 @@ public sealed class LoggerGenerator : IIncrementalGenerator
         }
 
         var attribute = attributes.First(x => x.AttributeClass!.ToDisplayString() == LoggerAttributeName);
-
-        var loggerType = isStatic ? LoggerType.StaticReadonly : LoggerType.Readonly;
-        if (attribute.ConstructorArguments is not [] and var argument)
-        {
-            loggerType = (LoggerType)argument.Single().Value!;
-        }
-
+        var loggerType = (LoggerType)attribute.ConstructorArguments.Single().Value!;
         var modifier = loggerType switch
         {
             LoggerType.Readonly => "readonly",

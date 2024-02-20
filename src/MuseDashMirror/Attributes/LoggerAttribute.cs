@@ -15,9 +15,4 @@ namespace MuseDashMirror.Attributes;
 /// </summary>
 /// <param name="type">Logger Type</param>
 [AttributeUsage(AttributeTargets.Class)]
-public sealed class LoggerAttribute(LoggerType type) : Attribute
-{
-    public LoggerAttribute() : this(LoggerType.Readonly)
-    {
-    }
-}
+public sealed class LoggerAttribute(LoggerType type = LoggerType.StaticReadonly) : Attribute;
