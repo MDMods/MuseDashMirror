@@ -6,7 +6,7 @@ namespace MuseDashMirror.EventArguments;
 /// <param name="listIndex"></param>
 /// <param name="index"></param>
 /// <param name="isOn"></param>
-public class MenuSelectEventArgs(int listIndex, int index, bool isOn) : EventArgs
+public sealed class MenuSelectEventArgs(int listIndex, int index, bool isOn) : EventArgs
 {
     /// <summary>
     ///     <list type="bullet">
