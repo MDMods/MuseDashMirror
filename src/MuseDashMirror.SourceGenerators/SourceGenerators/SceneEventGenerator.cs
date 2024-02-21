@@ -49,11 +49,11 @@ public sealed class SceneEventGenerator : IIncrementalGenerator
 
         var sceneEventNames = symbol.GetAttributes()
             .Select(static attribute => SceneEventRegex.Match(attribute.AttributeClass!.ToDisplayString()))
+            .Where(static match => match.Success)
             .Select(static match => match.Groups[1].Value)
-            .Where(name => !string.IsNullOrEmpty(name))
             .ToArray();
 
-        return new SceneEventData(symbol.ContainingNamespace.ToString(), parent.Identifier.ValueText, symbol.Name, sceneEventNames);
+        return new SceneEventData(symbol.ContainingNamespace.ToDisplayString(), parent.Identifier.ValueText, symbol.Name, sceneEventNames);
     }
 
     private static void GenerateFromData(SourceProductionContext spc, SceneEventData? data)
