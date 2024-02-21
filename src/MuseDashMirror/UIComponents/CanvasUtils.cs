@@ -1,10 +1,10 @@
-﻿using MuseDashMirror.Enums;
+﻿using MuseDashMirror.Models;
 using UnityEngine.UI;
 
 namespace MuseDashMirror.UIComponents;
 
 /// <summary>
-///     Methods for creating canvas
+///     Methods for creating canvas and related components
 /// </summary>
 [Logger]
 public static partial class CanvasUtils
@@ -136,10 +136,6 @@ public static partial class CanvasUtils
         if (parent != null)
         {
             canvas.transform.SetParent(parent.transform);
-        }
-        else
-        {
-            Logger.Error("Parent is null, canvas will be created without parent");
         }
 
         return canvas;

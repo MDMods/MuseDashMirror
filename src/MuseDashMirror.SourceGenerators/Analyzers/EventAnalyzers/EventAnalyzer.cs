@@ -5,7 +5,8 @@ public sealed class EventAnalyzer : DiagnosticAnalyzer
 {
     public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(
         EventAttributeInvalidReturnTypeError,
-        EventAttributeNonStaticMethodForStaticConstructorError);
+        EventAttributeNonStaticMethodForStaticConstructorError,
+        EventAttributeInNonPartialClassError);
 
     public override void Initialize(AnalysisContext context)
     {
@@ -19,7 +20,7 @@ public sealed class EventAnalyzer : DiagnosticAnalyzer
         if (context.Node is not MethodDeclarationSyntax
             {
                 ReturnType: var returnType,
-                Parent: ClassDeclarationSyntax classDeclaration
+                Parent: ClassDeclarationSyntax { Modifiers: var modifiers and not [] } classDeclaration
             } methodDeclaration)
         {
             return;
@@ -52,6 +53,13 @@ public sealed class EventAnalyzer : DiagnosticAnalyzer
         var attribute = methodSymbol.GetAttributes().FirstOrDefault(x => SceneEventRegex.IsMatch(x.AttributeClass!.ToDisplayString()));
         if (attribute is null)
         {
+            return;
+        }
+
+        if (!modifiers.Any(SyntaxKind.PartialKeyword))
+        {
+            context.ReportDiagnostic(Diagnostic.Create(EventAttributeInNonPartialClassError, methodDeclaration.Identifier.GetLocation(),
+                classSymbol.Name, methodSymbol.Name));
             return;
         }
 

@@ -1,11 +1,11 @@
 namespace MuseDashMirror.Attributes;
 
 /// <summary>
-///     <para>Create a MelonLogger with the name of the class</para>
+///     <para>Create a <see cref="MelonLoader.MelonLogger"/> with the name of the class</para>
 ///     <example>
 ///         <code>
 ///         [Logger]
-///         internal partial class ExampleClass; 
+///         internal partial class ExampleClass;
 ///         </code>
 ///         <code>
 ///         [Logger(LoggerType.StaticReadonly)]
