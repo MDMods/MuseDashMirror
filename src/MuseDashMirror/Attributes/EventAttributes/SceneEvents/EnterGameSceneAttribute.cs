@@ -1,8 +1,8 @@
-namespace MuseDashMirror.Attributes.EventAttributes;
+namespace MuseDashMirror.Attributes.EventAttributes.SceneEvents;
 
 /// <summary>
 ///     <para>
-///         Add this attribute to a method to make it run when entering loading scene<br />
+///         Add this attribute to a method to make it run when entering game scene<br />
 ///         Method can be any accessibility level but must be static
 ///     </para>
 ///     <example>
@@ -13,4 +13,4 @@ namespace MuseDashMirror.Attributes.EventAttributes;
 ///     </example>
 /// </summary>
 [AttributeUsage(AttributeTargets.Method)]
-public sealed class EnterLoadingSceneAttribute : Attribute;
+public sealed class EnterGameSceneAttribute : Attribute;

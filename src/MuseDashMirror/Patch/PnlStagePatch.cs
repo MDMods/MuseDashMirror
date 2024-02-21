@@ -5,5 +5,5 @@ namespace MuseDashMirror.Patch;
 [HarmonyPatch(typeof(PnlStage), nameof(PnlStage.Awake))]
 internal static class PnlStagePatch
 {
-    private static void Postfix(PnlStage __instance) => PnlStageEventInvoke(__instance);
+    private static void Postfix(PnlStage __instance) => PnlStagePatchInvoke(__instance);
 }

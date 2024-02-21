@@ -5,5 +5,5 @@ namespace MuseDashMirror.Patch;
 [HarmonyPatch(typeof(SwitchLanguages), nameof(SwitchLanguages.OnClick))]
 internal static class SwitchLanguagesPatch
 {
-    private static void Postfix() => SwitchLanguagesEventInvoke();
+    private static void Postfix(SwitchLanguages __instance) => SwitchLanguagesPatchInvoke(__instance);
 }
