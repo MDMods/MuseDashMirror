@@ -6,7 +6,7 @@ internal static class DiagnosticDescriptors
         "MDM0000",
         GetLocalizableString(nameof(MDM0000Title)),
         GetLocalizableString(nameof(MDM0000MessageFormat)),
-        typeof(LoggerGenerator).FullName!,
+        typeof(LoggerAnalyzer).FullName!,
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0000Description)));
@@ -15,7 +15,7 @@ internal static class DiagnosticDescriptors
         "MDM0100",
         GetLocalizableString(nameof(MDM0100Title)),
         GetLocalizableString(nameof(MDM0100MessageFormat)),
-        typeof(PatchEventGenerator).FullName!,
+        typeof(PatchEventAnalyzer).FullName!,
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0100Description)));
@@ -24,7 +24,7 @@ internal static class DiagnosticDescriptors
         "MDM0101",
         GetLocalizableString(nameof(MDM0101Title)),
         GetLocalizableString(nameof(MDM0101MessageFormat)),
-        typeof(SceneEventGenerator).FullName!,
+        typeof(SceneEventAnalyzer).FullName!,
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0101Description)));
@@ -33,7 +33,7 @@ internal static class DiagnosticDescriptors
         "MDM0102",
         GetLocalizableString(nameof(MDM0102Title)),
         GetLocalizableString(nameof(MDM0102MessageFormat)),
-        typeof(PatchEventGenerator).FullName!,
+        typeof(EventAnalyzer).FullName!,
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0102Description)));
@@ -42,7 +42,7 @@ internal static class DiagnosticDescriptors
         "MDM0103",
         GetLocalizableString(nameof(MDM0103Title)),
         GetLocalizableString(nameof(MDM0103MessageFormat)),
-        typeof(PatchEventGenerator).FullName!,
+        typeof(EventAnalyzer).FullName!,
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0103Description)));

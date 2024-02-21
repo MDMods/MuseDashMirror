@@ -1,4 +1,4 @@
-namespace MuseDashMirror.SourceGenerators.Analyzers;
+namespace MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers;
 
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 public sealed class EventAnalyzer : DiagnosticAnalyzer
