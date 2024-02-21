@@ -177,7 +177,7 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Method {0} must be declared as static in order to be correctly registered..
+        ///   Looks up a localized string similar to Method {0} must be declared as static in order to be correctly registered.
         /// </summary>
         internal static string MDM0103MessageFormat {
             get {
