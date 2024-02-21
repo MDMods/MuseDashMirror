@@ -62,7 +62,7 @@ public sealed class RegisterInMuseDashMirrorGenerator : IIncrementalGenerator
         {
             RegisterMethodType.Constructor => $"public {className}()",
             RegisterMethodType.StaticConstructor => $"static {className}()",
-            RegisterMethodType.Method => $"internal static void RegisterMethodsIn{className}()",
+            RegisterMethodType.Method => $"internal static void Register{className}()",
             _ => throw new ArgumentOutOfRangeException(nameof(registerMethodType), registerMethodType, null)
         };
 
