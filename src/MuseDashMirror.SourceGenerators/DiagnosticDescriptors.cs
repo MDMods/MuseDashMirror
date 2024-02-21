@@ -46,4 +46,13 @@ internal static class DiagnosticDescriptors
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0103Description)));
+
+    internal static readonly DiagnosticDescriptor EventAttributeInNonPartialClassError = new(
+        "MDM0104",
+        GetLocalizableString(nameof(MDM0104Title)),
+        GetLocalizableString(nameof(MDM0104MessageFormat)),
+        typeof(EventAnalyzer).FullName!,
+        DiagnosticSeverity.Error,
+        true,
+        GetLocalizableString(nameof(MDM0104Description)));
 }

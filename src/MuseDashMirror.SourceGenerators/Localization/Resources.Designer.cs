@@ -193,5 +193,32 @@ namespace MuseDashMirror.SourceGenerators.Localization {
                 return ResourceManager.GetString("MDM0103Title", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method with Event attribute must be in a partial class..
+        /// </summary>
+        internal static string MDM0104Description {
+            get {
+                return ResourceManager.GetString("MDM0104Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Class {0} must be a partial class for {1}&apos;s register method to be correctly generated.
+        /// </summary>
+        internal static string MDM0104MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0104MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method should be in a partial class.
+        /// </summary>
+        internal static string MDM0104Title {
+            get {
+                return ResourceManager.GetString("MDM0104Title", resourceCulture);
+            }
+        }
     }
 }

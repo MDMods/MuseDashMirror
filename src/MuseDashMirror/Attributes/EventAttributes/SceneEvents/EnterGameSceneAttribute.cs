@@ -2,7 +2,7 @@ namespace MuseDashMirror.Attributes.EventAttributes.SceneEvents;
 
 /// <summary>
 ///     <para>
-///         Add this attribute to a method to make it run when entering game scene<br />
+///         Add this attribute to a method to make it run when entering <b>Game Scene</b><br />
 ///         Method can be any accessibility level but must be static
 ///     </para>
 ///     <example>

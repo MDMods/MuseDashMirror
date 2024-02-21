@@ -9,3 +9,4 @@
 | MDM0101 | MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers.SceneEventAnalyzer | Error    | Method with SceneEvent attribute must have parameter types object and SceneEventArgs.    |
 | MDM0102 | MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers.EventAnalyzer      | Error    | Method with Event attribute must have return type void.                                  |
 | MDM0103 | MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers.EventAnalyzer      | Error    | Method with static class or register type static constructor must be declared as static. |
+| MDM0104 | MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers.EventAnalyzer      | Error    | Method with Event attribute must be in a partial class.                                  |
