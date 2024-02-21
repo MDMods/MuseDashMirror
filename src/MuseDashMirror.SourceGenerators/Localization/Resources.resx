@@ -31,39 +31,39 @@
         <value>Logger attribute can only be used on partial class</value>
     </data>
     <data name="MDM0100Title" xml:space="preserve">
-        <value>Incorrect usage of PnlMenuEvent Attribute</value>
+        <value>Incorrect parameter types</value>
     </data>
     <data name="MDM0100Description" xml:space="preserve">
-        <value>Method with PnlMenuEvent attribute should have parameters of object and PnlMenuArgs types.</value>
+        <value>Method with PatchEvent attribute must have parameter types object and EventArgs.</value>
     </data>
     <data name="MDM0100MessageFormat" xml:space="preserve">
-        <value>Method {0}'s parameter types must be object and PnlMenuArgs</value>
+        <value>Method {0} with attribute {1} must have parameter types object and {2}</value>
     </data>
     <data name="MDM0101Description" xml:space="preserve">
-        <value>Method with PnlStageEvent attribute should have parameters of object and PnlStageArgs types.</value>
+        <value>Method with SceneEvent attribute must have parameter types object and SceneEventArgs.</value>
     </data>
     <data name="MDM0101MessageFormat" xml:space="preserve">
-        <value>Method {0}'s parameter types must be object and PnlStageArgs</value>
+        <value>Method {0} with attribute {1} must have parameter types object and SceneEventArgs</value>
     </data>
     <data name="MDM0101Title" xml:space="preserve">
-        <value>Incorrect usage of PnlStageEvent Attribute</value>
+        <value>Incorrect parameter types</value>
     </data>
     <data name="MDM0102Description" xml:space="preserve">
-        <value>Method with MenuSelectEvent attribute should have parameters of object and MenuSelectEventArgs types.</value>
+        <value>Method with Event attribute must have return type void.</value>
     </data>
     <data name="MDM0102MessageFormat" xml:space="preserve">
-        <value>Method {0}'s parameter types must be object and MenuSelectEventArgs</value>
+        <value>Method {0} with attribute {1} must have return type void</value>
     </data>
     <data name="MDM0102Title" xml:space="preserve">
-        <value>Incorrect usage of MenuSelectEvent Attribute</value>
+        <value>Incorrect return type</value>
     </data>
     <data name="MDM0103Description" xml:space="preserve">
-        <value>Method with SceneEvent attribute must have parameter types of object and SceneEventArgs.</value>
+        <value>Method with static class or register type static constructor must be declared as static.</value>
     </data>
     <data name="MDM0103MessageFormat" xml:space="preserve">
-        <value>Method {0} with {1} attribute must have parameter types object and SceneEventArgs</value>
+        <value>Method {0} must be declared as static in order to be correctly registered.</value>
     </data>
     <data name="MDM0103Title" xml:space="preserve">
-        <value>Incorrect usage of SceneEvent attribute</value>
+        <value>Method should be static</value>
     </data>
 </root>

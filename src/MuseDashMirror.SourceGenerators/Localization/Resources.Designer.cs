@@ -87,7 +87,7 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Method with PnlMenuEvent attribute should have parameters of object and PnlMenuArgs types..
+        ///   Looks up a localized string similar to Method with PatchEvent attribute must have parameter types object and EventArgs..
         /// </summary>
         internal static string MDM0100Description {
             get {
@@ -96,7 +96,7 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Method {0}&apos;s parameter types must be object and PnlMenuArgs.
+        ///   Looks up a localized string similar to Method {0} with attribute {1} must have parameter types object and {2}.
         /// </summary>
         internal static string MDM0100MessageFormat {
             get {
@@ -105,7 +105,7 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Incorrect usage of PnlMenuEvent Attribute.
+        ///   Looks up a localized string similar to Incorrect parameter types.
         /// </summary>
         internal static string MDM0100Title {
             get {
@@ -114,7 +114,7 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Method with PnlStageEvent attribute should have parameters of object and PnlStageArgs types..
+        ///   Looks up a localized string similar to Method with SceneEvent attribute must have parameter types object and SceneEventArgs..
         /// </summary>
         internal static string MDM0101Description {
             get {
@@ -123,7 +123,7 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Method {0}&apos;s parameter types must be object and PnlStageArgs.
+        ///   Looks up a localized string similar to Method {0} with attribute {1} must have parameter types object and SceneEventArgs.
         /// </summary>
         internal static string MDM0101MessageFormat {
             get {
@@ -132,7 +132,7 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Incorrect usage of PnlStageEvent Attribute.
+        ///   Looks up a localized string similar to Incorrect parameter types.
         /// </summary>
         internal static string MDM0101Title {
             get {
@@ -141,7 +141,7 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Method with MenuSelectEvent attribute should have parameters of object and MenuSelectEventArgs types..
+        ///   Looks up a localized string similar to Method with Event attribute must have return type void..
         /// </summary>
         internal static string MDM0102Description {
             get {
@@ -150,7 +150,7 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Method {0}&apos;s parameter types must be object and MenuSelectEventArgs.
+        ///   Looks up a localized string similar to Method {0} with attribute {1} must have return type void.
         /// </summary>
         internal static string MDM0102MessageFormat {
             get {
@@ -159,7 +159,7 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Incorrect usage of MenuSelectEvent Attribute.
+        ///   Looks up a localized string similar to Incorrect return type.
         /// </summary>
         internal static string MDM0102Title {
             get {
@@ -168,7 +168,7 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Method with SceneEvent attribute must have parameter types of object and SceneEventArgs..
+        ///   Looks up a localized string similar to Method with static class or register type static constructor must be declared as static..
         /// </summary>
         internal static string MDM0103Description {
             get {
@@ -177,7 +177,7 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Method {0} with {1} attribute must have parameter types object and SceneEventArgs.
+        ///   Looks up a localized string similar to Method {0} must be declared as static in order to be correctly registered..
         /// </summary>
         internal static string MDM0103MessageFormat {
             get {
@@ -186,7 +186,7 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Incorrect usage of SceneEvent attribute.
+        ///   Looks up a localized string similar to Method should be static.
         /// </summary>
         internal static string MDM0103Title {
             get {

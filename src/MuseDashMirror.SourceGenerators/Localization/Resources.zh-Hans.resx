@@ -22,40 +22,4 @@
     <data name="MDM0000Title" xml:space="preserve">
         <value>Logger 特性只能被用在 partial 类上</value>
     </data>
-    <data name="MDM0100Title" xml:space="preserve">
-        <value>PnlMenuEvent 特性使用错误</value>
-    </data>
-    <data name="MDM0100Description" xml:space="preserve">
-        <value>带有 PnlMenuEvent 特性的方法参数类型必须为 object 和 PnlMenuArgs。</value>
-    </data>
-    <data name="MDM0100MessageFormat" xml:space="preserve">
-        <value>方法 {0} 的参数必须为 object 和 PnlMenuArgs</value>
-    </data>
-    <data name="MDM0101Title" xml:space="preserve">
-        <value>PnlStageEvent 特性使用错误</value>
-    </data>
-    <data name="MDM0102Title" xml:space="preserve">
-        <value>MenuSelectEvent 特性使用错误</value>
-    </data>
-    <data name="MDM0103Title" xml:space="preserve">
-        <value>SceneEvent 特性使用错误</value>
-    </data>
-    <data name="MDM0101MessageFormat" xml:space="preserve">
-        <value>方法 {0} 的参数必须为 object 和 PnlStageArgs</value>
-    </data>
-    <data name="MDM0102MessageFormat" xml:space="preserve">
-        <value>方法 {0} 的参数必须为 object 和 MenuSelectEventArgs</value>
-    </data>
-    <data name="MDM0103MessageFormat" xml:space="preserve">
-        <value>带有 {1} 特性的方法 {0} 的参数必须为 object 和 SceneEventArgs</value>
-    </data>
-    <data name="MDM0101Description" xml:space="preserve">
-        <value>带有 PnlStageEvent 特性的方法参数类型必须为 object 和 PnlStageArgs。</value>
-    </data>
-    <data name="MDM0102Description" xml:space="preserve">
-        <value>带有 MenuSelectEvent 特性的方法参数类型必须为 object 和 MenuSelectEventArgs。</value>
-    </data>
-    <data name="MDM0103Description" xml:space="preserve">
-        <value>带有 SceneEvent 特性的方法参数类型必须为 object 和 SceneEventArgs。</value>
-    </data>
 </root>

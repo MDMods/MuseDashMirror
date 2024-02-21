@@ -3,16 +3,7 @@ namespace MuseDashMirror.SourceGenerators.Analyzers;
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 public sealed class LoggerAnalyzer : DiagnosticAnalyzer
 {
-    private const string DiagnosticId = "MDM0000";
-    private const string Category = "Usage";
-    private static readonly LocalizableString Title = GetLocalizableString(nameof(MDM0000Title));
-    private static readonly LocalizableString MessageFormat = GetLocalizableString(nameof(MDM0000MessageFormat));
-    private static readonly LocalizableString Description = GetLocalizableString(nameof(MDM0000Description));
-
-    private static readonly DiagnosticDescriptor Rule = new(DiagnosticId, Title, MessageFormat, Category, DiagnosticSeverity.Error, true,
-        Description);
-
-    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(Rule);
+    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(LoggerAttributeForNonPartialClassError);
 
     public override void Initialize(AnalysisContext context)
     {
@@ -23,12 +14,12 @@ public sealed class LoggerAnalyzer : DiagnosticAnalyzer
 
     private static void AnalyzeNode(SyntaxNodeAnalysisContext context)
     {
-        if (context.Node is not ClassDeclarationSyntax { Modifiers: var modifiers and not [] } node)
+        if (context.Node is not ClassDeclarationSyntax { Modifiers: var modifiers and not [] } classDeclaration)
         {
             return;
         }
 
-        var symbol = context.SemanticModel.GetDeclaredSymbol(node);
+        var symbol = context.SemanticModel.GetDeclaredSymbol(classDeclaration);
         if (symbol is null)
         {
             return;
@@ -38,7 +29,8 @@ public sealed class LoggerAnalyzer : DiagnosticAnalyzer
 
         if (hasAttribute && !modifiers.Any(SyntaxKind.PartialKeyword))
         {
-            context.ReportDiagnostic(Diagnostic.Create(Rule, node.Identifier.GetLocation(), symbol.Name));
+            context.ReportDiagnostic(
+                Diagnostic.Create(LoggerAttributeForNonPartialClassError, classDeclaration.Identifier.GetLocation(), symbol.Name));
         }
     }
 }
