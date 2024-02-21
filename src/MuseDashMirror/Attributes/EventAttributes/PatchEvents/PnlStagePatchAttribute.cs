@@ -1,6 +1,6 @@
 using Il2CppAssets.Scripts.UI.Panels;
 
-namespace MuseDashMirror.Attributes.EventAttributes;
+namespace MuseDashMirror.Attributes.EventAttributes.PatchEvents;
 
 /// <summary>
 ///     <para>
@@ -15,4 +15,4 @@ namespace MuseDashMirror.Attributes.EventAttributes;
 ///     </example>
 /// </summary>
 [AttributeUsage(AttributeTargets.Method)]
-public sealed class PnlStageEventAttribute : Attribute;
+public sealed class PnlStagePatchAttribute : Attribute;

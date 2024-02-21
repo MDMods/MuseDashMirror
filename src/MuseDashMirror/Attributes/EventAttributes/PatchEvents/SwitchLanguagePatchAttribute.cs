@@ -1,10 +1,10 @@
-using Il2CppAssets.Scripts.UI.Panels;
+using Il2CppAssets.Scripts.UI.Specials;
 
-namespace MuseDashMirror.Attributes.EventAttributes;
+namespace MuseDashMirror.Attributes.EventAttributes.PatchEvents;
 
 /// <summary>
 ///     <para>
-///         Add this attribute to a method to make it run after <see cref="PnlMenu.Awake" /><br />
+///         Add this attribute to a method to make it run after <see cref="SwitchLanguages.OnClick" /><br />
 ///         Method can be any accessibility level but must be static
 ///     </para>
 ///     <example>
@@ -15,4 +15,4 @@ namespace MuseDashMirror.Attributes.EventAttributes;
 ///     </example>
 /// </summary>
 [AttributeUsage(AttributeTargets.Method)]
-public sealed class PnlMenuEventAttribute : Attribute;
+public sealed class SwitchLanguagePatchAttribute : Attribute;
