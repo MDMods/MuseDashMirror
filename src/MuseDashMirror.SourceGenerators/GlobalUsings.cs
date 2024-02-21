@@ -9,6 +9,7 @@ global using MuseDashMirror.Shared;
 global using MuseDashMirror.SourceGenerators.Localization;
 global using static MuseDashMirror.SourceGenerators.AttributeNameHelper;
 global using static MuseDashMirror.SourceGenerators.BuildInfo;
+global using static MuseDashMirror.SourceGenerators.DiagnosticDescriptors;
 global using static MuseDashMirror.SourceGenerators.Localization.Resources;
 global using static MuseDashMirror.SourceGenerators.SourceGenerationTexts;
 global using static MuseDashMirror.SourceGenerators.Utils;

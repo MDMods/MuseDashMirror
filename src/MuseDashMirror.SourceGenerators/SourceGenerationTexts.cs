@@ -18,5 +18,5 @@ internal static class SourceGenerationTexts
                                    """;
 
     internal static string GetGeneratedCodeAttribute(string generatorName) =>
-        $"""[global::System.CodeDom.Compiler.GeneratedCodeAttribute("{SourceGeneratorNamespace}.{generatorName}", "{SourceGeneratorVersion}")]""";
+        $"""[global::System.CodeDom.Compiler.GeneratedCodeAttribute("MuseDashMirror.SourceGenerators.{generatorName}", "{SourceGeneratorVersion}")]""";
 }
