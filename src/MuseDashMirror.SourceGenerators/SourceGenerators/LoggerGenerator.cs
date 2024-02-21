@@ -26,7 +26,7 @@ public sealed class LoggerGenerator : IIncrementalGenerator
             return null;
         }
 
-        var attribute = attributes.First(x => x.AttributeClass!.ToDisplayString() == LoggerAttributeName);
+        var attribute = attributes.First(static x => x.AttributeClass!.ToDisplayString() == LoggerAttributeName);
         var loggerType = (LoggerType)attribute.ConstructorArguments.Single().Value!;
         var modifier = loggerType switch
         {

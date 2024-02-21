@@ -1,5 +1,3 @@
-using System.Text;
-
 namespace MuseDashMirror.SourceGenerators;
 
 [Generator(LanguageNames.CSharp)]
@@ -47,12 +45,11 @@ public sealed class SceneEventGenerator : IIncrementalGenerator
             return null;
         }
 
-        var regex = new Regex(@"MuseDashMirror\.Attributes\.EventAttributes\.(.+Scene)Attribute");
         var symbol = ctx.SemanticModel.GetDeclaredSymbol(ctx.Node)!;
 
         var sceneEvents = symbol.GetAttributes()
-            .Select(attribute => regex.Match(attribute.AttributeClass!.ToDisplayString()))
-            .Select(match => match.Groups[1].Value)
+            .Select(static attribute => SceneEventRegex.Match(attribute.AttributeClass!.ToDisplayString()))
+            .Select(static match => match.Groups[1].Value)
             .ToArray();
 
         return new SceneEventData(symbol.ContainingNamespace.ToString(), parent.Identifier.ValueText, symbol.Name, sceneEvents);
