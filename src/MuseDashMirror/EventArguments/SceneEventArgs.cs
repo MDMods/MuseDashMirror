@@ -5,7 +5,7 @@ namespace MuseDashMirror.EventArguments;
 /// </summary>
 /// <param name="buildIndex"></param>
 /// <param name="sceneName"></param>
-public class SceneEventArgs(int buildIndex, string sceneName) : EventArgs
+public sealed class SceneEventArgs(int buildIndex, string sceneName) : EventArgs
 {
     /// <summary>
     ///     Build index of the scene
