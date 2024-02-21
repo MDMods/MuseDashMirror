@@ -22,17 +22,17 @@ public static class PlayerData
     /// <summary>
     ///     Player favorite chart list
     /// </summary>
-    public static Il2CppSystem.Collections.Generic.List<string> Collections => DataHelper.collections;
+    public static Il2CppStringList Collections => DataHelper.collections;
 
     /// <summary>
     ///     Player history list
     /// </summary>
-    public static Il2CppSystem.Collections.Generic.List<string> History => DataHelper.history;
+    public static Il2CppStringList History => DataHelper.history;
 
     /// <summary>
     ///     Player hide chart list
     /// </summary>
-    public static Il2CppSystem.Collections.Generic.List<string> Hides => DataHelper.hides;
+    public static Il2CppStringList Hides => DataHelper.hides;
 
     /// <summary>
     ///     Selected elfin index
@@ -42,7 +42,8 @@ public static class PlayerData
     /// <summary>
     ///     Localized elfin name
     /// </summary>
-    public static string SelectedElfinName => Singleton<ConfigManager>.instance.GetJson("elfin", true)[SelectedElfinIndex]["name"].ToString();
+    public static string SelectedElfinName =>
+        Singleton<ConfigManager>.instance.GetJson("elfin", true)[SelectedElfinIndex]["name"].ToString();
 
     /// <summary>
     ///     Selected character index
