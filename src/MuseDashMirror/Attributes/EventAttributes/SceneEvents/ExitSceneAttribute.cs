@@ -2,7 +2,7 @@ namespace MuseDashMirror.Attributes.EventAttributes.SceneEvents;
 
 /// <summary>
 ///     <para>
-///         Add this attribute to a method to make it run when exiting <b>Welcome Scene</b><br />
+///         Add this attribute to a method to make it run when exiting <b>Any Scene</b><br />
 ///         Method can be any accessibility level
 ///     </para>
 ///     <example>
@@ -13,4 +13,4 @@ namespace MuseDashMirror.Attributes.EventAttributes.SceneEvents;
 ///     </example>
 /// </summary>
 [AttributeUsage(AttributeTargets.Method)]
-public sealed class ExitWelcomeSceneAttribute : Attribute;
+public class ExitSceneAttribute : Attribute;

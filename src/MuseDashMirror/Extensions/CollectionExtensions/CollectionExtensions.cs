@@ -1,9 +1,9 @@
 namespace MuseDashMirror.Extensions.CollectionExtensions;
 
 /// <summary>
-///     Collection Extension methods for any Type
+///     Collection Extension Methods for any Type
 /// </summary>
-public static class CollectionExtension
+public static class CollectionExtensions
 {
     /// <summary>
     ///     Execute an action for each element in the sequence

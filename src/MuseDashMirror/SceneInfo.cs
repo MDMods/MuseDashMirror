@@ -5,6 +5,26 @@
 /// </summary>
 public static class SceneInfo
 {
+    #region GeneralScene
+
+    /// <summary>
+    ///     An event to invoke methods when entering a scene
+    /// </summary>
+    public static event EventHandler<SceneEventArgs> OnEnterScene;
+
+    /// <summary>
+    ///     An event to invoke methods when exiting a scene
+    /// </summary>
+    public static event EventHandler<SceneEventArgs> OnExitScene;
+
+    internal static void OnEnterSceneInvoke(int buildIndex, string sceneName) =>
+        OnEnterScene?.Invoke(null, new SceneEventArgs(buildIndex, sceneName));
+
+    internal static void OnExitSceneInvoke(int buildIndex, string sceneName) =>
+        OnExitScene?.Invoke(null, new SceneEventArgs(buildIndex, sceneName));
+
+    #endregion
+
     #region MainScene
 
     /// <summary>

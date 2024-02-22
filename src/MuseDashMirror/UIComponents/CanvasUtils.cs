@@ -7,12 +7,18 @@ namespace MuseDashMirror.UIComponents;
 ///     Methods for creating canvas and related components
 /// </summary>
 [Logger]
+[RegisterInMuseDashMirror]
 public static partial class CanvasUtils
 {
     /// <summary>
     ///     Cache for cameras
     /// </summary>
-    internal static readonly Dictionary<string, Camera> CameraCache = new();
+    private static readonly Dictionary<string, Camera> CameraCache = new();
+
+    /// <summary>
+    ///     Cache for canvases
+    /// </summary>
+    private static readonly Dictionary<string, GameObject> CanvasCache = new();
 
     /// <summary>
     ///     Get camera by dimension
@@ -51,6 +57,29 @@ public static partial class CanvasUtils
 
         CameraCache[cameraName] = camera;
         return camera;
+    }
+
+    /// <summary>
+    ///     Get canvas by name
+    /// </summary>
+    /// <param name="canvasName">Canvas Name</param>
+    /// <returns>Canvas GameObject</returns>
+    public static GameObject GetCanvas(string canvasName)
+    {
+        if (CanvasCache.TryGetValue(canvasName, out var canvas))
+        {
+            return canvas;
+        }
+
+        canvas = GameObject.Find(canvasName);
+        if (canvas == null)
+        {
+            Logger.Error($"Canvas with name {canvasName} is not found");
+            return canvas;
+        }
+
+        CanvasCache[canvasName] = canvas;
+        return canvas;
     }
 
     /// <summary>
@@ -135,9 +164,17 @@ public static partial class CanvasUtils
 
         if (parent != null)
         {
-            canvas.transform.SetParent(parent.transform);
+            canvas.SetParent(parent);
         }
 
+        CanvasCache[canvasName] = canvas;
         return canvas;
+    }
+
+    [ExitScene]
+    private static void ClearCache(object e, SceneEventArgs args)
+    {
+        CameraCache.Clear();
+        CanvasCache.Clear();
     }
 }

@@ -1,7 +1,7 @@
 namespace MuseDashMirror.Attributes;
 
 /// <summary>
-///     <para>Create a <see cref="MelonLoader.MelonLogger"/> with the name of the class</para>
+///     <para>Create a <see cref="MelonLoader.MelonLogger" /> with the name of the class</para>
 ///     <example>
 ///         <code>
 ///         [Logger]
