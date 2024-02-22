@@ -9,7 +9,8 @@ namespace MuseDashMirror;
 /// <summary>
 ///     Data inside game scene for battle
 /// </summary>
-public static class BattleComponent
+[RegisterInMuseDashMirror]
+public static partial class BattleComponent
 {
     /// <summary>
     ///     Restart the current chart
@@ -160,7 +161,8 @@ public static class BattleComponent
     /// </summary>
     public static List<MusicData> MusicDataList { get; internal set; } = [];
 
-    internal static void Reset()
+    [ExitGameScene]
+    private static void Reset(object e, SceneEventArgs args)
     {
         NormalMissNum = 0;
         GhostMissNum = 0;

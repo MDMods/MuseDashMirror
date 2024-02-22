@@ -30,6 +30,7 @@ public class Main : MelonMod
     /// </summary>
     public override void OnSceneWasLoaded(int buildIndex, string sceneName)
     {
+        OnEnterSceneInvoke(buildIndex, sceneName);
         switch (sceneName)
         {
             case "GameMain":
@@ -59,14 +60,13 @@ public class Main : MelonMod
     /// </summary>
     public override void OnSceneWasUnloaded(int buildIndex, string sceneName)
     {
-        CanvasUtils.CameraCache.Clear();
+        OnExitSceneInvoke(buildIndex, sceneName);
         switch (sceneName)
         {
             case "GameMain":
                 IsGameScene = false;
                 OnExitGameSceneInvoke(buildIndex, sceneName);
                 ToggleCreate.Reset();
-                BattleComponent.Reset();
                 break;
 
             case "UISystem_PC":
