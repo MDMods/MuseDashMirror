@@ -45,7 +45,7 @@ public sealed class LoggerGenerator : IIncrementalGenerator
             return;
         }
 
-        spc.AddSource($"{className}_Logger.g.cs",
+        spc.AddSource($"{className}.Logger.g.cs",
             Header +
             $$"""
               namespace {{@namespace}};

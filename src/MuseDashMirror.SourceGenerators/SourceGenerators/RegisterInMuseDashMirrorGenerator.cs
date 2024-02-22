@@ -68,7 +68,7 @@ public sealed class RegisterInMuseDashMirrorGenerator : IIncrementalGenerator
 
         var constructorContent = GetConstructorContent(methodDataList);
 
-        spc.AddSource($"{className}_Register.g.cs",
+        spc.AddSource($"{className}.Register.g.cs",
             Header +
             $$"""
               namespace {{@namespace}};

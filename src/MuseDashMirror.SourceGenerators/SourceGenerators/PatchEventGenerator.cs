@@ -63,7 +63,7 @@ public sealed class PatchEventGenerator : IIncrementalGenerator
             return;
         }
 
-        spc.AddSource($"{methodName}_{patchEventName}Event.g.cs",
+        spc.AddSource($"{className}.{methodName}.{patchEventName}Event.g.cs",
             Header +
             $$"""
               using static global::MuseDashMirror.PatchEvents;
