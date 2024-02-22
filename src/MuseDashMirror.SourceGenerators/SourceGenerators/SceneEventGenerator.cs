@@ -53,6 +53,11 @@ public sealed class SceneEventGenerator : IIncrementalGenerator
             .Select(static match => match.Groups[1].Value)
             .ToArray();
 
+        foreach (var a in sceneEventNames)
+        {
+            Console.WriteLine(a);
+        }
+
         return new SceneEventData(symbol.ContainingNamespace.ToDisplayString(), parent.Identifier.ValueText, symbol.Name, sceneEventNames);
     }
 
@@ -72,7 +77,7 @@ public sealed class SceneEventGenerator : IIncrementalGenerator
             sceneEventStringBuilder.AppendLine();
         }
 
-        spc.AddSource($"{methodName}_SceneEvents.g.cs",
+        spc.AddSource($"{className}.{methodName}.SceneEvents.g.cs",
             Header +
             $$"""
               using static global::MuseDashMirror.SceneInfo;
