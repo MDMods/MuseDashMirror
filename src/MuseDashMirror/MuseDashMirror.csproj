@@ -8,13 +8,17 @@
 
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageId>MuseDashMirror</PackageId>
-        <Title>MuseDashMirror</Title>
+        <Title>Muse Dash Mirror</Title>
         <Authors>lxy</Authors>
-        <PackageVersion>1.0.0-beta</PackageVersion>
+        <PackageVersion>3.0.0-beta1</PackageVersion>
         <PackageProjectUrl>https://github.com/MDMods/MuseDashMirror</PackageProjectUrl>
         <RepositoryUrl>https://github.com/MDMods/MuseDashMirror</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+        <Description>Library to easier modding in Muse Dash</Description>
+        <Copyright>Copyright © lxy 2024</Copyright>
+        <PackageTags>musedash;mod;game;library</PackageTags>
     </PropertyGroup>
 
     <PropertyGroup>
