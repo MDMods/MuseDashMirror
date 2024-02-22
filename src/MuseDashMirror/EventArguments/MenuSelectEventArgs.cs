@@ -1,7 +1,7 @@
 namespace MuseDashMirror.EventArguments;
 
 /// <summary>
-///     Event arguments for the MenuSelect event.
+///     Event Argument for <see cref="MenuSelect" /> Patch
 /// </summary>
 /// <param name="listIndex"></param>
 /// <param name="index"></param>
@@ -17,7 +17,7 @@ public sealed class MenuSelectEventArgs(int listIndex, int index, bool isOn) : E
     ///         <item>4 for Achievement</item>
     ///     </list>
     /// </summary>
-    public int ListIndex { get; set; } = listIndex;
+    public int ListIndex => listIndex;
 
     /// <summary>
     ///     <list type="bullet">
@@ -28,10 +28,10 @@ public sealed class MenuSelectEventArgs(int listIndex, int index, bool isOn) : E
     ///         <item>8 for Achievement</item>
     ///     </list>
     /// </summary>
-    public int Index { get; set; } = index;
+    public int Index => index;
 
     /// <summary>
     ///     Whether the menu item is on
     /// </summary>
-    public bool IsOn { get; set; } = isOn;
+    public bool IsOn => isOn;
 }
