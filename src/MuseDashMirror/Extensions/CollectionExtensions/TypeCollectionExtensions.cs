@@ -3,9 +3,9 @@ using System.Reflection;
 namespace MuseDashMirror.Extensions.CollectionExtensions;
 
 /// <summary>
-///     Collection Extension methods for <see cref="Type" />.
+///     Collection Extension Methods for <see cref="Type" />.
 /// </summary>
-public static class TypeCollectionExtension
+public static class TypeCollectionExtensions
 {
     /// <summary>
     ///     Get an IEnumerable of <see cref="FieldInfo" /> from an IEnumerable of <see cref="Type" /> by attribute type

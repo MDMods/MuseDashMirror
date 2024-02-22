@@ -1,5 +1,4 @@
-﻿using MuseDashMirror.Models;
-using UnityEngine.UI;
+﻿using UnityEngine.UI;
 
 namespace MuseDashMirror.UIComponents;
 
@@ -14,11 +13,6 @@ public static partial class CanvasUtils
     ///     Cache for cameras
     /// </summary>
     private static readonly Dictionary<string, Camera> CameraCache = new();
-
-    /// <summary>
-    ///     Cache for canvases
-    /// </summary>
-    private static readonly Dictionary<string, GameObject> CanvasCache = new();
 
     /// <summary>
     ///     Get camera by dimension
@@ -64,23 +58,7 @@ public static partial class CanvasUtils
     /// </summary>
     /// <param name="canvasName">Canvas Name</param>
     /// <returns>Canvas GameObject</returns>
-    public static GameObject GetCanvas(string canvasName)
-    {
-        if (CanvasCache.TryGetValue(canvasName, out var canvas))
-        {
-            return canvas;
-        }
-
-        canvas = GameObject.Find(canvasName);
-        if (canvas == null)
-        {
-            Logger.Error($"Canvas with name {canvasName} is not found");
-            return canvas;
-        }
-
-        CanvasCache[canvasName] = canvas;
-        return canvas;
-    }
+    public static GameObject GetCanvas(string canvasName) => GetGameObject(canvasName);
 
     /// <summary>
     ///     Create a ScreenSpaceOverlay canvas
@@ -167,14 +145,10 @@ public static partial class CanvasUtils
             canvas.SetParent(parent);
         }
 
-        CanvasCache[canvasName] = canvas;
+        GameObjectCache[canvasName] = canvas;
         return canvas;
     }
 
     [ExitScene]
-    private static void ClearCache(object e, SceneEventArgs args)
-    {
-        CameraCache.Clear();
-        CanvasCache.Clear();
-    }
+    private static void ClearCache(object e, SceneEventArgs args) => CameraCache.Clear();
 }

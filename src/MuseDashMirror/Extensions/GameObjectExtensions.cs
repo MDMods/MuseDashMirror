@@ -1,3 +1,5 @@
+using UnityEngine.UI;
+
 namespace MuseDashMirror.Extensions;
 
 /// <summary>
@@ -27,5 +29,50 @@ public static partial class GameObjectExtensions
         }
 
         gameObject.GetComponent<Text>().text = text;
+    }
+
+    /// <summary>
+    ///     Set the Text component of a GameObject
+    /// </summary>
+    /// <param name="gameObject">GameObject</param>
+    /// <param name="textParameters">Text Parameters</param>
+    public static void SetTextComponent(this GameObject gameObject, TextParameters textParameters)
+    {
+        var textComponent = gameObject.GetComponent<Text>() ?? gameObject.AddComponent<Text>();
+        textComponent.text = textParameters.Text;
+        textComponent.font = textParameters.Font;
+        textComponent.fontSize = textParameters.FontSize;
+        textComponent.color = textParameters.Color;
+        textComponent.alignment = textParameters.Alignment;
+    }
+
+    /// <summary>
+    ///     Set the RectTransform of a GameObject
+    /// </summary>
+    /// <param name="gameObject"></param>
+    /// <param name="transformParameters"></param>
+    public static void SetRectTransform(this GameObject gameObject, TransformParameters transformParameters)
+    {
+        var rectTransform = gameObject.GetComponent<RectTransform>();
+        if (transformParameters.IsAutoSize)
+        {
+            var contentSizeFitter = gameObject.AddComponent<ContentSizeFitter>();
+            contentSizeFitter.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
+            contentSizeFitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
+        }
+        else
+        {
+            rectTransform.sizeDelta = transformParameters.SizeDelta;
+            rectTransform.localScale = transformParameters.LocalScale;
+        }
+
+        if (transformParameters.IsLocalPosition)
+        {
+            rectTransform.localPosition = transformParameters.Position;
+        }
+        else
+        {
+            rectTransform.position = transformParameters.Position;
+        }
     }
 }
