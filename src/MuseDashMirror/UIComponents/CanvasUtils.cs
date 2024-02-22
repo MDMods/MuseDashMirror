@@ -54,13 +54,6 @@ public static partial class CanvasUtils
     }
 
     /// <summary>
-    ///     Get canvas by name
-    /// </summary>
-    /// <param name="canvasName">Canvas Name</param>
-    /// <returns>Canvas GameObject</returns>
-    public static GameObject GetCanvas(string canvasName) => GetGameObject(canvasName);
-
-    /// <summary>
     ///     Create a ScreenSpaceOverlay canvas
     /// </summary>
     /// <param name="canvasName">Canvas Name</param>
