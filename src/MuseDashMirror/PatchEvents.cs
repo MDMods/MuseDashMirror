@@ -1,5 +1,7 @@
-﻿using Il2CppAssets.Scripts.UI.Panels;
+﻿using Il2CppAssets.Scripts.GameCore.HostComponent;
+using Il2CppAssets.Scripts.UI.Panels;
 using Il2CppAssets.Scripts.UI.Specials;
+using Il2CppFormulaBase;
 
 namespace MuseDashMirror;
 
@@ -39,4 +41,28 @@ public static class PatchEvents
 
     internal static void MenuSelectInvoke(int listIndex, int index, bool isOn) =>
         MenuSelectPatch?.Invoke(null, new MenuSelectEventArgs(listIndex, index, isOn));
+
+    /// <summary>
+    ///     An event to invoke methods when PnlVictory's OnVictory method invokes
+    /// </summary>
+    public static event EventHandler<PnlVictoryEventArgs> PnlVictoryPatch;
+
+    internal static void PnlVictoryPatchInvoke(PnlVictory pnlVictory) =>
+        PnlVictoryPatch?.Invoke(null, new PnlVictoryEventArgs(pnlVictory));
+
+    /// <summary>
+    ///     An event to invoke methods when StageBattleComponent's GameStart method invokes
+    /// </summary>
+    public static event EventHandler<StageBattleComponentEventArgs> StageBattleComponentPatch;
+
+    internal static void StageBattleComponentPatchInvoke(StageBattleComponent stageBattleComponent) =>
+        StageBattleComponentPatch?.Invoke(null, new StageBattleComponentEventArgs(stageBattleComponent));
+
+    /// <summary>
+    ///     An event to invoke methods when TaskStageTarget's AddScore method invokes
+    /// </summary>
+    public static event EventHandler<TaskStageTargetEventArgs> TaskStageTargetPatch;
+
+    internal static void TaskStageTargetPatchInvoke(TaskStageTarget taskStageTarget) =>
+        TaskStageTargetPatch?.Invoke(null, new TaskStageTargetEventArgs(taskStageTarget));
 }

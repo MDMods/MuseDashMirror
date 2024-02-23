@@ -16,7 +16,7 @@ public sealed class PatchEventAnalyzer : DiagnosticAnalyzer
     {
         if (context.Node is not MethodDeclarationSyntax
             {
-                ParameterList.Parameters: { Count: 2 } parameters,
+                ParameterList.Parameters: var parameters,
                 Parent: ClassDeclarationSyntax
             } methodDeclaration)
         {
@@ -34,7 +34,7 @@ public sealed class PatchEventAnalyzer : DiagnosticAnalyzer
         var patchEventName = match.Groups[1].Value;
         var desiredParameterType = $"{patchEventName[..^5]}EventArgs";
 
-        if (parameters[1].Type is not IdentifierNameSyntax { Identifier.ValueText: var parameterType } ||
+        if (parameters.Count != 2 || parameters[1].Type is not IdentifierNameSyntax { Identifier.ValueText: var parameterType } ||
             parameterType != desiredParameterType)
         {
             context.ReportDiagnostic(Diagnostic.Create(PatchEventAttributeInvalidArgsError, methodDeclaration.Identifier.GetLocation(),
