@@ -54,6 +54,8 @@ public static partial class GameObjectExtensions
     public static void SetRectTransform(this GameObject gameObject, TransformParameters transformParameters)
     {
         var rectTransform = gameObject.GetComponent<RectTransform>();
+        rectTransform.localScale = transformParameters.LocalScale;
+
         if (transformParameters.IsAutoSize)
         {
             var contentSizeFitter = gameObject.AddComponent<ContentSizeFitter>();
@@ -63,16 +65,35 @@ public static partial class GameObjectExtensions
         else
         {
             rectTransform.sizeDelta = transformParameters.SizeDelta;
-            rectTransform.localScale = transformParameters.LocalScale;
         }
 
-        if (transformParameters.IsLocalPosition)
+        LayoutRebuilder.ForceRebuildLayoutImmediate(rectTransform);
+        transformParameters.PositionStrategy.SetPosition(rectTransform, transformParameters);
+    }
+
+    /// <summary>
+    ///     Find a component in the ancestors of a GameObject
+    /// </summary>
+    /// <param name="gameObject"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    public static T FindComponentInAncestors<T>(this GameObject gameObject) where T : Component
+    {
+        while (true)
         {
-            rectTransform.localPosition = transformParameters.Position;
-        }
-        else
-        {
-            rectTransform.position = transformParameters.Position;
+            var component = gameObject.GetComponent<T>();
+            if (component != null)
+            {
+                return component;
+            }
+
+            var parent = gameObject.transform.parent;
+            if (parent == null)
+            {
+                return null;
+            }
+
+            gameObject = parent.gameObject;
         }
     }
 }

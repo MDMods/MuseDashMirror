@@ -73,6 +73,18 @@ public class TextParameters
     }
 
     /// <summary>
+    ///     Create TextParameters with text content, font size and alignment
+    /// </summary>
+    /// <param name="text">Text Content</param>
+    /// <param name="fontSize">Text Font Size</param>
+    /// <param name="alignment">Text Alignment</param>
+    public TextParameters(string text, int fontSize, TextAnchor alignment) : this(text)
+    {
+        FontSize = fontSize;
+        Alignment = alignment;
+    }
+
+    /// <summary>
     ///     Create TextParameters with text content, font, font size and alignment
     /// </summary>
     /// <param name="text">Text Content</param>
