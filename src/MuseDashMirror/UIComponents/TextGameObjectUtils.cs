@@ -33,6 +33,8 @@ public static class TextGameObjectUtils
         gameObject.SetParent(parent);
         gameObject.SetTextComponent(textParameters);
         gameObject.SetRectTransform(transformParameters);
+
+        GameObjectCache[name] = gameObject;
         return gameObject;
     }
 }
