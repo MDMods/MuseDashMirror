@@ -39,7 +39,7 @@ public static partial class GameObjectExtensions
     public static void SetTextComponent(this GameObject gameObject, TextParameters textParameters)
     {
         var textComponent = gameObject.GetComponent<Text>() ?? gameObject.AddComponent<Text>();
-        textComponent.text = textParameters.Text;
+        textComponent.text = textParameters.GetText();
         textComponent.font = textParameters.Font;
         textComponent.fontSize = textParameters.FontSize;
         textComponent.color = textParameters.Color;
@@ -90,6 +90,7 @@ public static partial class GameObjectExtensions
             var parent = gameObject.transform.parent;
             if (parent == null)
             {
+                Logger.Error($"{typeof(T)} not found in ancestors");
                 return null;
             }
 
