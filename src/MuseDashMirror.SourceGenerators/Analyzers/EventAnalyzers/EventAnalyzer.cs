@@ -7,7 +7,7 @@ public sealed class EventAnalyzer : DiagnosticAnalyzer
         EventAttributeInvalidReturnTypeError,
         EventAttributeNonStaticMethodForStaticConstructorError,
         EventAttributeInNonPartialClassError,
-        RegisterInMuseDashMirrorSuggestion);
+        RegisterInMuseDashMirrorWarning);
 
     public override void Initialize(AnalysisContext context)
     {
@@ -80,7 +80,7 @@ public sealed class EventAnalyzer : DiagnosticAnalyzer
 
         if (classAttribute is null)
         {
-            context.ReportDiagnostic(Diagnostic.Create(RegisterInMuseDashMirrorSuggestion, classDeclaration.Identifier.GetLocation(),
+            context.ReportDiagnostic(Diagnostic.Create(RegisterInMuseDashMirrorWarning, classDeclaration.Identifier.GetLocation(),
                 classSymbol.Name));
         }
     }

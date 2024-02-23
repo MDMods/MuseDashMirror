@@ -56,7 +56,7 @@ internal static class DiagnosticDescriptors
         true,
         GetLocalizableString(nameof(MDM0104Description)));
 
-    internal static readonly DiagnosticDescriptor RegisterInMuseDashMirrorSuggestion = new(
+    internal static readonly DiagnosticDescriptor RegisterInMuseDashMirrorWarning = new(
         "MDM0105",
         GetLocalizableString(nameof(MDM0105Title)),
         GetLocalizableString(nameof(MDM0105MessageFormat)),
