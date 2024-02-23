@@ -6,7 +6,7 @@ internal static class DiagnosticDescriptors
         "MDM0000",
         GetLocalizableString(nameof(MDM0000Title)),
         GetLocalizableString(nameof(MDM0000MessageFormat)),
-        typeof(LoggerAnalyzer).FullName!,
+        "Usage",
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0000Description)));
@@ -15,7 +15,7 @@ internal static class DiagnosticDescriptors
         "MDM0100",
         GetLocalizableString(nameof(MDM0100Title)),
         GetLocalizableString(nameof(MDM0100MessageFormat)),
-        typeof(PatchEventAnalyzer).FullName!,
+        "Usage",
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0100Description)));
@@ -24,7 +24,7 @@ internal static class DiagnosticDescriptors
         "MDM0101",
         GetLocalizableString(nameof(MDM0101Title)),
         GetLocalizableString(nameof(MDM0101MessageFormat)),
-        typeof(SceneEventAnalyzer).FullName!,
+        "Usage",
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0101Description)));
@@ -33,7 +33,7 @@ internal static class DiagnosticDescriptors
         "MDM0102",
         GetLocalizableString(nameof(MDM0102Title)),
         GetLocalizableString(nameof(MDM0102MessageFormat)),
-        typeof(EventAnalyzer).FullName!,
+        "Usage",
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0102Description)));
@@ -42,7 +42,7 @@ internal static class DiagnosticDescriptors
         "MDM0103",
         GetLocalizableString(nameof(MDM0103Title)),
         GetLocalizableString(nameof(MDM0103MessageFormat)),
-        typeof(EventAnalyzer).FullName!,
+        "Usage",
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0103Description)));
@@ -51,8 +51,17 @@ internal static class DiagnosticDescriptors
         "MDM0104",
         GetLocalizableString(nameof(MDM0104Title)),
         GetLocalizableString(nameof(MDM0104MessageFormat)),
-        typeof(EventAnalyzer).FullName!,
+        "Usage",
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0104Description)));
+
+    internal static readonly DiagnosticDescriptor RegisterInMuseDashMirrorSuggestion = new(
+        "MDM0105",
+        GetLocalizableString(nameof(MDM0105Title)),
+        GetLocalizableString(nameof(MDM0105MessageFormat)),
+        "Usage",
+        DiagnosticSeverity.Warning,
+        true,
+        GetLocalizableString(nameof(MDM0105Description)));
 }

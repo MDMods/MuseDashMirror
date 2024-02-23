@@ -75,4 +75,13 @@
     <data name="MDM0104Title" xml:space="preserve">
         <value>Method should be in a partial class</value>
     </data>
+    <data name="MDM0105Title" xml:space="preserve">
+        <value>Add attribute to register events automatically </value>
+    </data>
+    <data name="MDM0105Description" xml:space="preserve">
+        <value>It is suggested to add "RegisterInMuseDashMirror" on the class with event attributes to register events by source generator.</value>
+    </data>
+    <data name="MDM0105MessageFormat" xml:space="preserve">
+        <value>Add "RegisterInMuseDashMirror" attribute on class {0} to automatically register events</value>
+    </data>
 </root>

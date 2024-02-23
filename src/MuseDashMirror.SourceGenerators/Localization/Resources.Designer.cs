@@ -220,5 +220,32 @@ namespace MuseDashMirror.SourceGenerators.Localization {
                 return ResourceManager.GetString("MDM0104Title", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It is suggested to add &quot;RegisterInMuseDashMirror&quot; on the class with event attributes to register events by source generator..
+        /// </summary>
+        internal static string MDM0105Description {
+            get {
+                return ResourceManager.GetString("MDM0105Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add &quot;RegisterInMuseDashMirror&quot; attribute on class {0} to automatically register events.
+        /// </summary>
+        internal static string MDM0105MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0105MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add attribute to register events automatically .
+        /// </summary>
+        internal static string MDM0105Title {
+            get {
+                return ResourceManager.GetString("MDM0105Title", resourceCulture);
+            }
+        }
     }
 }
