@@ -10,7 +10,7 @@ public class TextParameters
     /// <summary>
     ///     Text content
     /// </summary>
-    public string Text { get; set; }
+    public string Text { get; }
 
     /// <summary>
     ///     Text color, default is <see cref="Color.white" />
@@ -112,4 +112,10 @@ public class TextParameters
     /// <param name="alignment">Text Alignment</param>
     public TextParameters(string text, Color color, Font font, int fontSize, TextAnchor alignment)
         : this(text, color, font, fontSize) => Alignment = alignment;
+
+    /// <summary>
+    ///     Get the text content
+    /// </summary>
+    /// <returns></returns>
+    public virtual string GetText() => Text;
 }
