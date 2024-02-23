@@ -6,7 +6,8 @@ public sealed class EventAnalyzer : DiagnosticAnalyzer
     public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(
         EventAttributeInvalidReturnTypeError,
         EventAttributeNonStaticMethodForStaticConstructorError,
-        EventAttributeInNonPartialClassError);
+        EventAttributeInNonPartialClassError,
+        RegisterInMuseDashMirrorSuggestion);
 
     public override void Initialize(AnalysisContext context)
     {
@@ -50,26 +51,37 @@ public sealed class EventAnalyzer : DiagnosticAnalyzer
             return;
         }
 
-        var attribute = methodSymbol.GetAttributes().FirstOrDefault(x => SceneEventRegex.IsMatch(x.AttributeClass!.ToDisplayString()));
-        if (attribute is null)
+        var methodAttribute = methodSymbol.GetAttributes().FirstOrDefault(x =>
+            SceneEventRegex.IsMatch(x.AttributeClass!.ToDisplayString()) || PatchEventRegex.IsMatch(x.AttributeClass!.ToDisplayString()));
+
+        if (methodAttribute is null)
         {
             return;
         }
 
         if (!modifiers.Any(SyntaxKind.PartialKeyword))
         {
-            context.ReportDiagnostic(Diagnostic.Create(EventAttributeInNonPartialClassError, methodDeclaration.Identifier.GetLocation(),
+            context.ReportDiagnostic(Diagnostic.Create(EventAttributeInNonPartialClassError, classDeclaration.Identifier.GetLocation(),
                 classSymbol.Name, methodSymbol.Name));
             return;
         }
 
-        var match = SceneEventRegex.Match(attribute.AttributeClass!.ToDisplayString());
-        var sceneEventName = match.Groups[1].Value;
+        var match = SceneEventRegex.IsMatch(methodAttribute.AttributeClass!.ToDisplayString())
+            ? SceneEventRegex.Match(methodAttribute.AttributeClass!.ToDisplayString())
+            : PatchEventRegex.Match(methodAttribute.AttributeClass!.ToDisplayString());
+
+        var eventName = match.Groups[1].Value;
 
         if (returnType is not PredefinedTypeSyntax { Keyword.RawKind: (int)SyntaxKind.VoidKeyword })
         {
             context.ReportDiagnostic(Diagnostic.Create(EventAttributeInvalidReturnTypeError, methodDeclaration.Identifier.GetLocation(),
-                methodSymbol.Name, sceneEventName));
+                methodSymbol.Name, eventName));
+        }
+
+        if (classAttribute is null)
+        {
+            context.ReportDiagnostic(Diagnostic.Create(RegisterInMuseDashMirrorSuggestion, classDeclaration.Identifier.GetLocation(),
+                classSymbol.Name));
         }
     }
 }

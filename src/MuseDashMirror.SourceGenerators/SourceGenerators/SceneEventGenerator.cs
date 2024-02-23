@@ -53,11 +53,6 @@ public sealed class SceneEventGenerator : IIncrementalGenerator
             .Select(static match => match.Groups[1].Value)
             .ToArray();
 
-        foreach (var a in sceneEventNames)
-        {
-            Console.WriteLine(a);
-        }
-
         return new SceneEventData(symbol.ContainingNamespace.ToDisplayString(), parent.Identifier.ValueText, symbol.Name, sceneEventNames);
     }
 

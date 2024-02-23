@@ -2,11 +2,12 @@
 
 ### New Rules
 
-| Rule ID | Category                                                                    | Severity | Notes                                                                                    |
-|---------|-----------------------------------------------------------------------------|----------|------------------------------------------------------------------------------------------|
-| MDM0000 | MuseDashMirror.SourceGenerators.Analyzers.LoggerAnalyzer                    | Error    | Logger attribute can only be used on partial class.                                      |
-| MDM0100 | MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers.PatchEventAnalyzer | Error    | Method with PatchEvent attribute must have parameter types object and EventArgs.         |
-| MDM0101 | MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers.SceneEventAnalyzer | Error    | Method with SceneEvent attribute must have parameter types object and SceneEventArgs.    |
-| MDM0102 | MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers.EventAnalyzer      | Error    | Method with Event attribute must have return type void.                                  |
-| MDM0103 | MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers.EventAnalyzer      | Error    | Method with static class or register type static constructor must be declared as static. |
-| MDM0104 | MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers.EventAnalyzer      | Error    | Method with Event attribute must be in a partial class.                                  |
+| Rule ID | Category | Severity | Notes                                                                       |
+|---------|----------|----------|-----------------------------------------------------------------------------|
+| MDM0000 | Usage    | Error    | MuseDashMirror.SourceGenerators.Analyzers.LoggerAnalyzer                    |
+| MDM0100 | Usage    | Error    | MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers.PatchEventAnalyzer |
+| MDM0101 | Usage    | Error    | MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers.SceneEventAnalyzer |
+| MDM0102 | Usage    | Error    | MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers.EventAnalyzer      |
+| MDM0103 | Usage    | Error    | MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers.EventAnalyzer      |
+| MDM0104 | Usage    | Error    | MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers.EventAnalyzer      |
+| MDM0105 | Usage    | Warning  | MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers.EventAnalyzer      |
