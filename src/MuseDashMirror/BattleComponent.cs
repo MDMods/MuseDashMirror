@@ -74,34 +74,6 @@ public static partial class BattleComponent
     #region GameInfo
 
     /// <summary>
-    ///     An event to invoke methods when game starts
-    /// </summary>
-    public static event Action GameStartEvent;
-
-    /// <summary>
-    ///     An event to invoke methods on victory screen
-    /// </summary>
-    public static event Action OnVictoryEvent;
-
-    /// <summary>
-    ///     An event to invoke methods when adding score
-    /// </summary>
-    public static event Action AddScoreEvent;
-
-    /// <summary>
-    ///     An event to invoke methods when missing notes
-    /// </summary>
-    public static event Action MissCubeEvent;
-
-    internal static void GameStartEventInvoke() => GameStartEvent?.Invoke();
-
-    internal static void OnVictoryEventInvoke() => OnVictoryEvent?.Invoke();
-
-    internal static void AddScoreEventInvoke() => AddScoreEvent?.Invoke();
-
-    internal static void MissCubeEventInvoke() => MissCubeEvent?.Invoke();
-
-    /// <summary>
     ///     Becomes true when "ready go" finished
     /// </summary>
     public static bool IsInGame => Singleton<StageBattleComponent>.instance.isInGame;
