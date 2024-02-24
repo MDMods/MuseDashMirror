@@ -1,11 +1,10 @@
+using Il2CppFormulaBase;
+
 namespace MuseDashMirror.Attributes.EventAttributes.PatchEvents;
 
 /// <summary>
 ///     <para>
-///         Add this attribute to a method to make it run after
-///         <see
-///             cref="PnlVictory.OnVictory(Il2CppSystem.Object,Il2CppSystem.Object,Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray{Il2CppSystem.Object})" />
-///         <br />
+///         Add this attribute to a method to make it run after <see cref="StageBattleComponent.GameStart" /><br />
 ///         Method can be any accessibility level but must be static
 ///     </para>
 ///     <example>
@@ -16,4 +15,4 @@ namespace MuseDashMirror.Attributes.EventAttributes.PatchEvents;
 ///     </example>
 /// </summary>
 [AttributeUsage(AttributeTargets.Method)]
-public sealed class PnlVictoryPatchAttribute : Attribute;
+public sealed class GameStartPatchAttribute : Attribute;

@@ -1,7 +1,7 @@
 namespace MuseDashMirror.EventArguments;
 
 /// <summary>
-///     Event Argument for <see cref="MenuSelect" /> Patch
+///     Event Argument for <see cref="MenuSelect.OnToggleChanged" /> Patch
 /// </summary>
 /// <param name="listIndex"></param>
 /// <param name="index"></param>

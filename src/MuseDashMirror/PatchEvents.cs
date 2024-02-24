@@ -53,16 +53,16 @@ public static class PatchEvents
     /// <summary>
     ///     An event to invoke methods when StageBattleComponent's GameStart method invokes
     /// </summary>
-    public static event EventHandler<StageBattleComponentEventArgs> StageBattleComponentPatch;
+    public static event EventHandler<GameStartEventArgs> GameStartPatch;
 
-    internal static void StageBattleComponentPatchInvoke(StageBattleComponent stageBattleComponent) =>
-        StageBattleComponentPatch?.Invoke(null, new StageBattleComponentEventArgs(stageBattleComponent));
+    internal static void GameStartPatchInvoke(StageBattleComponent stageBattleComponent) =>
+        GameStartPatch?.Invoke(null, new GameStartEventArgs(stageBattleComponent));
 
     /// <summary>
     ///     An event to invoke methods when TaskStageTarget's AddScore method invokes
     /// </summary>
-    public static event EventHandler<TaskStageTargetEventArgs> TaskStageTargetPatch;
+    public static event EventHandler<AddScoreEventArgs> AddScorePatch;
 
-    internal static void TaskStageTargetPatchInvoke(TaskStageTarget taskStageTarget) =>
-        TaskStageTargetPatch?.Invoke(null, new TaskStageTargetEventArgs(taskStageTarget));
+    internal static void AddScorePatchInvoke(TaskStageTarget taskStageTarget, int value, int id, string noteType, bool isAir, float time = -1f) =>
+        AddScorePatch?.Invoke(null, new AddScoreEventArgs(taskStageTarget, value, id, noteType, isAir, time));
 }

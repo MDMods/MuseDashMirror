@@ -7,7 +7,7 @@ internal static class StageBattleComponentPatch
 {
     private static void Postfix(StageBattleComponent __instance)
     {
-        StageBattleComponentPatchInvoke(__instance);
+        GameStartPatchInvoke(__instance);
         Task.Run(() =>
         {
             foreach (var musicData in __instance.GetMusicData())
