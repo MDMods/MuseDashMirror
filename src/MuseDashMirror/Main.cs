@@ -1,5 +1,4 @@
 ﻿using MelonLoader;
-using MuseDashMirror.UIComponents;
 using static MuseDashMirror.UIComponents.Fonts;
 
 namespace MuseDashMirror;
@@ -66,7 +65,6 @@ public class Main : MelonMod
             case "GameMain":
                 IsGameScene = false;
                 OnExitGameSceneInvoke(buildIndex, sceneName);
-                ToggleCreate.Reset();
                 break;
 
             case "UISystem_PC":
