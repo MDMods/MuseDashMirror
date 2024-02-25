@@ -16,22 +16,6 @@ public static partial class GameObjectExtensions
     public static void SetParent(this GameObject gameObject, GameObject parent) => gameObject.transform.SetParent(parent.transform);
 
     /// <summary>
-    ///     Set the text of a GameObject with a Text component
-    /// </summary>
-    /// <param name="gameObject">GameObject</param>
-    /// <param name="text">Text</param>
-    public static void SetText(this GameObject gameObject, string text)
-    {
-        if (gameObject.GetComponent<Text>() == null)
-        {
-            Logger.Error($"GameObject {gameObject} does not have a Text component");
-            return;
-        }
-
-        gameObject.GetComponent<Text>().text = text;
-    }
-
-    /// <summary>
     ///     Set the Text component of a GameObject
     /// </summary>
     /// <param name="gameObject">GameObject</param>
