@@ -6,7 +6,6 @@ namespace MuseDashMirror.UIComponents;
 ///     Methods for creating canvas and related components
 /// </summary>
 [Logger]
-[RegisterInMuseDashMirror]
 public static partial class CanvasUtils
 {
     /// <summary>

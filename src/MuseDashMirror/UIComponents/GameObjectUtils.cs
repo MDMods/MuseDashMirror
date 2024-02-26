@@ -4,7 +4,6 @@ namespace MuseDashMirror.UIComponents;
 ///     Methods related with GameObject
 /// </summary>
 [Logger]
-[RegisterInMuseDashMirror]
 public static partial class GameObjectUtils
 {
     /// <summary>

@@ -68,7 +68,7 @@ public sealed class SceneEventGenerator : IIncrementalGenerator
         {
             sceneEventStringBuilder.AppendLine($"\t{GetGeneratedCodeAttribute(nameof(SceneEventGenerator))}");
             sceneEventStringBuilder.AppendLine(
-                $"\tprivate static void Register{methodName}To{sceneEventName}Event() => On{sceneEventName} += {methodName};");
+                $"\tinternal static void Register{className}{methodName}To{sceneEventName}Event() => On{sceneEventName} += {methodName};");
             sceneEventStringBuilder.AppendLine();
         }
 
