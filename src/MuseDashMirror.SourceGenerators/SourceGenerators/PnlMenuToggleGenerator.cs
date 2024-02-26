@@ -70,6 +70,7 @@ public sealed class PnlMenuToggleGenerator : IIncrementalGenerator
             Header +
             $$"""
               using MuseDashMirror.EventArguments;
+              using static global::MuseDashMirror.PatchEvents;
               using static global::MuseDashMirror.UIComponents.ToggleUtils;
 
               namespace {{@namespace}};
@@ -77,10 +78,11 @@ public sealed class PnlMenuToggleGenerator : IIncrementalGenerator
               partial class {{className}}
               {
                   {{GetGeneratedCodeAttribute(nameof(PnlMenuToggleGenerator))}}
-                  private static void Register{{variableName}}PnlMenuToggle(object sender, PnlMenuEventArgs args)
-                  {
+                  private static void Register{{variableName}}PnlMenuToggle(object? sender, PnlMenuEventArgs args) =>
                       {{variableName}} = CreatePnlMenuToggle("{{toggleName}}", "{{toggleText}}", val => {{boolName}} = val);
-                  }
+                  
+                  {{GetGeneratedCodeAttribute(nameof(PnlMenuToggleGenerator))}}
+                  internal static void Register{{className}}{{variableName}}ToPnlMenuEvent() => PnlMenuPatch += Register{{variableName}}PnlMenuToggle;
               }
               """);
     }
