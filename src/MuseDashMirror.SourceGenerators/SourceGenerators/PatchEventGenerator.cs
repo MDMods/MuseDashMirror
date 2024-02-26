@@ -73,7 +73,7 @@ public sealed class PatchEventGenerator : IIncrementalGenerator
               partial class {{className}}
               {
                   {{GetGeneratedCodeAttribute(nameof(PatchEventGenerator))}}
-                  private static void Register{{methodName}}To{{patchEventName}}Event() => {{patchEventName}} += {{methodName}};
+                  internal static void Register{{className}}{{methodName}}To{{patchEventName}}Event() => {{patchEventName}} += {{methodName}}};
               }
 
               """);

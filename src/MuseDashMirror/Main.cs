@@ -6,7 +6,7 @@ namespace MuseDashMirror;
 /// <summary>
 ///     Main class inherit from MelonMod
 /// </summary>
-public class Main : MelonMod
+public partial class Main : MelonMod
 {
     /// <summary>
     ///     Load Fonts

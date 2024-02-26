@@ -9,7 +9,6 @@ namespace MuseDashMirror;
 /// <summary>
 ///     Data inside game scene for battle
 /// </summary>
-[RegisterInMuseDashMirror]
 public static partial class BattleComponent
 {
     /// <summary>
