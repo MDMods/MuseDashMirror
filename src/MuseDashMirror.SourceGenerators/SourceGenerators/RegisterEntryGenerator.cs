@@ -40,55 +40,15 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
 
         var @namespace = classSymbol.ContainingNamespace.ToDisplayString();
         var className = classSymbol.Name;
-        var methodSymbols = classSymbol.GetMembers().OfType<IMethodSymbol>();
-        var fieldSymbols = classSymbol.GetMembers().OfType<IFieldSymbol>();
-        var propertySymbols = classSymbol.GetMembers().OfType<IPropertySymbol>();
 
-        List<string> registerMethodNames = [];
-        foreach (var methodSymbol in methodSymbols)
-        {
-            var methodName = methodSymbol.Name;
-            var attributes = methodSymbol.GetAttributes();
-            var sceneEventNames = attributes
-                .Select(static attribute => SceneEventRegex.Match(attribute.AttributeClass!.ToDisplayString()))
-                .Where(static match => match.Success)
-                .Select(static match => match.Groups[1].Value)
-                .ToList();
-            var patchEventNames = attributes
-                .Select(static attribute => PatchEventRegex.Match(attribute.AttributeClass!.ToDisplayString()))
-                .Where(static match => match.Success)
-                .Select(static match => match.Groups[1].Value)
-                .ToList();
+        var methodSymbols = classSymbol.GetMembers().OfType<IMethodSymbol>().ToList();
+        var fieldSymbols = classSymbol.GetMembers().OfType<IFieldSymbol>().ToList();
+        var propertySymbols = classSymbol.GetMembers().OfType<IPropertySymbol>().ToList();
 
-            registerMethodNames.AddRange(sceneEventNames.Select(sceneEventName => $"Register{className}{methodName}To{sceneEventName}Event()"));
-            registerMethodNames.AddRange(patchEventNames.Select(patchEventName => $"Register{className}{methodName}To{patchEventName}Event()"));
-        }
-
-        foreach (var fieldSymbol in fieldSymbols)
-        {
-            var fieldName = fieldSymbol.Name;
-            var attributes = fieldSymbol.GetAttributes();
-            var pnlMenuToggleAttribute = attributes.FirstOrDefault(x => x.AttributeClass!.ToDisplayString() == PnlMenuToggleAttributeName);
-            if (pnlMenuToggleAttribute is null)
-            {
-                continue;
-            }
-
-            registerMethodNames.Add($"Register{className}{fieldName}ToPnlMenuEvent()");
-        }
-
-        foreach (var propertySymbol in propertySymbols)
-        {
-            var propertyName = propertySymbol.Name;
-            var attributes = propertySymbol.GetAttributes();
-            var pnlMenuToggleAttribute = attributes.FirstOrDefault(x => x.AttributeClass!.ToDisplayString() == PnlMenuToggleAttributeName);
-            if (pnlMenuToggleAttribute is null)
-            {
-                continue;
-            }
-
-            registerMethodNames.Add($"Register{className}{propertyName}ToPnlMenuEvent()");
-        }
+        var registerMethodNames = ExtractMethodNames(methodSymbols, className)
+            .Concat(ExtractFieldNames(fieldSymbols, className))
+            .Concat(ExtractPropertyNames(propertySymbols, className))
+            .ToList();
 
         return new RegisterClassData(@namespace, className, registerMethodNames);
     }
@@ -131,6 +91,40 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
                   }
               }
               """);
+    }
+
+    private static IEnumerable<string> ExtractMethodNames(IEnumerable<IMethodSymbol> methodSymbols, string className)
+    {
+        return methodSymbols.SelectMany(methodSymbol =>
+        {
+            var methodName = methodSymbol.Name;
+            var attributes = methodSymbol.GetAttributes();
+            var sceneEventNames = attributes
+                .Select(static attribute => SceneEventRegex.Match(attribute.AttributeClass!.ToDisplayString()))
+                .Where(static match => match.Success)
+                .Select(static match => match.Groups[1].Value);
+            var patchEventNames = attributes
+                .Select(static attribute => PatchEventRegex.Match(attribute.AttributeClass!.ToDisplayString()))
+                .Where(static match => match.Success)
+                .Select(static match => match.Groups[1].Value);
+
+            return sceneEventNames.Select(sceneEventName => $"Register{className}{methodName}To{sceneEventName}Event()")
+                .Concat(patchEventNames.Select(patchEventName => $"Register{className}{methodName}To{patchEventName}Event()"));
+        });
+    }
+
+    private static IEnumerable<string> ExtractFieldNames(IEnumerable<IFieldSymbol> fieldSymbols, string className)
+    {
+        return fieldSymbols
+            .Where(fieldSymbol => fieldSymbol.GetAttributes().Any(x => x.AttributeClass!.ToDisplayString() == PnlMenuToggleAttributeName))
+            .Select(fieldSymbol => $"Register{className}{fieldSymbol.Name}ToPnlMenuEvent()");
+    }
+
+    private static IEnumerable<string> ExtractPropertyNames(IEnumerable<IPropertySymbol> propertySymbols, string className)
+    {
+        return propertySymbols
+            .Where(propertySymbol => propertySymbol.GetAttributes().Any(x => x.AttributeClass!.ToDisplayString() == PnlMenuToggleAttributeName))
+            .Select(propertySymbol => $"Register{className}{propertySymbol.Name}ToPnlMenuEvent()");
     }
 
     private sealed record RegisterClassData(string Namespace, string ClassName, List<string> RegisterMethodNames);
