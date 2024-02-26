@@ -41,6 +41,8 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
         var @namespace = classSymbol.ContainingNamespace.ToDisplayString();
         var className = classSymbol.Name;
         var methodSymbols = classSymbol.GetMembers().OfType<IMethodSymbol>();
+        var fieldSymbols = classSymbol.GetMembers().OfType<IFieldSymbol>();
+        var propertySymbols = classSymbol.GetMembers().OfType<IPropertySymbol>();
 
         List<string> registerMethodNames = [];
         foreach (var methodSymbol in methodSymbols)
@@ -60,6 +62,32 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
 
             registerMethodNames.AddRange(sceneEventNames.Select(sceneEventName => $"Register{className}{methodName}To{sceneEventName}Event()"));
             registerMethodNames.AddRange(patchEventNames.Select(patchEventName => $"Register{className}{methodName}To{patchEventName}Event()"));
+        }
+
+        foreach (var fieldSymbol in fieldSymbols)
+        {
+            var fieldName = fieldSymbol.Name;
+            var attributes = fieldSymbol.GetAttributes();
+            var pnlMenuToggleAttribute = attributes.FirstOrDefault(x => x.AttributeClass!.ToDisplayString() == PnlMenuToggleAttributeName);
+            if (pnlMenuToggleAttribute is null)
+            {
+                continue;
+            }
+
+            registerMethodNames.Add($"Register{className}{fieldName}ToPnlMenuEvent()");
+        }
+
+        foreach (var propertySymbol in propertySymbols)
+        {
+            var propertyName = propertySymbol.Name;
+            var attributes = propertySymbol.GetAttributes();
+            var pnlMenuToggleAttribute = attributes.FirstOrDefault(x => x.AttributeClass!.ToDisplayString() == PnlMenuToggleAttributeName);
+            if (pnlMenuToggleAttribute is null)
+            {
+                continue;
+            }
+
+            registerMethodNames.Add($"Register{className}{propertyName}ToPnlMenuEvent()");
         }
 
         return new RegisterClassData(@namespace, className, registerMethodNames);
