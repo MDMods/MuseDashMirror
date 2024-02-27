@@ -2,11 +2,14 @@ using Object = UnityEngine.Object;
 
 namespace MuseDashMirror.Extensions;
 
+/// <summary>
+///     Component Extension Methods
+/// </summary>
 [Logger]
 public static partial class ComponentExtensions
 {
     /// <summary>
-    ///     Set the text of a GameObject with a Text component
+    ///     Set the text of a Component with a Text component
     /// </summary>
     /// <param name="component">GameObject Component</param>
     /// <param name="text">Text</param>
@@ -24,6 +27,6 @@ public static partial class ComponentExtensions
     /// <summary>
     ///     Destroy a GameObject Component
     /// </summary>
-    /// <param name="component"></param>
+    /// <param name="component">GameObject Component</param>
     public static void Destroy(this Component component) => Object.Destroy(component);
 }
