@@ -12,6 +12,11 @@ internal static class PnlMenuPatch
             GameObjectCache["TglOn"] = GameObject.Find("Forward").transform.Find("PnlVolume").Find("LogoSetting").GetChild(2).GetChild(0).gameObject;
         }
 
+        if (!GameObjectCache.ContainsKey("PnlMenu"))
+        {
+            GameObjectCache["PnlMenu"] = __instance.gameObject;
+        }
+
         PnlMenuPatchInvoke(__instance);
     }
 }
