@@ -1,7 +1,7 @@
 namespace MuseDashMirror.Extensions;
 
 /// <summary>
-///     String Extension Methods
+///     <see cref="string"/> Extension Methods
 /// </summary>
 public static class StringExtensions
 {

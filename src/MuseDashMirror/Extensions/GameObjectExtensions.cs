@@ -1,10 +1,9 @@
 using UnityEngine.UI;
-using Object = UnityEngine.Object;
 
 namespace MuseDashMirror.Extensions;
 
 /// <summary>
-///     GameObject Extension Methods
+///     <see cref="GameObject" /> Extension Methods
 /// </summary>
 [Logger]
 public static partial class GameObjectExtensions
@@ -23,13 +22,13 @@ public static partial class GameObjectExtensions
     /// <param name="text">Text</param>
     public static void SetText(this GameObject gameObject, string text)
     {
-        if (gameObject.GetComponent<Text>() == null)
+        if (!gameObject.TryGetComponent<Text>(out var textComponent))
         {
             Logger.Error($"GameObject {gameObject} does not have a Text component");
             return;
         }
 
-        gameObject.GetComponent<Text>().text = text;
+        textComponent.text = text;
     }
 
     /// <summary>
@@ -129,10 +128,4 @@ public static partial class GameObjectExtensions
         contentSizeFitter.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
         contentSizeFitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
     }
-
-    /// <summary>
-    ///     Destroy a GameObject
-    /// </summary>
-    /// <param name="gameObject">GameObject</param>
-    public static void Destroy(this GameObject gameObject) => Object.Destroy(gameObject);
 }
