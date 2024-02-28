@@ -75,13 +75,40 @@
     <data name="MDM0104Title" xml:space="preserve">
         <value>Method should be in a partial class</value>
     </data>
-    <data name="MDM0105Title" xml:space="preserve">
-        <value>Add attribute to register events automatically </value>
+    <data name="MDM0001Title" xml:space="preserve">
+        <value>Class inherited from MelonMod class should be partial</value>
     </data>
-    <data name="MDM0105Description" xml:space="preserve">
-        <value>It is suggested to add "RegisterInMuseDashMirror" on the class with event attributes to register events by source generator.</value>
+    <data name="MDM0001Description" xml:space="preserve">
+        <value>Class inherited from MelonMod class should be partial to register methods.</value>
     </data>
-    <data name="MDM0105MessageFormat" xml:space="preserve">
-        <value>Add "RegisterInMuseDashMirror" attribute on class {0} to automatically register events</value>
+    <data name="MDM0001MessageFormat" xml:space="preserve">
+        <value>To ensure the correct registry of MuseDashMirror attributes, {0} class should be partial</value>
+    </data>
+    <data name="MDM0200Title" xml:space="preserve">
+        <value>Property/Field should be in a partial class</value>
+    </data>
+    <data name="MDM0200Description" xml:space="preserve">
+        <value>Property/Field with PnlMenuToggle attribute must be declared in a partial class.</value>
+    </data>
+    <data name="MDM0200MessageFormat" xml:space="preserve">
+        <value>Class {0} must be a partial class for {1}'s register method to be correctly generated</value>
+    </data>
+    <data name="MDM0201Title" xml:space="preserve">
+        <value>Incorrect declare type</value>
+    </data>
+    <data name="MDM0201Description" xml:space="preserve">
+        <value>Property/Field with attribute PnlMenuToggle should be type UnityEngine.GameObject</value>
+    </data>
+    <data name="MDM0201MessageFormat" xml:space="preserve">
+        <value>Property/Field {0} should be type UnityEngine.GameObject</value>
+    </data>
+    <data name="MDM0202Title" xml:space="preserve">
+        <value>Property/Field should be static</value>
+    </data>
+    <data name="MDM0202Description" xml:space="preserve">
+        <value>Property/Field should be static to be registered by MuseDashMirror</value>
+    </data>
+    <data name="MDM0202MessageFormat" xml:space="preserve">
+        <value>Property/Field {0} should be static for correct register</value>
     </data>
 </root>

@@ -41,7 +41,11 @@ public class ToggleParameters
     public ToggleParameters(TextParameters textParameters, Action<bool> callBack)
     {
         TextParameters = textParameters;
-        TextParameters.Color = ToggleTextColor;
+        if (TextParameters.Color == Color.white)
+        {
+            TextParameters.Color = ToggleTextColor;
+        }
+
         CallBack = callBack;
     }
 
