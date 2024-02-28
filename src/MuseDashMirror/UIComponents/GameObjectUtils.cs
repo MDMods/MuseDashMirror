@@ -12,21 +12,22 @@ public static partial class GameObjectUtils
     internal static readonly Dictionary<string, GameObject> GameObjectCache = new();
 
     /// <summary>
-    ///     Get GameObject with specified name
+    ///     Get GameObject with specified path/name
     /// </summary>
-    /// <param name="gameObjectName">GameObject name</param>
+    /// <param name="gameObjectPath">GameObject Path</param>
     /// <returns>GameObject</returns>
-    public static GameObject GetGameObject(string gameObjectName)
+    public static GameObject GetGameObject(string gameObjectPath)
     {
+        var gameObjectName = gameObjectPath.Split('/')[^1];
         if (GameObjectCache.TryGetValue(gameObjectName, out var gameObject))
         {
             return gameObject;
         }
 
-        gameObject = GameObject.Find(gameObjectName);
+        gameObject = GameObject.Find(gameObjectPath);
         if (gameObject == null)
         {
-            Logger.Error($"GameObject with name {gameObjectName} is not found");
+            Logger.Error($"GameObject with path {gameObjectPath} is not found");
             return gameObject;
         }
 

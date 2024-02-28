@@ -13,7 +13,9 @@ public static partial class GameObjectExtensions
     /// </summary>
     /// <param name="gameObject">GameObject</param>
     /// <param name="parent">Parent</param>
-    public static void SetParent(this GameObject gameObject, GameObject parent) => gameObject.transform.SetParent(parent.transform);
+    /// <param name="worldPositionStays">World Position Stays</param>
+    public static void SetParent(this GameObject gameObject, GameObject parent, bool worldPositionStays = true)
+        => gameObject.transform.SetParent(parent.transform, worldPositionStays);
 
     /// <summary>
     ///     Set the text of a GameObject with a Text gameObject
