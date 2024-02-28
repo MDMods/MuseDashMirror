@@ -18,15 +18,10 @@ public static class Colors
     /// <summary>
     ///     Default text color for toggle
     /// </summary>
-    public static Color ToggleTextColor => new(1, 1, 1, 76 / 255f);
-
-    /// <summary>
-    ///     Default checkbox color for toggle
-    /// </summary>
-    public static Color ToggleCheckBoxColor => new(60 / 255f, 40 / 255f, 111 / 255f);
+    public static Color ToggleTextColor => new(114 / 255f, 25 / 255f, 77 / 255f);
 
     /// <summary>
     ///     Default checkmark color for toggle
     /// </summary>
-    public static Color ToggleCheckMarkColor => new(103 / 255f, 93 / 255f, 130 / 255f);
+    public static Color ToggleCheckMarkColor => new(245 / 255f, 0f, 144 / 255f);
 }
