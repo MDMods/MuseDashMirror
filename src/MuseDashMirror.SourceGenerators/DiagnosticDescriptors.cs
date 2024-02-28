@@ -11,6 +11,15 @@ internal static class DiagnosticDescriptors
         true,
         GetLocalizableString(nameof(MDM0000Description)));
 
+    internal static readonly DiagnosticDescriptor InheritedMelonModClassNonPartialError = new(
+        "MDM0001",
+        GetLocalizableString(nameof(MDM0001Title)),
+        GetLocalizableString(nameof(MDM0001MessageFormat)),
+        "Usage",
+        DiagnosticSeverity.Error,
+        true,
+        GetLocalizableString(nameof(MDM0001Description)));
+
     internal static readonly DiagnosticDescriptor PatchEventAttributeInvalidArgsError = new(
         "MDM0100",
         GetLocalizableString(nameof(MDM0100Title)),
@@ -56,12 +65,30 @@ internal static class DiagnosticDescriptors
         true,
         GetLocalizableString(nameof(MDM0104Description)));
 
-    internal static readonly DiagnosticDescriptor RegisterInMuseDashMirrorWarning = new(
-        "MDM0105",
-        GetLocalizableString(nameof(MDM0105Title)),
-        GetLocalizableString(nameof(MDM0105MessageFormat)),
+    internal static readonly DiagnosticDescriptor PnlMenuToggleAttributeInNonePartialClassError = new(
+        "MDM0200",
+        GetLocalizableString(nameof(MDM0200Title)),
+        GetLocalizableString(nameof(MDM0200MessageFormat)),
         "Usage",
-        DiagnosticSeverity.Warning,
+        DiagnosticSeverity.Error,
         true,
-        GetLocalizableString(nameof(MDM0105Description)));
+        GetLocalizableString(nameof(MDM0200Description)));
+
+    internal static readonly DiagnosticDescriptor PnlMenuToggleAttributeOnNonGameObjectError = new(
+        "MDM0201",
+        GetLocalizableString(nameof(MDM0201Title)),
+        GetLocalizableString(nameof(MDM0201MessageFormat)),
+        "Usage",
+        DiagnosticSeverity.Error,
+        true,
+        GetLocalizableString(nameof(MDM0201Description)));
+
+    internal static readonly DiagnosticDescriptor PnlMenuToggleAttributeOnNonStaticGameObjectError = new(
+        "MDM0202",
+        GetLocalizableString(nameof(MDM0202Title)),
+        GetLocalizableString(nameof(MDM0202MessageFormat)),
+        "Usage",
+        DiagnosticSeverity.Error,
+        true,
+        GetLocalizableString(nameof(MDM0202Description)));
 }

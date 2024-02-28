@@ -87,6 +87,33 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Class inherited from MelonMod class should be partial to register methods..
+        /// </summary>
+        internal static string MDM0001Description {
+            get {
+                return ResourceManager.GetString("MDM0001Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To ensure the correct registry of MuseDashMirror attributes, {0} class should be partial.
+        /// </summary>
+        internal static string MDM0001MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0001MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Class inherited from MelonMod class should be partial.
+        /// </summary>
+        internal static string MDM0001Title {
+            get {
+                return ResourceManager.GetString("MDM0001Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Method with PatchEvent attribute must have parameter types object and EventArgs..
         /// </summary>
         internal static string MDM0100Description {
@@ -222,29 +249,83 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It is suggested to add &quot;RegisterInMuseDashMirror&quot; on the class with event attributes to register events by source generator..
+        ///   Looks up a localized string similar to Property/Field with PnlMenuToggle attribute must be declared in a partial class..
         /// </summary>
-        internal static string MDM0105Description {
+        internal static string MDM0200Description {
             get {
-                return ResourceManager.GetString("MDM0105Description", resourceCulture);
+                return ResourceManager.GetString("MDM0200Description", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add &quot;RegisterInMuseDashMirror&quot; attribute on class {0} to automatically register events.
+        ///   Looks up a localized string similar to Class {0} must be a partial class for {1}&apos;s register method to be correctly generated.
         /// </summary>
-        internal static string MDM0105MessageFormat {
+        internal static string MDM0200MessageFormat {
             get {
-                return ResourceManager.GetString("MDM0105MessageFormat", resourceCulture);
+                return ResourceManager.GetString("MDM0200MessageFormat", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add attribute to register events automatically .
+        ///   Looks up a localized string similar to Property/Field should be in a partial class.
         /// </summary>
-        internal static string MDM0105Title {
+        internal static string MDM0200Title {
             get {
-                return ResourceManager.GetString("MDM0105Title", resourceCulture);
+                return ResourceManager.GetString("MDM0200Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Property/Field with attribute PnlMenuToggle should be type UnityEngine.GameObject.
+        /// </summary>
+        internal static string MDM0201Description {
+            get {
+                return ResourceManager.GetString("MDM0201Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Property/Field {0} should be type UnityEngine.GameObject.
+        /// </summary>
+        internal static string MDM0201MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0201MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect declare type.
+        /// </summary>
+        internal static string MDM0201Title {
+            get {
+                return ResourceManager.GetString("MDM0201Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Property/Field should be static to be registered by MuseDashMirror.
+        /// </summary>
+        internal static string MDM0202Description {
+            get {
+                return ResourceManager.GetString("MDM0202Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Property/Field {0} should be static for correct register.
+        /// </summary>
+        internal static string MDM0202MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0202MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Property/Field should be static.
+        /// </summary>
+        internal static string MDM0202Title {
+            get {
+                return ResourceManager.GetString("MDM0202Title", resourceCulture);
             }
         }
     }

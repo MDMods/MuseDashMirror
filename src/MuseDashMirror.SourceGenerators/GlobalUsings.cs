@@ -6,8 +6,6 @@ global using Microsoft.CodeAnalysis.CSharp;
 global using Microsoft.CodeAnalysis.CSharp.Syntax;
 global using Microsoft.CodeAnalysis.Diagnostics;
 global using MuseDashMirror.Shared;
-global using MuseDashMirror.SourceGenerators.Analyzers;
-global using MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers;
 global using MuseDashMirror.SourceGenerators.Localization;
 global using static MuseDashMirror.SourceGenerators.AttributeNameHelper;
 global using static MuseDashMirror.SourceGenerators.BuildInfo;
