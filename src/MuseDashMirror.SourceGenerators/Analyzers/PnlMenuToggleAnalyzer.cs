@@ -29,8 +29,8 @@ public sealed class PnlMenuToggleAnalyzer : DiagnosticAnalyzer
             return;
         }
 
-        var hasPnlMenuToggleAttribute =
-            context.ContainingSymbol!.GetAttributes().Any(x => x.AttributeClass!.ToDisplayString() == PnlMenuToggleAttributeName);
+        var hasPnlMenuToggleAttribute = context.ContainingSymbol!.GetAttributes()
+            .Any(x => x.AttributeClass!.ToDisplayString() == PnlMenuToggleAttributeName);
         if (!hasPnlMenuToggleAttribute)
         {
             return;
