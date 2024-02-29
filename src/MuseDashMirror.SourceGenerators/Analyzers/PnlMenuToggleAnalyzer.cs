@@ -4,6 +4,7 @@ namespace MuseDashMirror.SourceGenerators.Analyzers;
 public sealed class PnlMenuToggleAnalyzer : DiagnosticAnalyzer
 {
     public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(
+        PnlMenuToggleAttributeOnMultipleFieldsError,
         PnlMenuToggleAttributeInNonePartialClassError,
         PnlMenuToggleAttributeOnNonGameObjectError,
         PnlMenuToggleAttributeOnNonStaticGameObjectError);
@@ -17,10 +18,10 @@ public sealed class PnlMenuToggleAnalyzer : DiagnosticAnalyzer
 
     private static void AnalyzeNode(SyntaxNodeAnalysisContext context)
     {
-        var symbol = context.SemanticModel.GetDeclaredSymbol(context.Node);
-        if (symbol is null)
+        if (context.Node is FieldDeclarationSyntax { Declaration.Variables.Count: > 1 })
         {
-            return;
+            context.ReportDiagnostic(Diagnostic.Create(PnlMenuToggleAttributeOnMultipleFieldsError, context.Node.GetLocation(),
+                context.ContainingSymbol!.Name));
         }
 
         if (context.Node.Parent is not ClassDeclarationSyntax { Modifiers: var modifiers and not [] } classDeclarationSyntax)
@@ -28,7 +29,8 @@ public sealed class PnlMenuToggleAnalyzer : DiagnosticAnalyzer
             return;
         }
 
-        var hasPnlMenuToggleAttribute = symbol.GetAttributes().Any(x => x.AttributeClass!.ToDisplayString() == PnlMenuToggleAttributeName);
+        var hasPnlMenuToggleAttribute =
+            context.ContainingSymbol!.GetAttributes().Any(x => x.AttributeClass!.ToDisplayString() == PnlMenuToggleAttributeName);
         if (!hasPnlMenuToggleAttribute)
         {
             return;
@@ -37,26 +39,26 @@ public sealed class PnlMenuToggleAnalyzer : DiagnosticAnalyzer
         if (!modifiers.Any(SyntaxKind.PartialKeyword))
         {
             context.ReportDiagnostic(Diagnostic.Create(PnlMenuToggleAttributeInNonePartialClassError, classDeclarationSyntax.Identifier.GetLocation(),
-                classDeclarationSyntax.Identifier.ValueText, symbol.Name));
+                classDeclarationSyntax.Identifier.ValueText, context.ContainingSymbol.Name));
         }
 
-        switch (symbol)
+        switch (context.ContainingSymbol)
         {
             case IPropertySymbol propertySymbol when propertySymbol.Type.Name != "GameObject":
-                context.ReportDiagnostic(Diagnostic.Create(PnlMenuToggleAttributeOnNonGameObjectError, symbol.Locations[0],
-                    symbol.Name));
+                context.ReportDiagnostic(Diagnostic.Create(PnlMenuToggleAttributeOnNonGameObjectError, context.ContainingSymbol.Locations[0],
+                    context.ContainingSymbol.Name));
                 break;
 
             case IFieldSymbol fieldSymbol when fieldSymbol.Type.Name != "GameObject":
-                context.ReportDiagnostic(Diagnostic.Create(PnlMenuToggleAttributeOnNonGameObjectError, symbol.Locations[0],
-                    symbol.Name));
+                context.ReportDiagnostic(Diagnostic.Create(PnlMenuToggleAttributeOnNonGameObjectError, context.ContainingSymbol.Locations[0],
+                    context.ContainingSymbol.Name));
                 break;
         }
 
-        if (!symbol.IsStatic)
+        if (!context.ContainingSymbol.IsStatic)
         {
-            context.ReportDiagnostic(Diagnostic.Create(PnlMenuToggleAttributeOnNonStaticGameObjectError, symbol.Locations[0],
-                symbol.Name));
+            context.ReportDiagnostic(Diagnostic.Create(PnlMenuToggleAttributeOnNonStaticGameObjectError, context.ContainingSymbol.Locations[0],
+                context.ContainingSymbol.Name));
         }
     }
 }

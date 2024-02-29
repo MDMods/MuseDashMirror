@@ -91,4 +91,13 @@ internal static class DiagnosticDescriptors
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0202Description)));
+
+    internal static readonly DiagnosticDescriptor PnlMenuToggleAttributeOnMultipleFieldsError = new(
+        "MDM0203",
+        GetLocalizableString(nameof(MDM0203Title)),
+        GetLocalizableString(nameof(MDM0203MessageFormat)),
+        "Usage",
+        DiagnosticSeverity.Error,
+        true,
+        GetLocalizableString(nameof(MDM0203Description)));
 }

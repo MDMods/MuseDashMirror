@@ -23,8 +23,7 @@ public sealed class PatchEventAnalyzer : DiagnosticAnalyzer
             return;
         }
 
-        var methodSymbol = context.SemanticModel.GetDeclaredSymbol(methodDeclaration)!;
-        var attribute = methodSymbol.GetAttributes().FirstOrDefault(x => PatchEventRegex.IsMatch(x.AttributeClass!.ToDisplayString()));
+        var attribute = context.ContainingSymbol!.GetAttributes().FirstOrDefault(x => PatchEventRegex.IsMatch(x.AttributeClass!.ToDisplayString()));
         if (attribute is null)
         {
             return;
@@ -38,7 +37,7 @@ public sealed class PatchEventAnalyzer : DiagnosticAnalyzer
             parameterType != desiredParameterType)
         {
             context.ReportDiagnostic(Diagnostic.Create(PatchEventAttributeInvalidArgsError, methodDeclaration.Identifier.GetLocation(),
-                methodSymbol.Name, patchEventName, desiredParameterType));
+                context.ContainingSymbol.Name, patchEventName, desiredParameterType));
         }
     }
 }

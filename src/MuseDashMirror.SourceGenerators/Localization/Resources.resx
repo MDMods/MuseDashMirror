@@ -111,4 +111,13 @@
     <data name="MDM0202MessageFormat" xml:space="preserve">
         <value>Property/Field {0} should be static for correct register</value>
     </data>
+    <data name="MDM0203Title" xml:space="preserve">
+        <value>Incorrect field declaration</value>
+    </data>
+    <data name="MDM0203Description" xml:space="preserve">
+        <value>PnlMenuToggle attribute can only apply to one field.</value>
+    </data>
+    <data name="MDM0203MessageFormat" xml:space="preserve">
+        <value>PnlMenuToggle attribute can only apply to one field, leave {0} only for correct code generation</value>
+    </data>
 </root>

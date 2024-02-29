@@ -328,5 +328,32 @@ namespace MuseDashMirror.SourceGenerators.Localization {
                 return ResourceManager.GetString("MDM0202Title", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PnlMenuToggle attribute can only apply to one field..
+        /// </summary>
+        internal static string MDM0203Description {
+            get {
+                return ResourceManager.GetString("MDM0203Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PnlMenuToggle attribute can only apply to one field, leave {0} only for correct code generation.
+        /// </summary>
+        internal static string MDM0203MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0203MessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect field declaration.
+        /// </summary>
+        internal static string MDM0203Title {
+            get {
+                return ResourceManager.GetString("MDM0203Title", resourceCulture);
+            }
+        }
     }
 }
