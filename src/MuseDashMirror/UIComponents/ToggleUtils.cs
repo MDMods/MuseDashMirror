@@ -9,7 +9,6 @@ namespace MuseDashMirror.UIComponents;
 /// <summary>
 ///     Methods for creating toggle
 /// </summary>
-[Logger]
 public static partial class ToggleUtils
 {
     private const string TglOnPath = "Forward/PnlVolume/LogoSetting/Toggles/TglOn";
@@ -55,8 +54,6 @@ public static partial class ToggleUtils
         var toggleComp = toggle.GetComponent<Toggle>();
         toggleComp.onValueChanged.AddListener(callback);
         toggleComp.group = null;
-
-        Logger.Msg(txt.GetComponent<Text>().color);
 
         toggle.SetParent(GetGameObject("PnlOption"));
 
@@ -174,4 +171,7 @@ public static partial class ToggleUtils
         ToggleCount++;
         return position;
     }
+
+    [ExitMainScene]
+    private static void Reset(object e, SceneEventArgs args) => ToggleCount = 0;
 }
