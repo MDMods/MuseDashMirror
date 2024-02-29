@@ -19,10 +19,13 @@ public sealed class PnlMenuToggleGenerator : IIncrementalGenerator
             Parent: ClassDeclarationSyntax { Modifiers: var modifiers and not [] }
         } when modifiers.Any(SyntaxKind.PartialKeyword) => true,
 
-        FieldDeclarationSyntax
+        VariableDeclaratorSyntax
         {
-            Declaration.Type: IdentifierNameSyntax { Identifier.ValueText: "GameObject" },
-            Parent: ClassDeclarationSyntax { Modifiers: var modifiers and not [] }
+            Parent: VariableDeclarationSyntax
+            {
+                Type: IdentifierNameSyntax { Identifier.ValueText: "GameObject" },
+                Parent.Parent: ClassDeclarationSyntax { Modifiers: var modifiers and not [] }
+            }
         } when modifiers.Any(SyntaxKind.PartialKeyword) => true,
 
         _ => false
@@ -30,20 +33,21 @@ public sealed class PnlMenuToggleGenerator : IIncrementalGenerator
 
     private static PnlMenuToggleData? ExtractDataFromContext(GeneratorAttributeSyntaxContext ctx, CancellationToken _)
     {
-        var symbol = ctx.TargetSymbol;
-        if (symbol is not (IPropertySymbol or IFieldSymbol))
+        if (ctx.TargetSymbol is not (IPropertySymbol or IFieldSymbol))
         {
             return null;
         }
 
-        if (ctx.TargetNode.Parent is not ClassDeclarationSyntax { Identifier.ValueText: var className })
+        if (!ctx.TargetSymbol.IsStatic)
         {
             return null;
         }
 
-        var @namespace = symbol.ContainingNamespace.ToDisplayString();
-        var variableName = symbol.Name;
-        var attribute = symbol.GetAttributes().First(x => x.AttributeClass!.ToDisplayString() == PnlMenuToggleAttributeName);
+        var className = GetClassName(ctx.TargetNode);
+
+        var @namespace = ctx.TargetSymbol.ContainingNamespace.ToDisplayString();
+        var variableName = ctx.TargetSymbol.Name;
+        var attribute = ctx.TargetSymbol.GetAttributes().First(x => x.AttributeClass!.ToDisplayString() == PnlMenuToggleAttributeName);
 
         if (attribute.ApplicationSyntaxReference!.GetSyntax() is not AttributeSyntax { ArgumentList.Arguments: var arguments })
         {
@@ -85,6 +89,16 @@ public sealed class PnlMenuToggleGenerator : IIncrementalGenerator
                   internal static void Register{{className}}{{variableName}}ToPnlMenuEvent() => PnlMenuPatch += Register{{variableName}}PnlMenuToggle;
               }
               """);
+    }
+
+    private static string GetClassName(SyntaxNode node)
+    {
+        return node switch
+        {
+            PropertyDeclarationSyntax { Parent: ClassDeclarationSyntax { Identifier.ValueText: var className } } => className,
+            VariableDeclaratorSyntax { Parent.Parent.Parent: ClassDeclarationSyntax { Identifier.ValueText: var className } } => className,
+            _ => string.Empty
+        };
     }
 
     private sealed record PnlMenuToggleData(

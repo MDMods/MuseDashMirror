@@ -23,8 +23,7 @@ public sealed class SceneEventAnalyzer : DiagnosticAnalyzer
             return;
         }
 
-        var methodSymbol = context.SemanticModel.GetDeclaredSymbol(methodDeclaration)!;
-        var attribute = methodSymbol.GetAttributes().FirstOrDefault(x => SceneEventRegex.IsMatch(x.AttributeClass!.ToDisplayString()));
+        var attribute = context.ContainingSymbol!.GetAttributes().FirstOrDefault(x => SceneEventRegex.IsMatch(x.AttributeClass!.ToDisplayString()));
         if (attribute is null)
         {
             return;
@@ -52,7 +51,7 @@ public sealed class SceneEventAnalyzer : DiagnosticAnalyzer
         if (!correctParameters)
         {
             context.ReportDiagnostic(Diagnostic.Create(SceneEventAttributeInvalidArgsError, methodDeclaration.Identifier.GetLocation(),
-                methodSymbol.Name, sceneEventName));
+                context.ContainingSymbol.Name, sceneEventName));
         }
     }
 }

@@ -6,8 +6,7 @@ public sealed class EventAnalyzer : DiagnosticAnalyzer
     public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(
         EventAttributeInvalidReturnTypeError,
         EventAttributeNonStaticMethodForStaticConstructorError,
-        EventAttributeInNonPartialClassError,
-        RegisterInMuseDashMirrorWarning);
+        EventAttributeInNonPartialClassError);
 
     public override void Initialize(AnalysisContext context)
     {
@@ -27,31 +26,25 @@ public sealed class EventAnalyzer : DiagnosticAnalyzer
             return;
         }
 
+        if (context.ContainingSymbol is null)
+        {
+            return;
+        }
+
         var classSymbol = context.SemanticModel.GetDeclaredSymbol(classDeclaration);
         if (classSymbol is null)
         {
             return;
         }
 
-        var classAttribute = classSymbol.GetAttributes()
-            .FirstOrDefault(x => x.AttributeClass!.ToDisplayString() == RegisterInMuseDashMirrorAttributeName);
-
-        var staticConstructor = false;
-        if (classAttribute is not null)
-        {
-            staticConstructor = (RegisterMethodType)classAttribute.ConstructorArguments.Single().Value! == RegisterMethodType.StaticConstructor;
-        }
-
-        var methodSymbol = context.SemanticModel.GetDeclaredSymbol(methodDeclaration)!;
-
-        if ((classSymbol.IsStatic || staticConstructor) && !methodSymbol.IsStatic)
+        if (classSymbol.IsStatic && !context.ContainingSymbol.IsStatic)
         {
             context.ReportDiagnostic(Diagnostic.Create(EventAttributeNonStaticMethodForStaticConstructorError,
-                methodDeclaration.Identifier.GetLocation(), methodSymbol.Name));
+                methodDeclaration.Identifier.GetLocation(), context.ContainingSymbol.Name));
             return;
         }
 
-        var methodAttribute = methodSymbol.GetAttributes().FirstOrDefault(x =>
+        var methodAttribute = context.ContainingSymbol.GetAttributes().FirstOrDefault(x =>
             SceneEventRegex.IsMatch(x.AttributeClass!.ToDisplayString()) || PatchEventRegex.IsMatch(x.AttributeClass!.ToDisplayString()));
 
         if (methodAttribute is null)
@@ -62,7 +55,7 @@ public sealed class EventAnalyzer : DiagnosticAnalyzer
         if (!modifiers.Any(SyntaxKind.PartialKeyword))
         {
             context.ReportDiagnostic(Diagnostic.Create(EventAttributeInNonPartialClassError, classDeclaration.Identifier.GetLocation(),
-                classSymbol.Name, methodSymbol.Name));
+                classSymbol.Name, context.ContainingSymbol.Name));
             return;
         }
 
@@ -75,13 +68,7 @@ public sealed class EventAnalyzer : DiagnosticAnalyzer
         if (returnType is not PredefinedTypeSyntax { Keyword.RawKind: (int)SyntaxKind.VoidKeyword })
         {
             context.ReportDiagnostic(Diagnostic.Create(EventAttributeInvalidReturnTypeError, methodDeclaration.Identifier.GetLocation(),
-                methodSymbol.Name, eventName));
-        }
-
-        if (classAttribute is null)
-        {
-            context.ReportDiagnostic(Diagnostic.Create(RegisterInMuseDashMirrorWarning, classDeclaration.Identifier.GetLocation(),
-                classSymbol.Name));
+                context.ContainingSymbol.Name, eventName));
         }
     }
 }
