@@ -14,8 +14,7 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
             GenerateFromData);
     }
 
-    private static bool FilterNode(SyntaxNode node, CancellationToken _) =>
-        node is ClassDeclarationSyntax { Modifiers: var modifiers } && modifiers.Any(SyntaxKind.PartialKeyword);
+    private static bool FilterNode(SyntaxNode node, CancellationToken _) => node is ClassDeclarationSyntax;
 
     private static RegisterClassData? ExtractDataFromContext(GeneratorSyntaxContext context, CancellationToken _)
     {
@@ -31,7 +30,7 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
         var classSymbol = semanticModel.GetDeclaredSymbol(classDeclaration)!;
 
         if (classDeclaration is { BaseList.Types: var types }
-            && types.Any(x => x.Type.ToString().Contains("MelonMod")))
+            && types.Any(x => x.Type.ToString().StartsWith("MelonMod")))
         {
             MelonClassName = classDeclaration.Identifier.ValueText;
             MelonClassNameSpace = classSymbol.ContainingNamespace.ToDisplayString();

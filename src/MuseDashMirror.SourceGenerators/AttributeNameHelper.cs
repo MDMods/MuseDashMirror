@@ -3,7 +3,6 @@ namespace MuseDashMirror.SourceGenerators;
 internal static class AttributeNameHelper
 {
     internal const string LoggerAttributeName = "MuseDashMirror.Attributes.LoggerAttribute";
-    internal const string RegisterInMuseDashMirrorAttributeName = "MuseDashMirror.Attributes.RegisterInMuseDashMirrorAttribute";
     internal const string PnlMenuToggleAttributeName = "MuseDashMirror.Attributes.PnlMenuToggleAttribute";
 
     internal static readonly Regex SceneEventRegex =
