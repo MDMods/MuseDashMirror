@@ -43,6 +43,12 @@ public sealed class PnlMenuToggleGenerator : IIncrementalGenerator
             return null;
         }
 
+        var unitRoot = ctx.SemanticModel.SyntaxTree.GetCompilationUnitRoot();
+
+        var staticUsingDirectives = from usingDirective in unitRoot.Usings
+            where usingDirective.StaticKeyword.IsKind(SyntaxKind.StaticKeyword)
+            select usingDirective.ToFullString();
+
         var className = GetClassName(ctx.TargetNode);
 
         var @namespace = ctx.TargetSymbol.ContainingNamespace.ToDisplayString();
@@ -60,22 +66,30 @@ public sealed class PnlMenuToggleGenerator : IIncrementalGenerator
 
         var constructorArguments = attribute.ConstructorArguments.Select(x => x.Value!.ToString()).Take(2).ToArray();
 
-        return new PnlMenuToggleData(@namespace, className, variableName, constructorArguments[0], constructorArguments[1], boolName);
+        return new PnlMenuToggleData(staticUsingDirectives, @namespace, className, variableName, constructorArguments[0], constructorArguments[1],
+            boolName);
     }
 
     private static void GenerateFromData(SourceProductionContext spc, PnlMenuToggleData? data)
     {
-        if (data is not var (@namespace, className, variableName, toggleName, toggleText, boolName))
+        if (data is not var (staticUsingDirectives, @namespace, className, variableName, toggleName, toggleText, boolName))
         {
             return;
+        }
+
+        var usingStringBuilder = new StringBuilder();
+        foreach (var usingDirective in staticUsingDirectives)
+        {
+            usingStringBuilder.AppendLine(usingDirective.Insert(13, "global::"));
         }
 
         spc.AddSource($"{className}.{variableName}.PnlMenuToggle.g.cs",
             Header +
             $$"""
-              using MuseDashMirror.EventArguments;
+              using global::MuseDashMirror.EventArguments;
               using static global::MuseDashMirror.PatchEvents;
               using static global::MuseDashMirror.UIComponents.ToggleUtils;
+              {{usingStringBuilder.ToString().TrimEnd()}}
 
               namespace {{@namespace}};
 
@@ -91,17 +105,15 @@ public sealed class PnlMenuToggleGenerator : IIncrementalGenerator
               """);
     }
 
-    private static string GetClassName(SyntaxNode node)
+    private static string GetClassName(SyntaxNode node) => node switch
     {
-        return node switch
-        {
-            PropertyDeclarationSyntax { Parent: ClassDeclarationSyntax { Identifier.ValueText: var className } } => className,
-            VariableDeclaratorSyntax { Parent.Parent.Parent: ClassDeclarationSyntax { Identifier.ValueText: var className } } => className,
-            _ => string.Empty
-        };
-    }
+        PropertyDeclarationSyntax { Parent: ClassDeclarationSyntax { Identifier.ValueText: var className } } => className,
+        VariableDeclaratorSyntax { Parent.Parent.Parent: ClassDeclarationSyntax { Identifier.ValueText: var className } } => className,
+        _ => string.Empty
+    };
 
     private sealed record PnlMenuToggleData(
+        IEnumerable<string> Usings,
         string Namespace,
         string ClassName,
         string VariableName,
