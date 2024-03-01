@@ -18,16 +18,21 @@ public sealed class MelonModClassAnalyzer : DiagnosticAnalyzer
             {
                 Modifiers: var modifiers and not [],
                 BaseList.Types: var types and not []
-            } classDeclaration ||
-            !types.Any(x => x.Type.ToString().StartsWith("MelonMod")))
+            } classDeclaration || !types.Any(x => x.Type.ToString().StartsWith("MelonMod")))
         {
             return;
         }
 
-        if (context.ContainingSymbol!.Locations.Length > 1 && !modifiers.Any(SyntaxKind.PartialKeyword))
+        if (context.ContainingSymbol!.Locations.Length <= 1 || modifiers.Any(SyntaxKind.PartialKeyword))
         {
-            context.ReportDiagnostic(Diagnostic.Create(InheritedMelonModClassNonPartialError, classDeclaration.Identifier.GetLocation(),
-                classDeclaration.Identifier.ValueText));
+            return;
         }
+
+        var classKeywordLocation = classDeclaration.Keyword.GetLocation();
+        var identifierLocation = classDeclaration.Identifier.GetLocation();
+
+        var span = TextSpan.FromBounds(classKeywordLocation.SourceSpan.Start, identifierLocation.SourceSpan.End);
+        var location = Location.Create(classDeclaration.SyntaxTree, span);
+        context.ReportDiagnostic(Diagnostic.Create(InheritedMelonModClassNonPartialError, location, classDeclaration.Identifier.ValueText));
     }
 }
