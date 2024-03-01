@@ -10,6 +10,6 @@ global using MuseDashMirror.Models;
 global using UnityEngine;
 global using static MuseDashMirror.PatchEvents;
 global using static MuseDashMirror.SceneInfo;
-global using static MuseDashMirror.UIComponents.GameObjectUtils;
+global using static MuseDashMirror.Utils.GameObjectUtils;
 global using Il2CppStringList = Il2CppSystem.Collections.Generic.List<string>;
 global using Text = UnityEngine.UI.Text;

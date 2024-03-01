@@ -102,5 +102,5 @@ public class EllipseTextParameters : TextParameters
     ///     <inheritdoc cref="TextParameters.GetText" />
     /// </summary>
     /// <returns></returns>
-    public override string GetText() => Text.TryGetVisibleTextWithEllipsis(InVisibleTextRange);
+    public override string GetText() => Text.GetVisibleTextWithEllipsisOrDefault(InVisibleTextRange);
 }

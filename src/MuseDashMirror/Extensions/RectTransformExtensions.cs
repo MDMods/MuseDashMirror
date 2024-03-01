@@ -3,7 +3,7 @@ using UnityEngine.UI;
 namespace MuseDashMirror.Extensions;
 
 /// <summary>
-///     <see cref="RectTransform"/> Extension Methods
+///     <see cref="RectTransform" /> Extension Methods
 /// </summary>
 public static class RectTransformExtensions
 {

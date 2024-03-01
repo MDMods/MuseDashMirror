@@ -1,4 +1,4 @@
-namespace MuseDashMirror.UIComponents;
+namespace MuseDashMirror.Utils;
 
 /// <summary>
 ///     Methods related with GameObject

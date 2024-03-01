@@ -40,24 +40,12 @@ public static class PlayerData
     public static int SelectedElfinIndex => DataHelper.selectedElfinIndex;
 
     /// <summary>
-    ///     Localized elfin name
-    /// </summary>
-    public static string SelectedElfinName =>
-        Singleton<ConfigManager>.instance.GetJson("elfin", true)[SelectedElfinIndex]["name"].ToString();
-
-    /// <summary>
     ///     Selected character index
     /// </summary>
     public static int SelectedCharacterIndex => DataHelper.selectedRoleIndex;
 
     /// <summary>
-    ///     Localized character name
-    /// </summary>
-    public static string SelectedCharacterName =>
-        Singleton<ConfigManager>.instance.GetJson("character", true)[SelectedCharacterIndex]["cosName"].ToString();
-
-    /// <summary>
-    ///     Offset
+    ///     Music offset
     /// </summary>
     public static int Offset => DataHelper.offset;
 
@@ -65,6 +53,18 @@ public static class PlayerData
     ///     Auto fever
     /// </summary>
     public static bool IsAutoFever => DataHelper.isAutoFever;
+
+    /// <summary>
+    ///     Get elfin name
+    /// </summary>
+    public static string GetSelectedElfinName(bool localized = true) =>
+        Singleton<ConfigManager>.instance.GetJson("elfin", localized)[SelectedElfinIndex]["name"].ToString();
+
+    /// <summary>
+    ///     Get character name
+    /// </summary>
+    public static string GetSelectedCharacterName(bool localized = true) =>
+        Singleton<ConfigManager>.instance.GetJson("character", localized)[SelectedCharacterIndex]["cosName"].ToString();
 
     /// <summary>
     ///     Set character with index
