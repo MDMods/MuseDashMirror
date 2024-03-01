@@ -3,7 +3,6 @@
     <PropertyGroup>
         <Nullable>disable</Nullable>
         <TargetFramework>net6.0</TargetFramework>
-        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -136,17 +135,6 @@
                           OutputItemType="Analyzer"
                           PackAsAnalyzer="true"
                           ReferenceOutputAssembly="false"/>
-    </ItemGroup>
-
-    <ItemGroup>
-        <PackageReference Update="Roslynator.Analyzers" Version="4.11.0">
-            <PrivateAssets>all</PrivateAssets>
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
-        <PackageReference Update="Roslynator.Formatting.Analyzers" Version="4.11.0">
-            <PrivateAssets>all</PrivateAssets>
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
     </ItemGroup>
 
     <Target Name="CopyMods" AfterTargets="Build">
