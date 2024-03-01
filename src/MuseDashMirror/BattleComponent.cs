@@ -85,32 +85,32 @@ public static partial class BattleComponent
     /// <summary>
     ///     Perfect count
     /// </summary>
-    public static int PerfectNum => Singleton<TaskStageTarget>.instance.m_PerfectResult;
+    public static int PerfectCount => Singleton<TaskStageTarget>.instance.m_PerfectResult;
 
     /// <summary>
     ///     Great count
     /// </summary>
-    public static int GreatNum => Singleton<TaskStageTarget>.instance.m_GreatResult;
+    public static int GreatCount => Singleton<TaskStageTarget>.instance.m_GreatResult;
 
     /// <summary>
     ///     Normal miss count (without ghost and collectable note miss)
     /// </summary>
-    public static int NormalMissNum { get; internal set; }
+    public static int NormalMissCount { get; internal set; }
 
     /// <summary>
     ///     Ghost miss count
     /// </summary>
-    public static int GhostMissNum { get; internal set; }
+    public static int GhostMissCount { get; internal set; }
 
     /// <summary>
     ///     Collectable note miss count
     /// </summary>
-    public static int CollectableNoteMissNum { get; internal set; }
+    public static int CollectableNoteMissCount { get; internal set; }
 
     /// <summary>
     ///     Total miss count
     /// </summary>
-    public static int TotalMissNum { get; internal set; }
+    public static int TotalMissCount { get; internal set; }
 
     /// <summary>
     ///     Blue collectable notes count
@@ -130,15 +130,16 @@ public static partial class BattleComponent
     /// <summary>
     ///     Music data for the chart, only changed when entering the chart
     /// </summary>
-    public static List<MusicData> MusicDataList { get; internal set; } = [];
+    public static List<MusicData> MusicDataList { get; } = [];
 
     [ExitGameScene]
     private static void Reset(object e, SceneEventArgs args)
     {
-        NormalMissNum = 0;
-        GhostMissNum = 0;
-        CollectableNoteMissNum = 0;
-        TotalMissNum = 0;
+        NormalMissCount = 0;
+        GhostMissCount = 0;
+        CollectableNoteMissCount = 0;
+        TotalMissCount = 0;
+        MusicDataList?.Clear();
     }
 
     #endregion GameInfo

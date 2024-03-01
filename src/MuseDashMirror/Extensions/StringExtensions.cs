@@ -1,7 +1,7 @@
 namespace MuseDashMirror.Extensions;
 
 /// <summary>
-///     <see cref="string"/> Extension Methods
+///     <see cref="string" /> Extension Methods
 /// </summary>
 public static class StringExtensions
 {
@@ -17,7 +17,7 @@ public static class StringExtensions
         if (inVisibleTextRange.Start.Value > originalText.Length || inVisibleTextRange.End.Value > originalText.Length)
         {
             throw new ArgumentOutOfRangeException(nameof(inVisibleTextRange), inVisibleTextRange,
-                "The range is out of the bounds of the original text");
+                @"The range is out of the bounds of the original text");
         }
 
         var prefixText = originalText[..inVisibleTextRange.Start.Value];
@@ -33,15 +33,16 @@ public static class StringExtensions
     /// <param name="originalText">Original Text</param>
     /// <param name="inVisibleTextRange">The range of text to be replaced by ellipsis</param>
     /// <returns>Result String</returns>
-    public static string TryGetVisibleTextWithEllipsis(this string originalText, Range inVisibleTextRange)
+    public static string GetVisibleTextWithEllipsisOrDefault(this string originalText, Range inVisibleTextRange)
     {
-        try
-        {
-            return GetVisibleTextWithEllipsis(originalText, inVisibleTextRange);
-        }
-        catch (ArgumentOutOfRangeException)
+        if (inVisibleTextRange.Start.Value > originalText.Length || inVisibleTextRange.End.Value > originalText.Length)
         {
             return originalText;
         }
+
+        var prefixText = originalText[..inVisibleTextRange.Start.Value];
+        var suffixText = originalText[^inVisibleTextRange.End.Value..];
+
+        return $"{prefixText}...{suffixText}";
     }
 }

@@ -34,7 +34,7 @@ public static partial class GameObjectExtensions
     }
 
     /// <summary>
-    ///     Set the Text gameObject of a GameObject
+    ///     Set the Text Component of a GameObject
     /// </summary>
     /// <param name="gameObject">GameObject</param>
     /// <param name="textParameters">Text Parameters</param>
@@ -72,7 +72,7 @@ public static partial class GameObjectExtensions
     }
 
     /// <summary>
-    ///     Find a Component in the ancestors of a GameObject
+    ///     Find a Component in the ancestors of a GameObject including itself
     /// </summary>
     /// <param name="gameObject">GameObject</param>
     /// <typeparam name="T">Component</typeparam>

@@ -7,6 +7,7 @@
         <MelonLoader>$(GameFolder)\MelonLoader\</MelonLoader>
         <MelonNET6>$(MelonLoader)\net6\</MelonNET6>
         <MelonAssemblies>$(MelonLoader)\Il2CppAssemblies\</MelonAssemblies>
+        <OutputPath>$(SolutionDir)\bin</OutputPath>
     </PropertyGroup>
 
     <ItemDefinitionGroup>
