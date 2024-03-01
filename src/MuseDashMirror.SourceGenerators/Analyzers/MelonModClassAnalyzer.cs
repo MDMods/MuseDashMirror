@@ -28,11 +28,7 @@ public sealed class MelonModClassAnalyzer : DiagnosticAnalyzer
             return;
         }
 
-        var classKeywordLocation = classDeclaration.Keyword.GetLocation();
-        var identifierLocation = classDeclaration.Identifier.GetLocation();
-
-        var span = TextSpan.FromBounds(classKeywordLocation.SourceSpan.Start, identifierLocation.SourceSpan.End);
-        var location = Location.Create(classDeclaration.SyntaxTree, span);
+        var location = GetClassDeclarationLocation(classDeclaration);
         context.ReportDiagnostic(Diagnostic.Create(InheritedMelonModClassNonPartialError, location, classDeclaration.Identifier.ValueText));
     }
 }
