@@ -25,7 +25,7 @@
         <value>Logger attribute can only be used on partial class.</value>
     </data>
     <data name="MDM0000MessageFormat" xml:space="preserve">
-        <value>Class {0} must have partial keyword in its declaration</value>
+        <value>Class {0} must have partial keyword in its declaration for generating Logger</value>
     </data>
     <data name="MDM0000Title" xml:space="preserve">
         <value>Logger attribute can only be used on partial class</value>

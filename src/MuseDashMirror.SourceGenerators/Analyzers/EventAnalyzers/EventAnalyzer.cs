@@ -54,7 +54,8 @@ public sealed class EventAnalyzer : DiagnosticAnalyzer
 
         if (!modifiers.Any(SyntaxKind.PartialKeyword))
         {
-            context.ReportDiagnostic(Diagnostic.Create(EventAttributeInNonPartialClassError, classDeclaration.Identifier.GetLocation(),
+            var location = GetClassDeclarationLocation(classDeclaration);
+            context.ReportDiagnostic(Diagnostic.Create(EventAttributeInNonPartialClassError, location,
                 classSymbol.Name, context.ContainingSymbol.Name));
             return;
         }

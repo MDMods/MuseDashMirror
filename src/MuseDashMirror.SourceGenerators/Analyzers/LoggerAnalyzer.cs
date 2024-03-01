@@ -27,10 +27,12 @@ public sealed class LoggerAnalyzer : DiagnosticAnalyzer
 
         var hasAttribute = symbol.GetAttributes().Any(x => x.AttributeClass!.ToDisplayString() == LoggerAttributeName);
 
-        if (hasAttribute && !modifiers.Any(SyntaxKind.PartialKeyword))
+        if (!hasAttribute || modifiers.Any(SyntaxKind.PartialKeyword))
         {
-            context.ReportDiagnostic(
-                Diagnostic.Create(LoggerAttributeForNonPartialClassError, classDeclaration.Identifier.GetLocation(), symbol.Name));
+            return;
         }
+
+        var location = GetClassDeclarationLocation(classDeclaration);
+        context.ReportDiagnostic(Diagnostic.Create(LoggerAttributeForNonPartialClassError, location, symbol.Name));
     }
 }

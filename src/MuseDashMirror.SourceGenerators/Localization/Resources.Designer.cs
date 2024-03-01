@@ -69,7 +69,7 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Class {0} must have partial keyword in its declaration.
+        ///   Looks up a localized string similar to Class {0} must have partial keyword in its declaration for generating Logger.
         /// </summary>
         internal static string MDM0000MessageFormat {
             get {
