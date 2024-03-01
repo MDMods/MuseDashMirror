@@ -17,7 +17,7 @@
         <value>Logger 特性只能被用在 partial 类上。</value>
     </data>
     <data name="MDM0000MessageFormat" xml:space="preserve">
-        <value>{0} 类必须在声明中含有 partial 关键词</value>
+        <value>为生成 Logger，{0} 类必须在声明中含有 partial 关键词</value>
     </data>
     <data name="MDM0000Title" xml:space="preserve">
         <value>Logger 特性只能被用在 partial 类上</value>

@@ -38,7 +38,8 @@ public sealed class PnlMenuToggleAnalyzer : DiagnosticAnalyzer
 
         if (!modifiers.Any(SyntaxKind.PartialKeyword))
         {
-            context.ReportDiagnostic(Diagnostic.Create(PnlMenuToggleAttributeInNonePartialClassError, classDeclarationSyntax.Identifier.GetLocation(),
+            var location = GetClassDeclarationLocation(classDeclarationSyntax);
+            context.ReportDiagnostic(Diagnostic.Create(PnlMenuToggleAttributeInNonePartialClassError, location,
                 classDeclarationSyntax.Identifier.ValueText, context.ContainingSymbol.Name));
         }
 
