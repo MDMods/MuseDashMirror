@@ -1,0 +1,25 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <data name="MDM0000Description" xml:space="preserve">
+        <value>Logger 特性只能被用在 partial 类上。</value>
+    </data>
+    <data name="MDM0000MessageFormat" xml:space="preserve">
+        <value>为生成 Logger，{0} 类必须在声明中含有 partial 关键词</value>
+    </data>
+    <data name="MDM0000Title" xml:space="preserve">
+        <value>Logger 特性只能被用在 partial 类上</value>
+    </data>
+</root>

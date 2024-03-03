@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root" xmlns="">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+
+    <data name="MDM0000Description" xml:space="preserve">
+        <value>Logger attribute can only be used on partial class.</value>
+    </data>
+    <data name="MDM0000MessageFormat" xml:space="preserve">
+        <value>Class {0} must have partial keyword in its declaration for generating Logger</value>
+    </data>
+    <data name="MDM0000Title" xml:space="preserve">
+        <value>Logger attribute can only be used on partial class</value>
+    </data>
+    <data name="MDM0100Title" xml:space="preserve">
+        <value>Incorrect parameter types</value>
+    </data>
+    <data name="MDM0100Description" xml:space="preserve">
+        <value>Method with PatchEvent attribute must have parameter types object and EventArgs.</value>
+    </data>
+    <data name="MDM0100MessageFormat" xml:space="preserve">
+        <value>Method {0} with attribute {1} must have parameter types object and {2}</value>
+    </data>
+    <data name="MDM0101Description" xml:space="preserve">
+        <value>Method with SceneEvent attribute must have parameter types object and SceneEventArgs.</value>
+    </data>
+    <data name="MDM0101MessageFormat" xml:space="preserve">
+        <value>Method {0} with attribute {1} must have parameter types object and SceneEventArgs</value>
+    </data>
+    <data name="MDM0101Title" xml:space="preserve">
+        <value>Incorrect parameter types</value>
+    </data>
+    <data name="MDM0102Description" xml:space="preserve">
+        <value>Method with Event attribute must have return type void.</value>
+    </data>
+    <data name="MDM0102MessageFormat" xml:space="preserve">
+        <value>Method {0} with attribute {1} must have return type void</value>
+    </data>
+    <data name="MDM0102Title" xml:space="preserve">
+        <value>Incorrect return type</value>
+    </data>
+    <data name="MDM0103Description" xml:space="preserve">
+        <value>Method with static class or register type static constructor must be declared as static.</value>
+    </data>
+    <data name="MDM0103MessageFormat" xml:space="preserve">
+        <value>Method {0} must be declared as static in order to be correctly registered</value>
+    </data>
+    <data name="MDM0103Title" xml:space="preserve">
+        <value>Method should be static</value>
+    </data>
+    <data name="MDM0104Description" xml:space="preserve">
+        <value>Method with Event attribute must be in a partial class.</value>
+    </data>
+    <data name="MDM0104MessageFormat" xml:space="preserve">
+        <value>Class {0} must be a partial class for {1}'s register method to be correctly generated</value>
+    </data>
+    <data name="MDM0104Title" xml:space="preserve">
+        <value>Method should be in a partial class</value>
+    </data>
+    <data name="MDM0001Title" xml:space="preserve">
+        <value>Class inherited from MelonMod class should be partial</value>
+    </data>
+    <data name="MDM0001Description" xml:space="preserve">
+        <value>Class inherited from MelonMod class should be partial to register methods.</value>
+    </data>
+    <data name="MDM0001MessageFormat" xml:space="preserve">
+        <value>To ensure the correct registry of MuseDashMirror attributes, {0} class should be partial</value>
+    </data>
+    <data name="MDM0200Title" xml:space="preserve">
+        <value>Property/Field should be in a partial class</value>
+    </data>
+    <data name="MDM0200Description" xml:space="preserve">
+        <value>Property/Field with PnlMenuToggle attribute must be declared in a partial class.</value>
+    </data>
+    <data name="MDM0200MessageFormat" xml:space="preserve">
+        <value>Class {0} must be a partial class for {1}'s register method to be correctly generated</value>
+    </data>
+    <data name="MDM0201Title" xml:space="preserve">
+        <value>Incorrect declare type</value>
+    </data>
+    <data name="MDM0201Description" xml:space="preserve">
+        <value>Property/Field with attribute PnlMenuToggle should be type UnityEngine.GameObject</value>
+    </data>
+    <data name="MDM0201MessageFormat" xml:space="preserve">
+        <value>Property/Field {0} should be type UnityEngine.GameObject</value>
+    </data>
+    <data name="MDM0202Title" xml:space="preserve">
+        <value>Property/Field should be static</value>
+    </data>
+    <data name="MDM0202Description" xml:space="preserve">
+        <value>Property/Field should be static to be registered by MuseDashMirror</value>
+    </data>
+    <data name="MDM0202MessageFormat" xml:space="preserve">
+        <value>Property/Field {0} should be static for correct register</value>
+    </data>
+    <data name="MDM0203Title" xml:space="preserve">
+        <value>Incorrect field declaration</value>
+    </data>
+    <data name="MDM0203Description" xml:space="preserve">
+        <value>PnlMenuToggle attribute can only apply to one field.</value>
+    </data>
+    <data name="MDM0203MessageFormat" xml:space="preserve">
+        <value>PnlMenuToggle attribute can only apply to one field, leave {0} only for correct code generation</value>
+    </data>
+</root>
