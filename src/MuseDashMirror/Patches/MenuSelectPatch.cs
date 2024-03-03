@@ -1,4 +1,4 @@
-﻿namespace MuseDashMirror.Patch;
+﻿namespace MuseDashMirror.Patches;
 
 [HarmonyPatch(typeof(MenuSelect), nameof(MenuSelect.OnToggleChanged))]
 internal static class MenuSelectPatch

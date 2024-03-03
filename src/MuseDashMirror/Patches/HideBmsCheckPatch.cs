@@ -1,7 +1,7 @@
 ﻿using Il2CppAssets.Scripts.Database;
 using static MuseDashMirror.BattleComponent;
 
-namespace MuseDashMirror.Patch;
+namespace MuseDashMirror.Patches;
 
 [HarmonyPatch(typeof(SpecialSongManager), nameof(SpecialSongManager.HideBmsCheck))]
 internal static class HideBmsCheckPatch

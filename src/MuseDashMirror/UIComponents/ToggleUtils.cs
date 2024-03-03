@@ -148,7 +148,7 @@ public static partial class ToggleUtils
     private static Vector3 GetPosition(RectTransform rectTransform)
     {
         var scaledFactor = rectTransform.gameObject.GetTotalScaledFactor();
-        var width = rectTransform.rect.width * scaledFactor + 1.1f;
+        var width = rectTransform.rect.width * scaledFactor.x + 1.1f;
         var column = ToggleCount / 4;
 
         if (LongestWidths.Count <= column)

@@ -22,7 +22,7 @@ public sealed class RightEdgePositionStrategy : IPositionStrategy
         }
         else
         {
-            halfWidth *= scaledFactor;
+            halfWidth *= scaledFactor.x;
             rectTransform.position = new Vector3(transformParameters.Position.x - halfWidth,
                 transformParameters.Position.y,
                 transformParameters.Position.z);

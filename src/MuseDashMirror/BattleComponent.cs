@@ -108,11 +108,6 @@ public static partial class BattleComponent
     public static int CollectableNoteMissCount { get; internal set; }
 
     /// <summary>
-    ///     Total miss count
-    /// </summary>
-    public static int TotalMissCount { get; internal set; }
-
-    /// <summary>
     ///     Blue collectable notes count
     /// </summary>
     public static int Get => Singleton<TaskStageTarget>.instance.m_MusicCount + 1;
@@ -138,7 +133,6 @@ public static partial class BattleComponent
         NormalMissCount = 0;
         GhostMissCount = 0;
         CollectableNoteMissCount = 0;
-        TotalMissCount = 0;
         MusicDataList?.Clear();
     }
 

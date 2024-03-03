@@ -99,16 +99,48 @@ public static partial class GameObjectExtensions
     }
 
     /// <summary>
+    ///     Try to find a Component in the ancestors of a GameObject including itself
+    /// </summary>
+    /// <param name="gameObject">GameObject</param>
+    /// <param name="component">Component</param>
+    /// <typeparam name="T">Component</typeparam>
+    /// <returns>Found</returns>
+    public static bool TryFindComponentInAncestors<T>(this GameObject gameObject, out T component) where T : Component
+    {
+        while (true)
+        {
+            component = gameObject.GetComponent<T>();
+            if (component != null)
+            {
+                return true;
+            }
+
+            var parent = gameObject.transform.parent;
+            if (parent == null)
+            {
+                Logger.Error($"{typeof(T)} not found in ancestors");
+                return false;
+            }
+
+            gameObject = parent.gameObject;
+        }
+    }
+
+    /// <summary>
     ///     Get the total scaled factor of a GameObject
     /// </summary>
     /// <param name="gameObject">GameObject</param>
-    /// <returns>Scaled Factor</returns>
-    public static float GetTotalScaledFactor(this GameObject gameObject)
+    /// <returns>Scale Factor Vector3</returns>
+    public static Vector3 GetTotalScaledFactor(this GameObject gameObject)
     {
-        var scaleFactor = 1f;
+        var scaleFactor = Vector3.one;
         while (true)
         {
-            scaleFactor *= gameObject.transform.localScale.x;
+            var localScale = gameObject.transform.localScale;
+
+            scaleFactor.x *= localScale.x;
+            scaleFactor.y *= localScale.y;
+            scaleFactor.z *= localScale.z;
 
             var parent = gameObject.transform.parent;
             if (parent == null)
