@@ -34,7 +34,6 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
         {
             MelonClassName = classDeclaration.Identifier.ValueText;
             MelonClassNameSpace = classSymbol.ContainingNamespace.ToDisplayString();
-            return null;
         }
 
         var @namespace = classSymbol.ContainingNamespace.ToDisplayString();
