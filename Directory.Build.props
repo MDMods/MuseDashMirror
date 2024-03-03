@@ -1,0 +1,29 @@
+<Project>
+    <Sdk Name="ViHo.PackAsAnalyzer" Version="1.0.1"/>
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <LangVersion>latest</LangVersion>
+        <GameFolder Condition="Exists('$(MD_DIRECTORY)')">$(MD_DIRECTORY)</GameFolder>
+        <MelonLoader>$(GameFolder)\MelonLoader\</MelonLoader>
+        <MelonNET6>$(MelonLoader)\net6\</MelonNET6>
+        <MelonAssemblies>$(MelonLoader)\Il2CppAssemblies\</MelonAssemblies>
+        <OutputPath>$(SolutionDir)\bin</OutputPath>
+    </PropertyGroup>
+
+    <ItemDefinitionGroup>
+        <PackageReference PrivateAssets="all"/>
+        <Reference Private="false"/>
+    </ItemDefinitionGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Roslynator.Analyzers" Version="4.11.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Roslynator.Formatting.Analyzers" Version="4.11.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+</Project>
