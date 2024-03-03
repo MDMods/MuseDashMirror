@@ -1,6 +1,6 @@
 ﻿using Object = Il2CppSystem.Object;
 
-namespace MuseDashMirror.Patch;
+namespace MuseDashMirror.Patches;
 
 [HarmonyPatch(typeof(PnlVictory), nameof(PnlVictory.OnVictory), typeof(Object), typeof(Object), typeof(Object[]))]
 internal static class PnlVictoryPatch
