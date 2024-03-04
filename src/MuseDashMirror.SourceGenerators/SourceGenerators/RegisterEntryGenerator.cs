@@ -58,8 +58,8 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
             return;
         }
 
-        var usingStringBuilder = new StringBuilder();
-        var methodStringBuilder = new StringBuilder();
+        using var usingStringBuilder = ZString.CreateStringBuilder();
+        using var methodStringBuilder = ZString.CreateStringBuilder();
         foreach (var data in dataList)
         {
             if (data is not var (@namespace, className, registerMethodNames) || registerMethodNames is [])
@@ -77,7 +77,7 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
         spc.AddSource($"{MelonClassName}.RegisterEntry.g.cs",
             Header +
             $$"""
-              {{usingStringBuilder}}
+              {{usingStringBuilder.ToString()}}
               namespace {{MelonClassNameSpace}};
 
               partial class {{MelonClassName}}
