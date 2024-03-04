@@ -31,7 +31,7 @@
         <PackageReference Include="ZString" Version="2.5.1"/>
     </ItemGroup>
 
-    <Target Name="ILRepacker" AfterTargets="Build">
+    <Target Name="ILRepacker" AfterTargets="Build" Condition=" '$(Configuration)' == 'Debug' ">
         <PropertyGroup>
             <WorkingDirectory>$(OutputPath)</WorkingDirectory>
         </PropertyGroup>
