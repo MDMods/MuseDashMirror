@@ -31,24 +31,6 @@
         <PackageReference Include="ZString" Version="2.5.1"/>
     </ItemGroup>
 
-    <Target Name="ILRepacker" AfterTargets="Build" Condition=" '$(Configuration)' == 'Debug' ">
-        <PropertyGroup>
-            <WorkingDirectory>$(OutputPath)</WorkingDirectory>
-        </PropertyGroup>
-        <ItemGroup>
-            <InputAssemblies Include="$(OutputPath)\$(AssemblyName).dll"/>
-            <InputAssemblies Include="$(OutputPath)\ZString.dll"/>
-            <IlRepackLibs Include="$(OutputPath)"/>
-        </ItemGroup>
-        <ILRepack
-                Internalize="true"
-                LibraryPath="@(IlRepackLibs)"
-                OutputFile="$(OutputPath)\$(AssemblyName).dll"
-                InputAssemblies="@(InputAssemblies)"
-                TargetKind="Dll"
-                Parallel="true"/>
-    </Target>
-
     <ItemGroup>
         <EmbeddedResource Update="Localization\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
