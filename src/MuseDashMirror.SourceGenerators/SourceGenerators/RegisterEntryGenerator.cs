@@ -48,7 +48,7 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
             .Concat(ExtractPropertyNames(propertySymbols, className))
             .ToList();
 
-        return new RegisterClassData(@namespace, className, registerMethodNames);
+        return registerMethodNames is [] ? null : new RegisterClassData(@namespace, className, registerMethodNames);
     }
 
     private static void GenerateFromData(SourceProductionContext spc, ImmutableArray<RegisterClassData?> dataList)
@@ -62,7 +62,7 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
         using var methodStringBuilder = ZString.CreateStringBuilder();
         foreach (var data in dataList)
         {
-            if (data is not var (@namespace, className, registerMethodNames) || registerMethodNames is [])
+            if (data is not var (@namespace, className, registerMethodNames))
             {
                 continue;
             }
