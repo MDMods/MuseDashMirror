@@ -77,7 +77,7 @@ public sealed class PnlMenuToggleGenerator : IIncrementalGenerator
             return;
         }
 
-        var usingStringBuilder = new StringBuilder();
+        using var usingStringBuilder = ZString.CreateStringBuilder(true);
         foreach (var usingDirective in staticUsingDirectives)
         {
             usingStringBuilder.AppendLine(usingDirective.Insert(13, "global::"));
