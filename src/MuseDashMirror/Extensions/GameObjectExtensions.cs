@@ -34,7 +34,7 @@ public static partial class GameObjectExtensions
     }
 
     /// <summary>
-    ///     Set the Text Component of a GameObject
+    ///     Set the Text Component of a GameObject using Text Parameters
     /// </summary>
     /// <param name="gameObject">GameObject</param>
     /// <param name="textParameters">Text Parameters</param>
@@ -49,7 +49,7 @@ public static partial class GameObjectExtensions
     }
 
     /// <summary>
-    ///     Set the RectTransform of a GameObject
+    ///     Set the RectTransform of a GameObject using Transform Parameters
     /// </summary>
     /// <param name="gameObject">GameObject</param>
     /// <param name="transformParameters">Transform Parameters</param>

@@ -3,7 +3,7 @@ namespace MuseDashMirror.Models;
 /// <summary>
 ///     Position Strategy for setting the <b>Left Edge of the GameObject</b> to be the position
 /// </summary>
-public class LeftEdgePositionStrategy : IPositionStrategy
+public sealed class LeftEdgePositionStrategy : IPositionStrategy
 {
     /// <summary>
     ///     <inheritdoc cref="IPositionStrategy.SetPosition" />
