@@ -13,4 +13,4 @@ namespace MuseDashMirror.Attributes.EventAttributes.SceneEvents;
 ///     </example>
 /// </summary>
 [AttributeUsage(AttributeTargets.Method)]
-public class ExitSceneAttribute : Attribute;
+public sealed class ExitSceneAttribute : Attribute;

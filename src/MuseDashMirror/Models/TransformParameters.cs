@@ -1,3 +1,5 @@
+using MuseDashMirror.Models.PositionStrategies;
+
 namespace MuseDashMirror.Models;
 
 /// <summary>

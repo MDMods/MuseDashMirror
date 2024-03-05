@@ -1,4 +1,4 @@
-namespace MuseDashMirror.Models;
+namespace MuseDashMirror.Models.PositionStrategies;
 
 /// <summary>
 ///     Position Strategy for setting the <b>Center of the GameObject</b> to be the position

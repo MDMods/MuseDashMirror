@@ -1,9 +1,9 @@
-namespace MuseDashMirror.Models;
+namespace MuseDashMirror.Models.PositionStrategies;
 
 /// <summary>
-///     Position Strategy for setting the <b>Right Edge of the GameObject</b> to be the position
+///     Position Strategy for setting the <b>Left Edge of the GameObject</b> to be the position
 /// </summary>
-public sealed class RightEdgePositionStrategy : IPositionStrategy
+public sealed class LeftEdgePositionStrategy : IPositionStrategy
 {
     /// <summary>
     ///     <inheritdoc cref="IPositionStrategy.SetPosition" />
@@ -16,14 +16,14 @@ public sealed class RightEdgePositionStrategy : IPositionStrategy
         var halfWidth = rectTransform.rect.width / 2;
         if (transformParameters.IsLocalPosition)
         {
-            rectTransform.localPosition = new Vector3(transformParameters.Position.x - halfWidth,
+            rectTransform.localPosition = new Vector3(transformParameters.Position.x + halfWidth,
                 transformParameters.Position.y,
                 transformParameters.Position.z);
         }
         else
         {
             halfWidth *= scaledFactor.x;
-            rectTransform.position = new Vector3(transformParameters.Position.x - halfWidth,
+            rectTransform.position = new Vector3(transformParameters.Position.x + halfWidth,
                 transformParameters.Position.y,
                 transformParameters.Position.z);
         }
