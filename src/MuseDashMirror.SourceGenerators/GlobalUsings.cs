@@ -1,5 +1,4 @@
 global using System.Collections.Immutable;
-global using System.Text;
 global using System.Text.RegularExpressions;
 global using Cysharp.Text;
 global using Microsoft.CodeAnalysis;
