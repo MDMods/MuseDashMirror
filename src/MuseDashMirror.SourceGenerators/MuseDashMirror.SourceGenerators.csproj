@@ -11,7 +11,7 @@
         <IsRoslynComponent>true</IsRoslynComponent>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-        <SatelliteDllName>MuseDashMirror.SourceGenerators.resources.dll</SatelliteDllName>
+        <SatelliteDllName>$(AssemblyName).resources.dll</SatelliteDllName>
     </PropertyGroup>
 
     <PropertyGroup>
