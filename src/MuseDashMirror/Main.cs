@@ -1,5 +1,4 @@
 ﻿using MelonLoader;
-using static MuseDashMirror.UIComponents.Fonts;
 
 namespace MuseDashMirror;
 

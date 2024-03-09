@@ -40,6 +40,7 @@ public static partial class ToggleUtils
         var txt = toggle.transform.GetChild(1).gameObject;
         txt.GetComponent<Localization>().Destroy();
         txt.SetText(text);
+        txt.SetColor(ToggleTextColor);
         txt.AddContentSizeFitter();
 
         var rectTransform = txt.GetComponent<RectTransform>();
@@ -78,6 +79,7 @@ public static partial class ToggleUtils
         var txt = toggle.transform.GetChild(1).gameObject;
         txt.GetComponent<Localization>().Destroy();
         txt.SetText(text);
+        txt.SetColor(ToggleTextColor);
         txt.AddContentSizeFitter();
 
         var rectTransform = txt.GetComponent<RectTransform>();
