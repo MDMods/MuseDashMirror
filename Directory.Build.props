@@ -1,5 +1,4 @@
 <Project>
-    <Sdk Name="ViHo.PackAsAnalyzer" Version="1.0.1"/>
     <PropertyGroup>
         <ImplicitUsings>enable</ImplicitUsings>
         <LangVersion>latest</LangVersion>
@@ -8,22 +7,42 @@
         <MelonNET6>$(MelonLoader)\net6\</MelonNET6>
         <MelonAssemblies>$(MelonLoader)\Il2CppAssemblies\</MelonAssemblies>
         <OutputPath>$(SolutionDir)\bin</OutputPath>
+        <BeforePack>$(BeforePack);IncludePackAsAnalyzerProjectReferences</BeforePack>
     </PropertyGroup>
 
     <ItemDefinitionGroup>
-        <PackageReference PrivateAssets="all"/>
         <Reference Private="false"/>
     </ItemDefinitionGroup>
 
-    <ItemGroup>
-        <PackageReference Include="Roslynator.Analyzers" Version="4.11.0">
-            <PrivateAssets>all</PrivateAssets>
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
-        <PackageReference Include="Roslynator.Formatting.Analyzers" Version="4.11.0">
-            <PrivateAssets>all</PrivateAssets>
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
-    </ItemGroup>
+    <Target Name="IncludePackAsAnalyzerProjectReferences"
+            Condition="'@(ProjectReference)' != '' and @(ProjectReference->AnyHaveMetadataValue('PackAsAnalyzer', 'true'))">
+
+        <MSBuild Projects="@(ProjectReference->WithMetadataValue('PackAsAnalyzer', 'true'))"
+                 Targets="GetPackAsAnalyzerFiles">
+            <Output TaskParameter="TargetOutputs" ItemName="PackAsAnalyzerFile"/>
+        </MSBuild>
+
+        <ItemGroup>
+            <Content Include="@(PackAsAnalyzerFile->WithMetadataValue('IsSymbol', ''))"
+                     Pack="True"/>
+            <_TargetPathsToSymbols Include="@(PackAsAnalyzerFile->WithMetadataValue('IsSymbol', 'true'))"
+                                   TargetPath="/%(PackAsAnalyzerFile.PackagePath)"/>
+        </ItemGroup>
+    </Target>
+
+    <Target Name="GetPackAsAnalyzerFiles"
+            DependsOnTargets="$(GenerateNuspecDependsOn)"
+            Returns="@(PackAsAnalyzerFile)">
+
+        <PropertyGroup>
+            <PackAsAnalyzerPath>analyzers/dotnet</PackAsAnalyzerPath>
+        </PropertyGroup>
+
+        <ItemGroup>
+            <PackAsAnalyzerFile Include="@(AnalyzerFiles)"/>
+            <PackAsAnalyzerFile Include="@(_TargetPathsToSymbols)" IsSymbol="true"/>
+            <PackAsAnalyzerFile PackagePath="$(PackAsAnalyzerPath)/%(TargetPath)"/>
+        </ItemGroup>
+    </Target>
 
 </Project>
