@@ -34,6 +34,22 @@ public static partial class GameObjectExtensions
     }
 
     /// <summary>
+    ///     Set the color of a GameObject with a Text gameObject
+    /// </summary>
+    /// <param name="gameObject">GameObject</param>
+    /// <param name="color">Color</param>
+    public static void SetColor(this GameObject gameObject, Color color)
+    {
+        if (!gameObject.TryGetComponent<Text>(out var textComponent))
+        {
+            Logger.Error($"GameObject {gameObject} does not have a Text component");
+            return;
+        }
+
+        textComponent.color = color;
+    }
+
+    /// <summary>
     ///     Set the Text Component of a GameObject using Text Parameters
     /// </summary>
     /// <param name="gameObject">GameObject</param>

@@ -20,7 +20,7 @@ public class TextParameters
     /// <summary>
     ///     Text font, default is <see cref="Fonts.NormalFont" />
     /// </summary>
-    public Font Font { get; set; } = Fonts.NormalFont;
+    public Font Font { get; set; } = NormalFont;
 
     /// <summary>
     ///     Font size, default is 20

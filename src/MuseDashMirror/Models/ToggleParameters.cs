@@ -1,4 +1,3 @@
-using MuseDashMirror.UIComponents;
 using UnityEngine.UI;
 
 namespace MuseDashMirror.Models;
@@ -26,12 +25,12 @@ public class ToggleParameters
     /// <summary>
     ///     Toggle Text Color
     /// </summary>
-    public Color ToggleTextColor { get; set; } = Colors.ToggleTextColor;
+    public Color TextColor { get; set; } = ToggleTextColor;
 
     /// <summary>
     ///     Toggle CheckMark Color
     /// </summary>
-    public Color CheckMarkColor { get; set; } = Colors.ToggleCheckMarkColor;
+    public Color CheckMarkColor { get; set; } = ToggleCheckMarkColor;
 
     /// <summary>
     ///     Create Toggle Parameters with Text Parameters and Boolean Callback
@@ -43,7 +42,7 @@ public class ToggleParameters
         TextParameters = textParameters;
         if (TextParameters.Color == Color.white)
         {
-            TextParameters.Color = ToggleTextColor;
+            TextParameters.Color = TextColor;
         }
 
         CallBack = callBack;
@@ -54,9 +53,9 @@ public class ToggleParameters
     /// </summary>
     /// <param name="textParameters">Text Parameters</param>
     /// <param name="callBack">Boolean Callback</param>
-    /// <param name="toggleTextColor">Toggle Text Color</param>
-    public ToggleParameters(TextParameters textParameters, Action<bool> callBack, Color toggleTextColor)
-        : this(textParameters, callBack) => ToggleTextColor = toggleTextColor;
+    /// <param name="textColor">Toggle Text Color</param>
+    public ToggleParameters(TextParameters textParameters, Action<bool> callBack, Color textColor)
+        : this(textParameters, callBack) => TextColor = textColor;
 
     /// <summary>
     ///     Create Toggle Parameters with Text Parameters, Boolean Callback and Toggle Group
@@ -73,9 +72,9 @@ public class ToggleParameters
     /// <param name="textParameters">Text Parameters</param>
     /// <param name="callBack">Boolean Callback</param>
     /// <param name="toggleGroup">Toggle Group</param>
-    /// <param name="toggleTextColor">Toggle Text Color</param>
-    public ToggleParameters(TextParameters textParameters, Action<bool> callBack, ToggleGroup toggleGroup, Color toggleTextColor)
-        : this(textParameters, callBack, toggleGroup) => ToggleTextColor = toggleTextColor;
+    /// <param name="textColor">Toggle Text Color</param>
+    public ToggleParameters(TextParameters textParameters, Action<bool> callBack, ToggleGroup toggleGroup, Color textColor)
+        : this(textParameters, callBack, toggleGroup) => TextColor = textColor;
 
     /// <summary>
     ///     Create Toggle Parameters with Text Parameters, Boolean Callback, Toggle Group and CheckMark Color
@@ -83,8 +82,8 @@ public class ToggleParameters
     /// <param name="textParameters">Text Parameters</param>
     /// <param name="callBack">Boolean Callback</param>
     /// <param name="toggleGroup">Toggle Group</param>
-    /// <param name="toggleTextColor">Toggle Text Color</param>
+    /// <param name="textColor">Toggle Text Color</param>
     /// <param name="checkMarkColor">CheckMark Color</param>
-    public ToggleParameters(TextParameters textParameters, Action<bool> callBack, ToggleGroup toggleGroup, Color toggleTextColor,
-        Color checkMarkColor) : this(textParameters, callBack, toggleGroup, toggleTextColor) => CheckMarkColor = checkMarkColor;
+    public ToggleParameters(TextParameters textParameters, Action<bool> callBack, ToggleGroup toggleGroup, Color textColor,
+        Color checkMarkColor) : this(textParameters, callBack, toggleGroup, textColor) => CheckMarkColor = checkMarkColor;
 }
