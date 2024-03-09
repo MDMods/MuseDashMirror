@@ -16,7 +16,7 @@ public static class StringExtensions
     {
         var startValue = inVisibleTextRange.Start.Value;
         var endValue = inVisibleTextRange.End.Value;
-        if (startValue > originalText.Length || endValue > originalText.Length || originalText.Length < startValue + endValue)
+        if (originalText.Length < startValue + endValue)
         {
             throw new ArgumentOutOfRangeException(nameof(inVisibleTextRange), inVisibleTextRange,
                 @"The range is out of the bounds of the original text");
@@ -39,7 +39,7 @@ public static class StringExtensions
     {
         var startValue = inVisibleTextRange.Start.Value;
         var endValue = inVisibleTextRange.End.Value;
-        if (startValue > originalText.Length || endValue > originalText.Length || originalText.Length < startValue + endValue)
+        if (originalText.Length < startValue + endValue)
         {
             return originalText;
         }
