@@ -1,0 +1,37 @@
+<Project>
+    <PropertyGroup>
+        <BeforePack>$(BeforePack);IncludePackAsAnalyzerProjectReferences</BeforePack>
+    </PropertyGroup>
+
+    <Target Name="IncludePackAsAnalyzerProjectReferences"
+            Condition="'@(ProjectReference)' != '' and @(ProjectReference->AnyHaveMetadataValue('PackAsAnalyzer', 'true'))">
+
+        <MSBuild Projects="@(ProjectReference->WithMetadataValue('PackAsAnalyzer', 'true'))"
+                 Targets="GetPackAsAnalyzerFiles">
+            <Output TaskParameter="TargetOutputs" ItemName="PackAsAnalyzerFile"/>
+        </MSBuild>
+
+        <ItemGroup>
+            <Content Include="@(PackAsAnalyzerFile->WithMetadataValue('IsSymbol', ''))"
+                     Pack="True"/>
+            <_TargetPathsToSymbols Include="@(PackAsAnalyzerFile->WithMetadataValue('IsSymbol', 'true'))"
+                                   TargetPath="/%(PackAsAnalyzerFile.PackagePath)"/>
+        </ItemGroup>
+    </Target>
+
+    <Target Name="GetPackAsAnalyzerFiles"
+            DependsOnTargets="$(GenerateNuspecDependsOn)"
+            Returns="@(PackAsAnalyzerFile)">
+
+        <PropertyGroup>
+            <PackAsAnalyzerPath>analyzers/dotnet</PackAsAnalyzerPath>
+        </PropertyGroup>
+
+        <ItemGroup>
+            <PackAsAnalyzerFile Include="@(AnalyzerFiles)"/>
+            <PackAsAnalyzerFile Include="@(_TargetPathsToSymbols)" IsSymbol="true"/>
+            <PackAsAnalyzerFile PackagePath="$(PackAsAnalyzerPath)/%(TargetPath)"/>
+        </ItemGroup>
+    </Target>
+
+</Project>
