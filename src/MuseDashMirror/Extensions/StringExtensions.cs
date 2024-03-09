@@ -14,14 +14,16 @@ public static class StringExtensions
     /// <exception cref="ArgumentOutOfRangeException"></exception>
     public static string GetVisibleTextWithEllipsis(this string originalText, Range inVisibleTextRange)
     {
-        if (inVisibleTextRange.Start.Value > originalText.Length || inVisibleTextRange.End.Value > originalText.Length)
+        var startValue = inVisibleTextRange.Start.Value;
+        var endValue = inVisibleTextRange.End.Value;
+        if (startValue > originalText.Length || endValue > originalText.Length || originalText.Length < startValue + endValue)
         {
             throw new ArgumentOutOfRangeException(nameof(inVisibleTextRange), inVisibleTextRange,
                 @"The range is out of the bounds of the original text");
         }
 
-        var prefixText = originalText[..inVisibleTextRange.Start.Value];
-        var suffixText = originalText[^inVisibleTextRange.End.Value..];
+        var prefixText = originalText[..startValue];
+        var suffixText = originalText[^endValue..];
 
         return $"{prefixText}...{suffixText}";
     }
@@ -35,13 +37,15 @@ public static class StringExtensions
     /// <returns>Result String</returns>
     public static string GetVisibleTextWithEllipsisOrDefault(this string originalText, Range inVisibleTextRange)
     {
-        if (inVisibleTextRange.Start.Value > originalText.Length || inVisibleTextRange.End.Value > originalText.Length)
+        var startValue = inVisibleTextRange.Start.Value;
+        var endValue = inVisibleTextRange.End.Value;
+        if (startValue > originalText.Length || endValue > originalText.Length || originalText.Length < startValue + endValue)
         {
             return originalText;
         }
 
-        var prefixText = originalText[..inVisibleTextRange.Start.Value];
-        var suffixText = originalText[^inVisibleTextRange.End.Value..];
+        var prefixText = originalText[..startValue];
+        var suffixText = originalText[^endValue..];
 
         return $"{prefixText}...{suffixText}";
     }
