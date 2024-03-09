@@ -1,0 +1,9 @@
+<Project>
+    <PropertyGroup>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    </PropertyGroup>
+    <ItemGroup>
+        <GlobalPackageReference Include="Roslynator.Analyzers" Version="4.11.0"/>
+        <GlobalPackageReference Include="Roslynator.Formatting.Analyzers" Version="4.11.0"/>
+    </ItemGroup>
+</Project>

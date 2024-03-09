@@ -11,6 +11,7 @@
         <IsRoslynComponent>true</IsRoslynComponent>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+        <SatelliteDllName>MuseDashMirror.SourceGenerators.resources.dll</SatelliteDllName>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -47,4 +48,9 @@
     </ItemGroup>
 
     <Import Project="..\MuseDashMirror.Shared\MuseDashMirror.Shared.projitems" Label="Shared"/>
+
+    <ItemGroup>
+        <AnalyzerFiles Include="$(OutputPath)\$(AssemblyName).dll" TargetPath="$(AssemblyName).dll"/>
+        <AnalyzerFiles Include="$(OutputPath)\zh-Hans\$(SatelliteDllName)" TargetPath="zh-Hans\$(SatelliteDllName)"/>
+    </ItemGroup>
 </Project>
