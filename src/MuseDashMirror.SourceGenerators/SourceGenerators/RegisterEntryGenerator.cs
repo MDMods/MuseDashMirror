@@ -28,16 +28,15 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
         }
 
         var classSymbol = semanticModel.GetDeclaredSymbol(classDeclaration)!;
+        var className = classSymbol.Name;
+        var @namespace = classSymbol.ContainingNamespace.ToDisplayString();
 
         if (classDeclaration is { BaseList.Types: var types }
             && types.Any(x => x.Type.ToString().StartsWith("MelonMod")))
         {
-            MelonClassName = classDeclaration.Identifier.ValueText;
-            MelonClassNameSpace = classSymbol.ContainingNamespace.ToDisplayString();
+            MelonClassName = className;
+            MelonClassNameSpace = @namespace;
         }
-
-        var @namespace = classSymbol.ContainingNamespace.ToDisplayString();
-        var className = classSymbol.Name;
 
         var methodSymbols = classSymbol.GetMembers().OfType<IMethodSymbol>().ToList();
         var fieldSymbols = classSymbol.GetMembers().OfType<IFieldSymbol>().ToList();
@@ -53,7 +52,7 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
 
     private static void GenerateFromData(SourceProductionContext spc, ImmutableArray<RegisterClassData?> dataList)
     {
-        if (MelonClassName is null || MelonClassNameSpace is null)
+        if (MelonClassName is null || MelonClassNameSpace is null || !dataList.Any(x => x is not null))
         {
             return;
         }
