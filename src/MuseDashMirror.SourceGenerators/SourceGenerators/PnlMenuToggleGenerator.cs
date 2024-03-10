@@ -97,7 +97,7 @@ public sealed class PnlMenuToggleGenerator : IIncrementalGenerator
               {
                   {{GetGeneratedCodeAttribute(nameof(PnlMenuToggleGenerator))}}
                   private static void Register{{variableName}}PnlMenuToggle(object? sender, PnlMenuEventArgs args) =>
-                      {{variableName}} = CreatePnlMenuToggle("{{toggleName}}", "{{toggleText}}", val => {{boolName}} = val);
+                      {{variableName}} = CreatePnlMenuToggle("{{toggleName}}", "{{toggleText}}", {{boolName}}, new Action<bool>(val => {{boolName}} = val));
                   
                   {{GetGeneratedCodeAttribute(nameof(PnlMenuToggleGenerator))}}
                   internal static void Register{{className}}{{variableName}}ToPnlMenuEvent() => PnlMenuPatch += Register{{variableName}}PnlMenuToggle;

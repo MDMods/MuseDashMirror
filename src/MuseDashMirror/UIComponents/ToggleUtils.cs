@@ -30,9 +30,10 @@ public static partial class ToggleUtils
     /// </summary>
     /// <param name="name">GameObject Name</param>
     /// <param name="text">Toggle Text</param>
+    /// <param name="initialValue">Initial Value for Toggle</param>
     /// <param name="callback">Boolean Callback</param>
     /// <returns>Toggle GameObject</returns>
-    public static GameObject CreatePnlMenuToggle(string name, string text, Action<bool> callback)
+    public static GameObject CreatePnlMenuToggle(string name, string text, bool initialValue, Action<bool> callback)
     {
         var toggle = Object.Instantiate(GetGameObject(TglOnPath), GetGameObject("PnlMenu").transform);
         toggle.name = name;
@@ -55,8 +56,11 @@ public static partial class ToggleUtils
         var toggleComp = toggle.GetComponent<Toggle>();
         toggleComp.onValueChanged.AddListener(callback);
         toggleComp.group = null;
+        toggleComp.SetIsOnWithoutNotify(initialValue);
 
         toggle.SetParent(GetGameObject("PnlOption"));
+
+        GameObjectCache[name] = toggle;
 
         return toggle;
     }
@@ -105,8 +109,11 @@ public static partial class ToggleUtils
         var toggleComp = toggle.GetComponent<Toggle>();
         toggleComp.onValueChanged.AddListener((Action<bool>)(val => setter(target, val)));
         toggleComp.group = null;
+        toggleComp.SetIsOnWithoutNotify(expression.Compile()(target));
 
         toggle.SetParent(GetGameObject("PnlOption"));
+
+        GameObjectCache[name] = toggle;
 
         return toggle;
     }
@@ -139,11 +146,15 @@ public static partial class ToggleUtils
         var toggleComp = toggle.GetComponent<Toggle>();
         toggleComp.onValueChanged.AddListener(toggleParameters.CallBack);
         toggleComp.group = toggleParameters.ToggleGroup;
+        toggleComp.SetIsOnWithoutNotify(toggleParameters.InitialValue);
 
         var checkMark = toggle.transform.GetChild(0).GetChild(0).GetComponent<Image>();
         checkMark.color = toggleParameters.CheckMarkColor;
 
         toggle.SetParent(GetGameObject("PnlOption"));
+
+        GameObjectCache[name] = toggle;
+
         return toggle;
     }
 
