@@ -8,6 +8,7 @@ global using MuseDashMirror.EventArguments;
 global using MuseDashMirror.Extensions;
 global using MuseDashMirror.Models;
 global using UnityEngine;
+global using UnityEngine.UI;
 global using static MuseDashMirror.PatchEvents;
 global using static MuseDashMirror.SceneInfo;
 global using static MuseDashMirror.UIComponents.Colors;

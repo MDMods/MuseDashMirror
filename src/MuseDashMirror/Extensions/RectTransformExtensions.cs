@@ -1,5 +1,3 @@
-using UnityEngine.UI;
-
 namespace MuseDashMirror.Extensions;
 
 /// <summary>

@@ -1,6 +1,4 @@
-﻿using UnityEngine.UI;
-
-namespace MuseDashMirror.UIComponents;
+﻿namespace MuseDashMirror.UIComponents;
 
 /// <summary>
 ///     Methods for creating canvas and related components
@@ -131,6 +129,7 @@ public static partial class CanvasUtils
         canvasScaler.referenceResolution = new Vector2(1920, 1080);
         canvasScaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
         canvasScaler.screenMatchMode = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;
+        canvasScaler.matchWidthOrHeight = 0f;
 
         if (parent != null)
         {
