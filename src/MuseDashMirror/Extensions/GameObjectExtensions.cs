@@ -1,5 +1,3 @@
-using UnityEngine.UI;
-
 namespace MuseDashMirror.Extensions;
 
 /// <summary>
@@ -143,22 +141,23 @@ public static partial class GameObjectExtensions
     }
 
     /// <summary>
-    ///     Get the total scaled factor of a GameObject
+    ///     Get the total scale factor of a GameObject
     /// </summary>
     /// <param name="gameObject">GameObject</param>
     /// <returns>Scale Factor Vector3</returns>
-    public static Vector3 GetTotalScaledFactor(this GameObject gameObject)
+    public static Vector3 GetTotalScaleFactor(this GameObject gameObject)
     {
         var scaleFactor = Vector3.one;
         while (true)
         {
-            var localScale = gameObject.transform.localScale;
+            var transform = gameObject.transform;
+            var localScale = transform.localScale;
 
             scaleFactor.x *= localScale.x;
             scaleFactor.y *= localScale.y;
             scaleFactor.z *= localScale.z;
 
-            var parent = gameObject.transform.parent;
+            var parent = transform.parent;
             if (parent == null)
             {
                 return scaleFactor;

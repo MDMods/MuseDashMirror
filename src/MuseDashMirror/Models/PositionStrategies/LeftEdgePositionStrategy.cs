@@ -12,20 +12,20 @@ public sealed class LeftEdgePositionStrategy : IPositionStrategy
     /// <param name="transformParameters"></param>
     public void SetPosition(RectTransform rectTransform, TransformParameters transformParameters)
     {
-        var scaledFactor = rectTransform.gameObject.GetTotalScaledFactor();
+        var scaleFactor = rectTransform.gameObject.GetTotalScaleFactor();
+        var canvasScalerFactor = rectTransform.gameObject.FindComponentInAncestors<CanvasScaler>().referenceResolution.x / Screen.width;
         var halfWidth = rectTransform.rect.width / 2;
+        var position = transformParameters.Position;
+
         if (transformParameters.IsLocalPosition)
         {
-            rectTransform.localPosition = new Vector3(transformParameters.Position.x + halfWidth,
-                transformParameters.Position.y,
-                transformParameters.Position.z);
+            rectTransform.localPosition = new Vector3(position.x + halfWidth, position.y, position.z);
         }
         else
         {
-            halfWidth *= scaledFactor.x;
-            rectTransform.position = new Vector3(transformParameters.Position.x + halfWidth,
-                transformParameters.Position.y,
-                transformParameters.Position.z);
+            halfWidth *= scaleFactor.x;
+            position *= canvasScalerFactor;
+            rectTransform.position = new Vector3(position.x + halfWidth, position.y, transformParameters.Position.z);
         }
     }
 }

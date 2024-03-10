@@ -1,7 +1,6 @@
 ﻿using System.Linq.Expressions;
 using Il2CppAssets.Scripts.PeroTools.GeneralLocalization;
 using Il2CppAssets.Scripts.PeroTools.Nice.Events;
-using UnityEngine.UI;
 using Object = UnityEngine.Object;
 
 namespace MuseDashMirror.UIComponents;
@@ -160,8 +159,8 @@ public static partial class ToggleUtils
 
     private static Vector3 GetPosition(RectTransform rectTransform)
     {
-        var scaledFactor = rectTransform.gameObject.GetTotalScaledFactor();
-        var width = rectTransform.rect.width * scaledFactor.x + 1.1f;
+        var scaleFactor = rectTransform.gameObject.GetTotalScaleFactor();
+        var width = rectTransform.rect.width * scaleFactor.x + 1.1f;
         var column = ToggleCount / 4;
 
         if (LongestWidths.Count <= column)
