@@ -116,29 +116,29 @@ public static partial class CanvasUtils
     /// <returns>Canvas GameObject</returns>
     public static GameObject CreateCanvas(string canvasName, RenderMode renderMode, Camera camera, GameObject parent)
     {
-        var canvas = new GameObject(canvasName);
-        canvas.AddComponent<Canvas>();
-        canvas.AddComponent<CanvasScaler>();
-        canvas.AddComponent<GraphicRaycaster>();
-        canvas.GetComponent<Canvas>().renderMode = renderMode;
+        var canvasGameObject = new GameObject(canvasName);
+        var canvas = canvasGameObject.AddComponent<Canvas>();
+        var canvasScaler = canvasGameObject.AddComponent<CanvasScaler>();
+        canvasGameObject.AddComponent<GraphicRaycaster>();
+        canvasGameObject.GetComponent<Canvas>().renderMode = renderMode;
 
         if (renderMode == RenderMode.ScreenSpaceOverlay)
         {
-            return canvas;
+            return canvasGameObject;
         }
 
-        canvas.GetComponent<Canvas>().worldCamera = camera;
-        canvas.GetComponent<CanvasScaler>().referenceResolution = new Vector2(1920, 1080);
-        canvas.GetComponent<CanvasScaler>().uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-        canvas.GetComponent<CanvasScaler>().screenMatchMode = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;
+        canvas.worldCamera = camera;
+        canvasScaler.referenceResolution = new Vector2(1920, 1080);
+        canvasScaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        canvasScaler.screenMatchMode = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;
 
         if (parent != null)
         {
-            canvas.SetParent(parent);
+            canvasGameObject.SetParent(parent);
         }
 
-        GameObjectCache[canvasName] = canvas;
-        return canvas;
+        GameObjectCache[canvasName] = canvasGameObject;
+        return canvasGameObject;
     }
 
     [ExitScene]
