@@ -12,13 +12,15 @@ public sealed class CenterPositionStrategy : IPositionStrategy
     /// <param name="transformParameters"></param>
     public void SetPosition(RectTransform rectTransform, TransformParameters transformParameters)
     {
+        var canvasScalerFactor = rectTransform.gameObject.FindComponentInAncestors<CanvasScaler>().referenceResolution.x / Screen.width;
+        var position = transformParameters.Position;
         if (transformParameters.IsLocalPosition)
         {
-            rectTransform.localPosition = transformParameters.Position;
+            rectTransform.localPosition = position;
         }
         else
         {
-            rectTransform.position = transformParameters.Position;
+            rectTransform.position = new Vector3(position.x * canvasScalerFactor, position.y * canvasScalerFactor, position.z);
         }
     }
 }
