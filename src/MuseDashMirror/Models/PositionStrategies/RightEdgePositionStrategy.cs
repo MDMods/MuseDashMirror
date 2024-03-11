@@ -24,8 +24,7 @@ public sealed class RightEdgePositionStrategy : IPositionStrategy
         else
         {
             halfWidth *= scaleFactor.x;
-            position *= canvasScalerFactor;
-            rectTransform.position = new Vector3(position.x - halfWidth, position.y, transformParameters.Position.z);
+            rectTransform.position = new Vector3(position.x * canvasScalerFactor - halfWidth, position.y * canvasScalerFactor, position.z);
         }
     }
 }
