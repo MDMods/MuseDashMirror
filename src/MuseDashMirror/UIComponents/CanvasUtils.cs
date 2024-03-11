@@ -141,5 +141,5 @@ public static partial class CanvasUtils
     }
 
     [ExitScene]
-    private static void ClearCache(object e, SceneEventArgs args) => CameraCache.Clear();
+    private static void ClearCache(object e, SceneEventArgs args) => CameraCache?.Clear();
 }

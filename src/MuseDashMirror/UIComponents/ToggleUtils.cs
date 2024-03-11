@@ -1,7 +1,6 @@
 ﻿using System.Linq.Expressions;
 using Il2CppAssets.Scripts.PeroTools.GeneralLocalization;
 using Il2CppAssets.Scripts.PeroTools.Nice.Events;
-using Object = UnityEngine.Object;
 
 namespace MuseDashMirror.UIComponents;
 
@@ -32,37 +31,8 @@ public static partial class ToggleUtils
     /// <param name="initialValue">Initial Value for Toggle</param>
     /// <param name="callback">Boolean Callback</param>
     /// <returns>Toggle GameObject</returns>
-    public static GameObject CreatePnlMenuToggle(string name, string text, bool initialValue, Action<bool> callback)
-    {
-        var toggle = Object.Instantiate(GetGameObject(TglOnPath), GetGameObject("PnlMenu").transform);
-        toggle.name = name;
-
-        var txt = toggle.transform.GetChild(1).gameObject;
-        txt.GetComponent<Localization>().Destroy();
-        txt.SetText(text);
-        txt.SetColor(ToggleTextColor);
-        txt.AddContentSizeFitter();
-
-        var rectTransform = txt.GetComponent<RectTransform>();
-        rectTransform.UpdateTransformLayoutInfo();
-
-        toggle.transform.position = GetPosition(rectTransform);
-
-        toggle.GetComponent<OnToggle>().Destroy();
-        toggle.GetComponent<OnToggleOn>().Destroy();
-        toggle.GetComponent<OnActivate>().Destroy();
-
-        var toggleComp = toggle.GetComponent<Toggle>();
-        toggleComp.onValueChanged.AddListener(callback);
-        toggleComp.group = null;
-        toggleComp.SetIsOnWithoutNotify(initialValue);
-
-        toggle.SetParent(GetGameObject("PnlOption"));
-
-        GameObjectCache[name] = toggle;
-
-        return toggle;
-    }
+    public static GameObject CreatePnlMenuToggle(string name, string text, bool initialValue, Action<bool> callback) =>
+        CreatePnlMenuToggle(name, new ToggleParameters(new TextParameters(text, NormalFont, 40), initialValue, callback));
 
     /// <summary>
     ///     Create a toggle in the PnlMenu
@@ -76,7 +46,7 @@ public static partial class ToggleUtils
     /// <exception cref="ArgumentException">Thrown when the provided expression does not represent a property or field of the target object</exception>
     public static GameObject CreatePnlMenuToggle<T>(string name, string text, T target, Expression<Func<T, bool>> expression)
     {
-        var toggle = Object.Instantiate(GetGameObject(TglOnPath), GetGameObject("PnlMenu").transform);
+        var toggle = GetGameObject(TglOnPath).FastInstantiate(GetGameObject("PnlMenu").transform);
         toggle.name = name;
 
         var txt = toggle.transform.GetChild(1).gameObject;
@@ -125,7 +95,7 @@ public static partial class ToggleUtils
     /// <returns>Toggle GameObject</returns>
     public static GameObject CreatePnlMenuToggle(string name, ToggleParameters toggleParameters)
     {
-        var toggle = Object.Instantiate(GetGameObject(TglOnPath), GetGameObject("PnlMenu").transform);
+        var toggle = GetGameObject(TglOnPath).FastInstantiate(GetGameObject("PnlMenu").transform);
         toggle.name = name;
 
         var txt = toggle.transform.GetChild(1).gameObject;
