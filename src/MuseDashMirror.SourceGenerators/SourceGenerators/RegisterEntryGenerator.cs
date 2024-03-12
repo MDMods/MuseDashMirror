@@ -59,9 +59,10 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
 
         using var usingStringBuilder = ZString.CreateStringBuilder();
         using var methodStringBuilder = ZString.CreateStringBuilder();
+        var nameList = new HashSet<string>();
         foreach (var data in dataList)
         {
-            if (data is not var (@namespace, className, registerMethodNames))
+            if (data is not var (@namespace, className, registerMethodNames) || !nameList.Add($"{@namespace}.{className}"))
             {
                 continue;
             }
