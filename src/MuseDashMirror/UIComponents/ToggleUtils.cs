@@ -24,6 +24,55 @@ public static partial class ToggleUtils
     private static List<float> LongestWidths { get; } = [];
 
     /// <summary>
+    ///     Create a toggle
+    /// </summary>
+    /// <param name="parentName">Parent GameObject Name</param>
+    /// <param name="toggleParameters">Toggle Parameters</param>
+    /// <param name="transformParameters">Transform Parameters</param>
+    /// <returns>Toggle GameObject</returns>
+    public static GameObject CreateToggle(string parentName, ToggleParameters toggleParameters, TransformParameters transformParameters)
+        => CreateToggle(GetGameObject(parentName), toggleParameters, transformParameters);
+
+    /// <summary>
+    ///     Create a toggle
+    /// </summary>
+    /// <param name="parent">Parent GameObject</param>
+    /// <param name="toggleParameters">Toggle Parameters</param>
+    /// <param name="transformParameters">Transform Parameters</param>
+    /// <returns>Toggle GameObject</returns>
+    public static GameObject CreateToggle(GameObject parent, ToggleParameters toggleParameters, TransformParameters transformParameters)
+    {
+        var toggle = GetGameObject(TglOnPath).FastInstantiate(parent.transform);
+        toggle.name = toggleParameters.ToggleName;
+
+        var txt = toggle.transform.GetChild(1).gameObject;
+        txt.GetComponent<Localization>().Destroy();
+        txt.SetTextComponent(toggleParameters.TextParameters);
+        txt.AddContentSizeFitter();
+
+        var rectTransform = txt.GetComponent<RectTransform>();
+        rectTransform.UpdateTransformLayoutInfo();
+
+        toggle.SetRectTransform(transformParameters);
+
+        toggle.GetComponent<OnToggle>().Destroy();
+        toggle.GetComponent<OnToggleOn>().Destroy();
+        toggle.GetComponent<OnActivate>().Destroy();
+
+        var toggleComp = toggle.GetComponent<Toggle>();
+        toggleComp.onValueChanged.AddListener(toggleParameters.CallBack);
+        toggleComp.group = toggleParameters.ToggleGroup;
+        toggleComp.SetIsOnWithoutNotify(toggleParameters.InitialValue);
+
+        var checkMark = toggle.transform.GetChild(0).GetChild(0).GetComponent<Image>();
+        checkMark.color = toggleParameters.CheckMarkColor;
+
+        GameObjectCache[toggleParameters.ToggleName] = toggle;
+
+        return toggle;
+    }
+
+    /// <summary>
     ///     Create a toggle in the PnlMenu
     /// </summary>
     /// <param name="name">GameObject Name</param>
@@ -32,7 +81,7 @@ public static partial class ToggleUtils
     /// <param name="callback">Boolean Callback</param>
     /// <returns>Toggle GameObject</returns>
     public static GameObject CreatePnlMenuToggle(string name, string text, bool initialValue, Action<bool> callback) =>
-        CreatePnlMenuToggle(name, new ToggleParameters(new TextParameters(text, NormalFont, 40), initialValue, callback));
+        CreatePnlMenuToggle(new ToggleParameters(name, new TextParameters(text, NormalFont, 40), initialValue, callback));
 
     /// <summary>
     ///     Create a toggle in the PnlMenu
@@ -90,13 +139,12 @@ public static partial class ToggleUtils
     /// <summary>
     ///     Create a toggle in the PnlMenu
     /// </summary>
-    /// <param name="name">GameObject Name</param>
     /// <param name="toggleParameters">Toggle Parameters</param>
     /// <returns>Toggle GameObject</returns>
-    public static GameObject CreatePnlMenuToggle(string name, ToggleParameters toggleParameters)
+    public static GameObject CreatePnlMenuToggle(ToggleParameters toggleParameters)
     {
         var toggle = GetGameObject(TglOnPath).FastInstantiate(GetGameObject("PnlMenu").transform);
-        toggle.name = name;
+        toggle.name = toggleParameters.ToggleName;
 
         var txt = toggle.transform.GetChild(1).gameObject;
         txt.GetComponent<Localization>().Destroy();
@@ -122,7 +170,7 @@ public static partial class ToggleUtils
 
         toggle.SetParent(GetGameObject("PnlOption"));
 
-        GameObjectCache[name] = toggle;
+        GameObjectCache[toggleParameters.ToggleName] = toggle;
 
         return toggle;
     }
