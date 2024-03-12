@@ -26,6 +26,15 @@ public static partial class ToggleUtils
     /// <summary>
     ///     Create a toggle
     /// </summary>
+    /// <param name="toggleParameters">Toggle Parameters</param>
+    /// <param name="transformParameters">Transform Parameters</param>
+    /// <returns></returns>
+    public static GameObject CreateToggle(ToggleParameters toggleParameters, TransformParameters transformParameters) =>
+        CreateToggle((GameObject)null, toggleParameters, transformParameters);
+
+    /// <summary>
+    ///     Create a toggle with parent
+    /// </summary>
     /// <param name="parentName">Parent GameObject Name</param>
     /// <param name="toggleParameters">Toggle Parameters</param>
     /// <param name="transformParameters">Transform Parameters</param>
@@ -34,7 +43,7 @@ public static partial class ToggleUtils
         => CreateToggle(GetGameObject(parentName), toggleParameters, transformParameters);
 
     /// <summary>
-    ///     Create a toggle
+    ///     Create a toggle with parent
     /// </summary>
     /// <param name="parent">Parent GameObject</param>
     /// <param name="toggleParameters">Toggle Parameters</param>
