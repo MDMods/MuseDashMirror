@@ -1,12 +1,9 @@
----
-_layout: landing
----
-
 # MuseDashMirror
 
 ## Introduction
 
 MuseDashMirror is a mod library for Muse Dash, it provides many useful classes and methods to help you modding Muse Dash.
+For example, creating a toggle to manage your mod's setting, or creating a text on the screen.
 
 It mainly uses source generators to generate code, without reflection, which makes it very fast and easy to use.
 
