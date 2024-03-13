@@ -26,13 +26,12 @@ jobs:
         with:
           dotnet-version: 8.x
 
-      - name: Restore and Build
+      - name: Build Docs
         run: |
-          dotnet restore
-          dotnet build "/p:WORKER=GitHub" -c Release MuseDashMirror.sln
-
-      - run: dotnet tool update -g docfx
-      - run: docfx ./Documentation/docfx.json
+          dotnet tool update -g docfx
+          docfx ./Documentation/docfx.json
+        env:
+          WORKER: GitHub
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
