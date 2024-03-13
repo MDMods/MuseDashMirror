@@ -13,7 +13,7 @@
         <MelonAssemblies>$(MelonLoader)\Il2CppAssemblies\</MelonAssemblies>
     </PropertyGroup>
 
-    <PropertyGroup Condition="'$(WORKER)' != 'GitHub'" Label="MelonLoader">
+    <PropertyGroup Condition="'$(WORKER)' == 'GitHub'">
         <MelonLoader>$(SolutionDir)\Libs</MelonLoader>
         <MelonNET6>$(SolutionDir)\Libs</MelonNET6>
         <MelonAssemblies>$(SolutionDir)\Libs</MelonAssemblies>
