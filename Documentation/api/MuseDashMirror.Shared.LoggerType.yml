@@ -1,0 +1,118 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Shared.LoggerType
+  commentId: T:MuseDashMirror.Shared.LoggerType
+  id: LoggerType
+  parent: MuseDashMirror.Shared
+  children:
+  - MuseDashMirror.Shared.LoggerType.Readonly
+  - MuseDashMirror.Shared.LoggerType.StaticReadonly
+  langs:
+  - csharp
+  - vb
+  name: LoggerType
+  nameWithType: LoggerType
+  fullName: MuseDashMirror.Shared.LoggerType
+  type: Enum
+  source:
+    remote:
+      path: src/MuseDashMirror.Shared/LoggerType.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: LoggerType
+    path: ../src/MuseDashMirror.Shared/LoggerType.cs
+    startLine: 5
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Shared
+  summary: Generated Logger Type
+  example: []
+  syntax:
+    content: public enum LoggerType
+    content.vb: Public Enum LoggerType
+- uid: MuseDashMirror.Shared.LoggerType.Readonly
+  commentId: F:MuseDashMirror.Shared.LoggerType.Readonly
+  id: Readonly
+  parent: MuseDashMirror.Shared.LoggerType
+  langs:
+  - csharp
+  - vb
+  name: Readonly
+  nameWithType: LoggerType.Readonly
+  fullName: MuseDashMirror.Shared.LoggerType.Readonly
+  type: Field
+  source:
+    remote:
+      path: src/MuseDashMirror.Shared/LoggerType.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: Readonly
+    path: ../src/MuseDashMirror.Shared/LoggerType.cs
+    startLine: 10
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Shared
+  summary: Readonly Logger
+  example: []
+  syntax:
+    content: Readonly = 0
+    return:
+      type: MuseDashMirror.Shared.LoggerType
+- uid: MuseDashMirror.Shared.LoggerType.StaticReadonly
+  commentId: F:MuseDashMirror.Shared.LoggerType.StaticReadonly
+  id: StaticReadonly
+  parent: MuseDashMirror.Shared.LoggerType
+  langs:
+  - csharp
+  - vb
+  name: StaticReadonly
+  nameWithType: LoggerType.StaticReadonly
+  fullName: MuseDashMirror.Shared.LoggerType.StaticReadonly
+  type: Field
+  source:
+    remote:
+      path: src/MuseDashMirror.Shared/LoggerType.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: StaticReadonly
+    path: ../src/MuseDashMirror.Shared/LoggerType.cs
+    startLine: 15
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Shared
+  summary: Static Readonly Logger
+  example: []
+  syntax:
+    content: StaticReadonly = 1
+    return:
+      type: MuseDashMirror.Shared.LoggerType
+references:
+- uid: MuseDashMirror.Shared
+  commentId: N:MuseDashMirror.Shared
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Shared
+  nameWithType: MuseDashMirror.Shared
+  fullName: MuseDashMirror.Shared
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Shared
+    name: Shared
+    href: MuseDashMirror.Shared.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Shared
+    name: Shared
+    href: MuseDashMirror.Shared.html
+- uid: MuseDashMirror.Shared.LoggerType
+  commentId: T:MuseDashMirror.Shared.LoggerType
+  parent: MuseDashMirror.Shared
+  href: MuseDashMirror.Shared.LoggerType.html
+  name: LoggerType
+  nameWithType: LoggerType
+  fullName: MuseDashMirror.Shared.LoggerType

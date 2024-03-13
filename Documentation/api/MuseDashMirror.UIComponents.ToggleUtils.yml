@@ -1,0 +1,897 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.UIComponents.ToggleUtils
+  commentId: T:MuseDashMirror.UIComponents.ToggleUtils
+  id: ToggleUtils
+  parent: MuseDashMirror.UIComponents
+  children:
+  - MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(MuseDashMirror.Models.ToggleParameters)
+  - MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(System.String,System.String,System.Boolean,System.Action{System.Boolean})
+  - MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle``1(System.String,System.String,``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  - MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  - MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(System.String,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  - MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(UnityEngine.GameObject,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  - MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(UnityEngine.Transform,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  langs:
+  - csharp
+  - vb
+  name: ToggleUtils
+  nameWithType: ToggleUtils
+  fullName: MuseDashMirror.UIComponents.ToggleUtils
+  type: Class
+  source:
+    remote:
+      path: src/MuseDashMirror/UIComponents/ToggleUtils.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: ToggleUtils
+    path: ../src/MuseDashMirror/UIComponents/ToggleUtils.cs
+    startLine: 9
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.UIComponents
+  summary: Methods for creating toggle
+  example: []
+  syntax:
+    content: public static class ToggleUtils
+    content.vb: Public Module ToggleUtils
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  commentId: M:MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  id: CreateToggle(MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  parent: MuseDashMirror.UIComponents.ToggleUtils
+  langs:
+  - csharp
+  - vb
+  name: CreateToggle(ToggleParameters, TransformParameters)
+  nameWithType: ToggleUtils.CreateToggle(ToggleParameters, TransformParameters)
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(MuseDashMirror.Models.ToggleParameters, MuseDashMirror.Models.TransformParameters)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/UIComponents/ToggleUtils.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: CreateToggle
+    path: ../src/MuseDashMirror/UIComponents/ToggleUtils.cs
+    startLine: 31
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.UIComponents
+  summary: Create a toggle
+  example: []
+  syntax:
+    content: public static GameObject CreateToggle(ToggleParameters toggleParameters, TransformParameters transformParameters)
+    parameters:
+    - id: toggleParameters
+      type: MuseDashMirror.Models.ToggleParameters
+      description: Toggle Parameters
+    - id: transformParameters
+      type: MuseDashMirror.Models.TransformParameters
+      description: Transform Parameters
+    return:
+      type: UnityEngine.GameObject
+      description: ''
+    content.vb: Public Shared Function CreateToggle(toggleParameters As ToggleParameters, transformParameters As TransformParameters) As GameObject
+  overload: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle*
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(System.String,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  commentId: M:MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(System.String,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  id: CreateToggle(System.String,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  parent: MuseDashMirror.UIComponents.ToggleUtils
+  langs:
+  - csharp
+  - vb
+  name: CreateToggle(string, ToggleParameters, TransformParameters)
+  nameWithType: ToggleUtils.CreateToggle(string, ToggleParameters, TransformParameters)
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(string, MuseDashMirror.Models.ToggleParameters, MuseDashMirror.Models.TransformParameters)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/UIComponents/ToggleUtils.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: CreateToggle
+    path: ../src/MuseDashMirror/UIComponents/ToggleUtils.cs
+    startLine: 41
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.UIComponents
+  summary: Create a toggle with parent
+  example: []
+  syntax:
+    content: public static GameObject CreateToggle(string parentName, ToggleParameters toggleParameters, TransformParameters transformParameters)
+    parameters:
+    - id: parentName
+      type: System.String
+      description: Parent GameObject Name
+    - id: toggleParameters
+      type: MuseDashMirror.Models.ToggleParameters
+      description: Toggle Parameters
+    - id: transformParameters
+      type: MuseDashMirror.Models.TransformParameters
+      description: Transform Parameters
+    return:
+      type: UnityEngine.GameObject
+      description: Toggle GameObject
+    content.vb: Public Shared Function CreateToggle(parentName As String, toggleParameters As ToggleParameters, transformParameters As TransformParameters) As GameObject
+  overload: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle*
+  nameWithType.vb: ToggleUtils.CreateToggle(String, ToggleParameters, TransformParameters)
+  fullName.vb: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(String, MuseDashMirror.Models.ToggleParameters, MuseDashMirror.Models.TransformParameters)
+  name.vb: CreateToggle(String, ToggleParameters, TransformParameters)
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(UnityEngine.GameObject,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  commentId: M:MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(UnityEngine.GameObject,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  id: CreateToggle(UnityEngine.GameObject,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  parent: MuseDashMirror.UIComponents.ToggleUtils
+  langs:
+  - csharp
+  - vb
+  name: CreateToggle(GameObject, ToggleParameters, TransformParameters)
+  nameWithType: ToggleUtils.CreateToggle(GameObject, ToggleParameters, TransformParameters)
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(UnityEngine.GameObject, MuseDashMirror.Models.ToggleParameters, MuseDashMirror.Models.TransformParameters)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/UIComponents/ToggleUtils.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: CreateToggle
+    path: ../src/MuseDashMirror/UIComponents/ToggleUtils.cs
+    startLine: 51
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.UIComponents
+  summary: Create a toggle with parent
+  example: []
+  syntax:
+    content: public static GameObject CreateToggle(GameObject parent, ToggleParameters toggleParameters, TransformParameters transformParameters)
+    parameters:
+    - id: parent
+      type: UnityEngine.GameObject
+      description: Parent GameObject
+    - id: toggleParameters
+      type: MuseDashMirror.Models.ToggleParameters
+      description: Toggle Parameters
+    - id: transformParameters
+      type: MuseDashMirror.Models.TransformParameters
+      description: Transform Parameters
+    return:
+      type: UnityEngine.GameObject
+      description: Toggle GameObject
+    content.vb: Public Shared Function CreateToggle(parent As GameObject, toggleParameters As ToggleParameters, transformParameters As TransformParameters) As GameObject
+  overload: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle*
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(UnityEngine.Transform,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  commentId: M:MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(UnityEngine.Transform,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  id: CreateToggle(UnityEngine.Transform,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  parent: MuseDashMirror.UIComponents.ToggleUtils
+  langs:
+  - csharp
+  - vb
+  name: CreateToggle(Transform, ToggleParameters, TransformParameters)
+  nameWithType: ToggleUtils.CreateToggle(Transform, ToggleParameters, TransformParameters)
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(UnityEngine.Transform, MuseDashMirror.Models.ToggleParameters, MuseDashMirror.Models.TransformParameters)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/UIComponents/ToggleUtils.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: CreateToggle
+    path: ../src/MuseDashMirror/UIComponents/ToggleUtils.cs
+    startLine: 61
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.UIComponents
+  summary: Create a toggle with parent
+  example: []
+  syntax:
+    content: public static GameObject CreateToggle(Transform parentTransform, ToggleParameters toggleParameters, TransformParameters transformParameters)
+    parameters:
+    - id: parentTransform
+      type: UnityEngine.Transform
+      description: Parent GameObject Transform
+    - id: toggleParameters
+      type: MuseDashMirror.Models.ToggleParameters
+      description: Toggle Parameters
+    - id: transformParameters
+      type: MuseDashMirror.Models.TransformParameters
+      description: Transform Parameters
+    return:
+      type: UnityEngine.GameObject
+      description: ''
+    content.vb: Public Shared Function CreateToggle(parentTransform As Transform, toggleParameters As ToggleParameters, transformParameters As TransformParameters) As GameObject
+  overload: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle*
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(System.String,System.String,System.Boolean,System.Action{System.Boolean})
+  commentId: M:MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(System.String,System.String,System.Boolean,System.Action{System.Boolean})
+  id: CreatePnlMenuToggle(System.String,System.String,System.Boolean,System.Action{System.Boolean})
+  parent: MuseDashMirror.UIComponents.ToggleUtils
+  langs:
+  - csharp
+  - vb
+  name: CreatePnlMenuToggle(string, string, bool, Action<bool>)
+  nameWithType: ToggleUtils.CreatePnlMenuToggle(string, string, bool, Action<bool>)
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(string, string, bool, System.Action<bool>)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/UIComponents/ToggleUtils.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: CreatePnlMenuToggle
+    path: ../src/MuseDashMirror/UIComponents/ToggleUtils.cs
+    startLine: 101
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.UIComponents
+  summary: Create a toggle in the PnlMenu
+  example: []
+  syntax:
+    content: public static GameObject CreatePnlMenuToggle(string name, string text, bool initialValue, Action<bool> callback)
+    parameters:
+    - id: name
+      type: System.String
+      description: GameObject Name
+    - id: text
+      type: System.String
+      description: Toggle Text
+    - id: initialValue
+      type: System.Boolean
+      description: Initial Value for Toggle
+    - id: callback
+      type: System.Action{System.Boolean}
+      description: Boolean Callback
+    return:
+      type: UnityEngine.GameObject
+      description: Toggle GameObject
+    content.vb: Public Shared Function CreatePnlMenuToggle(name As String, text As String, initialValue As Boolean, callback As Action(Of Boolean)) As GameObject
+  overload: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle*
+  nameWithType.vb: ToggleUtils.CreatePnlMenuToggle(String, String, Boolean, Action(Of Boolean))
+  fullName.vb: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(String, String, Boolean, System.Action(Of Boolean))
+  name.vb: CreatePnlMenuToggle(String, String, Boolean, Action(Of Boolean))
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle``1(System.String,System.String,``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  commentId: M:MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle``1(System.String,System.String,``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  id: CreatePnlMenuToggle``1(System.String,System.String,``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  parent: MuseDashMirror.UIComponents.ToggleUtils
+  langs:
+  - csharp
+  - vb
+  name: CreatePnlMenuToggle<T>(string, string, T, Expression<Func<T, bool>>)
+  nameWithType: ToggleUtils.CreatePnlMenuToggle<T>(string, string, T, Expression<Func<T, bool>>)
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle<T>(string, string, T, System.Linq.Expressions.Expression<System.Func<T, bool>>)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/UIComponents/ToggleUtils.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: CreatePnlMenuToggle
+    path: ../src/MuseDashMirror/UIComponents/ToggleUtils.cs
+    startLine: 114
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.UIComponents
+  summary: Create a toggle in the PnlMenu
+  example: []
+  syntax:
+    content: public static GameObject CreatePnlMenuToggle<T>(string name, string text, T target, Expression<Func<T, bool>> expression)
+    parameters:
+    - id: name
+      type: System.String
+      description: GameObject Name
+    - id: text
+      type: System.String
+      description: Toggle Text
+    - id: target
+      type: '{T}'
+      description: Target Object the Toggle's value will be bounded to
+    - id: expression
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression that represents a Boolean property of the Target Object
+    typeParameters:
+    - id: T
+      description: The type of the Target Object
+    return:
+      type: UnityEngine.GameObject
+      description: Toggle GameObject
+    content.vb: Public Shared Function CreatePnlMenuToggle(Of T)(name As String, text As String, target As T, expression As Expression(Of Func(Of T, Boolean))) As GameObject
+  overload: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when the provided expression does not represent a property or field of the target object
+  nameWithType.vb: ToggleUtils.CreatePnlMenuToggle(Of T)(String, String, T, Expression(Of Func(Of T, Boolean)))
+  fullName.vb: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(Of T)(String, String, T, System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)))
+  name.vb: CreatePnlMenuToggle(Of T)(String, String, T, Expression(Of Func(Of T, Boolean)))
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(MuseDashMirror.Models.ToggleParameters)
+  commentId: M:MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(MuseDashMirror.Models.ToggleParameters)
+  id: CreatePnlMenuToggle(MuseDashMirror.Models.ToggleParameters)
+  parent: MuseDashMirror.UIComponents.ToggleUtils
+  langs:
+  - csharp
+  - vb
+  name: CreatePnlMenuToggle(ToggleParameters)
+  nameWithType: ToggleUtils.CreatePnlMenuToggle(ToggleParameters)
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(MuseDashMirror.Models.ToggleParameters)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/UIComponents/ToggleUtils.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: CreatePnlMenuToggle
+    path: ../src/MuseDashMirror/UIComponents/ToggleUtils.cs
+    startLine: 162
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.UIComponents
+  summary: Create a toggle in the PnlMenu
+  example: []
+  syntax:
+    content: public static GameObject CreatePnlMenuToggle(ToggleParameters toggleParameters)
+    parameters:
+    - id: toggleParameters
+      type: MuseDashMirror.Models.ToggleParameters
+      description: Toggle Parameters
+    return:
+      type: UnityEngine.GameObject
+      description: Toggle GameObject
+    content.vb: Public Shared Function CreatePnlMenuToggle(toggleParameters As ToggleParameters) As GameObject
+  overload: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle*
+references:
+- uid: MuseDashMirror.UIComponents
+  commentId: N:MuseDashMirror.UIComponents
+  href: MuseDashMirror.html
+  name: MuseDashMirror.UIComponents
+  nameWithType: MuseDashMirror.UIComponents
+  fullName: MuseDashMirror.UIComponents
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.UIComponents
+    name: UIComponents
+    href: MuseDashMirror.UIComponents.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.UIComponents
+    name: UIComponents
+    href: MuseDashMirror.UIComponents.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle*
+  commentId: Overload:MuseDashMirror.UIComponents.ToggleUtils.CreateToggle
+  href: MuseDashMirror.UIComponents.ToggleUtils.html#MuseDashMirror_UIComponents_ToggleUtils_CreateToggle_MuseDashMirror_Models_ToggleParameters_MuseDashMirror_Models_TransformParameters_
+  name: CreateToggle
+  nameWithType: ToggleUtils.CreateToggle
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle
+- uid: MuseDashMirror.Models.ToggleParameters
+  commentId: T:MuseDashMirror.Models.ToggleParameters
+  parent: MuseDashMirror.Models
+  href: MuseDashMirror.Models.ToggleParameters.html
+  name: ToggleParameters
+  nameWithType: ToggleParameters
+  fullName: MuseDashMirror.Models.ToggleParameters
+- uid: MuseDashMirror.Models.TransformParameters
+  commentId: T:MuseDashMirror.Models.TransformParameters
+  parent: MuseDashMirror.Models
+  href: MuseDashMirror.Models.TransformParameters.html
+  name: TransformParameters
+  nameWithType: TransformParameters
+  fullName: MuseDashMirror.Models.TransformParameters
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: MuseDashMirror.Models
+  commentId: N:MuseDashMirror.Models
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Models
+  nameWithType: MuseDashMirror.Models
+  fullName: MuseDashMirror.Models
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle*
+  commentId: Overload:MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle
+  href: MuseDashMirror.UIComponents.ToggleUtils.html#MuseDashMirror_UIComponents_ToggleUtils_CreatePnlMenuToggle_System_String_System_String_System_Boolean_System_Action_System_Boolean__
+  name: CreatePnlMenuToggle
+  nameWithType: ToggleUtils.CreatePnlMenuToggle
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Action{System.Boolean}
+  commentId: T:System.Action{System.Boolean}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<bool>
+  nameWithType: Action<bool>
+  fullName: System.Action<bool>
+  nameWithType.vb: Action(Of Boolean)
+  fullName.vb: System.Action(Of Boolean)
+  name.vb: Action(Of Boolean)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<T, bool>>
+  nameWithType: Expression<Func<T, bool>>
+  fullName: System.Linq.Expressions.Expression<System.Func<T, bool>>
+  nameWithType.vb: Expression(Of Func(Of T, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean))
+  name.vb: Expression(Of Func(Of T, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Utils
+  commentId: N:MuseDashMirror.Utils
+  id: MuseDashMirror.Utils
+  children:
+  - MuseDashMirror.Utils.GameObjectUtils
+  langs:
+  - csharp
+  - vb
+  name: MuseDashMirror.Utils
+  nameWithType: MuseDashMirror.Utils
+  fullName: MuseDashMirror.Utils
+  type: Namespace
+  assemblies:
+  - MuseDashMirror
+references:
+- uid: MuseDashMirror.Utils.GameObjectUtils
+  commentId: T:MuseDashMirror.Utils.GameObjectUtils
+  href: MuseDashMirror.Utils.GameObjectUtils.html
+  name: GameObjectUtils
+  nameWithType: GameObjectUtils
+  fullName: MuseDashMirror.Utils.GameObjectUtils

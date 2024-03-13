@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Contracts
+  commentId: N:MuseDashMirror.Contracts
+  id: MuseDashMirror.Contracts
+  children:
+  - MuseDashMirror.Contracts.IPositionStrategy
+  langs:
+  - csharp
+  - vb
+  name: MuseDashMirror.Contracts
+  nameWithType: MuseDashMirror.Contracts
+  fullName: MuseDashMirror.Contracts
+  type: Namespace
+  assemblies:
+  - MuseDashMirror
+references:
+- uid: MuseDashMirror.Contracts.IPositionStrategy
+  commentId: T:MuseDashMirror.Contracts.IPositionStrategy
+  parent: MuseDashMirror.Contracts
+  href: MuseDashMirror.Contracts.IPositionStrategy.html
+  name: IPositionStrategy
+  nameWithType: IPositionStrategy
+  fullName: MuseDashMirror.Contracts.IPositionStrategy
+- uid: MuseDashMirror.Contracts
+  commentId: N:MuseDashMirror.Contracts
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Contracts
+  nameWithType: MuseDashMirror.Contracts
+  fullName: MuseDashMirror.Contracts
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Contracts
+    name: Contracts
+    href: MuseDashMirror.Contracts.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Contracts
+    name: Contracts
+    href: MuseDashMirror.Contracts.html

@@ -1,0 +1,1256 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.BattleComponent
+  commentId: T:MuseDashMirror.BattleComponent
+  id: BattleComponent
+  parent: MuseDashMirror
+  children:
+  - MuseDashMirror.BattleComponent.ChartLevel
+  - MuseDashMirror.BattleComponent.ChartName
+  - MuseDashMirror.BattleComponent.Charter
+  - MuseDashMirror.BattleComponent.CollectableNoteMissCount
+  - MuseDashMirror.BattleComponent.Difficulty
+  - MuseDashMirror.BattleComponent.Exit
+  - MuseDashMirror.BattleComponent.Get
+  - MuseDashMirror.BattleComponent.GhostMissCount
+  - MuseDashMirror.BattleComponent.GreatCount
+  - MuseDashMirror.BattleComponent.Heart
+  - MuseDashMirror.BattleComponent.IsInGame
+  - MuseDashMirror.BattleComponent.JumpOver
+  - MuseDashMirror.BattleComponent.MusicAuthor
+  - MuseDashMirror.BattleComponent.MusicDataList
+  - MuseDashMirror.BattleComponent.NormalMissCount
+  - MuseDashMirror.BattleComponent.PerfectCount
+  - MuseDashMirror.BattleComponent.Restart
+  - MuseDashMirror.BattleComponent.SelectedAlbumUid
+  - MuseDashMirror.BattleComponent.SelectedMusicIndex
+  - MuseDashMirror.BattleComponent.SelectedMusicIndexInCurrent
+  - MuseDashMirror.BattleComponent.SelectedMusicUid
+  - MuseDashMirror.BattleComponent.Tick
+  langs:
+  - csharp
+  - vb
+  name: BattleComponent
+  nameWithType: BattleComponent
+  fullName: MuseDashMirror.BattleComponent
+  type: Class
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: BattleComponent
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 11
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Data inside game scene for battle
+  example: []
+  syntax:
+    content: public static class BattleComponent
+    content.vb: Public Module BattleComponent
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MuseDashMirror.BattleComponent.Restart
+  commentId: M:MuseDashMirror.BattleComponent.Restart
+  id: Restart
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: Restart()
+  nameWithType: BattleComponent.Restart()
+  fullName: MuseDashMirror.BattleComponent.Restart()
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: Restart
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 16
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Restart the current chart
+  example: []
+  syntax:
+    content: public static void Restart()
+    content.vb: Public Shared Sub Restart()
+  overload: MuseDashMirror.BattleComponent.Restart*
+- uid: MuseDashMirror.BattleComponent.Exit
+  commentId: M:MuseDashMirror.BattleComponent.Exit
+  id: Exit
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: Exit()
+  nameWithType: BattleComponent.Exit()
+  fullName: MuseDashMirror.BattleComponent.Exit()
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: Exit
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 21
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Exit the current chart
+  example: []
+  syntax:
+    content: public static void Exit()
+    content.vb: Public Shared Sub [Exit]()
+  overload: MuseDashMirror.BattleComponent.Exit*
+- uid: MuseDashMirror.BattleComponent.ChartName
+  commentId: P:MuseDashMirror.BattleComponent.ChartName
+  id: ChartName
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: ChartName
+  nameWithType: BattleComponent.ChartName
+  fullName: MuseDashMirror.BattleComponent.ChartName
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: ChartName
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 28
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Chart name, only changed when entering the chart
+  example: []
+  syntax:
+    content: public static string ChartName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared Property ChartName As String
+  overload: MuseDashMirror.BattleComponent.ChartName*
+- uid: MuseDashMirror.BattleComponent.ChartLevel
+  commentId: P:MuseDashMirror.BattleComponent.ChartLevel
+  id: ChartLevel
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: ChartLevel
+  nameWithType: BattleComponent.ChartLevel
+  fullName: MuseDashMirror.BattleComponent.ChartLevel
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: ChartLevel
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 33
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Level of the chart, only changed when entering the chart
+  example: []
+  syntax:
+    content: public static string ChartLevel { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared Property ChartLevel As String
+  overload: MuseDashMirror.BattleComponent.ChartLevel*
+- uid: MuseDashMirror.BattleComponent.Difficulty
+  commentId: P:MuseDashMirror.BattleComponent.Difficulty
+  id: Difficulty
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: Difficulty
+  nameWithType: BattleComponent.Difficulty
+  fullName: MuseDashMirror.BattleComponent.Difficulty
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: Difficulty
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 38
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Difficulty of the chart (easy, hard, master, hidden, touhou), only changed when entering the chart
+  example: []
+  syntax:
+    content: public static int Difficulty { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared Property Difficulty As Integer
+  overload: MuseDashMirror.BattleComponent.Difficulty*
+- uid: MuseDashMirror.BattleComponent.MusicAuthor
+  commentId: P:MuseDashMirror.BattleComponent.MusicAuthor
+  id: MusicAuthor
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: MusicAuthor
+  nameWithType: BattleComponent.MusicAuthor
+  fullName: MuseDashMirror.BattleComponent.MusicAuthor
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: MusicAuthor
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 43
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Music author, only changed when entering the chart
+  example: []
+  syntax:
+    content: public static string MusicAuthor { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared Property MusicAuthor As String
+  overload: MuseDashMirror.BattleComponent.MusicAuthor*
+- uid: MuseDashMirror.BattleComponent.Charter
+  commentId: P:MuseDashMirror.BattleComponent.Charter
+  id: Charter
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: Charter
+  nameWithType: BattleComponent.Charter
+  fullName: MuseDashMirror.BattleComponent.Charter
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: Charter
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 48
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Charter, only changed when entering the chart
+  example: []
+  syntax:
+    content: public static string Charter { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared Property Charter As String
+  overload: MuseDashMirror.BattleComponent.Charter*
+- uid: MuseDashMirror.BattleComponent.SelectedAlbumUid
+  commentId: P:MuseDashMirror.BattleComponent.SelectedAlbumUid
+  id: SelectedAlbumUid
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: SelectedAlbumUid
+  nameWithType: BattleComponent.SelectedAlbumUid
+  fullName: MuseDashMirror.BattleComponent.SelectedAlbumUid
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: SelectedAlbumUid
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 53
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: The name for album package
+  example: []
+  syntax:
+    content: public static string SelectedAlbumUid { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property SelectedAlbumUid As String
+  overload: MuseDashMirror.BattleComponent.SelectedAlbumUid*
+- uid: MuseDashMirror.BattleComponent.SelectedMusicIndex
+  commentId: P:MuseDashMirror.BattleComponent.SelectedMusicIndex
+  id: SelectedMusicIndex
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: SelectedMusicIndex
+  nameWithType: BattleComponent.SelectedMusicIndex
+  fullName: MuseDashMirror.BattleComponent.SelectedMusicIndex
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: SelectedMusicIndex
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 58
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: The index of selected music in its own album package
+  example: []
+  syntax:
+    content: public static int SelectedMusicIndex { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly Property SelectedMusicIndex As Integer
+  overload: MuseDashMirror.BattleComponent.SelectedMusicIndex*
+- uid: MuseDashMirror.BattleComponent.SelectedMusicIndexInCurrent
+  commentId: P:MuseDashMirror.BattleComponent.SelectedMusicIndexInCurrent
+  id: SelectedMusicIndexInCurrent
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: SelectedMusicIndexInCurrent
+  nameWithType: BattleComponent.SelectedMusicIndexInCurrent
+  fullName: MuseDashMirror.BattleComponent.SelectedMusicIndexInCurrent
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: SelectedMusicIndexInCurrent
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 63
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: The index of selected music in current category
+  example: []
+  syntax:
+    content: public static int SelectedMusicIndexInCurrent { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly Property SelectedMusicIndexInCurrent As Integer
+  overload: MuseDashMirror.BattleComponent.SelectedMusicIndexInCurrent*
+- uid: MuseDashMirror.BattleComponent.SelectedMusicUid
+  commentId: P:MuseDashMirror.BattleComponent.SelectedMusicUid
+  id: SelectedMusicUid
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: SelectedMusicUid
+  nameWithType: BattleComponent.SelectedMusicUid
+  fullName: MuseDashMirror.BattleComponent.SelectedMusicUid
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: SelectedMusicUid
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 68
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: The full path for selected music (album+music index)
+  example: []
+  syntax:
+    content: public static string SelectedMusicUid { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property SelectedMusicUid As String
+  overload: MuseDashMirror.BattleComponent.SelectedMusicUid*
+- uid: MuseDashMirror.BattleComponent.IsInGame
+  commentId: P:MuseDashMirror.BattleComponent.IsInGame
+  id: IsInGame
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: IsInGame
+  nameWithType: BattleComponent.IsInGame
+  fullName: MuseDashMirror.BattleComponent.IsInGame
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: IsInGame
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 77
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Becomes true when "ready go" finished
+  example: []
+  syntax:
+    content: public static bool IsInGame { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property IsInGame As Boolean
+  overload: MuseDashMirror.BattleComponent.IsInGame*
+- uid: MuseDashMirror.BattleComponent.Tick
+  commentId: P:MuseDashMirror.BattleComponent.Tick
+  id: Tick
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: Tick
+  nameWithType: BattleComponent.Tick
+  fullName: MuseDashMirror.BattleComponent.Tick
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: Tick
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 82
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: 3 decimal places number for game play time, start after isInGame
+  example: []
+  syntax:
+    content: public static float Tick { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Shared ReadOnly Property Tick As Single
+  overload: MuseDashMirror.BattleComponent.Tick*
+- uid: MuseDashMirror.BattleComponent.PerfectCount
+  commentId: P:MuseDashMirror.BattleComponent.PerfectCount
+  id: PerfectCount
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: PerfectCount
+  nameWithType: BattleComponent.PerfectCount
+  fullName: MuseDashMirror.BattleComponent.PerfectCount
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: PerfectCount
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 87
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Perfect count
+  example: []
+  syntax:
+    content: public static int PerfectCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly Property PerfectCount As Integer
+  overload: MuseDashMirror.BattleComponent.PerfectCount*
+- uid: MuseDashMirror.BattleComponent.GreatCount
+  commentId: P:MuseDashMirror.BattleComponent.GreatCount
+  id: GreatCount
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: GreatCount
+  nameWithType: BattleComponent.GreatCount
+  fullName: MuseDashMirror.BattleComponent.GreatCount
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: GreatCount
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 92
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Great count
+  example: []
+  syntax:
+    content: public static int GreatCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly Property GreatCount As Integer
+  overload: MuseDashMirror.BattleComponent.GreatCount*
+- uid: MuseDashMirror.BattleComponent.NormalMissCount
+  commentId: P:MuseDashMirror.BattleComponent.NormalMissCount
+  id: NormalMissCount
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: NormalMissCount
+  nameWithType: BattleComponent.NormalMissCount
+  fullName: MuseDashMirror.BattleComponent.NormalMissCount
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: NormalMissCount
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 97
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Normal miss count (without ghost and collectable note miss)
+  example: []
+  syntax:
+    content: public static int NormalMissCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared Property NormalMissCount As Integer
+  overload: MuseDashMirror.BattleComponent.NormalMissCount*
+- uid: MuseDashMirror.BattleComponent.GhostMissCount
+  commentId: P:MuseDashMirror.BattleComponent.GhostMissCount
+  id: GhostMissCount
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: GhostMissCount
+  nameWithType: BattleComponent.GhostMissCount
+  fullName: MuseDashMirror.BattleComponent.GhostMissCount
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: GhostMissCount
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 102
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Ghost miss count
+  example: []
+  syntax:
+    content: public static int GhostMissCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared Property GhostMissCount As Integer
+  overload: MuseDashMirror.BattleComponent.GhostMissCount*
+- uid: MuseDashMirror.BattleComponent.CollectableNoteMissCount
+  commentId: P:MuseDashMirror.BattleComponent.CollectableNoteMissCount
+  id: CollectableNoteMissCount
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: CollectableNoteMissCount
+  nameWithType: BattleComponent.CollectableNoteMissCount
+  fullName: MuseDashMirror.BattleComponent.CollectableNoteMissCount
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: CollectableNoteMissCount
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 107
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Collectable note miss count
+  example: []
+  syntax:
+    content: public static int CollectableNoteMissCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared Property CollectableNoteMissCount As Integer
+  overload: MuseDashMirror.BattleComponent.CollectableNoteMissCount*
+- uid: MuseDashMirror.BattleComponent.Get
+  commentId: P:MuseDashMirror.BattleComponent.Get
+  id: Get
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: Get
+  nameWithType: BattleComponent.Get
+  fullName: MuseDashMirror.BattleComponent.Get
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: Get
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 112
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Blue collectable notes count
+  example: []
+  syntax:
+    content: public static int Get { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly Property [Get] As Integer
+  overload: MuseDashMirror.BattleComponent.Get*
+- uid: MuseDashMirror.BattleComponent.Heart
+  commentId: P:MuseDashMirror.BattleComponent.Heart
+  id: Heart
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: Heart
+  nameWithType: BattleComponent.Heart
+  fullName: MuseDashMirror.BattleComponent.Heart
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: Heart
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 117
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Heart count
+  example: []
+  syntax:
+    content: public static int Heart { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly Property Heart As Integer
+  overload: MuseDashMirror.BattleComponent.Heart*
+- uid: MuseDashMirror.BattleComponent.JumpOver
+  commentId: P:MuseDashMirror.BattleComponent.JumpOver
+  id: JumpOver
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: JumpOver
+  nameWithType: BattleComponent.JumpOver
+  fullName: MuseDashMirror.BattleComponent.JumpOver
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: JumpOver
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 122
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Jump over count
+  example: []
+  syntax:
+    content: public static int JumpOver { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly Property JumpOver As Integer
+  overload: MuseDashMirror.BattleComponent.JumpOver*
+- uid: MuseDashMirror.BattleComponent.MusicDataList
+  commentId: P:MuseDashMirror.BattleComponent.MusicDataList
+  id: MusicDataList
+  parent: MuseDashMirror.BattleComponent
+  langs:
+  - csharp
+  - vb
+  name: MusicDataList
+  nameWithType: BattleComponent.MusicDataList
+  fullName: MuseDashMirror.BattleComponent.MusicDataList
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/BattleComponent.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: MusicDataList
+    path: ../src/MuseDashMirror/BattleComponent.cs
+    startLine: 127
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Music data for the chart, only changed when entering the chart
+  example: []
+  syntax:
+    content: public static List<MusicData> MusicDataList { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Il2CppGameLogic.MusicData}
+    content.vb: Public Shared ReadOnly Property MusicDataList As List(Of MusicData)
+  overload: MuseDashMirror.BattleComponent.MusicDataList*
+references:
+- uid: MuseDashMirror
+  commentId: N:MuseDashMirror
+  href: MuseDashMirror.html
+  name: MuseDashMirror
+  nameWithType: MuseDashMirror
+  fullName: MuseDashMirror
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MuseDashMirror.BattleComponent.Restart*
+  commentId: Overload:MuseDashMirror.BattleComponent.Restart
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Restart
+  name: Restart
+  nameWithType: BattleComponent.Restart
+  fullName: MuseDashMirror.BattleComponent.Restart
+- uid: MuseDashMirror.BattleComponent.Exit*
+  commentId: Overload:MuseDashMirror.BattleComponent.Exit
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Exit
+  name: Exit
+  nameWithType: BattleComponent.Exit
+  fullName: MuseDashMirror.BattleComponent.Exit
+- uid: MuseDashMirror.BattleComponent.ChartName*
+  commentId: Overload:MuseDashMirror.BattleComponent.ChartName
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_ChartName
+  name: ChartName
+  nameWithType: BattleComponent.ChartName
+  fullName: MuseDashMirror.BattleComponent.ChartName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MuseDashMirror.BattleComponent.ChartLevel*
+  commentId: Overload:MuseDashMirror.BattleComponent.ChartLevel
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_ChartLevel
+  name: ChartLevel
+  nameWithType: BattleComponent.ChartLevel
+  fullName: MuseDashMirror.BattleComponent.ChartLevel
+- uid: MuseDashMirror.BattleComponent.Difficulty*
+  commentId: Overload:MuseDashMirror.BattleComponent.Difficulty
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Difficulty
+  name: Difficulty
+  nameWithType: BattleComponent.Difficulty
+  fullName: MuseDashMirror.BattleComponent.Difficulty
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MuseDashMirror.BattleComponent.MusicAuthor*
+  commentId: Overload:MuseDashMirror.BattleComponent.MusicAuthor
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_MusicAuthor
+  name: MusicAuthor
+  nameWithType: BattleComponent.MusicAuthor
+  fullName: MuseDashMirror.BattleComponent.MusicAuthor
+- uid: MuseDashMirror.BattleComponent.Charter*
+  commentId: Overload:MuseDashMirror.BattleComponent.Charter
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Charter
+  name: Charter
+  nameWithType: BattleComponent.Charter
+  fullName: MuseDashMirror.BattleComponent.Charter
+- uid: MuseDashMirror.BattleComponent.SelectedAlbumUid*
+  commentId: Overload:MuseDashMirror.BattleComponent.SelectedAlbumUid
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_SelectedAlbumUid
+  name: SelectedAlbumUid
+  nameWithType: BattleComponent.SelectedAlbumUid
+  fullName: MuseDashMirror.BattleComponent.SelectedAlbumUid
+- uid: MuseDashMirror.BattleComponent.SelectedMusicIndex*
+  commentId: Overload:MuseDashMirror.BattleComponent.SelectedMusicIndex
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_SelectedMusicIndex
+  name: SelectedMusicIndex
+  nameWithType: BattleComponent.SelectedMusicIndex
+  fullName: MuseDashMirror.BattleComponent.SelectedMusicIndex
+- uid: MuseDashMirror.BattleComponent.SelectedMusicIndexInCurrent*
+  commentId: Overload:MuseDashMirror.BattleComponent.SelectedMusicIndexInCurrent
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_SelectedMusicIndexInCurrent
+  name: SelectedMusicIndexInCurrent
+  nameWithType: BattleComponent.SelectedMusicIndexInCurrent
+  fullName: MuseDashMirror.BattleComponent.SelectedMusicIndexInCurrent
+- uid: MuseDashMirror.BattleComponent.SelectedMusicUid*
+  commentId: Overload:MuseDashMirror.BattleComponent.SelectedMusicUid
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_SelectedMusicUid
+  name: SelectedMusicUid
+  nameWithType: BattleComponent.SelectedMusicUid
+  fullName: MuseDashMirror.BattleComponent.SelectedMusicUid
+- uid: MuseDashMirror.BattleComponent.IsInGame*
+  commentId: Overload:MuseDashMirror.BattleComponent.IsInGame
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_IsInGame
+  name: IsInGame
+  nameWithType: BattleComponent.IsInGame
+  fullName: MuseDashMirror.BattleComponent.IsInGame
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MuseDashMirror.BattleComponent.Tick*
+  commentId: Overload:MuseDashMirror.BattleComponent.Tick
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Tick
+  name: Tick
+  nameWithType: BattleComponent.Tick
+  fullName: MuseDashMirror.BattleComponent.Tick
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MuseDashMirror.BattleComponent.PerfectCount*
+  commentId: Overload:MuseDashMirror.BattleComponent.PerfectCount
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_PerfectCount
+  name: PerfectCount
+  nameWithType: BattleComponent.PerfectCount
+  fullName: MuseDashMirror.BattleComponent.PerfectCount
+- uid: MuseDashMirror.BattleComponent.GreatCount*
+  commentId: Overload:MuseDashMirror.BattleComponent.GreatCount
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_GreatCount
+  name: GreatCount
+  nameWithType: BattleComponent.GreatCount
+  fullName: MuseDashMirror.BattleComponent.GreatCount
+- uid: MuseDashMirror.BattleComponent.NormalMissCount*
+  commentId: Overload:MuseDashMirror.BattleComponent.NormalMissCount
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_NormalMissCount
+  name: NormalMissCount
+  nameWithType: BattleComponent.NormalMissCount
+  fullName: MuseDashMirror.BattleComponent.NormalMissCount
+- uid: MuseDashMirror.BattleComponent.GhostMissCount*
+  commentId: Overload:MuseDashMirror.BattleComponent.GhostMissCount
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_GhostMissCount
+  name: GhostMissCount
+  nameWithType: BattleComponent.GhostMissCount
+  fullName: MuseDashMirror.BattleComponent.GhostMissCount
+- uid: MuseDashMirror.BattleComponent.CollectableNoteMissCount*
+  commentId: Overload:MuseDashMirror.BattleComponent.CollectableNoteMissCount
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_CollectableNoteMissCount
+  name: CollectableNoteMissCount
+  nameWithType: BattleComponent.CollectableNoteMissCount
+  fullName: MuseDashMirror.BattleComponent.CollectableNoteMissCount
+- uid: MuseDashMirror.BattleComponent.Get*
+  commentId: Overload:MuseDashMirror.BattleComponent.Get
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Get
+  name: Get
+  nameWithType: BattleComponent.Get
+  fullName: MuseDashMirror.BattleComponent.Get
+- uid: MuseDashMirror.BattleComponent.Heart*
+  commentId: Overload:MuseDashMirror.BattleComponent.Heart
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Heart
+  name: Heart
+  nameWithType: BattleComponent.Heart
+  fullName: MuseDashMirror.BattleComponent.Heart
+- uid: MuseDashMirror.BattleComponent.JumpOver*
+  commentId: Overload:MuseDashMirror.BattleComponent.JumpOver
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_JumpOver
+  name: JumpOver
+  nameWithType: BattleComponent.JumpOver
+  fullName: MuseDashMirror.BattleComponent.JumpOver
+- uid: MuseDashMirror.BattleComponent.MusicDataList*
+  commentId: Overload:MuseDashMirror.BattleComponent.MusicDataList
+  href: MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_MusicDataList
+  name: MusicDataList
+  nameWithType: BattleComponent.MusicDataList
+  fullName: MuseDashMirror.BattleComponent.MusicDataList
+- uid: System.Collections.Generic.List{Il2CppGameLogic.MusicData}
+  commentId: T:System.Collections.Generic.List{Il2CppGameLogic.MusicData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<MusicData>
+  nameWithType: List<MusicData>
+  fullName: System.Collections.Generic.List<Il2CppGameLogic.MusicData>
+  nameWithType.vb: List(Of MusicData)
+  fullName.vb: System.Collections.Generic.List(Of Il2CppGameLogic.MusicData)
+  name.vb: List(Of MusicData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Il2CppGameLogic.MusicData
+    name: MusicData
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Il2CppGameLogic.MusicData
+    name: MusicData
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

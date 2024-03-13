@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror
+  commentId: N:MuseDashMirror
+  id: MuseDashMirror
+  children:
+  - MuseDashMirror.BattleComponent
+  - MuseDashMirror.Main
+  - MuseDashMirror.PatchEvents
+  - MuseDashMirror.PlayerData
+  - MuseDashMirror.SceneInfo
+  langs:
+  - csharp
+  - vb
+  name: MuseDashMirror
+  nameWithType: MuseDashMirror
+  fullName: MuseDashMirror
+  type: Namespace
+  assemblies:
+  - MuseDashMirror
+references:
+- uid: MuseDashMirror.BattleComponent
+  commentId: T:MuseDashMirror.BattleComponent
+  href: MuseDashMirror.BattleComponent.html
+  name: BattleComponent
+  nameWithType: BattleComponent
+  fullName: MuseDashMirror.BattleComponent
+- uid: MuseDashMirror.Main
+  commentId: T:MuseDashMirror.Main
+  href: MuseDashMirror.Main.html
+  name: Main
+  nameWithType: Main
+  fullName: MuseDashMirror.Main
+- uid: MuseDashMirror.PatchEvents
+  commentId: T:MuseDashMirror.PatchEvents
+  href: MuseDashMirror.PatchEvents.html
+  name: PatchEvents
+  nameWithType: PatchEvents
+  fullName: MuseDashMirror.PatchEvents
+- uid: MuseDashMirror.PlayerData
+  commentId: T:MuseDashMirror.PlayerData
+  href: MuseDashMirror.PlayerData.html
+  name: PlayerData
+  nameWithType: PlayerData
+  fullName: MuseDashMirror.PlayerData
+- uid: MuseDashMirror.SceneInfo
+  commentId: T:MuseDashMirror.SceneInfo
+  href: MuseDashMirror.SceneInfo.html
+  name: SceneInfo
+  nameWithType: SceneInfo
+  fullName: MuseDashMirror.SceneInfo

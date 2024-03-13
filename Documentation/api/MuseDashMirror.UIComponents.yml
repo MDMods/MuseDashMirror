@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.UIComponents
+  commentId: N:MuseDashMirror.UIComponents
+  id: MuseDashMirror.UIComponents
+  children:
+  - MuseDashMirror.UIComponents.CanvasUtils
+  - MuseDashMirror.UIComponents.Colors
+  - MuseDashMirror.UIComponents.Fonts
+  - MuseDashMirror.UIComponents.TextGameObjectUtils
+  - MuseDashMirror.UIComponents.ToggleUtils
+  langs:
+  - csharp
+  - vb
+  name: MuseDashMirror.UIComponents
+  nameWithType: MuseDashMirror.UIComponents
+  fullName: MuseDashMirror.UIComponents
+  type: Namespace
+  assemblies:
+  - MuseDashMirror
+references:
+- uid: MuseDashMirror.UIComponents.CanvasUtils
+  commentId: T:MuseDashMirror.UIComponents.CanvasUtils
+  href: MuseDashMirror.UIComponents.CanvasUtils.html
+  name: CanvasUtils
+  nameWithType: CanvasUtils
+  fullName: MuseDashMirror.UIComponents.CanvasUtils
+- uid: MuseDashMirror.UIComponents.Colors
+  commentId: T:MuseDashMirror.UIComponents.Colors
+  href: MuseDashMirror.UIComponents.Colors.html
+  name: Colors
+  nameWithType: Colors
+  fullName: MuseDashMirror.UIComponents.Colors
+- uid: MuseDashMirror.UIComponents.Fonts
+  commentId: T:MuseDashMirror.UIComponents.Fonts
+  href: MuseDashMirror.UIComponents.Fonts.html
+  name: Fonts
+  nameWithType: Fonts
+  fullName: MuseDashMirror.UIComponents.Fonts
+- uid: MuseDashMirror.UIComponents.TextGameObjectUtils
+  commentId: T:MuseDashMirror.UIComponents.TextGameObjectUtils
+  href: MuseDashMirror.UIComponents.TextGameObjectUtils.html
+  name: TextGameObjectUtils
+  nameWithType: TextGameObjectUtils
+  fullName: MuseDashMirror.UIComponents.TextGameObjectUtils
+- uid: MuseDashMirror.UIComponents.ToggleUtils
+  commentId: T:MuseDashMirror.UIComponents.ToggleUtils
+  href: MuseDashMirror.UIComponents.ToggleUtils.html
+  name: ToggleUtils
+  nameWithType: ToggleUtils
+  fullName: MuseDashMirror.UIComponents.ToggleUtils

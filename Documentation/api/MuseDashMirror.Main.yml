@@ -1,0 +1,2383 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Main
+  commentId: T:MuseDashMirror.Main
+  id: Main
+  parent: MuseDashMirror
+  children:
+  - MuseDashMirror.Main.OnDeinitializeMelon
+  - MuseDashMirror.Main.OnInitializeMelon
+  - MuseDashMirror.Main.OnSceneWasLoaded(System.Int32,System.String)
+  - MuseDashMirror.Main.OnSceneWasUnloaded(System.Int32,System.String)
+  langs:
+  - csharp
+  - vb
+  name: Main
+  nameWithType: Main
+  fullName: MuseDashMirror.Main
+  type: Class
+  source:
+    remote:
+      path: src/MuseDashMirror/Main.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: Main
+    path: ../src/MuseDashMirror/Main.cs
+    startLine: 7
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Main class inherit from MelonMod
+  example: []
+  syntax:
+    content: 'public class Main : MelonMod'
+    content.vb: Public Class Main Inherits MelonMod
+  inheritance:
+  - System.Object
+  - MelonLoader.MelonBase
+  - MelonLoader.MelonTypeBase{MelonLoader.MelonMod}
+  - MelonLoader.MelonMod
+  inheritedMembers:
+  - MelonLoader.MelonMod.OnSceneWasInitialized(System.Int32,System.String)
+  - MelonLoader.MelonMod.OnLevelWasLoaded(System.Int32)
+  - MelonLoader.MelonMod.OnLevelWasInitialized(System.Int32)
+  - MelonLoader.MelonMod.InfoAttribute
+  - MelonLoader.MelonMod.GameAttributes
+  - MelonLoader.MelonTypeBase{MelonLoader.MelonMod}.ExecuteAll(MelonLoader.LemonAction{MelonLoader.MelonMod},System.Boolean,System.String)
+  - MelonLoader.MelonTypeBase{MelonLoader.MelonMod}.RegisteredMelons
+  - MelonLoader.MelonTypeBase{MelonLoader.MelonMod}.TypeName
+  - MelonLoader.MelonTypeBase{MelonLoader.MelonMod}.MelonTypeName
+  - MelonLoader.MelonBase.OnMelonRegistered
+  - MelonLoader.MelonBase.OnMelonUnregistered
+  - MelonLoader.MelonBase.OnMelonInitializing
+  - MelonLoader.MelonBase.OnRegister
+  - MelonLoader.MelonBase.OnUnregister
+  - MelonLoader.MelonBase.CreateWrapper``1(System.String,System.String,System.String,MelonLoader.MelonGameAttribute[],MelonLoader.MelonProcessAttribute[],System.Int32,System.Nullable{System.Drawing.Color},System.Nullable{System.Drawing.Color},System.String)
+  - MelonLoader.MelonBase.RegisterSorted``1(System.Collections.Generic.IEnumerable{{T}})
+  - MelonLoader.MelonBase.OnPreSupportModule
+  - MelonLoader.MelonBase.OnUpdate
+  - MelonLoader.MelonBase.OnFixedUpdate
+  - MelonLoader.MelonBase.OnLateUpdate
+  - MelonLoader.MelonBase.OnGUI
+  - MelonLoader.MelonBase.OnApplicationQuit
+  - MelonLoader.MelonBase.OnPreferencesSaved
+  - MelonLoader.MelonBase.OnPreferencesSaved(System.String)
+  - MelonLoader.MelonBase.OnPreferencesLoaded
+  - MelonLoader.MelonBase.OnPreferencesLoaded(System.String)
+  - MelonLoader.MelonBase.OnEarlyInitializeMelon
+  - MelonLoader.MelonBase.OnLateInitializeMelon
+  - MelonLoader.MelonBase.FindIncompatiblities(MelonLoader.MelonGameAttribute,System.String,System.String,System.String,System.String,MelonLoader.MelonPlatformAttribute.CompatiblePlatforms,MelonLoader.MelonPlatformDomainAttribute.CompatibleDomains)
+  - MelonLoader.MelonBase.FindIncompatiblitiesFromContext
+  - MelonLoader.MelonBase.PrintIncompatibilities(MelonLoader.MelonBase.Incompatibility[],MelonLoader.MelonBase)
+  - MelonLoader.MelonBase.Register
+  - MelonLoader.MelonBase.FindMelon(System.String,System.String)
+  - MelonLoader.MelonBase.Unregister(System.String,System.Boolean)
+  - MelonLoader.MelonBase.ExecuteAll(MelonLoader.LemonAction{MelonLoader.MelonBase},System.Boolean,System.String)
+  - MelonLoader.MelonBase.ExecuteList``1(MelonLoader.LemonAction{{T}},System.Collections.Generic.List{{T}},System.Boolean,System.String)
+  - MelonLoader.MelonBase.SendMessageAll(System.String,System.Object[])
+  - MelonLoader.MelonBase.SendMessage(System.String,System.Object[])
+  - MelonLoader.MelonBase.OnApplicationLateStart
+  - MelonLoader.MelonBase.OnApplicationStart
+  - MelonLoader.MelonBase.OnModSettingsApplied
+  - MelonLoader.MelonBase.MelonAssembly
+  - MelonLoader.MelonBase.Priority
+  - MelonLoader.MelonBase.ConsoleColor
+  - MelonLoader.MelonBase.AuthorConsoleColor
+  - MelonLoader.MelonBase.Info
+  - MelonLoader.MelonBase.AdditionalCredits
+  - MelonLoader.MelonBase.SupportedProcesses
+  - MelonLoader.MelonBase.Games
+  - MelonLoader.MelonBase.SupportedGameVersions
+  - MelonLoader.MelonBase.OptionalDependencies
+  - MelonLoader.MelonBase.SupportedPlatforms
+  - MelonLoader.MelonBase.SupportedDomain
+  - MelonLoader.MelonBase.SupportedMLVersion
+  - MelonLoader.MelonBase.SupportedMLBuild
+  - MelonLoader.MelonBase.HarmonyInstance
+  - MelonLoader.MelonBase.LoggerInstance
+  - MelonLoader.MelonBase.ID
+  - MelonLoader.MelonBase.Registered
+  - MelonLoader.MelonBase.harmonyInstance
+  - MelonLoader.MelonBase.Harmony
+  - MelonLoader.MelonBase.Assembly
+  - MelonLoader.MelonBase.HarmonyDontPatchAll
+  - MelonLoader.MelonBase.Hash
+  - MelonLoader.MelonBase.Location
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MuseDashMirror.Main.OnInitializeMelon
+  commentId: M:MuseDashMirror.Main.OnInitializeMelon
+  id: OnInitializeMelon
+  parent: MuseDashMirror.Main
+  langs:
+  - csharp
+  - vb
+  name: OnInitializeMelon()
+  nameWithType: Main.OnInitializeMelon()
+  fullName: MuseDashMirror.Main.OnInitializeMelon()
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Main.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: OnInitializeMelon
+    path: ../src/MuseDashMirror/Main.cs
+    startLine: 12
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Load Fonts
+  example: []
+  syntax:
+    content: public override void OnInitializeMelon()
+    content.vb: Public Overrides Sub OnInitializeMelon()
+  overridden: MelonLoader.MelonBase.OnInitializeMelon
+  overload: MuseDashMirror.Main.OnInitializeMelon*
+- uid: MuseDashMirror.Main.OnDeinitializeMelon
+  commentId: M:MuseDashMirror.Main.OnDeinitializeMelon
+  id: OnDeinitializeMelon
+  parent: MuseDashMirror.Main
+  langs:
+  - csharp
+  - vb
+  name: OnDeinitializeMelon()
+  nameWithType: Main.OnDeinitializeMelon()
+  fullName: MuseDashMirror.Main.OnDeinitializeMelon()
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Main.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: OnDeinitializeMelon
+    path: ../src/MuseDashMirror/Main.cs
+    startLine: 20
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Unload Fonts
+  example: []
+  syntax:
+    content: public override void OnDeinitializeMelon()
+    content.vb: Public Overrides Sub OnDeinitializeMelon()
+  overridden: MelonLoader.MelonBase.OnDeinitializeMelon
+  overload: MuseDashMirror.Main.OnDeinitializeMelon*
+- uid: MuseDashMirror.Main.OnSceneWasLoaded(System.Int32,System.String)
+  commentId: M:MuseDashMirror.Main.OnSceneWasLoaded(System.Int32,System.String)
+  id: OnSceneWasLoaded(System.Int32,System.String)
+  parent: MuseDashMirror.Main
+  langs:
+  - csharp
+  - vb
+  name: OnSceneWasLoaded(int, string)
+  nameWithType: Main.OnSceneWasLoaded(int, string)
+  fullName: MuseDashMirror.Main.OnSceneWasLoaded(int, string)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Main.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: OnSceneWasLoaded
+    path: ../src/MuseDashMirror/Main.cs
+    startLine: 28
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Scene load event
+  example: []
+  syntax:
+    content: public override void OnSceneWasLoaded(int buildIndex, string sceneName)
+    parameters:
+    - id: buildIndex
+      type: System.Int32
+    - id: sceneName
+      type: System.String
+    content.vb: Public Overrides Sub OnSceneWasLoaded(buildIndex As Integer, sceneName As String)
+  overridden: MelonLoader.MelonMod.OnSceneWasLoaded(System.Int32,System.String)
+  overload: MuseDashMirror.Main.OnSceneWasLoaded*
+  nameWithType.vb: Main.OnSceneWasLoaded(Integer, String)
+  fullName.vb: MuseDashMirror.Main.OnSceneWasLoaded(Integer, String)
+  name.vb: OnSceneWasLoaded(Integer, String)
+- uid: MuseDashMirror.Main.OnSceneWasUnloaded(System.Int32,System.String)
+  commentId: M:MuseDashMirror.Main.OnSceneWasUnloaded(System.Int32,System.String)
+  id: OnSceneWasUnloaded(System.Int32,System.String)
+  parent: MuseDashMirror.Main
+  langs:
+  - csharp
+  - vb
+  name: OnSceneWasUnloaded(int, string)
+  nameWithType: Main.OnSceneWasUnloaded(int, string)
+  fullName: MuseDashMirror.Main.OnSceneWasUnloaded(int, string)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Main.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: OnSceneWasUnloaded
+    path: ../src/MuseDashMirror/Main.cs
+    startLine: 58
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Scene unload event
+  example: []
+  syntax:
+    content: public override void OnSceneWasUnloaded(int buildIndex, string sceneName)
+    parameters:
+    - id: buildIndex
+      type: System.Int32
+    - id: sceneName
+      type: System.String
+    content.vb: Public Overrides Sub OnSceneWasUnloaded(buildIndex As Integer, sceneName As String)
+  overridden: MelonLoader.MelonMod.OnSceneWasUnloaded(System.Int32,System.String)
+  overload: MuseDashMirror.Main.OnSceneWasUnloaded*
+  nameWithType.vb: Main.OnSceneWasUnloaded(Integer, String)
+  fullName.vb: MuseDashMirror.Main.OnSceneWasUnloaded(Integer, String)
+  name.vb: OnSceneWasUnloaded(Integer, String)
+references:
+- uid: MuseDashMirror
+  commentId: N:MuseDashMirror
+  href: MuseDashMirror.html
+  name: MuseDashMirror
+  nameWithType: MuseDashMirror
+  fullName: MuseDashMirror
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MelonLoader.MelonBase
+  commentId: T:MelonLoader.MelonBase
+  parent: MelonLoader
+  isExternal: true
+  name: MelonBase
+  nameWithType: MelonBase
+  fullName: MelonLoader.MelonBase
+- uid: MelonLoader.MelonTypeBase{MelonLoader.MelonMod}
+  commentId: T:MelonLoader.MelonTypeBase{MelonLoader.MelonMod}
+  parent: MelonLoader
+  definition: MelonLoader.MelonTypeBase`1
+  name: MelonTypeBase<MelonMod>
+  nameWithType: MelonTypeBase<MelonMod>
+  fullName: MelonLoader.MelonTypeBase<MelonLoader.MelonMod>
+  nameWithType.vb: MelonTypeBase(Of MelonMod)
+  fullName.vb: MelonLoader.MelonTypeBase(Of MelonLoader.MelonMod)
+  name.vb: MelonTypeBase(Of MelonMod)
+  spec.csharp:
+  - uid: MelonLoader.MelonTypeBase`1
+    name: MelonTypeBase
+    isExternal: true
+  - name: <
+  - uid: MelonLoader.MelonMod
+    name: MelonMod
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: MelonLoader.MelonTypeBase`1
+    name: MelonTypeBase
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MelonLoader.MelonMod
+    name: MelonMod
+    isExternal: true
+  - name: )
+- uid: MelonLoader.MelonMod
+  commentId: T:MelonLoader.MelonMod
+  parent: MelonLoader
+  isExternal: true
+  name: MelonMod
+  nameWithType: MelonMod
+  fullName: MelonLoader.MelonMod
+- uid: MelonLoader.MelonMod.OnSceneWasInitialized(System.Int32,System.String)
+  commentId: M:MelonLoader.MelonMod.OnSceneWasInitialized(System.Int32,System.String)
+  parent: MelonLoader.MelonMod
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnSceneWasInitialized(int, string)
+  nameWithType: MelonMod.OnSceneWasInitialized(int, string)
+  fullName: MelonLoader.MelonMod.OnSceneWasInitialized(int, string)
+  nameWithType.vb: MelonMod.OnSceneWasInitialized(Integer, String)
+  fullName.vb: MelonLoader.MelonMod.OnSceneWasInitialized(Integer, String)
+  name.vb: OnSceneWasInitialized(Integer, String)
+  spec.csharp:
+  - uid: MelonLoader.MelonMod.OnSceneWasInitialized(System.Int32,System.String)
+    name: OnSceneWasInitialized
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonMod.OnSceneWasInitialized(System.Int32,System.String)
+    name: OnSceneWasInitialized
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MelonLoader.MelonMod.OnLevelWasLoaded(System.Int32)
+  commentId: M:MelonLoader.MelonMod.OnLevelWasLoaded(System.Int32)
+  parent: MelonLoader.MelonMod
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnLevelWasLoaded(int)
+  nameWithType: MelonMod.OnLevelWasLoaded(int)
+  fullName: MelonLoader.MelonMod.OnLevelWasLoaded(int)
+  nameWithType.vb: MelonMod.OnLevelWasLoaded(Integer)
+  fullName.vb: MelonLoader.MelonMod.OnLevelWasLoaded(Integer)
+  name.vb: OnLevelWasLoaded(Integer)
+  spec.csharp:
+  - uid: MelonLoader.MelonMod.OnLevelWasLoaded(System.Int32)
+    name: OnLevelWasLoaded
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonMod.OnLevelWasLoaded(System.Int32)
+    name: OnLevelWasLoaded
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MelonLoader.MelonMod.OnLevelWasInitialized(System.Int32)
+  commentId: M:MelonLoader.MelonMod.OnLevelWasInitialized(System.Int32)
+  parent: MelonLoader.MelonMod
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnLevelWasInitialized(int)
+  nameWithType: MelonMod.OnLevelWasInitialized(int)
+  fullName: MelonLoader.MelonMod.OnLevelWasInitialized(int)
+  nameWithType.vb: MelonMod.OnLevelWasInitialized(Integer)
+  fullName.vb: MelonLoader.MelonMod.OnLevelWasInitialized(Integer)
+  name.vb: OnLevelWasInitialized(Integer)
+  spec.csharp:
+  - uid: MelonLoader.MelonMod.OnLevelWasInitialized(System.Int32)
+    name: OnLevelWasInitialized
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonMod.OnLevelWasInitialized(System.Int32)
+    name: OnLevelWasInitialized
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MelonLoader.MelonMod.InfoAttribute
+  commentId: P:MelonLoader.MelonMod.InfoAttribute
+  parent: MelonLoader.MelonMod
+  isExternal: true
+  name: InfoAttribute
+  nameWithType: MelonMod.InfoAttribute
+  fullName: MelonLoader.MelonMod.InfoAttribute
+- uid: MelonLoader.MelonMod.GameAttributes
+  commentId: P:MelonLoader.MelonMod.GameAttributes
+  parent: MelonLoader.MelonMod
+  isExternal: true
+  name: GameAttributes
+  nameWithType: MelonMod.GameAttributes
+  fullName: MelonLoader.MelonMod.GameAttributes
+- uid: MelonLoader.MelonTypeBase{MelonLoader.MelonMod}.ExecuteAll(MelonLoader.LemonAction{MelonLoader.MelonMod},System.Boolean,System.String)
+  commentId: M:MelonLoader.MelonTypeBase{MelonLoader.MelonMod}.ExecuteAll(MelonLoader.LemonAction{MelonLoader.MelonMod},System.Boolean,System.String)
+  parent: MelonLoader.MelonTypeBase{MelonLoader.MelonMod}
+  definition: MelonLoader.MelonTypeBase`1.ExecuteAll(MelonLoader.LemonAction{`0},System.Boolean,System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: ExecuteAll(LemonAction<MelonMod>, bool, string)
+  nameWithType: MelonTypeBase<MelonMod>.ExecuteAll(LemonAction<MelonMod>, bool, string)
+  fullName: MelonLoader.MelonTypeBase<MelonLoader.MelonMod>.ExecuteAll(MelonLoader.LemonAction<MelonLoader.MelonMod>, bool, string)
+  nameWithType.vb: MelonTypeBase(Of MelonMod).ExecuteAll(LemonAction(Of MelonMod), Boolean, String)
+  fullName.vb: MelonLoader.MelonTypeBase(Of MelonLoader.MelonMod).ExecuteAll(MelonLoader.LemonAction(Of MelonLoader.MelonMod), Boolean, String)
+  name.vb: ExecuteAll(LemonAction(Of MelonMod), Boolean, String)
+  spec.csharp:
+  - uid: MelonLoader.MelonTypeBase{MelonLoader.MelonMod}.ExecuteAll(MelonLoader.LemonAction{MelonLoader.MelonMod},System.Boolean,System.String)
+    name: ExecuteAll
+    isExternal: true
+  - name: (
+  - uid: MelonLoader.LemonAction`1
+    name: LemonAction
+    isExternal: true
+  - name: <
+  - uid: MelonLoader.MelonMod
+    name: MelonMod
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonTypeBase{MelonLoader.MelonMod}.ExecuteAll(MelonLoader.LemonAction{MelonLoader.MelonMod},System.Boolean,System.String)
+    name: ExecuteAll
+    isExternal: true
+  - name: (
+  - uid: MelonLoader.LemonAction`1
+    name: LemonAction
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MelonLoader.MelonMod
+    name: MelonMod
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MelonLoader.MelonTypeBase{MelonLoader.MelonMod}.RegisteredMelons
+  commentId: P:MelonLoader.MelonTypeBase{MelonLoader.MelonMod}.RegisteredMelons
+  parent: MelonLoader.MelonTypeBase{MelonLoader.MelonMod}
+  definition: MelonLoader.MelonTypeBase`1.RegisteredMelons
+  name: RegisteredMelons
+  nameWithType: MelonTypeBase<MelonMod>.RegisteredMelons
+  fullName: MelonLoader.MelonTypeBase<MelonLoader.MelonMod>.RegisteredMelons
+  nameWithType.vb: MelonTypeBase(Of MelonMod).RegisteredMelons
+  fullName.vb: MelonLoader.MelonTypeBase(Of MelonLoader.MelonMod).RegisteredMelons
+- uid: MelonLoader.MelonTypeBase{MelonLoader.MelonMod}.TypeName
+  commentId: P:MelonLoader.MelonTypeBase{MelonLoader.MelonMod}.TypeName
+  parent: MelonLoader.MelonTypeBase{MelonLoader.MelonMod}
+  definition: MelonLoader.MelonTypeBase`1.TypeName
+  name: TypeName
+  nameWithType: MelonTypeBase<MelonMod>.TypeName
+  fullName: MelonLoader.MelonTypeBase<MelonLoader.MelonMod>.TypeName
+  nameWithType.vb: MelonTypeBase(Of MelonMod).TypeName
+  fullName.vb: MelonLoader.MelonTypeBase(Of MelonLoader.MelonMod).TypeName
+- uid: MelonLoader.MelonTypeBase{MelonLoader.MelonMod}.MelonTypeName
+  commentId: P:MelonLoader.MelonTypeBase{MelonLoader.MelonMod}.MelonTypeName
+  parent: MelonLoader.MelonTypeBase{MelonLoader.MelonMod}
+  definition: MelonLoader.MelonTypeBase`1.MelonTypeName
+  name: MelonTypeName
+  nameWithType: MelonTypeBase<MelonMod>.MelonTypeName
+  fullName: MelonLoader.MelonTypeBase<MelonLoader.MelonMod>.MelonTypeName
+  nameWithType.vb: MelonTypeBase(Of MelonMod).MelonTypeName
+  fullName.vb: MelonLoader.MelonTypeBase(Of MelonLoader.MelonMod).MelonTypeName
+- uid: MelonLoader.MelonBase.OnMelonRegistered
+  commentId: F:MelonLoader.MelonBase.OnMelonRegistered
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnMelonRegistered
+  nameWithType: MelonBase.OnMelonRegistered
+  fullName: MelonLoader.MelonBase.OnMelonRegistered
+- uid: MelonLoader.MelonBase.OnMelonUnregistered
+  commentId: F:MelonLoader.MelonBase.OnMelonUnregistered
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnMelonUnregistered
+  nameWithType: MelonBase.OnMelonUnregistered
+  fullName: MelonLoader.MelonBase.OnMelonUnregistered
+- uid: MelonLoader.MelonBase.OnMelonInitializing
+  commentId: F:MelonLoader.MelonBase.OnMelonInitializing
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnMelonInitializing
+  nameWithType: MelonBase.OnMelonInitializing
+  fullName: MelonLoader.MelonBase.OnMelonInitializing
+- uid: MelonLoader.MelonBase.OnRegister
+  commentId: F:MelonLoader.MelonBase.OnRegister
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnRegister
+  nameWithType: MelonBase.OnRegister
+  fullName: MelonLoader.MelonBase.OnRegister
+- uid: MelonLoader.MelonBase.OnUnregister
+  commentId: F:MelonLoader.MelonBase.OnUnregister
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnUnregister
+  nameWithType: MelonBase.OnUnregister
+  fullName: MelonLoader.MelonBase.OnUnregister
+- uid: MelonLoader.MelonBase.CreateWrapper``1(System.String,System.String,System.String,MelonLoader.MelonGameAttribute[],MelonLoader.MelonProcessAttribute[],System.Int32,System.Nullable{System.Drawing.Color},System.Nullable{System.Drawing.Color},System.String)
+  commentId: M:MelonLoader.MelonBase.CreateWrapper``1(System.String,System.String,System.String,MelonLoader.MelonGameAttribute[],MelonLoader.MelonProcessAttribute[],System.Int32,System.Nullable{System.Drawing.Color},System.Nullable{System.Drawing.Color},System.String)
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: CreateWrapper<T>(string, string, string, MelonGameAttribute[], MelonProcessAttribute[], int, Color?, Color?, string)
+  nameWithType: MelonBase.CreateWrapper<T>(string, string, string, MelonGameAttribute[], MelonProcessAttribute[], int, Color?, Color?, string)
+  fullName: MelonLoader.MelonBase.CreateWrapper<T>(string, string, string, MelonLoader.MelonGameAttribute[], MelonLoader.MelonProcessAttribute[], int, System.Drawing.Color?, System.Drawing.Color?, string)
+  nameWithType.vb: MelonBase.CreateWrapper(Of T)(String, String, String, MelonGameAttribute(), MelonProcessAttribute(), Integer, Color?, Color?, String)
+  fullName.vb: MelonLoader.MelonBase.CreateWrapper(Of T)(String, String, String, MelonLoader.MelonGameAttribute(), MelonLoader.MelonProcessAttribute(), Integer, System.Drawing.Color?, System.Drawing.Color?, String)
+  name.vb: CreateWrapper(Of T)(String, String, String, MelonGameAttribute(), MelonProcessAttribute(), Integer, Color?, Color?, String)
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.CreateWrapper``1(System.String,System.String,System.String,MelonLoader.MelonGameAttribute[],MelonLoader.MelonProcessAttribute[],System.Int32,System.Nullable{System.Drawing.Color},System.Nullable{System.Drawing.Color},System.String)
+    name: CreateWrapper
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: MelonLoader.MelonGameAttribute
+    name: MelonGameAttribute
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: MelonLoader.MelonProcessAttribute
+    name: MelonProcessAttribute
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.CreateWrapper``1(System.String,System.String,System.String,MelonLoader.MelonGameAttribute[],MelonLoader.MelonProcessAttribute[],System.Int32,System.Nullable{System.Drawing.Color},System.Nullable{System.Drawing.Color},System.String)
+    name: CreateWrapper
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: MelonLoader.MelonGameAttribute
+    name: MelonGameAttribute
+    isExternal: true
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: MelonLoader.MelonProcessAttribute
+    name: MelonProcessAttribute
+    isExternal: true
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Drawing.Color
+    name: Color
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MelonLoader.MelonBase.RegisterSorted``1(System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:MelonLoader.MelonBase.RegisterSorted``1(System.Collections.Generic.IEnumerable{``0})
+  parent: MelonLoader.MelonBase
+  definition: MelonLoader.MelonBase.RegisterSorted``1(System.Collections.Generic.IEnumerable{``0})
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: RegisterSorted<T>(IEnumerable<T>)
+  nameWithType: MelonBase.RegisterSorted<T>(IEnumerable<T>)
+  fullName: MelonLoader.MelonBase.RegisterSorted<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: MelonBase.RegisterSorted(Of T)(IEnumerable(Of T))
+  fullName.vb: MelonLoader.MelonBase.RegisterSorted(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: RegisterSorted(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.RegisterSorted``1(System.Collections.Generic.IEnumerable{``0})
+    name: RegisterSorted
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.RegisterSorted``1(System.Collections.Generic.IEnumerable{``0})
+    name: RegisterSorted
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: MelonLoader.MelonBase.OnPreSupportModule
+  commentId: M:MelonLoader.MelonBase.OnPreSupportModule
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnPreSupportModule()
+  nameWithType: MelonBase.OnPreSupportModule()
+  fullName: MelonLoader.MelonBase.OnPreSupportModule()
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.OnPreSupportModule
+    name: OnPreSupportModule
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.OnPreSupportModule
+    name: OnPreSupportModule
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MelonLoader.MelonBase.OnUpdate
+  commentId: M:MelonLoader.MelonBase.OnUpdate
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnUpdate()
+  nameWithType: MelonBase.OnUpdate()
+  fullName: MelonLoader.MelonBase.OnUpdate()
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.OnUpdate
+    name: OnUpdate
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.OnUpdate
+    name: OnUpdate
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MelonLoader.MelonBase.OnFixedUpdate
+  commentId: M:MelonLoader.MelonBase.OnFixedUpdate
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnFixedUpdate()
+  nameWithType: MelonBase.OnFixedUpdate()
+  fullName: MelonLoader.MelonBase.OnFixedUpdate()
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.OnFixedUpdate
+    name: OnFixedUpdate
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.OnFixedUpdate
+    name: OnFixedUpdate
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MelonLoader.MelonBase.OnLateUpdate
+  commentId: M:MelonLoader.MelonBase.OnLateUpdate
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnLateUpdate()
+  nameWithType: MelonBase.OnLateUpdate()
+  fullName: MelonLoader.MelonBase.OnLateUpdate()
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.OnLateUpdate
+    name: OnLateUpdate
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.OnLateUpdate
+    name: OnLateUpdate
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MelonLoader.MelonBase.OnGUI
+  commentId: M:MelonLoader.MelonBase.OnGUI
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnGUI()
+  nameWithType: MelonBase.OnGUI()
+  fullName: MelonLoader.MelonBase.OnGUI()
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.OnGUI
+    name: OnGUI
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.OnGUI
+    name: OnGUI
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MelonLoader.MelonBase.OnApplicationQuit
+  commentId: M:MelonLoader.MelonBase.OnApplicationQuit
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnApplicationQuit()
+  nameWithType: MelonBase.OnApplicationQuit()
+  fullName: MelonLoader.MelonBase.OnApplicationQuit()
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.OnApplicationQuit
+    name: OnApplicationQuit
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.OnApplicationQuit
+    name: OnApplicationQuit
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MelonLoader.MelonBase.OnPreferencesSaved
+  commentId: M:MelonLoader.MelonBase.OnPreferencesSaved
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnPreferencesSaved()
+  nameWithType: MelonBase.OnPreferencesSaved()
+  fullName: MelonLoader.MelonBase.OnPreferencesSaved()
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.OnPreferencesSaved
+    name: OnPreferencesSaved
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.OnPreferencesSaved
+    name: OnPreferencesSaved
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MelonLoader.MelonBase.OnPreferencesSaved(System.String)
+  commentId: M:MelonLoader.MelonBase.OnPreferencesSaved(System.String)
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: OnPreferencesSaved(string)
+  nameWithType: MelonBase.OnPreferencesSaved(string)
+  fullName: MelonLoader.MelonBase.OnPreferencesSaved(string)
+  nameWithType.vb: MelonBase.OnPreferencesSaved(String)
+  fullName.vb: MelonLoader.MelonBase.OnPreferencesSaved(String)
+  name.vb: OnPreferencesSaved(String)
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.OnPreferencesSaved(System.String)
+    name: OnPreferencesSaved
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.OnPreferencesSaved(System.String)
+    name: OnPreferencesSaved
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MelonLoader.MelonBase.OnPreferencesLoaded
+  commentId: M:MelonLoader.MelonBase.OnPreferencesLoaded
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnPreferencesLoaded()
+  nameWithType: MelonBase.OnPreferencesLoaded()
+  fullName: MelonLoader.MelonBase.OnPreferencesLoaded()
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.OnPreferencesLoaded
+    name: OnPreferencesLoaded
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.OnPreferencesLoaded
+    name: OnPreferencesLoaded
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MelonLoader.MelonBase.OnPreferencesLoaded(System.String)
+  commentId: M:MelonLoader.MelonBase.OnPreferencesLoaded(System.String)
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: OnPreferencesLoaded(string)
+  nameWithType: MelonBase.OnPreferencesLoaded(string)
+  fullName: MelonLoader.MelonBase.OnPreferencesLoaded(string)
+  nameWithType.vb: MelonBase.OnPreferencesLoaded(String)
+  fullName.vb: MelonLoader.MelonBase.OnPreferencesLoaded(String)
+  name.vb: OnPreferencesLoaded(String)
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.OnPreferencesLoaded(System.String)
+    name: OnPreferencesLoaded
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.OnPreferencesLoaded(System.String)
+    name: OnPreferencesLoaded
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MelonLoader.MelonBase.OnEarlyInitializeMelon
+  commentId: M:MelonLoader.MelonBase.OnEarlyInitializeMelon
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnEarlyInitializeMelon()
+  nameWithType: MelonBase.OnEarlyInitializeMelon()
+  fullName: MelonLoader.MelonBase.OnEarlyInitializeMelon()
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.OnEarlyInitializeMelon
+    name: OnEarlyInitializeMelon
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.OnEarlyInitializeMelon
+    name: OnEarlyInitializeMelon
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MelonLoader.MelonBase.OnLateInitializeMelon
+  commentId: M:MelonLoader.MelonBase.OnLateInitializeMelon
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnLateInitializeMelon()
+  nameWithType: MelonBase.OnLateInitializeMelon()
+  fullName: MelonLoader.MelonBase.OnLateInitializeMelon()
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.OnLateInitializeMelon
+    name: OnLateInitializeMelon
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.OnLateInitializeMelon
+    name: OnLateInitializeMelon
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MelonLoader.MelonBase.FindIncompatiblities(MelonLoader.MelonGameAttribute,System.String,System.String,System.String,System.String,MelonLoader.MelonPlatformAttribute.CompatiblePlatforms,MelonLoader.MelonPlatformDomainAttribute.CompatibleDomains)
+  commentId: M:MelonLoader.MelonBase.FindIncompatiblities(MelonLoader.MelonGameAttribute,System.String,System.String,System.String,System.String,MelonLoader.MelonPlatformAttribute.CompatiblePlatforms,MelonLoader.MelonPlatformDomainAttribute.CompatibleDomains)
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: FindIncompatiblities(MelonGameAttribute, string, string, string, string, CompatiblePlatforms, CompatibleDomains)
+  nameWithType: MelonBase.FindIncompatiblities(MelonGameAttribute, string, string, string, string, MelonPlatformAttribute.CompatiblePlatforms, MelonPlatformDomainAttribute.CompatibleDomains)
+  fullName: MelonLoader.MelonBase.FindIncompatiblities(MelonLoader.MelonGameAttribute, string, string, string, string, MelonLoader.MelonPlatformAttribute.CompatiblePlatforms, MelonLoader.MelonPlatformDomainAttribute.CompatibleDomains)
+  nameWithType.vb: MelonBase.FindIncompatiblities(MelonGameAttribute, String, String, String, String, MelonPlatformAttribute.CompatiblePlatforms, MelonPlatformDomainAttribute.CompatibleDomains)
+  fullName.vb: MelonLoader.MelonBase.FindIncompatiblities(MelonLoader.MelonGameAttribute, String, String, String, String, MelonLoader.MelonPlatformAttribute.CompatiblePlatforms, MelonLoader.MelonPlatformDomainAttribute.CompatibleDomains)
+  name.vb: FindIncompatiblities(MelonGameAttribute, String, String, String, String, CompatiblePlatforms, CompatibleDomains)
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.FindIncompatiblities(MelonLoader.MelonGameAttribute,System.String,System.String,System.String,System.String,MelonLoader.MelonPlatformAttribute.CompatiblePlatforms,MelonLoader.MelonPlatformDomainAttribute.CompatibleDomains)
+    name: FindIncompatiblities
+    isExternal: true
+  - name: (
+  - uid: MelonLoader.MelonGameAttribute
+    name: MelonGameAttribute
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: MelonLoader.MelonPlatformAttribute.CompatiblePlatforms
+    name: CompatiblePlatforms
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: MelonLoader.MelonPlatformDomainAttribute.CompatibleDomains
+    name: CompatibleDomains
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.FindIncompatiblities(MelonLoader.MelonGameAttribute,System.String,System.String,System.String,System.String,MelonLoader.MelonPlatformAttribute.CompatiblePlatforms,MelonLoader.MelonPlatformDomainAttribute.CompatibleDomains)
+    name: FindIncompatiblities
+    isExternal: true
+  - name: (
+  - uid: MelonLoader.MelonGameAttribute
+    name: MelonGameAttribute
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: MelonLoader.MelonPlatformAttribute.CompatiblePlatforms
+    name: CompatiblePlatforms
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: MelonLoader.MelonPlatformDomainAttribute.CompatibleDomains
+    name: CompatibleDomains
+    isExternal: true
+  - name: )
+- uid: MelonLoader.MelonBase.FindIncompatiblitiesFromContext
+  commentId: M:MelonLoader.MelonBase.FindIncompatiblitiesFromContext
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: FindIncompatiblitiesFromContext()
+  nameWithType: MelonBase.FindIncompatiblitiesFromContext()
+  fullName: MelonLoader.MelonBase.FindIncompatiblitiesFromContext()
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.FindIncompatiblitiesFromContext
+    name: FindIncompatiblitiesFromContext
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.FindIncompatiblitiesFromContext
+    name: FindIncompatiblitiesFromContext
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MelonLoader.MelonBase.PrintIncompatibilities(MelonLoader.MelonBase.Incompatibility[],MelonLoader.MelonBase)
+  commentId: M:MelonLoader.MelonBase.PrintIncompatibilities(MelonLoader.MelonBase.Incompatibility[],MelonLoader.MelonBase)
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: PrintIncompatibilities(Incompatibility[], MelonBase)
+  nameWithType: MelonBase.PrintIncompatibilities(MelonBase.Incompatibility[], MelonBase)
+  fullName: MelonLoader.MelonBase.PrintIncompatibilities(MelonLoader.MelonBase.Incompatibility[], MelonLoader.MelonBase)
+  nameWithType.vb: MelonBase.PrintIncompatibilities(MelonBase.Incompatibility(), MelonBase)
+  fullName.vb: MelonLoader.MelonBase.PrintIncompatibilities(MelonLoader.MelonBase.Incompatibility(), MelonLoader.MelonBase)
+  name.vb: PrintIncompatibilities(Incompatibility(), MelonBase)
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.PrintIncompatibilities(MelonLoader.MelonBase.Incompatibility[],MelonLoader.MelonBase)
+    name: PrintIncompatibilities
+    isExternal: true
+  - name: (
+  - uid: MelonLoader.MelonBase.Incompatibility
+    name: Incompatibility
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: MelonLoader.MelonBase
+    name: MelonBase
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.PrintIncompatibilities(MelonLoader.MelonBase.Incompatibility[],MelonLoader.MelonBase)
+    name: PrintIncompatibilities
+    isExternal: true
+  - name: (
+  - uid: MelonLoader.MelonBase.Incompatibility
+    name: Incompatibility
+    isExternal: true
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: MelonLoader.MelonBase
+    name: MelonBase
+    isExternal: true
+  - name: )
+- uid: MelonLoader.MelonBase.Register
+  commentId: M:MelonLoader.MelonBase.Register
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: Register()
+  nameWithType: MelonBase.Register()
+  fullName: MelonLoader.MelonBase.Register()
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.Register
+    name: Register
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.Register
+    name: Register
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MelonLoader.MelonBase.FindMelon(System.String,System.String)
+  commentId: M:MelonLoader.MelonBase.FindMelon(System.String,System.String)
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: FindMelon(string, string)
+  nameWithType: MelonBase.FindMelon(string, string)
+  fullName: MelonLoader.MelonBase.FindMelon(string, string)
+  nameWithType.vb: MelonBase.FindMelon(String, String)
+  fullName.vb: MelonLoader.MelonBase.FindMelon(String, String)
+  name.vb: FindMelon(String, String)
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.FindMelon(System.String,System.String)
+    name: FindMelon
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.FindMelon(System.String,System.String)
+    name: FindMelon
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MelonLoader.MelonBase.Unregister(System.String,System.Boolean)
+  commentId: M:MelonLoader.MelonBase.Unregister(System.String,System.Boolean)
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Unregister(string, bool)
+  nameWithType: MelonBase.Unregister(string, bool)
+  fullName: MelonLoader.MelonBase.Unregister(string, bool)
+  nameWithType.vb: MelonBase.Unregister(String, Boolean)
+  fullName.vb: MelonLoader.MelonBase.Unregister(String, Boolean)
+  name.vb: Unregister(String, Boolean)
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.Unregister(System.String,System.Boolean)
+    name: Unregister
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.Unregister(System.String,System.Boolean)
+    name: Unregister
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: MelonLoader.MelonBase.ExecuteAll(MelonLoader.LemonAction{MelonLoader.MelonBase},System.Boolean,System.String)
+  commentId: M:MelonLoader.MelonBase.ExecuteAll(MelonLoader.LemonAction{MelonLoader.MelonBase},System.Boolean,System.String)
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: ExecuteAll(LemonAction<MelonBase>, bool, string)
+  nameWithType: MelonBase.ExecuteAll(LemonAction<MelonBase>, bool, string)
+  fullName: MelonLoader.MelonBase.ExecuteAll(MelonLoader.LemonAction<MelonLoader.MelonBase>, bool, string)
+  nameWithType.vb: MelonBase.ExecuteAll(LemonAction(Of MelonBase), Boolean, String)
+  fullName.vb: MelonLoader.MelonBase.ExecuteAll(MelonLoader.LemonAction(Of MelonLoader.MelonBase), Boolean, String)
+  name.vb: ExecuteAll(LemonAction(Of MelonBase), Boolean, String)
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.ExecuteAll(MelonLoader.LemonAction{MelonLoader.MelonBase},System.Boolean,System.String)
+    name: ExecuteAll
+    isExternal: true
+  - name: (
+  - uid: MelonLoader.LemonAction`1
+    name: LemonAction
+    isExternal: true
+  - name: <
+  - uid: MelonLoader.MelonBase
+    name: MelonBase
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.ExecuteAll(MelonLoader.LemonAction{MelonLoader.MelonBase},System.Boolean,System.String)
+    name: ExecuteAll
+    isExternal: true
+  - name: (
+  - uid: MelonLoader.LemonAction`1
+    name: LemonAction
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MelonLoader.MelonBase
+    name: MelonBase
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MelonLoader.MelonBase.ExecuteList``1(MelonLoader.LemonAction{{T}},System.Collections.Generic.List{{T}},System.Boolean,System.String)
+  commentId: M:MelonLoader.MelonBase.ExecuteList``1(MelonLoader.LemonAction{``0},System.Collections.Generic.List{``0},System.Boolean,System.String)
+  parent: MelonLoader.MelonBase
+  definition: MelonLoader.MelonBase.ExecuteList``1(MelonLoader.LemonAction{``0},System.Collections.Generic.List{``0},System.Boolean,System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: ExecuteList<T>(LemonAction<T>, List<T>, bool, string)
+  nameWithType: MelonBase.ExecuteList<T>(LemonAction<T>, List<T>, bool, string)
+  fullName: MelonLoader.MelonBase.ExecuteList<T>(MelonLoader.LemonAction<T>, System.Collections.Generic.List<T>, bool, string)
+  nameWithType.vb: MelonBase.ExecuteList(Of T)(LemonAction(Of T), List(Of T), Boolean, String)
+  fullName.vb: MelonLoader.MelonBase.ExecuteList(Of T)(MelonLoader.LemonAction(Of T), System.Collections.Generic.List(Of T), Boolean, String)
+  name.vb: ExecuteList(Of T)(LemonAction(Of T), List(Of T), Boolean, String)
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.ExecuteList``1(MelonLoader.LemonAction{``0},System.Collections.Generic.List{``0},System.Boolean,System.String)
+    name: ExecuteList
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: MelonLoader.LemonAction`1
+    name: LemonAction
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.ExecuteList``1(MelonLoader.LemonAction{``0},System.Collections.Generic.List{``0},System.Boolean,System.String)
+    name: ExecuteList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: MelonLoader.LemonAction`1
+    name: LemonAction
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MelonLoader.MelonBase.SendMessageAll(System.String,System.Object[])
+  commentId: M:MelonLoader.MelonBase.SendMessageAll(System.String,System.Object[])
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SendMessageAll(string, params object[])
+  nameWithType: MelonBase.SendMessageAll(string, params object[])
+  fullName: MelonLoader.MelonBase.SendMessageAll(string, params object[])
+  nameWithType.vb: MelonBase.SendMessageAll(String, ParamArray Object())
+  fullName.vb: MelonLoader.MelonBase.SendMessageAll(String, ParamArray Object())
+  name.vb: SendMessageAll(String, ParamArray Object())
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.SendMessageAll(System.String,System.Object[])
+    name: SendMessageAll
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.SendMessageAll(System.String,System.Object[])
+    name: SendMessageAll
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: MelonLoader.MelonBase.SendMessage(System.String,System.Object[])
+  commentId: M:MelonLoader.MelonBase.SendMessage(System.String,System.Object[])
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SendMessage(string, params object[])
+  nameWithType: MelonBase.SendMessage(string, params object[])
+  fullName: MelonLoader.MelonBase.SendMessage(string, params object[])
+  nameWithType.vb: MelonBase.SendMessage(String, ParamArray Object())
+  fullName.vb: MelonLoader.MelonBase.SendMessage(String, ParamArray Object())
+  name.vb: SendMessage(String, ParamArray Object())
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.SendMessage(System.String,System.Object[])
+    name: SendMessage
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.SendMessage(System.String,System.Object[])
+    name: SendMessage
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: MelonLoader.MelonBase.OnApplicationLateStart
+  commentId: M:MelonLoader.MelonBase.OnApplicationLateStart
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnApplicationLateStart()
+  nameWithType: MelonBase.OnApplicationLateStart()
+  fullName: MelonLoader.MelonBase.OnApplicationLateStart()
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.OnApplicationLateStart
+    name: OnApplicationLateStart
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.OnApplicationLateStart
+    name: OnApplicationLateStart
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MelonLoader.MelonBase.OnApplicationStart
+  commentId: M:MelonLoader.MelonBase.OnApplicationStart
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnApplicationStart()
+  nameWithType: MelonBase.OnApplicationStart()
+  fullName: MelonLoader.MelonBase.OnApplicationStart()
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.OnApplicationStart
+    name: OnApplicationStart
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.OnApplicationStart
+    name: OnApplicationStart
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MelonLoader.MelonBase.OnModSettingsApplied
+  commentId: M:MelonLoader.MelonBase.OnModSettingsApplied
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnModSettingsApplied()
+  nameWithType: MelonBase.OnModSettingsApplied()
+  fullName: MelonLoader.MelonBase.OnModSettingsApplied()
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.OnModSettingsApplied
+    name: OnModSettingsApplied
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.OnModSettingsApplied
+    name: OnModSettingsApplied
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MelonLoader.MelonBase.MelonAssembly
+  commentId: P:MelonLoader.MelonBase.MelonAssembly
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: MelonAssembly
+  nameWithType: MelonBase.MelonAssembly
+  fullName: MelonLoader.MelonBase.MelonAssembly
+- uid: MelonLoader.MelonBase.Priority
+  commentId: P:MelonLoader.MelonBase.Priority
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: Priority
+  nameWithType: MelonBase.Priority
+  fullName: MelonLoader.MelonBase.Priority
+- uid: MelonLoader.MelonBase.ConsoleColor
+  commentId: P:MelonLoader.MelonBase.ConsoleColor
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: ConsoleColor
+  nameWithType: MelonBase.ConsoleColor
+  fullName: MelonLoader.MelonBase.ConsoleColor
+- uid: MelonLoader.MelonBase.AuthorConsoleColor
+  commentId: P:MelonLoader.MelonBase.AuthorConsoleColor
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: AuthorConsoleColor
+  nameWithType: MelonBase.AuthorConsoleColor
+  fullName: MelonLoader.MelonBase.AuthorConsoleColor
+- uid: MelonLoader.MelonBase.Info
+  commentId: P:MelonLoader.MelonBase.Info
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: Info
+  nameWithType: MelonBase.Info
+  fullName: MelonLoader.MelonBase.Info
+- uid: MelonLoader.MelonBase.AdditionalCredits
+  commentId: P:MelonLoader.MelonBase.AdditionalCredits
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: AdditionalCredits
+  nameWithType: MelonBase.AdditionalCredits
+  fullName: MelonLoader.MelonBase.AdditionalCredits
+- uid: MelonLoader.MelonBase.SupportedProcesses
+  commentId: P:MelonLoader.MelonBase.SupportedProcesses
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: SupportedProcesses
+  nameWithType: MelonBase.SupportedProcesses
+  fullName: MelonLoader.MelonBase.SupportedProcesses
+- uid: MelonLoader.MelonBase.Games
+  commentId: P:MelonLoader.MelonBase.Games
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: Games
+  nameWithType: MelonBase.Games
+  fullName: MelonLoader.MelonBase.Games
+- uid: MelonLoader.MelonBase.SupportedGameVersions
+  commentId: P:MelonLoader.MelonBase.SupportedGameVersions
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: SupportedGameVersions
+  nameWithType: MelonBase.SupportedGameVersions
+  fullName: MelonLoader.MelonBase.SupportedGameVersions
+- uid: MelonLoader.MelonBase.OptionalDependencies
+  commentId: P:MelonLoader.MelonBase.OptionalDependencies
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OptionalDependencies
+  nameWithType: MelonBase.OptionalDependencies
+  fullName: MelonLoader.MelonBase.OptionalDependencies
+- uid: MelonLoader.MelonBase.SupportedPlatforms
+  commentId: P:MelonLoader.MelonBase.SupportedPlatforms
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: SupportedPlatforms
+  nameWithType: MelonBase.SupportedPlatforms
+  fullName: MelonLoader.MelonBase.SupportedPlatforms
+- uid: MelonLoader.MelonBase.SupportedDomain
+  commentId: P:MelonLoader.MelonBase.SupportedDomain
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: SupportedDomain
+  nameWithType: MelonBase.SupportedDomain
+  fullName: MelonLoader.MelonBase.SupportedDomain
+- uid: MelonLoader.MelonBase.SupportedMLVersion
+  commentId: P:MelonLoader.MelonBase.SupportedMLVersion
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: SupportedMLVersion
+  nameWithType: MelonBase.SupportedMLVersion
+  fullName: MelonLoader.MelonBase.SupportedMLVersion
+- uid: MelonLoader.MelonBase.SupportedMLBuild
+  commentId: P:MelonLoader.MelonBase.SupportedMLBuild
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: SupportedMLBuild
+  nameWithType: MelonBase.SupportedMLBuild
+  fullName: MelonLoader.MelonBase.SupportedMLBuild
+- uid: MelonLoader.MelonBase.HarmonyInstance
+  commentId: P:MelonLoader.MelonBase.HarmonyInstance
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: HarmonyInstance
+  nameWithType: MelonBase.HarmonyInstance
+  fullName: MelonLoader.MelonBase.HarmonyInstance
+- uid: MelonLoader.MelonBase.LoggerInstance
+  commentId: P:MelonLoader.MelonBase.LoggerInstance
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: LoggerInstance
+  nameWithType: MelonBase.LoggerInstance
+  fullName: MelonLoader.MelonBase.LoggerInstance
+- uid: MelonLoader.MelonBase.ID
+  commentId: P:MelonLoader.MelonBase.ID
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: ID
+  nameWithType: MelonBase.ID
+  fullName: MelonLoader.MelonBase.ID
+- uid: MelonLoader.MelonBase.Registered
+  commentId: P:MelonLoader.MelonBase.Registered
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: Registered
+  nameWithType: MelonBase.Registered
+  fullName: MelonLoader.MelonBase.Registered
+- uid: MelonLoader.MelonBase.harmonyInstance
+  commentId: P:MelonLoader.MelonBase.harmonyInstance
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: harmonyInstance
+  nameWithType: MelonBase.harmonyInstance
+  fullName: MelonLoader.MelonBase.harmonyInstance
+- uid: MelonLoader.MelonBase.Harmony
+  commentId: P:MelonLoader.MelonBase.Harmony
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: Harmony
+  nameWithType: MelonBase.Harmony
+  fullName: MelonLoader.MelonBase.Harmony
+- uid: MelonLoader.MelonBase.Assembly
+  commentId: P:MelonLoader.MelonBase.Assembly
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: Assembly
+  nameWithType: MelonBase.Assembly
+  fullName: MelonLoader.MelonBase.Assembly
+- uid: MelonLoader.MelonBase.HarmonyDontPatchAll
+  commentId: P:MelonLoader.MelonBase.HarmonyDontPatchAll
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: HarmonyDontPatchAll
+  nameWithType: MelonBase.HarmonyDontPatchAll
+  fullName: MelonLoader.MelonBase.HarmonyDontPatchAll
+- uid: MelonLoader.MelonBase.Hash
+  commentId: P:MelonLoader.MelonBase.Hash
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: Hash
+  nameWithType: MelonBase.Hash
+  fullName: MelonLoader.MelonBase.Hash
+- uid: MelonLoader.MelonBase.Location
+  commentId: P:MelonLoader.MelonBase.Location
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: Location
+  nameWithType: MelonBase.Location
+  fullName: MelonLoader.MelonBase.Location
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MelonLoader
+  commentId: N:MelonLoader
+  isExternal: true
+  name: MelonLoader
+  nameWithType: MelonLoader
+  fullName: MelonLoader
+- uid: MelonLoader.MelonTypeBase`1
+  commentId: T:MelonLoader.MelonTypeBase`1
+  isExternal: true
+  name: MelonTypeBase<T>
+  nameWithType: MelonTypeBase<T>
+  fullName: MelonLoader.MelonTypeBase<T>
+  nameWithType.vb: MelonTypeBase(Of T)
+  fullName.vb: MelonLoader.MelonTypeBase(Of T)
+  name.vb: MelonTypeBase(Of T)
+  spec.csharp:
+  - uid: MelonLoader.MelonTypeBase`1
+    name: MelonTypeBase
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MelonLoader.MelonTypeBase`1
+    name: MelonTypeBase
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MelonLoader.MelonTypeBase`1.ExecuteAll(MelonLoader.LemonAction{`0},System.Boolean,System.String)
+  commentId: M:MelonLoader.MelonTypeBase`1.ExecuteAll(MelonLoader.LemonAction{`0},System.Boolean,System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: ExecuteAll(LemonAction<T>, bool, string)
+  nameWithType: MelonTypeBase<T>.ExecuteAll(LemonAction<T>, bool, string)
+  fullName: MelonLoader.MelonTypeBase<T>.ExecuteAll(MelonLoader.LemonAction<T>, bool, string)
+  nameWithType.vb: MelonTypeBase(Of T).ExecuteAll(LemonAction(Of T), Boolean, String)
+  fullName.vb: MelonLoader.MelonTypeBase(Of T).ExecuteAll(MelonLoader.LemonAction(Of T), Boolean, String)
+  name.vb: ExecuteAll(LemonAction(Of T), Boolean, String)
+  spec.csharp:
+  - uid: MelonLoader.MelonTypeBase`1.ExecuteAll(MelonLoader.LemonAction{`0},System.Boolean,System.String)
+    name: ExecuteAll
+    isExternal: true
+  - name: (
+  - uid: MelonLoader.LemonAction`1
+    name: LemonAction
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonTypeBase`1.ExecuteAll(MelonLoader.LemonAction{`0},System.Boolean,System.String)
+    name: ExecuteAll
+    isExternal: true
+  - name: (
+  - uid: MelonLoader.LemonAction`1
+    name: LemonAction
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MelonLoader.MelonTypeBase`1.RegisteredMelons
+  commentId: P:MelonLoader.MelonTypeBase`1.RegisteredMelons
+  isExternal: true
+  name: RegisteredMelons
+  nameWithType: MelonTypeBase<T>.RegisteredMelons
+  fullName: MelonLoader.MelonTypeBase<T>.RegisteredMelons
+  nameWithType.vb: MelonTypeBase(Of T).RegisteredMelons
+  fullName.vb: MelonLoader.MelonTypeBase(Of T).RegisteredMelons
+- uid: MelonLoader.MelonTypeBase`1.TypeName
+  commentId: P:MelonLoader.MelonTypeBase`1.TypeName
+  isExternal: true
+  name: TypeName
+  nameWithType: MelonTypeBase<T>.TypeName
+  fullName: MelonLoader.MelonTypeBase<T>.TypeName
+  nameWithType.vb: MelonTypeBase(Of T).TypeName
+  fullName.vb: MelonLoader.MelonTypeBase(Of T).TypeName
+- uid: MelonLoader.MelonTypeBase`1.MelonTypeName
+  commentId: P:MelonLoader.MelonTypeBase`1.MelonTypeName
+  isExternal: true
+  name: MelonTypeName
+  nameWithType: MelonTypeBase<T>.MelonTypeName
+  fullName: MelonLoader.MelonTypeBase<T>.MelonTypeName
+  nameWithType.vb: MelonTypeBase(Of T).MelonTypeName
+  fullName.vb: MelonLoader.MelonTypeBase(Of T).MelonTypeName
+- uid: MelonLoader.MelonBase.RegisterSorted``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:MelonLoader.MelonBase.RegisterSorted``1(System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: RegisterSorted<T>(IEnumerable<T>)
+  nameWithType: MelonBase.RegisterSorted<T>(IEnumerable<T>)
+  fullName: MelonLoader.MelonBase.RegisterSorted<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: MelonBase.RegisterSorted(Of T)(IEnumerable(Of T))
+  fullName.vb: MelonLoader.MelonBase.RegisterSorted(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: RegisterSorted(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.RegisterSorted``1(System.Collections.Generic.IEnumerable{``0})
+    name: RegisterSorted
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.RegisterSorted``1(System.Collections.Generic.IEnumerable{``0})
+    name: RegisterSorted
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: MelonLoader.MelonBase.ExecuteList``1(MelonLoader.LemonAction{``0},System.Collections.Generic.List{``0},System.Boolean,System.String)
+  commentId: M:MelonLoader.MelonBase.ExecuteList``1(MelonLoader.LemonAction{``0},System.Collections.Generic.List{``0},System.Boolean,System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: ExecuteList<T>(LemonAction<T>, List<T>, bool, string)
+  nameWithType: MelonBase.ExecuteList<T>(LemonAction<T>, List<T>, bool, string)
+  fullName: MelonLoader.MelonBase.ExecuteList<T>(MelonLoader.LemonAction<T>, System.Collections.Generic.List<T>, bool, string)
+  nameWithType.vb: MelonBase.ExecuteList(Of T)(LemonAction(Of T), List(Of T), Boolean, String)
+  fullName.vb: MelonLoader.MelonBase.ExecuteList(Of T)(MelonLoader.LemonAction(Of T), System.Collections.Generic.List(Of T), Boolean, String)
+  name.vb: ExecuteList(Of T)(LemonAction(Of T), List(Of T), Boolean, String)
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.ExecuteList``1(MelonLoader.LemonAction{``0},System.Collections.Generic.List{``0},System.Boolean,System.String)
+    name: ExecuteList
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: MelonLoader.LemonAction`1
+    name: LemonAction
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.ExecuteList``1(MelonLoader.LemonAction{``0},System.Collections.Generic.List{``0},System.Boolean,System.String)
+    name: ExecuteList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: MelonLoader.LemonAction`1
+    name: LemonAction
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MelonLoader.MelonBase.OnInitializeMelon
+  commentId: M:MelonLoader.MelonBase.OnInitializeMelon
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnInitializeMelon()
+  nameWithType: MelonBase.OnInitializeMelon()
+  fullName: MelonLoader.MelonBase.OnInitializeMelon()
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.OnInitializeMelon
+    name: OnInitializeMelon
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.OnInitializeMelon
+    name: OnInitializeMelon
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MuseDashMirror.Main.OnInitializeMelon*
+  commentId: Overload:MuseDashMirror.Main.OnInitializeMelon
+  href: MuseDashMirror.Main.html#MuseDashMirror_Main_OnInitializeMelon
+  name: OnInitializeMelon
+  nameWithType: Main.OnInitializeMelon
+  fullName: MuseDashMirror.Main.OnInitializeMelon
+- uid: MelonLoader.MelonBase.OnDeinitializeMelon
+  commentId: M:MelonLoader.MelonBase.OnDeinitializeMelon
+  parent: MelonLoader.MelonBase
+  isExternal: true
+  name: OnDeinitializeMelon()
+  nameWithType: MelonBase.OnDeinitializeMelon()
+  fullName: MelonLoader.MelonBase.OnDeinitializeMelon()
+  spec.csharp:
+  - uid: MelonLoader.MelonBase.OnDeinitializeMelon
+    name: OnDeinitializeMelon
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonBase.OnDeinitializeMelon
+    name: OnDeinitializeMelon
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MuseDashMirror.Main.OnDeinitializeMelon*
+  commentId: Overload:MuseDashMirror.Main.OnDeinitializeMelon
+  href: MuseDashMirror.Main.html#MuseDashMirror_Main_OnDeinitializeMelon
+  name: OnDeinitializeMelon
+  nameWithType: Main.OnDeinitializeMelon
+  fullName: MuseDashMirror.Main.OnDeinitializeMelon
+- uid: MelonLoader.MelonMod.OnSceneWasLoaded(System.Int32,System.String)
+  commentId: M:MelonLoader.MelonMod.OnSceneWasLoaded(System.Int32,System.String)
+  parent: MelonLoader.MelonMod
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnSceneWasLoaded(int, string)
+  nameWithType: MelonMod.OnSceneWasLoaded(int, string)
+  fullName: MelonLoader.MelonMod.OnSceneWasLoaded(int, string)
+  nameWithType.vb: MelonMod.OnSceneWasLoaded(Integer, String)
+  fullName.vb: MelonLoader.MelonMod.OnSceneWasLoaded(Integer, String)
+  name.vb: OnSceneWasLoaded(Integer, String)
+  spec.csharp:
+  - uid: MelonLoader.MelonMod.OnSceneWasLoaded(System.Int32,System.String)
+    name: OnSceneWasLoaded
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonMod.OnSceneWasLoaded(System.Int32,System.String)
+    name: OnSceneWasLoaded
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MuseDashMirror.Main.OnSceneWasLoaded*
+  commentId: Overload:MuseDashMirror.Main.OnSceneWasLoaded
+  href: MuseDashMirror.Main.html#MuseDashMirror_Main_OnSceneWasLoaded_System_Int32_System_String_
+  name: OnSceneWasLoaded
+  nameWithType: Main.OnSceneWasLoaded
+  fullName: MuseDashMirror.Main.OnSceneWasLoaded
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MelonLoader.MelonMod.OnSceneWasUnloaded(System.Int32,System.String)
+  commentId: M:MelonLoader.MelonMod.OnSceneWasUnloaded(System.Int32,System.String)
+  parent: MelonLoader.MelonMod
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnSceneWasUnloaded(int, string)
+  nameWithType: MelonMod.OnSceneWasUnloaded(int, string)
+  fullName: MelonLoader.MelonMod.OnSceneWasUnloaded(int, string)
+  nameWithType.vb: MelonMod.OnSceneWasUnloaded(Integer, String)
+  fullName.vb: MelonLoader.MelonMod.OnSceneWasUnloaded(Integer, String)
+  name.vb: OnSceneWasUnloaded(Integer, String)
+  spec.csharp:
+  - uid: MelonLoader.MelonMod.OnSceneWasUnloaded(System.Int32,System.String)
+    name: OnSceneWasUnloaded
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MelonLoader.MelonMod.OnSceneWasUnloaded(System.Int32,System.String)
+    name: OnSceneWasUnloaded
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: MuseDashMirror.Main.OnSceneWasUnloaded*
+  commentId: Overload:MuseDashMirror.Main.OnSceneWasUnloaded
+  href: MuseDashMirror.Main.html#MuseDashMirror_Main_OnSceneWasUnloaded_System_Int32_System_String_
+  name: OnSceneWasUnloaded
+  nameWithType: Main.OnSceneWasUnloaded
+  fullName: MuseDashMirror.Main.OnSceneWasUnloaded

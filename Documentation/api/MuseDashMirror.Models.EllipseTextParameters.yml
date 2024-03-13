@@ -1,0 +1,915 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Models.EllipseTextParameters
+  commentId: T:MuseDashMirror.Models.EllipseTextParameters
+  id: EllipseTextParameters
+  parent: MuseDashMirror.Models
+  children:
+  - MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range)
+  - MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,System.Int32,UnityEngine.TextAnchor)
+  - MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color)
+  - MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.Font,System.Int32)
+  - MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.Font,System.Int32,UnityEngine.TextAnchor)
+  - MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.TextAnchor)
+  - MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Font,System.Int32)
+  - MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Font,System.Int32,UnityEngine.TextAnchor)
+  - MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.TextAnchor)
+  - MuseDashMirror.Models.EllipseTextParameters.GetText
+  - MuseDashMirror.Models.EllipseTextParameters.InVisibleTextRange
+  langs:
+  - csharp
+  - vb
+  name: EllipseTextParameters
+  nameWithType: EllipseTextParameters
+  fullName: MuseDashMirror.Models.EllipseTextParameters
+  type: Class
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/EllipseTextParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: EllipseTextParameters
+    path: ../src/MuseDashMirror/Models/EllipseTextParameters.cs
+    startLine: 5
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Text parameters for creating Ellipse Text GameObject
+  example: []
+  syntax:
+    content: 'public class EllipseTextParameters : TextParameters'
+    content.vb: Public Class EllipseTextParameters Inherits TextParameters
+  inheritance:
+  - System.Object
+  - MuseDashMirror.Models.TextParameters
+  inheritedMembers:
+  - MuseDashMirror.Models.TextParameters.Text
+  - MuseDashMirror.Models.TextParameters.Color
+  - MuseDashMirror.Models.TextParameters.Font
+  - MuseDashMirror.Models.TextParameters.FontSize
+  - MuseDashMirror.Models.TextParameters.Alignment
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MuseDashMirror.Models.EllipseTextParameters.InVisibleTextRange
+  commentId: P:MuseDashMirror.Models.EllipseTextParameters.InVisibleTextRange
+  id: InVisibleTextRange
+  parent: MuseDashMirror.Models.EllipseTextParameters
+  langs:
+  - csharp
+  - vb
+  name: InVisibleTextRange
+  nameWithType: EllipseTextParameters.InVisibleTextRange
+  fullName: MuseDashMirror.Models.EllipseTextParameters.InVisibleTextRange
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/EllipseTextParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: InVisibleTextRange
+    path: ../src/MuseDashMirror/Models/EllipseTextParameters.cs
+    startLine: 10
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Visible text range, default is the whole text
+  example: []
+  syntax:
+    content: public Range InVisibleTextRange { get; }
+    parameters: []
+    return:
+      type: System.Range
+    content.vb: Public ReadOnly Property InVisibleTextRange As Range
+  overload: MuseDashMirror.Models.EllipseTextParameters.InVisibleTextRange*
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range)
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range)
+  id: '#ctor(System.String,System.Range)'
+  parent: MuseDashMirror.Models.EllipseTextParameters
+  langs:
+  - csharp
+  - vb
+  name: EllipseTextParameters(string, Range)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/EllipseTextParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/EllipseTextParameters.cs
+    startLine: 17
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create EllipseTextParameters with text content and invisible text range
+  example: []
+  syntax:
+    content: public EllipseTextParameters(string text, Range inVisibleTextRange)
+    parameters:
+    - id: text
+      type: System.String
+      description: Text Content
+    - id: inVisibleTextRange
+      type: System.Range
+      description: Invisible Text Range
+    content.vb: Public Sub New(text As String, inVisibleTextRange As Range)
+  overload: MuseDashMirror.Models.EllipseTextParameters.#ctor*
+  nameWithType.vb: EllipseTextParameters.New(String, Range)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range)
+  name.vb: New(String, Range)
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color)
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color)
+  id: '#ctor(System.String,System.Range,UnityEngine.Color)'
+  parent: MuseDashMirror.Models.EllipseTextParameters
+  langs:
+  - csharp
+  - vb
+  name: EllipseTextParameters(string, Range, Color)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range, Color)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range, UnityEngine.Color)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/EllipseTextParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/EllipseTextParameters.cs
+    startLine: 25
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create EllipseTextParameters with text content, invisible text range and color
+  example: []
+  syntax:
+    content: public EllipseTextParameters(string text, Range inVisibleTextRange, Color color)
+    parameters:
+    - id: text
+      type: System.String
+      description: Text Content
+    - id: inVisibleTextRange
+      type: System.Range
+      description: Invisible Text Range
+    - id: color
+      type: UnityEngine.Color
+      description: Text Color
+    content.vb: Public Sub New(text As String, inVisibleTextRange As Range, color As Color)
+  overload: MuseDashMirror.Models.EllipseTextParameters.#ctor*
+  nameWithType.vb: EllipseTextParameters.New(String, Range, Color)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range, UnityEngine.Color)
+  name.vb: New(String, Range, Color)
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.TextAnchor)
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.TextAnchor)
+  id: '#ctor(System.String,System.Range,UnityEngine.TextAnchor)'
+  parent: MuseDashMirror.Models.EllipseTextParameters
+  langs:
+  - csharp
+  - vb
+  name: EllipseTextParameters(string, Range, TextAnchor)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range, TextAnchor)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range, UnityEngine.TextAnchor)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/EllipseTextParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/EllipseTextParameters.cs
+    startLine: 33
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create EllipseTextParameters with text content, invisible text range and alignment
+  example: []
+  syntax:
+    content: public EllipseTextParameters(string text, Range inVisibleTextRange, TextAnchor alignment)
+    parameters:
+    - id: text
+      type: System.String
+      description: Text Content
+    - id: inVisibleTextRange
+      type: System.Range
+      description: Invisible Text Range
+    - id: alignment
+      type: UnityEngine.TextAnchor
+      description: Text Alignment
+    content.vb: Public Sub New(text As String, inVisibleTextRange As Range, alignment As TextAnchor)
+  overload: MuseDashMirror.Models.EllipseTextParameters.#ctor*
+  nameWithType.vb: EllipseTextParameters.New(String, Range, TextAnchor)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range, UnityEngine.TextAnchor)
+  name.vb: New(String, Range, TextAnchor)
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.TextAnchor)
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.TextAnchor)
+  id: '#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.TextAnchor)'
+  parent: MuseDashMirror.Models.EllipseTextParameters
+  langs:
+  - csharp
+  - vb
+  name: EllipseTextParameters(string, Range, Color, TextAnchor)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range, Color, TextAnchor)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range, UnityEngine.Color, UnityEngine.TextAnchor)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/EllipseTextParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/EllipseTextParameters.cs
+    startLine: 43
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create EllipseTextParameters with text content, invisible text range, color and alignment
+  example: []
+  syntax:
+    content: public EllipseTextParameters(string text, Range inVisibleTextRange, Color color, TextAnchor alignment)
+    parameters:
+    - id: text
+      type: System.String
+      description: Text Content
+    - id: inVisibleTextRange
+      type: System.Range
+      description: Invisible Text Range
+    - id: color
+      type: UnityEngine.Color
+      description: Text Color
+    - id: alignment
+      type: UnityEngine.TextAnchor
+      description: Text Alignment
+    content.vb: Public Sub New(text As String, inVisibleTextRange As Range, color As Color, alignment As TextAnchor)
+  overload: MuseDashMirror.Models.EllipseTextParameters.#ctor*
+  nameWithType.vb: EllipseTextParameters.New(String, Range, Color, TextAnchor)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range, UnityEngine.Color, UnityEngine.TextAnchor)
+  name.vb: New(String, Range, Color, TextAnchor)
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Font,System.Int32)
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Font,System.Int32)
+  id: '#ctor(System.String,System.Range,UnityEngine.Font,System.Int32)'
+  parent: MuseDashMirror.Models.EllipseTextParameters
+  langs:
+  - csharp
+  - vb
+  name: EllipseTextParameters(string, Range, Font, int)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range, Font, int)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range, UnityEngine.Font, int)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/EllipseTextParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/EllipseTextParameters.cs
+    startLine: 53
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create EllipseTextParameters with text content, invisible text range, font and font size
+  example: []
+  syntax:
+    content: public EllipseTextParameters(string text, Range inVisibleTextRange, Font font, int fontSize)
+    parameters:
+    - id: text
+      type: System.String
+      description: Text Content
+    - id: inVisibleTextRange
+      type: System.Range
+      description: Invisible Text Range
+    - id: font
+      type: UnityEngine.Font
+      description: Text Font
+    - id: fontSize
+      type: System.Int32
+      description: Text Font Size
+    content.vb: Public Sub New(text As String, inVisibleTextRange As Range, font As Font, fontSize As Integer)
+  overload: MuseDashMirror.Models.EllipseTextParameters.#ctor*
+  nameWithType.vb: EllipseTextParameters.New(String, Range, Font, Integer)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range, UnityEngine.Font, Integer)
+  name.vb: New(String, Range, Font, Integer)
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,System.Int32,UnityEngine.TextAnchor)
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,System.Int32,UnityEngine.TextAnchor)
+  id: '#ctor(System.String,System.Range,System.Int32,UnityEngine.TextAnchor)'
+  parent: MuseDashMirror.Models.EllipseTextParameters
+  langs:
+  - csharp
+  - vb
+  name: EllipseTextParameters(string, Range, int, TextAnchor)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range, int, TextAnchor)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range, int, UnityEngine.TextAnchor)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/EllipseTextParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/EllipseTextParameters.cs
+    startLine: 63
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create EllipseTextParameters with text content, invisible text range, font size and alignment
+  example: []
+  syntax:
+    content: public EllipseTextParameters(string text, Range inVisibleTextRange, int fontSize, TextAnchor alignment)
+    parameters:
+    - id: text
+      type: System.String
+      description: Text Content
+    - id: inVisibleTextRange
+      type: System.Range
+      description: Invisible Text Range
+    - id: fontSize
+      type: System.Int32
+      description: Text Font Size
+    - id: alignment
+      type: UnityEngine.TextAnchor
+      description: Text Alignment
+    content.vb: Public Sub New(text As String, inVisibleTextRange As Range, fontSize As Integer, alignment As TextAnchor)
+  overload: MuseDashMirror.Models.EllipseTextParameters.#ctor*
+  nameWithType.vb: EllipseTextParameters.New(String, Range, Integer, TextAnchor)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range, Integer, UnityEngine.TextAnchor)
+  name.vb: New(String, Range, Integer, TextAnchor)
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Font,System.Int32,UnityEngine.TextAnchor)
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Font,System.Int32,UnityEngine.TextAnchor)
+  id: '#ctor(System.String,System.Range,UnityEngine.Font,System.Int32,UnityEngine.TextAnchor)'
+  parent: MuseDashMirror.Models.EllipseTextParameters
+  langs:
+  - csharp
+  - vb
+  name: EllipseTextParameters(string, Range, Font, int, TextAnchor)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range, Font, int, TextAnchor)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range, UnityEngine.Font, int, UnityEngine.TextAnchor)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/EllipseTextParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/EllipseTextParameters.cs
+    startLine: 74
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create EllipseTextParameters with text content, invisible text range, font, font size and alignment
+  example: []
+  syntax:
+    content: public EllipseTextParameters(string text, Range inVisibleTextRange, Font font, int fontSize, TextAnchor alignment)
+    parameters:
+    - id: text
+      type: System.String
+      description: Text Content
+    - id: inVisibleTextRange
+      type: System.Range
+      description: Invisible Text Range
+    - id: font
+      type: UnityEngine.Font
+      description: Text Font
+    - id: fontSize
+      type: System.Int32
+      description: Text Font Size
+    - id: alignment
+      type: UnityEngine.TextAnchor
+      description: Text Alignment
+    content.vb: Public Sub New(text As String, inVisibleTextRange As Range, font As Font, fontSize As Integer, alignment As TextAnchor)
+  overload: MuseDashMirror.Models.EllipseTextParameters.#ctor*
+  nameWithType.vb: EllipseTextParameters.New(String, Range, Font, Integer, TextAnchor)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range, UnityEngine.Font, Integer, UnityEngine.TextAnchor)
+  name.vb: New(String, Range, Font, Integer, TextAnchor)
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.Font,System.Int32)
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.Font,System.Int32)
+  id: '#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.Font,System.Int32)'
+  parent: MuseDashMirror.Models.EllipseTextParameters
+  langs:
+  - csharp
+  - vb
+  name: EllipseTextParameters(string, Range, Color, Font, int)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range, Color, Font, int)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range, UnityEngine.Color, UnityEngine.Font, int)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/EllipseTextParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/EllipseTextParameters.cs
+    startLine: 85
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create EllipseTextParameters with text content, invisible text range, color, font and font size
+  example: []
+  syntax:
+    content: public EllipseTextParameters(string text, Range inVisibleTextRange, Color color, Font font, int fontSize)
+    parameters:
+    - id: text
+      type: System.String
+      description: Text Content
+    - id: inVisibleTextRange
+      type: System.Range
+      description: Invisible Text Range
+    - id: color
+      type: UnityEngine.Color
+      description: Text Color
+    - id: font
+      type: UnityEngine.Font
+      description: Text Font
+    - id: fontSize
+      type: System.Int32
+      description: Text Font Size
+    content.vb: Public Sub New(text As String, inVisibleTextRange As Range, color As Color, font As Font, fontSize As Integer)
+  overload: MuseDashMirror.Models.EllipseTextParameters.#ctor*
+  nameWithType.vb: EllipseTextParameters.New(String, Range, Color, Font, Integer)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range, UnityEngine.Color, UnityEngine.Font, Integer)
+  name.vb: New(String, Range, Color, Font, Integer)
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.Font,System.Int32,UnityEngine.TextAnchor)
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.Font,System.Int32,UnityEngine.TextAnchor)
+  id: '#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.Font,System.Int32,UnityEngine.TextAnchor)'
+  parent: MuseDashMirror.Models.EllipseTextParameters
+  langs:
+  - csharp
+  - vb
+  name: EllipseTextParameters(string, Range, Color, Font, int, TextAnchor)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range, Color, Font, int, TextAnchor)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range, UnityEngine.Color, UnityEngine.Font, int, UnityEngine.TextAnchor)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/EllipseTextParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/EllipseTextParameters.cs
+    startLine: 97
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create EllipseTextParameters with text content, invisible text range, color, font, font size and alignment
+  example: []
+  syntax:
+    content: public EllipseTextParameters(string text, Range inVisibleTextRange, Color color, Font font, int fontSize, TextAnchor alignment)
+    parameters:
+    - id: text
+      type: System.String
+      description: Text Content
+    - id: inVisibleTextRange
+      type: System.Range
+      description: Invisible Text Range
+    - id: color
+      type: UnityEngine.Color
+      description: Text Color
+    - id: font
+      type: UnityEngine.Font
+      description: Text Font
+    - id: fontSize
+      type: System.Int32
+      description: Text Font Size
+    - id: alignment
+      type: UnityEngine.TextAnchor
+      description: Text Alignment
+    content.vb: Public Sub New(text As String, inVisibleTextRange As Range, color As Color, font As Font, fontSize As Integer, alignment As TextAnchor)
+  overload: MuseDashMirror.Models.EllipseTextParameters.#ctor*
+  nameWithType.vb: EllipseTextParameters.New(String, Range, Color, Font, Integer, TextAnchor)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range, UnityEngine.Color, UnityEngine.Font, Integer, UnityEngine.TextAnchor)
+  name.vb: New(String, Range, Color, Font, Integer, TextAnchor)
+- uid: MuseDashMirror.Models.EllipseTextParameters.GetText
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.GetText
+  id: GetText
+  parent: MuseDashMirror.Models.EllipseTextParameters
+  langs:
+  - csharp
+  - vb
+  name: GetText()
+  nameWithType: EllipseTextParameters.GetText()
+  fullName: MuseDashMirror.Models.EllipseTextParameters.GetText()
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/EllipseTextParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: GetText
+    path: ../src/MuseDashMirror/Models/EllipseTextParameters.cs
+    startLine: 104
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Get the text content
+  example: []
+  syntax:
+    content: public override string GetText()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Overrides Function GetText() As String
+  overridden: MuseDashMirror.Models.TextParameters.GetText
+  overload: MuseDashMirror.Models.EllipseTextParameters.GetText*
+references:
+- uid: MuseDashMirror.Models
+  commentId: N:MuseDashMirror.Models
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Models
+  nameWithType: MuseDashMirror.Models
+  fullName: MuseDashMirror.Models
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MuseDashMirror.Models.TextParameters
+  commentId: T:MuseDashMirror.Models.TextParameters
+  parent: MuseDashMirror.Models
+  href: MuseDashMirror.Models.TextParameters.html
+  name: TextParameters
+  nameWithType: TextParameters
+  fullName: MuseDashMirror.Models.TextParameters
+- uid: MuseDashMirror.Models.TextParameters.Text
+  commentId: P:MuseDashMirror.Models.TextParameters.Text
+  parent: MuseDashMirror.Models.TextParameters
+  href: MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_Text
+  name: Text
+  nameWithType: TextParameters.Text
+  fullName: MuseDashMirror.Models.TextParameters.Text
+- uid: MuseDashMirror.Models.TextParameters.Color
+  commentId: P:MuseDashMirror.Models.TextParameters.Color
+  parent: MuseDashMirror.Models.TextParameters
+  href: MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_Color
+  name: Color
+  nameWithType: TextParameters.Color
+  fullName: MuseDashMirror.Models.TextParameters.Color
+- uid: MuseDashMirror.Models.TextParameters.Font
+  commentId: P:MuseDashMirror.Models.TextParameters.Font
+  parent: MuseDashMirror.Models.TextParameters
+  href: MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_Font
+  name: Font
+  nameWithType: TextParameters.Font
+  fullName: MuseDashMirror.Models.TextParameters.Font
+- uid: MuseDashMirror.Models.TextParameters.FontSize
+  commentId: P:MuseDashMirror.Models.TextParameters.FontSize
+  parent: MuseDashMirror.Models.TextParameters
+  href: MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_FontSize
+  name: FontSize
+  nameWithType: TextParameters.FontSize
+  fullName: MuseDashMirror.Models.TextParameters.FontSize
+- uid: MuseDashMirror.Models.TextParameters.Alignment
+  commentId: P:MuseDashMirror.Models.TextParameters.Alignment
+  parent: MuseDashMirror.Models.TextParameters
+  href: MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_Alignment
+  name: Alignment
+  nameWithType: TextParameters.Alignment
+  fullName: MuseDashMirror.Models.TextParameters.Alignment
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MuseDashMirror.Models.EllipseTextParameters.InVisibleTextRange*
+  commentId: Overload:MuseDashMirror.Models.EllipseTextParameters.InVisibleTextRange
+  href: MuseDashMirror.Models.EllipseTextParameters.html#MuseDashMirror_Models_EllipseTextParameters_InVisibleTextRange
+  name: InVisibleTextRange
+  nameWithType: EllipseTextParameters.InVisibleTextRange
+  fullName: MuseDashMirror.Models.EllipseTextParameters.InVisibleTextRange
+- uid: System.Range
+  commentId: T:System.Range
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.range
+  name: Range
+  nameWithType: Range
+  fullName: System.Range
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor*
+  commentId: Overload:MuseDashMirror.Models.EllipseTextParameters.#ctor
+  href: MuseDashMirror.Models.EllipseTextParameters.html#MuseDashMirror_Models_EllipseTextParameters__ctor_System_String_System_Range_
+  name: EllipseTextParameters
+  nameWithType: EllipseTextParameters.EllipseTextParameters
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters
+  nameWithType.vb: EllipseTextParameters.New
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.TextAnchor
+  commentId: T:UnityEngine.TextAnchor
+  parent: UnityEngine
+  isExternal: true
+  name: TextAnchor
+  nameWithType: TextAnchor
+  fullName: UnityEngine.TextAnchor
+- uid: UnityEngine.Font
+  commentId: T:UnityEngine.Font
+  parent: UnityEngine
+  isExternal: true
+  name: Font
+  nameWithType: Font
+  fullName: UnityEngine.Font
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MuseDashMirror.Models.TextParameters.GetText
+  commentId: M:MuseDashMirror.Models.TextParameters.GetText
+  parent: MuseDashMirror.Models.TextParameters
+  href: MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_GetText
+  name: GetText()
+  nameWithType: TextParameters.GetText()
+  fullName: MuseDashMirror.Models.TextParameters.GetText()
+  spec.csharp:
+  - uid: MuseDashMirror.Models.TextParameters.GetText
+    name: GetText
+    href: MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_GetText
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MuseDashMirror.Models.TextParameters.GetText
+    name: GetText
+    href: MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_GetText
+  - name: (
+  - name: )
+- uid: MuseDashMirror.Models.EllipseTextParameters.GetText*
+  commentId: Overload:MuseDashMirror.Models.EllipseTextParameters.GetText
+  href: MuseDashMirror.Models.EllipseTextParameters.html#MuseDashMirror_Models_EllipseTextParameters_GetText
+  name: GetText
+  nameWithType: EllipseTextParameters.GetText
+  fullName: MuseDashMirror.Models.EllipseTextParameters.GetText

@@ -1,0 +1,442 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.EventArguments.SceneEventArgs
+  commentId: T:MuseDashMirror.EventArguments.SceneEventArgs
+  id: SceneEventArgs
+  parent: MuseDashMirror.EventArguments
+  children:
+  - MuseDashMirror.EventArguments.SceneEventArgs.#ctor(System.Int32,System.String)
+  - MuseDashMirror.EventArguments.SceneEventArgs.BuildIndex
+  - MuseDashMirror.EventArguments.SceneEventArgs.SceneName
+  langs:
+  - csharp
+  - vb
+  name: SceneEventArgs
+  nameWithType: SceneEventArgs
+  fullName: MuseDashMirror.EventArguments.SceneEventArgs
+  type: Class
+  source:
+    remote:
+      path: src/MuseDashMirror/EventArguments/SceneEventArgs.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: SceneEventArgs
+    path: ../src/MuseDashMirror/EventArguments/SceneEventArgs.cs
+    startLine: 7
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.EventArguments
+  summary: Event Argument for Scene Events
+  example: []
+  syntax:
+    content: 'public sealed class SceneEventArgs : EventArgs'
+    content.vb: Public NotInheritable Class SceneEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MuseDashMirror.EventArguments.SceneEventArgs.#ctor(System.Int32,System.String)
+  commentId: M:MuseDashMirror.EventArguments.SceneEventArgs.#ctor(System.Int32,System.String)
+  id: '#ctor(System.Int32,System.String)'
+  parent: MuseDashMirror.EventArguments.SceneEventArgs
+  langs:
+  - csharp
+  - vb
+  name: SceneEventArgs(int, string)
+  nameWithType: SceneEventArgs.SceneEventArgs(int, string)
+  fullName: MuseDashMirror.EventArguments.SceneEventArgs.SceneEventArgs(int, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/EventArguments/SceneEventArgs.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/EventArguments/SceneEventArgs.cs
+    startLine: 7
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.EventArguments
+  summary: Event Argument for Scene Events
+  example: []
+  syntax:
+    content: public SceneEventArgs(int buildIndex, string sceneName)
+    parameters:
+    - id: buildIndex
+      type: System.Int32
+      description: ''
+    - id: sceneName
+      type: System.String
+      description: ''
+    content.vb: Public Sub New(buildIndex As Integer, sceneName As String)
+  overload: MuseDashMirror.EventArguments.SceneEventArgs.#ctor*
+  nameWithType.vb: SceneEventArgs.New(Integer, String)
+  fullName.vb: MuseDashMirror.EventArguments.SceneEventArgs.New(Integer, String)
+  name.vb: New(Integer, String)
+- uid: MuseDashMirror.EventArguments.SceneEventArgs.BuildIndex
+  commentId: P:MuseDashMirror.EventArguments.SceneEventArgs.BuildIndex
+  id: BuildIndex
+  parent: MuseDashMirror.EventArguments.SceneEventArgs
+  langs:
+  - csharp
+  - vb
+  name: BuildIndex
+  nameWithType: SceneEventArgs.BuildIndex
+  fullName: MuseDashMirror.EventArguments.SceneEventArgs.BuildIndex
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/EventArguments/SceneEventArgs.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: BuildIndex
+    path: ../src/MuseDashMirror/EventArguments/SceneEventArgs.cs
+    startLine: 12
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.EventArguments
+  summary: Build index of the scene
+  example: []
+  syntax:
+    content: public int BuildIndex { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property BuildIndex As Integer
+  overload: MuseDashMirror.EventArguments.SceneEventArgs.BuildIndex*
+- uid: MuseDashMirror.EventArguments.SceneEventArgs.SceneName
+  commentId: P:MuseDashMirror.EventArguments.SceneEventArgs.SceneName
+  id: SceneName
+  parent: MuseDashMirror.EventArguments.SceneEventArgs
+  langs:
+  - csharp
+  - vb
+  name: SceneName
+  nameWithType: SceneEventArgs.SceneName
+  fullName: MuseDashMirror.EventArguments.SceneEventArgs.SceneName
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/EventArguments/SceneEventArgs.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: SceneName
+    path: ../src/MuseDashMirror/EventArguments/SceneEventArgs.cs
+    startLine: 23
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.EventArguments
+  summary: >-
+    Name of the scene
+
+    <ul><li>"UISystem_PC" for Main Scene</li><li>"GameMain" for Game Scene</li><li>"Loading" for Loading Scene</li><li>"Welcome" for Welcome Scene</li></ul>
+  example: []
+  syntax:
+    content: public string SceneName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property SceneName As String
+  overload: MuseDashMirror.EventArguments.SceneEventArgs.SceneName*
+references:
+- uid: MuseDashMirror.EventArguments
+  commentId: N:MuseDashMirror.EventArguments
+  href: MuseDashMirror.html
+  name: MuseDashMirror.EventArguments
+  nameWithType: MuseDashMirror.EventArguments
+  fullName: MuseDashMirror.EventArguments
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.EventArguments
+    name: EventArguments
+    href: MuseDashMirror.EventArguments.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.EventArguments
+    name: EventArguments
+    href: MuseDashMirror.EventArguments.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  commentId: F:System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs.empty
+  name: Empty
+  nameWithType: EventArgs.Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MuseDashMirror.EventArguments.SceneEventArgs.#ctor*
+  commentId: Overload:MuseDashMirror.EventArguments.SceneEventArgs.#ctor
+  href: MuseDashMirror.EventArguments.SceneEventArgs.html#MuseDashMirror_EventArguments_SceneEventArgs__ctor_System_Int32_System_String_
+  name: SceneEventArgs
+  nameWithType: SceneEventArgs.SceneEventArgs
+  fullName: MuseDashMirror.EventArguments.SceneEventArgs.SceneEventArgs
+  nameWithType.vb: SceneEventArgs.New
+  fullName.vb: MuseDashMirror.EventArguments.SceneEventArgs.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MuseDashMirror.EventArguments.SceneEventArgs.BuildIndex*
+  commentId: Overload:MuseDashMirror.EventArguments.SceneEventArgs.BuildIndex
+  href: MuseDashMirror.EventArguments.SceneEventArgs.html#MuseDashMirror_EventArguments_SceneEventArgs_BuildIndex
+  name: BuildIndex
+  nameWithType: SceneEventArgs.BuildIndex
+  fullName: MuseDashMirror.EventArguments.SceneEventArgs.BuildIndex
+- uid: MuseDashMirror.EventArguments.SceneEventArgs.SceneName*
+  commentId: Overload:MuseDashMirror.EventArguments.SceneEventArgs.SceneName
+  href: MuseDashMirror.EventArguments.SceneEventArgs.html#MuseDashMirror_EventArguments_SceneEventArgs_SceneName
+  name: SceneName
+  nameWithType: SceneEventArgs.SceneName
+  fullName: MuseDashMirror.EventArguments.SceneEventArgs.SceneName

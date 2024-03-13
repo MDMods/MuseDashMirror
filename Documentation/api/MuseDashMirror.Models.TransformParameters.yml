@@ -1,0 +1,834 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Models.TransformParameters
+  commentId: T:MuseDashMirror.Models.TransformParameters
+  id: TransformParameters
+  parent: MuseDashMirror.Models
+  children:
+  - MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3)
+  - MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,MuseDashMirror.Contracts.IPositionStrategy)
+  - MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,System.Boolean)
+  - MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,System.Boolean,MuseDashMirror.Contracts.IPositionStrategy)
+  - MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,System.Boolean,UnityEngine.Vector2)
+  - MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,UnityEngine.Vector2)
+  - MuseDashMirror.Models.TransformParameters.IsAutoSize
+  - MuseDashMirror.Models.TransformParameters.IsLocalPosition
+  - MuseDashMirror.Models.TransformParameters.LocalScale
+  - MuseDashMirror.Models.TransformParameters.Position
+  - MuseDashMirror.Models.TransformParameters.PositionStrategy
+  - MuseDashMirror.Models.TransformParameters.SizeDelta
+  langs:
+  - csharp
+  - vb
+  name: TransformParameters
+  nameWithType: TransformParameters
+  fullName: MuseDashMirror.Models.TransformParameters
+  type: Class
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/TransformParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: TransformParameters
+    path: ../src/MuseDashMirror/Models/TransformParameters.cs
+    startLine: 7
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Transform parameters for creating GameObject
+  example: []
+  syntax:
+    content: public class TransformParameters
+    content.vb: Public Class TransformParameters
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MuseDashMirror.Models.TransformParameters.IsAutoSize
+  commentId: P:MuseDashMirror.Models.TransformParameters.IsAutoSize
+  id: IsAutoSize
+  parent: MuseDashMirror.Models.TransformParameters
+  langs:
+  - csharp
+  - vb
+  name: IsAutoSize
+  nameWithType: TransformParameters.IsAutoSize
+  fullName: MuseDashMirror.Models.TransformParameters.IsAutoSize
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/TransformParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: IsAutoSize
+    path: ../src/MuseDashMirror/Models/TransformParameters.cs
+    startLine: 12
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: If true, the size of the RectTransform will be automatically adjusted to fit the text
+  example: []
+  syntax:
+    content: public bool IsAutoSize { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsAutoSize As Boolean
+  overload: MuseDashMirror.Models.TransformParameters.IsAutoSize*
+- uid: MuseDashMirror.Models.TransformParameters.IsLocalPosition
+  commentId: P:MuseDashMirror.Models.TransformParameters.IsLocalPosition
+  id: IsLocalPosition
+  parent: MuseDashMirror.Models.TransformParameters
+  langs:
+  - csharp
+  - vb
+  name: IsLocalPosition
+  nameWithType: TransformParameters.IsLocalPosition
+  fullName: MuseDashMirror.Models.TransformParameters.IsLocalPosition
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/TransformParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: IsLocalPosition
+    path: ../src/MuseDashMirror/Models/TransformParameters.cs
+    startLine: 17
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Is Local Position or Global Position
+  example: []
+  syntax:
+    content: public bool IsLocalPosition { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsLocalPosition As Boolean
+  overload: MuseDashMirror.Models.TransformParameters.IsLocalPosition*
+- uid: MuseDashMirror.Models.TransformParameters.Position
+  commentId: P:MuseDashMirror.Models.TransformParameters.Position
+  id: Position
+  parent: MuseDashMirror.Models.TransformParameters
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: TransformParameters.Position
+  fullName: MuseDashMirror.Models.TransformParameters.Position
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/TransformParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: Position
+    path: ../src/MuseDashMirror/Models/TransformParameters.cs
+    startLine: 22
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Position of the GameObject
+  example: []
+  syntax:
+    content: public Vector3 Position { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Property Position As Vector3
+  overload: MuseDashMirror.Models.TransformParameters.Position*
+- uid: MuseDashMirror.Models.TransformParameters.SizeDelta
+  commentId: P:MuseDashMirror.Models.TransformParameters.SizeDelta
+  id: SizeDelta
+  parent: MuseDashMirror.Models.TransformParameters
+  langs:
+  - csharp
+  - vb
+  name: SizeDelta
+  nameWithType: TransformParameters.SizeDelta
+  fullName: MuseDashMirror.Models.TransformParameters.SizeDelta
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/TransformParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: SizeDelta
+    path: ../src/MuseDashMirror/Models/TransformParameters.cs
+    startLine: 27
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Size of the RectTransform
+  example: []
+  syntax:
+    content: public Vector2 SizeDelta { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Property SizeDelta As Vector2
+  overload: MuseDashMirror.Models.TransformParameters.SizeDelta*
+- uid: MuseDashMirror.Models.TransformParameters.LocalScale
+  commentId: P:MuseDashMirror.Models.TransformParameters.LocalScale
+  id: LocalScale
+  parent: MuseDashMirror.Models.TransformParameters
+  langs:
+  - csharp
+  - vb
+  name: LocalScale
+  nameWithType: TransformParameters.LocalScale
+  fullName: MuseDashMirror.Models.TransformParameters.LocalScale
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/TransformParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: LocalScale
+    path: ../src/MuseDashMirror/Models/TransformParameters.cs
+    startLine: 32
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Scale of the GameObject
+  example: []
+  syntax:
+    content: public Vector3 LocalScale { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Property LocalScale As Vector3
+  overload: MuseDashMirror.Models.TransformParameters.LocalScale*
+- uid: MuseDashMirror.Models.TransformParameters.PositionStrategy
+  commentId: P:MuseDashMirror.Models.TransformParameters.PositionStrategy
+  id: PositionStrategy
+  parent: MuseDashMirror.Models.TransformParameters
+  langs:
+  - csharp
+  - vb
+  name: PositionStrategy
+  nameWithType: TransformParameters.PositionStrategy
+  fullName: MuseDashMirror.Models.TransformParameters.PositionStrategy
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/TransformParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: PositionStrategy
+    path: ../src/MuseDashMirror/Models/TransformParameters.cs
+    startLine: 37
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Position Strategy
+  example: []
+  syntax:
+    content: public IPositionStrategy PositionStrategy { get; set; }
+    parameters: []
+    return:
+      type: MuseDashMirror.Contracts.IPositionStrategy
+    content.vb: Public Property PositionStrategy As IPositionStrategy
+  overload: MuseDashMirror.Models.TransformParameters.PositionStrategy*
+- uid: MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3)
+  commentId: M:MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3)
+  id: '#ctor(UnityEngine.Vector3)'
+  parent: MuseDashMirror.Models.TransformParameters
+  langs:
+  - csharp
+  - vb
+  name: TransformParameters(Vector3)
+  nameWithType: TransformParameters.TransformParameters(Vector3)
+  fullName: MuseDashMirror.Models.TransformParameters.TransformParameters(UnityEngine.Vector3)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/TransformParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/TransformParameters.cs
+    startLine: 43
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create TransformParameters with Global Position
+  example: []
+  syntax:
+    content: public TransformParameters(Vector3 position)
+    parameters:
+    - id: position
+      type: UnityEngine.Vector3
+      description: GameObject Position
+    content.vb: Public Sub New(position As Vector3)
+  overload: MuseDashMirror.Models.TransformParameters.#ctor*
+  nameWithType.vb: TransformParameters.New(Vector3)
+  fullName.vb: MuseDashMirror.Models.TransformParameters.New(UnityEngine.Vector3)
+  name.vb: New(Vector3)
+- uid: MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,MuseDashMirror.Contracts.IPositionStrategy)
+  commentId: M:MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,MuseDashMirror.Contracts.IPositionStrategy)
+  id: '#ctor(UnityEngine.Vector3,MuseDashMirror.Contracts.IPositionStrategy)'
+  parent: MuseDashMirror.Models.TransformParameters
+  langs:
+  - csharp
+  - vb
+  name: TransformParameters(Vector3, IPositionStrategy)
+  nameWithType: TransformParameters.TransformParameters(Vector3, IPositionStrategy)
+  fullName: MuseDashMirror.Models.TransformParameters.TransformParameters(UnityEngine.Vector3, MuseDashMirror.Contracts.IPositionStrategy)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/TransformParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/TransformParameters.cs
+    startLine: 50
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create TransformParameters with Global Position and Position Strategy
+  example: []
+  syntax:
+    content: public TransformParameters(Vector3 position, IPositionStrategy positionStrategy)
+    parameters:
+    - id: position
+      type: UnityEngine.Vector3
+      description: GameObject Position
+    - id: positionStrategy
+      type: MuseDashMirror.Contracts.IPositionStrategy
+      description: Position Strategy
+    content.vb: Public Sub New(position As Vector3, positionStrategy As IPositionStrategy)
+  overload: MuseDashMirror.Models.TransformParameters.#ctor*
+  nameWithType.vb: TransformParameters.New(Vector3, IPositionStrategy)
+  fullName.vb: MuseDashMirror.Models.TransformParameters.New(UnityEngine.Vector3, MuseDashMirror.Contracts.IPositionStrategy)
+  name.vb: New(Vector3, IPositionStrategy)
+- uid: MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,System.Boolean)
+  commentId: M:MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,System.Boolean)
+  id: '#ctor(UnityEngine.Vector3,System.Boolean)'
+  parent: MuseDashMirror.Models.TransformParameters
+  langs:
+  - csharp
+  - vb
+  name: TransformParameters(Vector3, bool)
+  nameWithType: TransformParameters.TransformParameters(Vector3, bool)
+  fullName: MuseDashMirror.Models.TransformParameters.TransformParameters(UnityEngine.Vector3, bool)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/TransformParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/TransformParameters.cs
+    startLine: 57
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create TransformParameters with position, choose Local Position or Global Position
+  example: []
+  syntax:
+    content: public TransformParameters(Vector3 position, bool isLocalPosition)
+    parameters:
+    - id: position
+      type: UnityEngine.Vector3
+      description: GameObject Position
+    - id: isLocalPosition
+      type: System.Boolean
+      description: Local Position or not
+    content.vb: Public Sub New(position As Vector3, isLocalPosition As Boolean)
+  overload: MuseDashMirror.Models.TransformParameters.#ctor*
+  nameWithType.vb: TransformParameters.New(Vector3, Boolean)
+  fullName.vb: MuseDashMirror.Models.TransformParameters.New(UnityEngine.Vector3, Boolean)
+  name.vb: New(Vector3, Boolean)
+- uid: MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,UnityEngine.Vector2)
+  commentId: M:MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,UnityEngine.Vector2)
+  id: '#ctor(UnityEngine.Vector3,UnityEngine.Vector2)'
+  parent: MuseDashMirror.Models.TransformParameters
+  langs:
+  - csharp
+  - vb
+  name: TransformParameters(Vector3, Vector2)
+  nameWithType: TransformParameters.TransformParameters(Vector3, Vector2)
+  fullName: MuseDashMirror.Models.TransformParameters.TransformParameters(UnityEngine.Vector3, UnityEngine.Vector2)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/TransformParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/TransformParameters.cs
+    startLine: 68
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create TransformParameters with Global Position and SizeDelta
+  example: []
+  syntax:
+    content: public TransformParameters(Vector3 position, Vector2 sizeDelta)
+    parameters:
+    - id: position
+      type: UnityEngine.Vector3
+      description: GameObject Position
+    - id: sizeDelta
+      type: UnityEngine.Vector2
+      description: GameObject RectTransform SizeDelta
+    content.vb: Public Sub New(position As Vector3, sizeDelta As Vector2)
+  overload: MuseDashMirror.Models.TransformParameters.#ctor*
+  nameWithType.vb: TransformParameters.New(Vector3, Vector2)
+  fullName.vb: MuseDashMirror.Models.TransformParameters.New(UnityEngine.Vector3, UnityEngine.Vector2)
+  name.vb: New(Vector3, Vector2)
+- uid: MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,System.Boolean,MuseDashMirror.Contracts.IPositionStrategy)
+  commentId: M:MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,System.Boolean,MuseDashMirror.Contracts.IPositionStrategy)
+  id: '#ctor(UnityEngine.Vector3,System.Boolean,MuseDashMirror.Contracts.IPositionStrategy)'
+  parent: MuseDashMirror.Models.TransformParameters
+  langs:
+  - csharp
+  - vb
+  name: TransformParameters(Vector3, bool, IPositionStrategy)
+  nameWithType: TransformParameters.TransformParameters(Vector3, bool, IPositionStrategy)
+  fullName: MuseDashMirror.Models.TransformParameters.TransformParameters(UnityEngine.Vector3, bool, MuseDashMirror.Contracts.IPositionStrategy)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/TransformParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/TransformParameters.cs
+    startLine: 81
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create TransformParameters with Global Position, SizeDelta and Position Strategy
+  example: []
+  syntax:
+    content: public TransformParameters(Vector3 position, bool isLocalPosition, IPositionStrategy positionStrategy)
+    parameters:
+    - id: position
+      type: UnityEngine.Vector3
+      description: GameObject Position
+    - id: isLocalPosition
+      type: System.Boolean
+      description: Local Position or not
+    - id: positionStrategy
+      type: MuseDashMirror.Contracts.IPositionStrategy
+      description: ''
+    content.vb: Public Sub New(position As Vector3, isLocalPosition As Boolean, positionStrategy As IPositionStrategy)
+  overload: MuseDashMirror.Models.TransformParameters.#ctor*
+  nameWithType.vb: TransformParameters.New(Vector3, Boolean, IPositionStrategy)
+  fullName.vb: MuseDashMirror.Models.TransformParameters.New(UnityEngine.Vector3, Boolean, MuseDashMirror.Contracts.IPositionStrategy)
+  name.vb: New(Vector3, Boolean, IPositionStrategy)
+- uid: MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,System.Boolean,UnityEngine.Vector2)
+  commentId: M:MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,System.Boolean,UnityEngine.Vector2)
+  id: '#ctor(UnityEngine.Vector3,System.Boolean,UnityEngine.Vector2)'
+  parent: MuseDashMirror.Models.TransformParameters
+  langs:
+  - csharp
+  - vb
+  name: TransformParameters(Vector3, bool, Vector2)
+  nameWithType: TransformParameters.TransformParameters(Vector3, bool, Vector2)
+  fullName: MuseDashMirror.Models.TransformParameters.TransformParameters(UnityEngine.Vector3, bool, UnityEngine.Vector2)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/TransformParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/TransformParameters.cs
+    startLine: 90
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create TransformParameters with Global Position,choose LocalPosition or GlobalPosition, SizeDelta
+  example: []
+  syntax:
+    content: public TransformParameters(Vector3 position, bool isLocalPosition, Vector2 sizeDelta)
+    parameters:
+    - id: position
+      type: UnityEngine.Vector3
+      description: GameObject Position
+    - id: isLocalPosition
+      type: System.Boolean
+      description: Local Position or not
+    - id: sizeDelta
+      type: UnityEngine.Vector2
+      description: GameObject RectTransform SizeDelta
+    content.vb: Public Sub New(position As Vector3, isLocalPosition As Boolean, sizeDelta As Vector2)
+  overload: MuseDashMirror.Models.TransformParameters.#ctor*
+  nameWithType.vb: TransformParameters.New(Vector3, Boolean, Vector2)
+  fullName.vb: MuseDashMirror.Models.TransformParameters.New(UnityEngine.Vector3, Boolean, UnityEngine.Vector2)
+  name.vb: New(Vector3, Boolean, Vector2)
+references:
+- uid: MuseDashMirror.Models
+  commentId: N:MuseDashMirror.Models
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Models
+  nameWithType: MuseDashMirror.Models
+  fullName: MuseDashMirror.Models
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MuseDashMirror.Models.TransformParameters.IsAutoSize*
+  commentId: Overload:MuseDashMirror.Models.TransformParameters.IsAutoSize
+  href: MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_IsAutoSize
+  name: IsAutoSize
+  nameWithType: TransformParameters.IsAutoSize
+  fullName: MuseDashMirror.Models.TransformParameters.IsAutoSize
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MuseDashMirror.Models.TransformParameters.IsLocalPosition*
+  commentId: Overload:MuseDashMirror.Models.TransformParameters.IsLocalPosition
+  href: MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_IsLocalPosition
+  name: IsLocalPosition
+  nameWithType: TransformParameters.IsLocalPosition
+  fullName: MuseDashMirror.Models.TransformParameters.IsLocalPosition
+- uid: MuseDashMirror.Models.TransformParameters.Position*
+  commentId: Overload:MuseDashMirror.Models.TransformParameters.Position
+  href: MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_Position
+  name: Position
+  nameWithType: TransformParameters.Position
+  fullName: MuseDashMirror.Models.TransformParameters.Position
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: MuseDashMirror.Models.TransformParameters.SizeDelta*
+  commentId: Overload:MuseDashMirror.Models.TransformParameters.SizeDelta
+  href: MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_SizeDelta
+  name: SizeDelta
+  nameWithType: TransformParameters.SizeDelta
+  fullName: MuseDashMirror.Models.TransformParameters.SizeDelta
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: MuseDashMirror.Models.TransformParameters.LocalScale*
+  commentId: Overload:MuseDashMirror.Models.TransformParameters.LocalScale
+  href: MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_LocalScale
+  name: LocalScale
+  nameWithType: TransformParameters.LocalScale
+  fullName: MuseDashMirror.Models.TransformParameters.LocalScale
+- uid: MuseDashMirror.Models.TransformParameters.PositionStrategy*
+  commentId: Overload:MuseDashMirror.Models.TransformParameters.PositionStrategy
+  href: MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_PositionStrategy
+  name: PositionStrategy
+  nameWithType: TransformParameters.PositionStrategy
+  fullName: MuseDashMirror.Models.TransformParameters.PositionStrategy
+- uid: MuseDashMirror.Contracts.IPositionStrategy
+  commentId: T:MuseDashMirror.Contracts.IPositionStrategy
+  parent: MuseDashMirror.Contracts
+  href: MuseDashMirror.Contracts.IPositionStrategy.html
+  name: IPositionStrategy
+  nameWithType: IPositionStrategy
+  fullName: MuseDashMirror.Contracts.IPositionStrategy
+- uid: MuseDashMirror.Contracts
+  commentId: N:MuseDashMirror.Contracts
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Contracts
+  nameWithType: MuseDashMirror.Contracts
+  fullName: MuseDashMirror.Contracts
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Contracts
+    name: Contracts
+    href: MuseDashMirror.Contracts.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Contracts
+    name: Contracts
+    href: MuseDashMirror.Contracts.html
+- uid: MuseDashMirror.Models.TransformParameters.#ctor*
+  commentId: Overload:MuseDashMirror.Models.TransformParameters.#ctor
+  href: MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters__ctor_UnityEngine_Vector3_
+  name: TransformParameters
+  nameWithType: TransformParameters.TransformParameters
+  fullName: MuseDashMirror.Models.TransformParameters.TransformParameters
+  nameWithType.vb: TransformParameters.New
+  fullName.vb: MuseDashMirror.Models.TransformParameters.New
+  name.vb: New

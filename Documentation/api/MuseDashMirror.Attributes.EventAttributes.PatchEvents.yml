@@ -1,0 +1,65 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents
+  commentId: N:MuseDashMirror.Attributes.EventAttributes.PatchEvents
+  id: MuseDashMirror.Attributes.EventAttributes.PatchEvents
+  children:
+  - MuseDashMirror.Attributes.EventAttributes.PatchEvents.AddScorePatchAttribute
+  - MuseDashMirror.Attributes.EventAttributes.PatchEvents.GameStartPatchAttribute
+  - MuseDashMirror.Attributes.EventAttributes.PatchEvents.MenuSelectPatchAttribute
+  - MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlMenuPatchAttribute
+  - MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlStagePatchAttribute
+  - MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlVictoryPatchAttribute
+  - MuseDashMirror.Attributes.EventAttributes.PatchEvents.SwitchLanguagePatchAttribute
+  langs:
+  - csharp
+  - vb
+  name: MuseDashMirror.Attributes.EventAttributes.PatchEvents
+  nameWithType: MuseDashMirror.Attributes.EventAttributes.PatchEvents
+  fullName: MuseDashMirror.Attributes.EventAttributes.PatchEvents
+  type: Namespace
+  assemblies:
+  - MuseDashMirror
+references:
+- uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.AddScorePatchAttribute
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.PatchEvents.AddScorePatchAttribute
+  href: MuseDashMirror.Attributes.EventAttributes.PatchEvents.AddScorePatchAttribute.html
+  name: AddScorePatchAttribute
+  nameWithType: AddScorePatchAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.PatchEvents.AddScorePatchAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.GameStartPatchAttribute
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.PatchEvents.GameStartPatchAttribute
+  href: MuseDashMirror.Attributes.EventAttributes.PatchEvents.GameStartPatchAttribute.html
+  name: GameStartPatchAttribute
+  nameWithType: GameStartPatchAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.PatchEvents.GameStartPatchAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.MenuSelectPatchAttribute
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.PatchEvents.MenuSelectPatchAttribute
+  href: MuseDashMirror.Attributes.EventAttributes.PatchEvents.MenuSelectPatchAttribute.html
+  name: MenuSelectPatchAttribute
+  nameWithType: MenuSelectPatchAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.PatchEvents.MenuSelectPatchAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlMenuPatchAttribute
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlMenuPatchAttribute
+  href: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlMenuPatchAttribute.html
+  name: PnlMenuPatchAttribute
+  nameWithType: PnlMenuPatchAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlMenuPatchAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlStagePatchAttribute
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlStagePatchAttribute
+  href: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlStagePatchAttribute.html
+  name: PnlStagePatchAttribute
+  nameWithType: PnlStagePatchAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlStagePatchAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlVictoryPatchAttribute
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlVictoryPatchAttribute
+  href: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlVictoryPatchAttribute.html
+  name: PnlVictoryPatchAttribute
+  nameWithType: PnlVictoryPatchAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlVictoryPatchAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.SwitchLanguagePatchAttribute
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.PatchEvents.SwitchLanguagePatchAttribute
+  href: MuseDashMirror.Attributes.EventAttributes.PatchEvents.SwitchLanguagePatchAttribute.html
+  name: SwitchLanguagePatchAttribute
+  nameWithType: SwitchLanguagePatchAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.PatchEvents.SwitchLanguagePatchAttribute

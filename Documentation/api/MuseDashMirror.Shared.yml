@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Shared
+  commentId: N:MuseDashMirror.Shared
+  id: MuseDashMirror.Shared
+  children:
+  - MuseDashMirror.Shared.LoggerType
+  langs:
+  - csharp
+  - vb
+  name: MuseDashMirror.Shared
+  nameWithType: MuseDashMirror.Shared
+  fullName: MuseDashMirror.Shared
+  type: Namespace
+  assemblies:
+  - MuseDashMirror
+references:
+- uid: MuseDashMirror.Shared.LoggerType
+  commentId: T:MuseDashMirror.Shared.LoggerType
+  parent: MuseDashMirror.Shared
+  href: MuseDashMirror.Shared.LoggerType.html
+  name: LoggerType
+  nameWithType: LoggerType
+  fullName: MuseDashMirror.Shared.LoggerType
+- uid: MuseDashMirror.Shared
+  commentId: N:MuseDashMirror.Shared
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Shared
+  nameWithType: MuseDashMirror.Shared
+  fullName: MuseDashMirror.Shared
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Shared
+    name: Shared
+    href: MuseDashMirror.Shared.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Shared
+    name: Shared
+    href: MuseDashMirror.Shared.html

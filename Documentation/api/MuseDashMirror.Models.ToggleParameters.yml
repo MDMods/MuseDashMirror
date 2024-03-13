@@ -1,0 +1,955 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Models.ToggleParameters
+  commentId: T:MuseDashMirror.Models.ToggleParameters
+  id: ToggleParameters
+  parent: MuseDashMirror.Models
+  children:
+  - MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean})
+  - MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.Color)
+  - MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup)
+  - MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup,UnityEngine.Color)
+  - MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup,UnityEngine.Color,UnityEngine.Color)
+  - MuseDashMirror.Models.ToggleParameters.CallBack
+  - MuseDashMirror.Models.ToggleParameters.CheckMarkColor
+  - MuseDashMirror.Models.ToggleParameters.InitialValue
+  - MuseDashMirror.Models.ToggleParameters.TextColor
+  - MuseDashMirror.Models.ToggleParameters.TextParameters
+  - MuseDashMirror.Models.ToggleParameters.ToggleGroup
+  - MuseDashMirror.Models.ToggleParameters.ToggleName
+  langs:
+  - csharp
+  - vb
+  name: ToggleParameters
+  nameWithType: ToggleParameters
+  fullName: MuseDashMirror.Models.ToggleParameters
+  type: Class
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/ToggleParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: ToggleParameters
+    path: ../src/MuseDashMirror/Models/ToggleParameters.cs
+    startLine: 5
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Parameters for creating Toggle
+  example: []
+  syntax:
+    content: public class ToggleParameters
+    content.vb: Public Class ToggleParameters
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MuseDashMirror.Models.ToggleParameters.ToggleName
+  commentId: P:MuseDashMirror.Models.ToggleParameters.ToggleName
+  id: ToggleName
+  parent: MuseDashMirror.Models.ToggleParameters
+  langs:
+  - csharp
+  - vb
+  name: ToggleName
+  nameWithType: ToggleParameters.ToggleName
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleName
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/ToggleParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: ToggleName
+    path: ../src/MuseDashMirror/Models/ToggleParameters.cs
+    startLine: 10
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Toggle GameObject Name
+  example: []
+  syntax:
+    content: public string ToggleName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ToggleName As String
+  overload: MuseDashMirror.Models.ToggleParameters.ToggleName*
+- uid: MuseDashMirror.Models.ToggleParameters.TextParameters
+  commentId: P:MuseDashMirror.Models.ToggleParameters.TextParameters
+  id: TextParameters
+  parent: MuseDashMirror.Models.ToggleParameters
+  langs:
+  - csharp
+  - vb
+  name: TextParameters
+  nameWithType: ToggleParameters.TextParameters
+  fullName: MuseDashMirror.Models.ToggleParameters.TextParameters
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/ToggleParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: TextParameters
+    path: ../src/MuseDashMirror/Models/ToggleParameters.cs
+    startLine: 15
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Text Parameters
+  example: []
+  syntax:
+    content: public TextParameters TextParameters { get; }
+    parameters: []
+    return:
+      type: MuseDashMirror.Models.TextParameters
+    content.vb: Public ReadOnly Property TextParameters As TextParameters
+  overload: MuseDashMirror.Models.ToggleParameters.TextParameters*
+- uid: MuseDashMirror.Models.ToggleParameters.ToggleGroup
+  commentId: P:MuseDashMirror.Models.ToggleParameters.ToggleGroup
+  id: ToggleGroup
+  parent: MuseDashMirror.Models.ToggleParameters
+  langs:
+  - csharp
+  - vb
+  name: ToggleGroup
+  nameWithType: ToggleParameters.ToggleGroup
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleGroup
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/ToggleParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: ToggleGroup
+    path: ../src/MuseDashMirror/Models/ToggleParameters.cs
+    startLine: 20
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Toggle Group
+  example: []
+  syntax:
+    content: public ToggleGroup ToggleGroup { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.UI.ToggleGroup
+    content.vb: Public Property ToggleGroup As ToggleGroup
+  overload: MuseDashMirror.Models.ToggleParameters.ToggleGroup*
+- uid: MuseDashMirror.Models.ToggleParameters.InitialValue
+  commentId: P:MuseDashMirror.Models.ToggleParameters.InitialValue
+  id: InitialValue
+  parent: MuseDashMirror.Models.ToggleParameters
+  langs:
+  - csharp
+  - vb
+  name: InitialValue
+  nameWithType: ToggleParameters.InitialValue
+  fullName: MuseDashMirror.Models.ToggleParameters.InitialValue
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/ToggleParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: InitialValue
+    path: ../src/MuseDashMirror/Models/ToggleParameters.cs
+    startLine: 25
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Initial Value
+  example: []
+  syntax:
+    content: public bool InitialValue { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property InitialValue As Boolean
+  overload: MuseDashMirror.Models.ToggleParameters.InitialValue*
+- uid: MuseDashMirror.Models.ToggleParameters.CallBack
+  commentId: P:MuseDashMirror.Models.ToggleParameters.CallBack
+  id: CallBack
+  parent: MuseDashMirror.Models.ToggleParameters
+  langs:
+  - csharp
+  - vb
+  name: CallBack
+  nameWithType: ToggleParameters.CallBack
+  fullName: MuseDashMirror.Models.ToggleParameters.CallBack
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/ToggleParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: CallBack
+    path: ../src/MuseDashMirror/Models/ToggleParameters.cs
+    startLine: 30
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Boolean Callback
+  example: []
+  syntax:
+    content: public Action<bool> CallBack { get; set; }
+    parameters: []
+    return:
+      type: System.Action{System.Boolean}
+    content.vb: Public Property CallBack As Action(Of Boolean)
+  overload: MuseDashMirror.Models.ToggleParameters.CallBack*
+- uid: MuseDashMirror.Models.ToggleParameters.TextColor
+  commentId: P:MuseDashMirror.Models.ToggleParameters.TextColor
+  id: TextColor
+  parent: MuseDashMirror.Models.ToggleParameters
+  langs:
+  - csharp
+  - vb
+  name: TextColor
+  nameWithType: ToggleParameters.TextColor
+  fullName: MuseDashMirror.Models.ToggleParameters.TextColor
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/ToggleParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: TextColor
+    path: ../src/MuseDashMirror/Models/ToggleParameters.cs
+    startLine: 35
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Toggle Text Color
+  example: []
+  syntax:
+    content: public Color TextColor { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Property TextColor As Color
+  overload: MuseDashMirror.Models.ToggleParameters.TextColor*
+- uid: MuseDashMirror.Models.ToggleParameters.CheckMarkColor
+  commentId: P:MuseDashMirror.Models.ToggleParameters.CheckMarkColor
+  id: CheckMarkColor
+  parent: MuseDashMirror.Models.ToggleParameters
+  langs:
+  - csharp
+  - vb
+  name: CheckMarkColor
+  nameWithType: ToggleParameters.CheckMarkColor
+  fullName: MuseDashMirror.Models.ToggleParameters.CheckMarkColor
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/ToggleParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: CheckMarkColor
+    path: ../src/MuseDashMirror/Models/ToggleParameters.cs
+    startLine: 40
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Toggle CheckMark Color
+  example: []
+  syntax:
+    content: public Color CheckMarkColor { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Property CheckMarkColor As Color
+  overload: MuseDashMirror.Models.ToggleParameters.CheckMarkColor*
+- uid: MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean})
+  commentId: M:MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean})
+  id: '#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean})'
+  parent: MuseDashMirror.Models.ToggleParameters
+  langs:
+  - csharp
+  - vb
+  name: ToggleParameters(string, TextParameters, bool, Action<bool>)
+  nameWithType: ToggleParameters.ToggleParameters(string, TextParameters, bool, Action<bool>)
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleParameters(string, MuseDashMirror.Models.TextParameters, bool, System.Action<bool>)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/ToggleParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/ToggleParameters.cs
+    startLine: 49
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create Toggle Parameters with Text Parameters and Boolean Callback
+  example: []
+  syntax:
+    content: public ToggleParameters(string toggleName, TextParameters textParameters, bool initialValue, Action<bool> callBack)
+    parameters:
+    - id: toggleName
+      type: System.String
+      description: Toggle GameObject Name
+    - id: textParameters
+      type: MuseDashMirror.Models.TextParameters
+      description: Text Parameters
+    - id: initialValue
+      type: System.Boolean
+      description: Initial Value
+    - id: callBack
+      type: System.Action{System.Boolean}
+      description: Boolean Callback
+    content.vb: Public Sub New(toggleName As String, textParameters As TextParameters, initialValue As Boolean, callBack As Action(Of Boolean))
+  overload: MuseDashMirror.Models.ToggleParameters.#ctor*
+  nameWithType.vb: ToggleParameters.New(String, TextParameters, Boolean, Action(Of Boolean))
+  fullName.vb: MuseDashMirror.Models.ToggleParameters.New(String, MuseDashMirror.Models.TextParameters, Boolean, System.Action(Of Boolean))
+  name.vb: New(String, TextParameters, Boolean, Action(Of Boolean))
+- uid: MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.Color)
+  commentId: M:MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.Color)
+  id: '#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.Color)'
+  parent: MuseDashMirror.Models.ToggleParameters
+  langs:
+  - csharp
+  - vb
+  name: ToggleParameters(string, TextParameters, bool, Action<bool>, Color)
+  nameWithType: ToggleParameters.ToggleParameters(string, TextParameters, bool, Action<bool>, Color)
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleParameters(string, MuseDashMirror.Models.TextParameters, bool, System.Action<bool>, UnityEngine.Color)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/ToggleParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/ToggleParameters.cs
+    startLine: 70
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create Toggle Parameters with Text Parameters, Boolean Callback and Toggle Text Color
+  example: []
+  syntax:
+    content: public ToggleParameters(string toggleName, TextParameters textParameters, bool initialValue, Action<bool> callBack, Color textColor)
+    parameters:
+    - id: toggleName
+      type: System.String
+      description: Toggle GameObject Name
+    - id: textParameters
+      type: MuseDashMirror.Models.TextParameters
+      description: Text Parameters
+    - id: initialValue
+      type: System.Boolean
+      description: Initial Value
+    - id: callBack
+      type: System.Action{System.Boolean}
+      description: Boolean Callback
+    - id: textColor
+      type: UnityEngine.Color
+      description: Toggle Text Color
+    content.vb: Public Sub New(toggleName As String, textParameters As TextParameters, initialValue As Boolean, callBack As Action(Of Boolean), textColor As Color)
+  overload: MuseDashMirror.Models.ToggleParameters.#ctor*
+  nameWithType.vb: ToggleParameters.New(String, TextParameters, Boolean, Action(Of Boolean), Color)
+  fullName.vb: MuseDashMirror.Models.ToggleParameters.New(String, MuseDashMirror.Models.TextParameters, Boolean, System.Action(Of Boolean), UnityEngine.Color)
+  name.vb: New(String, TextParameters, Boolean, Action(Of Boolean), Color)
+- uid: MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup)
+  commentId: M:MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup)
+  id: '#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup)'
+  parent: MuseDashMirror.Models.ToggleParameters
+  langs:
+  - csharp
+  - vb
+  name: ToggleParameters(string, TextParameters, bool, Action<bool>, ToggleGroup)
+  nameWithType: ToggleParameters.ToggleParameters(string, TextParameters, bool, Action<bool>, ToggleGroup)
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleParameters(string, MuseDashMirror.Models.TextParameters, bool, System.Action<bool>, UnityEngine.UI.ToggleGroup)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/ToggleParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/ToggleParameters.cs
+    startLine: 81
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create Toggle Parameters with Text Parameters, Boolean Callback and Toggle Group
+  example: []
+  syntax:
+    content: public ToggleParameters(string toggleName, TextParameters textParameters, bool initialValue, Action<bool> callBack, ToggleGroup toggleGroup)
+    parameters:
+    - id: toggleName
+      type: System.String
+      description: Toggle GameObject Name
+    - id: textParameters
+      type: MuseDashMirror.Models.TextParameters
+      description: Text Parameters
+    - id: initialValue
+      type: System.Boolean
+      description: Initial Value
+    - id: callBack
+      type: System.Action{System.Boolean}
+      description: Boolean Callback
+    - id: toggleGroup
+      type: UnityEngine.UI.ToggleGroup
+      description: Toggle Group
+    content.vb: Public Sub New(toggleName As String, textParameters As TextParameters, initialValue As Boolean, callBack As Action(Of Boolean), toggleGroup As ToggleGroup)
+  overload: MuseDashMirror.Models.ToggleParameters.#ctor*
+  nameWithType.vb: ToggleParameters.New(String, TextParameters, Boolean, Action(Of Boolean), ToggleGroup)
+  fullName.vb: MuseDashMirror.Models.ToggleParameters.New(String, MuseDashMirror.Models.TextParameters, Boolean, System.Action(Of Boolean), UnityEngine.UI.ToggleGroup)
+  name.vb: New(String, TextParameters, Boolean, Action(Of Boolean), ToggleGroup)
+- uid: MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup,UnityEngine.Color)
+  commentId: M:MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup,UnityEngine.Color)
+  id: '#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup,UnityEngine.Color)'
+  parent: MuseDashMirror.Models.ToggleParameters
+  langs:
+  - csharp
+  - vb
+  name: ToggleParameters(string, TextParameters, bool, Action<bool>, ToggleGroup, Color)
+  nameWithType: ToggleParameters.ToggleParameters(string, TextParameters, bool, Action<bool>, ToggleGroup, Color)
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleParameters(string, MuseDashMirror.Models.TextParameters, bool, System.Action<bool>, UnityEngine.UI.ToggleGroup, UnityEngine.Color)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/ToggleParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/ToggleParameters.cs
+    startLine: 93
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create Toggle Parameters with Text Parameters, Boolean Callback, Toggle Group and Toggle Text Color
+  example: []
+  syntax:
+    content: public ToggleParameters(string toggleName, TextParameters textParameters, bool initialValue, Action<bool> callBack, ToggleGroup toggleGroup, Color textColor)
+    parameters:
+    - id: toggleName
+      type: System.String
+      description: Toggle GameObject Name
+    - id: textParameters
+      type: MuseDashMirror.Models.TextParameters
+      description: Text Parameters
+    - id: initialValue
+      type: System.Boolean
+      description: Initial Value
+    - id: callBack
+      type: System.Action{System.Boolean}
+      description: Boolean Callback
+    - id: toggleGroup
+      type: UnityEngine.UI.ToggleGroup
+      description: Toggle Group
+    - id: textColor
+      type: UnityEngine.Color
+      description: Toggle Text Color
+    content.vb: Public Sub New(toggleName As String, textParameters As TextParameters, initialValue As Boolean, callBack As Action(Of Boolean), toggleGroup As ToggleGroup, textColor As Color)
+  overload: MuseDashMirror.Models.ToggleParameters.#ctor*
+  nameWithType.vb: ToggleParameters.New(String, TextParameters, Boolean, Action(Of Boolean), ToggleGroup, Color)
+  fullName.vb: MuseDashMirror.Models.ToggleParameters.New(String, MuseDashMirror.Models.TextParameters, Boolean, System.Action(Of Boolean), UnityEngine.UI.ToggleGroup, UnityEngine.Color)
+  name.vb: New(String, TextParameters, Boolean, Action(Of Boolean), ToggleGroup, Color)
+- uid: MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup,UnityEngine.Color,UnityEngine.Color)
+  commentId: M:MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup,UnityEngine.Color,UnityEngine.Color)
+  id: '#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup,UnityEngine.Color,UnityEngine.Color)'
+  parent: MuseDashMirror.Models.ToggleParameters
+  langs:
+  - csharp
+  - vb
+  name: ToggleParameters(string, TextParameters, bool, Action<bool>, ToggleGroup, Color, Color)
+  nameWithType: ToggleParameters.ToggleParameters(string, TextParameters, bool, Action<bool>, ToggleGroup, Color, Color)
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleParameters(string, MuseDashMirror.Models.TextParameters, bool, System.Action<bool>, UnityEngine.UI.ToggleGroup, UnityEngine.Color, UnityEngine.Color)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/ToggleParameters.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/Models/ToggleParameters.cs
+    startLine: 107
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Create Toggle Parameters with Text Parameters, Boolean Callback, Toggle Group and CheckMark Color
+  example: []
+  syntax:
+    content: public ToggleParameters(string toggleName, TextParameters textParameters, bool initialValue, Action<bool> callBack, ToggleGroup toggleGroup, Color textColor, Color checkMarkColor)
+    parameters:
+    - id: toggleName
+      type: System.String
+      description: Toggle GameObject Name
+    - id: textParameters
+      type: MuseDashMirror.Models.TextParameters
+      description: Text Parameters
+    - id: initialValue
+      type: System.Boolean
+      description: Initial Value
+    - id: callBack
+      type: System.Action{System.Boolean}
+      description: Boolean Callback
+    - id: toggleGroup
+      type: UnityEngine.UI.ToggleGroup
+      description: Toggle Group
+    - id: textColor
+      type: UnityEngine.Color
+      description: Toggle Text Color
+    - id: checkMarkColor
+      type: UnityEngine.Color
+      description: CheckMark Color
+    content.vb: Public Sub New(toggleName As String, textParameters As TextParameters, initialValue As Boolean, callBack As Action(Of Boolean), toggleGroup As ToggleGroup, textColor As Color, checkMarkColor As Color)
+  overload: MuseDashMirror.Models.ToggleParameters.#ctor*
+  nameWithType.vb: ToggleParameters.New(String, TextParameters, Boolean, Action(Of Boolean), ToggleGroup, Color, Color)
+  fullName.vb: MuseDashMirror.Models.ToggleParameters.New(String, MuseDashMirror.Models.TextParameters, Boolean, System.Action(Of Boolean), UnityEngine.UI.ToggleGroup, UnityEngine.Color, UnityEngine.Color)
+  name.vb: New(String, TextParameters, Boolean, Action(Of Boolean), ToggleGroup, Color, Color)
+references:
+- uid: MuseDashMirror.Models
+  commentId: N:MuseDashMirror.Models
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Models
+  nameWithType: MuseDashMirror.Models
+  fullName: MuseDashMirror.Models
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MuseDashMirror.Models.ToggleParameters.ToggleName*
+  commentId: Overload:MuseDashMirror.Models.ToggleParameters.ToggleName
+  href: MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_ToggleName
+  name: ToggleName
+  nameWithType: ToggleParameters.ToggleName
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MuseDashMirror.Models.ToggleParameters.TextParameters*
+  commentId: Overload:MuseDashMirror.Models.ToggleParameters.TextParameters
+  href: MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_TextParameters
+  name: TextParameters
+  nameWithType: ToggleParameters.TextParameters
+  fullName: MuseDashMirror.Models.ToggleParameters.TextParameters
+- uid: MuseDashMirror.Models.TextParameters
+  commentId: T:MuseDashMirror.Models.TextParameters
+  parent: MuseDashMirror.Models
+  href: MuseDashMirror.Models.TextParameters.html
+  name: TextParameters
+  nameWithType: TextParameters
+  fullName: MuseDashMirror.Models.TextParameters
+- uid: MuseDashMirror.Models.ToggleParameters.ToggleGroup*
+  commentId: Overload:MuseDashMirror.Models.ToggleParameters.ToggleGroup
+  href: MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_ToggleGroup
+  name: ToggleGroup
+  nameWithType: ToggleParameters.ToggleGroup
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleGroup
+- uid: UnityEngine.UI.ToggleGroup
+  commentId: T:UnityEngine.UI.ToggleGroup
+  parent: UnityEngine.UI
+  isExternal: true
+  name: ToggleGroup
+  nameWithType: ToggleGroup
+  fullName: UnityEngine.UI.ToggleGroup
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: MuseDashMirror.Models.ToggleParameters.InitialValue*
+  commentId: Overload:MuseDashMirror.Models.ToggleParameters.InitialValue
+  href: MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_InitialValue
+  name: InitialValue
+  nameWithType: ToggleParameters.InitialValue
+  fullName: MuseDashMirror.Models.ToggleParameters.InitialValue
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MuseDashMirror.Models.ToggleParameters.CallBack*
+  commentId: Overload:MuseDashMirror.Models.ToggleParameters.CallBack
+  href: MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_CallBack
+  name: CallBack
+  nameWithType: ToggleParameters.CallBack
+  fullName: MuseDashMirror.Models.ToggleParameters.CallBack
+- uid: System.Action{System.Boolean}
+  commentId: T:System.Action{System.Boolean}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<bool>
+  nameWithType: Action<bool>
+  fullName: System.Action<bool>
+  nameWithType.vb: Action(Of Boolean)
+  fullName.vb: System.Action(Of Boolean)
+  name.vb: Action(Of Boolean)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MuseDashMirror.Models.ToggleParameters.TextColor*
+  commentId: Overload:MuseDashMirror.Models.ToggleParameters.TextColor
+  href: MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_TextColor
+  name: TextColor
+  nameWithType: ToggleParameters.TextColor
+  fullName: MuseDashMirror.Models.ToggleParameters.TextColor
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: MuseDashMirror.Models.ToggleParameters.CheckMarkColor*
+  commentId: Overload:MuseDashMirror.Models.ToggleParameters.CheckMarkColor
+  href: MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_CheckMarkColor
+  name: CheckMarkColor
+  nameWithType: ToggleParameters.CheckMarkColor
+  fullName: MuseDashMirror.Models.ToggleParameters.CheckMarkColor
+- uid: MuseDashMirror.Models.ToggleParameters.#ctor*
+  commentId: Overload:MuseDashMirror.Models.ToggleParameters.#ctor
+  href: MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters__ctor_System_String_MuseDashMirror_Models_TextParameters_System_Boolean_System_Action_System_Boolean__
+  name: ToggleParameters
+  nameWithType: ToggleParameters.ToggleParameters
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleParameters
+  nameWithType.vb: ToggleParameters.New
+  fullName.vb: MuseDashMirror.Models.ToggleParameters.New
+  name.vb: New

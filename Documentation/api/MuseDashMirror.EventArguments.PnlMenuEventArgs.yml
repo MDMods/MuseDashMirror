@@ -1,0 +1,439 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.EventArguments.PnlMenuEventArgs
+  commentId: T:MuseDashMirror.EventArguments.PnlMenuEventArgs
+  id: PnlMenuEventArgs
+  parent: MuseDashMirror.EventArguments
+  children:
+  - MuseDashMirror.EventArguments.PnlMenuEventArgs.#ctor(Il2CppAssets.Scripts.UI.Panels.PnlMenu)
+  - MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenu
+  langs:
+  - csharp
+  - vb
+  name: PnlMenuEventArgs
+  nameWithType: PnlMenuEventArgs
+  fullName: MuseDashMirror.EventArguments.PnlMenuEventArgs
+  type: Class
+  source:
+    remote:
+      path: src/MuseDashMirror/EventArguments/PnlMenuEventArgs.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: PnlMenuEventArgs
+    path: ../src/MuseDashMirror/EventArguments/PnlMenuEventArgs.cs
+    startLine: 8
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.EventArguments
+  summary: Event Argument for <xref href="Il2CppAssets.Scripts.UI.Panels.PnlMenu.Awake" data-throw-if-not-resolved="false"></xref> Patch
+  example: []
+  syntax:
+    content: 'public sealed class PnlMenuEventArgs : EventArgs'
+    content.vb: Public NotInheritable Class PnlMenuEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MuseDashMirror.EventArguments.PnlMenuEventArgs.#ctor(Il2CppAssets.Scripts.UI.Panels.PnlMenu)
+  commentId: M:MuseDashMirror.EventArguments.PnlMenuEventArgs.#ctor(Il2CppAssets.Scripts.UI.Panels.PnlMenu)
+  id: '#ctor(Il2CppAssets.Scripts.UI.Panels.PnlMenu)'
+  parent: MuseDashMirror.EventArguments.PnlMenuEventArgs
+  langs:
+  - csharp
+  - vb
+  name: PnlMenuEventArgs(PnlMenu)
+  nameWithType: PnlMenuEventArgs.PnlMenuEventArgs(PnlMenu)
+  fullName: MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenuEventArgs(Il2CppAssets.Scripts.UI.Panels.PnlMenu)
+  type: Constructor
+  source:
+    remote:
+      path: src/MuseDashMirror/EventArguments/PnlMenuEventArgs.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: .ctor
+    path: ../src/MuseDashMirror/EventArguments/PnlMenuEventArgs.cs
+    startLine: 8
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.EventArguments
+  summary: Event Argument for <xref href="Il2CppAssets.Scripts.UI.Panels.PnlMenu.Awake" data-throw-if-not-resolved="false"></xref> Patch
+  example: []
+  syntax:
+    content: public PnlMenuEventArgs(PnlMenu pnlMenu)
+    parameters:
+    - id: pnlMenu
+      type: Il2CppAssets.Scripts.UI.Panels.PnlMenu
+      description: ''
+    content.vb: Public Sub New(pnlMenu As PnlMenu)
+  overload: MuseDashMirror.EventArguments.PnlMenuEventArgs.#ctor*
+  nameWithType.vb: PnlMenuEventArgs.New(PnlMenu)
+  fullName.vb: MuseDashMirror.EventArguments.PnlMenuEventArgs.New(Il2CppAssets.Scripts.UI.Panels.PnlMenu)
+  name.vb: New(PnlMenu)
+- uid: MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenu
+  commentId: P:MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenu
+  id: PnlMenu
+  parent: MuseDashMirror.EventArguments.PnlMenuEventArgs
+  langs:
+  - csharp
+  - vb
+  name: PnlMenu
+  nameWithType: PnlMenuEventArgs.PnlMenu
+  fullName: MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenu
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/EventArguments/PnlMenuEventArgs.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: PnlMenu
+    path: ../src/MuseDashMirror/EventArguments/PnlMenuEventArgs.cs
+    startLine: 13
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.EventArguments
+  summary: <xref href="Il2CppAssets.Scripts.UI.Panels.PnlMenu" data-throw-if-not-resolved="false"></xref> Instance
+  example: []
+  syntax:
+    content: public PnlMenu PnlMenu { get; }
+    parameters: []
+    return:
+      type: Il2CppAssets.Scripts.UI.Panels.PnlMenu
+    content.vb: Public ReadOnly Property PnlMenu As PnlMenu
+  overload: MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenu*
+references:
+- uid: Il2CppAssets.Scripts.UI.Panels.PnlMenu.Awake
+  commentId: M:Il2CppAssets.Scripts.UI.Panels.PnlMenu.Awake
+  isExternal: true
+  name: Awake()
+  nameWithType: PnlMenu.Awake()
+  fullName: Il2CppAssets.Scripts.UI.Panels.PnlMenu.Awake()
+  spec.csharp:
+  - uid: Il2CppAssets.Scripts.UI.Panels.PnlMenu.Awake
+    name: Awake
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Il2CppAssets.Scripts.UI.Panels.PnlMenu.Awake
+    name: Awake
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MuseDashMirror.EventArguments
+  commentId: N:MuseDashMirror.EventArguments
+  href: MuseDashMirror.html
+  name: MuseDashMirror.EventArguments
+  nameWithType: MuseDashMirror.EventArguments
+  fullName: MuseDashMirror.EventArguments
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.EventArguments
+    name: EventArguments
+    href: MuseDashMirror.EventArguments.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.EventArguments
+    name: EventArguments
+    href: MuseDashMirror.EventArguments.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  commentId: F:System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs.empty
+  name: Empty
+  nameWithType: EventArgs.Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MuseDashMirror.EventArguments.PnlMenuEventArgs.#ctor*
+  commentId: Overload:MuseDashMirror.EventArguments.PnlMenuEventArgs.#ctor
+  href: MuseDashMirror.EventArguments.PnlMenuEventArgs.html#MuseDashMirror_EventArguments_PnlMenuEventArgs__ctor_Il2CppAssets_Scripts_UI_Panels_PnlMenu_
+  name: PnlMenuEventArgs
+  nameWithType: PnlMenuEventArgs.PnlMenuEventArgs
+  fullName: MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenuEventArgs
+  nameWithType.vb: PnlMenuEventArgs.New
+  fullName.vb: MuseDashMirror.EventArguments.PnlMenuEventArgs.New
+  name.vb: New
+- uid: Il2CppAssets.Scripts.UI.Panels.PnlMenu
+  commentId: T:Il2CppAssets.Scripts.UI.Panels.PnlMenu
+  parent: Il2CppAssets.Scripts.UI.Panels
+  isExternal: true
+  name: PnlMenu
+  nameWithType: PnlMenu
+  fullName: Il2CppAssets.Scripts.UI.Panels.PnlMenu
+- uid: Il2CppAssets.Scripts.UI.Panels
+  commentId: N:Il2CppAssets.Scripts.UI.Panels
+  isExternal: true
+  name: Il2CppAssets.Scripts.UI.Panels
+  nameWithType: Il2CppAssets.Scripts.UI.Panels
+  fullName: Il2CppAssets.Scripts.UI.Panels
+  spec.csharp:
+  - uid: Il2CppAssets
+    name: Il2CppAssets
+    isExternal: true
+  - name: .
+  - uid: Il2CppAssets.Scripts
+    name: Scripts
+    isExternal: true
+  - name: .
+  - uid: Il2CppAssets.Scripts.UI
+    name: UI
+    isExternal: true
+  - name: .
+  - uid: Il2CppAssets.Scripts.UI.Panels
+    name: Panels
+    isExternal: true
+  spec.vb:
+  - uid: Il2CppAssets
+    name: Il2CppAssets
+    isExternal: true
+  - name: .
+  - uid: Il2CppAssets.Scripts
+    name: Scripts
+    isExternal: true
+  - name: .
+  - uid: Il2CppAssets.Scripts.UI
+    name: UI
+    isExternal: true
+  - name: .
+  - uid: Il2CppAssets.Scripts.UI.Panels
+    name: Panels
+    isExternal: true
+- uid: MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenu*
+  commentId: Overload:MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenu
+  href: MuseDashMirror.EventArguments.PnlMenuEventArgs.html#MuseDashMirror_EventArguments_PnlMenuEventArgs_PnlMenu
+  name: PnlMenu
+  nameWithType: PnlMenuEventArgs.PnlMenu
+  fullName: MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenu

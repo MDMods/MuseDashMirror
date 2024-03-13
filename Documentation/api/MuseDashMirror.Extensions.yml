@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Extensions
+  commentId: N:MuseDashMirror.Extensions
+  id: MuseDashMirror.Extensions
+  children:
+  - MuseDashMirror.Extensions.ComponentExtensions
+  - MuseDashMirror.Extensions.GameObjectExtensions
+  - MuseDashMirror.Extensions.RectTransformExtensions
+  - MuseDashMirror.Extensions.StringExtensions
+  - MuseDashMirror.Extensions.UnityEngineObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: MuseDashMirror.Extensions
+  nameWithType: MuseDashMirror.Extensions
+  fullName: MuseDashMirror.Extensions
+  type: Namespace
+  assemblies:
+  - MuseDashMirror
+references:
+- uid: MuseDashMirror.Extensions.ComponentExtensions
+  commentId: T:MuseDashMirror.Extensions.ComponentExtensions
+  href: MuseDashMirror.Extensions.ComponentExtensions.html
+  name: ComponentExtensions
+  nameWithType: ComponentExtensions
+  fullName: MuseDashMirror.Extensions.ComponentExtensions
+- uid: MuseDashMirror.Extensions.GameObjectExtensions
+  commentId: T:MuseDashMirror.Extensions.GameObjectExtensions
+  href: MuseDashMirror.Extensions.GameObjectExtensions.html
+  name: GameObjectExtensions
+  nameWithType: GameObjectExtensions
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions
+- uid: MuseDashMirror.Extensions.RectTransformExtensions
+  commentId: T:MuseDashMirror.Extensions.RectTransformExtensions
+  href: MuseDashMirror.Extensions.RectTransformExtensions.html
+  name: RectTransformExtensions
+  nameWithType: RectTransformExtensions
+  fullName: MuseDashMirror.Extensions.RectTransformExtensions
+- uid: MuseDashMirror.Extensions.StringExtensions
+  commentId: T:MuseDashMirror.Extensions.StringExtensions
+  href: MuseDashMirror.Extensions.StringExtensions.html
+  name: StringExtensions
+  nameWithType: StringExtensions
+  fullName: MuseDashMirror.Extensions.StringExtensions
+- uid: MuseDashMirror.Extensions.UnityEngineObjectExtensions
+  commentId: T:MuseDashMirror.Extensions.UnityEngineObjectExtensions
+  href: MuseDashMirror.Extensions.UnityEngineObjectExtensions.html
+  name: UnityEngineObjectExtensions
+  nameWithType: UnityEngineObjectExtensions
+  fullName: MuseDashMirror.Extensions.UnityEngineObjectExtensions

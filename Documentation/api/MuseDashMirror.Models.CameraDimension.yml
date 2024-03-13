@@ -1,0 +1,118 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Models.CameraDimension
+  commentId: T:MuseDashMirror.Models.CameraDimension
+  id: CameraDimension
+  parent: MuseDashMirror.Models
+  children:
+  - MuseDashMirror.Models.CameraDimension.ThreeD
+  - MuseDashMirror.Models.CameraDimension.TwoD
+  langs:
+  - csharp
+  - vb
+  name: CameraDimension
+  nameWithType: CameraDimension
+  fullName: MuseDashMirror.Models.CameraDimension
+  type: Enum
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/CameraDimension.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: CameraDimension
+    path: ../src/MuseDashMirror/Models/CameraDimension.cs
+    startLine: 5
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: Camera Dimension
+  example: []
+  syntax:
+    content: public enum CameraDimension
+    content.vb: Public Enum CameraDimension
+- uid: MuseDashMirror.Models.CameraDimension.TwoD
+  commentId: F:MuseDashMirror.Models.CameraDimension.TwoD
+  id: TwoD
+  parent: MuseDashMirror.Models.CameraDimension
+  langs:
+  - csharp
+  - vb
+  name: TwoD
+  nameWithType: CameraDimension.TwoD
+  fullName: MuseDashMirror.Models.CameraDimension.TwoD
+  type: Field
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/CameraDimension.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: TwoD
+    path: ../src/MuseDashMirror/Models/CameraDimension.cs
+    startLine: 10
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: 2D Camera
+  example: []
+  syntax:
+    content: TwoD = 0
+    return:
+      type: MuseDashMirror.Models.CameraDimension
+- uid: MuseDashMirror.Models.CameraDimension.ThreeD
+  commentId: F:MuseDashMirror.Models.CameraDimension.ThreeD
+  id: ThreeD
+  parent: MuseDashMirror.Models.CameraDimension
+  langs:
+  - csharp
+  - vb
+  name: ThreeD
+  nameWithType: CameraDimension.ThreeD
+  fullName: MuseDashMirror.Models.CameraDimension.ThreeD
+  type: Field
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/CameraDimension.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: ThreeD
+    path: ../src/MuseDashMirror/Models/CameraDimension.cs
+    startLine: 15
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models
+  summary: 3D Camera
+  example: []
+  syntax:
+    content: ThreeD = 1
+    return:
+      type: MuseDashMirror.Models.CameraDimension
+references:
+- uid: MuseDashMirror.Models
+  commentId: N:MuseDashMirror.Models
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Models
+  nameWithType: MuseDashMirror.Models
+  fullName: MuseDashMirror.Models
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
+- uid: MuseDashMirror.Models.CameraDimension
+  commentId: T:MuseDashMirror.Models.CameraDimension
+  parent: MuseDashMirror.Models
+  href: MuseDashMirror.Models.CameraDimension.html
+  name: CameraDimension
+  nameWithType: CameraDimension
+  fullName: MuseDashMirror.Models.CameraDimension

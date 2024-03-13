@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Attributes
+  commentId: N:MuseDashMirror.Attributes
+  id: MuseDashMirror.Attributes
+  children:
+  - MuseDashMirror.Attributes.LoggerAttribute
+  - MuseDashMirror.Attributes.PnlMenuToggleAttribute
+  langs:
+  - csharp
+  - vb
+  name: MuseDashMirror.Attributes
+  nameWithType: MuseDashMirror.Attributes
+  fullName: MuseDashMirror.Attributes
+  type: Namespace
+  assemblies:
+  - MuseDashMirror
+references:
+- uid: MuseDashMirror.Attributes.LoggerAttribute
+  commentId: T:MuseDashMirror.Attributes.LoggerAttribute
+  parent: MuseDashMirror.Attributes
+  href: MuseDashMirror.Attributes.LoggerAttribute.html
+  name: LoggerAttribute
+  nameWithType: LoggerAttribute
+  fullName: MuseDashMirror.Attributes.LoggerAttribute
+- uid: MuseDashMirror.Attributes.PnlMenuToggleAttribute
+  commentId: T:MuseDashMirror.Attributes.PnlMenuToggleAttribute
+  href: MuseDashMirror.Attributes.PnlMenuToggleAttribute.html
+  name: PnlMenuToggleAttribute
+  nameWithType: PnlMenuToggleAttribute
+  fullName: MuseDashMirror.Attributes.PnlMenuToggleAttribute
+- uid: MuseDashMirror.Attributes
+  commentId: N:MuseDashMirror.Attributes
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Attributes
+  nameWithType: MuseDashMirror.Attributes
+  fullName: MuseDashMirror.Attributes
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Attributes
+    name: Attributes
+    href: MuseDashMirror.Attributes.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Attributes
+    name: Attributes
+    href: MuseDashMirror.Attributes.html

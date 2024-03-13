@@ -1,0 +1,152 @@
+### YamlMime:TableOfContent
+items:
+- uid: MuseDashMirror
+  name: MuseDashMirror
+  items:
+  - uid: MuseDashMirror.BattleComponent
+    name: BattleComponent
+  - uid: MuseDashMirror.Main
+    name: Main
+  - uid: MuseDashMirror.PatchEvents
+    name: PatchEvents
+  - uid: MuseDashMirror.PlayerData
+    name: PlayerData
+  - uid: MuseDashMirror.SceneInfo
+    name: SceneInfo
+- uid: MuseDashMirror.Attributes
+  name: MuseDashMirror.Attributes
+  items:
+  - uid: MuseDashMirror.Attributes.LoggerAttribute
+    name: LoggerAttribute
+  - uid: MuseDashMirror.Attributes.PnlMenuToggleAttribute
+    name: PnlMenuToggleAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents
+  name: MuseDashMirror.Attributes.EventAttributes.PatchEvents
+  items:
+  - uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.AddScorePatchAttribute
+    name: AddScorePatchAttribute
+  - uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.GameStartPatchAttribute
+    name: GameStartPatchAttribute
+  - uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.MenuSelectPatchAttribute
+    name: MenuSelectPatchAttribute
+  - uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlMenuPatchAttribute
+    name: PnlMenuPatchAttribute
+  - uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlStagePatchAttribute
+    name: PnlStagePatchAttribute
+  - uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlVictoryPatchAttribute
+    name: PnlVictoryPatchAttribute
+  - uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.SwitchLanguagePatchAttribute
+    name: SwitchLanguagePatchAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents
+  name: MuseDashMirror.Attributes.EventAttributes.SceneEvents
+  items:
+  - uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterGameSceneAttribute
+    name: EnterGameSceneAttribute
+  - uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterLoadingSceneAttribute
+    name: EnterLoadingSceneAttribute
+  - uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterMainSceneAttribute
+    name: EnterMainSceneAttribute
+  - uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterSceneAttribute
+    name: EnterSceneAttribute
+  - uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterWelcomeSceneAttribute
+    name: EnterWelcomeSceneAttribute
+  - uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitGameSceneAttribute
+    name: ExitGameSceneAttribute
+  - uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitLoadingSceneAttribute
+    name: ExitLoadingSceneAttribute
+  - uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitMainSceneAttribute
+    name: ExitMainSceneAttribute
+  - uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitSceneAttribute
+    name: ExitSceneAttribute
+  - uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitWelcomeSceneAttribute
+    name: ExitWelcomeSceneAttribute
+- uid: MuseDashMirror.Contracts
+  name: MuseDashMirror.Contracts
+  items:
+  - uid: MuseDashMirror.Contracts.IPositionStrategy
+    name: IPositionStrategy
+- uid: MuseDashMirror.EventArguments
+  name: MuseDashMirror.EventArguments
+  items:
+  - uid: MuseDashMirror.EventArguments.AddScoreEventArgs
+    name: AddScoreEventArgs
+  - uid: MuseDashMirror.EventArguments.GameStartEventArgs
+    name: GameStartEventArgs
+  - uid: MuseDashMirror.EventArguments.MenuSelectEventArgs
+    name: MenuSelectEventArgs
+  - uid: MuseDashMirror.EventArguments.PnlMenuEventArgs
+    name: PnlMenuEventArgs
+  - uid: MuseDashMirror.EventArguments.PnlStageEventArgs
+    name: PnlStageEventArgs
+  - uid: MuseDashMirror.EventArguments.PnlVictoryEventArgs
+    name: PnlVictoryEventArgs
+  - uid: MuseDashMirror.EventArguments.SceneEventArgs
+    name: SceneEventArgs
+  - uid: MuseDashMirror.EventArguments.SwitchLanguagesEventArgs
+    name: SwitchLanguagesEventArgs
+- uid: MuseDashMirror.Extensions
+  name: MuseDashMirror.Extensions
+  items:
+  - uid: MuseDashMirror.Extensions.ComponentExtensions
+    name: ComponentExtensions
+  - uid: MuseDashMirror.Extensions.GameObjectExtensions
+    name: GameObjectExtensions
+  - uid: MuseDashMirror.Extensions.RectTransformExtensions
+    name: RectTransformExtensions
+  - uid: MuseDashMirror.Extensions.StringExtensions
+    name: StringExtensions
+  - uid: MuseDashMirror.Extensions.UnityEngineObjectExtensions
+    name: UnityEngineObjectExtensions
+- uid: MuseDashMirror.Extensions.CollectionExtensions
+  name: MuseDashMirror.Extensions.CollectionExtensions
+  items:
+  - uid: MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions
+    name: CollectionExtensions
+  - uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+    name: TypeCollectionExtensions
+- uid: MuseDashMirror.Models
+  name: MuseDashMirror.Models
+  items:
+  - uid: MuseDashMirror.Models.CameraDimension
+    name: CameraDimension
+  - uid: MuseDashMirror.Models.EllipseTextParameters
+    name: EllipseTextParameters
+  - uid: MuseDashMirror.Models.TextParameters
+    name: TextParameters
+  - uid: MuseDashMirror.Models.ToggleParameters
+    name: ToggleParameters
+  - uid: MuseDashMirror.Models.TransformParameters
+    name: TransformParameters
+- uid: MuseDashMirror.Models.PositionStrategies
+  name: MuseDashMirror.Models.PositionStrategies
+  items:
+  - uid: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy
+    name: CenterPositionStrategy
+  - uid: MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy
+    name: LeftEdgePositionStrategy
+  - uid: MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy
+    name: RightEdgePositionStrategy
+- uid: MuseDashMirror.Shared
+  name: MuseDashMirror.Shared
+  items:
+  - uid: MuseDashMirror.Shared.LoggerType
+    name: LoggerType
+- uid: MuseDashMirror.UIComponents
+  name: MuseDashMirror.UIComponents
+  items:
+  - uid: MuseDashMirror.UIComponents.CanvasUtils
+    name: CanvasUtils
+  - uid: MuseDashMirror.UIComponents.Colors
+    name: Colors
+  - uid: MuseDashMirror.UIComponents.Fonts
+    name: Fonts
+  - uid: MuseDashMirror.UIComponents.TextGameObjectUtils
+    name: TextGameObjectUtils
+  - uid: MuseDashMirror.UIComponents.ToggleUtils
+    name: ToggleUtils
+- uid: MuseDashMirror.Utils
+  name: MuseDashMirror.Utils
+  items:
+  - uid: MuseDashMirror.Utils.GameObjectUtils
+    name: GameObjectUtils
+memberLayout: SamePage

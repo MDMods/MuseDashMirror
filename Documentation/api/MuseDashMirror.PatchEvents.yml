@@ -1,0 +1,728 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.PatchEvents
+  commentId: T:MuseDashMirror.PatchEvents
+  id: PatchEvents
+  parent: MuseDashMirror
+  children:
+  - MuseDashMirror.PatchEvents.AddScorePatch
+  - MuseDashMirror.PatchEvents.GameStartPatch
+  - MuseDashMirror.PatchEvents.MenuSelectPatch
+  - MuseDashMirror.PatchEvents.PnlMenuPatch
+  - MuseDashMirror.PatchEvents.PnlStagePatch
+  - MuseDashMirror.PatchEvents.PnlVictoryPatch
+  - MuseDashMirror.PatchEvents.SwitchLanguagesPatch
+  langs:
+  - csharp
+  - vb
+  name: PatchEvents
+  nameWithType: PatchEvents
+  fullName: MuseDashMirror.PatchEvents
+  type: Class
+  source:
+    remote:
+      path: src/MuseDashMirror/PatchEvents.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: PatchEvents
+    path: ../src/MuseDashMirror/PatchEvents.cs
+    startLine: 10
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: Common events for patching
+  example: []
+  syntax:
+    content: public static class PatchEvents
+    content.vb: Public Module PatchEvents
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MuseDashMirror.PatchEvents.PnlMenuPatch
+  commentId: E:MuseDashMirror.PatchEvents.PnlMenuPatch
+  id: PnlMenuPatch
+  parent: MuseDashMirror.PatchEvents
+  langs:
+  - csharp
+  - vb
+  name: PnlMenuPatch
+  nameWithType: PatchEvents.PnlMenuPatch
+  fullName: MuseDashMirror.PatchEvents.PnlMenuPatch
+  type: Event
+  source:
+    remote:
+      path: src/MuseDashMirror/PatchEvents.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: PnlMenuPatch
+    path: ../src/MuseDashMirror/PatchEvents.cs
+    startLine: 15
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: An event to invoke methods when PnlMenu Awake method invokes
+  example: []
+  syntax:
+    content: public static event EventHandler<PnlMenuEventArgs> PnlMenuPatch
+    return:
+      type: System.EventHandler{MuseDashMirror.EventArguments.PnlMenuEventArgs}
+    content.vb: Public Shared Event PnlMenuPatch As EventHandler(Of PnlMenuEventArgs)
+- uid: MuseDashMirror.PatchEvents.PnlStagePatch
+  commentId: E:MuseDashMirror.PatchEvents.PnlStagePatch
+  id: PnlStagePatch
+  parent: MuseDashMirror.PatchEvents
+  langs:
+  - csharp
+  - vb
+  name: PnlStagePatch
+  nameWithType: PatchEvents.PnlStagePatch
+  fullName: MuseDashMirror.PatchEvents.PnlStagePatch
+  type: Event
+  source:
+    remote:
+      path: src/MuseDashMirror/PatchEvents.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: PnlStagePatch
+    path: ../src/MuseDashMirror/PatchEvents.cs
+    startLine: 23
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: An event to invoke methods when PnlStage Awake method invokes
+  example: []
+  syntax:
+    content: public static event EventHandler<PnlStageEventArgs> PnlStagePatch
+    return:
+      type: System.EventHandler{MuseDashMirror.EventArguments.PnlStageEventArgs}
+    content.vb: Public Shared Event PnlStagePatch As EventHandler(Of PnlStageEventArgs)
+- uid: MuseDashMirror.PatchEvents.SwitchLanguagesPatch
+  commentId: E:MuseDashMirror.PatchEvents.SwitchLanguagesPatch
+  id: SwitchLanguagesPatch
+  parent: MuseDashMirror.PatchEvents
+  langs:
+  - csharp
+  - vb
+  name: SwitchLanguagesPatch
+  nameWithType: PatchEvents.SwitchLanguagesPatch
+  fullName: MuseDashMirror.PatchEvents.SwitchLanguagesPatch
+  type: Event
+  source:
+    remote:
+      path: src/MuseDashMirror/PatchEvents.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: SwitchLanguagesPatch
+    path: ../src/MuseDashMirror/PatchEvents.cs
+    startLine: 31
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: An event to invoke methods when switching languages
+  example: []
+  syntax:
+    content: public static event EventHandler SwitchLanguagesPatch
+    return:
+      type: System.EventHandler
+    content.vb: Public Shared Event SwitchLanguagesPatch As EventHandler
+- uid: MuseDashMirror.PatchEvents.MenuSelectPatch
+  commentId: E:MuseDashMirror.PatchEvents.MenuSelectPatch
+  id: MenuSelectPatch
+  parent: MuseDashMirror.PatchEvents
+  langs:
+  - csharp
+  - vb
+  name: MenuSelectPatch
+  nameWithType: PatchEvents.MenuSelectPatch
+  fullName: MuseDashMirror.PatchEvents.MenuSelectPatch
+  type: Event
+  source:
+    remote:
+      path: src/MuseDashMirror/PatchEvents.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: MenuSelectPatch
+    path: ../src/MuseDashMirror/PatchEvents.cs
+    startLine: 39
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: An event to invoke methods when switching menu
+  example: []
+  syntax:
+    content: public static event EventHandler<MenuSelectEventArgs> MenuSelectPatch
+    return:
+      type: System.EventHandler{MuseDashMirror.EventArguments.MenuSelectEventArgs}
+    content.vb: Public Shared Event MenuSelectPatch As EventHandler(Of MenuSelectEventArgs)
+- uid: MuseDashMirror.PatchEvents.PnlVictoryPatch
+  commentId: E:MuseDashMirror.PatchEvents.PnlVictoryPatch
+  id: PnlVictoryPatch
+  parent: MuseDashMirror.PatchEvents
+  langs:
+  - csharp
+  - vb
+  name: PnlVictoryPatch
+  nameWithType: PatchEvents.PnlVictoryPatch
+  fullName: MuseDashMirror.PatchEvents.PnlVictoryPatch
+  type: Event
+  source:
+    remote:
+      path: src/MuseDashMirror/PatchEvents.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: PnlVictoryPatch
+    path: ../src/MuseDashMirror/PatchEvents.cs
+    startLine: 47
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: An event to invoke methods when PnlVictory's OnVictory method invokes
+  example: []
+  syntax:
+    content: public static event EventHandler<PnlVictoryEventArgs> PnlVictoryPatch
+    return:
+      type: System.EventHandler{MuseDashMirror.EventArguments.PnlVictoryEventArgs}
+    content.vb: Public Shared Event PnlVictoryPatch As EventHandler(Of PnlVictoryEventArgs)
+- uid: MuseDashMirror.PatchEvents.GameStartPatch
+  commentId: E:MuseDashMirror.PatchEvents.GameStartPatch
+  id: GameStartPatch
+  parent: MuseDashMirror.PatchEvents
+  langs:
+  - csharp
+  - vb
+  name: GameStartPatch
+  nameWithType: PatchEvents.GameStartPatch
+  fullName: MuseDashMirror.PatchEvents.GameStartPatch
+  type: Event
+  source:
+    remote:
+      path: src/MuseDashMirror/PatchEvents.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: GameStartPatch
+    path: ../src/MuseDashMirror/PatchEvents.cs
+    startLine: 55
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: An event to invoke methods when StageBattleComponent's GameStart method invokes
+  example: []
+  syntax:
+    content: public static event EventHandler<GameStartEventArgs> GameStartPatch
+    return:
+      type: System.EventHandler{MuseDashMirror.EventArguments.GameStartEventArgs}
+    content.vb: Public Shared Event GameStartPatch As EventHandler(Of GameStartEventArgs)
+- uid: MuseDashMirror.PatchEvents.AddScorePatch
+  commentId: E:MuseDashMirror.PatchEvents.AddScorePatch
+  id: AddScorePatch
+  parent: MuseDashMirror.PatchEvents
+  langs:
+  - csharp
+  - vb
+  name: AddScorePatch
+  nameWithType: PatchEvents.AddScorePatch
+  fullName: MuseDashMirror.PatchEvents.AddScorePatch
+  type: Event
+  source:
+    remote:
+      path: src/MuseDashMirror/PatchEvents.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: AddScorePatch
+    path: ../src/MuseDashMirror/PatchEvents.cs
+    startLine: 63
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror
+  summary: An event to invoke methods when TaskStageTarget's AddScore method invokes
+  example: []
+  syntax:
+    content: public static event EventHandler<AddScoreEventArgs> AddScorePatch
+    return:
+      type: System.EventHandler{MuseDashMirror.EventArguments.AddScoreEventArgs}
+    content.vb: Public Shared Event AddScorePatch As EventHandler(Of AddScoreEventArgs)
+references:
+- uid: MuseDashMirror
+  commentId: N:MuseDashMirror
+  href: MuseDashMirror.html
+  name: MuseDashMirror
+  nameWithType: MuseDashMirror
+  fullName: MuseDashMirror
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.EventHandler{MuseDashMirror.EventArguments.PnlMenuEventArgs}
+  commentId: T:System.EventHandler{MuseDashMirror.EventArguments.PnlMenuEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<PnlMenuEventArgs>
+  nameWithType: EventHandler<PnlMenuEventArgs>
+  fullName: System.EventHandler<MuseDashMirror.EventArguments.PnlMenuEventArgs>
+  nameWithType.vb: EventHandler(Of PnlMenuEventArgs)
+  fullName.vb: System.EventHandler(Of MuseDashMirror.EventArguments.PnlMenuEventArgs)
+  name.vb: EventHandler(Of PnlMenuEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: MuseDashMirror.EventArguments.PnlMenuEventArgs
+    name: PnlMenuEventArgs
+    href: MuseDashMirror.EventArguments.PnlMenuEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MuseDashMirror.EventArguments.PnlMenuEventArgs
+    name: PnlMenuEventArgs
+    href: MuseDashMirror.EventArguments.PnlMenuEventArgs.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: System.EventHandler{MuseDashMirror.EventArguments.PnlStageEventArgs}
+  commentId: T:System.EventHandler{MuseDashMirror.EventArguments.PnlStageEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<PnlStageEventArgs>
+  nameWithType: EventHandler<PnlStageEventArgs>
+  fullName: System.EventHandler<MuseDashMirror.EventArguments.PnlStageEventArgs>
+  nameWithType.vb: EventHandler(Of PnlStageEventArgs)
+  fullName.vb: System.EventHandler(Of MuseDashMirror.EventArguments.PnlStageEventArgs)
+  name.vb: EventHandler(Of PnlStageEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: MuseDashMirror.EventArguments.PnlStageEventArgs
+    name: PnlStageEventArgs
+    href: MuseDashMirror.EventArguments.PnlStageEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MuseDashMirror.EventArguments.PnlStageEventArgs
+    name: PnlStageEventArgs
+    href: MuseDashMirror.EventArguments.PnlStageEventArgs.html
+  - name: )
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: System.EventHandler{MuseDashMirror.EventArguments.MenuSelectEventArgs}
+  commentId: T:System.EventHandler{MuseDashMirror.EventArguments.MenuSelectEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<MenuSelectEventArgs>
+  nameWithType: EventHandler<MenuSelectEventArgs>
+  fullName: System.EventHandler<MuseDashMirror.EventArguments.MenuSelectEventArgs>
+  nameWithType.vb: EventHandler(Of MenuSelectEventArgs)
+  fullName.vb: System.EventHandler(Of MuseDashMirror.EventArguments.MenuSelectEventArgs)
+  name.vb: EventHandler(Of MenuSelectEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: MuseDashMirror.EventArguments.MenuSelectEventArgs
+    name: MenuSelectEventArgs
+    href: MuseDashMirror.EventArguments.MenuSelectEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MuseDashMirror.EventArguments.MenuSelectEventArgs
+    name: MenuSelectEventArgs
+    href: MuseDashMirror.EventArguments.MenuSelectEventArgs.html
+  - name: )
+- uid: System.EventHandler{MuseDashMirror.EventArguments.PnlVictoryEventArgs}
+  commentId: T:System.EventHandler{MuseDashMirror.EventArguments.PnlVictoryEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<PnlVictoryEventArgs>
+  nameWithType: EventHandler<PnlVictoryEventArgs>
+  fullName: System.EventHandler<MuseDashMirror.EventArguments.PnlVictoryEventArgs>
+  nameWithType.vb: EventHandler(Of PnlVictoryEventArgs)
+  fullName.vb: System.EventHandler(Of MuseDashMirror.EventArguments.PnlVictoryEventArgs)
+  name.vb: EventHandler(Of PnlVictoryEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: MuseDashMirror.EventArguments.PnlVictoryEventArgs
+    name: PnlVictoryEventArgs
+    href: MuseDashMirror.EventArguments.PnlVictoryEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MuseDashMirror.EventArguments.PnlVictoryEventArgs
+    name: PnlVictoryEventArgs
+    href: MuseDashMirror.EventArguments.PnlVictoryEventArgs.html
+  - name: )
+- uid: System.EventHandler{MuseDashMirror.EventArguments.GameStartEventArgs}
+  commentId: T:System.EventHandler{MuseDashMirror.EventArguments.GameStartEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<GameStartEventArgs>
+  nameWithType: EventHandler<GameStartEventArgs>
+  fullName: System.EventHandler<MuseDashMirror.EventArguments.GameStartEventArgs>
+  nameWithType.vb: EventHandler(Of GameStartEventArgs)
+  fullName.vb: System.EventHandler(Of MuseDashMirror.EventArguments.GameStartEventArgs)
+  name.vb: EventHandler(Of GameStartEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: MuseDashMirror.EventArguments.GameStartEventArgs
+    name: GameStartEventArgs
+    href: MuseDashMirror.EventArguments.GameStartEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MuseDashMirror.EventArguments.GameStartEventArgs
+    name: GameStartEventArgs
+    href: MuseDashMirror.EventArguments.GameStartEventArgs.html
+  - name: )
+- uid: System.EventHandler{MuseDashMirror.EventArguments.AddScoreEventArgs}
+  commentId: T:System.EventHandler{MuseDashMirror.EventArguments.AddScoreEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<AddScoreEventArgs>
+  nameWithType: EventHandler<AddScoreEventArgs>
+  fullName: System.EventHandler<MuseDashMirror.EventArguments.AddScoreEventArgs>
+  nameWithType.vb: EventHandler(Of AddScoreEventArgs)
+  fullName.vb: System.EventHandler(Of MuseDashMirror.EventArguments.AddScoreEventArgs)
+  name.vb: EventHandler(Of AddScoreEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: MuseDashMirror.EventArguments.AddScoreEventArgs
+    name: AddScoreEventArgs
+    href: MuseDashMirror.EventArguments.AddScoreEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MuseDashMirror.EventArguments.AddScoreEventArgs
+    name: AddScoreEventArgs
+    href: MuseDashMirror.EventArguments.AddScoreEventArgs.html
+  - name: )

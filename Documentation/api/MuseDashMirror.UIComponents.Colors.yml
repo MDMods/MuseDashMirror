@@ -1,0 +1,465 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.UIComponents.Colors
+  commentId: T:MuseDashMirror.UIComponents.Colors
+  id: Colors
+  parent: MuseDashMirror.UIComponents
+  children:
+  - MuseDashMirror.UIComponents.Colors.Blue
+  - MuseDashMirror.UIComponents.Colors.Silver
+  - MuseDashMirror.UIComponents.Colors.ToggleCheckMarkColor
+  - MuseDashMirror.UIComponents.Colors.ToggleTextColor
+  langs:
+  - csharp
+  - vb
+  name: Colors
+  nameWithType: Colors
+  fullName: MuseDashMirror.UIComponents.Colors
+  type: Class
+  source:
+    remote:
+      path: src/MuseDashMirror/UIComponents/Colors.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: Colors
+    path: ../src/MuseDashMirror/UIComponents/Colors.cs
+    startLine: 5
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.UIComponents
+  summary: Default colors
+  example: []
+  syntax:
+    content: public static class Colors
+    content.vb: Public Module Colors
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MuseDashMirror.UIComponents.Colors.Blue
+  commentId: P:MuseDashMirror.UIComponents.Colors.Blue
+  id: Blue
+  parent: MuseDashMirror.UIComponents.Colors
+  langs:
+  - csharp
+  - vb
+  name: Blue
+  nameWithType: Colors.Blue
+  fullName: MuseDashMirror.UIComponents.Colors.Blue
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/UIComponents/Colors.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: Blue
+    path: ../src/MuseDashMirror/UIComponents/Colors.cs
+    startLine: 10
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.UIComponents
+  summary: Custom color blue
+  example: []
+  syntax:
+    content: public static Color Blue { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Shared ReadOnly Property Blue As Color
+  overload: MuseDashMirror.UIComponents.Colors.Blue*
+- uid: MuseDashMirror.UIComponents.Colors.Silver
+  commentId: P:MuseDashMirror.UIComponents.Colors.Silver
+  id: Silver
+  parent: MuseDashMirror.UIComponents.Colors
+  langs:
+  - csharp
+  - vb
+  name: Silver
+  nameWithType: Colors.Silver
+  fullName: MuseDashMirror.UIComponents.Colors.Silver
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/UIComponents/Colors.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: Silver
+    path: ../src/MuseDashMirror/UIComponents/Colors.cs
+    startLine: 15
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.UIComponents
+  summary: Custom color Silver
+  example: []
+  syntax:
+    content: public static Color Silver { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Shared ReadOnly Property Silver As Color
+  overload: MuseDashMirror.UIComponents.Colors.Silver*
+- uid: MuseDashMirror.UIComponents.Colors.ToggleTextColor
+  commentId: P:MuseDashMirror.UIComponents.Colors.ToggleTextColor
+  id: ToggleTextColor
+  parent: MuseDashMirror.UIComponents.Colors
+  langs:
+  - csharp
+  - vb
+  name: ToggleTextColor
+  nameWithType: Colors.ToggleTextColor
+  fullName: MuseDashMirror.UIComponents.Colors.ToggleTextColor
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/UIComponents/Colors.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: ToggleTextColor
+    path: ../src/MuseDashMirror/UIComponents/Colors.cs
+    startLine: 20
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.UIComponents
+  summary: Default text color for toggle
+  example: []
+  syntax:
+    content: public static Color ToggleTextColor { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Shared ReadOnly Property ToggleTextColor As Color
+  overload: MuseDashMirror.UIComponents.Colors.ToggleTextColor*
+- uid: MuseDashMirror.UIComponents.Colors.ToggleCheckMarkColor
+  commentId: P:MuseDashMirror.UIComponents.Colors.ToggleCheckMarkColor
+  id: ToggleCheckMarkColor
+  parent: MuseDashMirror.UIComponents.Colors
+  langs:
+  - csharp
+  - vb
+  name: ToggleCheckMarkColor
+  nameWithType: Colors.ToggleCheckMarkColor
+  fullName: MuseDashMirror.UIComponents.Colors.ToggleCheckMarkColor
+  type: Property
+  source:
+    remote:
+      path: src/MuseDashMirror/UIComponents/Colors.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: ToggleCheckMarkColor
+    path: ../src/MuseDashMirror/UIComponents/Colors.cs
+    startLine: 25
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.UIComponents
+  summary: Default checkmark color for toggle
+  example: []
+  syntax:
+    content: public static Color ToggleCheckMarkColor { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Shared ReadOnly Property ToggleCheckMarkColor As Color
+  overload: MuseDashMirror.UIComponents.Colors.ToggleCheckMarkColor*
+references:
+- uid: MuseDashMirror.UIComponents
+  commentId: N:MuseDashMirror.UIComponents
+  href: MuseDashMirror.html
+  name: MuseDashMirror.UIComponents
+  nameWithType: MuseDashMirror.UIComponents
+  fullName: MuseDashMirror.UIComponents
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.UIComponents
+    name: UIComponents
+    href: MuseDashMirror.UIComponents.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.UIComponents
+    name: UIComponents
+    href: MuseDashMirror.UIComponents.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MuseDashMirror.UIComponents.Colors.Blue*
+  commentId: Overload:MuseDashMirror.UIComponents.Colors.Blue
+  href: MuseDashMirror.UIComponents.Colors.html#MuseDashMirror_UIComponents_Colors_Blue
+  name: Blue
+  nameWithType: Colors.Blue
+  fullName: MuseDashMirror.UIComponents.Colors.Blue
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: MuseDashMirror.UIComponents.Colors.Silver*
+  commentId: Overload:MuseDashMirror.UIComponents.Colors.Silver
+  href: MuseDashMirror.UIComponents.Colors.html#MuseDashMirror_UIComponents_Colors_Silver
+  name: Silver
+  nameWithType: Colors.Silver
+  fullName: MuseDashMirror.UIComponents.Colors.Silver
+- uid: MuseDashMirror.UIComponents.Colors.ToggleTextColor*
+  commentId: Overload:MuseDashMirror.UIComponents.Colors.ToggleTextColor
+  href: MuseDashMirror.UIComponents.Colors.html#MuseDashMirror_UIComponents_Colors_ToggleTextColor
+  name: ToggleTextColor
+  nameWithType: Colors.ToggleTextColor
+  fullName: MuseDashMirror.UIComponents.Colors.ToggleTextColor
+- uid: MuseDashMirror.UIComponents.Colors.ToggleCheckMarkColor*
+  commentId: Overload:MuseDashMirror.UIComponents.Colors.ToggleCheckMarkColor
+  href: MuseDashMirror.UIComponents.Colors.html#MuseDashMirror_UIComponents_Colors_ToggleCheckMarkColor
+  name: ToggleCheckMarkColor
+  nameWithType: Colors.ToggleCheckMarkColor
+  fullName: MuseDashMirror.UIComponents.Colors.ToggleCheckMarkColor

@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.EventArguments
+  commentId: N:MuseDashMirror.EventArguments
+  id: MuseDashMirror.EventArguments
+  children:
+  - MuseDashMirror.EventArguments.AddScoreEventArgs
+  - MuseDashMirror.EventArguments.GameStartEventArgs
+  - MuseDashMirror.EventArguments.MenuSelectEventArgs
+  - MuseDashMirror.EventArguments.PnlMenuEventArgs
+  - MuseDashMirror.EventArguments.PnlStageEventArgs
+  - MuseDashMirror.EventArguments.PnlVictoryEventArgs
+  - MuseDashMirror.EventArguments.SceneEventArgs
+  - MuseDashMirror.EventArguments.SwitchLanguagesEventArgs
+  langs:
+  - csharp
+  - vb
+  name: MuseDashMirror.EventArguments
+  nameWithType: MuseDashMirror.EventArguments
+  fullName: MuseDashMirror.EventArguments
+  type: Namespace
+  assemblies:
+  - MuseDashMirror
+references:
+- uid: MuseDashMirror.EventArguments.AddScoreEventArgs
+  commentId: T:MuseDashMirror.EventArguments.AddScoreEventArgs
+  href: MuseDashMirror.EventArguments.AddScoreEventArgs.html
+  name: AddScoreEventArgs
+  nameWithType: AddScoreEventArgs
+  fullName: MuseDashMirror.EventArguments.AddScoreEventArgs
+- uid: MuseDashMirror.EventArguments.GameStartEventArgs
+  commentId: T:MuseDashMirror.EventArguments.GameStartEventArgs
+  href: MuseDashMirror.EventArguments.GameStartEventArgs.html
+  name: GameStartEventArgs
+  nameWithType: GameStartEventArgs
+  fullName: MuseDashMirror.EventArguments.GameStartEventArgs
+- uid: MuseDashMirror.EventArguments.MenuSelectEventArgs
+  commentId: T:MuseDashMirror.EventArguments.MenuSelectEventArgs
+  href: MuseDashMirror.EventArguments.MenuSelectEventArgs.html
+  name: MenuSelectEventArgs
+  nameWithType: MenuSelectEventArgs
+  fullName: MuseDashMirror.EventArguments.MenuSelectEventArgs
+- uid: MuseDashMirror.EventArguments.PnlMenuEventArgs
+  commentId: T:MuseDashMirror.EventArguments.PnlMenuEventArgs
+  href: MuseDashMirror.EventArguments.PnlMenuEventArgs.html
+  name: PnlMenuEventArgs
+  nameWithType: PnlMenuEventArgs
+  fullName: MuseDashMirror.EventArguments.PnlMenuEventArgs
+- uid: MuseDashMirror.EventArguments.PnlStageEventArgs
+  commentId: T:MuseDashMirror.EventArguments.PnlStageEventArgs
+  href: MuseDashMirror.EventArguments.PnlStageEventArgs.html
+  name: PnlStageEventArgs
+  nameWithType: PnlStageEventArgs
+  fullName: MuseDashMirror.EventArguments.PnlStageEventArgs
+- uid: MuseDashMirror.EventArguments.PnlVictoryEventArgs
+  commentId: T:MuseDashMirror.EventArguments.PnlVictoryEventArgs
+  href: MuseDashMirror.EventArguments.PnlVictoryEventArgs.html
+  name: PnlVictoryEventArgs
+  nameWithType: PnlVictoryEventArgs
+  fullName: MuseDashMirror.EventArguments.PnlVictoryEventArgs
+- uid: MuseDashMirror.EventArguments.SceneEventArgs
+  commentId: T:MuseDashMirror.EventArguments.SceneEventArgs
+  href: MuseDashMirror.EventArguments.SceneEventArgs.html
+  name: SceneEventArgs
+  nameWithType: SceneEventArgs
+  fullName: MuseDashMirror.EventArguments.SceneEventArgs
+- uid: MuseDashMirror.EventArguments.SwitchLanguagesEventArgs
+  commentId: T:MuseDashMirror.EventArguments.SwitchLanguagesEventArgs
+  href: MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.html
+  name: SwitchLanguagesEventArgs
+  nameWithType: SwitchLanguagesEventArgs
+  fullName: MuseDashMirror.EventArguments.SwitchLanguagesEventArgs

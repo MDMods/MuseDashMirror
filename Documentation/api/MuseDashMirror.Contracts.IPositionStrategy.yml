@@ -1,0 +1,137 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Contracts.IPositionStrategy
+  commentId: T:MuseDashMirror.Contracts.IPositionStrategy
+  id: IPositionStrategy
+  parent: MuseDashMirror.Contracts
+  children:
+  - MuseDashMirror.Contracts.IPositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  langs:
+  - csharp
+  - vb
+  name: IPositionStrategy
+  nameWithType: IPositionStrategy
+  fullName: MuseDashMirror.Contracts.IPositionStrategy
+  type: Interface
+  source:
+    remote:
+      path: src/MuseDashMirror/Contracts/IPositionStrategy.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: IPositionStrategy
+    path: ../src/MuseDashMirror/Contracts/IPositionStrategy.cs
+    startLine: 5
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Contracts
+  summary: Position Strategy Interface
+  example: []
+  syntax:
+    content: public interface IPositionStrategy
+    content.vb: Public Interface IPositionStrategy
+- uid: MuseDashMirror.Contracts.IPositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  commentId: M:MuseDashMirror.Contracts.IPositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  id: SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  parent: MuseDashMirror.Contracts.IPositionStrategy
+  langs:
+  - csharp
+  - vb
+  name: SetPosition(RectTransform, TransformParameters)
+  nameWithType: IPositionStrategy.SetPosition(RectTransform, TransformParameters)
+  fullName: MuseDashMirror.Contracts.IPositionStrategy.SetPosition(UnityEngine.RectTransform, MuseDashMirror.Models.TransformParameters)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Contracts/IPositionStrategy.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: SetPosition
+    path: ../src/MuseDashMirror/Contracts/IPositionStrategy.cs
+    startLine: 12
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Contracts
+  summary: Set Position of the RectTransform
+  example: []
+  syntax:
+    content: void SetPosition(RectTransform rectTransform, TransformParameters transformParameters)
+    parameters:
+    - id: rectTransform
+      type: UnityEngine.RectTransform
+      description: RectTransform
+    - id: transformParameters
+      type: MuseDashMirror.Models.TransformParameters
+      description: TransformParameters
+    content.vb: Sub SetPosition(rectTransform As RectTransform, transformParameters As TransformParameters)
+  overload: MuseDashMirror.Contracts.IPositionStrategy.SetPosition*
+references:
+- uid: MuseDashMirror.Contracts
+  commentId: N:MuseDashMirror.Contracts
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Contracts
+  nameWithType: MuseDashMirror.Contracts
+  fullName: MuseDashMirror.Contracts
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Contracts
+    name: Contracts
+    href: MuseDashMirror.Contracts.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Contracts
+    name: Contracts
+    href: MuseDashMirror.Contracts.html
+- uid: MuseDashMirror.Contracts.IPositionStrategy.SetPosition*
+  commentId: Overload:MuseDashMirror.Contracts.IPositionStrategy.SetPosition
+  href: MuseDashMirror.Contracts.IPositionStrategy.html#MuseDashMirror_Contracts_IPositionStrategy_SetPosition_UnityEngine_RectTransform_MuseDashMirror_Models_TransformParameters_
+  name: SetPosition
+  nameWithType: IPositionStrategy.SetPosition
+  fullName: MuseDashMirror.Contracts.IPositionStrategy.SetPosition
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: MuseDashMirror.Models.TransformParameters
+  commentId: T:MuseDashMirror.Models.TransformParameters
+  parent: MuseDashMirror.Models
+  href: MuseDashMirror.Models.TransformParameters.html
+  name: TransformParameters
+  nameWithType: TransformParameters
+  fullName: MuseDashMirror.Models.TransformParameters
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: MuseDashMirror.Models
+  commentId: N:MuseDashMirror.Models
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Models
+  nameWithType: MuseDashMirror.Models
+  fullName: MuseDashMirror.Models
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html

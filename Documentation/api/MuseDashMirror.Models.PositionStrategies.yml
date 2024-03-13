@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Models.PositionStrategies
+  commentId: N:MuseDashMirror.Models.PositionStrategies
+  id: MuseDashMirror.Models.PositionStrategies
+  children:
+  - MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy
+  - MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy
+  - MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy
+  langs:
+  - csharp
+  - vb
+  name: MuseDashMirror.Models.PositionStrategies
+  nameWithType: MuseDashMirror.Models.PositionStrategies
+  fullName: MuseDashMirror.Models.PositionStrategies
+  type: Namespace
+  assemblies:
+  - MuseDashMirror
+references:
+- uid: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy
+  commentId: T:MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy
+  href: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.html
+  name: CenterPositionStrategy
+  nameWithType: CenterPositionStrategy
+  fullName: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy
+- uid: MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy
+  commentId: T:MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy
+  href: MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy.html
+  name: LeftEdgePositionStrategy
+  nameWithType: LeftEdgePositionStrategy
+  fullName: MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy
+- uid: MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy
+  commentId: T:MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy
+  href: MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy.html
+  name: RightEdgePositionStrategy
+  nameWithType: RightEdgePositionStrategy
+  fullName: MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy

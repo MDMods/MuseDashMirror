@@ -1,0 +1,815 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Extensions.GameObjectExtensions
+  commentId: T:MuseDashMirror.Extensions.GameObjectExtensions
+  id: GameObjectExtensions
+  parent: MuseDashMirror.Extensions
+  children:
+  - MuseDashMirror.Extensions.GameObjectExtensions.AddContentSizeFitter(UnityEngine.GameObject)
+  - MuseDashMirror.Extensions.GameObjectExtensions.FindComponentInAncestors``1(UnityEngine.GameObject)
+  - MuseDashMirror.Extensions.GameObjectExtensions.GetTotalScaleFactor(UnityEngine.GameObject)
+  - MuseDashMirror.Extensions.GameObjectExtensions.SetColor(UnityEngine.GameObject,UnityEngine.Color)
+  - MuseDashMirror.Extensions.GameObjectExtensions.SetParent(UnityEngine.GameObject,UnityEngine.GameObject,System.Boolean)
+  - MuseDashMirror.Extensions.GameObjectExtensions.SetRectTransform(UnityEngine.GameObject,MuseDashMirror.Models.TransformParameters)
+  - MuseDashMirror.Extensions.GameObjectExtensions.SetText(UnityEngine.GameObject,System.String)
+  - MuseDashMirror.Extensions.GameObjectExtensions.SetTextComponent(UnityEngine.GameObject,MuseDashMirror.Models.TextParameters)
+  - MuseDashMirror.Extensions.GameObjectExtensions.TryFindComponentInAncestors``1(UnityEngine.GameObject,``0@)
+  langs:
+  - csharp
+  - vb
+  name: GameObjectExtensions
+  nameWithType: GameObjectExtensions
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions
+  type: Class
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: GameObjectExtensions
+    path: ../src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+    startLine: 5
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions
+  summary: <xref href="UnityEngine.GameObject" data-throw-if-not-resolved="false"></xref> Extension Methods
+  example: []
+  syntax:
+    content: >-
+      [Logger(LoggerType.StaticReadonly)]
+
+      public static class GameObjectExtensions
+    content.vb: >-
+      <Logger(LoggerType.StaticReadonly)>
+
+      Public Module GameObjectExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: MuseDashMirror.Attributes.LoggerAttribute
+    ctor: MuseDashMirror.Attributes.LoggerAttribute.#ctor(MuseDashMirror.Shared.LoggerType)
+    arguments:
+    - type: MuseDashMirror.Shared.LoggerType
+      value: 1
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetParent(UnityEngine.GameObject,UnityEngine.GameObject,System.Boolean)
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.SetParent(UnityEngine.GameObject,UnityEngine.GameObject,System.Boolean)
+  id: SetParent(UnityEngine.GameObject,UnityEngine.GameObject,System.Boolean)
+  isExtensionMethod: true
+  parent: MuseDashMirror.Extensions.GameObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetParent(GameObject, GameObject, bool)
+  nameWithType: GameObjectExtensions.SetParent(GameObject, GameObject, bool)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetParent(UnityEngine.GameObject, UnityEngine.GameObject, bool)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: SetParent
+    path: ../src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+    startLine: 14
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions
+  summary: Set the parent of a GameObject
+  example: []
+  syntax:
+    content: public static void SetParent(this GameObject gameObject, GameObject parent, bool worldPositionStays = true)
+    parameters:
+    - id: gameObject
+      type: UnityEngine.GameObject
+      description: GameObject
+    - id: parent
+      type: UnityEngine.GameObject
+      description: Parent
+    - id: worldPositionStays
+      type: System.Boolean
+      description: World Position Stays
+    content.vb: Public Shared Sub SetParent(gameObject As GameObject, parent As GameObject, worldPositionStays As Boolean = True)
+  overload: MuseDashMirror.Extensions.GameObjectExtensions.SetParent*
+  nameWithType.vb: GameObjectExtensions.SetParent(GameObject, GameObject, Boolean)
+  fullName.vb: MuseDashMirror.Extensions.GameObjectExtensions.SetParent(UnityEngine.GameObject, UnityEngine.GameObject, Boolean)
+  name.vb: SetParent(GameObject, GameObject, Boolean)
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetText(UnityEngine.GameObject,System.String)
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.SetText(UnityEngine.GameObject,System.String)
+  id: SetText(UnityEngine.GameObject,System.String)
+  isExtensionMethod: true
+  parent: MuseDashMirror.Extensions.GameObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetText(GameObject, string)
+  nameWithType: GameObjectExtensions.SetText(GameObject, string)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetText(UnityEngine.GameObject, string)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: SetText
+    path: ../src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+    startLine: 22
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions
+  summary: Set the text of a GameObject with a Text gameObject
+  example: []
+  syntax:
+    content: public static void SetText(this GameObject gameObject, string text)
+    parameters:
+    - id: gameObject
+      type: UnityEngine.GameObject
+      description: GameObject
+    - id: text
+      type: System.String
+      description: Text
+    content.vb: Public Shared Sub SetText(gameObject As GameObject, text As String)
+  overload: MuseDashMirror.Extensions.GameObjectExtensions.SetText*
+  nameWithType.vb: GameObjectExtensions.SetText(GameObject, String)
+  fullName.vb: MuseDashMirror.Extensions.GameObjectExtensions.SetText(UnityEngine.GameObject, String)
+  name.vb: SetText(GameObject, String)
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetColor(UnityEngine.GameObject,UnityEngine.Color)
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.SetColor(UnityEngine.GameObject,UnityEngine.Color)
+  id: SetColor(UnityEngine.GameObject,UnityEngine.Color)
+  isExtensionMethod: true
+  parent: MuseDashMirror.Extensions.GameObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetColor(GameObject, Color)
+  nameWithType: GameObjectExtensions.SetColor(GameObject, Color)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetColor(UnityEngine.GameObject, UnityEngine.Color)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: SetColor
+    path: ../src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+    startLine: 38
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions
+  summary: Set the color of a GameObject with a Text gameObject
+  example: []
+  syntax:
+    content: public static void SetColor(this GameObject gameObject, Color color)
+    parameters:
+    - id: gameObject
+      type: UnityEngine.GameObject
+      description: GameObject
+    - id: color
+      type: UnityEngine.Color
+      description: Color
+    content.vb: Public Shared Sub SetColor(gameObject As GameObject, color As Color)
+  overload: MuseDashMirror.Extensions.GameObjectExtensions.SetColor*
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetTextComponent(UnityEngine.GameObject,MuseDashMirror.Models.TextParameters)
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.SetTextComponent(UnityEngine.GameObject,MuseDashMirror.Models.TextParameters)
+  id: SetTextComponent(UnityEngine.GameObject,MuseDashMirror.Models.TextParameters)
+  isExtensionMethod: true
+  parent: MuseDashMirror.Extensions.GameObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetTextComponent(GameObject, TextParameters)
+  nameWithType: GameObjectExtensions.SetTextComponent(GameObject, TextParameters)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetTextComponent(UnityEngine.GameObject, MuseDashMirror.Models.TextParameters)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: SetTextComponent
+    path: ../src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+    startLine: 54
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions
+  summary: Set the Text Component of a GameObject using Text Parameters
+  example: []
+  syntax:
+    content: public static void SetTextComponent(this GameObject gameObject, TextParameters textParameters)
+    parameters:
+    - id: gameObject
+      type: UnityEngine.GameObject
+      description: GameObject
+    - id: textParameters
+      type: MuseDashMirror.Models.TextParameters
+      description: Text Parameters
+    content.vb: Public Shared Sub SetTextComponent(gameObject As GameObject, textParameters As TextParameters)
+  overload: MuseDashMirror.Extensions.GameObjectExtensions.SetTextComponent*
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetRectTransform(UnityEngine.GameObject,MuseDashMirror.Models.TransformParameters)
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.SetRectTransform(UnityEngine.GameObject,MuseDashMirror.Models.TransformParameters)
+  id: SetRectTransform(UnityEngine.GameObject,MuseDashMirror.Models.TransformParameters)
+  isExtensionMethod: true
+  parent: MuseDashMirror.Extensions.GameObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetRectTransform(GameObject, TransformParameters)
+  nameWithType: GameObjectExtensions.SetRectTransform(GameObject, TransformParameters)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetRectTransform(UnityEngine.GameObject, MuseDashMirror.Models.TransformParameters)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: SetRectTransform
+    path: ../src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+    startLine: 69
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions
+  summary: Set the RectTransform of a GameObject using Transform Parameters
+  example: []
+  syntax:
+    content: public static void SetRectTransform(this GameObject gameObject, TransformParameters transformParameters)
+    parameters:
+    - id: gameObject
+      type: UnityEngine.GameObject
+      description: GameObject
+    - id: transformParameters
+      type: MuseDashMirror.Models.TransformParameters
+      description: Transform Parameters
+    content.vb: Public Shared Sub SetRectTransform(gameObject As GameObject, transformParameters As TransformParameters)
+  overload: MuseDashMirror.Extensions.GameObjectExtensions.SetRectTransform*
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.FindComponentInAncestors``1(UnityEngine.GameObject)
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.FindComponentInAncestors``1(UnityEngine.GameObject)
+  id: FindComponentInAncestors``1(UnityEngine.GameObject)
+  isExtensionMethod: true
+  parent: MuseDashMirror.Extensions.GameObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: FindComponentInAncestors<T>(GameObject)
+  nameWithType: GameObjectExtensions.FindComponentInAncestors<T>(GameObject)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.FindComponentInAncestors<T>(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: FindComponentInAncestors
+    path: ../src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+    startLine: 93
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions
+  summary: Find a Component in the ancestors of a GameObject including itself
+  example: []
+  syntax:
+    content: 'public static T FindComponentInAncestors<T>(this GameObject gameObject) where T : Component'
+    parameters:
+    - id: gameObject
+      type: UnityEngine.GameObject
+      description: GameObject
+    typeParameters:
+    - id: T
+      description: Component
+    return:
+      type: '{T}'
+      description: Component
+    content.vb: Public Shared Function FindComponentInAncestors(Of T As Component)(gameObject As GameObject) As T
+  overload: MuseDashMirror.Extensions.GameObjectExtensions.FindComponentInAncestors*
+  nameWithType.vb: GameObjectExtensions.FindComponentInAncestors(Of T)(GameObject)
+  fullName.vb: MuseDashMirror.Extensions.GameObjectExtensions.FindComponentInAncestors(Of T)(UnityEngine.GameObject)
+  name.vb: FindComponentInAncestors(Of T)(GameObject)
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.TryFindComponentInAncestors``1(UnityEngine.GameObject,``0@)
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.TryFindComponentInAncestors``1(UnityEngine.GameObject,``0@)
+  id: TryFindComponentInAncestors``1(UnityEngine.GameObject,``0@)
+  isExtensionMethod: true
+  parent: MuseDashMirror.Extensions.GameObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: TryFindComponentInAncestors<T>(GameObject, out T)
+  nameWithType: GameObjectExtensions.TryFindComponentInAncestors<T>(GameObject, out T)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.TryFindComponentInAncestors<T>(UnityEngine.GameObject, out T)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: TryFindComponentInAncestors
+    path: ../src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+    startLine: 121
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions
+  summary: Try to find a Component in the ancestors of a GameObject including itself
+  example: []
+  syntax:
+    content: 'public static bool TryFindComponentInAncestors<T>(this GameObject gameObject, out T component) where T : Component'
+    parameters:
+    - id: gameObject
+      type: UnityEngine.GameObject
+      description: GameObject
+    - id: component
+      type: '{T}'
+      description: Component
+    typeParameters:
+    - id: T
+      description: Component
+    return:
+      type: System.Boolean
+      description: Found
+    content.vb: Public Shared Function TryFindComponentInAncestors(Of T As Component)(gameObject As GameObject, component As T) As Boolean
+  overload: MuseDashMirror.Extensions.GameObjectExtensions.TryFindComponentInAncestors*
+  nameWithType.vb: GameObjectExtensions.TryFindComponentInAncestors(Of T)(GameObject, T)
+  fullName.vb: MuseDashMirror.Extensions.GameObjectExtensions.TryFindComponentInAncestors(Of T)(UnityEngine.GameObject, T)
+  name.vb: TryFindComponentInAncestors(Of T)(GameObject, T)
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.GetTotalScaleFactor(UnityEngine.GameObject)
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.GetTotalScaleFactor(UnityEngine.GameObject)
+  id: GetTotalScaleFactor(UnityEngine.GameObject)
+  isExtensionMethod: true
+  parent: MuseDashMirror.Extensions.GameObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetTotalScaleFactor(GameObject)
+  nameWithType: GameObjectExtensions.GetTotalScaleFactor(GameObject)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.GetTotalScaleFactor(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: GetTotalScaleFactor
+    path: ../src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+    startLine: 147
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions
+  summary: Get the total scale factor of a GameObject
+  example: []
+  syntax:
+    content: public static Vector3 GetTotalScaleFactor(this GameObject gameObject)
+    parameters:
+    - id: gameObject
+      type: UnityEngine.GameObject
+      description: GameObject
+    return:
+      type: UnityEngine.Vector3
+      description: Scale Factor Vector3
+    content.vb: Public Shared Function GetTotalScaleFactor(gameObject As GameObject) As Vector3
+  overload: MuseDashMirror.Extensions.GameObjectExtensions.GetTotalScaleFactor*
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.AddContentSizeFitter(UnityEngine.GameObject)
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.AddContentSizeFitter(UnityEngine.GameObject)
+  id: AddContentSizeFitter(UnityEngine.GameObject)
+  isExtensionMethod: true
+  parent: MuseDashMirror.Extensions.GameObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddContentSizeFitter(GameObject)
+  nameWithType: GameObjectExtensions.AddContentSizeFitter(GameObject)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.AddContentSizeFitter(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: AddContentSizeFitter
+    path: ../src/MuseDashMirror/Extensions/GameObjectExtensions.cs
+    startLine: 173
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions
+  summary: Add a ContentSizeFitter to a GameObject
+  example: []
+  syntax:
+    content: public static void AddContentSizeFitter(this GameObject gameObject)
+    parameters:
+    - id: gameObject
+      type: UnityEngine.GameObject
+      description: GameObject
+    content.vb: Public Shared Sub AddContentSizeFitter(gameObject As GameObject)
+  overload: MuseDashMirror.Extensions.GameObjectExtensions.AddContentSizeFitter*
+references:
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: MuseDashMirror.Extensions
+  commentId: N:MuseDashMirror.Extensions
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Extensions
+  nameWithType: MuseDashMirror.Extensions
+  fullName: MuseDashMirror.Extensions
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Extensions
+    name: Extensions
+    href: MuseDashMirror.Extensions.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Extensions
+    name: Extensions
+    href: MuseDashMirror.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetParent*
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.SetParent
+  href: MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_SetParent_UnityEngine_GameObject_UnityEngine_GameObject_System_Boolean_
+  name: SetParent
+  nameWithType: GameObjectExtensions.SetParent
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetParent
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetText*
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.SetText
+  href: MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_SetText_UnityEngine_GameObject_System_String_
+  name: SetText
+  nameWithType: GameObjectExtensions.SetText
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetColor*
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.SetColor
+  href: MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_SetColor_UnityEngine_GameObject_UnityEngine_Color_
+  name: SetColor
+  nameWithType: GameObjectExtensions.SetColor
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetColor
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetTextComponent*
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.SetTextComponent
+  href: MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_SetTextComponent_UnityEngine_GameObject_MuseDashMirror_Models_TextParameters_
+  name: SetTextComponent
+  nameWithType: GameObjectExtensions.SetTextComponent
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetTextComponent
+- uid: MuseDashMirror.Models.TextParameters
+  commentId: T:MuseDashMirror.Models.TextParameters
+  parent: MuseDashMirror.Models
+  href: MuseDashMirror.Models.TextParameters.html
+  name: TextParameters
+  nameWithType: TextParameters
+  fullName: MuseDashMirror.Models.TextParameters
+- uid: MuseDashMirror.Models
+  commentId: N:MuseDashMirror.Models
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Models
+  nameWithType: MuseDashMirror.Models
+  fullName: MuseDashMirror.Models
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetRectTransform*
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.SetRectTransform
+  href: MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_SetRectTransform_UnityEngine_GameObject_MuseDashMirror_Models_TransformParameters_
+  name: SetRectTransform
+  nameWithType: GameObjectExtensions.SetRectTransform
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetRectTransform
+- uid: MuseDashMirror.Models.TransformParameters
+  commentId: T:MuseDashMirror.Models.TransformParameters
+  parent: MuseDashMirror.Models
+  href: MuseDashMirror.Models.TransformParameters.html
+  name: TransformParameters
+  nameWithType: TransformParameters
+  fullName: MuseDashMirror.Models.TransformParameters
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.FindComponentInAncestors*
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.FindComponentInAncestors
+  href: MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_FindComponentInAncestors__1_UnityEngine_GameObject_
+  name: FindComponentInAncestors
+  nameWithType: GameObjectExtensions.FindComponentInAncestors
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.FindComponentInAncestors
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.TryFindComponentInAncestors*
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.TryFindComponentInAncestors
+  href: MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_TryFindComponentInAncestors__1_UnityEngine_GameObject___0__
+  name: TryFindComponentInAncestors
+  nameWithType: GameObjectExtensions.TryFindComponentInAncestors
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.TryFindComponentInAncestors
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.GetTotalScaleFactor*
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.GetTotalScaleFactor
+  href: MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_GetTotalScaleFactor_UnityEngine_GameObject_
+  name: GetTotalScaleFactor
+  nameWithType: GameObjectExtensions.GetTotalScaleFactor
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.GetTotalScaleFactor
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.AddContentSizeFitter*
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.AddContentSizeFitter
+  href: MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_AddContentSizeFitter_UnityEngine_GameObject_
+  name: AddContentSizeFitter
+  nameWithType: GameObjectExtensions.AddContentSizeFitter
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.AddContentSizeFitter

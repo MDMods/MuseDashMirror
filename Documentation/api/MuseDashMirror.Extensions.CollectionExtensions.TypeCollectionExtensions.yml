@@ -1,0 +1,1032 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+  commentId: T:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+  id: TypeCollectionExtensions
+  parent: MuseDashMirror.Extensions.CollectionExtensions
+  children:
+  - MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  - MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  - MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  - MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  - MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  - MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  - MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  - MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  langs:
+  - csharp
+  - vb
+  name: TypeCollectionExtensions
+  nameWithType: TypeCollectionExtensions
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+  type: Class
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: TypeCollectionExtensions
+    path: ../src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+    startLine: 7
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions.CollectionExtensions
+  summary: Collection Extension Methods for <xref href="System.Type" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static class TypeCollectionExtensions
+    content.vb: Public Module TypeCollectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  commentId: M:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  id: GetFieldInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  isExtensionMethod: true
+  parent: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetFieldInfosFromTypesByAttribute<T>(IEnumerable<Type>, BindingFlags)
+  nameWithType: TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute<T>(IEnumerable<Type>, BindingFlags)
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute<T>(System.Collections.Generic.IEnumerable<System.Type>, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: GetFieldInfosFromTypesByAttribute
+    path: ../src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+    startLine: 18
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions.CollectionExtensions
+  summary: Get an IEnumerable of <xref href="System.Reflection.FieldInfo" data-throw-if-not-resolved="false"></xref> from an IEnumerable of <xref href="System.Type" data-throw-if-not-resolved="false"></xref> by attribute type
+  example: []
+  syntax:
+    content: 'public static IEnumerable<FieldInfo> GetFieldInfosFromTypesByAttribute<T>(this IEnumerable<Type> types, BindingFlags flags = BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic) where T : Attribute'
+    parameters:
+    - id: types
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: The type to extract <xref href="System.Reflection.FieldInfo" data-throw-if-not-resolved="false"></xref>
+    - id: flags
+      type: System.Reflection.BindingFlags
+      description: Defaults are <xref href="System.Reflection.BindingFlags.Static" data-throw-if-not-resolved="false"></xref> | <xref href="System.Reflection.BindingFlags.Public" data-throw-if-not-resolved="false"></xref> | <xref href="System.Reflection.BindingFlags.NonPublic" data-throw-if-not-resolved="false"></xref>
+    typeParameters:
+    - id: T
+      description: Attribute Type
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+      description: A sequence of FieldInfo that match the given attribute type
+    content.vb: Public Shared Function GetFieldInfosFromTypesByAttribute(Of T As Attribute)(types As IEnumerable(Of Type), flags As BindingFlags = BindingFlags.Static Or BindingFlags.Public Or BindingFlags.NonPublic) As IEnumerable(Of FieldInfo)
+  overload: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute*
+  nameWithType.vb: TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute(Of T)(IEnumerable(Of Type), BindingFlags)
+  fullName.vb: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute(Of T)(System.Collections.Generic.IEnumerable(Of System.Type), System.Reflection.BindingFlags)
+  name.vb: GetFieldInfosFromTypesByAttribute(Of T)(IEnumerable(Of Type), BindingFlags)
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  commentId: M:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  id: GetFieldInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  isExtensionMethod: true
+  parent: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetFieldInfosFromTypesByAttribute(IEnumerable<Type>, Type, BindingFlags)
+  nameWithType: TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute(IEnumerable<Type>, Type, BindingFlags)
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable<System.Type>, System.Type, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: GetFieldInfosFromTypesByAttribute
+    path: ../src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+    startLine: 34
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions.CollectionExtensions
+  summary: Get an IEnumerable of <xref href="System.Reflection.FieldInfo" data-throw-if-not-resolved="false"></xref> from an IEnumerable of <xref href="System.Type" data-throw-if-not-resolved="false"></xref> by attribute type
+  example: []
+  syntax:
+    content: public static IEnumerable<FieldInfo> GetFieldInfosFromTypesByAttribute(this IEnumerable<Type> types, Type attributeType, BindingFlags flags = BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic)
+    parameters:
+    - id: types
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: The type to extract <xref href="System.Reflection.FieldInfo" data-throw-if-not-resolved="false"></xref>
+    - id: attributeType
+      type: System.Type
+      description: Attribute Type
+    - id: flags
+      type: System.Reflection.BindingFlags
+      description: Defaults are <xref href="System.Reflection.BindingFlags.Static" data-throw-if-not-resolved="false"></xref> | <xref href="System.Reflection.BindingFlags.Public" data-throw-if-not-resolved="false"></xref> | <xref href="System.Reflection.BindingFlags.NonPublic" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+      description: A sequence of FieldInfo that match the given attribute type
+    content.vb: Public Shared Function GetFieldInfosFromTypesByAttribute(types As IEnumerable(Of Type), attributeType As Type, flags As BindingFlags = BindingFlags.Static Or BindingFlags.Public Or BindingFlags.NonPublic) As IEnumerable(Of FieldInfo)
+  overload: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute*
+  nameWithType.vb: TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute(IEnumerable(Of Type), Type, BindingFlags)
+  fullName.vb: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable(Of System.Type), System.Type, System.Reflection.BindingFlags)
+  name.vb: GetFieldInfosFromTypesByAttribute(IEnumerable(Of Type), Type, BindingFlags)
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  commentId: M:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  id: GetMemberInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  isExtensionMethod: true
+  parent: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMemberInfosFromTypesByAttribute<T>(IEnumerable<Type>, BindingFlags)
+  nameWithType: TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute<T>(IEnumerable<Type>, BindingFlags)
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute<T>(System.Collections.Generic.IEnumerable<System.Type>, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: GetMemberInfosFromTypesByAttribute
+    path: ../src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+    startLine: 50
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions.CollectionExtensions
+  summary: Get an IEnumerable of <xref href="System.Reflection.MemberInfo" data-throw-if-not-resolved="false"></xref> from an IEnumerable of <xref href="System.Type" data-throw-if-not-resolved="false"></xref> by attribute type
+  example: []
+  syntax:
+    content: 'public static IEnumerable<MemberInfo> GetMemberInfosFromTypesByAttribute<T>(this IEnumerable<Type> types, BindingFlags flags = BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic) where T : Attribute'
+    parameters:
+    - id: types
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: The type to extract <xref href="System.Reflection.MemberInfo" data-throw-if-not-resolved="false"></xref>
+    - id: flags
+      type: System.Reflection.BindingFlags
+      description: Defaults are <xref href="System.Reflection.BindingFlags.Static" data-throw-if-not-resolved="false"></xref> | <xref href="System.Reflection.BindingFlags.Public" data-throw-if-not-resolved="false"></xref> | <xref href="System.Reflection.BindingFlags.NonPublic" data-throw-if-not-resolved="false"></xref>
+    typeParameters:
+    - id: T
+      description: Attribute Type
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo}
+      description: A sequence of MemberInfo that match the given attribute type
+    content.vb: Public Shared Function GetMemberInfosFromTypesByAttribute(Of T As Attribute)(types As IEnumerable(Of Type), flags As BindingFlags = BindingFlags.Static Or BindingFlags.Public Or BindingFlags.NonPublic) As IEnumerable(Of MemberInfo)
+  overload: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute*
+  nameWithType.vb: TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute(Of T)(IEnumerable(Of Type), BindingFlags)
+  fullName.vb: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute(Of T)(System.Collections.Generic.IEnumerable(Of System.Type), System.Reflection.BindingFlags)
+  name.vb: GetMemberInfosFromTypesByAttribute(Of T)(IEnumerable(Of Type), BindingFlags)
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  commentId: M:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  id: GetMemberInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  isExtensionMethod: true
+  parent: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMemberInfosFromTypesByAttribute(IEnumerable<Type>, Type, BindingFlags)
+  nameWithType: TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute(IEnumerable<Type>, Type, BindingFlags)
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable<System.Type>, System.Type, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: GetMemberInfosFromTypesByAttribute
+    path: ../src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+    startLine: 66
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions.CollectionExtensions
+  summary: Get an IEnumerable of <xref href="System.Reflection.MemberInfo" data-throw-if-not-resolved="false"></xref> from an IEnumerable of <xref href="System.Type" data-throw-if-not-resolved="false"></xref> by attribute type
+  example: []
+  syntax:
+    content: public static IEnumerable<MemberInfo> GetMemberInfosFromTypesByAttribute(this IEnumerable<Type> types, Type attributeType, BindingFlags flags = BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic)
+    parameters:
+    - id: types
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: The type to extract <xref href="System.Reflection.MemberInfo" data-throw-if-not-resolved="false"></xref>
+    - id: attributeType
+      type: System.Type
+      description: Attribute Type
+    - id: flags
+      type: System.Reflection.BindingFlags
+      description: Defaults are <xref href="System.Reflection.BindingFlags.Static" data-throw-if-not-resolved="false"></xref> | <xref href="System.Reflection.BindingFlags.Public" data-throw-if-not-resolved="false"></xref> | <xref href="System.Reflection.BindingFlags.NonPublic" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo}
+      description: A sequence of MemberInfo that match the given attribute type
+    content.vb: Public Shared Function GetMemberInfosFromTypesByAttribute(types As IEnumerable(Of Type), attributeType As Type, flags As BindingFlags = BindingFlags.Static Or BindingFlags.Public Or BindingFlags.NonPublic) As IEnumerable(Of MemberInfo)
+  overload: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute*
+  nameWithType.vb: TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute(IEnumerable(Of Type), Type, BindingFlags)
+  fullName.vb: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable(Of System.Type), System.Type, System.Reflection.BindingFlags)
+  name.vb: GetMemberInfosFromTypesByAttribute(IEnumerable(Of Type), Type, BindingFlags)
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  commentId: M:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  id: GetMethodInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  isExtensionMethod: true
+  parent: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMethodInfosFromTypesByAttribute<T>(IEnumerable<Type>, BindingFlags)
+  nameWithType: TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute<T>(IEnumerable<Type>, BindingFlags)
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute<T>(System.Collections.Generic.IEnumerable<System.Type>, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: GetMethodInfosFromTypesByAttribute
+    path: ../src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+    startLine: 82
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions.CollectionExtensions
+  summary: Get an IEnumerable of <xref href="System.Reflection.MethodInfo" data-throw-if-not-resolved="false"></xref> from an IEnumerable of <xref href="System.Type" data-throw-if-not-resolved="false"></xref> by attribute type
+  example: []
+  syntax:
+    content: 'public static IEnumerable<MethodInfo> GetMethodInfosFromTypesByAttribute<T>(this IEnumerable<Type> types, BindingFlags flags = BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic) where T : Attribute'
+    parameters:
+    - id: types
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: The type to extract <xref href="System.Reflection.MethodInfo" data-throw-if-not-resolved="false"></xref>
+    - id: flags
+      type: System.Reflection.BindingFlags
+      description: Defaults are <xref href="System.Reflection.BindingFlags.Static" data-throw-if-not-resolved="false"></xref> | <xref href="System.Reflection.BindingFlags.Public" data-throw-if-not-resolved="false"></xref> | <xref href="System.Reflection.BindingFlags.NonPublic" data-throw-if-not-resolved="false"></xref>
+    typeParameters:
+    - id: T
+      description: Attribute Type
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+      description: A sequence of MethodInfo that match the given attribute type
+    content.vb: Public Shared Function GetMethodInfosFromTypesByAttribute(Of T As Attribute)(types As IEnumerable(Of Type), flags As BindingFlags = BindingFlags.Static Or BindingFlags.Public Or BindingFlags.NonPublic) As IEnumerable(Of MethodInfo)
+  overload: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute*
+  nameWithType.vb: TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute(Of T)(IEnumerable(Of Type), BindingFlags)
+  fullName.vb: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute(Of T)(System.Collections.Generic.IEnumerable(Of System.Type), System.Reflection.BindingFlags)
+  name.vb: GetMethodInfosFromTypesByAttribute(Of T)(IEnumerable(Of Type), BindingFlags)
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  commentId: M:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  id: GetMethodInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  isExtensionMethod: true
+  parent: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMethodInfosFromTypesByAttribute(IEnumerable<Type>, Type, BindingFlags)
+  nameWithType: TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute(IEnumerable<Type>, Type, BindingFlags)
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable<System.Type>, System.Type, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: GetMethodInfosFromTypesByAttribute
+    path: ../src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+    startLine: 98
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions.CollectionExtensions
+  summary: Get an IEnumerable of <xref href="System.Reflection.MethodInfo" data-throw-if-not-resolved="false"></xref> from an IEnumerable of <xref href="System.Type" data-throw-if-not-resolved="false"></xref> by attribute type
+  example: []
+  syntax:
+    content: public static IEnumerable<MethodInfo> GetMethodInfosFromTypesByAttribute(this IEnumerable<Type> types, Type attributeType, BindingFlags flags = BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic)
+    parameters:
+    - id: types
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: The type to extract <xref href="System.Reflection.MethodInfo" data-throw-if-not-resolved="false"></xref>
+    - id: attributeType
+      type: System.Type
+      description: Attribute Type
+    - id: flags
+      type: System.Reflection.BindingFlags
+      description: Defaults are <xref href="System.Reflection.BindingFlags.Static" data-throw-if-not-resolved="false"></xref> | <xref href="System.Reflection.BindingFlags.Public" data-throw-if-not-resolved="false"></xref> | <xref href="System.Reflection.BindingFlags.NonPublic" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+      description: A sequence of MethodInfo that match the given attribute type
+    content.vb: Public Shared Function GetMethodInfosFromTypesByAttribute(types As IEnumerable(Of Type), attributeType As Type, flags As BindingFlags = BindingFlags.Static Or BindingFlags.Public Or BindingFlags.NonPublic) As IEnumerable(Of MethodInfo)
+  overload: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute*
+  nameWithType.vb: TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute(IEnumerable(Of Type), Type, BindingFlags)
+  fullName.vb: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable(Of System.Type), System.Type, System.Reflection.BindingFlags)
+  name.vb: GetMethodInfosFromTypesByAttribute(IEnumerable(Of Type), Type, BindingFlags)
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  commentId: M:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  id: GetPropertyInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  isExtensionMethod: true
+  parent: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPropertyInfosFromTypesByAttribute<T>(IEnumerable<Type>, BindingFlags)
+  nameWithType: TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute<T>(IEnumerable<Type>, BindingFlags)
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute<T>(System.Collections.Generic.IEnumerable<System.Type>, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: GetPropertyInfosFromTypesByAttribute
+    path: ../src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+    startLine: 114
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions.CollectionExtensions
+  summary: Get an IEnumerable of <xref href="System.Reflection.PropertyInfo" data-throw-if-not-resolved="false"></xref> from an IEnumerable of <xref href="System.Type" data-throw-if-not-resolved="false"></xref> by attribute type
+  example: []
+  syntax:
+    content: 'public static IEnumerable<PropertyInfo> GetPropertyInfosFromTypesByAttribute<T>(this IEnumerable<Type> types, BindingFlags flags = BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic) where T : Attribute'
+    parameters:
+    - id: types
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: The type to extract <xref href="System.Reflection.PropertyInfo" data-throw-if-not-resolved="false"></xref>
+    - id: flags
+      type: System.Reflection.BindingFlags
+      description: Defaults are <xref href="System.Reflection.BindingFlags.Static" data-throw-if-not-resolved="false"></xref> | <xref href="System.Reflection.BindingFlags.Public" data-throw-if-not-resolved="false"></xref> | <xref href="System.Reflection.BindingFlags.NonPublic" data-throw-if-not-resolved="false"></xref>
+    typeParameters:
+    - id: T
+      description: Attribute Type
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+      description: A sequence of PropertyInfo that match the given attribute type
+    content.vb: Public Shared Function GetPropertyInfosFromTypesByAttribute(Of T As Attribute)(types As IEnumerable(Of Type), flags As BindingFlags = BindingFlags.Static Or BindingFlags.Public Or BindingFlags.NonPublic) As IEnumerable(Of PropertyInfo)
+  overload: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute*
+  nameWithType.vb: TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute(Of T)(IEnumerable(Of Type), BindingFlags)
+  fullName.vb: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute(Of T)(System.Collections.Generic.IEnumerable(Of System.Type), System.Reflection.BindingFlags)
+  name.vb: GetPropertyInfosFromTypesByAttribute(Of T)(IEnumerable(Of Type), BindingFlags)
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  commentId: M:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  id: GetPropertyInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  isExtensionMethod: true
+  parent: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPropertyInfosFromTypesByAttribute(IEnumerable<Type>, Type, BindingFlags)
+  nameWithType: TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute(IEnumerable<Type>, Type, BindingFlags)
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable<System.Type>, System.Type, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: GetPropertyInfosFromTypesByAttribute
+    path: ../src/MuseDashMirror/Extensions/CollectionExtensions/TypeCollectionExtensions.cs
+    startLine: 130
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Extensions.CollectionExtensions
+  summary: Get an IEnumerable of <xref href="System.Reflection.PropertyInfo" data-throw-if-not-resolved="false"></xref> from an IEnumerable of <xref href="System.Type" data-throw-if-not-resolved="false"></xref> by attribute type
+  example: []
+  syntax:
+    content: public static IEnumerable<PropertyInfo> GetPropertyInfosFromTypesByAttribute(this IEnumerable<Type> types, Type attributeType, BindingFlags flags = BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic)
+    parameters:
+    - id: types
+      type: System.Collections.Generic.IEnumerable{System.Type}
+      description: The type to extract <xref href="System.Reflection.PropertyInfo" data-throw-if-not-resolved="false"></xref>
+    - id: attributeType
+      type: System.Type
+      description: Attribute Type
+    - id: flags
+      type: System.Reflection.BindingFlags
+      description: Defaults are <xref href="System.Reflection.BindingFlags.Static" data-throw-if-not-resolved="false"></xref> | <xref href="System.Reflection.BindingFlags.Public" data-throw-if-not-resolved="false"></xref> | <xref href="System.Reflection.BindingFlags.NonPublic" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+      description: A sequence of PropertyInfo that match the given attribute type
+    content.vb: Public Shared Function GetPropertyInfosFromTypesByAttribute(types As IEnumerable(Of Type), attributeType As Type, flags As BindingFlags = BindingFlags.Static Or BindingFlags.Public Or BindingFlags.NonPublic) As IEnumerable(Of PropertyInfo)
+  overload: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute*
+  nameWithType.vb: TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute(IEnumerable(Of Type), Type, BindingFlags)
+  fullName.vb: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable(Of System.Type), System.Type, System.Reflection.BindingFlags)
+  name.vb: GetPropertyInfosFromTypesByAttribute(IEnumerable(Of Type), Type, BindingFlags)
+references:
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: MuseDashMirror.Extensions.CollectionExtensions
+  commentId: N:MuseDashMirror.Extensions.CollectionExtensions
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Extensions.CollectionExtensions
+  nameWithType: MuseDashMirror.Extensions.CollectionExtensions
+  fullName: MuseDashMirror.Extensions.CollectionExtensions
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Extensions
+    name: Extensions
+    href: MuseDashMirror.Extensions.html
+  - name: .
+  - uid: MuseDashMirror.Extensions.CollectionExtensions
+    name: CollectionExtensions
+    href: MuseDashMirror.Extensions.CollectionExtensions.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Extensions
+    name: Extensions
+    href: MuseDashMirror.Extensions.html
+  - name: .
+  - uid: MuseDashMirror.Extensions.CollectionExtensions
+    name: CollectionExtensions
+    href: MuseDashMirror.Extensions.CollectionExtensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Reflection.FieldInfo
+  commentId: T:System.Reflection.FieldInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  name: FieldInfo
+  nameWithType: FieldInfo
+  fullName: System.Reflection.FieldInfo
+- uid: System.Reflection.BindingFlags.Static
+  commentId: F:System.Reflection.BindingFlags.Static
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags#system-reflection-bindingflags-static
+  name: Static
+  nameWithType: BindingFlags.Static
+  fullName: System.Reflection.BindingFlags.Static
+- uid: System.Reflection.BindingFlags.Public
+  commentId: F:System.Reflection.BindingFlags.Public
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags#system-reflection-bindingflags-public
+  name: Public
+  nameWithType: BindingFlags.Public
+  fullName: System.Reflection.BindingFlags.Public
+- uid: System.Reflection.BindingFlags.NonPublic
+  commentId: F:System.Reflection.BindingFlags.NonPublic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags#system-reflection-bindingflags-nonpublic
+  name: NonPublic
+  nameWithType: BindingFlags.NonPublic
+  fullName: System.Reflection.BindingFlags.NonPublic
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute*
+  commentId: Overload:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute
+  href: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_TypeCollectionExtensions_GetFieldInfosFromTypesByAttribute__1_System_Collections_Generic_IEnumerable_System_Type__System_Reflection_BindingFlags_
+  name: GetFieldInfosFromTypesByAttribute
+  nameWithType: TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute
+- uid: System.Collections.Generic.IEnumerable{System.Type}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Type}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Type>
+  nameWithType: IEnumerable<Type>
+  fullName: System.Collections.Generic.IEnumerable<System.Type>
+  nameWithType.vb: IEnumerable(Of Type)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Type)
+  name.vb: IEnumerable(Of Type)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Reflection.BindingFlags
+  commentId: T:System.Reflection.BindingFlags
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.bindingflags
+  name: BindingFlags
+  nameWithType: BindingFlags
+  fullName: System.Reflection.BindingFlags
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.FieldInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<FieldInfo>
+  nameWithType: IEnumerable<FieldInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.FieldInfo>
+  nameWithType.vb: IEnumerable(Of FieldInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.FieldInfo)
+  name.vb: IEnumerable(Of FieldInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.FieldInfo
+    name: FieldInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: System.Reflection.MemberInfo
+  commentId: T:System.Reflection.MemberInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  name: MemberInfo
+  nameWithType: MemberInfo
+  fullName: System.Reflection.MemberInfo
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute*
+  commentId: Overload:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute
+  href: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_TypeCollectionExtensions_GetMemberInfosFromTypesByAttribute__1_System_Collections_Generic_IEnumerable_System_Type__System_Reflection_BindingFlags_
+  name: GetMemberInfosFromTypesByAttribute
+  nameWithType: TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.MemberInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<MemberInfo>
+  nameWithType: IEnumerable<MemberInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.MemberInfo>
+  nameWithType.vb: IEnumerable(Of MemberInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.MemberInfo)
+  name.vb: IEnumerable(Of MemberInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo
+  - name: )
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute*
+  commentId: Overload:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute
+  href: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_TypeCollectionExtensions_GetMethodInfosFromTypesByAttribute__1_System_Collections_Generic_IEnumerable_System_Type__System_Reflection_BindingFlags_
+  name: GetMethodInfosFromTypesByAttribute
+  nameWithType: TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<MethodInfo>
+  nameWithType: IEnumerable<MethodInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.MethodInfo>
+  nameWithType.vb: IEnumerable(Of MethodInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.MethodInfo)
+  name.vb: IEnumerable(Of MethodInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.MethodInfo
+    name: MethodInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo
+  - name: )
+- uid: System.Reflection.PropertyInfo
+  commentId: T:System.Reflection.PropertyInfo
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  name: PropertyInfo
+  nameWithType: PropertyInfo
+  fullName: System.Reflection.PropertyInfo
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute*
+  commentId: Overload:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute
+  href: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_TypeCollectionExtensions_GetPropertyInfosFromTypesByAttribute__1_System_Collections_Generic_IEnumerable_System_Type__System_Reflection_BindingFlags_
+  name: GetPropertyInfosFromTypesByAttribute
+  nameWithType: TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<PropertyInfo>
+  nameWithType: IEnumerable<PropertyInfo>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.PropertyInfo>
+  nameWithType.vb: IEnumerable(Of PropertyInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.PropertyInfo)
+  name.vb: IEnumerable(Of PropertyInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: )

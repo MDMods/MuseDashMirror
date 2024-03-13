@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Models
+  commentId: N:MuseDashMirror.Models
+  id: MuseDashMirror.Models
+  children:
+  - MuseDashMirror.Models.CameraDimension
+  - MuseDashMirror.Models.EllipseTextParameters
+  - MuseDashMirror.Models.TextParameters
+  - MuseDashMirror.Models.ToggleParameters
+  - MuseDashMirror.Models.TransformParameters
+  langs:
+  - csharp
+  - vb
+  name: MuseDashMirror.Models
+  nameWithType: MuseDashMirror.Models
+  fullName: MuseDashMirror.Models
+  type: Namespace
+  assemblies:
+  - MuseDashMirror
+references:
+- uid: MuseDashMirror.Models.CameraDimension
+  commentId: T:MuseDashMirror.Models.CameraDimension
+  parent: MuseDashMirror.Models
+  href: MuseDashMirror.Models.CameraDimension.html
+  name: CameraDimension
+  nameWithType: CameraDimension
+  fullName: MuseDashMirror.Models.CameraDimension
+- uid: MuseDashMirror.Models.EllipseTextParameters
+  commentId: T:MuseDashMirror.Models.EllipseTextParameters
+  href: MuseDashMirror.Models.EllipseTextParameters.html
+  name: EllipseTextParameters
+  nameWithType: EllipseTextParameters
+  fullName: MuseDashMirror.Models.EllipseTextParameters
+- uid: MuseDashMirror.Models.TextParameters
+  commentId: T:MuseDashMirror.Models.TextParameters
+  parent: MuseDashMirror.Models
+  href: MuseDashMirror.Models.TextParameters.html
+  name: TextParameters
+  nameWithType: TextParameters
+  fullName: MuseDashMirror.Models.TextParameters
+- uid: MuseDashMirror.Models.ToggleParameters
+  commentId: T:MuseDashMirror.Models.ToggleParameters
+  parent: MuseDashMirror.Models
+  href: MuseDashMirror.Models.ToggleParameters.html
+  name: ToggleParameters
+  nameWithType: ToggleParameters
+  fullName: MuseDashMirror.Models.ToggleParameters
+- uid: MuseDashMirror.Models.TransformParameters
+  commentId: T:MuseDashMirror.Models.TransformParameters
+  parent: MuseDashMirror.Models
+  href: MuseDashMirror.Models.TransformParameters.html
+  name: TransformParameters
+  nameWithType: TransformParameters
+  fullName: MuseDashMirror.Models.TransformParameters
+- uid: MuseDashMirror.Models
+  commentId: N:MuseDashMirror.Models
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Models
+  nameWithType: MuseDashMirror.Models
+  fullName: MuseDashMirror.Models
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html

@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Extensions.CollectionExtensions
+  commentId: N:MuseDashMirror.Extensions.CollectionExtensions
+  id: MuseDashMirror.Extensions.CollectionExtensions
+  children:
+  - MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions
+  - MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: MuseDashMirror.Extensions.CollectionExtensions
+  nameWithType: MuseDashMirror.Extensions.CollectionExtensions
+  fullName: MuseDashMirror.Extensions.CollectionExtensions
+  type: Namespace
+  assemblies:
+  - MuseDashMirror
+references:
+- uid: MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions
+  commentId: T:MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions
+  href: MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions.html
+  name: CollectionExtensions
+  nameWithType: CollectionExtensions
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+  commentId: T:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+  href: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html
+  name: TypeCollectionExtensions
+  nameWithType: TypeCollectionExtensions
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions

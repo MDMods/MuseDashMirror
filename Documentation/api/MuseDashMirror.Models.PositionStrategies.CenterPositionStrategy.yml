@@ -1,0 +1,436 @@
+### YamlMime:ManagedReference
+items:
+- uid: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy
+  commentId: T:MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy
+  id: CenterPositionStrategy
+  parent: MuseDashMirror.Models.PositionStrategies
+  children:
+  - MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  langs:
+  - csharp
+  - vb
+  name: CenterPositionStrategy
+  nameWithType: CenterPositionStrategy
+  fullName: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy
+  type: Class
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/PositionStrategies/CenterPositionStrategy.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: CenterPositionStrategy
+    path: ../src/MuseDashMirror/Models/PositionStrategies/CenterPositionStrategy.cs
+    startLine: 5
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models.PositionStrategies
+  summary: Position Strategy for setting the <b>Center of the GameObject</b> to be the position
+  example: []
+  syntax:
+    content: 'public sealed class CenterPositionStrategy : IPositionStrategy'
+    content.vb: Public NotInheritable Class CenterPositionStrategy Implements IPositionStrategy
+  inheritance:
+  - System.Object
+  implements:
+  - MuseDashMirror.Contracts.IPositionStrategy
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  commentId: M:MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  id: SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  parent: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy
+  langs:
+  - csharp
+  - vb
+  name: SetPosition(RectTransform, TransformParameters)
+  nameWithType: CenterPositionStrategy.SetPosition(RectTransform, TransformParameters)
+  fullName: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.SetPosition(UnityEngine.RectTransform, MuseDashMirror.Models.TransformParameters)
+  type: Method
+  source:
+    remote:
+      path: src/MuseDashMirror/Models/PositionStrategies/CenterPositionStrategy.cs
+      branch: master
+      repo: https://github.com/MDMods/MuseDashMirror.git
+    id: SetPosition
+    path: ../src/MuseDashMirror/Models/PositionStrategies/CenterPositionStrategy.cs
+    startLine: 12
+  assemblies:
+  - MuseDashMirror
+  namespace: MuseDashMirror.Models.PositionStrategies
+  summary: Set Position of the RectTransform
+  example: []
+  syntax:
+    content: public void SetPosition(RectTransform rectTransform, TransformParameters transformParameters)
+    parameters:
+    - id: rectTransform
+      type: UnityEngine.RectTransform
+      description: ''
+    - id: transformParameters
+      type: MuseDashMirror.Models.TransformParameters
+      description: ''
+    content.vb: Public Sub SetPosition(rectTransform As RectTransform, transformParameters As TransformParameters)
+  overload: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.SetPosition*
+  implements:
+  - MuseDashMirror.Contracts.IPositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+references:
+- uid: MuseDashMirror.Models.PositionStrategies
+  commentId: N:MuseDashMirror.Models.PositionStrategies
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Models.PositionStrategies
+  nameWithType: MuseDashMirror.Models.PositionStrategies
+  fullName: MuseDashMirror.Models.PositionStrategies
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
+  - name: .
+  - uid: MuseDashMirror.Models.PositionStrategies
+    name: PositionStrategies
+    href: MuseDashMirror.Models.PositionStrategies.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
+  - name: .
+  - uid: MuseDashMirror.Models.PositionStrategies
+    name: PositionStrategies
+    href: MuseDashMirror.Models.PositionStrategies.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MuseDashMirror.Contracts.IPositionStrategy
+  commentId: T:MuseDashMirror.Contracts.IPositionStrategy
+  parent: MuseDashMirror.Contracts
+  href: MuseDashMirror.Contracts.IPositionStrategy.html
+  name: IPositionStrategy
+  nameWithType: IPositionStrategy
+  fullName: MuseDashMirror.Contracts.IPositionStrategy
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MuseDashMirror.Contracts
+  commentId: N:MuseDashMirror.Contracts
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Contracts
+  nameWithType: MuseDashMirror.Contracts
+  fullName: MuseDashMirror.Contracts
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Contracts
+    name: Contracts
+    href: MuseDashMirror.Contracts.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Contracts
+    name: Contracts
+    href: MuseDashMirror.Contracts.html
+- uid: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.SetPosition*
+  commentId: Overload:MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.SetPosition
+  href: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.html#MuseDashMirror_Models_PositionStrategies_CenterPositionStrategy_SetPosition_UnityEngine_RectTransform_MuseDashMirror_Models_TransformParameters_
+  name: SetPosition
+  nameWithType: CenterPositionStrategy.SetPosition
+  fullName: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.SetPosition
+- uid: MuseDashMirror.Contracts.IPositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  commentId: M:MuseDashMirror.Contracts.IPositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  parent: MuseDashMirror.Contracts.IPositionStrategy
+  isExternal: true
+  href: MuseDashMirror.Contracts.IPositionStrategy.html#MuseDashMirror_Contracts_IPositionStrategy_SetPosition_UnityEngine_RectTransform_MuseDashMirror_Models_TransformParameters_
+  name: SetPosition(RectTransform, TransformParameters)
+  nameWithType: IPositionStrategy.SetPosition(RectTransform, TransformParameters)
+  fullName: MuseDashMirror.Contracts.IPositionStrategy.SetPosition(UnityEngine.RectTransform, MuseDashMirror.Models.TransformParameters)
+  spec.csharp:
+  - uid: MuseDashMirror.Contracts.IPositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+    name: SetPosition
+    href: MuseDashMirror.Contracts.IPositionStrategy.html#MuseDashMirror_Contracts_IPositionStrategy_SetPosition_UnityEngine_RectTransform_MuseDashMirror_Models_TransformParameters_
+  - name: (
+  - uid: UnityEngine.RectTransform
+    name: RectTransform
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: MuseDashMirror.Models.TransformParameters
+    name: TransformParameters
+    href: MuseDashMirror.Models.TransformParameters.html
+  - name: )
+  spec.vb:
+  - uid: MuseDashMirror.Contracts.IPositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+    name: SetPosition
+    href: MuseDashMirror.Contracts.IPositionStrategy.html#MuseDashMirror_Contracts_IPositionStrategy_SetPosition_UnityEngine_RectTransform_MuseDashMirror_Models_TransformParameters_
+  - name: (
+  - uid: UnityEngine.RectTransform
+    name: RectTransform
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: MuseDashMirror.Models.TransformParameters
+    name: TransformParameters
+    href: MuseDashMirror.Models.TransformParameters.html
+  - name: )
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: MuseDashMirror.Models.TransformParameters
+  commentId: T:MuseDashMirror.Models.TransformParameters
+  parent: MuseDashMirror.Models
+  href: MuseDashMirror.Models.TransformParameters.html
+  name: TransformParameters
+  nameWithType: TransformParameters
+  fullName: MuseDashMirror.Models.TransformParameters
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: MuseDashMirror.Models
+  commentId: N:MuseDashMirror.Models
+  href: MuseDashMirror.html
+  name: MuseDashMirror.Models
+  nameWithType: MuseDashMirror.Models
+  fullName: MuseDashMirror.Models
+  spec.csharp:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
+  spec.vb:
+  - uid: MuseDashMirror
+    name: MuseDashMirror
+    href: MuseDashMirror.html
+  - name: .
+  - uid: MuseDashMirror.Models
+    name: Models
+    href: MuseDashMirror.Models.html
