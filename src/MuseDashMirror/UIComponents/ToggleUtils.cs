@@ -30,7 +30,7 @@ public static partial class ToggleUtils
     /// <param name="transformParameters">Transform Parameters</param>
     /// <returns></returns>
     public static GameObject CreateToggle(ToggleParameters toggleParameters, TransformParameters transformParameters) =>
-        CreateToggle((GameObject)null, toggleParameters, transformParameters);
+        CreateToggle((Transform)null, toggleParameters, transformParameters);
 
     /// <summary>
     ///     Create a toggle with parent
@@ -50,8 +50,18 @@ public static partial class ToggleUtils
     /// <param name="transformParameters">Transform Parameters</param>
     /// <returns>Toggle GameObject</returns>
     public static GameObject CreateToggle(GameObject parent, ToggleParameters toggleParameters, TransformParameters transformParameters)
+        => CreateToggle(parent.transform, toggleParameters, transformParameters);
+
+    /// <summary>
+    ///     Create a toggle with parent
+    /// </summary>
+    /// <param name="parentTransform">Parent GameObject Transform</param>
+    /// <param name="toggleParameters">Toggle Parameters</param>
+    /// <param name="transformParameters">Transform Parameters</param>
+    /// <returns></returns>
+    public static GameObject CreateToggle(Transform parentTransform, ToggleParameters toggleParameters, TransformParameters transformParameters)
     {
-        var toggle = GetGameObject(TglOnPath).FastInstantiate(parent.transform);
+        var toggle = GetGameObject(TglOnPath).FastInstantiate(parentTransform);
         toggle.name = toggleParameters.ToggleName;
 
         var txt = toggle.transform.GetChild(1).gameObject;
