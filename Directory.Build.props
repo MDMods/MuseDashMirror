@@ -7,18 +7,6 @@
         <OutputPath>$(SolutionDir)\bin</OutputPath>
     </PropertyGroup>
 
-    <PropertyGroup Condition="'$(WORKER)' != 'GitHub'">
-        <MelonLoader>$(GameFolder)\MelonLoader\</MelonLoader>
-        <MelonNET6>$(MelonLoader)\net6\</MelonNET6>
-        <MelonAssemblies>$(MelonLoader)\Il2CppAssemblies\</MelonAssemblies>
-    </PropertyGroup>
-
-    <PropertyGroup Condition="'$(WORKER)' == 'GitHub'">
-        <MelonLoader>$(SolutionDir)\Libs</MelonLoader>
-        <MelonNET6>$(SolutionDir)\Libs</MelonNET6>
-        <MelonAssemblies>$(SolutionDir)\Libs</MelonAssemblies>
-    </PropertyGroup>
-
     <ItemDefinitionGroup>
         <Reference Private="false"/>
     </ItemDefinitionGroup>
