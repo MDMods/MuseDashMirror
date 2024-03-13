@@ -26,6 +26,11 @@ jobs:
         with:
           dotnet-version: 8.x
 
+      - name: Restore and Build
+        run: |
+          dotnet restore
+          dotnet build -c Release "WORKER=GitHub"
+
       - run: dotnet tool update -g docfx
       - run: docfx ./Documentation/docfx.json
 
