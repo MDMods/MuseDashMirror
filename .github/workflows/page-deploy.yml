@@ -17,6 +17,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      WORKER: GitHub
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -26,12 +28,15 @@ jobs:
         with:
           dotnet-version: 8.x
 
+      - name: Restore and Build
+        run: |
+          dotnet restore
+          dotnet build -c Release
+
       - name: Build Docs
         run: |
           dotnet tool update -g docfx
           docfx ./Documentation/docfx.json
-        env:
-          WORKER: GitHub
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
