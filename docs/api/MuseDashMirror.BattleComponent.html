@@ -1,0 +1,879 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BattleComponent | MuseDashMirror </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BattleComponent | MuseDashMirror ">
+      
+      <meta name="description" content="Data inside game scene for battle">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MDMods/MuseDashMirror/new/master/apiSpec/new?filename=MuseDashMirror_BattleComponent.md&amp;value=---%0Auid%3A%20MuseDashMirror.BattleComponent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MuseDashMirror">
+            MuseDashMirror
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MuseDashMirror.BattleComponent">
+
+
+
+  <h1 id="MuseDashMirror_BattleComponent" data-uid="MuseDashMirror.BattleComponent" class="text-break">
+Class BattleComponent  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MuseDashMirror.html">MuseDashMirror</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MuseDashMirror.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Data inside game scene for battle</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class BattleComponent</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">BattleComponent</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MuseDashMirror_BattleComponent_ChartLevel_" data-uid="MuseDashMirror.BattleComponent.ChartLevel*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_ChartLevel" data-uid="MuseDashMirror.BattleComponent.ChartLevel">
+  ChartLevel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Level of the chart, only changed when entering the chart</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ChartLevel { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_ChartName_" data-uid="MuseDashMirror.BattleComponent.ChartName*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_ChartName" data-uid="MuseDashMirror.BattleComponent.ChartName">
+  ChartName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Chart name, only changed when entering the chart</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ChartName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_Charter_" data-uid="MuseDashMirror.BattleComponent.Charter*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_Charter" data-uid="MuseDashMirror.BattleComponent.Charter">
+  Charter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Charter, only changed when entering the chart</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Charter { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_CollectableNoteMissCount_" data-uid="MuseDashMirror.BattleComponent.CollectableNoteMissCount*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_CollectableNoteMissCount" data-uid="MuseDashMirror.BattleComponent.CollectableNoteMissCount">
+  CollectableNoteMissCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Collectable note miss count</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CollectableNoteMissCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_Difficulty_" data-uid="MuseDashMirror.BattleComponent.Difficulty*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_Difficulty" data-uid="MuseDashMirror.BattleComponent.Difficulty">
+  Difficulty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Difficulty of the chart (easy, hard, master, hidden, touhou), only changed when entering the chart</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Difficulty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_Get_" data-uid="MuseDashMirror.BattleComponent.Get*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_Get" data-uid="MuseDashMirror.BattleComponent.Get">
+  Get
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Blue collectable notes count</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Get { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_GhostMissCount_" data-uid="MuseDashMirror.BattleComponent.GhostMissCount*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_GhostMissCount" data-uid="MuseDashMirror.BattleComponent.GhostMissCount">
+  GhostMissCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ghost miss count</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GhostMissCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_GreatCount_" data-uid="MuseDashMirror.BattleComponent.GreatCount*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_GreatCount" data-uid="MuseDashMirror.BattleComponent.GreatCount">
+  GreatCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Great count</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GreatCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_Heart_" data-uid="MuseDashMirror.BattleComponent.Heart*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_Heart" data-uid="MuseDashMirror.BattleComponent.Heart">
+  Heart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Heart count</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Heart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_IsInGame_" data-uid="MuseDashMirror.BattleComponent.IsInGame*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_IsInGame" data-uid="MuseDashMirror.BattleComponent.IsInGame">
+  IsInGame
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Becomes true when &quot;ready go&quot; finished</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInGame { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_JumpOver_" data-uid="MuseDashMirror.BattleComponent.JumpOver*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_JumpOver" data-uid="MuseDashMirror.BattleComponent.JumpOver">
+  JumpOver
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Jump over count</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int JumpOver { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_MusicAuthor_" data-uid="MuseDashMirror.BattleComponent.MusicAuthor*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_MusicAuthor" data-uid="MuseDashMirror.BattleComponent.MusicAuthor">
+  MusicAuthor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Music author, only changed when entering the chart</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string MusicAuthor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_MusicDataList_" data-uid="MuseDashMirror.BattleComponent.MusicDataList*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_MusicDataList" data-uid="MuseDashMirror.BattleComponent.MusicDataList">
+  MusicDataList
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Music data for the chart, only changed when entering the chart</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;MusicData&gt; MusicDataList { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">MusicData</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_NormalMissCount_" data-uid="MuseDashMirror.BattleComponent.NormalMissCount*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_NormalMissCount" data-uid="MuseDashMirror.BattleComponent.NormalMissCount">
+  NormalMissCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Normal miss count (without ghost and collectable note miss)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NormalMissCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_PerfectCount_" data-uid="MuseDashMirror.BattleComponent.PerfectCount*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_PerfectCount" data-uid="MuseDashMirror.BattleComponent.PerfectCount">
+  PerfectCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Perfect count</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PerfectCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_SelectedAlbumUid_" data-uid="MuseDashMirror.BattleComponent.SelectedAlbumUid*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_SelectedAlbumUid" data-uid="MuseDashMirror.BattleComponent.SelectedAlbumUid">
+  SelectedAlbumUid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name for album package</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SelectedAlbumUid { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_SelectedMusicIndex_" data-uid="MuseDashMirror.BattleComponent.SelectedMusicIndex*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_SelectedMusicIndex" data-uid="MuseDashMirror.BattleComponent.SelectedMusicIndex">
+  SelectedMusicIndex
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The index of selected music in its own album package</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SelectedMusicIndex { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_SelectedMusicIndexInCurrent_" data-uid="MuseDashMirror.BattleComponent.SelectedMusicIndexInCurrent*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_SelectedMusicIndexInCurrent" data-uid="MuseDashMirror.BattleComponent.SelectedMusicIndexInCurrent">
+  SelectedMusicIndexInCurrent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The index of selected music in current category</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SelectedMusicIndexInCurrent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_SelectedMusicUid_" data-uid="MuseDashMirror.BattleComponent.SelectedMusicUid*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_SelectedMusicUid" data-uid="MuseDashMirror.BattleComponent.SelectedMusicUid">
+  SelectedMusicUid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The full path for selected music (album+music index)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SelectedMusicUid { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_Tick_" data-uid="MuseDashMirror.BattleComponent.Tick*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_Tick" data-uid="MuseDashMirror.BattleComponent.Tick">
+  Tick
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>3 decimal places number for game play time, start after isInGame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Tick { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MuseDashMirror_BattleComponent_Exit_" data-uid="MuseDashMirror.BattleComponent.Exit*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_Exit" data-uid="MuseDashMirror.BattleComponent.Exit">
+  Exit()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Exit the current chart</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Exit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_BattleComponent_Restart_" data-uid="MuseDashMirror.BattleComponent.Restart*"></a>
+
+  <h3 id="MuseDashMirror_BattleComponent_Restart" data-uid="MuseDashMirror.BattleComponent.Restart">
+  Restart()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Restart the current chart</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Restart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/BattleComponent.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
