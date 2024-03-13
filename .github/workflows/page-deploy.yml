@@ -20,9 +20,11 @@ jobs:
     env:
       WORKER: GitHub
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Dotnet Setup
         uses: actions/setup-dotnet@v4
         with:
@@ -41,8 +43,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './Documentation/site'
-      
+          path: './site'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
