@@ -9,7 +9,8 @@ namespace MuseDashMirror.UIComponents;
 /// </summary>
 public static partial class ToggleUtils
 {
-    private const string TglOnPath = "Forward/PnlVolume/LogoSetting/Toggles/TglOn";
+    private const float ToggleSpacing = 1.1f;
+    private static readonly float ScaleFactorX = PnlMenuGameObject.GetTotalScaleFactor().x;
 
     private static readonly Vector3[] Positions =
     [
@@ -19,8 +20,10 @@ public static partial class ToggleUtils
         new Vector3(-6.8f, -4.95f, 100f)
     ];
 
+    private static GameObject TglOnGameObject => GetGameObject("Forward/PnlVolume/LogoSetting/Toggles/TglOn");
+    private static GameObject PnlMenuGameObject => GetGameObject("PnlMenu");
+    private static GameObject PnlOptionGameObject => GetGameObject("PnlOption");
     private static int ToggleCount { get; set; }
-
     private static List<float> LongestWidths { get; } = [];
 
     /// <summary>
@@ -61,7 +64,7 @@ public static partial class ToggleUtils
     /// <returns></returns>
     public static GameObject CreateToggle(Transform parentTransform, ToggleParameters toggleParameters, TransformParameters transformParameters)
     {
-        var toggle = GetGameObject(TglOnPath).FastInstantiate(parentTransform);
+        var toggle = TglOnGameObject.FastInstantiate(parentTransform);
         toggle.name = toggleParameters.ToggleName;
 
         var txt = toggle.transform.GetChild(1).gameObject;
@@ -114,7 +117,7 @@ public static partial class ToggleUtils
     /// <exception cref="ArgumentException">Thrown when the provided expression does not represent a property or field of the target object</exception>
     public static GameObject CreatePnlMenuToggle<T>(string name, string text, T target, Expression<Func<T, bool>> expression)
     {
-        var toggle = GetGameObject(TglOnPath).FastInstantiate(GetGameObject("PnlMenu").transform);
+        var toggle = TglOnGameObject.FastInstantiate(PnlMenuGameObject.transform);
         toggle.name = name;
 
         var txt = toggle.transform.GetChild(1).gameObject;
@@ -148,7 +151,7 @@ public static partial class ToggleUtils
         toggleComp.group = null;
         toggleComp.SetIsOnWithoutNotify(expression.Compile()(target));
 
-        toggle.SetParent(GetGameObject("PnlOption"));
+        toggle.SetParent(PnlOptionGameObject);
 
         GameObjectCache[name] = toggle;
 
@@ -162,7 +165,7 @@ public static partial class ToggleUtils
     /// <returns>Toggle GameObject</returns>
     public static GameObject CreatePnlMenuToggle(ToggleParameters toggleParameters)
     {
-        var toggle = GetGameObject(TglOnPath).FastInstantiate(GetGameObject("PnlMenu").transform);
+        var toggle = TglOnGameObject.FastInstantiate(PnlMenuGameObject.transform);
         toggle.name = toggleParameters.ToggleName;
 
         var txt = toggle.transform.GetChild(1).gameObject;
@@ -187,7 +190,7 @@ public static partial class ToggleUtils
         var checkMark = toggle.transform.GetChild(0).GetChild(0).GetComponent<Image>();
         checkMark.color = toggleParameters.CheckMarkColor;
 
-        toggle.SetParent(GetGameObject("PnlOption"));
+        toggle.SetParent(PnlOptionGameObject);
 
         GameObjectCache[toggleParameters.ToggleName] = toggle;
 
@@ -196,25 +199,24 @@ public static partial class ToggleUtils
 
     private static Vector3 GetPosition(RectTransform rectTransform)
     {
-        var scaleFactor = rectTransform.gameObject.GetTotalScaleFactor();
-        var width = rectTransform.rect.width * scaleFactor.x + 1.1f;
-        var column = ToggleCount / 4;
+        var width = rectTransform.rect.width * ScaleFactorX + ToggleSpacing;
+        var columnIndex = ToggleCount / 4;
 
-        if (LongestWidths.Count <= column)
+        if (LongestWidths.Count <= columnIndex)
         {
             LongestWidths.Add(0f);
         }
 
-        if (width > LongestWidths[column])
+        if (width > LongestWidths[columnIndex])
         {
-            LongestWidths[column] = width;
+            LongestWidths[columnIndex] = width;
         }
 
         var position = Positions[ToggleCount % 4];
 
-        if (column > 0)
+        if (columnIndex > 0)
         {
-            position.x += LongestWidths.Take(column).Sum();
+            position.x += LongestWidths.Take(columnIndex).Sum();
         }
 
         ToggleCount++;

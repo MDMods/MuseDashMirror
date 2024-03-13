@@ -39,7 +39,7 @@ public static partial class CanvasUtils
             return camera;
         }
 
-        camera = GameObject.Find(cameraName).GetComponent<Camera>();
+        camera = GetGameObject(cameraName).GetComponent<Camera>();
         if (camera == null)
         {
             Logger.Error($"Camera with name {cameraName} is not found");
@@ -118,7 +118,7 @@ public static partial class CanvasUtils
         var canvas = canvasGameObject.AddComponent<Canvas>();
         var canvasScaler = canvasGameObject.AddComponent<CanvasScaler>();
         canvasGameObject.AddComponent<GraphicRaycaster>();
-        canvasGameObject.GetComponent<Canvas>().renderMode = renderMode;
+        canvas.renderMode = renderMode;
 
         if (renderMode == RenderMode.ScreenSpaceOverlay)
         {
