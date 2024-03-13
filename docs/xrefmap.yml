@@ -1,0 +1,2796 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: MuseDashMirror
+  name: MuseDashMirror
+  href: api/MuseDashMirror.html
+  commentId: N:MuseDashMirror
+  fullName: MuseDashMirror
+  nameWithType: MuseDashMirror
+- uid: MuseDashMirror.Attributes
+  name: MuseDashMirror.Attributes
+  href: api/MuseDashMirror.Attributes.html
+  commentId: N:MuseDashMirror.Attributes
+  fullName: MuseDashMirror.Attributes
+  nameWithType: MuseDashMirror.Attributes
+- uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents
+  name: MuseDashMirror.Attributes.EventAttributes.PatchEvents
+  href: api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.html
+  commentId: N:MuseDashMirror.Attributes.EventAttributes.PatchEvents
+  fullName: MuseDashMirror.Attributes.EventAttributes.PatchEvents
+  nameWithType: MuseDashMirror.Attributes.EventAttributes.PatchEvents
+- uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.AddScorePatchAttribute
+  name: AddScorePatchAttribute
+  href: api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.AddScorePatchAttribute.html
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.PatchEvents.AddScorePatchAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.PatchEvents.AddScorePatchAttribute
+  nameWithType: AddScorePatchAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.GameStartPatchAttribute
+  name: GameStartPatchAttribute
+  href: api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.GameStartPatchAttribute.html
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.PatchEvents.GameStartPatchAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.PatchEvents.GameStartPatchAttribute
+  nameWithType: GameStartPatchAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.MenuSelectPatchAttribute
+  name: MenuSelectPatchAttribute
+  href: api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.MenuSelectPatchAttribute.html
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.PatchEvents.MenuSelectPatchAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.PatchEvents.MenuSelectPatchAttribute
+  nameWithType: MenuSelectPatchAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlMenuPatchAttribute
+  name: PnlMenuPatchAttribute
+  href: api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlMenuPatchAttribute.html
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlMenuPatchAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlMenuPatchAttribute
+  nameWithType: PnlMenuPatchAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlStagePatchAttribute
+  name: PnlStagePatchAttribute
+  href: api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlStagePatchAttribute.html
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlStagePatchAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlStagePatchAttribute
+  nameWithType: PnlStagePatchAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlVictoryPatchAttribute
+  name: PnlVictoryPatchAttribute
+  href: api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlVictoryPatchAttribute.html
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlVictoryPatchAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlVictoryPatchAttribute
+  nameWithType: PnlVictoryPatchAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.PatchEvents.SwitchLanguagePatchAttribute
+  name: SwitchLanguagePatchAttribute
+  href: api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.SwitchLanguagePatchAttribute.html
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.PatchEvents.SwitchLanguagePatchAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.PatchEvents.SwitchLanguagePatchAttribute
+  nameWithType: SwitchLanguagePatchAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents
+  name: MuseDashMirror.Attributes.EventAttributes.SceneEvents
+  href: api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.html
+  commentId: N:MuseDashMirror.Attributes.EventAttributes.SceneEvents
+  fullName: MuseDashMirror.Attributes.EventAttributes.SceneEvents
+  nameWithType: MuseDashMirror.Attributes.EventAttributes.SceneEvents
+- uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterGameSceneAttribute
+  name: EnterGameSceneAttribute
+  href: api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterGameSceneAttribute.html
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterGameSceneAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterGameSceneAttribute
+  nameWithType: EnterGameSceneAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterLoadingSceneAttribute
+  name: EnterLoadingSceneAttribute
+  href: api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterLoadingSceneAttribute.html
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterLoadingSceneAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterLoadingSceneAttribute
+  nameWithType: EnterLoadingSceneAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterMainSceneAttribute
+  name: EnterMainSceneAttribute
+  href: api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterMainSceneAttribute.html
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterMainSceneAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterMainSceneAttribute
+  nameWithType: EnterMainSceneAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterSceneAttribute
+  name: EnterSceneAttribute
+  href: api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterSceneAttribute.html
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterSceneAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterSceneAttribute
+  nameWithType: EnterSceneAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterWelcomeSceneAttribute
+  name: EnterWelcomeSceneAttribute
+  href: api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterWelcomeSceneAttribute.html
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterWelcomeSceneAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterWelcomeSceneAttribute
+  nameWithType: EnterWelcomeSceneAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitGameSceneAttribute
+  name: ExitGameSceneAttribute
+  href: api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitGameSceneAttribute.html
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitGameSceneAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitGameSceneAttribute
+  nameWithType: ExitGameSceneAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitLoadingSceneAttribute
+  name: ExitLoadingSceneAttribute
+  href: api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitLoadingSceneAttribute.html
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitLoadingSceneAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitLoadingSceneAttribute
+  nameWithType: ExitLoadingSceneAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitMainSceneAttribute
+  name: ExitMainSceneAttribute
+  href: api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitMainSceneAttribute.html
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitMainSceneAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitMainSceneAttribute
+  nameWithType: ExitMainSceneAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitSceneAttribute
+  name: ExitSceneAttribute
+  href: api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitSceneAttribute.html
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitSceneAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitSceneAttribute
+  nameWithType: ExitSceneAttribute
+- uid: MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitWelcomeSceneAttribute
+  name: ExitWelcomeSceneAttribute
+  href: api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitWelcomeSceneAttribute.html
+  commentId: T:MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitWelcomeSceneAttribute
+  fullName: MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitWelcomeSceneAttribute
+  nameWithType: ExitWelcomeSceneAttribute
+- uid: MuseDashMirror.Attributes.LoggerAttribute
+  name: LoggerAttribute
+  href: api/MuseDashMirror.Attributes.LoggerAttribute.html
+  commentId: T:MuseDashMirror.Attributes.LoggerAttribute
+  fullName: MuseDashMirror.Attributes.LoggerAttribute
+  nameWithType: LoggerAttribute
+- uid: MuseDashMirror.Attributes.LoggerAttribute.#ctor(MuseDashMirror.Shared.LoggerType)
+  name: LoggerAttribute(LoggerType)
+  href: api/MuseDashMirror.Attributes.LoggerAttribute.html#MuseDashMirror_Attributes_LoggerAttribute__ctor_MuseDashMirror_Shared_LoggerType_
+  commentId: M:MuseDashMirror.Attributes.LoggerAttribute.#ctor(MuseDashMirror.Shared.LoggerType)
+  name.vb: New(LoggerType)
+  fullName: MuseDashMirror.Attributes.LoggerAttribute.LoggerAttribute(MuseDashMirror.Shared.LoggerType)
+  fullName.vb: MuseDashMirror.Attributes.LoggerAttribute.New(MuseDashMirror.Shared.LoggerType)
+  nameWithType: LoggerAttribute.LoggerAttribute(LoggerType)
+  nameWithType.vb: LoggerAttribute.New(LoggerType)
+- uid: MuseDashMirror.Attributes.LoggerAttribute.#ctor*
+  name: LoggerAttribute
+  href: api/MuseDashMirror.Attributes.LoggerAttribute.html#MuseDashMirror_Attributes_LoggerAttribute__ctor_
+  commentId: Overload:MuseDashMirror.Attributes.LoggerAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MuseDashMirror.Attributes.LoggerAttribute.LoggerAttribute
+  fullName.vb: MuseDashMirror.Attributes.LoggerAttribute.New
+  nameWithType: LoggerAttribute.LoggerAttribute
+  nameWithType.vb: LoggerAttribute.New
+- uid: MuseDashMirror.Attributes.PnlMenuToggleAttribute
+  name: PnlMenuToggleAttribute
+  href: api/MuseDashMirror.Attributes.PnlMenuToggleAttribute.html
+  commentId: T:MuseDashMirror.Attributes.PnlMenuToggleAttribute
+  fullName: MuseDashMirror.Attributes.PnlMenuToggleAttribute
+  nameWithType: PnlMenuToggleAttribute
+- uid: MuseDashMirror.Attributes.PnlMenuToggleAttribute.#ctor(System.String,System.String,System.String)
+  name: PnlMenuToggleAttribute(string, string, string)
+  href: api/MuseDashMirror.Attributes.PnlMenuToggleAttribute.html#MuseDashMirror_Attributes_PnlMenuToggleAttribute__ctor_System_String_System_String_System_String_
+  commentId: M:MuseDashMirror.Attributes.PnlMenuToggleAttribute.#ctor(System.String,System.String,System.String)
+  name.vb: New(String, String, String)
+  fullName: MuseDashMirror.Attributes.PnlMenuToggleAttribute.PnlMenuToggleAttribute(string, string, string)
+  fullName.vb: MuseDashMirror.Attributes.PnlMenuToggleAttribute.New(String, String, String)
+  nameWithType: PnlMenuToggleAttribute.PnlMenuToggleAttribute(string, string, string)
+  nameWithType.vb: PnlMenuToggleAttribute.New(String, String, String)
+- uid: MuseDashMirror.Attributes.PnlMenuToggleAttribute.#ctor*
+  name: PnlMenuToggleAttribute
+  href: api/MuseDashMirror.Attributes.PnlMenuToggleAttribute.html#MuseDashMirror_Attributes_PnlMenuToggleAttribute__ctor_
+  commentId: Overload:MuseDashMirror.Attributes.PnlMenuToggleAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MuseDashMirror.Attributes.PnlMenuToggleAttribute.PnlMenuToggleAttribute
+  fullName.vb: MuseDashMirror.Attributes.PnlMenuToggleAttribute.New
+  nameWithType: PnlMenuToggleAttribute.PnlMenuToggleAttribute
+  nameWithType.vb: PnlMenuToggleAttribute.New
+- uid: MuseDashMirror.BattleComponent
+  name: BattleComponent
+  href: api/MuseDashMirror.BattleComponent.html
+  commentId: T:MuseDashMirror.BattleComponent
+  fullName: MuseDashMirror.BattleComponent
+  nameWithType: BattleComponent
+- uid: MuseDashMirror.BattleComponent.ChartLevel
+  name: ChartLevel
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_ChartLevel
+  commentId: P:MuseDashMirror.BattleComponent.ChartLevel
+  fullName: MuseDashMirror.BattleComponent.ChartLevel
+  nameWithType: BattleComponent.ChartLevel
+- uid: MuseDashMirror.BattleComponent.ChartLevel*
+  name: ChartLevel
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_ChartLevel_
+  commentId: Overload:MuseDashMirror.BattleComponent.ChartLevel
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.ChartLevel
+  nameWithType: BattleComponent.ChartLevel
+- uid: MuseDashMirror.BattleComponent.ChartName
+  name: ChartName
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_ChartName
+  commentId: P:MuseDashMirror.BattleComponent.ChartName
+  fullName: MuseDashMirror.BattleComponent.ChartName
+  nameWithType: BattleComponent.ChartName
+- uid: MuseDashMirror.BattleComponent.ChartName*
+  name: ChartName
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_ChartName_
+  commentId: Overload:MuseDashMirror.BattleComponent.ChartName
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.ChartName
+  nameWithType: BattleComponent.ChartName
+- uid: MuseDashMirror.BattleComponent.Charter
+  name: Charter
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Charter
+  commentId: P:MuseDashMirror.BattleComponent.Charter
+  fullName: MuseDashMirror.BattleComponent.Charter
+  nameWithType: BattleComponent.Charter
+- uid: MuseDashMirror.BattleComponent.Charter*
+  name: Charter
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Charter_
+  commentId: Overload:MuseDashMirror.BattleComponent.Charter
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.Charter
+  nameWithType: BattleComponent.Charter
+- uid: MuseDashMirror.BattleComponent.CollectableNoteMissCount
+  name: CollectableNoteMissCount
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_CollectableNoteMissCount
+  commentId: P:MuseDashMirror.BattleComponent.CollectableNoteMissCount
+  fullName: MuseDashMirror.BattleComponent.CollectableNoteMissCount
+  nameWithType: BattleComponent.CollectableNoteMissCount
+- uid: MuseDashMirror.BattleComponent.CollectableNoteMissCount*
+  name: CollectableNoteMissCount
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_CollectableNoteMissCount_
+  commentId: Overload:MuseDashMirror.BattleComponent.CollectableNoteMissCount
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.CollectableNoteMissCount
+  nameWithType: BattleComponent.CollectableNoteMissCount
+- uid: MuseDashMirror.BattleComponent.Difficulty
+  name: Difficulty
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Difficulty
+  commentId: P:MuseDashMirror.BattleComponent.Difficulty
+  fullName: MuseDashMirror.BattleComponent.Difficulty
+  nameWithType: BattleComponent.Difficulty
+- uid: MuseDashMirror.BattleComponent.Difficulty*
+  name: Difficulty
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Difficulty_
+  commentId: Overload:MuseDashMirror.BattleComponent.Difficulty
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.Difficulty
+  nameWithType: BattleComponent.Difficulty
+- uid: MuseDashMirror.BattleComponent.Exit
+  name: Exit()
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Exit
+  commentId: M:MuseDashMirror.BattleComponent.Exit
+  fullName: MuseDashMirror.BattleComponent.Exit()
+  nameWithType: BattleComponent.Exit()
+- uid: MuseDashMirror.BattleComponent.Exit*
+  name: Exit
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Exit_
+  commentId: Overload:MuseDashMirror.BattleComponent.Exit
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.Exit
+  nameWithType: BattleComponent.Exit
+- uid: MuseDashMirror.BattleComponent.Get
+  name: Get
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Get
+  commentId: P:MuseDashMirror.BattleComponent.Get
+  fullName: MuseDashMirror.BattleComponent.Get
+  nameWithType: BattleComponent.Get
+- uid: MuseDashMirror.BattleComponent.Get*
+  name: Get
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Get_
+  commentId: Overload:MuseDashMirror.BattleComponent.Get
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.Get
+  nameWithType: BattleComponent.Get
+- uid: MuseDashMirror.BattleComponent.GhostMissCount
+  name: GhostMissCount
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_GhostMissCount
+  commentId: P:MuseDashMirror.BattleComponent.GhostMissCount
+  fullName: MuseDashMirror.BattleComponent.GhostMissCount
+  nameWithType: BattleComponent.GhostMissCount
+- uid: MuseDashMirror.BattleComponent.GhostMissCount*
+  name: GhostMissCount
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_GhostMissCount_
+  commentId: Overload:MuseDashMirror.BattleComponent.GhostMissCount
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.GhostMissCount
+  nameWithType: BattleComponent.GhostMissCount
+- uid: MuseDashMirror.BattleComponent.GreatCount
+  name: GreatCount
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_GreatCount
+  commentId: P:MuseDashMirror.BattleComponent.GreatCount
+  fullName: MuseDashMirror.BattleComponent.GreatCount
+  nameWithType: BattleComponent.GreatCount
+- uid: MuseDashMirror.BattleComponent.GreatCount*
+  name: GreatCount
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_GreatCount_
+  commentId: Overload:MuseDashMirror.BattleComponent.GreatCount
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.GreatCount
+  nameWithType: BattleComponent.GreatCount
+- uid: MuseDashMirror.BattleComponent.Heart
+  name: Heart
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Heart
+  commentId: P:MuseDashMirror.BattleComponent.Heart
+  fullName: MuseDashMirror.BattleComponent.Heart
+  nameWithType: BattleComponent.Heart
+- uid: MuseDashMirror.BattleComponent.Heart*
+  name: Heart
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Heart_
+  commentId: Overload:MuseDashMirror.BattleComponent.Heart
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.Heart
+  nameWithType: BattleComponent.Heart
+- uid: MuseDashMirror.BattleComponent.IsInGame
+  name: IsInGame
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_IsInGame
+  commentId: P:MuseDashMirror.BattleComponent.IsInGame
+  fullName: MuseDashMirror.BattleComponent.IsInGame
+  nameWithType: BattleComponent.IsInGame
+- uid: MuseDashMirror.BattleComponent.IsInGame*
+  name: IsInGame
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_IsInGame_
+  commentId: Overload:MuseDashMirror.BattleComponent.IsInGame
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.IsInGame
+  nameWithType: BattleComponent.IsInGame
+- uid: MuseDashMirror.BattleComponent.JumpOver
+  name: JumpOver
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_JumpOver
+  commentId: P:MuseDashMirror.BattleComponent.JumpOver
+  fullName: MuseDashMirror.BattleComponent.JumpOver
+  nameWithType: BattleComponent.JumpOver
+- uid: MuseDashMirror.BattleComponent.JumpOver*
+  name: JumpOver
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_JumpOver_
+  commentId: Overload:MuseDashMirror.BattleComponent.JumpOver
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.JumpOver
+  nameWithType: BattleComponent.JumpOver
+- uid: MuseDashMirror.BattleComponent.MusicAuthor
+  name: MusicAuthor
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_MusicAuthor
+  commentId: P:MuseDashMirror.BattleComponent.MusicAuthor
+  fullName: MuseDashMirror.BattleComponent.MusicAuthor
+  nameWithType: BattleComponent.MusicAuthor
+- uid: MuseDashMirror.BattleComponent.MusicAuthor*
+  name: MusicAuthor
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_MusicAuthor_
+  commentId: Overload:MuseDashMirror.BattleComponent.MusicAuthor
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.MusicAuthor
+  nameWithType: BattleComponent.MusicAuthor
+- uid: MuseDashMirror.BattleComponent.MusicDataList
+  name: MusicDataList
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_MusicDataList
+  commentId: P:MuseDashMirror.BattleComponent.MusicDataList
+  fullName: MuseDashMirror.BattleComponent.MusicDataList
+  nameWithType: BattleComponent.MusicDataList
+- uid: MuseDashMirror.BattleComponent.MusicDataList*
+  name: MusicDataList
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_MusicDataList_
+  commentId: Overload:MuseDashMirror.BattleComponent.MusicDataList
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.MusicDataList
+  nameWithType: BattleComponent.MusicDataList
+- uid: MuseDashMirror.BattleComponent.NormalMissCount
+  name: NormalMissCount
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_NormalMissCount
+  commentId: P:MuseDashMirror.BattleComponent.NormalMissCount
+  fullName: MuseDashMirror.BattleComponent.NormalMissCount
+  nameWithType: BattleComponent.NormalMissCount
+- uid: MuseDashMirror.BattleComponent.NormalMissCount*
+  name: NormalMissCount
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_NormalMissCount_
+  commentId: Overload:MuseDashMirror.BattleComponent.NormalMissCount
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.NormalMissCount
+  nameWithType: BattleComponent.NormalMissCount
+- uid: MuseDashMirror.BattleComponent.PerfectCount
+  name: PerfectCount
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_PerfectCount
+  commentId: P:MuseDashMirror.BattleComponent.PerfectCount
+  fullName: MuseDashMirror.BattleComponent.PerfectCount
+  nameWithType: BattleComponent.PerfectCount
+- uid: MuseDashMirror.BattleComponent.PerfectCount*
+  name: PerfectCount
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_PerfectCount_
+  commentId: Overload:MuseDashMirror.BattleComponent.PerfectCount
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.PerfectCount
+  nameWithType: BattleComponent.PerfectCount
+- uid: MuseDashMirror.BattleComponent.Restart
+  name: Restart()
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Restart
+  commentId: M:MuseDashMirror.BattleComponent.Restart
+  fullName: MuseDashMirror.BattleComponent.Restart()
+  nameWithType: BattleComponent.Restart()
+- uid: MuseDashMirror.BattleComponent.Restart*
+  name: Restart
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Restart_
+  commentId: Overload:MuseDashMirror.BattleComponent.Restart
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.Restart
+  nameWithType: BattleComponent.Restart
+- uid: MuseDashMirror.BattleComponent.SelectedAlbumUid
+  name: SelectedAlbumUid
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_SelectedAlbumUid
+  commentId: P:MuseDashMirror.BattleComponent.SelectedAlbumUid
+  fullName: MuseDashMirror.BattleComponent.SelectedAlbumUid
+  nameWithType: BattleComponent.SelectedAlbumUid
+- uid: MuseDashMirror.BattleComponent.SelectedAlbumUid*
+  name: SelectedAlbumUid
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_SelectedAlbumUid_
+  commentId: Overload:MuseDashMirror.BattleComponent.SelectedAlbumUid
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.SelectedAlbumUid
+  nameWithType: BattleComponent.SelectedAlbumUid
+- uid: MuseDashMirror.BattleComponent.SelectedMusicIndex
+  name: SelectedMusicIndex
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_SelectedMusicIndex
+  commentId: P:MuseDashMirror.BattleComponent.SelectedMusicIndex
+  fullName: MuseDashMirror.BattleComponent.SelectedMusicIndex
+  nameWithType: BattleComponent.SelectedMusicIndex
+- uid: MuseDashMirror.BattleComponent.SelectedMusicIndex*
+  name: SelectedMusicIndex
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_SelectedMusicIndex_
+  commentId: Overload:MuseDashMirror.BattleComponent.SelectedMusicIndex
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.SelectedMusicIndex
+  nameWithType: BattleComponent.SelectedMusicIndex
+- uid: MuseDashMirror.BattleComponent.SelectedMusicIndexInCurrent
+  name: SelectedMusicIndexInCurrent
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_SelectedMusicIndexInCurrent
+  commentId: P:MuseDashMirror.BattleComponent.SelectedMusicIndexInCurrent
+  fullName: MuseDashMirror.BattleComponent.SelectedMusicIndexInCurrent
+  nameWithType: BattleComponent.SelectedMusicIndexInCurrent
+- uid: MuseDashMirror.BattleComponent.SelectedMusicIndexInCurrent*
+  name: SelectedMusicIndexInCurrent
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_SelectedMusicIndexInCurrent_
+  commentId: Overload:MuseDashMirror.BattleComponent.SelectedMusicIndexInCurrent
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.SelectedMusicIndexInCurrent
+  nameWithType: BattleComponent.SelectedMusicIndexInCurrent
+- uid: MuseDashMirror.BattleComponent.SelectedMusicUid
+  name: SelectedMusicUid
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_SelectedMusicUid
+  commentId: P:MuseDashMirror.BattleComponent.SelectedMusicUid
+  fullName: MuseDashMirror.BattleComponent.SelectedMusicUid
+  nameWithType: BattleComponent.SelectedMusicUid
+- uid: MuseDashMirror.BattleComponent.SelectedMusicUid*
+  name: SelectedMusicUid
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_SelectedMusicUid_
+  commentId: Overload:MuseDashMirror.BattleComponent.SelectedMusicUid
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.SelectedMusicUid
+  nameWithType: BattleComponent.SelectedMusicUid
+- uid: MuseDashMirror.BattleComponent.Tick
+  name: Tick
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Tick
+  commentId: P:MuseDashMirror.BattleComponent.Tick
+  fullName: MuseDashMirror.BattleComponent.Tick
+  nameWithType: BattleComponent.Tick
+- uid: MuseDashMirror.BattleComponent.Tick*
+  name: Tick
+  href: api/MuseDashMirror.BattleComponent.html#MuseDashMirror_BattleComponent_Tick_
+  commentId: Overload:MuseDashMirror.BattleComponent.Tick
+  isSpec: "True"
+  fullName: MuseDashMirror.BattleComponent.Tick
+  nameWithType: BattleComponent.Tick
+- uid: MuseDashMirror.Contracts
+  name: MuseDashMirror.Contracts
+  href: api/MuseDashMirror.Contracts.html
+  commentId: N:MuseDashMirror.Contracts
+  fullName: MuseDashMirror.Contracts
+  nameWithType: MuseDashMirror.Contracts
+- uid: MuseDashMirror.Contracts.IPositionStrategy
+  name: IPositionStrategy
+  href: api/MuseDashMirror.Contracts.IPositionStrategy.html
+  commentId: T:MuseDashMirror.Contracts.IPositionStrategy
+  fullName: MuseDashMirror.Contracts.IPositionStrategy
+  nameWithType: IPositionStrategy
+- uid: MuseDashMirror.Contracts.IPositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  name: SetPosition(RectTransform, TransformParameters)
+  href: api/MuseDashMirror.Contracts.IPositionStrategy.html#MuseDashMirror_Contracts_IPositionStrategy_SetPosition_UnityEngine_RectTransform_MuseDashMirror_Models_TransformParameters_
+  commentId: M:MuseDashMirror.Contracts.IPositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  fullName: MuseDashMirror.Contracts.IPositionStrategy.SetPosition(UnityEngine.RectTransform, MuseDashMirror.Models.TransformParameters)
+  nameWithType: IPositionStrategy.SetPosition(RectTransform, TransformParameters)
+- uid: MuseDashMirror.Contracts.IPositionStrategy.SetPosition*
+  name: SetPosition
+  href: api/MuseDashMirror.Contracts.IPositionStrategy.html#MuseDashMirror_Contracts_IPositionStrategy_SetPosition_
+  commentId: Overload:MuseDashMirror.Contracts.IPositionStrategy.SetPosition
+  isSpec: "True"
+  fullName: MuseDashMirror.Contracts.IPositionStrategy.SetPosition
+  nameWithType: IPositionStrategy.SetPosition
+- uid: MuseDashMirror.EventArguments
+  name: MuseDashMirror.EventArguments
+  href: api/MuseDashMirror.EventArguments.html
+  commentId: N:MuseDashMirror.EventArguments
+  fullName: MuseDashMirror.EventArguments
+  nameWithType: MuseDashMirror.EventArguments
+- uid: MuseDashMirror.EventArguments.AddScoreEventArgs
+  name: AddScoreEventArgs
+  href: api/MuseDashMirror.EventArguments.AddScoreEventArgs.html
+  commentId: T:MuseDashMirror.EventArguments.AddScoreEventArgs
+  fullName: MuseDashMirror.EventArguments.AddScoreEventArgs
+  nameWithType: AddScoreEventArgs
+- uid: MuseDashMirror.EventArguments.AddScoreEventArgs.#ctor(Il2CppAssets.Scripts.GameCore.HostComponent.TaskStageTarget,System.Int32,System.Int32,System.String,System.Boolean,System.Single)
+  name: AddScoreEventArgs(TaskStageTarget, int, int, string, bool, float)
+  href: api/MuseDashMirror.EventArguments.AddScoreEventArgs.html#MuseDashMirror_EventArguments_AddScoreEventArgs__ctor_Il2CppAssets_Scripts_GameCore_HostComponent_TaskStageTarget_System_Int32_System_Int32_System_String_System_Boolean_System_Single_
+  commentId: M:MuseDashMirror.EventArguments.AddScoreEventArgs.#ctor(Il2CppAssets.Scripts.GameCore.HostComponent.TaskStageTarget,System.Int32,System.Int32,System.String,System.Boolean,System.Single)
+  name.vb: New(TaskStageTarget, Integer, Integer, String, Boolean, Single)
+  fullName: MuseDashMirror.EventArguments.AddScoreEventArgs.AddScoreEventArgs(Il2CppAssets.Scripts.GameCore.HostComponent.TaskStageTarget, int, int, string, bool, float)
+  fullName.vb: MuseDashMirror.EventArguments.AddScoreEventArgs.New(Il2CppAssets.Scripts.GameCore.HostComponent.TaskStageTarget, Integer, Integer, String, Boolean, Single)
+  nameWithType: AddScoreEventArgs.AddScoreEventArgs(TaskStageTarget, int, int, string, bool, float)
+  nameWithType.vb: AddScoreEventArgs.New(TaskStageTarget, Integer, Integer, String, Boolean, Single)
+- uid: MuseDashMirror.EventArguments.AddScoreEventArgs.#ctor*
+  name: AddScoreEventArgs
+  href: api/MuseDashMirror.EventArguments.AddScoreEventArgs.html#MuseDashMirror_EventArguments_AddScoreEventArgs__ctor_
+  commentId: Overload:MuseDashMirror.EventArguments.AddScoreEventArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MuseDashMirror.EventArguments.AddScoreEventArgs.AddScoreEventArgs
+  fullName.vb: MuseDashMirror.EventArguments.AddScoreEventArgs.New
+  nameWithType: AddScoreEventArgs.AddScoreEventArgs
+  nameWithType.vb: AddScoreEventArgs.New
+- uid: MuseDashMirror.EventArguments.AddScoreEventArgs.Id
+  name: Id
+  href: api/MuseDashMirror.EventArguments.AddScoreEventArgs.html#MuseDashMirror_EventArguments_AddScoreEventArgs_Id
+  commentId: P:MuseDashMirror.EventArguments.AddScoreEventArgs.Id
+  fullName: MuseDashMirror.EventArguments.AddScoreEventArgs.Id
+  nameWithType: AddScoreEventArgs.Id
+- uid: MuseDashMirror.EventArguments.AddScoreEventArgs.Id*
+  name: Id
+  href: api/MuseDashMirror.EventArguments.AddScoreEventArgs.html#MuseDashMirror_EventArguments_AddScoreEventArgs_Id_
+  commentId: Overload:MuseDashMirror.EventArguments.AddScoreEventArgs.Id
+  isSpec: "True"
+  fullName: MuseDashMirror.EventArguments.AddScoreEventArgs.Id
+  nameWithType: AddScoreEventArgs.Id
+- uid: MuseDashMirror.EventArguments.AddScoreEventArgs.IsAir
+  name: IsAir
+  href: api/MuseDashMirror.EventArguments.AddScoreEventArgs.html#MuseDashMirror_EventArguments_AddScoreEventArgs_IsAir
+  commentId: P:MuseDashMirror.EventArguments.AddScoreEventArgs.IsAir
+  fullName: MuseDashMirror.EventArguments.AddScoreEventArgs.IsAir
+  nameWithType: AddScoreEventArgs.IsAir
+- uid: MuseDashMirror.EventArguments.AddScoreEventArgs.IsAir*
+  name: IsAir
+  href: api/MuseDashMirror.EventArguments.AddScoreEventArgs.html#MuseDashMirror_EventArguments_AddScoreEventArgs_IsAir_
+  commentId: Overload:MuseDashMirror.EventArguments.AddScoreEventArgs.IsAir
+  isSpec: "True"
+  fullName: MuseDashMirror.EventArguments.AddScoreEventArgs.IsAir
+  nameWithType: AddScoreEventArgs.IsAir
+- uid: MuseDashMirror.EventArguments.AddScoreEventArgs.NoteType
+  name: NoteType
+  href: api/MuseDashMirror.EventArguments.AddScoreEventArgs.html#MuseDashMirror_EventArguments_AddScoreEventArgs_NoteType
+  commentId: P:MuseDashMirror.EventArguments.AddScoreEventArgs.NoteType
+  fullName: MuseDashMirror.EventArguments.AddScoreEventArgs.NoteType
+  nameWithType: AddScoreEventArgs.NoteType
+- uid: MuseDashMirror.EventArguments.AddScoreEventArgs.NoteType*
+  name: NoteType
+  href: api/MuseDashMirror.EventArguments.AddScoreEventArgs.html#MuseDashMirror_EventArguments_AddScoreEventArgs_NoteType_
+  commentId: Overload:MuseDashMirror.EventArguments.AddScoreEventArgs.NoteType
+  isSpec: "True"
+  fullName: MuseDashMirror.EventArguments.AddScoreEventArgs.NoteType
+  nameWithType: AddScoreEventArgs.NoteType
+- uid: MuseDashMirror.EventArguments.AddScoreEventArgs.TaskStageTarget
+  name: TaskStageTarget
+  href: api/MuseDashMirror.EventArguments.AddScoreEventArgs.html#MuseDashMirror_EventArguments_AddScoreEventArgs_TaskStageTarget
+  commentId: P:MuseDashMirror.EventArguments.AddScoreEventArgs.TaskStageTarget
+  fullName: MuseDashMirror.EventArguments.AddScoreEventArgs.TaskStageTarget
+  nameWithType: AddScoreEventArgs.TaskStageTarget
+- uid: MuseDashMirror.EventArguments.AddScoreEventArgs.TaskStageTarget*
+  name: TaskStageTarget
+  href: api/MuseDashMirror.EventArguments.AddScoreEventArgs.html#MuseDashMirror_EventArguments_AddScoreEventArgs_TaskStageTarget_
+  commentId: Overload:MuseDashMirror.EventArguments.AddScoreEventArgs.TaskStageTarget
+  isSpec: "True"
+  fullName: MuseDashMirror.EventArguments.AddScoreEventArgs.TaskStageTarget
+  nameWithType: AddScoreEventArgs.TaskStageTarget
+- uid: MuseDashMirror.EventArguments.AddScoreEventArgs.Time
+  name: Time
+  href: api/MuseDashMirror.EventArguments.AddScoreEventArgs.html#MuseDashMirror_EventArguments_AddScoreEventArgs_Time
+  commentId: P:MuseDashMirror.EventArguments.AddScoreEventArgs.Time
+  fullName: MuseDashMirror.EventArguments.AddScoreEventArgs.Time
+  nameWithType: AddScoreEventArgs.Time
+- uid: MuseDashMirror.EventArguments.AddScoreEventArgs.Time*
+  name: Time
+  href: api/MuseDashMirror.EventArguments.AddScoreEventArgs.html#MuseDashMirror_EventArguments_AddScoreEventArgs_Time_
+  commentId: Overload:MuseDashMirror.EventArguments.AddScoreEventArgs.Time
+  isSpec: "True"
+  fullName: MuseDashMirror.EventArguments.AddScoreEventArgs.Time
+  nameWithType: AddScoreEventArgs.Time
+- uid: MuseDashMirror.EventArguments.AddScoreEventArgs.Value
+  name: Value
+  href: api/MuseDashMirror.EventArguments.AddScoreEventArgs.html#MuseDashMirror_EventArguments_AddScoreEventArgs_Value
+  commentId: P:MuseDashMirror.EventArguments.AddScoreEventArgs.Value
+  fullName: MuseDashMirror.EventArguments.AddScoreEventArgs.Value
+  nameWithType: AddScoreEventArgs.Value
+- uid: MuseDashMirror.EventArguments.AddScoreEventArgs.Value*
+  name: Value
+  href: api/MuseDashMirror.EventArguments.AddScoreEventArgs.html#MuseDashMirror_EventArguments_AddScoreEventArgs_Value_
+  commentId: Overload:MuseDashMirror.EventArguments.AddScoreEventArgs.Value
+  isSpec: "True"
+  fullName: MuseDashMirror.EventArguments.AddScoreEventArgs.Value
+  nameWithType: AddScoreEventArgs.Value
+- uid: MuseDashMirror.EventArguments.GameStartEventArgs
+  name: GameStartEventArgs
+  href: api/MuseDashMirror.EventArguments.GameStartEventArgs.html
+  commentId: T:MuseDashMirror.EventArguments.GameStartEventArgs
+  fullName: MuseDashMirror.EventArguments.GameStartEventArgs
+  nameWithType: GameStartEventArgs
+- uid: MuseDashMirror.EventArguments.GameStartEventArgs.#ctor(Il2CppFormulaBase.StageBattleComponent)
+  name: GameStartEventArgs(StageBattleComponent)
+  href: api/MuseDashMirror.EventArguments.GameStartEventArgs.html#MuseDashMirror_EventArguments_GameStartEventArgs__ctor_Il2CppFormulaBase_StageBattleComponent_
+  commentId: M:MuseDashMirror.EventArguments.GameStartEventArgs.#ctor(Il2CppFormulaBase.StageBattleComponent)
+  name.vb: New(StageBattleComponent)
+  fullName: MuseDashMirror.EventArguments.GameStartEventArgs.GameStartEventArgs(Il2CppFormulaBase.StageBattleComponent)
+  fullName.vb: MuseDashMirror.EventArguments.GameStartEventArgs.New(Il2CppFormulaBase.StageBattleComponent)
+  nameWithType: GameStartEventArgs.GameStartEventArgs(StageBattleComponent)
+  nameWithType.vb: GameStartEventArgs.New(StageBattleComponent)
+- uid: MuseDashMirror.EventArguments.GameStartEventArgs.#ctor*
+  name: GameStartEventArgs
+  href: api/MuseDashMirror.EventArguments.GameStartEventArgs.html#MuseDashMirror_EventArguments_GameStartEventArgs__ctor_
+  commentId: Overload:MuseDashMirror.EventArguments.GameStartEventArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MuseDashMirror.EventArguments.GameStartEventArgs.GameStartEventArgs
+  fullName.vb: MuseDashMirror.EventArguments.GameStartEventArgs.New
+  nameWithType: GameStartEventArgs.GameStartEventArgs
+  nameWithType.vb: GameStartEventArgs.New
+- uid: MuseDashMirror.EventArguments.GameStartEventArgs.StageBattleComponent
+  name: StageBattleComponent
+  href: api/MuseDashMirror.EventArguments.GameStartEventArgs.html#MuseDashMirror_EventArguments_GameStartEventArgs_StageBattleComponent
+  commentId: P:MuseDashMirror.EventArguments.GameStartEventArgs.StageBattleComponent
+  fullName: MuseDashMirror.EventArguments.GameStartEventArgs.StageBattleComponent
+  nameWithType: GameStartEventArgs.StageBattleComponent
+- uid: MuseDashMirror.EventArguments.GameStartEventArgs.StageBattleComponent*
+  name: StageBattleComponent
+  href: api/MuseDashMirror.EventArguments.GameStartEventArgs.html#MuseDashMirror_EventArguments_GameStartEventArgs_StageBattleComponent_
+  commentId: Overload:MuseDashMirror.EventArguments.GameStartEventArgs.StageBattleComponent
+  isSpec: "True"
+  fullName: MuseDashMirror.EventArguments.GameStartEventArgs.StageBattleComponent
+  nameWithType: GameStartEventArgs.StageBattleComponent
+- uid: MuseDashMirror.EventArguments.MenuSelectEventArgs
+  name: MenuSelectEventArgs
+  href: api/MuseDashMirror.EventArguments.MenuSelectEventArgs.html
+  commentId: T:MuseDashMirror.EventArguments.MenuSelectEventArgs
+  fullName: MuseDashMirror.EventArguments.MenuSelectEventArgs
+  nameWithType: MenuSelectEventArgs
+- uid: MuseDashMirror.EventArguments.MenuSelectEventArgs.#ctor(System.Int32,System.Int32,System.Boolean)
+  name: MenuSelectEventArgs(int, int, bool)
+  href: api/MuseDashMirror.EventArguments.MenuSelectEventArgs.html#MuseDashMirror_EventArguments_MenuSelectEventArgs__ctor_System_Int32_System_Int32_System_Boolean_
+  commentId: M:MuseDashMirror.EventArguments.MenuSelectEventArgs.#ctor(System.Int32,System.Int32,System.Boolean)
+  name.vb: New(Integer, Integer, Boolean)
+  fullName: MuseDashMirror.EventArguments.MenuSelectEventArgs.MenuSelectEventArgs(int, int, bool)
+  fullName.vb: MuseDashMirror.EventArguments.MenuSelectEventArgs.New(Integer, Integer, Boolean)
+  nameWithType: MenuSelectEventArgs.MenuSelectEventArgs(int, int, bool)
+  nameWithType.vb: MenuSelectEventArgs.New(Integer, Integer, Boolean)
+- uid: MuseDashMirror.EventArguments.MenuSelectEventArgs.#ctor*
+  name: MenuSelectEventArgs
+  href: api/MuseDashMirror.EventArguments.MenuSelectEventArgs.html#MuseDashMirror_EventArguments_MenuSelectEventArgs__ctor_
+  commentId: Overload:MuseDashMirror.EventArguments.MenuSelectEventArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MuseDashMirror.EventArguments.MenuSelectEventArgs.MenuSelectEventArgs
+  fullName.vb: MuseDashMirror.EventArguments.MenuSelectEventArgs.New
+  nameWithType: MenuSelectEventArgs.MenuSelectEventArgs
+  nameWithType.vb: MenuSelectEventArgs.New
+- uid: MuseDashMirror.EventArguments.MenuSelectEventArgs.Index
+  name: Index
+  href: api/MuseDashMirror.EventArguments.MenuSelectEventArgs.html#MuseDashMirror_EventArguments_MenuSelectEventArgs_Index
+  commentId: P:MuseDashMirror.EventArguments.MenuSelectEventArgs.Index
+  fullName: MuseDashMirror.EventArguments.MenuSelectEventArgs.Index
+  nameWithType: MenuSelectEventArgs.Index
+- uid: MuseDashMirror.EventArguments.MenuSelectEventArgs.Index*
+  name: Index
+  href: api/MuseDashMirror.EventArguments.MenuSelectEventArgs.html#MuseDashMirror_EventArguments_MenuSelectEventArgs_Index_
+  commentId: Overload:MuseDashMirror.EventArguments.MenuSelectEventArgs.Index
+  isSpec: "True"
+  fullName: MuseDashMirror.EventArguments.MenuSelectEventArgs.Index
+  nameWithType: MenuSelectEventArgs.Index
+- uid: MuseDashMirror.EventArguments.MenuSelectEventArgs.IsOn
+  name: IsOn
+  href: api/MuseDashMirror.EventArguments.MenuSelectEventArgs.html#MuseDashMirror_EventArguments_MenuSelectEventArgs_IsOn
+  commentId: P:MuseDashMirror.EventArguments.MenuSelectEventArgs.IsOn
+  fullName: MuseDashMirror.EventArguments.MenuSelectEventArgs.IsOn
+  nameWithType: MenuSelectEventArgs.IsOn
+- uid: MuseDashMirror.EventArguments.MenuSelectEventArgs.IsOn*
+  name: IsOn
+  href: api/MuseDashMirror.EventArguments.MenuSelectEventArgs.html#MuseDashMirror_EventArguments_MenuSelectEventArgs_IsOn_
+  commentId: Overload:MuseDashMirror.EventArguments.MenuSelectEventArgs.IsOn
+  isSpec: "True"
+  fullName: MuseDashMirror.EventArguments.MenuSelectEventArgs.IsOn
+  nameWithType: MenuSelectEventArgs.IsOn
+- uid: MuseDashMirror.EventArguments.MenuSelectEventArgs.ListIndex
+  name: ListIndex
+  href: api/MuseDashMirror.EventArguments.MenuSelectEventArgs.html#MuseDashMirror_EventArguments_MenuSelectEventArgs_ListIndex
+  commentId: P:MuseDashMirror.EventArguments.MenuSelectEventArgs.ListIndex
+  fullName: MuseDashMirror.EventArguments.MenuSelectEventArgs.ListIndex
+  nameWithType: MenuSelectEventArgs.ListIndex
+- uid: MuseDashMirror.EventArguments.MenuSelectEventArgs.ListIndex*
+  name: ListIndex
+  href: api/MuseDashMirror.EventArguments.MenuSelectEventArgs.html#MuseDashMirror_EventArguments_MenuSelectEventArgs_ListIndex_
+  commentId: Overload:MuseDashMirror.EventArguments.MenuSelectEventArgs.ListIndex
+  isSpec: "True"
+  fullName: MuseDashMirror.EventArguments.MenuSelectEventArgs.ListIndex
+  nameWithType: MenuSelectEventArgs.ListIndex
+- uid: MuseDashMirror.EventArguments.PnlMenuEventArgs
+  name: PnlMenuEventArgs
+  href: api/MuseDashMirror.EventArguments.PnlMenuEventArgs.html
+  commentId: T:MuseDashMirror.EventArguments.PnlMenuEventArgs
+  fullName: MuseDashMirror.EventArguments.PnlMenuEventArgs
+  nameWithType: PnlMenuEventArgs
+- uid: MuseDashMirror.EventArguments.PnlMenuEventArgs.#ctor(Il2CppAssets.Scripts.UI.Panels.PnlMenu)
+  name: PnlMenuEventArgs(PnlMenu)
+  href: api/MuseDashMirror.EventArguments.PnlMenuEventArgs.html#MuseDashMirror_EventArguments_PnlMenuEventArgs__ctor_Il2CppAssets_Scripts_UI_Panels_PnlMenu_
+  commentId: M:MuseDashMirror.EventArguments.PnlMenuEventArgs.#ctor(Il2CppAssets.Scripts.UI.Panels.PnlMenu)
+  name.vb: New(PnlMenu)
+  fullName: MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenuEventArgs(Il2CppAssets.Scripts.UI.Panels.PnlMenu)
+  fullName.vb: MuseDashMirror.EventArguments.PnlMenuEventArgs.New(Il2CppAssets.Scripts.UI.Panels.PnlMenu)
+  nameWithType: PnlMenuEventArgs.PnlMenuEventArgs(PnlMenu)
+  nameWithType.vb: PnlMenuEventArgs.New(PnlMenu)
+- uid: MuseDashMirror.EventArguments.PnlMenuEventArgs.#ctor*
+  name: PnlMenuEventArgs
+  href: api/MuseDashMirror.EventArguments.PnlMenuEventArgs.html#MuseDashMirror_EventArguments_PnlMenuEventArgs__ctor_
+  commentId: Overload:MuseDashMirror.EventArguments.PnlMenuEventArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenuEventArgs
+  fullName.vb: MuseDashMirror.EventArguments.PnlMenuEventArgs.New
+  nameWithType: PnlMenuEventArgs.PnlMenuEventArgs
+  nameWithType.vb: PnlMenuEventArgs.New
+- uid: MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenu
+  name: PnlMenu
+  href: api/MuseDashMirror.EventArguments.PnlMenuEventArgs.html#MuseDashMirror_EventArguments_PnlMenuEventArgs_PnlMenu
+  commentId: P:MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenu
+  fullName: MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenu
+  nameWithType: PnlMenuEventArgs.PnlMenu
+- uid: MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenu*
+  name: PnlMenu
+  href: api/MuseDashMirror.EventArguments.PnlMenuEventArgs.html#MuseDashMirror_EventArguments_PnlMenuEventArgs_PnlMenu_
+  commentId: Overload:MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenu
+  isSpec: "True"
+  fullName: MuseDashMirror.EventArguments.PnlMenuEventArgs.PnlMenu
+  nameWithType: PnlMenuEventArgs.PnlMenu
+- uid: MuseDashMirror.EventArguments.PnlStageEventArgs
+  name: PnlStageEventArgs
+  href: api/MuseDashMirror.EventArguments.PnlStageEventArgs.html
+  commentId: T:MuseDashMirror.EventArguments.PnlStageEventArgs
+  fullName: MuseDashMirror.EventArguments.PnlStageEventArgs
+  nameWithType: PnlStageEventArgs
+- uid: MuseDashMirror.EventArguments.PnlStageEventArgs.#ctor(Il2CppAssets.Scripts.UI.Panels.PnlStage)
+  name: PnlStageEventArgs(PnlStage)
+  href: api/MuseDashMirror.EventArguments.PnlStageEventArgs.html#MuseDashMirror_EventArguments_PnlStageEventArgs__ctor_Il2CppAssets_Scripts_UI_Panels_PnlStage_
+  commentId: M:MuseDashMirror.EventArguments.PnlStageEventArgs.#ctor(Il2CppAssets.Scripts.UI.Panels.PnlStage)
+  name.vb: New(PnlStage)
+  fullName: MuseDashMirror.EventArguments.PnlStageEventArgs.PnlStageEventArgs(Il2CppAssets.Scripts.UI.Panels.PnlStage)
+  fullName.vb: MuseDashMirror.EventArguments.PnlStageEventArgs.New(Il2CppAssets.Scripts.UI.Panels.PnlStage)
+  nameWithType: PnlStageEventArgs.PnlStageEventArgs(PnlStage)
+  nameWithType.vb: PnlStageEventArgs.New(PnlStage)
+- uid: MuseDashMirror.EventArguments.PnlStageEventArgs.#ctor*
+  name: PnlStageEventArgs
+  href: api/MuseDashMirror.EventArguments.PnlStageEventArgs.html#MuseDashMirror_EventArguments_PnlStageEventArgs__ctor_
+  commentId: Overload:MuseDashMirror.EventArguments.PnlStageEventArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MuseDashMirror.EventArguments.PnlStageEventArgs.PnlStageEventArgs
+  fullName.vb: MuseDashMirror.EventArguments.PnlStageEventArgs.New
+  nameWithType: PnlStageEventArgs.PnlStageEventArgs
+  nameWithType.vb: PnlStageEventArgs.New
+- uid: MuseDashMirror.EventArguments.PnlStageEventArgs.PnlStage
+  name: PnlStage
+  href: api/MuseDashMirror.EventArguments.PnlStageEventArgs.html#MuseDashMirror_EventArguments_PnlStageEventArgs_PnlStage
+  commentId: P:MuseDashMirror.EventArguments.PnlStageEventArgs.PnlStage
+  fullName: MuseDashMirror.EventArguments.PnlStageEventArgs.PnlStage
+  nameWithType: PnlStageEventArgs.PnlStage
+- uid: MuseDashMirror.EventArguments.PnlStageEventArgs.PnlStage*
+  name: PnlStage
+  href: api/MuseDashMirror.EventArguments.PnlStageEventArgs.html#MuseDashMirror_EventArguments_PnlStageEventArgs_PnlStage_
+  commentId: Overload:MuseDashMirror.EventArguments.PnlStageEventArgs.PnlStage
+  isSpec: "True"
+  fullName: MuseDashMirror.EventArguments.PnlStageEventArgs.PnlStage
+  nameWithType: PnlStageEventArgs.PnlStage
+- uid: MuseDashMirror.EventArguments.PnlVictoryEventArgs
+  name: PnlVictoryEventArgs
+  href: api/MuseDashMirror.EventArguments.PnlVictoryEventArgs.html
+  commentId: T:MuseDashMirror.EventArguments.PnlVictoryEventArgs
+  fullName: MuseDashMirror.EventArguments.PnlVictoryEventArgs
+  nameWithType: PnlVictoryEventArgs
+- uid: MuseDashMirror.EventArguments.PnlVictoryEventArgs.#ctor(Il2Cpp.PnlVictory)
+  name: PnlVictoryEventArgs(PnlVictory)
+  href: api/MuseDashMirror.EventArguments.PnlVictoryEventArgs.html#MuseDashMirror_EventArguments_PnlVictoryEventArgs__ctor_Il2Cpp_PnlVictory_
+  commentId: M:MuseDashMirror.EventArguments.PnlVictoryEventArgs.#ctor(Il2Cpp.PnlVictory)
+  name.vb: New(PnlVictory)
+  fullName: MuseDashMirror.EventArguments.PnlVictoryEventArgs.PnlVictoryEventArgs(Il2Cpp.PnlVictory)
+  fullName.vb: MuseDashMirror.EventArguments.PnlVictoryEventArgs.New(Il2Cpp.PnlVictory)
+  nameWithType: PnlVictoryEventArgs.PnlVictoryEventArgs(PnlVictory)
+  nameWithType.vb: PnlVictoryEventArgs.New(PnlVictory)
+- uid: MuseDashMirror.EventArguments.PnlVictoryEventArgs.#ctor*
+  name: PnlVictoryEventArgs
+  href: api/MuseDashMirror.EventArguments.PnlVictoryEventArgs.html#MuseDashMirror_EventArguments_PnlVictoryEventArgs__ctor_
+  commentId: Overload:MuseDashMirror.EventArguments.PnlVictoryEventArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MuseDashMirror.EventArguments.PnlVictoryEventArgs.PnlVictoryEventArgs
+  fullName.vb: MuseDashMirror.EventArguments.PnlVictoryEventArgs.New
+  nameWithType: PnlVictoryEventArgs.PnlVictoryEventArgs
+  nameWithType.vb: PnlVictoryEventArgs.New
+- uid: MuseDashMirror.EventArguments.PnlVictoryEventArgs.PnlVictory
+  name: PnlVictory
+  href: api/MuseDashMirror.EventArguments.PnlVictoryEventArgs.html#MuseDashMirror_EventArguments_PnlVictoryEventArgs_PnlVictory
+  commentId: P:MuseDashMirror.EventArguments.PnlVictoryEventArgs.PnlVictory
+  fullName: MuseDashMirror.EventArguments.PnlVictoryEventArgs.PnlVictory
+  nameWithType: PnlVictoryEventArgs.PnlVictory
+- uid: MuseDashMirror.EventArguments.PnlVictoryEventArgs.PnlVictory*
+  name: PnlVictory
+  href: api/MuseDashMirror.EventArguments.PnlVictoryEventArgs.html#MuseDashMirror_EventArguments_PnlVictoryEventArgs_PnlVictory_
+  commentId: Overload:MuseDashMirror.EventArguments.PnlVictoryEventArgs.PnlVictory
+  isSpec: "True"
+  fullName: MuseDashMirror.EventArguments.PnlVictoryEventArgs.PnlVictory
+  nameWithType: PnlVictoryEventArgs.PnlVictory
+- uid: MuseDashMirror.EventArguments.SceneEventArgs
+  name: SceneEventArgs
+  href: api/MuseDashMirror.EventArguments.SceneEventArgs.html
+  commentId: T:MuseDashMirror.EventArguments.SceneEventArgs
+  fullName: MuseDashMirror.EventArguments.SceneEventArgs
+  nameWithType: SceneEventArgs
+- uid: MuseDashMirror.EventArguments.SceneEventArgs.#ctor(System.Int32,System.String)
+  name: SceneEventArgs(int, string)
+  href: api/MuseDashMirror.EventArguments.SceneEventArgs.html#MuseDashMirror_EventArguments_SceneEventArgs__ctor_System_Int32_System_String_
+  commentId: M:MuseDashMirror.EventArguments.SceneEventArgs.#ctor(System.Int32,System.String)
+  name.vb: New(Integer, String)
+  fullName: MuseDashMirror.EventArguments.SceneEventArgs.SceneEventArgs(int, string)
+  fullName.vb: MuseDashMirror.EventArguments.SceneEventArgs.New(Integer, String)
+  nameWithType: SceneEventArgs.SceneEventArgs(int, string)
+  nameWithType.vb: SceneEventArgs.New(Integer, String)
+- uid: MuseDashMirror.EventArguments.SceneEventArgs.#ctor*
+  name: SceneEventArgs
+  href: api/MuseDashMirror.EventArguments.SceneEventArgs.html#MuseDashMirror_EventArguments_SceneEventArgs__ctor_
+  commentId: Overload:MuseDashMirror.EventArguments.SceneEventArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MuseDashMirror.EventArguments.SceneEventArgs.SceneEventArgs
+  fullName.vb: MuseDashMirror.EventArguments.SceneEventArgs.New
+  nameWithType: SceneEventArgs.SceneEventArgs
+  nameWithType.vb: SceneEventArgs.New
+- uid: MuseDashMirror.EventArguments.SceneEventArgs.BuildIndex
+  name: BuildIndex
+  href: api/MuseDashMirror.EventArguments.SceneEventArgs.html#MuseDashMirror_EventArguments_SceneEventArgs_BuildIndex
+  commentId: P:MuseDashMirror.EventArguments.SceneEventArgs.BuildIndex
+  fullName: MuseDashMirror.EventArguments.SceneEventArgs.BuildIndex
+  nameWithType: SceneEventArgs.BuildIndex
+- uid: MuseDashMirror.EventArguments.SceneEventArgs.BuildIndex*
+  name: BuildIndex
+  href: api/MuseDashMirror.EventArguments.SceneEventArgs.html#MuseDashMirror_EventArguments_SceneEventArgs_BuildIndex_
+  commentId: Overload:MuseDashMirror.EventArguments.SceneEventArgs.BuildIndex
+  isSpec: "True"
+  fullName: MuseDashMirror.EventArguments.SceneEventArgs.BuildIndex
+  nameWithType: SceneEventArgs.BuildIndex
+- uid: MuseDashMirror.EventArguments.SceneEventArgs.SceneName
+  name: SceneName
+  href: api/MuseDashMirror.EventArguments.SceneEventArgs.html#MuseDashMirror_EventArguments_SceneEventArgs_SceneName
+  commentId: P:MuseDashMirror.EventArguments.SceneEventArgs.SceneName
+  fullName: MuseDashMirror.EventArguments.SceneEventArgs.SceneName
+  nameWithType: SceneEventArgs.SceneName
+- uid: MuseDashMirror.EventArguments.SceneEventArgs.SceneName*
+  name: SceneName
+  href: api/MuseDashMirror.EventArguments.SceneEventArgs.html#MuseDashMirror_EventArguments_SceneEventArgs_SceneName_
+  commentId: Overload:MuseDashMirror.EventArguments.SceneEventArgs.SceneName
+  isSpec: "True"
+  fullName: MuseDashMirror.EventArguments.SceneEventArgs.SceneName
+  nameWithType: SceneEventArgs.SceneName
+- uid: MuseDashMirror.EventArguments.SwitchLanguagesEventArgs
+  name: SwitchLanguagesEventArgs
+  href: api/MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.html
+  commentId: T:MuseDashMirror.EventArguments.SwitchLanguagesEventArgs
+  fullName: MuseDashMirror.EventArguments.SwitchLanguagesEventArgs
+  nameWithType: SwitchLanguagesEventArgs
+- uid: MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.#ctor(Il2CppAssets.Scripts.UI.Specials.SwitchLanguages)
+  name: SwitchLanguagesEventArgs(SwitchLanguages)
+  href: api/MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.html#MuseDashMirror_EventArguments_SwitchLanguagesEventArgs__ctor_Il2CppAssets_Scripts_UI_Specials_SwitchLanguages_
+  commentId: M:MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.#ctor(Il2CppAssets.Scripts.UI.Specials.SwitchLanguages)
+  name.vb: New(SwitchLanguages)
+  fullName: MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.SwitchLanguagesEventArgs(Il2CppAssets.Scripts.UI.Specials.SwitchLanguages)
+  fullName.vb: MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.New(Il2CppAssets.Scripts.UI.Specials.SwitchLanguages)
+  nameWithType: SwitchLanguagesEventArgs.SwitchLanguagesEventArgs(SwitchLanguages)
+  nameWithType.vb: SwitchLanguagesEventArgs.New(SwitchLanguages)
+- uid: MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.#ctor*
+  name: SwitchLanguagesEventArgs
+  href: api/MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.html#MuseDashMirror_EventArguments_SwitchLanguagesEventArgs__ctor_
+  commentId: Overload:MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.SwitchLanguagesEventArgs
+  fullName.vb: MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.New
+  nameWithType: SwitchLanguagesEventArgs.SwitchLanguagesEventArgs
+  nameWithType.vb: SwitchLanguagesEventArgs.New
+- uid: MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.SwitchLanguages
+  name: SwitchLanguages
+  href: api/MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.html#MuseDashMirror_EventArguments_SwitchLanguagesEventArgs_SwitchLanguages
+  commentId: P:MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.SwitchLanguages
+  fullName: MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.SwitchLanguages
+  nameWithType: SwitchLanguagesEventArgs.SwitchLanguages
+- uid: MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.SwitchLanguages*
+  name: SwitchLanguages
+  href: api/MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.html#MuseDashMirror_EventArguments_SwitchLanguagesEventArgs_SwitchLanguages_
+  commentId: Overload:MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.SwitchLanguages
+  isSpec: "True"
+  fullName: MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.SwitchLanguages
+  nameWithType: SwitchLanguagesEventArgs.SwitchLanguages
+- uid: MuseDashMirror.Extensions
+  name: MuseDashMirror.Extensions
+  href: api/MuseDashMirror.Extensions.html
+  commentId: N:MuseDashMirror.Extensions
+  fullName: MuseDashMirror.Extensions
+  nameWithType: MuseDashMirror.Extensions
+- uid: MuseDashMirror.Extensions.CollectionExtensions
+  name: MuseDashMirror.Extensions.CollectionExtensions
+  href: api/MuseDashMirror.Extensions.CollectionExtensions.html
+  commentId: N:MuseDashMirror.Extensions.CollectionExtensions
+  fullName: MuseDashMirror.Extensions.CollectionExtensions
+  nameWithType: MuseDashMirror.Extensions.CollectionExtensions
+- uid: MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions
+  name: CollectionExtensions
+  href: api/MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions.html
+  commentId: T:MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions
+  nameWithType: CollectionExtensions
+- uid: MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions.Execute*
+  name: Execute
+  href: api/MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_CollectionExtensions_Execute_
+  commentId: Overload:MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions.Execute
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions.Execute
+  nameWithType: CollectionExtensions.Execute
+- uid: MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions.Execute``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  name: Execute<T>(IEnumerable<T>, Action<T>)
+  href: api/MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_CollectionExtensions_Execute__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  commentId: M:MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions.Execute``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  name.vb: Execute(Of T)(IEnumerable(Of T), Action(Of T))
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions.Execute<T>(System.Collections.Generic.IEnumerable<T>, System.Action<T>)
+  fullName.vb: MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions.Execute(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T))
+  nameWithType: CollectionExtensions.Execute<T>(IEnumerable<T>, Action<T>)
+  nameWithType.vb: CollectionExtensions.Execute(Of T)(IEnumerable(Of T), Action(Of T))
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+  name: TypeCollectionExtensions
+  href: api/MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html
+  commentId: T:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions
+  nameWithType: TypeCollectionExtensions
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  name: GetFieldInfosFromTypesByAttribute(IEnumerable<Type>, Type, BindingFlags)
+  href: api/MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_TypeCollectionExtensions_GetFieldInfosFromTypesByAttribute_System_Collections_Generic_IEnumerable_System_Type__System_Type_System_Reflection_BindingFlags_
+  commentId: M:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  name.vb: GetFieldInfosFromTypesByAttribute(IEnumerable(Of Type), Type, BindingFlags)
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable<System.Type>, System.Type, System.Reflection.BindingFlags)
+  fullName.vb: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable(Of System.Type), System.Type, System.Reflection.BindingFlags)
+  nameWithType: TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute(IEnumerable<Type>, Type, BindingFlags)
+  nameWithType.vb: TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute(IEnumerable(Of Type), Type, BindingFlags)
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute*
+  name: GetFieldInfosFromTypesByAttribute
+  href: api/MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_TypeCollectionExtensions_GetFieldInfosFromTypesByAttribute_
+  commentId: Overload:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute
+  nameWithType: TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  name: GetFieldInfosFromTypesByAttribute<T>(IEnumerable<Type>, BindingFlags)
+  href: api/MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_TypeCollectionExtensions_GetFieldInfosFromTypesByAttribute__1_System_Collections_Generic_IEnumerable_System_Type__System_Reflection_BindingFlags_
+  commentId: M:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  name.vb: GetFieldInfosFromTypesByAttribute(Of T)(IEnumerable(Of Type), BindingFlags)
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute<T>(System.Collections.Generic.IEnumerable<System.Type>, System.Reflection.BindingFlags)
+  fullName.vb: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute(Of T)(System.Collections.Generic.IEnumerable(Of System.Type), System.Reflection.BindingFlags)
+  nameWithType: TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute<T>(IEnumerable<Type>, BindingFlags)
+  nameWithType.vb: TypeCollectionExtensions.GetFieldInfosFromTypesByAttribute(Of T)(IEnumerable(Of Type), BindingFlags)
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  name: GetMemberInfosFromTypesByAttribute(IEnumerable<Type>, Type, BindingFlags)
+  href: api/MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_TypeCollectionExtensions_GetMemberInfosFromTypesByAttribute_System_Collections_Generic_IEnumerable_System_Type__System_Type_System_Reflection_BindingFlags_
+  commentId: M:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  name.vb: GetMemberInfosFromTypesByAttribute(IEnumerable(Of Type), Type, BindingFlags)
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable<System.Type>, System.Type, System.Reflection.BindingFlags)
+  fullName.vb: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable(Of System.Type), System.Type, System.Reflection.BindingFlags)
+  nameWithType: TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute(IEnumerable<Type>, Type, BindingFlags)
+  nameWithType.vb: TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute(IEnumerable(Of Type), Type, BindingFlags)
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute*
+  name: GetMemberInfosFromTypesByAttribute
+  href: api/MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_TypeCollectionExtensions_GetMemberInfosFromTypesByAttribute_
+  commentId: Overload:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute
+  nameWithType: TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  name: GetMemberInfosFromTypesByAttribute<T>(IEnumerable<Type>, BindingFlags)
+  href: api/MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_TypeCollectionExtensions_GetMemberInfosFromTypesByAttribute__1_System_Collections_Generic_IEnumerable_System_Type__System_Reflection_BindingFlags_
+  commentId: M:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  name.vb: GetMemberInfosFromTypesByAttribute(Of T)(IEnumerable(Of Type), BindingFlags)
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute<T>(System.Collections.Generic.IEnumerable<System.Type>, System.Reflection.BindingFlags)
+  fullName.vb: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute(Of T)(System.Collections.Generic.IEnumerable(Of System.Type), System.Reflection.BindingFlags)
+  nameWithType: TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute<T>(IEnumerable<Type>, BindingFlags)
+  nameWithType.vb: TypeCollectionExtensions.GetMemberInfosFromTypesByAttribute(Of T)(IEnumerable(Of Type), BindingFlags)
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  name: GetMethodInfosFromTypesByAttribute(IEnumerable<Type>, Type, BindingFlags)
+  href: api/MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_TypeCollectionExtensions_GetMethodInfosFromTypesByAttribute_System_Collections_Generic_IEnumerable_System_Type__System_Type_System_Reflection_BindingFlags_
+  commentId: M:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  name.vb: GetMethodInfosFromTypesByAttribute(IEnumerable(Of Type), Type, BindingFlags)
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable<System.Type>, System.Type, System.Reflection.BindingFlags)
+  fullName.vb: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable(Of System.Type), System.Type, System.Reflection.BindingFlags)
+  nameWithType: TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute(IEnumerable<Type>, Type, BindingFlags)
+  nameWithType.vb: TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute(IEnumerable(Of Type), Type, BindingFlags)
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute*
+  name: GetMethodInfosFromTypesByAttribute
+  href: api/MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_TypeCollectionExtensions_GetMethodInfosFromTypesByAttribute_
+  commentId: Overload:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute
+  nameWithType: TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  name: GetMethodInfosFromTypesByAttribute<T>(IEnumerable<Type>, BindingFlags)
+  href: api/MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_TypeCollectionExtensions_GetMethodInfosFromTypesByAttribute__1_System_Collections_Generic_IEnumerable_System_Type__System_Reflection_BindingFlags_
+  commentId: M:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  name.vb: GetMethodInfosFromTypesByAttribute(Of T)(IEnumerable(Of Type), BindingFlags)
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute<T>(System.Collections.Generic.IEnumerable<System.Type>, System.Reflection.BindingFlags)
+  fullName.vb: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute(Of T)(System.Collections.Generic.IEnumerable(Of System.Type), System.Reflection.BindingFlags)
+  nameWithType: TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute<T>(IEnumerable<Type>, BindingFlags)
+  nameWithType.vb: TypeCollectionExtensions.GetMethodInfosFromTypesByAttribute(Of T)(IEnumerable(Of Type), BindingFlags)
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  name: GetPropertyInfosFromTypesByAttribute(IEnumerable<Type>, Type, BindingFlags)
+  href: api/MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_TypeCollectionExtensions_GetPropertyInfosFromTypesByAttribute_System_Collections_Generic_IEnumerable_System_Type__System_Type_System_Reflection_BindingFlags_
+  commentId: M:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Reflection.BindingFlags)
+  name.vb: GetPropertyInfosFromTypesByAttribute(IEnumerable(Of Type), Type, BindingFlags)
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable<System.Type>, System.Type, System.Reflection.BindingFlags)
+  fullName.vb: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute(System.Collections.Generic.IEnumerable(Of System.Type), System.Type, System.Reflection.BindingFlags)
+  nameWithType: TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute(IEnumerable<Type>, Type, BindingFlags)
+  nameWithType.vb: TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute(IEnumerable(Of Type), Type, BindingFlags)
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute*
+  name: GetPropertyInfosFromTypesByAttribute
+  href: api/MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_TypeCollectionExtensions_GetPropertyInfosFromTypesByAttribute_
+  commentId: Overload:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute
+  nameWithType: TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute
+- uid: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  name: GetPropertyInfosFromTypesByAttribute<T>(IEnumerable<Type>, BindingFlags)
+  href: api/MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html#MuseDashMirror_Extensions_CollectionExtensions_TypeCollectionExtensions_GetPropertyInfosFromTypesByAttribute__1_System_Collections_Generic_IEnumerable_System_Type__System_Reflection_BindingFlags_
+  commentId: M:MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute``1(System.Collections.Generic.IEnumerable{System.Type},System.Reflection.BindingFlags)
+  name.vb: GetPropertyInfosFromTypesByAttribute(Of T)(IEnumerable(Of Type), BindingFlags)
+  fullName: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute<T>(System.Collections.Generic.IEnumerable<System.Type>, System.Reflection.BindingFlags)
+  fullName.vb: MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute(Of T)(System.Collections.Generic.IEnumerable(Of System.Type), System.Reflection.BindingFlags)
+  nameWithType: TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute<T>(IEnumerable<Type>, BindingFlags)
+  nameWithType.vb: TypeCollectionExtensions.GetPropertyInfosFromTypesByAttribute(Of T)(IEnumerable(Of Type), BindingFlags)
+- uid: MuseDashMirror.Extensions.ComponentExtensions
+  name: ComponentExtensions
+  href: api/MuseDashMirror.Extensions.ComponentExtensions.html
+  commentId: T:MuseDashMirror.Extensions.ComponentExtensions
+  fullName: MuseDashMirror.Extensions.ComponentExtensions
+  nameWithType: ComponentExtensions
+- uid: MuseDashMirror.Extensions.ComponentExtensions.SetText(UnityEngine.Component,System.String)
+  name: SetText(Component, string)
+  href: api/MuseDashMirror.Extensions.ComponentExtensions.html#MuseDashMirror_Extensions_ComponentExtensions_SetText_UnityEngine_Component_System_String_
+  commentId: M:MuseDashMirror.Extensions.ComponentExtensions.SetText(UnityEngine.Component,System.String)
+  name.vb: SetText(Component, String)
+  fullName: MuseDashMirror.Extensions.ComponentExtensions.SetText(UnityEngine.Component, string)
+  fullName.vb: MuseDashMirror.Extensions.ComponentExtensions.SetText(UnityEngine.Component, String)
+  nameWithType: ComponentExtensions.SetText(Component, string)
+  nameWithType.vb: ComponentExtensions.SetText(Component, String)
+- uid: MuseDashMirror.Extensions.ComponentExtensions.SetText*
+  name: SetText
+  href: api/MuseDashMirror.Extensions.ComponentExtensions.html#MuseDashMirror_Extensions_ComponentExtensions_SetText_
+  commentId: Overload:MuseDashMirror.Extensions.ComponentExtensions.SetText
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.ComponentExtensions.SetText
+  nameWithType: ComponentExtensions.SetText
+- uid: MuseDashMirror.Extensions.GameObjectExtensions
+  name: GameObjectExtensions
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html
+  commentId: T:MuseDashMirror.Extensions.GameObjectExtensions
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions
+  nameWithType: GameObjectExtensions
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.AddContentSizeFitter(UnityEngine.GameObject)
+  name: AddContentSizeFitter(GameObject)
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_AddContentSizeFitter_UnityEngine_GameObject_
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.AddContentSizeFitter(UnityEngine.GameObject)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.AddContentSizeFitter(UnityEngine.GameObject)
+  nameWithType: GameObjectExtensions.AddContentSizeFitter(GameObject)
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.AddContentSizeFitter*
+  name: AddContentSizeFitter
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_AddContentSizeFitter_
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.AddContentSizeFitter
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.AddContentSizeFitter
+  nameWithType: GameObjectExtensions.AddContentSizeFitter
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.FindComponentInAncestors*
+  name: FindComponentInAncestors
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_FindComponentInAncestors_
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.FindComponentInAncestors
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.FindComponentInAncestors
+  nameWithType: GameObjectExtensions.FindComponentInAncestors
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.FindComponentInAncestors``1(UnityEngine.GameObject)
+  name: FindComponentInAncestors<T>(GameObject)
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_FindComponentInAncestors__1_UnityEngine_GameObject_
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.FindComponentInAncestors``1(UnityEngine.GameObject)
+  name.vb: FindComponentInAncestors(Of T)(GameObject)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.FindComponentInAncestors<T>(UnityEngine.GameObject)
+  fullName.vb: MuseDashMirror.Extensions.GameObjectExtensions.FindComponentInAncestors(Of T)(UnityEngine.GameObject)
+  nameWithType: GameObjectExtensions.FindComponentInAncestors<T>(GameObject)
+  nameWithType.vb: GameObjectExtensions.FindComponentInAncestors(Of T)(GameObject)
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.GetTotalScaleFactor(UnityEngine.GameObject)
+  name: GetTotalScaleFactor(GameObject)
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_GetTotalScaleFactor_UnityEngine_GameObject_
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.GetTotalScaleFactor(UnityEngine.GameObject)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.GetTotalScaleFactor(UnityEngine.GameObject)
+  nameWithType: GameObjectExtensions.GetTotalScaleFactor(GameObject)
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.GetTotalScaleFactor*
+  name: GetTotalScaleFactor
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_GetTotalScaleFactor_
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.GetTotalScaleFactor
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.GetTotalScaleFactor
+  nameWithType: GameObjectExtensions.GetTotalScaleFactor
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetColor(UnityEngine.GameObject,UnityEngine.Color)
+  name: SetColor(GameObject, Color)
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_SetColor_UnityEngine_GameObject_UnityEngine_Color_
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.SetColor(UnityEngine.GameObject,UnityEngine.Color)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetColor(UnityEngine.GameObject, UnityEngine.Color)
+  nameWithType: GameObjectExtensions.SetColor(GameObject, Color)
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetColor*
+  name: SetColor
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_SetColor_
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.SetColor
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetColor
+  nameWithType: GameObjectExtensions.SetColor
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetParent(UnityEngine.GameObject,UnityEngine.GameObject,System.Boolean)
+  name: SetParent(GameObject, GameObject, bool)
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_SetParent_UnityEngine_GameObject_UnityEngine_GameObject_System_Boolean_
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.SetParent(UnityEngine.GameObject,UnityEngine.GameObject,System.Boolean)
+  name.vb: SetParent(GameObject, GameObject, Boolean)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetParent(UnityEngine.GameObject, UnityEngine.GameObject, bool)
+  fullName.vb: MuseDashMirror.Extensions.GameObjectExtensions.SetParent(UnityEngine.GameObject, UnityEngine.GameObject, Boolean)
+  nameWithType: GameObjectExtensions.SetParent(GameObject, GameObject, bool)
+  nameWithType.vb: GameObjectExtensions.SetParent(GameObject, GameObject, Boolean)
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetParent*
+  name: SetParent
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_SetParent_
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.SetParent
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetParent
+  nameWithType: GameObjectExtensions.SetParent
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetRectTransform(UnityEngine.GameObject,MuseDashMirror.Models.TransformParameters)
+  name: SetRectTransform(GameObject, TransformParameters)
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_SetRectTransform_UnityEngine_GameObject_MuseDashMirror_Models_TransformParameters_
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.SetRectTransform(UnityEngine.GameObject,MuseDashMirror.Models.TransformParameters)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetRectTransform(UnityEngine.GameObject, MuseDashMirror.Models.TransformParameters)
+  nameWithType: GameObjectExtensions.SetRectTransform(GameObject, TransformParameters)
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetRectTransform*
+  name: SetRectTransform
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_SetRectTransform_
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.SetRectTransform
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetRectTransform
+  nameWithType: GameObjectExtensions.SetRectTransform
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetText(UnityEngine.GameObject,System.String)
+  name: SetText(GameObject, string)
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_SetText_UnityEngine_GameObject_System_String_
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.SetText(UnityEngine.GameObject,System.String)
+  name.vb: SetText(GameObject, String)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetText(UnityEngine.GameObject, string)
+  fullName.vb: MuseDashMirror.Extensions.GameObjectExtensions.SetText(UnityEngine.GameObject, String)
+  nameWithType: GameObjectExtensions.SetText(GameObject, string)
+  nameWithType.vb: GameObjectExtensions.SetText(GameObject, String)
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetText*
+  name: SetText
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_SetText_
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.SetText
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetText
+  nameWithType: GameObjectExtensions.SetText
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetTextComponent(UnityEngine.GameObject,MuseDashMirror.Models.TextParameters)
+  name: SetTextComponent(GameObject, TextParameters)
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_SetTextComponent_UnityEngine_GameObject_MuseDashMirror_Models_TextParameters_
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.SetTextComponent(UnityEngine.GameObject,MuseDashMirror.Models.TextParameters)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetTextComponent(UnityEngine.GameObject, MuseDashMirror.Models.TextParameters)
+  nameWithType: GameObjectExtensions.SetTextComponent(GameObject, TextParameters)
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.SetTextComponent*
+  name: SetTextComponent
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_SetTextComponent_
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.SetTextComponent
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.SetTextComponent
+  nameWithType: GameObjectExtensions.SetTextComponent
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.TryFindComponentInAncestors*
+  name: TryFindComponentInAncestors
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_TryFindComponentInAncestors_
+  commentId: Overload:MuseDashMirror.Extensions.GameObjectExtensions.TryFindComponentInAncestors
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.TryFindComponentInAncestors
+  nameWithType: GameObjectExtensions.TryFindComponentInAncestors
+- uid: MuseDashMirror.Extensions.GameObjectExtensions.TryFindComponentInAncestors``1(UnityEngine.GameObject,``0@)
+  name: TryFindComponentInAncestors<T>(GameObject, out T)
+  href: api/MuseDashMirror.Extensions.GameObjectExtensions.html#MuseDashMirror_Extensions_GameObjectExtensions_TryFindComponentInAncestors__1_UnityEngine_GameObject___0__
+  commentId: M:MuseDashMirror.Extensions.GameObjectExtensions.TryFindComponentInAncestors``1(UnityEngine.GameObject,``0@)
+  name.vb: TryFindComponentInAncestors(Of T)(GameObject, T)
+  fullName: MuseDashMirror.Extensions.GameObjectExtensions.TryFindComponentInAncestors<T>(UnityEngine.GameObject, out T)
+  fullName.vb: MuseDashMirror.Extensions.GameObjectExtensions.TryFindComponentInAncestors(Of T)(UnityEngine.GameObject, T)
+  nameWithType: GameObjectExtensions.TryFindComponentInAncestors<T>(GameObject, out T)
+  nameWithType.vb: GameObjectExtensions.TryFindComponentInAncestors(Of T)(GameObject, T)
+- uid: MuseDashMirror.Extensions.RectTransformExtensions
+  name: RectTransformExtensions
+  href: api/MuseDashMirror.Extensions.RectTransformExtensions.html
+  commentId: T:MuseDashMirror.Extensions.RectTransformExtensions
+  fullName: MuseDashMirror.Extensions.RectTransformExtensions
+  nameWithType: RectTransformExtensions
+- uid: MuseDashMirror.Extensions.RectTransformExtensions.UpdateTransformLayoutInfo(UnityEngine.RectTransform)
+  name: UpdateTransformLayoutInfo(RectTransform)
+  href: api/MuseDashMirror.Extensions.RectTransformExtensions.html#MuseDashMirror_Extensions_RectTransformExtensions_UpdateTransformLayoutInfo_UnityEngine_RectTransform_
+  commentId: M:MuseDashMirror.Extensions.RectTransformExtensions.UpdateTransformLayoutInfo(UnityEngine.RectTransform)
+  fullName: MuseDashMirror.Extensions.RectTransformExtensions.UpdateTransformLayoutInfo(UnityEngine.RectTransform)
+  nameWithType: RectTransformExtensions.UpdateTransformLayoutInfo(RectTransform)
+- uid: MuseDashMirror.Extensions.RectTransformExtensions.UpdateTransformLayoutInfo*
+  name: UpdateTransformLayoutInfo
+  href: api/MuseDashMirror.Extensions.RectTransformExtensions.html#MuseDashMirror_Extensions_RectTransformExtensions_UpdateTransformLayoutInfo_
+  commentId: Overload:MuseDashMirror.Extensions.RectTransformExtensions.UpdateTransformLayoutInfo
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.RectTransformExtensions.UpdateTransformLayoutInfo
+  nameWithType: RectTransformExtensions.UpdateTransformLayoutInfo
+- uid: MuseDashMirror.Extensions.StringExtensions
+  name: StringExtensions
+  href: api/MuseDashMirror.Extensions.StringExtensions.html
+  commentId: T:MuseDashMirror.Extensions.StringExtensions
+  fullName: MuseDashMirror.Extensions.StringExtensions
+  nameWithType: StringExtensions
+- uid: MuseDashMirror.Extensions.StringExtensions.GetVisibleTextWithEllipsis(System.String,System.Range)
+  name: GetVisibleTextWithEllipsis(string, Range)
+  href: api/MuseDashMirror.Extensions.StringExtensions.html#MuseDashMirror_Extensions_StringExtensions_GetVisibleTextWithEllipsis_System_String_System_Range_
+  commentId: M:MuseDashMirror.Extensions.StringExtensions.GetVisibleTextWithEllipsis(System.String,System.Range)
+  name.vb: GetVisibleTextWithEllipsis(String, Range)
+  fullName: MuseDashMirror.Extensions.StringExtensions.GetVisibleTextWithEllipsis(string, System.Range)
+  fullName.vb: MuseDashMirror.Extensions.StringExtensions.GetVisibleTextWithEllipsis(String, System.Range)
+  nameWithType: StringExtensions.GetVisibleTextWithEllipsis(string, Range)
+  nameWithType.vb: StringExtensions.GetVisibleTextWithEllipsis(String, Range)
+- uid: MuseDashMirror.Extensions.StringExtensions.GetVisibleTextWithEllipsis*
+  name: GetVisibleTextWithEllipsis
+  href: api/MuseDashMirror.Extensions.StringExtensions.html#MuseDashMirror_Extensions_StringExtensions_GetVisibleTextWithEllipsis_
+  commentId: Overload:MuseDashMirror.Extensions.StringExtensions.GetVisibleTextWithEllipsis
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.StringExtensions.GetVisibleTextWithEllipsis
+  nameWithType: StringExtensions.GetVisibleTextWithEllipsis
+- uid: MuseDashMirror.Extensions.StringExtensions.GetVisibleTextWithEllipsisOrDefault(System.String,System.Range)
+  name: GetVisibleTextWithEllipsisOrDefault(string, Range)
+  href: api/MuseDashMirror.Extensions.StringExtensions.html#MuseDashMirror_Extensions_StringExtensions_GetVisibleTextWithEllipsisOrDefault_System_String_System_Range_
+  commentId: M:MuseDashMirror.Extensions.StringExtensions.GetVisibleTextWithEllipsisOrDefault(System.String,System.Range)
+  name.vb: GetVisibleTextWithEllipsisOrDefault(String, Range)
+  fullName: MuseDashMirror.Extensions.StringExtensions.GetVisibleTextWithEllipsisOrDefault(string, System.Range)
+  fullName.vb: MuseDashMirror.Extensions.StringExtensions.GetVisibleTextWithEllipsisOrDefault(String, System.Range)
+  nameWithType: StringExtensions.GetVisibleTextWithEllipsisOrDefault(string, Range)
+  nameWithType.vb: StringExtensions.GetVisibleTextWithEllipsisOrDefault(String, Range)
+- uid: MuseDashMirror.Extensions.StringExtensions.GetVisibleTextWithEllipsisOrDefault*
+  name: GetVisibleTextWithEllipsisOrDefault
+  href: api/MuseDashMirror.Extensions.StringExtensions.html#MuseDashMirror_Extensions_StringExtensions_GetVisibleTextWithEllipsisOrDefault_
+  commentId: Overload:MuseDashMirror.Extensions.StringExtensions.GetVisibleTextWithEllipsisOrDefault
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.StringExtensions.GetVisibleTextWithEllipsisOrDefault
+  nameWithType: StringExtensions.GetVisibleTextWithEllipsisOrDefault
+- uid: MuseDashMirror.Extensions.UnityEngineObjectExtensions
+  name: UnityEngineObjectExtensions
+  href: api/MuseDashMirror.Extensions.UnityEngineObjectExtensions.html
+  commentId: T:MuseDashMirror.Extensions.UnityEngineObjectExtensions
+  fullName: MuseDashMirror.Extensions.UnityEngineObjectExtensions
+  nameWithType: UnityEngineObjectExtensions
+- uid: MuseDashMirror.Extensions.UnityEngineObjectExtensions.Destroy(UnityEngine.Object)
+  name: Destroy(Object)
+  href: api/MuseDashMirror.Extensions.UnityEngineObjectExtensions.html#MuseDashMirror_Extensions_UnityEngineObjectExtensions_Destroy_UnityEngine_Object_
+  commentId: M:MuseDashMirror.Extensions.UnityEngineObjectExtensions.Destroy(UnityEngine.Object)
+  fullName: MuseDashMirror.Extensions.UnityEngineObjectExtensions.Destroy(UnityEngine.Object)
+  nameWithType: UnityEngineObjectExtensions.Destroy(Object)
+- uid: MuseDashMirror.Extensions.UnityEngineObjectExtensions.Destroy*
+  name: Destroy
+  href: api/MuseDashMirror.Extensions.UnityEngineObjectExtensions.html#MuseDashMirror_Extensions_UnityEngineObjectExtensions_Destroy_
+  commentId: Overload:MuseDashMirror.Extensions.UnityEngineObjectExtensions.Destroy
+  isSpec: "True"
+  fullName: MuseDashMirror.Extensions.UnityEngineObjectExtensions.Destroy
+  nameWithType: UnityEngineObjectExtensions.Destroy
+- uid: MuseDashMirror.Main
+  name: Main
+  href: api/MuseDashMirror.Main.html
+  commentId: T:MuseDashMirror.Main
+  fullName: MuseDashMirror.Main
+  nameWithType: Main
+- uid: MuseDashMirror.Main.OnDeinitializeMelon
+  name: OnDeinitializeMelon()
+  href: api/MuseDashMirror.Main.html#MuseDashMirror_Main_OnDeinitializeMelon
+  commentId: M:MuseDashMirror.Main.OnDeinitializeMelon
+  fullName: MuseDashMirror.Main.OnDeinitializeMelon()
+  nameWithType: Main.OnDeinitializeMelon()
+- uid: MuseDashMirror.Main.OnDeinitializeMelon*
+  name: OnDeinitializeMelon
+  href: api/MuseDashMirror.Main.html#MuseDashMirror_Main_OnDeinitializeMelon_
+  commentId: Overload:MuseDashMirror.Main.OnDeinitializeMelon
+  isSpec: "True"
+  fullName: MuseDashMirror.Main.OnDeinitializeMelon
+  nameWithType: Main.OnDeinitializeMelon
+- uid: MuseDashMirror.Main.OnInitializeMelon
+  name: OnInitializeMelon()
+  href: api/MuseDashMirror.Main.html#MuseDashMirror_Main_OnInitializeMelon
+  commentId: M:MuseDashMirror.Main.OnInitializeMelon
+  fullName: MuseDashMirror.Main.OnInitializeMelon()
+  nameWithType: Main.OnInitializeMelon()
+- uid: MuseDashMirror.Main.OnInitializeMelon*
+  name: OnInitializeMelon
+  href: api/MuseDashMirror.Main.html#MuseDashMirror_Main_OnInitializeMelon_
+  commentId: Overload:MuseDashMirror.Main.OnInitializeMelon
+  isSpec: "True"
+  fullName: MuseDashMirror.Main.OnInitializeMelon
+  nameWithType: Main.OnInitializeMelon
+- uid: MuseDashMirror.Main.OnSceneWasLoaded(System.Int32,System.String)
+  name: OnSceneWasLoaded(int, string)
+  href: api/MuseDashMirror.Main.html#MuseDashMirror_Main_OnSceneWasLoaded_System_Int32_System_String_
+  commentId: M:MuseDashMirror.Main.OnSceneWasLoaded(System.Int32,System.String)
+  name.vb: OnSceneWasLoaded(Integer, String)
+  fullName: MuseDashMirror.Main.OnSceneWasLoaded(int, string)
+  fullName.vb: MuseDashMirror.Main.OnSceneWasLoaded(Integer, String)
+  nameWithType: Main.OnSceneWasLoaded(int, string)
+  nameWithType.vb: Main.OnSceneWasLoaded(Integer, String)
+- uid: MuseDashMirror.Main.OnSceneWasLoaded*
+  name: OnSceneWasLoaded
+  href: api/MuseDashMirror.Main.html#MuseDashMirror_Main_OnSceneWasLoaded_
+  commentId: Overload:MuseDashMirror.Main.OnSceneWasLoaded
+  isSpec: "True"
+  fullName: MuseDashMirror.Main.OnSceneWasLoaded
+  nameWithType: Main.OnSceneWasLoaded
+- uid: MuseDashMirror.Main.OnSceneWasUnloaded(System.Int32,System.String)
+  name: OnSceneWasUnloaded(int, string)
+  href: api/MuseDashMirror.Main.html#MuseDashMirror_Main_OnSceneWasUnloaded_System_Int32_System_String_
+  commentId: M:MuseDashMirror.Main.OnSceneWasUnloaded(System.Int32,System.String)
+  name.vb: OnSceneWasUnloaded(Integer, String)
+  fullName: MuseDashMirror.Main.OnSceneWasUnloaded(int, string)
+  fullName.vb: MuseDashMirror.Main.OnSceneWasUnloaded(Integer, String)
+  nameWithType: Main.OnSceneWasUnloaded(int, string)
+  nameWithType.vb: Main.OnSceneWasUnloaded(Integer, String)
+- uid: MuseDashMirror.Main.OnSceneWasUnloaded*
+  name: OnSceneWasUnloaded
+  href: api/MuseDashMirror.Main.html#MuseDashMirror_Main_OnSceneWasUnloaded_
+  commentId: Overload:MuseDashMirror.Main.OnSceneWasUnloaded
+  isSpec: "True"
+  fullName: MuseDashMirror.Main.OnSceneWasUnloaded
+  nameWithType: Main.OnSceneWasUnloaded
+- uid: MuseDashMirror.Models
+  name: MuseDashMirror.Models
+  href: api/MuseDashMirror.Models.html
+  commentId: N:MuseDashMirror.Models
+  fullName: MuseDashMirror.Models
+  nameWithType: MuseDashMirror.Models
+- uid: MuseDashMirror.Models.CameraDimension
+  name: CameraDimension
+  href: api/MuseDashMirror.Models.CameraDimension.html
+  commentId: T:MuseDashMirror.Models.CameraDimension
+  fullName: MuseDashMirror.Models.CameraDimension
+  nameWithType: CameraDimension
+- uid: MuseDashMirror.Models.CameraDimension.ThreeD
+  name: ThreeD
+  href: api/MuseDashMirror.Models.CameraDimension.html#MuseDashMirror_Models_CameraDimension_ThreeD
+  commentId: F:MuseDashMirror.Models.CameraDimension.ThreeD
+  fullName: MuseDashMirror.Models.CameraDimension.ThreeD
+  nameWithType: CameraDimension.ThreeD
+- uid: MuseDashMirror.Models.CameraDimension.TwoD
+  name: TwoD
+  href: api/MuseDashMirror.Models.CameraDimension.html#MuseDashMirror_Models_CameraDimension_TwoD
+  commentId: F:MuseDashMirror.Models.CameraDimension.TwoD
+  fullName: MuseDashMirror.Models.CameraDimension.TwoD
+  nameWithType: CameraDimension.TwoD
+- uid: MuseDashMirror.Models.EllipseTextParameters
+  name: EllipseTextParameters
+  href: api/MuseDashMirror.Models.EllipseTextParameters.html
+  commentId: T:MuseDashMirror.Models.EllipseTextParameters
+  fullName: MuseDashMirror.Models.EllipseTextParameters
+  nameWithType: EllipseTextParameters
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range)
+  name: EllipseTextParameters(string, Range)
+  href: api/MuseDashMirror.Models.EllipseTextParameters.html#MuseDashMirror_Models_EllipseTextParameters__ctor_System_String_System_Range_
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range)
+  name.vb: New(String, Range)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range)
+  nameWithType.vb: EllipseTextParameters.New(String, Range)
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,System.Int32,UnityEngine.TextAnchor)
+  name: EllipseTextParameters(string, Range, int, TextAnchor)
+  href: api/MuseDashMirror.Models.EllipseTextParameters.html#MuseDashMirror_Models_EllipseTextParameters__ctor_System_String_System_Range_System_Int32_UnityEngine_TextAnchor_
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,System.Int32,UnityEngine.TextAnchor)
+  name.vb: New(String, Range, Integer, TextAnchor)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range, int, UnityEngine.TextAnchor)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range, Integer, UnityEngine.TextAnchor)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range, int, TextAnchor)
+  nameWithType.vb: EllipseTextParameters.New(String, Range, Integer, TextAnchor)
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color)
+  name: EllipseTextParameters(string, Range, Color)
+  href: api/MuseDashMirror.Models.EllipseTextParameters.html#MuseDashMirror_Models_EllipseTextParameters__ctor_System_String_System_Range_UnityEngine_Color_
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color)
+  name.vb: New(String, Range, Color)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range, UnityEngine.Color)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range, UnityEngine.Color)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range, Color)
+  nameWithType.vb: EllipseTextParameters.New(String, Range, Color)
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.Font,System.Int32)
+  name: EllipseTextParameters(string, Range, Color, Font, int)
+  href: api/MuseDashMirror.Models.EllipseTextParameters.html#MuseDashMirror_Models_EllipseTextParameters__ctor_System_String_System_Range_UnityEngine_Color_UnityEngine_Font_System_Int32_
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.Font,System.Int32)
+  name.vb: New(String, Range, Color, Font, Integer)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range, UnityEngine.Color, UnityEngine.Font, int)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range, UnityEngine.Color, UnityEngine.Font, Integer)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range, Color, Font, int)
+  nameWithType.vb: EllipseTextParameters.New(String, Range, Color, Font, Integer)
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.Font,System.Int32,UnityEngine.TextAnchor)
+  name: EllipseTextParameters(string, Range, Color, Font, int, TextAnchor)
+  href: api/MuseDashMirror.Models.EllipseTextParameters.html#MuseDashMirror_Models_EllipseTextParameters__ctor_System_String_System_Range_UnityEngine_Color_UnityEngine_Font_System_Int32_UnityEngine_TextAnchor_
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.Font,System.Int32,UnityEngine.TextAnchor)
+  name.vb: New(String, Range, Color, Font, Integer, TextAnchor)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range, UnityEngine.Color, UnityEngine.Font, int, UnityEngine.TextAnchor)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range, UnityEngine.Color, UnityEngine.Font, Integer, UnityEngine.TextAnchor)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range, Color, Font, int, TextAnchor)
+  nameWithType.vb: EllipseTextParameters.New(String, Range, Color, Font, Integer, TextAnchor)
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.TextAnchor)
+  name: EllipseTextParameters(string, Range, Color, TextAnchor)
+  href: api/MuseDashMirror.Models.EllipseTextParameters.html#MuseDashMirror_Models_EllipseTextParameters__ctor_System_String_System_Range_UnityEngine_Color_UnityEngine_TextAnchor_
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Color,UnityEngine.TextAnchor)
+  name.vb: New(String, Range, Color, TextAnchor)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range, UnityEngine.Color, UnityEngine.TextAnchor)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range, UnityEngine.Color, UnityEngine.TextAnchor)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range, Color, TextAnchor)
+  nameWithType.vb: EllipseTextParameters.New(String, Range, Color, TextAnchor)
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Font,System.Int32)
+  name: EllipseTextParameters(string, Range, Font, int)
+  href: api/MuseDashMirror.Models.EllipseTextParameters.html#MuseDashMirror_Models_EllipseTextParameters__ctor_System_String_System_Range_UnityEngine_Font_System_Int32_
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Font,System.Int32)
+  name.vb: New(String, Range, Font, Integer)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range, UnityEngine.Font, int)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range, UnityEngine.Font, Integer)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range, Font, int)
+  nameWithType.vb: EllipseTextParameters.New(String, Range, Font, Integer)
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Font,System.Int32,UnityEngine.TextAnchor)
+  name: EllipseTextParameters(string, Range, Font, int, TextAnchor)
+  href: api/MuseDashMirror.Models.EllipseTextParameters.html#MuseDashMirror_Models_EllipseTextParameters__ctor_System_String_System_Range_UnityEngine_Font_System_Int32_UnityEngine_TextAnchor_
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.Font,System.Int32,UnityEngine.TextAnchor)
+  name.vb: New(String, Range, Font, Integer, TextAnchor)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range, UnityEngine.Font, int, UnityEngine.TextAnchor)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range, UnityEngine.Font, Integer, UnityEngine.TextAnchor)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range, Font, int, TextAnchor)
+  nameWithType.vb: EllipseTextParameters.New(String, Range, Font, Integer, TextAnchor)
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.TextAnchor)
+  name: EllipseTextParameters(string, Range, TextAnchor)
+  href: api/MuseDashMirror.Models.EllipseTextParameters.html#MuseDashMirror_Models_EllipseTextParameters__ctor_System_String_System_Range_UnityEngine_TextAnchor_
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.#ctor(System.String,System.Range,UnityEngine.TextAnchor)
+  name.vb: New(String, Range, TextAnchor)
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters(string, System.Range, UnityEngine.TextAnchor)
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New(String, System.Range, UnityEngine.TextAnchor)
+  nameWithType: EllipseTextParameters.EllipseTextParameters(string, Range, TextAnchor)
+  nameWithType.vb: EllipseTextParameters.New(String, Range, TextAnchor)
+- uid: MuseDashMirror.Models.EllipseTextParameters.#ctor*
+  name: EllipseTextParameters
+  href: api/MuseDashMirror.Models.EllipseTextParameters.html#MuseDashMirror_Models_EllipseTextParameters__ctor_
+  commentId: Overload:MuseDashMirror.Models.EllipseTextParameters.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MuseDashMirror.Models.EllipseTextParameters.EllipseTextParameters
+  fullName.vb: MuseDashMirror.Models.EllipseTextParameters.New
+  nameWithType: EllipseTextParameters.EllipseTextParameters
+  nameWithType.vb: EllipseTextParameters.New
+- uid: MuseDashMirror.Models.EllipseTextParameters.GetText
+  name: GetText()
+  href: api/MuseDashMirror.Models.EllipseTextParameters.html#MuseDashMirror_Models_EllipseTextParameters_GetText
+  commentId: M:MuseDashMirror.Models.EllipseTextParameters.GetText
+  fullName: MuseDashMirror.Models.EllipseTextParameters.GetText()
+  nameWithType: EllipseTextParameters.GetText()
+- uid: MuseDashMirror.Models.EllipseTextParameters.GetText*
+  name: GetText
+  href: api/MuseDashMirror.Models.EllipseTextParameters.html#MuseDashMirror_Models_EllipseTextParameters_GetText_
+  commentId: Overload:MuseDashMirror.Models.EllipseTextParameters.GetText
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.EllipseTextParameters.GetText
+  nameWithType: EllipseTextParameters.GetText
+- uid: MuseDashMirror.Models.EllipseTextParameters.InVisibleTextRange
+  name: InVisibleTextRange
+  href: api/MuseDashMirror.Models.EllipseTextParameters.html#MuseDashMirror_Models_EllipseTextParameters_InVisibleTextRange
+  commentId: P:MuseDashMirror.Models.EllipseTextParameters.InVisibleTextRange
+  fullName: MuseDashMirror.Models.EllipseTextParameters.InVisibleTextRange
+  nameWithType: EllipseTextParameters.InVisibleTextRange
+- uid: MuseDashMirror.Models.EllipseTextParameters.InVisibleTextRange*
+  name: InVisibleTextRange
+  href: api/MuseDashMirror.Models.EllipseTextParameters.html#MuseDashMirror_Models_EllipseTextParameters_InVisibleTextRange_
+  commentId: Overload:MuseDashMirror.Models.EllipseTextParameters.InVisibleTextRange
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.EllipseTextParameters.InVisibleTextRange
+  nameWithType: EllipseTextParameters.InVisibleTextRange
+- uid: MuseDashMirror.Models.PositionStrategies
+  name: MuseDashMirror.Models.PositionStrategies
+  href: api/MuseDashMirror.Models.PositionStrategies.html
+  commentId: N:MuseDashMirror.Models.PositionStrategies
+  fullName: MuseDashMirror.Models.PositionStrategies
+  nameWithType: MuseDashMirror.Models.PositionStrategies
+- uid: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy
+  name: CenterPositionStrategy
+  href: api/MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.html
+  commentId: T:MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy
+  fullName: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy
+  nameWithType: CenterPositionStrategy
+- uid: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  name: SetPosition(RectTransform, TransformParameters)
+  href: api/MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.html#MuseDashMirror_Models_PositionStrategies_CenterPositionStrategy_SetPosition_UnityEngine_RectTransform_MuseDashMirror_Models_TransformParameters_
+  commentId: M:MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  fullName: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.SetPosition(UnityEngine.RectTransform, MuseDashMirror.Models.TransformParameters)
+  nameWithType: CenterPositionStrategy.SetPosition(RectTransform, TransformParameters)
+- uid: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.SetPosition*
+  name: SetPosition
+  href: api/MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.html#MuseDashMirror_Models_PositionStrategies_CenterPositionStrategy_SetPosition_
+  commentId: Overload:MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.SetPosition
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.SetPosition
+  nameWithType: CenterPositionStrategy.SetPosition
+- uid: MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy
+  name: LeftEdgePositionStrategy
+  href: api/MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy.html
+  commentId: T:MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy
+  fullName: MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy
+  nameWithType: LeftEdgePositionStrategy
+- uid: MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  name: SetPosition(RectTransform, TransformParameters)
+  href: api/MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy.html#MuseDashMirror_Models_PositionStrategies_LeftEdgePositionStrategy_SetPosition_UnityEngine_RectTransform_MuseDashMirror_Models_TransformParameters_
+  commentId: M:MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  fullName: MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy.SetPosition(UnityEngine.RectTransform, MuseDashMirror.Models.TransformParameters)
+  nameWithType: LeftEdgePositionStrategy.SetPosition(RectTransform, TransformParameters)
+- uid: MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy.SetPosition*
+  name: SetPosition
+  href: api/MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy.html#MuseDashMirror_Models_PositionStrategies_LeftEdgePositionStrategy_SetPosition_
+  commentId: Overload:MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy.SetPosition
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy.SetPosition
+  nameWithType: LeftEdgePositionStrategy.SetPosition
+- uid: MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy
+  name: RightEdgePositionStrategy
+  href: api/MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy.html
+  commentId: T:MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy
+  fullName: MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy
+  nameWithType: RightEdgePositionStrategy
+- uid: MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  name: SetPosition(RectTransform, TransformParameters)
+  href: api/MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy.html#MuseDashMirror_Models_PositionStrategies_RightEdgePositionStrategy_SetPosition_UnityEngine_RectTransform_MuseDashMirror_Models_TransformParameters_
+  commentId: M:MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy.SetPosition(UnityEngine.RectTransform,MuseDashMirror.Models.TransformParameters)
+  fullName: MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy.SetPosition(UnityEngine.RectTransform, MuseDashMirror.Models.TransformParameters)
+  nameWithType: RightEdgePositionStrategy.SetPosition(RectTransform, TransformParameters)
+- uid: MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy.SetPosition*
+  name: SetPosition
+  href: api/MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy.html#MuseDashMirror_Models_PositionStrategies_RightEdgePositionStrategy_SetPosition_
+  commentId: Overload:MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy.SetPosition
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy.SetPosition
+  nameWithType: RightEdgePositionStrategy.SetPosition
+- uid: MuseDashMirror.Models.TextParameters
+  name: TextParameters
+  href: api/MuseDashMirror.Models.TextParameters.html
+  commentId: T:MuseDashMirror.Models.TextParameters
+  fullName: MuseDashMirror.Models.TextParameters
+  nameWithType: TextParameters
+- uid: MuseDashMirror.Models.TextParameters.#ctor(System.String)
+  name: TextParameters(string)
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters__ctor_System_String_
+  commentId: M:MuseDashMirror.Models.TextParameters.#ctor(System.String)
+  name.vb: New(String)
+  fullName: MuseDashMirror.Models.TextParameters.TextParameters(string)
+  fullName.vb: MuseDashMirror.Models.TextParameters.New(String)
+  nameWithType: TextParameters.TextParameters(string)
+  nameWithType.vb: TextParameters.New(String)
+- uid: MuseDashMirror.Models.TextParameters.#ctor(System.String,System.Int32,UnityEngine.TextAnchor)
+  name: TextParameters(string, int, TextAnchor)
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters__ctor_System_String_System_Int32_UnityEngine_TextAnchor_
+  commentId: M:MuseDashMirror.Models.TextParameters.#ctor(System.String,System.Int32,UnityEngine.TextAnchor)
+  name.vb: New(String, Integer, TextAnchor)
+  fullName: MuseDashMirror.Models.TextParameters.TextParameters(string, int, UnityEngine.TextAnchor)
+  fullName.vb: MuseDashMirror.Models.TextParameters.New(String, Integer, UnityEngine.TextAnchor)
+  nameWithType: TextParameters.TextParameters(string, int, TextAnchor)
+  nameWithType.vb: TextParameters.New(String, Integer, TextAnchor)
+- uid: MuseDashMirror.Models.TextParameters.#ctor(System.String,UnityEngine.Color)
+  name: TextParameters(string, Color)
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters__ctor_System_String_UnityEngine_Color_
+  commentId: M:MuseDashMirror.Models.TextParameters.#ctor(System.String,UnityEngine.Color)
+  name.vb: New(String, Color)
+  fullName: MuseDashMirror.Models.TextParameters.TextParameters(string, UnityEngine.Color)
+  fullName.vb: MuseDashMirror.Models.TextParameters.New(String, UnityEngine.Color)
+  nameWithType: TextParameters.TextParameters(string, Color)
+  nameWithType.vb: TextParameters.New(String, Color)
+- uid: MuseDashMirror.Models.TextParameters.#ctor(System.String,UnityEngine.Color,UnityEngine.Font,System.Int32)
+  name: TextParameters(string, Color, Font, int)
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters__ctor_System_String_UnityEngine_Color_UnityEngine_Font_System_Int32_
+  commentId: M:MuseDashMirror.Models.TextParameters.#ctor(System.String,UnityEngine.Color,UnityEngine.Font,System.Int32)
+  name.vb: New(String, Color, Font, Integer)
+  fullName: MuseDashMirror.Models.TextParameters.TextParameters(string, UnityEngine.Color, UnityEngine.Font, int)
+  fullName.vb: MuseDashMirror.Models.TextParameters.New(String, UnityEngine.Color, UnityEngine.Font, Integer)
+  nameWithType: TextParameters.TextParameters(string, Color, Font, int)
+  nameWithType.vb: TextParameters.New(String, Color, Font, Integer)
+- uid: MuseDashMirror.Models.TextParameters.#ctor(System.String,UnityEngine.Color,UnityEngine.Font,System.Int32,UnityEngine.TextAnchor)
+  name: TextParameters(string, Color, Font, int, TextAnchor)
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters__ctor_System_String_UnityEngine_Color_UnityEngine_Font_System_Int32_UnityEngine_TextAnchor_
+  commentId: M:MuseDashMirror.Models.TextParameters.#ctor(System.String,UnityEngine.Color,UnityEngine.Font,System.Int32,UnityEngine.TextAnchor)
+  name.vb: New(String, Color, Font, Integer, TextAnchor)
+  fullName: MuseDashMirror.Models.TextParameters.TextParameters(string, UnityEngine.Color, UnityEngine.Font, int, UnityEngine.TextAnchor)
+  fullName.vb: MuseDashMirror.Models.TextParameters.New(String, UnityEngine.Color, UnityEngine.Font, Integer, UnityEngine.TextAnchor)
+  nameWithType: TextParameters.TextParameters(string, Color, Font, int, TextAnchor)
+  nameWithType.vb: TextParameters.New(String, Color, Font, Integer, TextAnchor)
+- uid: MuseDashMirror.Models.TextParameters.#ctor(System.String,UnityEngine.Color,UnityEngine.TextAnchor)
+  name: TextParameters(string, Color, TextAnchor)
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters__ctor_System_String_UnityEngine_Color_UnityEngine_TextAnchor_
+  commentId: M:MuseDashMirror.Models.TextParameters.#ctor(System.String,UnityEngine.Color,UnityEngine.TextAnchor)
+  name.vb: New(String, Color, TextAnchor)
+  fullName: MuseDashMirror.Models.TextParameters.TextParameters(string, UnityEngine.Color, UnityEngine.TextAnchor)
+  fullName.vb: MuseDashMirror.Models.TextParameters.New(String, UnityEngine.Color, UnityEngine.TextAnchor)
+  nameWithType: TextParameters.TextParameters(string, Color, TextAnchor)
+  nameWithType.vb: TextParameters.New(String, Color, TextAnchor)
+- uid: MuseDashMirror.Models.TextParameters.#ctor(System.String,UnityEngine.Font,System.Int32)
+  name: TextParameters(string, Font, int)
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters__ctor_System_String_UnityEngine_Font_System_Int32_
+  commentId: M:MuseDashMirror.Models.TextParameters.#ctor(System.String,UnityEngine.Font,System.Int32)
+  name.vb: New(String, Font, Integer)
+  fullName: MuseDashMirror.Models.TextParameters.TextParameters(string, UnityEngine.Font, int)
+  fullName.vb: MuseDashMirror.Models.TextParameters.New(String, UnityEngine.Font, Integer)
+  nameWithType: TextParameters.TextParameters(string, Font, int)
+  nameWithType.vb: TextParameters.New(String, Font, Integer)
+- uid: MuseDashMirror.Models.TextParameters.#ctor(System.String,UnityEngine.Font,System.Int32,UnityEngine.TextAnchor)
+  name: TextParameters(string, Font, int, TextAnchor)
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters__ctor_System_String_UnityEngine_Font_System_Int32_UnityEngine_TextAnchor_
+  commentId: M:MuseDashMirror.Models.TextParameters.#ctor(System.String,UnityEngine.Font,System.Int32,UnityEngine.TextAnchor)
+  name.vb: New(String, Font, Integer, TextAnchor)
+  fullName: MuseDashMirror.Models.TextParameters.TextParameters(string, UnityEngine.Font, int, UnityEngine.TextAnchor)
+  fullName.vb: MuseDashMirror.Models.TextParameters.New(String, UnityEngine.Font, Integer, UnityEngine.TextAnchor)
+  nameWithType: TextParameters.TextParameters(string, Font, int, TextAnchor)
+  nameWithType.vb: TextParameters.New(String, Font, Integer, TextAnchor)
+- uid: MuseDashMirror.Models.TextParameters.#ctor(System.String,UnityEngine.TextAnchor)
+  name: TextParameters(string, TextAnchor)
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters__ctor_System_String_UnityEngine_TextAnchor_
+  commentId: M:MuseDashMirror.Models.TextParameters.#ctor(System.String,UnityEngine.TextAnchor)
+  name.vb: New(String, TextAnchor)
+  fullName: MuseDashMirror.Models.TextParameters.TextParameters(string, UnityEngine.TextAnchor)
+  fullName.vb: MuseDashMirror.Models.TextParameters.New(String, UnityEngine.TextAnchor)
+  nameWithType: TextParameters.TextParameters(string, TextAnchor)
+  nameWithType.vb: TextParameters.New(String, TextAnchor)
+- uid: MuseDashMirror.Models.TextParameters.#ctor*
+  name: TextParameters
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters__ctor_
+  commentId: Overload:MuseDashMirror.Models.TextParameters.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MuseDashMirror.Models.TextParameters.TextParameters
+  fullName.vb: MuseDashMirror.Models.TextParameters.New
+  nameWithType: TextParameters.TextParameters
+  nameWithType.vb: TextParameters.New
+- uid: MuseDashMirror.Models.TextParameters.Alignment
+  name: Alignment
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_Alignment
+  commentId: P:MuseDashMirror.Models.TextParameters.Alignment
+  fullName: MuseDashMirror.Models.TextParameters.Alignment
+  nameWithType: TextParameters.Alignment
+- uid: MuseDashMirror.Models.TextParameters.Alignment*
+  name: Alignment
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_Alignment_
+  commentId: Overload:MuseDashMirror.Models.TextParameters.Alignment
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.TextParameters.Alignment
+  nameWithType: TextParameters.Alignment
+- uid: MuseDashMirror.Models.TextParameters.Color
+  name: Color
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_Color
+  commentId: P:MuseDashMirror.Models.TextParameters.Color
+  fullName: MuseDashMirror.Models.TextParameters.Color
+  nameWithType: TextParameters.Color
+- uid: MuseDashMirror.Models.TextParameters.Color*
+  name: Color
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_Color_
+  commentId: Overload:MuseDashMirror.Models.TextParameters.Color
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.TextParameters.Color
+  nameWithType: TextParameters.Color
+- uid: MuseDashMirror.Models.TextParameters.Font
+  name: Font
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_Font
+  commentId: P:MuseDashMirror.Models.TextParameters.Font
+  fullName: MuseDashMirror.Models.TextParameters.Font
+  nameWithType: TextParameters.Font
+- uid: MuseDashMirror.Models.TextParameters.Font*
+  name: Font
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_Font_
+  commentId: Overload:MuseDashMirror.Models.TextParameters.Font
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.TextParameters.Font
+  nameWithType: TextParameters.Font
+- uid: MuseDashMirror.Models.TextParameters.FontSize
+  name: FontSize
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_FontSize
+  commentId: P:MuseDashMirror.Models.TextParameters.FontSize
+  fullName: MuseDashMirror.Models.TextParameters.FontSize
+  nameWithType: TextParameters.FontSize
+- uid: MuseDashMirror.Models.TextParameters.FontSize*
+  name: FontSize
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_FontSize_
+  commentId: Overload:MuseDashMirror.Models.TextParameters.FontSize
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.TextParameters.FontSize
+  nameWithType: TextParameters.FontSize
+- uid: MuseDashMirror.Models.TextParameters.GetText
+  name: GetText()
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_GetText
+  commentId: M:MuseDashMirror.Models.TextParameters.GetText
+  fullName: MuseDashMirror.Models.TextParameters.GetText()
+  nameWithType: TextParameters.GetText()
+- uid: MuseDashMirror.Models.TextParameters.GetText*
+  name: GetText
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_GetText_
+  commentId: Overload:MuseDashMirror.Models.TextParameters.GetText
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.TextParameters.GetText
+  nameWithType: TextParameters.GetText
+- uid: MuseDashMirror.Models.TextParameters.Text
+  name: Text
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_Text
+  commentId: P:MuseDashMirror.Models.TextParameters.Text
+  fullName: MuseDashMirror.Models.TextParameters.Text
+  nameWithType: TextParameters.Text
+- uid: MuseDashMirror.Models.TextParameters.Text*
+  name: Text
+  href: api/MuseDashMirror.Models.TextParameters.html#MuseDashMirror_Models_TextParameters_Text_
+  commentId: Overload:MuseDashMirror.Models.TextParameters.Text
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.TextParameters.Text
+  nameWithType: TextParameters.Text
+- uid: MuseDashMirror.Models.ToggleParameters
+  name: ToggleParameters
+  href: api/MuseDashMirror.Models.ToggleParameters.html
+  commentId: T:MuseDashMirror.Models.ToggleParameters
+  fullName: MuseDashMirror.Models.ToggleParameters
+  nameWithType: ToggleParameters
+- uid: MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean})
+  name: ToggleParameters(string, TextParameters, bool, Action<bool>)
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters__ctor_System_String_MuseDashMirror_Models_TextParameters_System_Boolean_System_Action_System_Boolean__
+  commentId: M:MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean})
+  name.vb: New(String, TextParameters, Boolean, Action(Of Boolean))
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleParameters(string, MuseDashMirror.Models.TextParameters, bool, System.Action<bool>)
+  fullName.vb: MuseDashMirror.Models.ToggleParameters.New(String, MuseDashMirror.Models.TextParameters, Boolean, System.Action(Of Boolean))
+  nameWithType: ToggleParameters.ToggleParameters(string, TextParameters, bool, Action<bool>)
+  nameWithType.vb: ToggleParameters.New(String, TextParameters, Boolean, Action(Of Boolean))
+- uid: MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.Color)
+  name: ToggleParameters(string, TextParameters, bool, Action<bool>, Color)
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters__ctor_System_String_MuseDashMirror_Models_TextParameters_System_Boolean_System_Action_System_Boolean__UnityEngine_Color_
+  commentId: M:MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.Color)
+  name.vb: New(String, TextParameters, Boolean, Action(Of Boolean), Color)
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleParameters(string, MuseDashMirror.Models.TextParameters, bool, System.Action<bool>, UnityEngine.Color)
+  fullName.vb: MuseDashMirror.Models.ToggleParameters.New(String, MuseDashMirror.Models.TextParameters, Boolean, System.Action(Of Boolean), UnityEngine.Color)
+  nameWithType: ToggleParameters.ToggleParameters(string, TextParameters, bool, Action<bool>, Color)
+  nameWithType.vb: ToggleParameters.New(String, TextParameters, Boolean, Action(Of Boolean), Color)
+- uid: MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup)
+  name: ToggleParameters(string, TextParameters, bool, Action<bool>, ToggleGroup)
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters__ctor_System_String_MuseDashMirror_Models_TextParameters_System_Boolean_System_Action_System_Boolean__UnityEngine_UI_ToggleGroup_
+  commentId: M:MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup)
+  name.vb: New(String, TextParameters, Boolean, Action(Of Boolean), ToggleGroup)
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleParameters(string, MuseDashMirror.Models.TextParameters, bool, System.Action<bool>, UnityEngine.UI.ToggleGroup)
+  fullName.vb: MuseDashMirror.Models.ToggleParameters.New(String, MuseDashMirror.Models.TextParameters, Boolean, System.Action(Of Boolean), UnityEngine.UI.ToggleGroup)
+  nameWithType: ToggleParameters.ToggleParameters(string, TextParameters, bool, Action<bool>, ToggleGroup)
+  nameWithType.vb: ToggleParameters.New(String, TextParameters, Boolean, Action(Of Boolean), ToggleGroup)
+- uid: MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup,UnityEngine.Color)
+  name: ToggleParameters(string, TextParameters, bool, Action<bool>, ToggleGroup, Color)
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters__ctor_System_String_MuseDashMirror_Models_TextParameters_System_Boolean_System_Action_System_Boolean__UnityEngine_UI_ToggleGroup_UnityEngine_Color_
+  commentId: M:MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup,UnityEngine.Color)
+  name.vb: New(String, TextParameters, Boolean, Action(Of Boolean), ToggleGroup, Color)
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleParameters(string, MuseDashMirror.Models.TextParameters, bool, System.Action<bool>, UnityEngine.UI.ToggleGroup, UnityEngine.Color)
+  fullName.vb: MuseDashMirror.Models.ToggleParameters.New(String, MuseDashMirror.Models.TextParameters, Boolean, System.Action(Of Boolean), UnityEngine.UI.ToggleGroup, UnityEngine.Color)
+  nameWithType: ToggleParameters.ToggleParameters(string, TextParameters, bool, Action<bool>, ToggleGroup, Color)
+  nameWithType.vb: ToggleParameters.New(String, TextParameters, Boolean, Action(Of Boolean), ToggleGroup, Color)
+- uid: MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup,UnityEngine.Color,UnityEngine.Color)
+  name: ToggleParameters(string, TextParameters, bool, Action<bool>, ToggleGroup, Color, Color)
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters__ctor_System_String_MuseDashMirror_Models_TextParameters_System_Boolean_System_Action_System_Boolean__UnityEngine_UI_ToggleGroup_UnityEngine_Color_UnityEngine_Color_
+  commentId: M:MuseDashMirror.Models.ToggleParameters.#ctor(System.String,MuseDashMirror.Models.TextParameters,System.Boolean,System.Action{System.Boolean},UnityEngine.UI.ToggleGroup,UnityEngine.Color,UnityEngine.Color)
+  name.vb: New(String, TextParameters, Boolean, Action(Of Boolean), ToggleGroup, Color, Color)
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleParameters(string, MuseDashMirror.Models.TextParameters, bool, System.Action<bool>, UnityEngine.UI.ToggleGroup, UnityEngine.Color, UnityEngine.Color)
+  fullName.vb: MuseDashMirror.Models.ToggleParameters.New(String, MuseDashMirror.Models.TextParameters, Boolean, System.Action(Of Boolean), UnityEngine.UI.ToggleGroup, UnityEngine.Color, UnityEngine.Color)
+  nameWithType: ToggleParameters.ToggleParameters(string, TextParameters, bool, Action<bool>, ToggleGroup, Color, Color)
+  nameWithType.vb: ToggleParameters.New(String, TextParameters, Boolean, Action(Of Boolean), ToggleGroup, Color, Color)
+- uid: MuseDashMirror.Models.ToggleParameters.#ctor*
+  name: ToggleParameters
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters__ctor_
+  commentId: Overload:MuseDashMirror.Models.ToggleParameters.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleParameters
+  fullName.vb: MuseDashMirror.Models.ToggleParameters.New
+  nameWithType: ToggleParameters.ToggleParameters
+  nameWithType.vb: ToggleParameters.New
+- uid: MuseDashMirror.Models.ToggleParameters.CallBack
+  name: CallBack
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_CallBack
+  commentId: P:MuseDashMirror.Models.ToggleParameters.CallBack
+  fullName: MuseDashMirror.Models.ToggleParameters.CallBack
+  nameWithType: ToggleParameters.CallBack
+- uid: MuseDashMirror.Models.ToggleParameters.CallBack*
+  name: CallBack
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_CallBack_
+  commentId: Overload:MuseDashMirror.Models.ToggleParameters.CallBack
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.ToggleParameters.CallBack
+  nameWithType: ToggleParameters.CallBack
+- uid: MuseDashMirror.Models.ToggleParameters.CheckMarkColor
+  name: CheckMarkColor
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_CheckMarkColor
+  commentId: P:MuseDashMirror.Models.ToggleParameters.CheckMarkColor
+  fullName: MuseDashMirror.Models.ToggleParameters.CheckMarkColor
+  nameWithType: ToggleParameters.CheckMarkColor
+- uid: MuseDashMirror.Models.ToggleParameters.CheckMarkColor*
+  name: CheckMarkColor
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_CheckMarkColor_
+  commentId: Overload:MuseDashMirror.Models.ToggleParameters.CheckMarkColor
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.ToggleParameters.CheckMarkColor
+  nameWithType: ToggleParameters.CheckMarkColor
+- uid: MuseDashMirror.Models.ToggleParameters.InitialValue
+  name: InitialValue
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_InitialValue
+  commentId: P:MuseDashMirror.Models.ToggleParameters.InitialValue
+  fullName: MuseDashMirror.Models.ToggleParameters.InitialValue
+  nameWithType: ToggleParameters.InitialValue
+- uid: MuseDashMirror.Models.ToggleParameters.InitialValue*
+  name: InitialValue
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_InitialValue_
+  commentId: Overload:MuseDashMirror.Models.ToggleParameters.InitialValue
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.ToggleParameters.InitialValue
+  nameWithType: ToggleParameters.InitialValue
+- uid: MuseDashMirror.Models.ToggleParameters.TextColor
+  name: TextColor
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_TextColor
+  commentId: P:MuseDashMirror.Models.ToggleParameters.TextColor
+  fullName: MuseDashMirror.Models.ToggleParameters.TextColor
+  nameWithType: ToggleParameters.TextColor
+- uid: MuseDashMirror.Models.ToggleParameters.TextColor*
+  name: TextColor
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_TextColor_
+  commentId: Overload:MuseDashMirror.Models.ToggleParameters.TextColor
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.ToggleParameters.TextColor
+  nameWithType: ToggleParameters.TextColor
+- uid: MuseDashMirror.Models.ToggleParameters.TextParameters
+  name: TextParameters
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_TextParameters
+  commentId: P:MuseDashMirror.Models.ToggleParameters.TextParameters
+  fullName: MuseDashMirror.Models.ToggleParameters.TextParameters
+  nameWithType: ToggleParameters.TextParameters
+- uid: MuseDashMirror.Models.ToggleParameters.TextParameters*
+  name: TextParameters
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_TextParameters_
+  commentId: Overload:MuseDashMirror.Models.ToggleParameters.TextParameters
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.ToggleParameters.TextParameters
+  nameWithType: ToggleParameters.TextParameters
+- uid: MuseDashMirror.Models.ToggleParameters.ToggleGroup
+  name: ToggleGroup
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_ToggleGroup
+  commentId: P:MuseDashMirror.Models.ToggleParameters.ToggleGroup
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleGroup
+  nameWithType: ToggleParameters.ToggleGroup
+- uid: MuseDashMirror.Models.ToggleParameters.ToggleGroup*
+  name: ToggleGroup
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_ToggleGroup_
+  commentId: Overload:MuseDashMirror.Models.ToggleParameters.ToggleGroup
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleGroup
+  nameWithType: ToggleParameters.ToggleGroup
+- uid: MuseDashMirror.Models.ToggleParameters.ToggleName
+  name: ToggleName
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_ToggleName
+  commentId: P:MuseDashMirror.Models.ToggleParameters.ToggleName
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleName
+  nameWithType: ToggleParameters.ToggleName
+- uid: MuseDashMirror.Models.ToggleParameters.ToggleName*
+  name: ToggleName
+  href: api/MuseDashMirror.Models.ToggleParameters.html#MuseDashMirror_Models_ToggleParameters_ToggleName_
+  commentId: Overload:MuseDashMirror.Models.ToggleParameters.ToggleName
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.ToggleParameters.ToggleName
+  nameWithType: ToggleParameters.ToggleName
+- uid: MuseDashMirror.Models.TransformParameters
+  name: TransformParameters
+  href: api/MuseDashMirror.Models.TransformParameters.html
+  commentId: T:MuseDashMirror.Models.TransformParameters
+  fullName: MuseDashMirror.Models.TransformParameters
+  nameWithType: TransformParameters
+- uid: MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3)
+  name: TransformParameters(Vector3)
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters__ctor_UnityEngine_Vector3_
+  commentId: M:MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3)
+  name.vb: New(Vector3)
+  fullName: MuseDashMirror.Models.TransformParameters.TransformParameters(UnityEngine.Vector3)
+  fullName.vb: MuseDashMirror.Models.TransformParameters.New(UnityEngine.Vector3)
+  nameWithType: TransformParameters.TransformParameters(Vector3)
+  nameWithType.vb: TransformParameters.New(Vector3)
+- uid: MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,MuseDashMirror.Contracts.IPositionStrategy)
+  name: TransformParameters(Vector3, IPositionStrategy)
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters__ctor_UnityEngine_Vector3_MuseDashMirror_Contracts_IPositionStrategy_
+  commentId: M:MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,MuseDashMirror.Contracts.IPositionStrategy)
+  name.vb: New(Vector3, IPositionStrategy)
+  fullName: MuseDashMirror.Models.TransformParameters.TransformParameters(UnityEngine.Vector3, MuseDashMirror.Contracts.IPositionStrategy)
+  fullName.vb: MuseDashMirror.Models.TransformParameters.New(UnityEngine.Vector3, MuseDashMirror.Contracts.IPositionStrategy)
+  nameWithType: TransformParameters.TransformParameters(Vector3, IPositionStrategy)
+  nameWithType.vb: TransformParameters.New(Vector3, IPositionStrategy)
+- uid: MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,System.Boolean)
+  name: TransformParameters(Vector3, bool)
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters__ctor_UnityEngine_Vector3_System_Boolean_
+  commentId: M:MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,System.Boolean)
+  name.vb: New(Vector3, Boolean)
+  fullName: MuseDashMirror.Models.TransformParameters.TransformParameters(UnityEngine.Vector3, bool)
+  fullName.vb: MuseDashMirror.Models.TransformParameters.New(UnityEngine.Vector3, Boolean)
+  nameWithType: TransformParameters.TransformParameters(Vector3, bool)
+  nameWithType.vb: TransformParameters.New(Vector3, Boolean)
+- uid: MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,System.Boolean,MuseDashMirror.Contracts.IPositionStrategy)
+  name: TransformParameters(Vector3, bool, IPositionStrategy)
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters__ctor_UnityEngine_Vector3_System_Boolean_MuseDashMirror_Contracts_IPositionStrategy_
+  commentId: M:MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,System.Boolean,MuseDashMirror.Contracts.IPositionStrategy)
+  name.vb: New(Vector3, Boolean, IPositionStrategy)
+  fullName: MuseDashMirror.Models.TransformParameters.TransformParameters(UnityEngine.Vector3, bool, MuseDashMirror.Contracts.IPositionStrategy)
+  fullName.vb: MuseDashMirror.Models.TransformParameters.New(UnityEngine.Vector3, Boolean, MuseDashMirror.Contracts.IPositionStrategy)
+  nameWithType: TransformParameters.TransformParameters(Vector3, bool, IPositionStrategy)
+  nameWithType.vb: TransformParameters.New(Vector3, Boolean, IPositionStrategy)
+- uid: MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,System.Boolean,UnityEngine.Vector2)
+  name: TransformParameters(Vector3, bool, Vector2)
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters__ctor_UnityEngine_Vector3_System_Boolean_UnityEngine_Vector2_
+  commentId: M:MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,System.Boolean,UnityEngine.Vector2)
+  name.vb: New(Vector3, Boolean, Vector2)
+  fullName: MuseDashMirror.Models.TransformParameters.TransformParameters(UnityEngine.Vector3, bool, UnityEngine.Vector2)
+  fullName.vb: MuseDashMirror.Models.TransformParameters.New(UnityEngine.Vector3, Boolean, UnityEngine.Vector2)
+  nameWithType: TransformParameters.TransformParameters(Vector3, bool, Vector2)
+  nameWithType.vb: TransformParameters.New(Vector3, Boolean, Vector2)
+- uid: MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,UnityEngine.Vector2)
+  name: TransformParameters(Vector3, Vector2)
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters__ctor_UnityEngine_Vector3_UnityEngine_Vector2_
+  commentId: M:MuseDashMirror.Models.TransformParameters.#ctor(UnityEngine.Vector3,UnityEngine.Vector2)
+  name.vb: New(Vector3, Vector2)
+  fullName: MuseDashMirror.Models.TransformParameters.TransformParameters(UnityEngine.Vector3, UnityEngine.Vector2)
+  fullName.vb: MuseDashMirror.Models.TransformParameters.New(UnityEngine.Vector3, UnityEngine.Vector2)
+  nameWithType: TransformParameters.TransformParameters(Vector3, Vector2)
+  nameWithType.vb: TransformParameters.New(Vector3, Vector2)
+- uid: MuseDashMirror.Models.TransformParameters.#ctor*
+  name: TransformParameters
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters__ctor_
+  commentId: Overload:MuseDashMirror.Models.TransformParameters.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MuseDashMirror.Models.TransformParameters.TransformParameters
+  fullName.vb: MuseDashMirror.Models.TransformParameters.New
+  nameWithType: TransformParameters.TransformParameters
+  nameWithType.vb: TransformParameters.New
+- uid: MuseDashMirror.Models.TransformParameters.IsAutoSize
+  name: IsAutoSize
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_IsAutoSize
+  commentId: P:MuseDashMirror.Models.TransformParameters.IsAutoSize
+  fullName: MuseDashMirror.Models.TransformParameters.IsAutoSize
+  nameWithType: TransformParameters.IsAutoSize
+- uid: MuseDashMirror.Models.TransformParameters.IsAutoSize*
+  name: IsAutoSize
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_IsAutoSize_
+  commentId: Overload:MuseDashMirror.Models.TransformParameters.IsAutoSize
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.TransformParameters.IsAutoSize
+  nameWithType: TransformParameters.IsAutoSize
+- uid: MuseDashMirror.Models.TransformParameters.IsLocalPosition
+  name: IsLocalPosition
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_IsLocalPosition
+  commentId: P:MuseDashMirror.Models.TransformParameters.IsLocalPosition
+  fullName: MuseDashMirror.Models.TransformParameters.IsLocalPosition
+  nameWithType: TransformParameters.IsLocalPosition
+- uid: MuseDashMirror.Models.TransformParameters.IsLocalPosition*
+  name: IsLocalPosition
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_IsLocalPosition_
+  commentId: Overload:MuseDashMirror.Models.TransformParameters.IsLocalPosition
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.TransformParameters.IsLocalPosition
+  nameWithType: TransformParameters.IsLocalPosition
+- uid: MuseDashMirror.Models.TransformParameters.LocalScale
+  name: LocalScale
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_LocalScale
+  commentId: P:MuseDashMirror.Models.TransformParameters.LocalScale
+  fullName: MuseDashMirror.Models.TransformParameters.LocalScale
+  nameWithType: TransformParameters.LocalScale
+- uid: MuseDashMirror.Models.TransformParameters.LocalScale*
+  name: LocalScale
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_LocalScale_
+  commentId: Overload:MuseDashMirror.Models.TransformParameters.LocalScale
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.TransformParameters.LocalScale
+  nameWithType: TransformParameters.LocalScale
+- uid: MuseDashMirror.Models.TransformParameters.Position
+  name: Position
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_Position
+  commentId: P:MuseDashMirror.Models.TransformParameters.Position
+  fullName: MuseDashMirror.Models.TransformParameters.Position
+  nameWithType: TransformParameters.Position
+- uid: MuseDashMirror.Models.TransformParameters.Position*
+  name: Position
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_Position_
+  commentId: Overload:MuseDashMirror.Models.TransformParameters.Position
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.TransformParameters.Position
+  nameWithType: TransformParameters.Position
+- uid: MuseDashMirror.Models.TransformParameters.PositionStrategy
+  name: PositionStrategy
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_PositionStrategy
+  commentId: P:MuseDashMirror.Models.TransformParameters.PositionStrategy
+  fullName: MuseDashMirror.Models.TransformParameters.PositionStrategy
+  nameWithType: TransformParameters.PositionStrategy
+- uid: MuseDashMirror.Models.TransformParameters.PositionStrategy*
+  name: PositionStrategy
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_PositionStrategy_
+  commentId: Overload:MuseDashMirror.Models.TransformParameters.PositionStrategy
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.TransformParameters.PositionStrategy
+  nameWithType: TransformParameters.PositionStrategy
+- uid: MuseDashMirror.Models.TransformParameters.SizeDelta
+  name: SizeDelta
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_SizeDelta
+  commentId: P:MuseDashMirror.Models.TransformParameters.SizeDelta
+  fullName: MuseDashMirror.Models.TransformParameters.SizeDelta
+  nameWithType: TransformParameters.SizeDelta
+- uid: MuseDashMirror.Models.TransformParameters.SizeDelta*
+  name: SizeDelta
+  href: api/MuseDashMirror.Models.TransformParameters.html#MuseDashMirror_Models_TransformParameters_SizeDelta_
+  commentId: Overload:MuseDashMirror.Models.TransformParameters.SizeDelta
+  isSpec: "True"
+  fullName: MuseDashMirror.Models.TransformParameters.SizeDelta
+  nameWithType: TransformParameters.SizeDelta
+- uid: MuseDashMirror.PatchEvents
+  name: PatchEvents
+  href: api/MuseDashMirror.PatchEvents.html
+  commentId: T:MuseDashMirror.PatchEvents
+  fullName: MuseDashMirror.PatchEvents
+  nameWithType: PatchEvents
+- uid: MuseDashMirror.PatchEvents.AddScorePatch
+  name: AddScorePatch
+  href: api/MuseDashMirror.PatchEvents.html#MuseDashMirror_PatchEvents_AddScorePatch
+  commentId: E:MuseDashMirror.PatchEvents.AddScorePatch
+  fullName: MuseDashMirror.PatchEvents.AddScorePatch
+  nameWithType: PatchEvents.AddScorePatch
+- uid: MuseDashMirror.PatchEvents.GameStartPatch
+  name: GameStartPatch
+  href: api/MuseDashMirror.PatchEvents.html#MuseDashMirror_PatchEvents_GameStartPatch
+  commentId: E:MuseDashMirror.PatchEvents.GameStartPatch
+  fullName: MuseDashMirror.PatchEvents.GameStartPatch
+  nameWithType: PatchEvents.GameStartPatch
+- uid: MuseDashMirror.PatchEvents.MenuSelectPatch
+  name: MenuSelectPatch
+  href: api/MuseDashMirror.PatchEvents.html#MuseDashMirror_PatchEvents_MenuSelectPatch
+  commentId: E:MuseDashMirror.PatchEvents.MenuSelectPatch
+  fullName: MuseDashMirror.PatchEvents.MenuSelectPatch
+  nameWithType: PatchEvents.MenuSelectPatch
+- uid: MuseDashMirror.PatchEvents.PnlMenuPatch
+  name: PnlMenuPatch
+  href: api/MuseDashMirror.PatchEvents.html#MuseDashMirror_PatchEvents_PnlMenuPatch
+  commentId: E:MuseDashMirror.PatchEvents.PnlMenuPatch
+  fullName: MuseDashMirror.PatchEvents.PnlMenuPatch
+  nameWithType: PatchEvents.PnlMenuPatch
+- uid: MuseDashMirror.PatchEvents.PnlStagePatch
+  name: PnlStagePatch
+  href: api/MuseDashMirror.PatchEvents.html#MuseDashMirror_PatchEvents_PnlStagePatch
+  commentId: E:MuseDashMirror.PatchEvents.PnlStagePatch
+  fullName: MuseDashMirror.PatchEvents.PnlStagePatch
+  nameWithType: PatchEvents.PnlStagePatch
+- uid: MuseDashMirror.PatchEvents.PnlVictoryPatch
+  name: PnlVictoryPatch
+  href: api/MuseDashMirror.PatchEvents.html#MuseDashMirror_PatchEvents_PnlVictoryPatch
+  commentId: E:MuseDashMirror.PatchEvents.PnlVictoryPatch
+  fullName: MuseDashMirror.PatchEvents.PnlVictoryPatch
+  nameWithType: PatchEvents.PnlVictoryPatch
+- uid: MuseDashMirror.PatchEvents.SwitchLanguagesPatch
+  name: SwitchLanguagesPatch
+  href: api/MuseDashMirror.PatchEvents.html#MuseDashMirror_PatchEvents_SwitchLanguagesPatch
+  commentId: E:MuseDashMirror.PatchEvents.SwitchLanguagesPatch
+  fullName: MuseDashMirror.PatchEvents.SwitchLanguagesPatch
+  nameWithType: PatchEvents.SwitchLanguagesPatch
+- uid: MuseDashMirror.PlayerData
+  name: PlayerData
+  href: api/MuseDashMirror.PlayerData.html
+  commentId: T:MuseDashMirror.PlayerData
+  fullName: MuseDashMirror.PlayerData
+  nameWithType: PlayerData
+- uid: MuseDashMirror.PlayerData.Collections
+  name: Collections
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_Collections
+  commentId: P:MuseDashMirror.PlayerData.Collections
+  fullName: MuseDashMirror.PlayerData.Collections
+  nameWithType: PlayerData.Collections
+- uid: MuseDashMirror.PlayerData.Collections*
+  name: Collections
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_Collections_
+  commentId: Overload:MuseDashMirror.PlayerData.Collections
+  isSpec: "True"
+  fullName: MuseDashMirror.PlayerData.Collections
+  nameWithType: PlayerData.Collections
+- uid: MuseDashMirror.PlayerData.GetSelectedCharacterName(System.Boolean)
+  name: GetSelectedCharacterName(bool)
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_GetSelectedCharacterName_System_Boolean_
+  commentId: M:MuseDashMirror.PlayerData.GetSelectedCharacterName(System.Boolean)
+  name.vb: GetSelectedCharacterName(Boolean)
+  fullName: MuseDashMirror.PlayerData.GetSelectedCharacterName(bool)
+  fullName.vb: MuseDashMirror.PlayerData.GetSelectedCharacterName(Boolean)
+  nameWithType: PlayerData.GetSelectedCharacterName(bool)
+  nameWithType.vb: PlayerData.GetSelectedCharacterName(Boolean)
+- uid: MuseDashMirror.PlayerData.GetSelectedCharacterName*
+  name: GetSelectedCharacterName
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_GetSelectedCharacterName_
+  commentId: Overload:MuseDashMirror.PlayerData.GetSelectedCharacterName
+  isSpec: "True"
+  fullName: MuseDashMirror.PlayerData.GetSelectedCharacterName
+  nameWithType: PlayerData.GetSelectedCharacterName
+- uid: MuseDashMirror.PlayerData.GetSelectedElfinName(System.Boolean)
+  name: GetSelectedElfinName(bool)
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_GetSelectedElfinName_System_Boolean_
+  commentId: M:MuseDashMirror.PlayerData.GetSelectedElfinName(System.Boolean)
+  name.vb: GetSelectedElfinName(Boolean)
+  fullName: MuseDashMirror.PlayerData.GetSelectedElfinName(bool)
+  fullName.vb: MuseDashMirror.PlayerData.GetSelectedElfinName(Boolean)
+  nameWithType: PlayerData.GetSelectedElfinName(bool)
+  nameWithType.vb: PlayerData.GetSelectedElfinName(Boolean)
+- uid: MuseDashMirror.PlayerData.GetSelectedElfinName*
+  name: GetSelectedElfinName
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_GetSelectedElfinName_
+  commentId: Overload:MuseDashMirror.PlayerData.GetSelectedElfinName
+  isSpec: "True"
+  fullName: MuseDashMirror.PlayerData.GetSelectedElfinName
+  nameWithType: PlayerData.GetSelectedElfinName
+- uid: MuseDashMirror.PlayerData.Hides
+  name: Hides
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_Hides
+  commentId: P:MuseDashMirror.PlayerData.Hides
+  fullName: MuseDashMirror.PlayerData.Hides
+  nameWithType: PlayerData.Hides
+- uid: MuseDashMirror.PlayerData.Hides*
+  name: Hides
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_Hides_
+  commentId: Overload:MuseDashMirror.PlayerData.Hides
+  isSpec: "True"
+  fullName: MuseDashMirror.PlayerData.Hides
+  nameWithType: PlayerData.Hides
+- uid: MuseDashMirror.PlayerData.History
+  name: History
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_History
+  commentId: P:MuseDashMirror.PlayerData.History
+  fullName: MuseDashMirror.PlayerData.History
+  nameWithType: PlayerData.History
+- uid: MuseDashMirror.PlayerData.History*
+  name: History
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_History_
+  commentId: Overload:MuseDashMirror.PlayerData.History
+  isSpec: "True"
+  fullName: MuseDashMirror.PlayerData.History
+  nameWithType: PlayerData.History
+- uid: MuseDashMirror.PlayerData.IsAutoFever
+  name: IsAutoFever
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_IsAutoFever
+  commentId: P:MuseDashMirror.PlayerData.IsAutoFever
+  fullName: MuseDashMirror.PlayerData.IsAutoFever
+  nameWithType: PlayerData.IsAutoFever
+- uid: MuseDashMirror.PlayerData.IsAutoFever*
+  name: IsAutoFever
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_IsAutoFever_
+  commentId: Overload:MuseDashMirror.PlayerData.IsAutoFever
+  isSpec: "True"
+  fullName: MuseDashMirror.PlayerData.IsAutoFever
+  nameWithType: PlayerData.IsAutoFever
+- uid: MuseDashMirror.PlayerData.Offset
+  name: Offset
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_Offset
+  commentId: P:MuseDashMirror.PlayerData.Offset
+  fullName: MuseDashMirror.PlayerData.Offset
+  nameWithType: PlayerData.Offset
+- uid: MuseDashMirror.PlayerData.Offset*
+  name: Offset
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_Offset_
+  commentId: Overload:MuseDashMirror.PlayerData.Offset
+  isSpec: "True"
+  fullName: MuseDashMirror.PlayerData.Offset
+  nameWithType: PlayerData.Offset
+- uid: MuseDashMirror.PlayerData.PlayerLevel
+  name: PlayerLevel
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_PlayerLevel
+  commentId: P:MuseDashMirror.PlayerData.PlayerLevel
+  fullName: MuseDashMirror.PlayerData.PlayerLevel
+  nameWithType: PlayerData.PlayerLevel
+- uid: MuseDashMirror.PlayerData.PlayerLevel*
+  name: PlayerLevel
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_PlayerLevel_
+  commentId: Overload:MuseDashMirror.PlayerData.PlayerLevel
+  isSpec: "True"
+  fullName: MuseDashMirror.PlayerData.PlayerLevel
+  nameWithType: PlayerData.PlayerLevel
+- uid: MuseDashMirror.PlayerData.PlayerName
+  name: PlayerName
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_PlayerName
+  commentId: P:MuseDashMirror.PlayerData.PlayerName
+  fullName: MuseDashMirror.PlayerData.PlayerName
+  nameWithType: PlayerData.PlayerName
+- uid: MuseDashMirror.PlayerData.PlayerName*
+  name: PlayerName
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_PlayerName_
+  commentId: Overload:MuseDashMirror.PlayerData.PlayerName
+  isSpec: "True"
+  fullName: MuseDashMirror.PlayerData.PlayerName
+  nameWithType: PlayerData.PlayerName
+- uid: MuseDashMirror.PlayerData.SelectedCharacterIndex
+  name: SelectedCharacterIndex
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_SelectedCharacterIndex
+  commentId: P:MuseDashMirror.PlayerData.SelectedCharacterIndex
+  fullName: MuseDashMirror.PlayerData.SelectedCharacterIndex
+  nameWithType: PlayerData.SelectedCharacterIndex
+- uid: MuseDashMirror.PlayerData.SelectedCharacterIndex*
+  name: SelectedCharacterIndex
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_SelectedCharacterIndex_
+  commentId: Overload:MuseDashMirror.PlayerData.SelectedCharacterIndex
+  isSpec: "True"
+  fullName: MuseDashMirror.PlayerData.SelectedCharacterIndex
+  nameWithType: PlayerData.SelectedCharacterIndex
+- uid: MuseDashMirror.PlayerData.SelectedElfinIndex
+  name: SelectedElfinIndex
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_SelectedElfinIndex
+  commentId: P:MuseDashMirror.PlayerData.SelectedElfinIndex
+  fullName: MuseDashMirror.PlayerData.SelectedElfinIndex
+  nameWithType: PlayerData.SelectedElfinIndex
+- uid: MuseDashMirror.PlayerData.SelectedElfinIndex*
+  name: SelectedElfinIndex
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_SelectedElfinIndex_
+  commentId: Overload:MuseDashMirror.PlayerData.SelectedElfinIndex
+  isSpec: "True"
+  fullName: MuseDashMirror.PlayerData.SelectedElfinIndex
+  nameWithType: PlayerData.SelectedElfinIndex
+- uid: MuseDashMirror.PlayerData.SetAutoFever(System.Boolean)
+  name: SetAutoFever(bool)
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_SetAutoFever_System_Boolean_
+  commentId: M:MuseDashMirror.PlayerData.SetAutoFever(System.Boolean)
+  name.vb: SetAutoFever(Boolean)
+  fullName: MuseDashMirror.PlayerData.SetAutoFever(bool)
+  fullName.vb: MuseDashMirror.PlayerData.SetAutoFever(Boolean)
+  nameWithType: PlayerData.SetAutoFever(bool)
+  nameWithType.vb: PlayerData.SetAutoFever(Boolean)
+- uid: MuseDashMirror.PlayerData.SetAutoFever*
+  name: SetAutoFever
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_SetAutoFever_
+  commentId: Overload:MuseDashMirror.PlayerData.SetAutoFever
+  isSpec: "True"
+  fullName: MuseDashMirror.PlayerData.SetAutoFever
+  nameWithType: PlayerData.SetAutoFever
+- uid: MuseDashMirror.PlayerData.SetCharacter(System.Int32)
+  name: SetCharacter(int)
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_SetCharacter_System_Int32_
+  commentId: M:MuseDashMirror.PlayerData.SetCharacter(System.Int32)
+  name.vb: SetCharacter(Integer)
+  fullName: MuseDashMirror.PlayerData.SetCharacter(int)
+  fullName.vb: MuseDashMirror.PlayerData.SetCharacter(Integer)
+  nameWithType: PlayerData.SetCharacter(int)
+  nameWithType.vb: PlayerData.SetCharacter(Integer)
+- uid: MuseDashMirror.PlayerData.SetCharacter*
+  name: SetCharacter
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_SetCharacter_
+  commentId: Overload:MuseDashMirror.PlayerData.SetCharacter
+  isSpec: "True"
+  fullName: MuseDashMirror.PlayerData.SetCharacter
+  nameWithType: PlayerData.SetCharacter
+- uid: MuseDashMirror.PlayerData.SetElfin(System.Int32)
+  name: SetElfin(int)
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_SetElfin_System_Int32_
+  commentId: M:MuseDashMirror.PlayerData.SetElfin(System.Int32)
+  name.vb: SetElfin(Integer)
+  fullName: MuseDashMirror.PlayerData.SetElfin(int)
+  fullName.vb: MuseDashMirror.PlayerData.SetElfin(Integer)
+  nameWithType: PlayerData.SetElfin(int)
+  nameWithType.vb: PlayerData.SetElfin(Integer)
+- uid: MuseDashMirror.PlayerData.SetElfin*
+  name: SetElfin
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_SetElfin_
+  commentId: Overload:MuseDashMirror.PlayerData.SetElfin
+  isSpec: "True"
+  fullName: MuseDashMirror.PlayerData.SetElfin
+  nameWithType: PlayerData.SetElfin
+- uid: MuseDashMirror.PlayerData.SetOffset(System.Int32)
+  name: SetOffset(int)
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_SetOffset_System_Int32_
+  commentId: M:MuseDashMirror.PlayerData.SetOffset(System.Int32)
+  name.vb: SetOffset(Integer)
+  fullName: MuseDashMirror.PlayerData.SetOffset(int)
+  fullName.vb: MuseDashMirror.PlayerData.SetOffset(Integer)
+  nameWithType: PlayerData.SetOffset(int)
+  nameWithType.vb: PlayerData.SetOffset(Integer)
+- uid: MuseDashMirror.PlayerData.SetOffset*
+  name: SetOffset
+  href: api/MuseDashMirror.PlayerData.html#MuseDashMirror_PlayerData_SetOffset_
+  commentId: Overload:MuseDashMirror.PlayerData.SetOffset
+  isSpec: "True"
+  fullName: MuseDashMirror.PlayerData.SetOffset
+  nameWithType: PlayerData.SetOffset
+- uid: MuseDashMirror.SceneInfo
+  name: SceneInfo
+  href: api/MuseDashMirror.SceneInfo.html
+  commentId: T:MuseDashMirror.SceneInfo
+  fullName: MuseDashMirror.SceneInfo
+  nameWithType: SceneInfo
+- uid: MuseDashMirror.SceneInfo.IsGameScene
+  name: IsGameScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_IsGameScene
+  commentId: P:MuseDashMirror.SceneInfo.IsGameScene
+  fullName: MuseDashMirror.SceneInfo.IsGameScene
+  nameWithType: SceneInfo.IsGameScene
+- uid: MuseDashMirror.SceneInfo.IsGameScene*
+  name: IsGameScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_IsGameScene_
+  commentId: Overload:MuseDashMirror.SceneInfo.IsGameScene
+  isSpec: "True"
+  fullName: MuseDashMirror.SceneInfo.IsGameScene
+  nameWithType: SceneInfo.IsGameScene
+- uid: MuseDashMirror.SceneInfo.IsLoadingScene
+  name: IsLoadingScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_IsLoadingScene
+  commentId: P:MuseDashMirror.SceneInfo.IsLoadingScene
+  fullName: MuseDashMirror.SceneInfo.IsLoadingScene
+  nameWithType: SceneInfo.IsLoadingScene
+- uid: MuseDashMirror.SceneInfo.IsLoadingScene*
+  name: IsLoadingScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_IsLoadingScene_
+  commentId: Overload:MuseDashMirror.SceneInfo.IsLoadingScene
+  isSpec: "True"
+  fullName: MuseDashMirror.SceneInfo.IsLoadingScene
+  nameWithType: SceneInfo.IsLoadingScene
+- uid: MuseDashMirror.SceneInfo.IsMainScene
+  name: IsMainScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_IsMainScene
+  commentId: P:MuseDashMirror.SceneInfo.IsMainScene
+  fullName: MuseDashMirror.SceneInfo.IsMainScene
+  nameWithType: SceneInfo.IsMainScene
+- uid: MuseDashMirror.SceneInfo.IsMainScene*
+  name: IsMainScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_IsMainScene_
+  commentId: Overload:MuseDashMirror.SceneInfo.IsMainScene
+  isSpec: "True"
+  fullName: MuseDashMirror.SceneInfo.IsMainScene
+  nameWithType: SceneInfo.IsMainScene
+- uid: MuseDashMirror.SceneInfo.IsWelcomeScene
+  name: IsWelcomeScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_IsWelcomeScene
+  commentId: P:MuseDashMirror.SceneInfo.IsWelcomeScene
+  fullName: MuseDashMirror.SceneInfo.IsWelcomeScene
+  nameWithType: SceneInfo.IsWelcomeScene
+- uid: MuseDashMirror.SceneInfo.IsWelcomeScene*
+  name: IsWelcomeScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_IsWelcomeScene_
+  commentId: Overload:MuseDashMirror.SceneInfo.IsWelcomeScene
+  isSpec: "True"
+  fullName: MuseDashMirror.SceneInfo.IsWelcomeScene
+  nameWithType: SceneInfo.IsWelcomeScene
+- uid: MuseDashMirror.SceneInfo.OnEnterGameScene
+  name: OnEnterGameScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_OnEnterGameScene
+  commentId: E:MuseDashMirror.SceneInfo.OnEnterGameScene
+  fullName: MuseDashMirror.SceneInfo.OnEnterGameScene
+  nameWithType: SceneInfo.OnEnterGameScene
+- uid: MuseDashMirror.SceneInfo.OnEnterLoadingScene
+  name: OnEnterLoadingScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_OnEnterLoadingScene
+  commentId: E:MuseDashMirror.SceneInfo.OnEnterLoadingScene
+  fullName: MuseDashMirror.SceneInfo.OnEnterLoadingScene
+  nameWithType: SceneInfo.OnEnterLoadingScene
+- uid: MuseDashMirror.SceneInfo.OnEnterMainScene
+  name: OnEnterMainScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_OnEnterMainScene
+  commentId: E:MuseDashMirror.SceneInfo.OnEnterMainScene
+  fullName: MuseDashMirror.SceneInfo.OnEnterMainScene
+  nameWithType: SceneInfo.OnEnterMainScene
+- uid: MuseDashMirror.SceneInfo.OnEnterScene
+  name: OnEnterScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_OnEnterScene
+  commentId: E:MuseDashMirror.SceneInfo.OnEnterScene
+  fullName: MuseDashMirror.SceneInfo.OnEnterScene
+  nameWithType: SceneInfo.OnEnterScene
+- uid: MuseDashMirror.SceneInfo.OnEnterWelcomeScene
+  name: OnEnterWelcomeScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_OnEnterWelcomeScene
+  commentId: E:MuseDashMirror.SceneInfo.OnEnterWelcomeScene
+  fullName: MuseDashMirror.SceneInfo.OnEnterWelcomeScene
+  nameWithType: SceneInfo.OnEnterWelcomeScene
+- uid: MuseDashMirror.SceneInfo.OnExitGameScene
+  name: OnExitGameScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_OnExitGameScene
+  commentId: E:MuseDashMirror.SceneInfo.OnExitGameScene
+  fullName: MuseDashMirror.SceneInfo.OnExitGameScene
+  nameWithType: SceneInfo.OnExitGameScene
+- uid: MuseDashMirror.SceneInfo.OnExitLoadingScene
+  name: OnExitLoadingScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_OnExitLoadingScene
+  commentId: E:MuseDashMirror.SceneInfo.OnExitLoadingScene
+  fullName: MuseDashMirror.SceneInfo.OnExitLoadingScene
+  nameWithType: SceneInfo.OnExitLoadingScene
+- uid: MuseDashMirror.SceneInfo.OnExitMainScene
+  name: OnExitMainScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_OnExitMainScene
+  commentId: E:MuseDashMirror.SceneInfo.OnExitMainScene
+  fullName: MuseDashMirror.SceneInfo.OnExitMainScene
+  nameWithType: SceneInfo.OnExitMainScene
+- uid: MuseDashMirror.SceneInfo.OnExitScene
+  name: OnExitScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_OnExitScene
+  commentId: E:MuseDashMirror.SceneInfo.OnExitScene
+  fullName: MuseDashMirror.SceneInfo.OnExitScene
+  nameWithType: SceneInfo.OnExitScene
+- uid: MuseDashMirror.SceneInfo.OnExitWelcomeScene
+  name: OnExitWelcomeScene
+  href: api/MuseDashMirror.SceneInfo.html#MuseDashMirror_SceneInfo_OnExitWelcomeScene
+  commentId: E:MuseDashMirror.SceneInfo.OnExitWelcomeScene
+  fullName: MuseDashMirror.SceneInfo.OnExitWelcomeScene
+  nameWithType: SceneInfo.OnExitWelcomeScene
+- uid: MuseDashMirror.Shared
+  name: MuseDashMirror.Shared
+  href: api/MuseDashMirror.Shared.html
+  commentId: N:MuseDashMirror.Shared
+  fullName: MuseDashMirror.Shared
+  nameWithType: MuseDashMirror.Shared
+- uid: MuseDashMirror.Shared.LoggerType
+  name: LoggerType
+  href: api/MuseDashMirror.Shared.LoggerType.html
+  commentId: T:MuseDashMirror.Shared.LoggerType
+  fullName: MuseDashMirror.Shared.LoggerType
+  nameWithType: LoggerType
+- uid: MuseDashMirror.Shared.LoggerType.Readonly
+  name: Readonly
+  href: api/MuseDashMirror.Shared.LoggerType.html#MuseDashMirror_Shared_LoggerType_Readonly
+  commentId: F:MuseDashMirror.Shared.LoggerType.Readonly
+  fullName: MuseDashMirror.Shared.LoggerType.Readonly
+  nameWithType: LoggerType.Readonly
+- uid: MuseDashMirror.Shared.LoggerType.StaticReadonly
+  name: StaticReadonly
+  href: api/MuseDashMirror.Shared.LoggerType.html#MuseDashMirror_Shared_LoggerType_StaticReadonly
+  commentId: F:MuseDashMirror.Shared.LoggerType.StaticReadonly
+  fullName: MuseDashMirror.Shared.LoggerType.StaticReadonly
+  nameWithType: LoggerType.StaticReadonly
+- uid: MuseDashMirror.UIComponents
+  name: MuseDashMirror.UIComponents
+  href: api/MuseDashMirror.UIComponents.html
+  commentId: N:MuseDashMirror.UIComponents
+  fullName: MuseDashMirror.UIComponents
+  nameWithType: MuseDashMirror.UIComponents
+- uid: MuseDashMirror.UIComponents.CanvasUtils
+  name: CanvasUtils
+  href: api/MuseDashMirror.UIComponents.CanvasUtils.html
+  commentId: T:MuseDashMirror.UIComponents.CanvasUtils
+  fullName: MuseDashMirror.UIComponents.CanvasUtils
+  nameWithType: CanvasUtils
+- uid: MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas(System.String,MuseDashMirror.Models.CameraDimension)
+  name: CreateCameraCanvas(string, CameraDimension)
+  href: api/MuseDashMirror.UIComponents.CanvasUtils.html#MuseDashMirror_UIComponents_CanvasUtils_CreateCameraCanvas_System_String_MuseDashMirror_Models_CameraDimension_
+  commentId: M:MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas(System.String,MuseDashMirror.Models.CameraDimension)
+  name.vb: CreateCameraCanvas(String, CameraDimension)
+  fullName: MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas(string, MuseDashMirror.Models.CameraDimension)
+  fullName.vb: MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas(String, MuseDashMirror.Models.CameraDimension)
+  nameWithType: CanvasUtils.CreateCameraCanvas(string, CameraDimension)
+  nameWithType.vb: CanvasUtils.CreateCameraCanvas(String, CameraDimension)
+- uid: MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas(System.String,MuseDashMirror.Models.CameraDimension,UnityEngine.GameObject)
+  name: CreateCameraCanvas(string, CameraDimension, GameObject)
+  href: api/MuseDashMirror.UIComponents.CanvasUtils.html#MuseDashMirror_UIComponents_CanvasUtils_CreateCameraCanvas_System_String_MuseDashMirror_Models_CameraDimension_UnityEngine_GameObject_
+  commentId: M:MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas(System.String,MuseDashMirror.Models.CameraDimension,UnityEngine.GameObject)
+  name.vb: CreateCameraCanvas(String, CameraDimension, GameObject)
+  fullName: MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas(string, MuseDashMirror.Models.CameraDimension, UnityEngine.GameObject)
+  fullName.vb: MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas(String, MuseDashMirror.Models.CameraDimension, UnityEngine.GameObject)
+  nameWithType: CanvasUtils.CreateCameraCanvas(string, CameraDimension, GameObject)
+  nameWithType.vb: CanvasUtils.CreateCameraCanvas(String, CameraDimension, GameObject)
+- uid: MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas(System.String,System.String)
+  name: CreateCameraCanvas(string, string)
+  href: api/MuseDashMirror.UIComponents.CanvasUtils.html#MuseDashMirror_UIComponents_CanvasUtils_CreateCameraCanvas_System_String_System_String_
+  commentId: M:MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas(System.String,System.String)
+  name.vb: CreateCameraCanvas(String, String)
+  fullName: MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas(string, string)
+  fullName.vb: MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas(String, String)
+  nameWithType: CanvasUtils.CreateCameraCanvas(string, string)
+  nameWithType.vb: CanvasUtils.CreateCameraCanvas(String, String)
+- uid: MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas(System.String,System.String,UnityEngine.GameObject)
+  name: CreateCameraCanvas(string, string, GameObject)
+  href: api/MuseDashMirror.UIComponents.CanvasUtils.html#MuseDashMirror_UIComponents_CanvasUtils_CreateCameraCanvas_System_String_System_String_UnityEngine_GameObject_
+  commentId: M:MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas(System.String,System.String,UnityEngine.GameObject)
+  name.vb: CreateCameraCanvas(String, String, GameObject)
+  fullName: MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas(string, string, UnityEngine.GameObject)
+  fullName.vb: MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas(String, String, UnityEngine.GameObject)
+  nameWithType: CanvasUtils.CreateCameraCanvas(string, string, GameObject)
+  nameWithType.vb: CanvasUtils.CreateCameraCanvas(String, String, GameObject)
+- uid: MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas*
+  name: CreateCameraCanvas
+  href: api/MuseDashMirror.UIComponents.CanvasUtils.html#MuseDashMirror_UIComponents_CanvasUtils_CreateCameraCanvas_
+  commentId: Overload:MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas
+  isSpec: "True"
+  fullName: MuseDashMirror.UIComponents.CanvasUtils.CreateCameraCanvas
+  nameWithType: CanvasUtils.CreateCameraCanvas
+- uid: MuseDashMirror.UIComponents.CanvasUtils.CreateCanvas(System.String,UnityEngine.RenderMode,UnityEngine.Camera,UnityEngine.GameObject)
+  name: CreateCanvas(string, RenderMode, Camera, GameObject)
+  href: api/MuseDashMirror.UIComponents.CanvasUtils.html#MuseDashMirror_UIComponents_CanvasUtils_CreateCanvas_System_String_UnityEngine_RenderMode_UnityEngine_Camera_UnityEngine_GameObject_
+  commentId: M:MuseDashMirror.UIComponents.CanvasUtils.CreateCanvas(System.String,UnityEngine.RenderMode,UnityEngine.Camera,UnityEngine.GameObject)
+  name.vb: CreateCanvas(String, RenderMode, Camera, GameObject)
+  fullName: MuseDashMirror.UIComponents.CanvasUtils.CreateCanvas(string, UnityEngine.RenderMode, UnityEngine.Camera, UnityEngine.GameObject)
+  fullName.vb: MuseDashMirror.UIComponents.CanvasUtils.CreateCanvas(String, UnityEngine.RenderMode, UnityEngine.Camera, UnityEngine.GameObject)
+  nameWithType: CanvasUtils.CreateCanvas(string, RenderMode, Camera, GameObject)
+  nameWithType.vb: CanvasUtils.CreateCanvas(String, RenderMode, Camera, GameObject)
+- uid: MuseDashMirror.UIComponents.CanvasUtils.CreateCanvas*
+  name: CreateCanvas
+  href: api/MuseDashMirror.UIComponents.CanvasUtils.html#MuseDashMirror_UIComponents_CanvasUtils_CreateCanvas_
+  commentId: Overload:MuseDashMirror.UIComponents.CanvasUtils.CreateCanvas
+  isSpec: "True"
+  fullName: MuseDashMirror.UIComponents.CanvasUtils.CreateCanvas
+  nameWithType: CanvasUtils.CreateCanvas
+- uid: MuseDashMirror.UIComponents.CanvasUtils.CreateOverlayCanvas(System.String)
+  name: CreateOverlayCanvas(string)
+  href: api/MuseDashMirror.UIComponents.CanvasUtils.html#MuseDashMirror_UIComponents_CanvasUtils_CreateOverlayCanvas_System_String_
+  commentId: M:MuseDashMirror.UIComponents.CanvasUtils.CreateOverlayCanvas(System.String)
+  name.vb: CreateOverlayCanvas(String)
+  fullName: MuseDashMirror.UIComponents.CanvasUtils.CreateOverlayCanvas(string)
+  fullName.vb: MuseDashMirror.UIComponents.CanvasUtils.CreateOverlayCanvas(String)
+  nameWithType: CanvasUtils.CreateOverlayCanvas(string)
+  nameWithType.vb: CanvasUtils.CreateOverlayCanvas(String)
+- uid: MuseDashMirror.UIComponents.CanvasUtils.CreateOverlayCanvas*
+  name: CreateOverlayCanvas
+  href: api/MuseDashMirror.UIComponents.CanvasUtils.html#MuseDashMirror_UIComponents_CanvasUtils_CreateOverlayCanvas_
+  commentId: Overload:MuseDashMirror.UIComponents.CanvasUtils.CreateOverlayCanvas
+  isSpec: "True"
+  fullName: MuseDashMirror.UIComponents.CanvasUtils.CreateOverlayCanvas
+  nameWithType: CanvasUtils.CreateOverlayCanvas
+- uid: MuseDashMirror.UIComponents.CanvasUtils.GetCamera(MuseDashMirror.Models.CameraDimension)
+  name: GetCamera(CameraDimension)
+  href: api/MuseDashMirror.UIComponents.CanvasUtils.html#MuseDashMirror_UIComponents_CanvasUtils_GetCamera_MuseDashMirror_Models_CameraDimension_
+  commentId: M:MuseDashMirror.UIComponents.CanvasUtils.GetCamera(MuseDashMirror.Models.CameraDimension)
+  fullName: MuseDashMirror.UIComponents.CanvasUtils.GetCamera(MuseDashMirror.Models.CameraDimension)
+  nameWithType: CanvasUtils.GetCamera(CameraDimension)
+- uid: MuseDashMirror.UIComponents.CanvasUtils.GetCamera(System.String)
+  name: GetCamera(string)
+  href: api/MuseDashMirror.UIComponents.CanvasUtils.html#MuseDashMirror_UIComponents_CanvasUtils_GetCamera_System_String_
+  commentId: M:MuseDashMirror.UIComponents.CanvasUtils.GetCamera(System.String)
+  name.vb: GetCamera(String)
+  fullName: MuseDashMirror.UIComponents.CanvasUtils.GetCamera(string)
+  fullName.vb: MuseDashMirror.UIComponents.CanvasUtils.GetCamera(String)
+  nameWithType: CanvasUtils.GetCamera(string)
+  nameWithType.vb: CanvasUtils.GetCamera(String)
+- uid: MuseDashMirror.UIComponents.CanvasUtils.GetCamera*
+  name: GetCamera
+  href: api/MuseDashMirror.UIComponents.CanvasUtils.html#MuseDashMirror_UIComponents_CanvasUtils_GetCamera_
+  commentId: Overload:MuseDashMirror.UIComponents.CanvasUtils.GetCamera
+  isSpec: "True"
+  fullName: MuseDashMirror.UIComponents.CanvasUtils.GetCamera
+  nameWithType: CanvasUtils.GetCamera
+- uid: MuseDashMirror.UIComponents.Colors
+  name: Colors
+  href: api/MuseDashMirror.UIComponents.Colors.html
+  commentId: T:MuseDashMirror.UIComponents.Colors
+  fullName: MuseDashMirror.UIComponents.Colors
+  nameWithType: Colors
+- uid: MuseDashMirror.UIComponents.Colors.Blue
+  name: Blue
+  href: api/MuseDashMirror.UIComponents.Colors.html#MuseDashMirror_UIComponents_Colors_Blue
+  commentId: P:MuseDashMirror.UIComponents.Colors.Blue
+  fullName: MuseDashMirror.UIComponents.Colors.Blue
+  nameWithType: Colors.Blue
+- uid: MuseDashMirror.UIComponents.Colors.Blue*
+  name: Blue
+  href: api/MuseDashMirror.UIComponents.Colors.html#MuseDashMirror_UIComponents_Colors_Blue_
+  commentId: Overload:MuseDashMirror.UIComponents.Colors.Blue
+  isSpec: "True"
+  fullName: MuseDashMirror.UIComponents.Colors.Blue
+  nameWithType: Colors.Blue
+- uid: MuseDashMirror.UIComponents.Colors.Silver
+  name: Silver
+  href: api/MuseDashMirror.UIComponents.Colors.html#MuseDashMirror_UIComponents_Colors_Silver
+  commentId: P:MuseDashMirror.UIComponents.Colors.Silver
+  fullName: MuseDashMirror.UIComponents.Colors.Silver
+  nameWithType: Colors.Silver
+- uid: MuseDashMirror.UIComponents.Colors.Silver*
+  name: Silver
+  href: api/MuseDashMirror.UIComponents.Colors.html#MuseDashMirror_UIComponents_Colors_Silver_
+  commentId: Overload:MuseDashMirror.UIComponents.Colors.Silver
+  isSpec: "True"
+  fullName: MuseDashMirror.UIComponents.Colors.Silver
+  nameWithType: Colors.Silver
+- uid: MuseDashMirror.UIComponents.Colors.ToggleCheckMarkColor
+  name: ToggleCheckMarkColor
+  href: api/MuseDashMirror.UIComponents.Colors.html#MuseDashMirror_UIComponents_Colors_ToggleCheckMarkColor
+  commentId: P:MuseDashMirror.UIComponents.Colors.ToggleCheckMarkColor
+  fullName: MuseDashMirror.UIComponents.Colors.ToggleCheckMarkColor
+  nameWithType: Colors.ToggleCheckMarkColor
+- uid: MuseDashMirror.UIComponents.Colors.ToggleCheckMarkColor*
+  name: ToggleCheckMarkColor
+  href: api/MuseDashMirror.UIComponents.Colors.html#MuseDashMirror_UIComponents_Colors_ToggleCheckMarkColor_
+  commentId: Overload:MuseDashMirror.UIComponents.Colors.ToggleCheckMarkColor
+  isSpec: "True"
+  fullName: MuseDashMirror.UIComponents.Colors.ToggleCheckMarkColor
+  nameWithType: Colors.ToggleCheckMarkColor
+- uid: MuseDashMirror.UIComponents.Colors.ToggleTextColor
+  name: ToggleTextColor
+  href: api/MuseDashMirror.UIComponents.Colors.html#MuseDashMirror_UIComponents_Colors_ToggleTextColor
+  commentId: P:MuseDashMirror.UIComponents.Colors.ToggleTextColor
+  fullName: MuseDashMirror.UIComponents.Colors.ToggleTextColor
+  nameWithType: Colors.ToggleTextColor
+- uid: MuseDashMirror.UIComponents.Colors.ToggleTextColor*
+  name: ToggleTextColor
+  href: api/MuseDashMirror.UIComponents.Colors.html#MuseDashMirror_UIComponents_Colors_ToggleTextColor_
+  commentId: Overload:MuseDashMirror.UIComponents.Colors.ToggleTextColor
+  isSpec: "True"
+  fullName: MuseDashMirror.UIComponents.Colors.ToggleTextColor
+  nameWithType: Colors.ToggleTextColor
+- uid: MuseDashMirror.UIComponents.Fonts
+  name: Fonts
+  href: api/MuseDashMirror.UIComponents.Fonts.html
+  commentId: T:MuseDashMirror.UIComponents.Fonts
+  fullName: MuseDashMirror.UIComponents.Fonts
+  nameWithType: Fonts
+- uid: MuseDashMirror.UIComponents.Fonts.MiniSimpleSuperThickBlackFont
+  name: MiniSimpleSuperThickBlackFont
+  href: api/MuseDashMirror.UIComponents.Fonts.html#MuseDashMirror_UIComponents_Fonts_MiniSimpleSuperThickBlackFont
+  commentId: P:MuseDashMirror.UIComponents.Fonts.MiniSimpleSuperThickBlackFont
+  fullName: MuseDashMirror.UIComponents.Fonts.MiniSimpleSuperThickBlackFont
+  nameWithType: Fonts.MiniSimpleSuperThickBlackFont
+- uid: MuseDashMirror.UIComponents.Fonts.MiniSimpleSuperThickBlackFont*
+  name: MiniSimpleSuperThickBlackFont
+  href: api/MuseDashMirror.UIComponents.Fonts.html#MuseDashMirror_UIComponents_Fonts_MiniSimpleSuperThickBlackFont_
+  commentId: Overload:MuseDashMirror.UIComponents.Fonts.MiniSimpleSuperThickBlackFont
+  isSpec: "True"
+  fullName: MuseDashMirror.UIComponents.Fonts.MiniSimpleSuperThickBlackFont
+  nameWithType: Fonts.MiniSimpleSuperThickBlackFont
+- uid: MuseDashMirror.UIComponents.Fonts.NormalFont
+  name: NormalFont
+  href: api/MuseDashMirror.UIComponents.Fonts.html#MuseDashMirror_UIComponents_Fonts_NormalFont
+  commentId: P:MuseDashMirror.UIComponents.Fonts.NormalFont
+  fullName: MuseDashMirror.UIComponents.Fonts.NormalFont
+  nameWithType: Fonts.NormalFont
+- uid: MuseDashMirror.UIComponents.Fonts.NormalFont*
+  name: NormalFont
+  href: api/MuseDashMirror.UIComponents.Fonts.html#MuseDashMirror_UIComponents_Fonts_NormalFont_
+  commentId: Overload:MuseDashMirror.UIComponents.Fonts.NormalFont
+  isSpec: "True"
+  fullName: MuseDashMirror.UIComponents.Fonts.NormalFont
+  nameWithType: Fonts.NormalFont
+- uid: MuseDashMirror.UIComponents.Fonts.SnapsTasteFont
+  name: SnapsTasteFont
+  href: api/MuseDashMirror.UIComponents.Fonts.html#MuseDashMirror_UIComponents_Fonts_SnapsTasteFont
+  commentId: P:MuseDashMirror.UIComponents.Fonts.SnapsTasteFont
+  fullName: MuseDashMirror.UIComponents.Fonts.SnapsTasteFont
+  nameWithType: Fonts.SnapsTasteFont
+- uid: MuseDashMirror.UIComponents.Fonts.SnapsTasteFont*
+  name: SnapsTasteFont
+  href: api/MuseDashMirror.UIComponents.Fonts.html#MuseDashMirror_UIComponents_Fonts_SnapsTasteFont_
+  commentId: Overload:MuseDashMirror.UIComponents.Fonts.SnapsTasteFont
+  isSpec: "True"
+  fullName: MuseDashMirror.UIComponents.Fonts.SnapsTasteFont
+  nameWithType: Fonts.SnapsTasteFont
+- uid: MuseDashMirror.UIComponents.Fonts.SourceHanSansCnHeavyFont
+  name: SourceHanSansCnHeavyFont
+  href: api/MuseDashMirror.UIComponents.Fonts.html#MuseDashMirror_UIComponents_Fonts_SourceHanSansCnHeavyFont
+  commentId: P:MuseDashMirror.UIComponents.Fonts.SourceHanSansCnHeavyFont
+  fullName: MuseDashMirror.UIComponents.Fonts.SourceHanSansCnHeavyFont
+  nameWithType: Fonts.SourceHanSansCnHeavyFont
+- uid: MuseDashMirror.UIComponents.Fonts.SourceHanSansCnHeavyFont*
+  name: SourceHanSansCnHeavyFont
+  href: api/MuseDashMirror.UIComponents.Fonts.html#MuseDashMirror_UIComponents_Fonts_SourceHanSansCnHeavyFont_
+  commentId: Overload:MuseDashMirror.UIComponents.Fonts.SourceHanSansCnHeavyFont
+  isSpec: "True"
+  fullName: MuseDashMirror.UIComponents.Fonts.SourceHanSansCnHeavyFont
+  nameWithType: Fonts.SourceHanSansCnHeavyFont
+- uid: MuseDashMirror.UIComponents.TextGameObjectUtils
+  name: TextGameObjectUtils
+  href: api/MuseDashMirror.UIComponents.TextGameObjectUtils.html
+  commentId: T:MuseDashMirror.UIComponents.TextGameObjectUtils
+  fullName: MuseDashMirror.UIComponents.TextGameObjectUtils
+  nameWithType: TextGameObjectUtils
+- uid: MuseDashMirror.UIComponents.TextGameObjectUtils.CreateText(System.String,System.String,MuseDashMirror.Models.TextParameters,MuseDashMirror.Models.TransformParameters)
+  name: CreateText(string, string, TextParameters, TransformParameters)
+  href: api/MuseDashMirror.UIComponents.TextGameObjectUtils.html#MuseDashMirror_UIComponents_TextGameObjectUtils_CreateText_System_String_System_String_MuseDashMirror_Models_TextParameters_MuseDashMirror_Models_TransformParameters_
+  commentId: M:MuseDashMirror.UIComponents.TextGameObjectUtils.CreateText(System.String,System.String,MuseDashMirror.Models.TextParameters,MuseDashMirror.Models.TransformParameters)
+  name.vb: CreateText(String, String, TextParameters, TransformParameters)
+  fullName: MuseDashMirror.UIComponents.TextGameObjectUtils.CreateText(string, string, MuseDashMirror.Models.TextParameters, MuseDashMirror.Models.TransformParameters)
+  fullName.vb: MuseDashMirror.UIComponents.TextGameObjectUtils.CreateText(String, String, MuseDashMirror.Models.TextParameters, MuseDashMirror.Models.TransformParameters)
+  nameWithType: TextGameObjectUtils.CreateText(string, string, TextParameters, TransformParameters)
+  nameWithType.vb: TextGameObjectUtils.CreateText(String, String, TextParameters, TransformParameters)
+- uid: MuseDashMirror.UIComponents.TextGameObjectUtils.CreateText(System.String,UnityEngine.GameObject,MuseDashMirror.Models.TextParameters,MuseDashMirror.Models.TransformParameters)
+  name: CreateText(string, GameObject, TextParameters, TransformParameters)
+  href: api/MuseDashMirror.UIComponents.TextGameObjectUtils.html#MuseDashMirror_UIComponents_TextGameObjectUtils_CreateText_System_String_UnityEngine_GameObject_MuseDashMirror_Models_TextParameters_MuseDashMirror_Models_TransformParameters_
+  commentId: M:MuseDashMirror.UIComponents.TextGameObjectUtils.CreateText(System.String,UnityEngine.GameObject,MuseDashMirror.Models.TextParameters,MuseDashMirror.Models.TransformParameters)
+  name.vb: CreateText(String, GameObject, TextParameters, TransformParameters)
+  fullName: MuseDashMirror.UIComponents.TextGameObjectUtils.CreateText(string, UnityEngine.GameObject, MuseDashMirror.Models.TextParameters, MuseDashMirror.Models.TransformParameters)
+  fullName.vb: MuseDashMirror.UIComponents.TextGameObjectUtils.CreateText(String, UnityEngine.GameObject, MuseDashMirror.Models.TextParameters, MuseDashMirror.Models.TransformParameters)
+  nameWithType: TextGameObjectUtils.CreateText(string, GameObject, TextParameters, TransformParameters)
+  nameWithType.vb: TextGameObjectUtils.CreateText(String, GameObject, TextParameters, TransformParameters)
+- uid: MuseDashMirror.UIComponents.TextGameObjectUtils.CreateText*
+  name: CreateText
+  href: api/MuseDashMirror.UIComponents.TextGameObjectUtils.html#MuseDashMirror_UIComponents_TextGameObjectUtils_CreateText_
+  commentId: Overload:MuseDashMirror.UIComponents.TextGameObjectUtils.CreateText
+  isSpec: "True"
+  fullName: MuseDashMirror.UIComponents.TextGameObjectUtils.CreateText
+  nameWithType: TextGameObjectUtils.CreateText
+- uid: MuseDashMirror.UIComponents.ToggleUtils
+  name: ToggleUtils
+  href: api/MuseDashMirror.UIComponents.ToggleUtils.html
+  commentId: T:MuseDashMirror.UIComponents.ToggleUtils
+  fullName: MuseDashMirror.UIComponents.ToggleUtils
+  nameWithType: ToggleUtils
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(MuseDashMirror.Models.ToggleParameters)
+  name: CreatePnlMenuToggle(ToggleParameters)
+  href: api/MuseDashMirror.UIComponents.ToggleUtils.html#MuseDashMirror_UIComponents_ToggleUtils_CreatePnlMenuToggle_MuseDashMirror_Models_ToggleParameters_
+  commentId: M:MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(MuseDashMirror.Models.ToggleParameters)
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(MuseDashMirror.Models.ToggleParameters)
+  nameWithType: ToggleUtils.CreatePnlMenuToggle(ToggleParameters)
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(System.String,System.String,System.Boolean,System.Action{System.Boolean})
+  name: CreatePnlMenuToggle(string, string, bool, Action<bool>)
+  href: api/MuseDashMirror.UIComponents.ToggleUtils.html#MuseDashMirror_UIComponents_ToggleUtils_CreatePnlMenuToggle_System_String_System_String_System_Boolean_System_Action_System_Boolean__
+  commentId: M:MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(System.String,System.String,System.Boolean,System.Action{System.Boolean})
+  name.vb: CreatePnlMenuToggle(String, String, Boolean, Action(Of Boolean))
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(string, string, bool, System.Action<bool>)
+  fullName.vb: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(String, String, Boolean, System.Action(Of Boolean))
+  nameWithType: ToggleUtils.CreatePnlMenuToggle(string, string, bool, Action<bool>)
+  nameWithType.vb: ToggleUtils.CreatePnlMenuToggle(String, String, Boolean, Action(Of Boolean))
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle*
+  name: CreatePnlMenuToggle
+  href: api/MuseDashMirror.UIComponents.ToggleUtils.html#MuseDashMirror_UIComponents_ToggleUtils_CreatePnlMenuToggle_
+  commentId: Overload:MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle
+  isSpec: "True"
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle
+  nameWithType: ToggleUtils.CreatePnlMenuToggle
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle``1(System.String,System.String,``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  name: CreatePnlMenuToggle<T>(string, string, T, Expression<Func<T, bool>>)
+  href: api/MuseDashMirror.UIComponents.ToggleUtils.html#MuseDashMirror_UIComponents_ToggleUtils_CreatePnlMenuToggle__1_System_String_System_String___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___
+  commentId: M:MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle``1(System.String,System.String,``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})
+  name.vb: CreatePnlMenuToggle(Of T)(String, String, T, Expression(Of Func(Of T, Boolean)))
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle<T>(string, string, T, System.Linq.Expressions.Expression<System.Func<T, bool>>)
+  fullName.vb: MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(Of T)(String, String, T, System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)))
+  nameWithType: ToggleUtils.CreatePnlMenuToggle<T>(string, string, T, Expression<Func<T, bool>>)
+  nameWithType.vb: ToggleUtils.CreatePnlMenuToggle(Of T)(String, String, T, Expression(Of Func(Of T, Boolean)))
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  name: CreateToggle(ToggleParameters, TransformParameters)
+  href: api/MuseDashMirror.UIComponents.ToggleUtils.html#MuseDashMirror_UIComponents_ToggleUtils_CreateToggle_MuseDashMirror_Models_ToggleParameters_MuseDashMirror_Models_TransformParameters_
+  commentId: M:MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(MuseDashMirror.Models.ToggleParameters, MuseDashMirror.Models.TransformParameters)
+  nameWithType: ToggleUtils.CreateToggle(ToggleParameters, TransformParameters)
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(System.String,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  name: CreateToggle(string, ToggleParameters, TransformParameters)
+  href: api/MuseDashMirror.UIComponents.ToggleUtils.html#MuseDashMirror_UIComponents_ToggleUtils_CreateToggle_System_String_MuseDashMirror_Models_ToggleParameters_MuseDashMirror_Models_TransformParameters_
+  commentId: M:MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(System.String,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  name.vb: CreateToggle(String, ToggleParameters, TransformParameters)
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(string, MuseDashMirror.Models.ToggleParameters, MuseDashMirror.Models.TransformParameters)
+  fullName.vb: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(String, MuseDashMirror.Models.ToggleParameters, MuseDashMirror.Models.TransformParameters)
+  nameWithType: ToggleUtils.CreateToggle(string, ToggleParameters, TransformParameters)
+  nameWithType.vb: ToggleUtils.CreateToggle(String, ToggleParameters, TransformParameters)
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(UnityEngine.GameObject,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  name: CreateToggle(GameObject, ToggleParameters, TransformParameters)
+  href: api/MuseDashMirror.UIComponents.ToggleUtils.html#MuseDashMirror_UIComponents_ToggleUtils_CreateToggle_UnityEngine_GameObject_MuseDashMirror_Models_ToggleParameters_MuseDashMirror_Models_TransformParameters_
+  commentId: M:MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(UnityEngine.GameObject,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(UnityEngine.GameObject, MuseDashMirror.Models.ToggleParameters, MuseDashMirror.Models.TransformParameters)
+  nameWithType: ToggleUtils.CreateToggle(GameObject, ToggleParameters, TransformParameters)
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(UnityEngine.Transform,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  name: CreateToggle(Transform, ToggleParameters, TransformParameters)
+  href: api/MuseDashMirror.UIComponents.ToggleUtils.html#MuseDashMirror_UIComponents_ToggleUtils_CreateToggle_UnityEngine_Transform_MuseDashMirror_Models_ToggleParameters_MuseDashMirror_Models_TransformParameters_
+  commentId: M:MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(UnityEngine.Transform,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(UnityEngine.Transform, MuseDashMirror.Models.ToggleParameters, MuseDashMirror.Models.TransformParameters)
+  nameWithType: ToggleUtils.CreateToggle(Transform, ToggleParameters, TransformParameters)
+- uid: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle*
+  name: CreateToggle
+  href: api/MuseDashMirror.UIComponents.ToggleUtils.html#MuseDashMirror_UIComponents_ToggleUtils_CreateToggle_
+  commentId: Overload:MuseDashMirror.UIComponents.ToggleUtils.CreateToggle
+  isSpec: "True"
+  fullName: MuseDashMirror.UIComponents.ToggleUtils.CreateToggle
+  nameWithType: ToggleUtils.CreateToggle
+- uid: MuseDashMirror.Utils
+  name: MuseDashMirror.Utils
+  href: api/MuseDashMirror.Utils.html
+  commentId: N:MuseDashMirror.Utils
+  fullName: MuseDashMirror.Utils
+  nameWithType: MuseDashMirror.Utils
+- uid: MuseDashMirror.Utils.GameObjectUtils
+  name: GameObjectUtils
+  href: api/MuseDashMirror.Utils.GameObjectUtils.html
+  commentId: T:MuseDashMirror.Utils.GameObjectUtils
+  fullName: MuseDashMirror.Utils.GameObjectUtils
+  nameWithType: GameObjectUtils
+- uid: MuseDashMirror.Utils.GameObjectUtils.GetGameObject(System.String)
+  name: GetGameObject(string)
+  href: api/MuseDashMirror.Utils.GameObjectUtils.html#MuseDashMirror_Utils_GameObjectUtils_GetGameObject_System_String_
+  commentId: M:MuseDashMirror.Utils.GameObjectUtils.GetGameObject(System.String)
+  name.vb: GetGameObject(String)
+  fullName: MuseDashMirror.Utils.GameObjectUtils.GetGameObject(string)
+  fullName.vb: MuseDashMirror.Utils.GameObjectUtils.GetGameObject(String)
+  nameWithType: GameObjectUtils.GetGameObject(string)
+  nameWithType.vb: GameObjectUtils.GetGameObject(String)
+- uid: MuseDashMirror.Utils.GameObjectUtils.GetGameObject*
+  name: GetGameObject
+  href: api/MuseDashMirror.Utils.GameObjectUtils.html#MuseDashMirror_Utils_GameObjectUtils_GetGameObject_
+  commentId: Overload:MuseDashMirror.Utils.GameObjectUtils.GetGameObject
+  isSpec: "True"
+  fullName: MuseDashMirror.Utils.GameObjectUtils.GetGameObject
+  nameWithType: GameObjectUtils.GetGameObject

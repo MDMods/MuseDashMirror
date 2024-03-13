@@ -17,9 +17,6 @@
       {
         "files": [
           "**/*.{md,yml}"
-        ],
-        "exclude": [
-          "site/**"
         ]
       }
     ],
@@ -30,7 +27,7 @@
         ]
       }
     ],
-    "output": "site",
+    "dest": "../docs",
     "template": [
       "default",
       "modern"
