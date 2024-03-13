@@ -100,7 +100,7 @@ public static class SceneInfo
 
     #endregion LoadingScene
 
-    #region WelcomScene
+    #region WelcomeScene
 
     /// <summary>
     ///     Is in the Welcome Scene
