@@ -142,5 +142,12 @@
         <Message Text="Copied DLL -&gt; $(GameFolder)\Mods\$(ProjectName).dll" Importance="High"/>
     </Target>
 
+    <Target Name="CopyLibs" AfterTargets="CopyMods" Condition="'$(WORKER)' != 'GitHub'">
+        <ItemGroup>
+            <ReferenceDlls Include="@(ReferencePath->'%(FullPath)')" Condition="'%(ReferencePath.ResolvedFrom)' == 'ImplicitlyExpandDesignTimeFacades' Or '%(ReferencePath.ResolvedFrom)' == '{HintPathFromItem}'"/>
+        </ItemGroup>
+        <Copy SourceFiles="@(ReferenceDlls)" DestinationFolder="$(SolutionDir)\Libs" SkipUnchangedFiles="true"/>
+    </Target>
+
     <Import Project="..\MuseDashMirror.Shared\MuseDashMirror.Shared.projitems" Label="Shared"/>
 </Project>
