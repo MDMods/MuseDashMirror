@@ -1,0 +1,768 @@
+{
+  "source_base_path": "D:/C#/program/MDMods/il2cpp/.net 6/MuseDashMirror/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.AddScorePatchAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.AddScorePatchAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.GameStartPatchAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.GameStartPatchAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.MenuSelectPatchAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.MenuSelectPatchAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlMenuPatchAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlMenuPatchAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlStagePatchAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlStagePatchAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlVictoryPatchAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.PnlVictoryPatchAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.SwitchLanguagePatchAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.SwitchLanguagePatchAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.PatchEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterGameSceneAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterGameSceneAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterLoadingSceneAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterLoadingSceneAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterMainSceneAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterMainSceneAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterSceneAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterSceneAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterWelcomeSceneAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.EnterWelcomeSceneAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitGameSceneAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitGameSceneAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitLoadingSceneAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitLoadingSceneAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitMainSceneAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitMainSceneAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitSceneAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitSceneAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitWelcomeSceneAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.ExitWelcomeSceneAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.EventAttributes.SceneEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.LoggerAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.LoggerAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.PnlMenuToggleAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.PnlMenuToggleAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Attributes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.BattleComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.BattleComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Contracts.IPositionStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Contracts.IPositionStrategy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Contracts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Contracts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.EventArguments.AddScoreEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.EventArguments.AddScoreEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.EventArguments.GameStartEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.EventArguments.GameStartEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.EventArguments.MenuSelectEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.EventArguments.MenuSelectEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.EventArguments.PnlMenuEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.EventArguments.PnlMenuEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.EventArguments.PnlStageEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.EventArguments.PnlStageEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.EventArguments.PnlVictoryEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.EventArguments.PnlVictoryEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.EventArguments.SceneEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.EventArguments.SceneEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.EventArguments.SwitchLanguagesEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.EventArguments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.EventArguments.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Extensions.CollectionExtensions.CollectionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Extensions.CollectionExtensions.TypeCollectionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Extensions.CollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Extensions.CollectionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Extensions.ComponentExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Extensions.ComponentExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Extensions.GameObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Extensions.GameObjectExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Extensions.RectTransformExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Extensions.RectTransformExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Extensions.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Extensions.StringExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Extensions.UnityEngineObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Extensions.UnityEngineObjectExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Main.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Main.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Models.CameraDimension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Models.CameraDimension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Models.EllipseTextParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Models.EllipseTextParameters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Models.PositionStrategies.CenterPositionStrategy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Models.PositionStrategies.LeftEdgePositionStrategy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Models.PositionStrategies.RightEdgePositionStrategy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Models.PositionStrategies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Models.PositionStrategies.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Models.TextParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Models.TextParameters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Models.ToggleParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Models.ToggleParameters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Models.TransformParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Models.TransformParameters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.PatchEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.PatchEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.PlayerData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.PlayerData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.SceneInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.SceneInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Shared.LoggerType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Shared.LoggerType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Shared.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Shared.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.UIComponents.CanvasUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.UIComponents.CanvasUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.UIComponents.Colors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.UIComponents.Colors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.UIComponents.Fonts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.UIComponents.Fonts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.UIComponents.TextGameObjectUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.UIComponents.TextGameObjectUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.UIComponents.ToggleUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.UIComponents.ToggleUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.UIComponents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.UIComponents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Utils.GameObjectUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Utils.GameObjectUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.Utils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MuseDashMirror.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MuseDashMirror.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

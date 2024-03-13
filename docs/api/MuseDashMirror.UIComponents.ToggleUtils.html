@@ -1,0 +1,503 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ToggleUtils | MuseDashMirror </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ToggleUtils | MuseDashMirror ">
+      
+      <meta name="description" content="Methods for creating toggle">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MDMods/MuseDashMirror/new/master/apiSpec/new?filename=MuseDashMirror_UIComponents_ToggleUtils.md&amp;value=---%0Auid%3A%20MuseDashMirror.UIComponents.ToggleUtils%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MuseDashMirror">
+            MuseDashMirror
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MuseDashMirror.UIComponents.ToggleUtils">
+
+
+
+  <h1 id="MuseDashMirror_UIComponents_ToggleUtils" data-uid="MuseDashMirror.UIComponents.ToggleUtils" class="text-break">
+Class ToggleUtils  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/UIComponents/ToggleUtils.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MuseDashMirror.html">MuseDashMirror</a>.<a class="xref" href="MuseDashMirror.UIComponents.html">UIComponents</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MuseDashMirror.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Methods for creating toggle</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ToggleUtils</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ToggleUtils</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MuseDashMirror_UIComponents_ToggleUtils_CreatePnlMenuToggle_" data-uid="MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle*"></a>
+
+  <h3 id="MuseDashMirror_UIComponents_ToggleUtils_CreatePnlMenuToggle_MuseDashMirror_Models_ToggleParameters_" data-uid="MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(MuseDashMirror.Models.ToggleParameters)">
+  CreatePnlMenuToggle(ToggleParameters)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/UIComponents/ToggleUtils.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a toggle in the PnlMenu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject CreatePnlMenuToggle(ToggleParameters toggleParameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toggleParameters</code> <a class="xref" href="MuseDashMirror.Models.ToggleParameters.html">ToggleParameters</a></dt>
+    <dd><p>Toggle Parameters</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd><p>Toggle GameObject</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_UIComponents_ToggleUtils_CreatePnlMenuToggle_" data-uid="MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle*"></a>
+
+  <h3 id="MuseDashMirror_UIComponents_ToggleUtils_CreatePnlMenuToggle_System_String_System_String_System_Boolean_System_Action_System_Boolean__" data-uid="MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle(System.String,System.String,System.Boolean,System.Action{System.Boolean})">
+  CreatePnlMenuToggle(string, string, bool, Action&lt;bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/UIComponents/ToggleUtils.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a toggle in the PnlMenu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject CreatePnlMenuToggle(string name, string text, bool initialValue, Action&lt;bool&gt; callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>GameObject Name</p>
+</dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Toggle Text</p>
+</dd>
+    <dt><code>initialValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Initial Value for Toggle</p>
+</dd>
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>Boolean Callback</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd><p>Toggle GameObject</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_UIComponents_ToggleUtils_CreatePnlMenuToggle_" data-uid="MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle*"></a>
+
+  <h3 id="MuseDashMirror_UIComponents_ToggleUtils_CreatePnlMenuToggle__1_System_String_System_String___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___" data-uid="MuseDashMirror.UIComponents.ToggleUtils.CreatePnlMenuToggle``1(System.String,System.String,``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+  CreatePnlMenuToggle&lt;T&gt;(string, string, T, Expression&lt;Func&lt;T, bool&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/UIComponents/ToggleUtils.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a toggle in the PnlMenu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject CreatePnlMenuToggle&lt;T&gt;(string name, string text, T target, Expression&lt;Func&lt;T, bool&gt;&gt; expression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>GameObject Name</p>
+</dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Toggle Text</p>
+</dd>
+    <dt><code>target</code> <span class="xref">T</span></dt>
+    <dd><p>Target Object the Toggle's value will be bounded to</p>
+</dd>
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1">Expression</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;&gt;</dt>
+    <dd><p>An expression that represents a Boolean property of the Target Object</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd><p>Toggle GameObject</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the Target Object</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when the provided expression does not represent a property or field of the target object</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MuseDashMirror_UIComponents_ToggleUtils_CreateToggle_" data-uid="MuseDashMirror.UIComponents.ToggleUtils.CreateToggle*"></a>
+
+  <h3 id="MuseDashMirror_UIComponents_ToggleUtils_CreateToggle_MuseDashMirror_Models_ToggleParameters_MuseDashMirror_Models_TransformParameters_" data-uid="MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)">
+  CreateToggle(ToggleParameters, TransformParameters)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/UIComponents/ToggleUtils.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a toggle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject CreateToggle(ToggleParameters toggleParameters, TransformParameters transformParameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toggleParameters</code> <a class="xref" href="MuseDashMirror.Models.ToggleParameters.html">ToggleParameters</a></dt>
+    <dd><p>Toggle Parameters</p>
+</dd>
+    <dt><code>transformParameters</code> <a class="xref" href="MuseDashMirror.Models.TransformParameters.html">TransformParameters</a></dt>
+    <dd><p>Transform Parameters</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_UIComponents_ToggleUtils_CreateToggle_" data-uid="MuseDashMirror.UIComponents.ToggleUtils.CreateToggle*"></a>
+
+  <h3 id="MuseDashMirror_UIComponents_ToggleUtils_CreateToggle_System_String_MuseDashMirror_Models_ToggleParameters_MuseDashMirror_Models_TransformParameters_" data-uid="MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(System.String,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)">
+  CreateToggle(string, ToggleParameters, TransformParameters)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/UIComponents/ToggleUtils.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a toggle with parent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject CreateToggle(string parentName, ToggleParameters toggleParameters, TransformParameters transformParameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parentName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Parent GameObject Name</p>
+</dd>
+    <dt><code>toggleParameters</code> <a class="xref" href="MuseDashMirror.Models.ToggleParameters.html">ToggleParameters</a></dt>
+    <dd><p>Toggle Parameters</p>
+</dd>
+    <dt><code>transformParameters</code> <a class="xref" href="MuseDashMirror.Models.TransformParameters.html">TransformParameters</a></dt>
+    <dd><p>Transform Parameters</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd><p>Toggle GameObject</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_UIComponents_ToggleUtils_CreateToggle_" data-uid="MuseDashMirror.UIComponents.ToggleUtils.CreateToggle*"></a>
+
+  <h3 id="MuseDashMirror_UIComponents_ToggleUtils_CreateToggle_UnityEngine_GameObject_MuseDashMirror_Models_ToggleParameters_MuseDashMirror_Models_TransformParameters_" data-uid="MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(UnityEngine.GameObject,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)">
+  CreateToggle(GameObject, ToggleParameters, TransformParameters)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/UIComponents/ToggleUtils.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a toggle with parent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject CreateToggle(GameObject parent, ToggleParameters toggleParameters, TransformParameters transformParameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <span class="xref">GameObject</span></dt>
+    <dd><p>Parent GameObject</p>
+</dd>
+    <dt><code>toggleParameters</code> <a class="xref" href="MuseDashMirror.Models.ToggleParameters.html">ToggleParameters</a></dt>
+    <dd><p>Toggle Parameters</p>
+</dd>
+    <dt><code>transformParameters</code> <a class="xref" href="MuseDashMirror.Models.TransformParameters.html">TransformParameters</a></dt>
+    <dd><p>Transform Parameters</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd><p>Toggle GameObject</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MuseDashMirror_UIComponents_ToggleUtils_CreateToggle_" data-uid="MuseDashMirror.UIComponents.ToggleUtils.CreateToggle*"></a>
+
+  <h3 id="MuseDashMirror_UIComponents_ToggleUtils_CreateToggle_UnityEngine_Transform_MuseDashMirror_Models_ToggleParameters_MuseDashMirror_Models_TransformParameters_" data-uid="MuseDashMirror.UIComponents.ToggleUtils.CreateToggle(UnityEngine.Transform,MuseDashMirror.Models.ToggleParameters,MuseDashMirror.Models.TransformParameters)">
+  CreateToggle(Transform, ToggleParameters, TransformParameters)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/UIComponents/ToggleUtils.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a toggle with parent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject CreateToggle(Transform parentTransform, ToggleParameters toggleParameters, TransformParameters transformParameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parentTransform</code> <span class="xref">Transform</span></dt>
+    <dd><p>Parent GameObject Transform</p>
+</dd>
+    <dt><code>toggleParameters</code> <a class="xref" href="MuseDashMirror.Models.ToggleParameters.html">ToggleParameters</a></dt>
+    <dd><p>Toggle Parameters</p>
+</dd>
+    <dt><code>transformParameters</code> <a class="xref" href="MuseDashMirror.Models.TransformParameters.html">TransformParameters</a></dt>
+    <dd><p>Transform Parameters</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MDMods/MuseDashMirror/blob/master/src/MuseDashMirror/UIComponents/ToggleUtils.cs/#L10" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
