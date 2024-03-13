@@ -5,12 +5,11 @@
         {
           "src": "../src",
           "files": [
-            "**/*.csproj"
+            "MuseDashMirror/*.csproj"
           ]
         }
       ],
-      "dest": "api",
-      "filter": "filter.yml"
+      "dest": "api"
     }
   ],
   "build": {
