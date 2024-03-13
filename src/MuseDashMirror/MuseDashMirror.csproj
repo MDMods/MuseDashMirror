@@ -137,7 +137,7 @@
                           ReferenceOutputAssembly="false"/>
     </ItemGroup>
 
-    <Target Name="CopyMods" AfterTargets="Build">
+    <Target Name="CopyMods" AfterTargets="Build" Condition="'$(WORKER)' != 'GitHub'">
         <Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="$(GameFolder)\Mods"/>
         <Message Text="Copied DLL -&gt; $(GameFolder)\Mods\$(ProjectName).dll" Importance="High"/>
     </Target>
