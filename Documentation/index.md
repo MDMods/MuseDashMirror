@@ -2,10 +2,24 @@
 _layout: landing
 ---
 
-# This is the **HOMEPAGE**.
+# MuseDashMirror
 
-Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to write markdown files.
+## Introduction
 
-## Quick Start Notes:
+MuseDashMirror is a mod library for Muse Dash, it provides many useful classes and methods to help you modding Muse Dash.
 
-1. Add images to the *images* folder if the file is referencing an image.
+It mainly uses source generators to generate code, without reflection, which makes it very fast and easy to use.
+
+## Installation
+
+### Recommend Way
+
+* Follow the instructions in [MuseDashModTemplate](https://github.com/lxymahatma/MuseDash.Mod.Template) to install the mod template, then you can
+  select `MuseDashMirror` in the UsefulLibs option
+
+### Manual Way
+
+* Use your IDE's nuget package manager to install `MuseDashMirror` package
+
+## [GettingStarted](./docs/getting-started.md)
+
