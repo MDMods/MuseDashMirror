@@ -4,7 +4,16 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <LangVersion>latest</LangVersion>
         <GameFolder Condition="Exists('$(MD_DIRECTORY)')">$(MD_DIRECTORY)</GameFolder>
+        <MelonLoader>$(GameFolder)\MelonLoader\</MelonLoader>
+        <MelonNET6>$(MelonLoader)\net6\</MelonNET6>
+        <MelonAssemblies>$(MelonLoader)\Il2CppAssemblies\</MelonAssemblies>
         <OutputPath>$(SolutionDir)\bin</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(WORKER)' == 'GitHub'">
+        <MelonLoader>..\..\Libs</MelonLoader>
+        <MelonNET6>..\..\Libs</MelonNET6>
+        <MelonAssemblies>..\..\Libs</MelonAssemblies>
     </PropertyGroup>
 
     <ItemDefinitionGroup>
