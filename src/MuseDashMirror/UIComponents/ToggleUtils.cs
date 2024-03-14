@@ -10,7 +10,6 @@ namespace MuseDashMirror.UIComponents;
 public static partial class ToggleUtils
 {
     private const float ToggleSpacing = 1.1f;
-    private static readonly float ScaleFactorX = PnlMenuGameObject.GetTotalScaleFactor().x;
 
     private static readonly Vector3[] Positions =
     [
@@ -20,6 +19,7 @@ public static partial class ToggleUtils
         new Vector3(-6.8f, -4.95f, 100f)
     ];
 
+    private static float ScaleFactorX => PnlMenuGameObject.GetTotalScaleFactor().x;
     private static GameObject TglOnGameObject => GetGameObject("Forward/PnlVolume/LogoSetting/Toggles/TglOn");
     private static GameObject PnlMenuGameObject => GetGameObject("PnlMenu");
     private static GameObject PnlOptionGameObject => GetGameObject("PnlOption");
