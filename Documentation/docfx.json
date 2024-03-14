@@ -36,7 +36,9 @@
       "_appName": "MuseDashMirror",
       "_appTitle": "MuseDashMirror",
       "_enableSearch": true,
-      "pdf": true
+      "pdf": true,
+      "noRestore": true,
+      "_disableToc": true
     }
   }
 }
