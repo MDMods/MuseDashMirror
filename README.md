@@ -1,7 +1,3 @@
----
-_layout: chromeless
----
-
 # MuseDashMirror
 
 [![Nuget](https://img.shields.io/nuget/v/MuseDashMirror)](https://www.nuget.org/packages/MuseDashMirror)

@@ -1,3 +1,7 @@
+---
+_layout: chromeless
+---
+
 # MuseDashMirror
 
 ## Introduction
