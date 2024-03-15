@@ -33,11 +33,11 @@ jobs:
       - name: Install docfx Tools
         run: |
           dotnet tool update -g docfx
-          dotnet tool install DocFxTocGenerator -g
+          dotnet tool install -g DocFxTocGenerator
 
       - name: Build Docs
         run: |
-          DocFxTocGenerator -d .\Documentation -si
+          DocFxTocGenerator -d ./Documentation -si
           docfx ./Documentation/docfx.json
 
       - name: Upload artifact
