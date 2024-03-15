@@ -1,6 +1,10 @@
 # Using UI Components
 
+---
+
 **Muse Dash Mirror provides many useful classes in the namespace `MuseDashMirror.UIComponents` to help you create UI components.**
+
+---
 
 ## Canvas Utils
 
