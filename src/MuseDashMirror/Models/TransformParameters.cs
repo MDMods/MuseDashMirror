@@ -8,6 +8,13 @@ namespace MuseDashMirror.Models;
 public class TransformParameters
 {
     /// <summary>
+    ///     Implicit casting from Vector3 to TransformParameters
+    /// </summary>
+    /// <param name="position"></param>
+    /// <returns></returns>
+    public static implicit operator TransformParameters(Vector3 position) => new (position);
+    
+    /// <summary>
     ///     If true, the size of the RectTransform will be automatically adjusted to fit the text
     /// </summary>
     public bool IsAutoSize { get; } = true;
