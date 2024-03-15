@@ -30,14 +30,14 @@ jobs:
         with:
           dotnet-version: 8.x
 
-      - name: Restore and Build
+      - name: Install docfx Tools
         run: |
-          dotnet restore
-          dotnet build -c Release
+          dotnet tool update -g docfx
+          dotnet tool install DocFxTocGenerator -g
 
       - name: Build Docs
         run: |
-          dotnet tool update -g docfx
+          DocFxTocGenerator -d .\Documentation -si
           docfx ./Documentation/docfx.json
 
       - name: Upload artifact
