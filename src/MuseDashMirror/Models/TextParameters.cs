@@ -8,7 +8,7 @@ namespace MuseDashMirror.Models;
 public class TextParameters
 {
     /// <summary>
-    ///     Implicit casting from Vector3 to TransformParameters
+    ///     Implicit casting from string to TextParameters
     /// </summary>
     /// <param name="text"></param>
     /// <returns></returns>
