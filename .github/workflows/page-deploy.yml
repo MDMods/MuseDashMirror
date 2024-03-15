@@ -37,7 +37,7 @@ jobs:
 
       - name: Build Docs
         run: |
-          DocFxTocGenerator -d ./Documentation -si
+          DocFxTocGenerator -d ./Documentation/docs -s
           docfx ./Documentation/docfx.json
 
       - name: Upload artifact
