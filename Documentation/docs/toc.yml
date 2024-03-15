@@ -1,6 +1,10 @@
-- name: Getting Started
-  href: getting-started.md
+# This is an automatically generated file
+items:
+  - name: Docs
+    href: index.md
 - name: Introduction
   href: introduction.md
+    - name: Getting Started
+      href: getting-started.md
 - name: Using UI Components
   href: ui-components.md
