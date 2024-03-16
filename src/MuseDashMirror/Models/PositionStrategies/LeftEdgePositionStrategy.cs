@@ -12,8 +12,6 @@ public sealed class LeftEdgePositionStrategy : IPositionStrategy
     /// <param name="transformParameters"></param>
     public void SetPosition(RectTransform rectTransform, TransformParameters transformParameters)
     {
-        var scaleFactor = rectTransform.gameObject.GetTotalScaleFactor();
-        var canvasScalerFactor = rectTransform.gameObject.FindComponentInAncestors<CanvasScaler>().referenceResolution.x / Screen.width;
         var halfWidth = rectTransform.rect.width / 2;
         var position = transformParameters.Position;
 
@@ -23,6 +21,8 @@ public sealed class LeftEdgePositionStrategy : IPositionStrategy
         }
         else
         {
+            var scaleFactor = rectTransform.gameObject.GetTotalScaleFactor();
+            var canvasScalerFactor = rectTransform.gameObject.GetCanvasScalerFactor();
             halfWidth *= scaleFactor.x;
             rectTransform.position = new Vector3(position.x * canvasScalerFactor + halfWidth, position.y * canvasScalerFactor, position.z);
         }
