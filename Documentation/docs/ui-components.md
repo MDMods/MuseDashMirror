@@ -15,7 +15,7 @@
   * `Camera GetCamera(string cameraName)`: Get the camera using the provided name.
 
 > [!TIP]
-> It is recommended to use the `CameraDimension` enum to get the camera because Muse Dash only uses 2D and 3D cameras in most scenes,
+> It is recommended to use the `CameraDimension` enum to get the camera because Muse Dash only uses 2D and 3D cameras in most scenes.
 > Therefore, the provided `CameraDimension` enum is enough for most use cases.
 
 * `CreateOverlayCanvas` method: `GameObject CreateOverlayCanvas(string canvasName)`: Create a new `ScreenSpaceOverlay` canvas with the provided canvas name.

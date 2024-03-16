@@ -8,13 +8,6 @@ namespace MuseDashMirror.Models;
 public class TextParameters
 {
     /// <summary>
-    ///     Implicit casting from string to TextParameters
-    /// </summary>
-    /// <param name="text"></param>
-    /// <returns></returns>
-    public static implicit operator TextParameters(string text) => new (text);
-    
-    /// <summary>
     ///     Text content
     /// </summary>
     public string Text { get; }
@@ -119,6 +112,13 @@ public class TextParameters
     /// <param name="alignment">Text Alignment</param>
     public TextParameters(string text, Color color, Font font, int fontSize, TextAnchor alignment)
         : this(text, color, font, fontSize) => Alignment = alignment;
+
+    /// <summary>
+    ///     Implicit casting from <see cref="string" /> to <see cref="TextParameters" />
+    /// </summary>
+    /// <param name="text">Text Content</param>
+    /// <returns>TextParameters</returns>
+    public static implicit operator TextParameters(string text) => new(text);
 
     /// <summary>
     ///     Get the text content

@@ -8,13 +8,6 @@ namespace MuseDashMirror.Models;
 public class TransformParameters
 {
     /// <summary>
-    ///     Implicit casting from Vector3 to TransformParameters
-    /// </summary>
-    /// <param name="position"></param>
-    /// <returns></returns>
-    public static implicit operator TransformParameters(Vector3 position) => new (position);
-    
-    /// <summary>
     ///     If true, the size of the RectTransform will be automatically adjusted to fit the text
     /// </summary>
     public bool IsAutoSize { get; } = true;
@@ -97,4 +90,11 @@ public class TransformParameters
     /// <param name="sizeDelta">GameObject RectTransform SizeDelta</param>
     public TransformParameters(Vector3 position, bool isLocalPosition, Vector2 sizeDelta)
         : this(position, sizeDelta) => IsLocalPosition = isLocalPosition;
+
+    /// <summary>
+    ///     Implicit casting from <see cref="Vector3" /> to <see cref="TransformParameters" />
+    /// </summary>
+    /// <param name="position">GameObject Position</param>
+    /// <returns>TransformParameters</returns>
+    public static implicit operator TransformParameters(Vector3 position) => new(position);
 }
