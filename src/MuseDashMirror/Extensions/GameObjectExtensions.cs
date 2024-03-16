@@ -7,10 +7,24 @@ namespace MuseDashMirror.Extensions;
 public static partial class GameObjectExtensions
 {
     /// <summary>
-    ///     Set the parent of a GameObject
+    ///     Get the Parent GameObject of a GameObject
     /// </summary>
     /// <param name="gameObject">GameObject</param>
-    /// <param name="parent">Parent</param>
+    /// <returns>Parent GameObject</returns>
+    public static GameObject GetParentGameObject(this GameObject gameObject) => gameObject.GetParentTransform().gameObject;
+
+    /// <summary>
+    ///     Get the Parent Transform of a GameObject
+    /// </summary>
+    /// <param name="gameObject">GameObject</param>
+    /// <returns>Parent Transform</returns>
+    public static Transform GetParentTransform(this GameObject gameObject) => gameObject.transform.parent;
+
+    /// <summary>
+    ///     Set the Parent of a GameObject
+    /// </summary>
+    /// <param name="gameObject">GameObject</param>
+    /// <param name="parent">Parent GameObject</param>
     /// <param name="worldPositionStays">World Position Stays</param>
     public static void SetParent(this GameObject gameObject, GameObject parent, bool worldPositionStays = true)
         => gameObject.transform.SetParent(parent.transform, worldPositionStays);
@@ -89,27 +103,26 @@ public static partial class GameObjectExtensions
     ///     Find a Component in the ancestors of a GameObject including itself
     /// </summary>
     /// <param name="gameObject">GameObject</param>
+    /// <param name="includeSelf">Include Self</param>
     /// <typeparam name="T">Component</typeparam>
     /// <returns>Component</returns>
-    public static T FindComponentInAncestors<T>(this GameObject gameObject) where T : Component
+    public static T FindComponentInAncestors<T>(this GameObject gameObject, bool includeSelf = true) where T : Component
     {
-        while (true)
+        var component = includeSelf ? gameObject.GetComponent<T>() : null;
+        var parent = gameObject.GetParentTransform();
+
+        while (parent != null)
         {
-            var component = gameObject.GetComponent<T>();
+            component = parent.gameObject.GetComponent<T>();
             if (component != null)
             {
                 return component;
             }
 
-            var parent = gameObject.transform.parent;
-            if (parent == null)
-            {
-                Logger.Error($"{typeof(T)} not found in ancestors");
-                return null;
-            }
-
-            gameObject = parent.gameObject;
+            parent = parent.parent;
         }
+
+        return component;
     }
 
     /// <summary>
@@ -117,54 +130,46 @@ public static partial class GameObjectExtensions
     /// </summary>
     /// <param name="gameObject">GameObject</param>
     /// <param name="component">Component</param>
+    /// <param name="includeSelf">Include Self</param>
     /// <typeparam name="T">Component</typeparam>
     /// <returns>Found</returns>
-    public static bool TryFindComponentInAncestors<T>(this GameObject gameObject, out T component) where T : Component
+    public static bool TryFindComponentInAncestors<T>(this GameObject gameObject, out T component, bool includeSelf = true) where T : Component
     {
-        while (true)
+        component = includeSelf ? gameObject.GetComponent<T>() : null;
+        var parent = gameObject.GetParentTransform();
+
+        while (parent != null)
         {
-            component = gameObject.GetComponent<T>();
+            component = parent.gameObject.GetComponent<T>();
             if (component != null)
             {
                 return true;
             }
 
-            var parent = gameObject.transform.parent;
-            if (parent == null)
-            {
-                Logger.Error($"{typeof(T)} not found in ancestors");
-                return false;
-            }
-
-            gameObject = parent.gameObject;
+            parent = parent.parent;
         }
+
+        return false;
     }
 
     /// <summary>
     ///     Get the total scale factor of a GameObject
     /// </summary>
     /// <param name="gameObject">GameObject</param>
+    /// <param name="includeSelf">Include Self</param>
     /// <returns>Scale Factor Vector3</returns>
-    public static Vector3 GetTotalScaleFactor(this GameObject gameObject)
+    public static Vector3 GetTotalScaleFactor(this GameObject gameObject, bool includeSelf = true)
     {
-        var scaleFactor = Vector3.one;
-        while (true)
+        var scaleFactor = includeSelf ? gameObject.transform.localScale : Vector3.one;
+        var parent = gameObject.transform.parent;
+
+        while (parent != null)
         {
-            var transform = gameObject.transform;
-            var localScale = transform.localScale;
-
-            scaleFactor.x *= localScale.x;
-            scaleFactor.y *= localScale.y;
-            scaleFactor.z *= localScale.z;
-
-            var parent = transform.parent;
-            if (parent == null)
-            {
-                return scaleFactor;
-            }
-
-            gameObject = parent.gameObject;
+            scaleFactor = Vector3.Scale(scaleFactor, parent.localScale);
+            parent = parent.parent;
         }
+
+        return scaleFactor;
     }
 
     /// <summary>
