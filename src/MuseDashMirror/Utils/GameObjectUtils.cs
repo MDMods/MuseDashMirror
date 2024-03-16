@@ -12,47 +12,72 @@ public static partial class GameObjectUtils
     internal static readonly Dictionary<string, GameObject> GameObjectCache = new();
 
     /// <summary>
-    ///     Get GameObject with specified path/name
+    ///     Get GameObject with specified path/name<br />
+    ///     Able to find unactive GameObject with path
     /// </summary>
     /// <param name="gameObjectPath">GameObject Path</param>
+    /// <param name="cacheTargetGameObject">Whether to cache the target GameObject or not, default to false</param>
+    /// <param name="cacheNodeGameObjects">Whether to cache all the GameObjects in the path or not, default to false</param>
     /// <returns>GameObject</returns>
-    public static GameObject GetGameObject(string gameObjectPath)
+    public static GameObject GetGameObjectWithPath(string gameObjectPath, bool cacheTargetGameObject = false, bool cacheNodeGameObjects = false)
     {
-        var gameObjectName = gameObjectPath.Split('/')[^1];
-        if (GameObjectCache.TryGetValue(gameObjectName, out var gameObject))
+        var nodePaths = gameObjectPath.Split('/');
+        var gameObjectName = nodePaths[^1];
+
+        if (GameObjectCache.TryGetValue(gameObjectName, out var cachedGameObject))
         {
-            return gameObject;
+            return cachedGameObject;
         }
 
-        gameObject = GameObject.Find(gameObjectPath);
-        if (gameObject == null)
+        var ancestorGameObjectName = nodePaths[0];
+        var ancestorGameObject = GameObject.Find(ancestorGameObjectName);
+        if (ancestorGameObject == null)
         {
-            if (!TryGetInactiveGameObject(gameObjectName, ref gameObject))
-            {
-                Logger.Error($"GameObject with path {gameObjectPath} is not found");
-                return gameObject;
-            }
-
-            gameObject.SetActive(true);
+            Logger.Error($"GameObject with name {ancestorGameObjectName} is not found");
+            return null;
         }
 
-        GameObjectCache[gameObjectName] = gameObject;
-        return gameObject;
+        if (cacheTargetGameObject)
+        {
+            GameObjectCache[ancestorGameObjectName] = ancestorGameObject;
+        }
+
+        return nodePaths.Length == 1 ? ancestorGameObject : GetGameObjectWithSplitPath(ancestorGameObject, cacheNodeGameObjects, nodePaths[1..]);
     }
 
-    private static bool TryGetInactiveGameObject(string gameObjectname, ref GameObject gameObject)
+    /// <summary>
+    ///     Use Transform.Find to get GameObject with split path
+    /// </summary>
+    /// <param name="ancestorGameObject">Ancestor GameObject</param>
+    /// <param name="cacheNodeGameObjects">Whether to cache all the GameObjects in the path or not, default to false</param>
+    /// <param name="nodePaths">Node GameObjects Paths</param>
+    /// <returns>GameObject</returns>
+    public static GameObject GetGameObjectWithSplitPath(GameObject ancestorGameObject, bool cacheNodeGameObjects = false, params string[] nodePaths)
     {
-        var gameObjectsTransforms = Resources.FindObjectsOfTypeAll<Transform>().ToArray();
-        var transform = Array.Find(gameObjectsTransforms, transform => transform.name.Equals(gameObjectname));
-
-        if (Equals(transform, default(Transform)))
+        var currentGameObject = ancestorGameObject;
+        foreach (var nodePath in nodePaths)
         {
-            gameObject = null;
-            return false;
+            if (GameObjectCache.TryGetValue(nodePath, out var cachedGameObject))
+            {
+                currentGameObject = cachedGameObject;
+                continue;
+            }
+
+            var childTransform = currentGameObject.transform.Find(nodePath);
+            if (childTransform == null)
+            {
+                Logger.Error($"GameObject with name {nodePath} is not found");
+                return null;
+            }
+
+            currentGameObject = childTransform.gameObject;
+            if (cacheNodeGameObjects)
+            {
+                GameObjectCache[nodePath] = currentGameObject;
+            }
         }
 
-        gameObject = transform.gameObject;
-        return true;
+        return currentGameObject;
     }
 
     [ExitScene]
