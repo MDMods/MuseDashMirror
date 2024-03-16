@@ -45,14 +45,7 @@ public static partial class GameObjectUtils
         return nodePaths.Length == 1 ? ancestorGameObject : GetGameObjectWithSplitPath(ancestorGameObject, cacheNodeGameObjects, nodePaths[1..]);
     }
 
-    /// <summary>
-    ///     Use Transform.Find to get GameObject with split path
-    /// </summary>
-    /// <param name="ancestorGameObject">Ancestor GameObject</param>
-    /// <param name="cacheNodeGameObjects">Whether to cache all the GameObjects in the path or not, default to false</param>
-    /// <param name="nodePaths">Node GameObjects Paths</param>
-    /// <returns>GameObject</returns>
-    public static GameObject GetGameObjectWithSplitPath(GameObject ancestorGameObject, bool cacheNodeGameObjects = false, params string[] nodePaths)
+    private static GameObject GetGameObjectWithSplitPath(GameObject ancestorGameObject, bool cacheNodeGameObjects = false, params string[] nodePaths)
     {
         var currentGameObject = ancestorGameObject;
         foreach (var nodePath in nodePaths)
