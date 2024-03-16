@@ -123,6 +123,6 @@ public class TextParameters
     /// <summary>
     ///     Get the text content
     /// </summary>
-    /// <returns></returns>
+    /// <returns>Text Content</returns>
     public virtual string GetText() => Text;
 }
