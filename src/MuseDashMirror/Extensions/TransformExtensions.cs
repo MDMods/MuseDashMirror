@@ -1,7 +1,7 @@
 namespace MuseDashMirror.Extensions;
 
 /// <summary>
-///     Extension methods for <see cref="Transform" />
+///     <see cref="Transform" /> Extension Methods
 /// </summary>
 public static class TransformExtensions
 {
