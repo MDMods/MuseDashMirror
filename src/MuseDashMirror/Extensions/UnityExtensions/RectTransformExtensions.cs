@@ -1,4 +1,4 @@
-namespace MuseDashMirror.Extensions;
+namespace MuseDashMirror.Extensions.UnityExtensions;
 
 /// <summary>
 ///     <see cref="RectTransform" /> Extension Methods

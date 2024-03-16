@@ -139,7 +139,7 @@
 
     <Target Name="CopyMods" AfterTargets="Build" Condition="'$(WORKER)' != 'GitHub'">
         <Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="$(GameFolder)\Mods"/>
-        <Message Text="Copied DLL -&gt; $(GameFolder)\Mods\$(ProjectName).dll" Importance="High"/>
+        <Message Text="Copied DLL -&gt; $(GameFolder)\Mods\$(AssemblyName).dll" Importance="High"/>
     </Target>
 
     <Target Name="CopyLibs" AfterTargets="CopyMods" Condition="'$(CopyReferences)' == 'true'">
