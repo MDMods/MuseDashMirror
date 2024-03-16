@@ -8,6 +8,13 @@ namespace MuseDashMirror.Models;
 public class TextParameters
 {
     /// <summary>
+    ///     Implicit casting from string to TextParameters
+    /// </summary>
+    /// <param name="text"></param>
+    /// <returns></returns>
+    public static implicit operator TextParameters(string text) => new (text);
+    
+    /// <summary>
     ///     Text content
     /// </summary>
     public string Text { get; }
@@ -23,9 +30,9 @@ public class TextParameters
     public Font Font { get; set; } = NormalFont;
 
     /// <summary>
-    ///     Font size, default is 20
+    ///     Font size, default is 40
     /// </summary>
-    public int FontSize { get; set; } = 20;
+    public int FontSize { get; set; } = 40;
 
     /// <summary>
     ///     Alignment of the text, default is <see cref="TextAnchor.MiddleCenter" />

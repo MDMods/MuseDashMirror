@@ -27,12 +27,32 @@ public static partial class GameObjectUtils
         gameObject = GameObject.Find(gameObjectPath);
         if (gameObject == null)
         {
-            Logger.Error($"GameObject with path {gameObjectPath} is not found");
-            return gameObject;
+            if (!TryGetInactiveGameObject(gameObjectName, ref gameObject))
+            {
+                Logger.Error($"GameObject with path {gameObjectPath} is not found");
+                return gameObject;
+            }
+
+            gameObject.SetActive(true);
         }
 
         GameObjectCache[gameObjectName] = gameObject;
         return gameObject;
+    }
+
+    private static bool TryGetInactiveGameObject(string gameObjectname, ref GameObject gameObject)
+    {
+        var gameObjectsTransforms = Resources.FindObjectsOfTypeAll<Transform>().ToArray();
+        var transform = Array.Find(gameObjectsTransforms, transform => transform.name.Equals(gameObjectname));
+
+        if (Equals(transform, default(Transform)))
+        {
+            gameObject = null;
+            return false;
+        }
+
+        gameObject = transform.gameObject;
+        return true;
     }
 
     [ExitScene]
