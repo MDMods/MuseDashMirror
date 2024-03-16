@@ -7,7 +7,11 @@ internal static class PnlStagePatch
 {
     private static void Postfix(PnlStage __instance)
     {
-        GameObjectCache["TglOn"] = __instance.transform.parent.parent.GetChild(2, 5).Find("LogoSetting").GetChild(2, 0).gameObject;
+        if (!GameObjectCache.ContainsKey("TglOn"))
+        {
+            GameObjectCache["TglOn"] = __instance.transform.parent.parent.GetChild(2, 5, 7, 2, 0).gameObject;
+        }
+
         PnlStagePatchInvoke(__instance);
     }
 }
