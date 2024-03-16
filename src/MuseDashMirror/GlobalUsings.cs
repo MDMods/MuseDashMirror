@@ -6,6 +6,7 @@ global using MuseDashMirror.Contracts;
 global using MuseDashMirror.Shared;
 global using MuseDashMirror.EventArguments;
 global using MuseDashMirror.Extensions;
+global using MuseDashMirror.Extensions.UnityExtensions;
 global using MuseDashMirror.Models;
 global using UnityEngine;
 global using UnityEngine.UI;

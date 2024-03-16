@@ -1,6 +1,6 @@
 using Object = UnityEngine.Object;
 
-namespace MuseDashMirror.Extensions;
+namespace MuseDashMirror.Extensions.UnityExtensions;
 
 /// <summary>
 ///     <see cref="UnityEngine.Object" /> Extension Methods

@@ -1,4 +1,4 @@
-namespace MuseDashMirror.Extensions;
+namespace MuseDashMirror.Extensions.UnityExtensions;
 
 /// <summary>
 ///     <see cref="GameObject" /> Extension Methods
@@ -109,17 +109,17 @@ public static partial class GameObjectExtensions
     public static T FindComponentInAncestors<T>(this GameObject gameObject, bool includeSelf = true) where T : Component
     {
         var component = includeSelf ? gameObject.GetComponent<T>() : null;
-        var parent = gameObject.GetParentTransform();
+        var parentTransform = gameObject.GetParentTransform();
 
-        while (parent != null)
+        while (parentTransform != null)
         {
-            component = parent.gameObject.GetComponent<T>();
+            component = parentTransform.gameObject.GetComponent<T>();
             if (component != null)
             {
                 return component;
             }
 
-            parent = parent.parent;
+            parentTransform = parentTransform.parent;
         }
 
         return component;
@@ -136,17 +136,17 @@ public static partial class GameObjectExtensions
     public static bool TryFindComponentInAncestors<T>(this GameObject gameObject, out T component, bool includeSelf = true) where T : Component
     {
         component = includeSelf ? gameObject.GetComponent<T>() : null;
-        var parent = gameObject.GetParentTransform();
+        var parentTransform = gameObject.GetParentTransform();
 
-        while (parent != null)
+        while (parentTransform != null)
         {
-            component = parent.gameObject.GetComponent<T>();
+            component = parentTransform.gameObject.GetComponent<T>();
             if (component != null)
             {
                 return true;
             }
 
-            parent = parent.parent;
+            parentTransform = parentTransform.parent;
         }
 
         return false;
@@ -161,12 +161,12 @@ public static partial class GameObjectExtensions
     public static Vector3 GetTotalScaleFactor(this GameObject gameObject, bool includeSelf = true)
     {
         var scaleFactor = includeSelf ? gameObject.transform.localScale : Vector3.one;
-        var parent = gameObject.transform.parent;
+        var parentTransform = gameObject.GetParentTransform();
 
-        while (parent != null)
+        while (parentTransform != null)
         {
-            scaleFactor = Vector3.Scale(scaleFactor, parent.localScale);
-            parent = parent.parent;
+            scaleFactor = Vector3.Scale(scaleFactor, parentTransform.localScale);
+            parentTransform = parentTransform.parent;
         }
 
         return scaleFactor;
