@@ -142,7 +142,7 @@
         <Message Text="Copied DLL -&gt; $(GameFolder)\Mods\$(ProjectName).dll" Importance="High"/>
     </Target>
 
-    <Target Name="CopyLibs" AfterTargets="CopyMods" Condition="'$(WORKER)' != 'GitHub'">
+    <Target Name="CopyLibs" AfterTargets="CopyMods" Condition="'$(CopyReferences)' == 'true'">
         <ItemGroup>
             <ReferenceDlls Include="@(ReferencePath->'%(FullPath)')"
                            Condition="'%(ReferencePath.ResolvedFrom)' == 'ImplicitlyExpandDesignTimeFacades' Or '%(ReferencePath.ResolvedFrom)' == '{HintPathFromItem}'"/>

@@ -178,10 +178,7 @@ public static partial class GameObjectExtensions
     /// <param name="gameObject">GameObject</param>
     /// <returns>Canvas Scaler Factor</returns>
     public static float GetCanvasScalerFactor(this GameObject gameObject)
-    {
-        var canvasScaler = gameObject.FindComponentInAncestors<CanvasScaler>();
-        return canvasScaler.referenceResolution.x / Screen.width;
-    }
+        => gameObject.TryFindComponentInAncestors(out CanvasScaler canvasScaler) ? canvasScaler.referenceResolution.x / Screen.width : 1f;
 
     /// <summary>
     ///     Add a ContentSizeFitter to a GameObject
