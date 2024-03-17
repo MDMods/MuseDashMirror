@@ -39,7 +39,7 @@ public static partial class CanvasUtils
             return camera;
         }
 
-        camera = GetGameObjectWithPath(cameraName).GetComponent<Camera>();
+        camera = GetGameObject(cameraName).GetComponent<Camera>();
         if (camera == null)
         {
             Logger.Error($"Camera with name {cameraName} is not found");

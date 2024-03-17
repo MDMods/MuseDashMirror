@@ -3,7 +3,7 @@ using System.Reflection;
 namespace MuseDashMirror.Extensions.CollectionExtensions;
 
 /// <summary>
-///     Collection Extension Methods for <see cref="Type" />.
+///     Collection Extension Methods for <see cref="Type" />
 /// </summary>
 public static class TypeCollectionExtensions
 {

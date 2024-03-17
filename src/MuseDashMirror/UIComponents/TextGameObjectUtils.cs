@@ -15,7 +15,7 @@ public static class TextGameObjectUtils
     /// <returns>Text GameObject</returns>
     public static GameObject CreateText(string name, string parentName, TextParameters textParameters, TransformParameters transformParameters)
     {
-        var parent = GetGameObjectWithPath(parentName);
+        var parent = GetGameObject(parentName);
         return CreateText(name, parent, textParameters, transformParameters);
     }
 

@@ -20,9 +20,9 @@ public static partial class ToggleUtils
     ];
 
     private static float ScaleFactorX => PnlMenuGameObject.GetTotalScaleFactor().x;
-    private static GameObject TglOnGameObject => GetGameObjectWithPath("TglOn");
-    private static GameObject PnlMenuGameObject => GetGameObjectWithPath("PnlMenu");
-    private static GameObject PnlOptionGameObject => GetGameObjectWithPath("PnlOption");
+    private static GameObject TglOnGameObject => GetGameObject("TglOn");
+    private static GameObject PnlMenuGameObject => GetGameObject("PnlMenu");
+    private static GameObject PnlOptionGameObject => GetGameObject("PnlOption");
     private static int ToggleCount { get; set; }
     private static List<float> LongestWidths { get; } = [];
 
@@ -43,7 +43,7 @@ public static partial class ToggleUtils
     /// <param name="transformParameters">Transform Parameters</param>
     /// <returns>Toggle GameObject</returns>
     public static GameObject CreateToggle(string parentName, ToggleParameters toggleParameters, TransformParameters transformParameters)
-        => CreateToggle(GetGameObjectWithPath(parentName), toggleParameters, transformParameters);
+        => CreateToggle(GetGameObject(parentName), toggleParameters, transformParameters);
 
     /// <summary>
     ///     Create a toggle with parent

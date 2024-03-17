@@ -10,7 +10,7 @@ public static class TransformExtensions
     /// </summary>
     /// <param name="transform">Transform</param>
     /// <param name="indexes">Indexes</param>
-    /// <returns>Transform</returns>
+    /// <returns>Child Transform</returns>
     public static Transform GetChild(this Transform transform, params int[] indexes)
         => indexes.Aggregate(transform, (current, index) => current.GetChild(index));
 
