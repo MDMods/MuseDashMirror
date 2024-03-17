@@ -128,7 +128,7 @@ public static partial class BattleComponent
     public static List<MusicData> MusicDataList { get; } = [];
 
     [ExitGameScene]
-    private static void Reset(object e, SceneEventArgs args)
+    private static void Reset(object sender, SceneEventArgs args)
     {
         NormalMissCount = 0;
         GhostMissCount = 0;

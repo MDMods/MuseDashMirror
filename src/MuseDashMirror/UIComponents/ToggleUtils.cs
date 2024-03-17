@@ -20,9 +20,9 @@ public static partial class ToggleUtils
     ];
 
     private static float ScaleFactorX => PnlMenuGameObject.GetTotalScaleFactor().x;
-    private static GameObject TglOnGameObject => GetGameObjectWithPath("TglOn", true);
-    private static GameObject PnlMenuGameObject => GetGameObjectWithPath("PnlMenu", true);
-    private static GameObject PnlOptionGameObject => GetGameObjectWithPath("PnlOption", true);
+    private static GameObject TglOnGameObject => GetGameObjectWithPath("TglOn");
+    private static GameObject PnlMenuGameObject => GetGameObjectWithPath("PnlMenu");
+    private static GameObject PnlOptionGameObject => GetGameObjectWithPath("PnlOption");
     private static int ToggleCount { get; set; }
     private static List<float> LongestWidths { get; } = [];
 
@@ -224,5 +224,5 @@ public static partial class ToggleUtils
     }
 
     [ExitMainScene]
-    private static void Reset(object e, SceneEventArgs args) => ToggleCount = 0;
+    private static void Reset(object sender, SceneEventArgs args) => ToggleCount = 0;
 }

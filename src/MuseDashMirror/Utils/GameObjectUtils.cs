@@ -74,5 +74,5 @@ public static partial class GameObjectUtils
     }
 
     [ExitScene]
-    private static void ClearCache(object e, SceneEventArgs args) => GameObjectCache?.Clear();
+    private static void ClearCache(object sender, SceneEventArgs args) => GameObjectCache?.Clear();
 }
