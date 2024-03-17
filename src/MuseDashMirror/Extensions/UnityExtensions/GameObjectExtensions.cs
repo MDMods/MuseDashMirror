@@ -21,6 +21,14 @@ public static partial class GameObjectExtensions
     public static Transform GetParentTransform(this GameObject gameObject) => gameObject.transform.parent;
 
     /// <summary>
+    ///     Get the Child <paramref name="gameObject" /> at the specified <paramref name="indexes" />
+    /// </summary>
+    /// <param name="gameObject">GameObject</param>
+    /// <param name="indexes">Indexes</param>
+    /// <returns>Child GameObject</returns>
+    public static GameObject GetChildGameObject(this GameObject gameObject, params int[] indexes) => gameObject.transform.GetChild(indexes).gameObject;
+
+    /// <summary>
     ///     Set the Parent of a GameObject
     /// </summary>
     /// <param name="gameObject">GameObject</param>

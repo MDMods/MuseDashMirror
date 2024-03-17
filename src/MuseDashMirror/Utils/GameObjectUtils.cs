@@ -1,7 +1,7 @@
 namespace MuseDashMirror.Utils;
 
 /// <summary>
-///     Methods related with GameObject
+///     Methods related to <see cref="GameObject" />
 /// </summary>
 [Logger]
 public static partial class GameObjectUtils
@@ -13,13 +13,13 @@ public static partial class GameObjectUtils
 
     /// <summary>
     ///     Get GameObject with specified path/name<br />
-    ///     Able to find unactive GameObject with path
+    ///     Able to find inactive GameObject with path
     /// </summary>
     /// <param name="gameObjectPath">GameObject Path</param>
     /// <param name="cacheTargetGameObject">Whether to cache the target GameObject or not, default to false</param>
     /// <param name="cacheNodeGameObjects">Whether to cache all the GameObjects in the path or not, default to false</param>
     /// <returns>GameObject</returns>
-    public static GameObject GetGameObjectWithPath(string gameObjectPath, bool cacheTargetGameObject = false, bool cacheNodeGameObjects = false)
+    public static GameObject GetGameObject(string gameObjectPath, bool cacheTargetGameObject = false, bool cacheNodeGameObjects = false)
     {
         var nodePaths = gameObjectPath.Split('/');
         var gameObjectName = nodePaths[^1];

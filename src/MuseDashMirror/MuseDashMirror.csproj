@@ -137,6 +137,10 @@
                           ReferenceOutputAssembly="false"/>
     </ItemGroup>
 
+    <ItemGroup>
+        <EmbeddedResource Include="Icon.png"/>
+    </ItemGroup>
+
     <Target Name="CopyMods" AfterTargets="Build" Condition="'$(WORKER)' != 'GitHub'">
         <Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="$(GameFolder)\Mods"/>
         <Message Text="Copied DLL -&gt; $(GameFolder)\Mods\$(AssemblyName).dll" Importance="High"/>
