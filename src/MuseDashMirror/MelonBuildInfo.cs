@@ -8,5 +8,5 @@ internal static class MelonBuildInfo
 
     public const string Author = "lxy";
 
-    public const string ModVersion = "3.1.4";
+    public const string ModVersion = "3.2.0";
 }
