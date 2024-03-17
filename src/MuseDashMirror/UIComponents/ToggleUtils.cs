@@ -77,8 +77,7 @@ public static partial class ToggleUtils
 
         toggle.SetRectTransform(transformParameters);
 
-        toggle.GetComponent<OnToggle>().Destroy();
-        toggle.GetComponent<OnToggleOn>().Destroy();
+        toggle.GetComponent<OnToggle>().playables.RemoveRange(0, 2);
         toggle.GetComponent<OnActivate>().Destroy();
 
         var toggleComp = toggle.GetComponent<Toggle>();
@@ -142,8 +141,7 @@ public static partial class ToggleUtils
             Expression.Parameter(typeof(T)),
             parameterExpression).Compile();
 
-        toggle.GetComponent<OnToggle>().Destroy();
-        toggle.GetComponent<OnToggleOn>().Destroy();
+        toggle.GetComponent<OnToggle>().playables.RemoveRange(0, 2);
         toggle.GetComponent<OnActivate>().Destroy();
 
         var toggleComp = toggle.GetComponent<Toggle>();
@@ -178,8 +176,7 @@ public static partial class ToggleUtils
 
         toggle.transform.position = GetPosition(rectTransform);
 
-        toggle.GetComponent<OnToggle>().Destroy();
-        toggle.GetComponent<OnToggleOn>().Destroy();
+        toggle.GetComponent<OnToggle>().playables.RemoveRange(0, 2);
         toggle.GetComponent<OnActivate>().Destroy();
 
         var toggleComp = toggle.GetComponent<Toggle>();
