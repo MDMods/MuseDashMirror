@@ -55,19 +55,15 @@ public sealed class PnlMenuToggleGenerator : IIncrementalGenerator
         var variableName = ctx.TargetSymbol.Name;
         var attribute = ctx.TargetSymbol.GetAttributes().First(x => x.AttributeClass!.ToDisplayString() == PnlMenuToggleAttributeName);
 
-        if (attribute.ApplicationSyntaxReference!.GetSyntax() is not AttributeSyntax { ArgumentList.Arguments: var arguments })
+        if (attribute.ConstructorArguments is not { Length: 3 } arguments)
         {
             return null;
         }
 
-        var boolName = arguments[2].Expression.ToString().Contains("nameof(")
-            ? arguments[2].Expression.ToString()[7..^1]
-            : arguments[2].Expression.ToString();
-
-        var constructorArguments = attribute.ConstructorArguments.Select(x => x.Value!.ToString()).Take(2).ToArray();
+        var constructorArguments = arguments.Select(x => x.Value!.ToString()).ToArray();
 
         return new PnlMenuToggleData(staticUsingDirectives, @namespace, className, variableName, constructorArguments[0], constructorArguments[1],
-            boolName);
+            constructorArguments[2]);
     }
 
     private static void GenerateFromData(SourceProductionContext spc, PnlMenuToggleData? data)
