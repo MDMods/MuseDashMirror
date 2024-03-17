@@ -7,6 +7,7 @@ internal static class GameInitPatch
 {
     private static void Postfix(GameInit __instance)
     {
+        GameObjectCache["UI"] = __instance.gameObject;
         GameObjectCache["TglOn"] = __instance.transform.GetChild(2, 5, 7, 2, 0).gameObject;
         GameInitPatchInvoke(__instance);
     }

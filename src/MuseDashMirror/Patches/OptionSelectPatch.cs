@@ -7,6 +7,8 @@ internal static class OptionSelectPatch
     [HarmonyPostfix]
     private static void AwakePostfix(OptionSelect __instance)
     {
-        __instance.m_SelectedButtonList[16] = CreateSettingButton();
+        CreateSettingButton();
+        CreateSettingPage();
+        __instance.SetButtonVisual(10, true);
     }
 }
