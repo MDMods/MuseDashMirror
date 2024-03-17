@@ -15,7 +15,9 @@ internal static class SettingUtils
 
         var img = SettingButton.GetChildGameObject(0);
         img.name = "ImgModSetting";
-        img.GetComponent<Image>().sprite = ReadEmbeddedResource("Icon.png").ToSprite();
+        var icon = ReadEmbeddedResource("Icon.png").ToSprite();
+        icon.name = "IconModSetting";
+        img.GetComponent<Image>().sprite = icon;
 
         var txt = SettingButton.GetChildGameObject(1);
         txt.name = "TxtModSetting";
@@ -32,7 +34,7 @@ internal static class SettingUtils
         SettingPage = forwardTransform.GetChild(6).gameObject;
         SettingPage.name = "PnlModSetting";
 
-        SettingPage.transform.SetSiblingIndex(12);
+        SettingPage.transform.SetSiblingIndex(11);
         return SettingPage;
     }
 }
