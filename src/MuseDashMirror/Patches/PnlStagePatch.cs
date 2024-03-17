@@ -5,13 +5,5 @@ namespace MuseDashMirror.Patches;
 [HarmonyPatch(typeof(PnlStage), nameof(PnlStage.Awake))]
 internal static class PnlStagePatch
 {
-    private static void Postfix(PnlStage __instance)
-    {
-        if (!GameObjectCache.ContainsKey("TglOn"))
-        {
-            GameObjectCache["TglOn"] = __instance.transform.GetAncestorAtLevel(2).GetChild(2, 5, 7, 2, 0).gameObject;
-        }
-
-        PnlStagePatchInvoke(__instance);
-    }
+    private static void Postfix(PnlStage __instance) => PnlStagePatchInvoke(__instance);
 }
