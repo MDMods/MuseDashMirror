@@ -121,12 +121,12 @@ public static partial class GameObjectExtensions
 
         while (parentTransform != null)
         {
-            component = parentTransform.gameObject.GetComponent<T>();
             if (component != null)
             {
                 return component;
             }
 
+            component = parentTransform.gameObject.GetComponent<T>();
             parentTransform = parentTransform.parent;
         }
 
@@ -148,12 +148,12 @@ public static partial class GameObjectExtensions
 
         while (parentTransform != null)
         {
-            component = parentTransform.gameObject.GetComponent<T>();
             if (component != null)
             {
                 return true;
             }
 
+            component = parentTransform.gameObject.GetComponent<T>();
             parentTransform = parentTransform.parent;
         }
 
