@@ -31,7 +31,8 @@ public static partial class ToggleUtils
     /// </summary>
     /// <param name="toggleParameters">Toggle Parameters</param>
     /// <param name="transformParameters">Transform Parameters</param>
-    /// <returns></returns>
+    /// <returns>Toggle GameObject</returns>
+    [CompatibleScene(Scene.Main)]
     public static GameObject CreateToggle(ToggleParameters toggleParameters, TransformParameters transformParameters) =>
         CreateToggle((Transform)null, toggleParameters, transformParameters);
 
@@ -42,6 +43,7 @@ public static partial class ToggleUtils
     /// <param name="toggleParameters">Toggle Parameters</param>
     /// <param name="transformParameters">Transform Parameters</param>
     /// <returns>Toggle GameObject</returns>
+    [CompatibleScene(Scene.Main)]
     public static GameObject CreateToggle(string parentName, ToggleParameters toggleParameters, TransformParameters transformParameters)
         => CreateToggle(GetGameObject(parentName), toggleParameters, transformParameters);
 
@@ -52,6 +54,7 @@ public static partial class ToggleUtils
     /// <param name="toggleParameters">Toggle Parameters</param>
     /// <param name="transformParameters">Transform Parameters</param>
     /// <returns>Toggle GameObject</returns>
+    [CompatibleScene(Scene.Main)]
     public static GameObject CreateToggle(GameObject parent, ToggleParameters toggleParameters, TransformParameters transformParameters)
         => CreateToggle(parent.transform, toggleParameters, transformParameters);
 
@@ -62,6 +65,7 @@ public static partial class ToggleUtils
     /// <param name="toggleParameters">Toggle Parameters</param>
     /// <param name="transformParameters">Transform Parameters</param>
     /// <returns></returns>
+    [CompatibleScene(Scene.Main)]
     public static GameObject CreateToggle(Transform parentTransform, ToggleParameters toggleParameters, TransformParameters transformParameters)
     {
         var toggle = TglOnGameObject.FastInstantiate(parentTransform);
@@ -102,6 +106,7 @@ public static partial class ToggleUtils
     /// <param name="initialValue">Initial Value for Toggle</param>
     /// <param name="callback">Boolean Callback</param>
     /// <returns>Toggle GameObject</returns>
+    [CompatibleScene(Scene.Main)]
     public static GameObject CreatePnlMenuToggle(string name, string text, bool initialValue, Action<bool> callback) =>
         CreatePnlMenuToggle(new ToggleParameters(name, new TextParameters(text, NormalFont, 40), initialValue, callback));
 
@@ -115,6 +120,7 @@ public static partial class ToggleUtils
     /// <typeparam name="T">The type of the Target Object</typeparam>
     /// <returns>Toggle GameObject</returns>
     /// <exception cref="ArgumentException">Thrown when the provided expression does not represent a property or field of the target object</exception>
+    [CompatibleScene(Scene.Main)]
     public static GameObject CreatePnlMenuToggle<T>(string name, string text, T target, Expression<Func<T, bool>> expression)
     {
         var toggle = TglOnGameObject.FastInstantiate(PnlMenuGameObject.transform);
@@ -163,6 +169,7 @@ public static partial class ToggleUtils
     /// </summary>
     /// <param name="toggleParameters">Toggle Parameters</param>
     /// <returns>Toggle GameObject</returns>
+    [CompatibleScene(Scene.Main)]
     public static GameObject CreatePnlMenuToggle(ToggleParameters toggleParameters)
     {
         var toggle = TglOnGameObject.FastInstantiate(PnlMenuGameObject.transform);
