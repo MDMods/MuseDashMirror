@@ -13,6 +13,7 @@ public static class TextGameObjectUtils
     /// <param name="textParameters">Text Parameters</param>
     /// <param name="transformParameters">Transform Parameters</param>
     /// <returns>Text GameObject</returns>
+    [CompatibleScene(Scene.All)]
     public static GameObject CreateText(string name, string parentName, TextParameters textParameters, TransformParameters transformParameters)
     {
         var parent = GetGameObject(parentName);
@@ -27,6 +28,7 @@ public static class TextGameObjectUtils
     /// <param name="textParameters">Text Parameters</param>
     /// <param name="transformParameters">Transform Parameters</param>
     /// <returns>Text GameObject</returns>
+    [CompatibleScene(Scene.All)]
     public static GameObject CreateText(string name, GameObject parent, TextParameters textParameters, TransformParameters transformParameters)
     {
         var gameObject = new GameObject(name);

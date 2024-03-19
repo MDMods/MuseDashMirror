@@ -17,6 +17,7 @@ public static partial class CanvasUtils
     /// <param name="cameraDimension">TwoD or ThreeD</param>
     /// <returns>Camera</returns>
     /// <exception cref="ArgumentOutOfRangeException"></exception>
+    [CompatibleScene(Scene.All)]
     public static Camera GetCamera(CameraDimension cameraDimension)
     {
         return cameraDimension switch
@@ -32,6 +33,7 @@ public static partial class CanvasUtils
     /// </summary>
     /// <param name="cameraName">Camera Name</param>
     /// <returns>Camera</returns>
+    [CompatibleScene(Scene.All)]
     public static Camera GetCamera(string cameraName)
     {
         if (CameraCache.TryGetValue(cameraName, out var camera))
@@ -55,6 +57,7 @@ public static partial class CanvasUtils
     /// </summary>
     /// <param name="canvasName">Canvas Name</param>
     /// <returns>Canvas GameObject</returns>
+    [CompatibleScene(Scene.All)]
     public static GameObject CreateOverlayCanvas(string canvasName) =>
         CreateCanvas(canvasName, RenderMode.ScreenSpaceOverlay, null, null);
 
@@ -64,6 +67,7 @@ public static partial class CanvasUtils
     /// <param name="canvasName">Canvas Name</param>
     /// <param name="cameraName">Camera Name</param>
     /// <returns>Canvas GameObject</returns>
+    [CompatibleScene(Scene.All)]
     public static GameObject CreateCameraCanvas(string canvasName, string cameraName) =>
         CreateCameraCanvas(canvasName, cameraName, null);
 
@@ -73,6 +77,7 @@ public static partial class CanvasUtils
     /// <param name="canvasName">Canvas Name</param>
     /// <param name="cameraDimension">TwoD or ThreeD</param>
     /// <returns>Canvas GameObject</returns>
+    [CompatibleScene(Scene.All)]
     public static GameObject CreateCameraCanvas(string canvasName, CameraDimension cameraDimension) =>
         CreateCameraCanvas(canvasName, cameraDimension, null);
 
@@ -83,6 +88,7 @@ public static partial class CanvasUtils
     /// <param name="cameraName">Camera Name</param>
     /// <param name="parent">Parent GameObject</param>
     /// <returns>Canvas GameObject</returns>
+    [CompatibleScene(Scene.All)]
     public static GameObject CreateCameraCanvas(string canvasName, string cameraName, GameObject parent)
     {
         var camera = GetCamera(cameraName);
@@ -97,6 +103,7 @@ public static partial class CanvasUtils
     /// <param name="cameraDimension">TwoD or ThreeD</param>
     /// <param name="parent">Parent GameObject</param>
     /// <returns>Canvas GameObject</returns>
+    [CompatibleScene(Scene.All)]
     public static GameObject CreateCameraCanvas(string canvasName, CameraDimension cameraDimension, GameObject parent)
     {
         var camera = GetCamera(cameraDimension);
@@ -112,6 +119,7 @@ public static partial class CanvasUtils
     /// <param name="camera">Camera GameObject</param>
     /// <param name="parent">Parent GameObject</param>
     /// <returns>Canvas GameObject</returns>
+    [CompatibleScene(Scene.All)]
     public static GameObject CreateCanvas(string canvasName, RenderMode renderMode, Camera camera, GameObject parent)
     {
         var canvasGameObject = new GameObject(canvasName);
