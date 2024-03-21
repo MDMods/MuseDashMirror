@@ -1,4 +1,6 @@
-﻿namespace MuseDashMirror;
+﻿using MelonLoader;
+
+namespace MuseDashMirror;
 
 /// <summary>
 ///     Main class inherit from MelonMod
