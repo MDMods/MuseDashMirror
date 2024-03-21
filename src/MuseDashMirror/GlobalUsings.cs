@@ -1,5 +1,6 @@
 global using HarmonyLib;
 global using Il2Cpp;
+global using MelonLoader;
 global using MuseDashMirror.Attributes;
 global using MuseDashMirror.Attributes.EventAttributes.SceneEvents;
 global using MuseDashMirror.Contracts;
