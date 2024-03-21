@@ -1,6 +1,5 @@
 namespace MuseDashMirror.SourceGenerators.Analyzers;
 
-[UsedImplicitly]
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 public sealed class PnlMenuToggleAnalyzer : DiagnosticAnalyzer
 {

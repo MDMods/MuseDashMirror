@@ -1,6 +1,5 @@
 namespace MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers;
 
-[UsedImplicitly]
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 public sealed class PatchEventAnalyzer : DiagnosticAnalyzer
 {

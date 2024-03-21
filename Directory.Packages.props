@@ -5,11 +5,10 @@
     <ItemGroup>
         <PackageVersion Include="ILRepack.Lib.MSBuild.Task" Version="2.0.26"/>
         <PackageVersion Include="IndexRange" Version="1.0.3"/>
-        <PackageVersion Include="JetBrains.Annotations" Version="2023.3.0"/>
         <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4"/>
         <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0"/>
         <PackageVersion Include="ZString" Version="2.5.1"/>
-        <GlobalPackageReference Include="Roslynator.Analyzers" Version="4.12.0"/>
-        <GlobalPackageReference Include="Roslynator.Formatting.Analyzers" Version="4.12.0"/>
+        <GlobalPackageReference Include="Roslynator.Analyzers" Version="4.11.0"/>
+        <GlobalPackageReference Include="Roslynator.Formatting.Analyzers" Version="4.11.0"/>
     </ItemGroup>
 </Project>

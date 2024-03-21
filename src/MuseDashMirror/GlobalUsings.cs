@@ -1,7 +1,5 @@
-extern alias JetBrainAnnotation;
 global using HarmonyLib;
 global using Il2Cpp;
-global using MelonLoader;
 global using MuseDashMirror.Attributes;
 global using MuseDashMirror.Attributes.EventAttributes.SceneEvents;
 global using MuseDashMirror.Contracts;
@@ -22,4 +20,3 @@ global using static MuseDashMirror.Utils.GameObjectUtils;
 global using static MuseDashMirror.Utils.SettingUtils;
 global using Il2CppStringList = Il2CppSystem.Collections.Generic.List<string>;
 global using Text = UnityEngine.UI.Text;
-global using UsedImplicitlyAttribute = JetBrainAnnotation::JetBrains.Annotations.UsedImplicitlyAttribute;
