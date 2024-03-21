@@ -5,6 +5,7 @@ namespace MuseDashMirror.Patches;
 [HarmonyPatch(typeof(GameInit), nameof(GameInit.Awake))]
 internal static class GameInitPatch
 {
+    [UsedImplicitly]
     private static void Postfix(GameInit __instance)
     {
         GameObjectCache["UI"] = __instance.gameObject;

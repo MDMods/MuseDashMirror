@@ -1,5 +1,6 @@
 namespace MuseDashMirror.SourceGenerators.Analyzers.EventAnalyzers;
 
+[UsedImplicitly]
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 public sealed class SceneEventAnalyzer : DiagnosticAnalyzer
 {

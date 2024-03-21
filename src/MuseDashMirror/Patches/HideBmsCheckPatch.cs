@@ -6,6 +6,7 @@ namespace MuseDashMirror.Patches;
 [HarmonyPatch(typeof(SpecialSongManager), nameof(SpecialSongManager.HideBmsCheck))]
 internal static class HideBmsCheckPatch
 {
+    [UsedImplicitly]
     private static void Postfix(MusicInfo selectedMusic, ref int selectedDifficulty)
     {
         Difficulty = selectedDifficulty;

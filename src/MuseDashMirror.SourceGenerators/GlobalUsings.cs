@@ -1,6 +1,7 @@
 global using System.Collections.Immutable;
 global using System.Text.RegularExpressions;
 global using Cysharp.Text;
+global using JetBrains.Annotations;
 global using Microsoft.CodeAnalysis;
 global using Microsoft.CodeAnalysis.CSharp;
 global using Microsoft.CodeAnalysis.CSharp.Syntax;

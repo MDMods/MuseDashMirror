@@ -5,6 +5,7 @@ namespace MuseDashMirror.Patches;
 [HarmonyPatch(typeof(PnlMenu), nameof(PnlMenu.Awake))]
 internal static class PnlMenuPatch
 {
+    [UsedImplicitly]
     private static void Postfix(PnlMenu __instance)
     {
         GameObjectCache["PnlMenu"] = __instance.gameObject;
