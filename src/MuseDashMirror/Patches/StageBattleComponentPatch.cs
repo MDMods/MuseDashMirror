@@ -5,6 +5,7 @@ namespace MuseDashMirror.Patches;
 [HarmonyPatch(typeof(StageBattleComponent), nameof(StageBattleComponent.GameStart))]
 internal static class StageBattleComponentPatch
 {
+    [UsedImplicitly]
     private static void Postfix(StageBattleComponent __instance)
     {
         GameStartPatchInvoke(__instance);
