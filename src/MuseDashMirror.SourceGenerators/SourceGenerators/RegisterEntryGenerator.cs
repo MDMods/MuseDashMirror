@@ -31,13 +31,19 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
         var className = classSymbol.Name;
         var @namespace = classSymbol.ContainingNamespace.ToDisplayString();
 
+        if (MelonClassName is not null && MelonClassNameSpace is not null)
+        {
+            goto RegisterMethods;
+        }
+
         if (classDeclaration is { BaseList.Types: var types }
-            && types.Any(x => x.Type.ToString().StartsWith("MelonMod")))
+            && types.Any(x => semanticModel.GetTypeInfo(x.Type).ConvertedType?.ToString() == "MelonLoader.MelonMod"))
         {
             MelonClassName = className;
             MelonClassNameSpace = @namespace;
         }
 
+        RegisterMethods:
         var methodSymbols = classSymbol.GetMembers().OfType<IMethodSymbol>().ToList();
         var fieldSymbols = classSymbol.GetMembers().OfType<IFieldSymbol>().ToList();
         var propertySymbols = classSymbol.GetMembers().OfType<IPropertySymbol>().ToList();
