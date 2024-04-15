@@ -66,7 +66,7 @@ public sealed class SceneEventGenerator : IIncrementalGenerator
         using var sceneEventStringBuilder = ZString.CreateStringBuilder(true);
         foreach (var sceneEventName in sceneEventNames)
         {
-            sceneEventStringBuilder.AppendLine($"\t{GetGeneratedCodeAttribute(nameof(SceneEventGenerator))}");
+            sceneEventStringBuilder.AppendLine($"\t{GetGeneratedCodeAttribute(typeof(SceneEventGenerator))}");
             sceneEventStringBuilder.AppendLine(
                 $"\tinternal static void Register{className}{methodName}To{sceneEventName}Event() => On{sceneEventName} += {methodName};");
             sceneEventStringBuilder.AppendLine();

@@ -82,7 +82,7 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
 
               partial class {{MelonClassName}}
               {
-                  {{GetGeneratedCodeAttribute(nameof(RegisterEntryGenerator))}}
+                  {{GetGeneratedCodeAttribute(typeof(RegisterEntryGenerator))}}
                   static {{MelonClassName}}()
                   {
               {{methodStringBuilder.ToString().TrimEnd()}}
