@@ -9,6 +9,6 @@
         <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0"/>
         <PackageVersion Include="ZString" Version="2.6.0"/>
         <GlobalPackageReference Include="Roslynator.Analyzers" Version="4.12.0"/>
-        <GlobalPackageReference Include="Roslynator.Formatting.Analyzers" Version="4.12.0"/>
+        <GlobalPackageReference Include="Roslynator.Formatting.Analyzers" Version="4.12.1"/>
     </ItemGroup>
 </Project>
