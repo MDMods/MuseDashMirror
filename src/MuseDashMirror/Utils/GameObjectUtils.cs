@@ -42,31 +42,32 @@ public static partial class GameObjectUtils
             GameObjectCache[ancestorGameObjectName] = ancestorGameObject;
         }
 
-        return nodePaths.Length == 1 ? ancestorGameObject : GetGameObjectWithSplitPath(ancestorGameObject, cacheNodeGameObjects, nodePaths[1..]);
+        return nodePaths.Length == 1 ? ancestorGameObject : GetGameObjectWithSplitPath(ancestorGameObject, cacheNodeGameObjects, nodePaths);
     }
 
-    private static GameObject GetGameObjectWithSplitPath(GameObject ancestorGameObject, bool cacheNodeGameObjects = false, params string[] nodePaths)
+    private static GameObject GetGameObjectWithSplitPath(GameObject ancestorGameObject, bool cacheNodeGameObjects, IReadOnlyList<string> nodePaths)
     {
         var currentGameObject = ancestorGameObject;
-        foreach (var nodePath in nodePaths)
+        for (var i = 1; i < nodePaths.Count; i++)
         {
-            if (GameObjectCache.TryGetValue(nodePath, out var cachedGameObject))
+            var nodeName = nodePaths[i];
+            if (GameObjectCache.TryGetValue(nodeName, out var cachedGameObject))
             {
                 currentGameObject = cachedGameObject;
                 continue;
             }
 
-            var childTransform = currentGameObject.transform.Find(nodePath);
+            var childTransform = currentGameObject.transform.Find(nodeName);
             if (childTransform == null)
             {
-                Logger.Error($"GameObject with name {nodePath} is not found");
+                Logger.Error($"GameObject with name {nodeName} is not found");
                 return null;
             }
 
             currentGameObject = childTransform.gameObject;
             if (cacheNodeGameObjects)
             {
-                GameObjectCache[nodePath] = currentGameObject;
+                GameObjectCache[nodeName] = currentGameObject;
             }
         }
 
