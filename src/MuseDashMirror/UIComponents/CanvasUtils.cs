@@ -45,7 +45,7 @@ public static partial class CanvasUtils
         if (camera == null)
         {
             Logger.Error($"Camera with name {cameraName} is not found");
-            return camera;
+            return null;
         }
 
         CameraCache[cameraName] = camera;
