@@ -1,4 +1,6 @@
-﻿namespace MuseDashMirror.UIComponents;
+﻿using System.Runtime.InteropServices;
+
+namespace MuseDashMirror.UIComponents;
 
 /// <summary>
 ///     Methods for creating canvas and related components
@@ -9,7 +11,7 @@ public static partial class CanvasUtils
     /// <summary>
     ///     Cache for cameras
     /// </summary>
-    private static readonly Dictionary<string, Camera> CameraCache = new();
+    private static readonly Dictionary<string, Camera> CameraCache = [];
 
     /// <summary>
     ///     Get camera by dimension
@@ -36,7 +38,8 @@ public static partial class CanvasUtils
     [CompatibleScene(Scene.All)]
     public static Camera GetCamera(string cameraName)
     {
-        if (CameraCache.TryGetValue(cameraName, out var camera))
+        ref var camera = ref CollectionsMarshal.GetValueRefOrAddDefault(CameraCache, cameraName, out var existed);
+        if (existed)
         {
             return camera;
         }
@@ -45,10 +48,8 @@ public static partial class CanvasUtils
         if (camera == null)
         {
             Logger.Error($"Camera with name {cameraName} is not found");
-            return null;
         }
 
-        CameraCache[cameraName] = camera;
         return camera;
     }
 
