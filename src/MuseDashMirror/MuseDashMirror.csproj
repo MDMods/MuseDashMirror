@@ -9,7 +9,7 @@
         <PackageId>MuseDashMirror</PackageId>
         <Title>Muse Dash Mirror</Title>
         <Authors>lxy</Authors>
-        <PackageVersion>3.2.0</PackageVersion>
+        <PackageVersion>4.0.0</PackageVersion>
         <PackageProjectUrl>https://github.com/MDMods/MuseDashMirror</PackageProjectUrl>
         <RepositoryUrl>https://github.com/MDMods/MuseDashMirror</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
