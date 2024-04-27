@@ -7,37 +7,6 @@ namespace MuseDashMirror.Extensions.UnityExtensions;
 public static partial class GameObjectExtensions
 {
     /// <summary>
-    ///     Get the Parent GameObject of a GameObject
-    /// </summary>
-    /// <param name="gameObject">GameObject</param>
-    /// <returns>Parent GameObject</returns>
-    public static GameObject GetParentGameObject(this GameObject gameObject) => gameObject.GetParentTransform().gameObject;
-
-    /// <summary>
-    ///     Get the Parent Transform of a GameObject
-    /// </summary>
-    /// <param name="gameObject">GameObject</param>
-    /// <returns>Parent Transform</returns>
-    public static Transform GetParentTransform(this GameObject gameObject) => gameObject.transform.parent;
-
-    /// <summary>
-    ///     Get the Child <paramref name="gameObject" /> at the specified <paramref name="indexes" />
-    /// </summary>
-    /// <param name="gameObject">GameObject</param>
-    /// <param name="indexes">Indexes</param>
-    /// <returns>Child GameObject</returns>
-    public static GameObject GetChildGameObject(this GameObject gameObject, params int[] indexes) => gameObject.transform.GetChild(indexes).gameObject;
-
-    /// <summary>
-    ///     Set the Parent of a GameObject
-    /// </summary>
-    /// <param name="gameObject">GameObject</param>
-    /// <param name="parent">Parent GameObject</param>
-    /// <param name="worldPositionStays">World Position Stays</param>
-    public static void SetParent(this GameObject gameObject, GameObject parent, bool worldPositionStays = true)
-        => gameObject.transform.SetParent(parent.transform, worldPositionStays);
-
-    /// <summary>
     ///     Set the text of a GameObject with a Text gameObject
     /// </summary>
     /// <param name="gameObject">GameObject</param>
@@ -198,4 +167,57 @@ public static partial class GameObjectExtensions
         contentSizeFitter.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
         contentSizeFitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
     }
+
+    #region Hierachy
+
+    /// <summary>
+    ///     Get the Parent GameObject of a GameObject
+    /// </summary>
+    /// <param name="gameObject">GameObject</param>
+    /// <returns>Parent GameObject</returns>
+    public static GameObject GetParentGameObject(this GameObject gameObject) => gameObject.GetParentTransform().gameObject;
+
+    /// <summary>
+    ///     Get the Parent Transform of a GameObject
+    /// </summary>
+    /// <param name="gameObject">GameObject</param>
+    /// <returns>Parent Transform</returns>
+    public static Transform GetParentTransform(this GameObject gameObject) => gameObject.transform.parent;
+
+    /// <summary>
+    ///     Get the Child GameObject of the <paramref name="gameObject" /> at the specified <paramref name="indexes" />
+    /// </summary>
+    /// <param name="gameObject">GameObject</param>
+    /// <param name="indexes">Indexes</param>
+    /// <returns>Child GameObject</returns>
+    public static GameObject GetChildGameObject(this GameObject gameObject, params int[] indexes) => gameObject.transform.GetChildTransform(indexes).gameObject;
+
+    /// <summary>
+    ///     Get the Child Transform of the <paramref name="gameObject" /> at the specified <paramref name="indexes" />
+    /// </summary>
+    /// <param name="gameObject">GameObject</param>
+    /// <param name="indexes">Indexes</param>
+    /// <returns>Child Transform</returns>
+    public static Transform GetChildTransform(this GameObject gameObject, params int[] indexes) => gameObject.transform.GetChildTransform(indexes);
+
+    /// <summary>
+    ///     Set the Parent of a GameObject
+    /// </summary>
+    /// <param name="gameObject">GameObject</param>
+    /// <param name="parent">Parent GameObject</param>
+    /// <param name="worldPositionStays">World Position Stays</param>
+    public static void SetParent(this GameObject gameObject, GameObject parent, bool worldPositionStays = true)
+        => gameObject.transform.SetParent(parent.transform, worldPositionStays);
+
+
+    /// <summary>
+    ///     Set the Parent of a GameObject
+    /// </summary>
+    /// <param name="gameObject">GameObject</param>
+    /// <param name="parent">Parent GameObject Transform</param>
+    /// <param name="worldPositionStays">World Position Stays</param>
+    public static void SetParent(this GameObject gameObject, Transform parent, bool worldPositionStays = true)
+        => gameObject.transform.SetParent(parent, worldPositionStays);
+
+    #endregion
 }

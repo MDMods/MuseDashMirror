@@ -11,7 +11,7 @@ namespace MuseDashMirror.Attributes.EventAttributes.PatchEvents;
 ///     <example>
 ///         The method must have the following signature:
 ///         <code>
-///         private static void MethodName(object sender, MenuSelectEventArgs e)
+///         private static void MethodName(object sender, PnlVictoryEventArgs e)
 ///         </code>
 ///     </example>
 /// </summary>

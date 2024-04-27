@@ -6,13 +6,46 @@ namespace MuseDashMirror.Extensions.UnityExtensions;
 public static class TransformExtensions
 {
     /// <summary>
-    ///     Get the child of the <paramref name="transform" /> at the specified <paramref name="indexes" />
+    ///     Get the Child Transform of the <paramref name="transform" /> at the specified <paramref name="indexes" />
     /// </summary>
     /// <param name="transform">Transform</param>
     /// <param name="indexes">Indexes</param>
     /// <returns>Child Transform</returns>
-    public static Transform GetChild(this Transform transform, params int[] indexes)
+    public static Transform GetChildTransform(this Transform transform, params int[] indexes)
         => indexes.Aggregate(transform, (current, index) => current.GetChild(index));
+
+    /// <summary>
+    ///     Get the Child GameObject of the <paramref name="transform" /> at the specified <paramref name="indexes" />
+    /// </summary>
+    /// <param name="transform">Transform</param>
+    /// <param name="indexes">Indexes</param>
+    /// <returns>Child GameObject</returns>
+    public static GameObject GetChildGameObject(this Transform transform, params int[] indexes)
+        => GetChildTransform(transform, indexes).gameObject;
+
+    /// <summary>
+    ///     Destroy all children GameObject of a Transform
+    /// </summary>
+    /// <param name="transform">Transform</param>
+    public static void DestroyAllChildren(this Transform transform)
+    {
+        foreach (var child in transform)
+        {
+            child.Cast<Transform>().gameObject.Destroy();
+        }
+    }
+
+    /// <summary>
+    ///     Destroy all children GameObject of a Transform immediately
+    /// </summary>
+    /// <param name="transform">Transform</param>
+    public static void DestroyAllChildrenImmediate(this Transform transform)
+    {
+        foreach (var child in transform)
+        {
+            child.Cast<Transform>().gameObject.DestroyImmediate();
+        }
+    }
 
     /// <summary>
     ///     Get the Ancestor Transform of a Transform with a specified number of levels up.

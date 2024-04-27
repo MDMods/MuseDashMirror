@@ -10,5 +10,7 @@ internal static class OptionSelectPatch
         CreateSettingButton();
         CreateSettingPage();
         __instance.SetButtonVisual(10, true);
+
+        //var slider = CreateSlider("Test", 0, 80);
     }
 }

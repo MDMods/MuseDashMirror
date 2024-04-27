@@ -10,7 +10,7 @@ namespace MuseDashMirror.Attributes.EventAttributes.PatchEvents;
 ///     <example>
 ///         The method must have the following signature:
 ///         <code>
-///         private static void MethodName(object sender, EventArgs e)
+///         private static void MethodName(object sender, SwitchLanguagesEventArgs e)
 ///         </code>
 ///     </example>
 /// </summary>
