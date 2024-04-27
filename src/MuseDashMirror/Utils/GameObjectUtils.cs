@@ -43,8 +43,8 @@ public static partial class GameObjectUtils
         for (var i = 1; i < nodePaths.Count; i++)
         {
             var nodeName = nodePaths[i];
-            var shouldCache = cacheNodeGameObjects && i != nodePaths.Count - 1
-                              || cacheTargetGameObject && i == nodePaths.Count - 1;
+            var shouldCache = (cacheNodeGameObjects && i != nodePaths.Count - 1)
+                              || (cacheTargetGameObject && i == nodePaths.Count - 1);
             currentGameObject = GetGameObjectFromCacheOrFind(currentGameObject, nodeName, shouldCache);
 
             if (currentGameObject == null)

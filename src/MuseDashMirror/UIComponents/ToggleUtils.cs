@@ -108,7 +108,7 @@ public static partial class ToggleUtils
     /// <returns>Toggle GameObject</returns>
     [CompatibleScene(Scene.Main)]
     public static GameObject CreatePnlMenuToggle(string name, string text, bool initialValue, Action<bool> callback) =>
-        CreatePnlMenuToggle(new ToggleParameters(name, new TextParameters(text, NormalFont, 40), initialValue, callback));
+        CreatePnlMenuToggle(new ToggleParameters(name, new TextParameters(text), initialValue, callback));
 
     /// <summary>
     ///     Create a toggle in the PnlMenu
