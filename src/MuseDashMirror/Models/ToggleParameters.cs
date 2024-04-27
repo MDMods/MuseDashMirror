@@ -31,11 +31,6 @@ public class ToggleParameters
     public Action<bool> CallBack { get; set; }
 
     /// <summary>
-    ///     Toggle Text Color
-    /// </summary>
-    public Color TextColor { get; set; } = ToggleTextColor;
-
-    /// <summary>
     ///     Toggle CheckMark Color
     /// </summary>
     public Color CheckMarkColor { get; set; } = ToggleCheckMarkColor;
@@ -52,24 +47,13 @@ public class ToggleParameters
         ToggleName = toggleName;
         TextParameters = textParameters;
         InitialValue = initialValue;
-        if (TextParameters.Color == Color.white)
-        {
-            TextParameters.Color = TextColor;
-        }
-
         CallBack = callBack;
-    }
 
-    /// <summary>
-    ///     Create Toggle Parameters with Text Parameters, Boolean Callback and Toggle Text Color
-    /// </summary>
-    /// <param name="toggleName">Toggle GameObject Name</param>
-    /// <param name="textParameters">Text Parameters</param>
-    /// <param name="initialValue">Initial Value</param>
-    /// <param name="callBack">Boolean Callback</param>
-    /// <param name="textColor">Toggle Text Color</param>
-    public ToggleParameters(string toggleName, TextParameters textParameters, bool initialValue, Action<bool> callBack, Color textColor)
-        : this(toggleName, textParameters, initialValue, callBack) => TextColor = textColor;
+        if (textParameters.Color == Color.white)
+        {
+            textParameters.Color = ToggleTextColor;
+        }
+    }
 
     /// <summary>
     ///     Create Toggle Parameters with Text Parameters, Boolean Callback and Toggle Group
@@ -83,19 +67,6 @@ public class ToggleParameters
         : this(toggleName, textParameters, initialValue, callBack) => ToggleGroup = toggleGroup;
 
     /// <summary>
-    ///     Create Toggle Parameters with Text Parameters, Boolean Callback, Toggle Group and Toggle Text Color
-    /// </summary>
-    /// <param name="toggleName">Toggle GameObject Name</param>
-    /// <param name="textParameters">Text Parameters</param>
-    /// <param name="initialValue">Initial Value</param>
-    /// <param name="callBack">Boolean Callback</param>
-    /// <param name="toggleGroup">Toggle Group</param>
-    /// <param name="textColor">Toggle Text Color</param>
-    public ToggleParameters(string toggleName, TextParameters textParameters, bool initialValue, Action<bool> callBack, ToggleGroup toggleGroup,
-        Color textColor)
-        : this(toggleName, textParameters, initialValue, callBack, toggleGroup) => TextColor = textColor;
-
-    /// <summary>
     ///     Create Toggle Parameters with Text Parameters, Boolean Callback, Toggle Group and CheckMark Color
     /// </summary>
     /// <param name="toggleName">Toggle GameObject Name</param>
@@ -103,9 +74,7 @@ public class ToggleParameters
     /// <param name="initialValue">Initial Value</param>
     /// <param name="callBack">Boolean Callback</param>
     /// <param name="toggleGroup">Toggle Group</param>
-    /// <param name="textColor">Toggle Text Color</param>
     /// <param name="checkMarkColor">CheckMark Color</param>
     public ToggleParameters(string toggleName, TextParameters textParameters, bool initialValue, Action<bool> callBack, ToggleGroup toggleGroup,
-        Color textColor,
-        Color checkMarkColor) : this(toggleName, textParameters, initialValue, callBack, toggleGroup, textColor) => CheckMarkColor = checkMarkColor;
+        Color checkMarkColor) : this(toggleName, textParameters, initialValue, callBack, toggleGroup) => CheckMarkColor = checkMarkColor;
 }
