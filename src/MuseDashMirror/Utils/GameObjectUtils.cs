@@ -21,7 +21,7 @@ public static partial class GameObjectUtils
     /// <returns>GameObject</returns>
     public static GameObject GetGameObject(string gameObjectPath, bool cacheTargetGameObject = false, bool cacheNodeGameObjects = false)
     {
-        var nodePaths = gameObjectPath.Split('/');
+        var nodePaths = gameObjectPath.Split('/').AsSpan();
         var targetGameObjectName = nodePaths[^1];
 
         return GameObjectCache.TryGetValue(targetGameObjectName, out var cachedGameObject)
@@ -29,10 +29,10 @@ public static partial class GameObjectUtils
             : GetGameObjectWithSplitPath(cacheTargetGameObject, cacheNodeGameObjects, nodePaths);
     }
 
-    private static GameObject GetGameObjectWithSplitPath(bool cacheTargetGameObject, bool cacheNodeGameObjects, IReadOnlyList<string> nodePaths)
+    private static GameObject GetGameObjectWithSplitPath(bool cacheTargetGameObject, bool cacheNodeGameObjects, ReadOnlySpan<string> nodePaths)
     {
         var ancestorGameObjectName = nodePaths[0];
-        var ancestorGameObject = GetGameObjectFromCacheOrFind(ancestorGameObjectName, nodePaths.Count == 1 ? cacheTargetGameObject : cacheNodeGameObjects);
+        var ancestorGameObject = GetGameObjectFromCacheOrFind(ancestorGameObjectName, nodePaths.Length == 1 ? cacheTargetGameObject : cacheNodeGameObjects);
 
         if (ancestorGameObject == null)
         {
@@ -40,11 +40,11 @@ public static partial class GameObjectUtils
         }
 
         var currentGameObject = ancestorGameObject;
-        for (var i = 1; i < nodePaths.Count; i++)
+        for (var i = 1; i < nodePaths.Length; i++)
         {
             var nodeName = nodePaths[i];
-            var shouldCache = (cacheNodeGameObjects && i != nodePaths.Count - 1)
-                              || (cacheTargetGameObject && i == nodePaths.Count - 1);
+            var shouldCache = (cacheNodeGameObjects && i != nodePaths.Length - 1)
+                              || (cacheTargetGameObject && i == nodePaths.Length - 1);
             currentGameObject = GetGameObjectFromCacheOrFind(currentGameObject, nodeName, shouldCache);
 
             if (currentGameObject == null)
