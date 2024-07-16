@@ -3,7 +3,7 @@
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     </PropertyGroup>
     <ItemGroup>
-        <PackageVersion Include="ILRepack.Lib.MSBuild.Task" Version="2.0.33"/>
+        <PackageVersion Include="ILRepack.Lib.MSBuild.Task" Version="2.0.34.1"/>
         <PackageVersion Include="IndexRange" Version="1.0.3"/>
         <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4"/>
         <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0"/>
