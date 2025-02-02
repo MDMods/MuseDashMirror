@@ -3,8 +3,8 @@ namespace MuseDashMirror.SourceGenerators;
 [Generator(LanguageNames.CSharp)]
 public sealed class RegisterEntryGenerator : IIncrementalGenerator
 {
-    private static string? MelonClassName { get; set; }
-    private static string? MelonClassNameSpace { get; set; }
+    internal static string? MelonModClassName { get; set; }
+    internal static string? MelonModNamespace { get; set; }
 
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
@@ -31,19 +31,6 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
         var className = classSymbol.Name;
         var @namespace = classSymbol.ContainingNamespace.ToDisplayString();
 
-        if (MelonClassName is not null && MelonClassNameSpace is not null)
-        {
-            goto RegisterMethods;
-        }
-
-        if (classDeclaration is { BaseList.Types: var types }
-            && types.Any(x => semanticModel.GetTypeInfo(x.Type).ConvertedType?.ToString() == "MelonLoader.MelonMod"))
-        {
-            MelonClassName = className;
-            MelonClassNameSpace = @namespace;
-        }
-
-        RegisterMethods:
         var methodSymbols = classSymbol.GetMembers().OfType<IMethodSymbol>().ToList();
         var fieldSymbols = classSymbol.GetMembers().OfType<IFieldSymbol>().ToList();
         var propertySymbols = classSymbol.GetMembers().OfType<IPropertySymbol>().ToList();
@@ -58,13 +45,13 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
 
     private static void GenerateFromData(SourceProductionContext spc, ImmutableArray<RegisterClassData?> dataList)
     {
-        if (MelonClassName is null || MelonClassNameSpace is null || !dataList.Any(x => x is not null))
+        if (MelonModClassName is null || MelonModNamespace is null || !dataList.Any(x => x is not null))
         {
             return;
         }
 
-        using var usingStringBuilder = ZString.CreateStringBuilder();
-        using var methodStringBuilder = ZString.CreateStringBuilder();
+        var usingStringBuilder = new StringBuilder();
+        var methodStringBuilder = new StringBuilder();
         var nameList = new HashSet<string>();
         foreach (var data in dataList)
         {
@@ -80,16 +67,16 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
             }
         }
 
-        spc.AddSource($"{MelonClassName}.RegisterEntry.g.cs",
+        spc.AddSource($"{MelonModClassName}.RegisterEntry.g.cs",
             Header +
             $$"""
-              {{usingStringBuilder.ToString()}}
-              namespace {{MelonClassNameSpace}};
+              {{usingStringBuilder}}
+              namespace {{MelonModNamespace}};
 
-              partial class {{MelonClassName}}
+              partial class {{MelonModClassName}}
               {
                   {{GetGeneratedCodeAttribute(typeof(RegisterEntryGenerator))}}
-                  static {{MelonClassName}}()
+                  static {{MelonModClassName}}()
                   {
               {{methodStringBuilder.ToString().TrimEnd()}}
                   }

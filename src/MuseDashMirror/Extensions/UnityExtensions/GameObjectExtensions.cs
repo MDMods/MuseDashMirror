@@ -209,7 +209,6 @@ public static partial class GameObjectExtensions
     public static void SetParent(this GameObject gameObject, GameObject parent, bool worldPositionStays = true)
         => gameObject.transform.SetParent(parent.transform, worldPositionStays);
 
-
     /// <summary>
     ///     Set the Parent of a GameObject
     /// </summary>

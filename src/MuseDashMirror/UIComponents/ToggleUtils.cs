@@ -13,10 +13,10 @@ public static partial class ToggleUtils
 
     private static readonly Vector3[] Positions =
     [
-        new Vector3(-6.8f, -2.55f, 100f),
-        new Vector3(-6.8f, -3.35f, 100f),
-        new Vector3(-6.8f, -4.15f, 100f),
-        new Vector3(-6.8f, -4.95f, 100f)
+        new(-6.8f, -2.55f, 100f),
+        new(-6.8f, -3.35f, 100f),
+        new(-6.8f, -4.15f, 100f),
+        new(-6.8f, -4.95f, 100f)
     ];
 
     private static float ScaleFactorX => PnlMenuGameObject.GetTotalScaleFactor().x;

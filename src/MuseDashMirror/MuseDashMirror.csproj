@@ -131,10 +131,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\MuseDashMirror.SourceGenerators\MuseDashMirror.SourceGenerators.csproj"
-                          OutputItemType="Analyzer"
-                          PackAsAnalyzer="true"
-                          ReferenceOutputAssembly="false"/>
+        <ProjectReference Include="..\MuseDashMirror.SourceGenerators\MuseDashMirror.SourceGenerators.csproj" OutputItemType="Analyzer" PackAsAnalyzer="true" ReferenceOutputAssembly="false"/>
     </ItemGroup>
 
     <ItemGroup>
@@ -148,8 +145,7 @@
 
     <Target Name="CopyLibs" AfterTargets="CopyMods" Condition="'$(CopyReferences)' == 'true'">
         <ItemGroup>
-            <ReferenceDlls Include="@(ReferencePath->'%(FullPath)')"
-                           Condition="'%(ReferencePath.ResolvedFrom)' == 'ImplicitlyExpandDesignTimeFacades' Or '%(ReferencePath.ResolvedFrom)' == '{HintPathFromItem}'"/>
+            <ReferenceDlls Include="@(ReferencePath->'%(FullPath)')" Condition="'%(ReferencePath.ResolvedFrom)' == 'ImplicitlyExpandDesignTimeFacades' Or '%(ReferencePath.ResolvedFrom)' == '{HintPathFromItem}'"/>
         </ItemGroup>
         <Copy SourceFiles="@(ReferenceDlls)" DestinationFolder="$(SolutionDir)\Libs" SkipUnchangedFiles="true"/>
     </Target>
