@@ -190,7 +190,8 @@ public static partial class GameObjectExtensions
     /// <param name="gameObject">GameObject</param>
     /// <param name="indexes">Indexes</param>
     /// <returns>Child GameObject</returns>
-    public static GameObject GetChildGameObject(this GameObject gameObject, params int[] indexes) => gameObject.transform.GetChildTransform(indexes).gameObject;
+    public static GameObject GetChildGameObject(this GameObject gameObject, params ReadOnlySpan<int> indexes) =>
+        gameObject.transform.GetChildTransform(indexes).gameObject;
 
     /// <summary>
     ///     Get the Child Transform of the <paramref name="gameObject" /> at the specified <paramref name="indexes" />
@@ -198,7 +199,7 @@ public static partial class GameObjectExtensions
     /// <param name="gameObject">GameObject</param>
     /// <param name="indexes">Indexes</param>
     /// <returns>Child Transform</returns>
-    public static Transform GetChildTransform(this GameObject gameObject, params int[] indexes) => gameObject.transform.GetChildTransform(indexes);
+    public static Transform GetChildTransform(this GameObject gameObject, params ReadOnlySpan<int> indexes) => gameObject.transform.GetChildTransform(indexes);
 
     /// <summary>
     ///     Set the Parent of a GameObject

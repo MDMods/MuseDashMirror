@@ -11,8 +11,15 @@ public static class TransformExtensions
     /// <param name="transform">Transform</param>
     /// <param name="indexes">Indexes</param>
     /// <returns>Child Transform</returns>
-    public static Transform GetChildTransform(this Transform transform, params int[] indexes)
-        => indexes.Aggregate(transform, (current, index) => current.GetChild(index));
+    public static Transform GetChildTransform(this Transform transform, params ReadOnlySpan<int> indexes)
+    {
+        foreach (var i in indexes)
+        {
+            transform = transform.GetChild(i);
+        }
+
+        return transform;
+    }
 
     /// <summary>
     ///     Get the Child GameObject of the <paramref name="transform" /> at the specified <paramref name="indexes" />
@@ -20,7 +27,7 @@ public static class TransformExtensions
     /// <param name="transform">Transform</param>
     /// <param name="indexes">Indexes</param>
     /// <returns>Child GameObject</returns>
-    public static GameObject GetChildGameObject(this Transform transform, params int[] indexes)
+    public static GameObject GetChildGameObject(this Transform transform, params ReadOnlySpan<int> indexes)
         => GetChildTransform(transform, indexes).gameObject;
 
     /// <summary>
