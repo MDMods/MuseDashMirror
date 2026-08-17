@@ -1,4 +1,5 @@
 using Il2CppAssets.Scripts.GameCore;
+using MelonLoader;
 
 namespace MuseDashMirror.Patches;
 
@@ -7,7 +8,7 @@ internal static class GameInitPatch
 {
     private static void Postfix(GameInit __instance)
     {
-        GameObjectCache["TglOn"] = __instance.transform.GetChild(2, 5, 7, 2, 0).gameObject;
+        GameObjectCache["TglOn"] = __instance.transform.GetChild(1, 5, 3, 3, 0, 2, 0).gameObject;
         GameInitPatchInvoke(__instance);
     }
 }
