@@ -4,26 +4,30 @@
 [![Documentation](https://img.shields.io/badge/documentation-%F0%9F%94%8D-9cf?label=Documentation)](https://mdmods.github.io/MuseDashMirror)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fmdmods.github.io%2FMuseDashMirror&up_message=online&down_message=offline)](https://mdmods.github.io/MuseDashMirror)
 
-**A mod library to easier modding in Muse Dash**
+**A library that makes Muse Dash modding easier.**
 
-## Introduction
+MuseDashMirror provides events, game data access, UI helpers, utilities, and source generators for Muse Dash mods.
 
-MuseDashMirror is a mod library for Muse Dash, it provides many useful classes and methods to help you modding Muse Dash.
+## Features
 
-For example, creating a toggle to manage your mod's setting, or creating a text on the screen.
-
-**It mainly uses source generators to generate code, without reflection, which makes it very fast and easy to use.**
+- Game events and data access
+- UI and utility helpers
+- Compile-time code generation
 
 ## Installation
 
-Install [MuseDashMirror Nuget Package](https://www.nuget.org/packages/MuseDashMirror)
+Install the [MuseDashMirror NuGet package](https://www.nuget.org/packages/MuseDashMirror):
+
+```powershell
+dotnet add package MuseDashMirror
+```
+
+For a new mod, [MuseDash.Mod.Template](https://github.com/MDMods/MuseDash.Mod.Template) can configure MuseDashMirror and the required game references for you.
 
 ## Documentation
 
-Check [Documentation](https://mdmods.github.io/MuseDashMirror) for more information.
+Read the [guides and API documentation](https://mdmods.github.io/MuseDashMirror) for setup, lifecycle, source-generator, game-data, UI, and utility examples.
 
-## External Libraries
+## Package layout
 
-* [ILRepack.Lib.MSBuild.Task](https://github.com/ravibpatel/ILRepack.Lib.MSBuild.Task)
-* [IndexRange](https://github.com/bgrainger/IndexRange)
-* [ZString](https://github.com/Cysharp/ZString)
+The package includes the runtime library and its source generator.
