@@ -9,13 +9,7 @@
         <MelonAssemblies>$(MelonLoader)\Il2CppAssemblies\</MelonAssemblies>
         <UseArtifactsOutput>true</UseArtifactsOutput>
     </PropertyGroup>
-
-    <PropertyGroup Condition="'$(WORKER)' == 'GitHub'">
-        <MelonLoader>..\..\Libs</MelonLoader>
-        <MelonNET6>..\..\Libs</MelonNET6>
-        <MelonAssemblies>..\..\Libs</MelonAssemblies>
-    </PropertyGroup>
-
+    
     <ItemDefinitionGroup>
         <Reference Private="false"/>
     </ItemDefinitionGroup>
