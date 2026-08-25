@@ -1,6 +1,6 @@
 # UI Components
 
-The `MuseDashMirror.UIComponents` namespace contains helpers for creating canvases, text objects, and toggles. The related parameter models live in `MuseDashMirror.Models`.
+The `MuseDashMirror.UI` namespace contains helpers for creating canvases, text objects, and toggles. The related parameter models live in `MuseDashMirror.Models`.
 
 Create scene-owned UI from a scene or panel callback, after the relevant cameras, fonts, and game objects exist. Do not keep Unity objects from one scene and reuse them in another.
 
@@ -10,7 +10,7 @@ Create scene-owned UI from a scene or panel callback, after the relevant cameras
 
 ```csharp
 using MuseDashMirror.Models;
-using MuseDashMirror.UIComponents;
+using MuseDashMirror.UI;
 
 var overlay = CanvasUtils.CreateOverlayCanvas("ExampleMod.Overlay");
 var twoDimensional = CanvasUtils.CreateCameraCanvas(
@@ -50,7 +50,7 @@ MuseDashMirror loads four game fonts during its Melon initialization and release
 using MuseDashMirror.Attributes.EventAttributes.SceneEvents;
 using MuseDashMirror.EventArguments;
 using MuseDashMirror.Models;
-using MuseDashMirror.UIComponents;
+using MuseDashMirror.UI;
 using UnityEngine;
 
 namespace ExampleMod;
@@ -123,7 +123,7 @@ Create PnlMenu toggles from `PnlMenuPatch`, after MuseDashMirror has cached the 
 ```csharp
 using MuseDashMirror.Attributes.EventAttributes.PatchEvents;
 using MuseDashMirror.EventArguments;
-using MuseDashMirror.UIComponents;
+using MuseDashMirror.UI;
 
 namespace ExampleMod;
 
@@ -149,7 +149,7 @@ For custom text, colors, checkmark color, or a `ToggleGroup`, construct `ToggleP
 
 ```csharp
 using MuseDashMirror.Models;
-using MuseDashMirror.UIComponents;
+using MuseDashMirror.UI;
 using UnityEngine;
 
 var parameters = new ToggleParameters(

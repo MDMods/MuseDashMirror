@@ -31,7 +31,7 @@ public sealed class PnlMenuToggleGenerator : IIncrementalGenerator
         _ => false
     };
 
-    private static PnlMenuToggleData? ExtractDataFromContext(GeneratorAttributeSyntaxContext ctx, CancellationToken _)
+    private static PnlMenuToggleData? ExtractDataFromContext(GeneratorAttributeSyntaxContext ctx, CancellationToken ct)
     {
         if (ctx.TargetSymbol is not (IPropertySymbol or IFieldSymbol))
         {
@@ -43,7 +43,7 @@ public sealed class PnlMenuToggleGenerator : IIncrementalGenerator
             return null;
         }
 
-        var unitRoot = ctx.SemanticModel.SyntaxTree.GetCompilationUnitRoot();
+        var unitRoot = ctx.SemanticModel.SyntaxTree.GetCompilationUnitRoot(ct);
 
         var staticUsingDirectives = from usingDirective in unitRoot.Usings
             where usingDirective.StaticKeyword.IsKind(SyntaxKind.StaticKeyword)
@@ -84,7 +84,7 @@ public sealed class PnlMenuToggleGenerator : IIncrementalGenerator
             $$"""
               using global::MuseDashMirror.EventArguments;
               using static global::MuseDashMirror.PatchEvents;
-              using static global::MuseDashMirror.UIComponents.ToggleUtils;
+              using static global::MuseDashMirror.UI.ToggleUtils;
               {{usingStringBuilder.ToString().TrimEnd()}}
 
               namespace {{@namespace}};

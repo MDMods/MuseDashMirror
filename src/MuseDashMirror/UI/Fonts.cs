@@ -1,6 +1,6 @@
 ﻿using UnityEngine.AddressableAssets;
 
-namespace MuseDashMirror.UIComponents;
+namespace MuseDashMirror.UI;
 
 /// <summary>
 ///     Default fonts

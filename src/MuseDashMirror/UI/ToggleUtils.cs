@@ -2,7 +2,7 @@
 using Il2CppAssets.Scripts.PeroTools.GeneralLocalization;
 using Il2CppAssets.Scripts.PeroTools.Nice.Events;
 
-namespace MuseDashMirror.UIComponents;
+namespace MuseDashMirror.UI;
 
 /// <summary>
 ///     Methods for creating toggle

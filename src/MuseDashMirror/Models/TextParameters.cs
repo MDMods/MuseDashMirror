@@ -1,4 +1,4 @@
-using MuseDashMirror.UIComponents;
+using MuseDashMirror.UI;
 
 namespace MuseDashMirror.Models;
 
