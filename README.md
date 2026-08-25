@@ -22,7 +22,7 @@ Install the [MuseDashMirror NuGet package](https://www.nuget.org/packages/MuseDa
 dotnet add package MuseDashMirror
 ```
 
-For a new mod, [MuseDash.Mod.Template](https://github.com/MDMods/MuseDash.Mod.Template) can configure MuseDashMirror and the required game references for you.
+For a new mod, [MuseDash.Mod.Template](https://github.com/lxymahatma/MuseDash.Mod.Template) can configure MuseDashMirror and the required game references for you.
 
 ## Documentation
 

@@ -19,7 +19,7 @@ For exact signatures and overloads, see the [API documentation](xref:MuseDashMir
 
 ## Installation
 
-The recommended starting point is [MuseDash.Mod.Template](https://github.com/MDMods/MuseDash.Mod.Template), with `MuseDashMirror` selected as a useful library. For an existing MelonLoader mod project, install the NuGet package:
+The recommended starting point is [MuseDash.Mod.Template](https://github.com/lxymahatma/MuseDash.Mod.Template), with `MuseDashMirror` selected as a useful library. For an existing MelonLoader mod project, install the NuGet package:
 
 ```powershell
 dotnet add package MuseDashMirror
