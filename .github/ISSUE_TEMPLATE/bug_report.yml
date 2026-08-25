@@ -23,7 +23,7 @@ body:
     id: checking3
     attributes:
       label: I've already read the instructions but there's no description telling me about this issue
-      description: https://github.com/MDModsDev/MuseDashMirror/blob/master/README.md
+      description: https://github.com/MDModsDev/MuseDashMirror/blob/main/README.md
       options:
         - label: "Yes"
           required: true
