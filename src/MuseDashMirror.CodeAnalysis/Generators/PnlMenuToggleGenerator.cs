@@ -1,4 +1,4 @@
-namespace MuseDashMirror.CodeAnalysis;
+namespace MuseDashMirror.CodeAnalysis.Generators;
 
 [Generator]
 public sealed class PnlMenuToggleGenerator : IIncrementalGenerator

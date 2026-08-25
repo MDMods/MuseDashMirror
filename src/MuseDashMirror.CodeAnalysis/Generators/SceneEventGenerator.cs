@@ -1,4 +1,4 @@
-namespace MuseDashMirror.CodeAnalysis;
+namespace MuseDashMirror.CodeAnalysis.Generators;
 
 [Generator(LanguageNames.CSharp)]
 public sealed class SceneEventGenerator : IIncrementalGenerator
