@@ -3,10 +3,10 @@
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     </PropertyGroup>
     <ItemGroup>
-        <PackageVersion Include="IndexRange" Version="1.0.3"/>
-        <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4"/>
-        <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0"/>
-        <GlobalPackageReference Include="Roslynator.Analyzers" Version="4.12.3"/>
-        <GlobalPackageReference Include="Roslynator.Formatting.Analyzers" Version="4.12.3"/>
+        <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="5.9.0"/>
+        <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="5.9.0"/>
+        <PackageVersion Include="Polyfill" Version="11.2.0"/>
+        <GlobalPackageReference Include="Roslynator.Analyzers" Version="5.0.0"/>
+        <GlobalPackageReference Include="Roslynator.Formatting.Analyzers" Version="5.0.0"/>
     </ItemGroup>
 </Project>
