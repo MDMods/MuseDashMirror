@@ -52,7 +52,7 @@ public sealed class LoggerGenerator : IIncrementalGenerator
 
               partial class {{className}}
               {
-                  {{GetGeneratedCodeAttribute(nameof(LoggerGenerator))}}
+                  {{GetGeneratedCodeAttribute(typeof(LoggerGenerator))}}
                   private {{modifier}} global::MelonLoader.MelonLogger.Instance Logger = new("{{className}}");
               }
               """);
