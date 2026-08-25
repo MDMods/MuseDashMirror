@@ -2,11 +2,13 @@ namespace MuseDashMirror.SourceGenerators;
 
 internal static class DiagnosticDescriptors
 {
+    private const string UsageCategory = "Usage";
+
     internal static readonly DiagnosticDescriptor LoggerAttributeForNonPartialClassError = new(
         "MDM0000",
         GetLocalizableString(nameof(MDM0000Title)),
         GetLocalizableString(nameof(MDM0000MessageFormat)),
-        "Usage",
+        UsageCategory,
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0000Description)));
@@ -15,7 +17,7 @@ internal static class DiagnosticDescriptors
         "MDM0001",
         GetLocalizableString(nameof(MDM0001Title)),
         GetLocalizableString(nameof(MDM0001MessageFormat)),
-        "Usage",
+        UsageCategory,
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0001Description)));
@@ -24,7 +26,7 @@ internal static class DiagnosticDescriptors
         "MDM0100",
         GetLocalizableString(nameof(MDM0100Title)),
         GetLocalizableString(nameof(MDM0100MessageFormat)),
-        "Usage",
+        UsageCategory,
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0100Description)));
@@ -33,7 +35,7 @@ internal static class DiagnosticDescriptors
         "MDM0101",
         GetLocalizableString(nameof(MDM0101Title)),
         GetLocalizableString(nameof(MDM0101MessageFormat)),
-        "Usage",
+        UsageCategory,
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0101Description)));
@@ -42,7 +44,7 @@ internal static class DiagnosticDescriptors
         "MDM0102",
         GetLocalizableString(nameof(MDM0102Title)),
         GetLocalizableString(nameof(MDM0102MessageFormat)),
-        "Usage",
+        UsageCategory,
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0102Description)));
@@ -51,7 +53,7 @@ internal static class DiagnosticDescriptors
         "MDM0103",
         GetLocalizableString(nameof(MDM0103Title)),
         GetLocalizableString(nameof(MDM0103MessageFormat)),
-        "Usage",
+        UsageCategory,
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0103Description)));
@@ -60,7 +62,7 @@ internal static class DiagnosticDescriptors
         "MDM0104",
         GetLocalizableString(nameof(MDM0104Title)),
         GetLocalizableString(nameof(MDM0104MessageFormat)),
-        "Usage",
+        UsageCategory,
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0104Description)));
@@ -69,7 +71,7 @@ internal static class DiagnosticDescriptors
         "MDM0200",
         GetLocalizableString(nameof(MDM0200Title)),
         GetLocalizableString(nameof(MDM0200MessageFormat)),
-        "Usage",
+        UsageCategory,
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0200Description)));
@@ -78,7 +80,7 @@ internal static class DiagnosticDescriptors
         "MDM0201",
         GetLocalizableString(nameof(MDM0201Title)),
         GetLocalizableString(nameof(MDM0201MessageFormat)),
-        "Usage",
+        UsageCategory,
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0201Description)));
@@ -87,7 +89,7 @@ internal static class DiagnosticDescriptors
         "MDM0202",
         GetLocalizableString(nameof(MDM0202Title)),
         GetLocalizableString(nameof(MDM0202MessageFormat)),
-        "Usage",
+        UsageCategory,
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0202Description)));
@@ -96,7 +98,7 @@ internal static class DiagnosticDescriptors
         "MDM0203",
         GetLocalizableString(nameof(MDM0203Title)),
         GetLocalizableString(nameof(MDM0203MessageFormat)),
-        "Usage",
+        UsageCategory,
         DiagnosticSeverity.Error,
         true,
         GetLocalizableString(nameof(MDM0203Description)));
