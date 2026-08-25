@@ -4,7 +4,7 @@ on:
       - main
 
 permissions:
-  actions: read
+  contents: read
   pages: write
   id-token: write
 
@@ -23,12 +23,15 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v6
 
       - name: Dotnet Setup
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v6
         with:
-          dotnet-version: 8.x
+          dotnet-version: 10.0
 
       - name: Install docfx Tools
         run: |
@@ -41,10 +44,10 @@ jobs:
           docfx ./Documentation/docfx.json
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: './site'
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
