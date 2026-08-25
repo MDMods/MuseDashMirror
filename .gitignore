@@ -367,4 +367,5 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # Docfx generated files
+Documentation/api/
 site/

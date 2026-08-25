@@ -1,10 +1,15 @@
 # This is an automatically generated file
-items:
-  - name: Docs
-    href: index.md
-  - name: Introduction
-    href: introduction.md
-  - name: Getting Started
-    href: getting-started.md
-  - name: Using UI Components
-    href: ui-components.md
+- name: Introduction
+  href: introduction.md
+- name: Getting Started
+  href: getting-started.md
+- name: Events and Scenes
+  href: events-and-scenes.md
+- name: Source Generators
+  href: source-generators.md
+- name: Game Data
+  href: game-data.md
+- name: UI Components
+  href: ui-components.md
+- name: Utilities and Extensions
+  href: utilities-and-extensions.md

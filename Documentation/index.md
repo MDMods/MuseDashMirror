@@ -4,34 +4,26 @@ _disableToc: true
 
 # MuseDashMirror
 
----
+MuseDashMirror is a library for Muse Dash mods built with MelonLoader. It provides scene and game callbacks, commonly used game data, UI helpers, Unity extensions, and source generators that wire attributed members without runtime reflection.
 
-## Introduction
+## Start here
 
-MuseDashMirror is a mod library for Muse Dash, it provides many useful classes and methods to help you modding Muse Dash.
+- [Getting started](docs/getting-started.md) covers project setup and a first scene callback.
+- [Events and scenes](docs/events-and-scenes.md) lists the available lifecycle and game patch hooks.
+- [Source generators](docs/source-generators.md) explains generated loggers, callbacks, and option-menu toggles.
+- [Game data](docs/game-data.md) describes `PlayerData` and `BattleComponent` and when their values are available.
+- [UI components](docs/ui-components.md) covers canvases, text, toggles, fonts, layout, and positioning.
+- [Utilities and extensions](docs/utilities-and-extensions.md) covers GameObject lookup and the general extension methods.
 
-For example, creating a toggle to manage your mod's setting, or creating a text on the screen.
-
-It mainly uses source generators to generate code, without reflection, which makes it very fast and easy to use.
-
----
+For exact signatures and overloads, see the [API documentation](xref:MuseDashMirror).
 
 ## Installation
 
----
+The recommended starting point is [MuseDash.Mod.Template](https://github.com/MDMods/MuseDash.Mod.Template), with `MuseDashMirror` selected as a useful library. For an existing MelonLoader mod project, install the NuGet package:
 
-### Recommend Way
+```powershell
+dotnet add package MuseDashMirror
+```
 
-* Follow the instructions in [MuseDashModTemplate](https://github.com/lxymahatma/MuseDash.Mod.Template) to install the mod template, then you can
-  select `MuseDashMirror` in the UsefulLibs option
-
----
-
-### Manual Way
-
-* Use your IDE's nuget package manager to install [MuseDashMirror Nuget Package](https://www.nuget.org/packages/MuseDashMirror)
-
----
-
-## [GettingStarted](./docs/getting-started.md)
-
+> [!NOTE]
+> MuseDashMirror does not replace MelonLoader or the Muse Dash IL2CPP reference assemblies required by a mod project. The template is the easiest way to configure those references.
