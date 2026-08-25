@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MuseDashMirror.SourceGenerators.Localization {
+namespace MuseDashMirror.CodeAnalysis.Localization {
     using System;
     
     
@@ -38,7 +38,7 @@ namespace MuseDashMirror.SourceGenerators.Localization {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MuseDashMirror.SourceGenerators.Localization.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MuseDashMirror.CodeAnalysis.Localization.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

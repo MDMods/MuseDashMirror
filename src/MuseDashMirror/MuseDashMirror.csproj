@@ -131,10 +131,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\MuseDashMirror.SourceGenerators\MuseDashMirror.SourceGenerators.csproj"
-                          OutputItemType="Analyzer"
-                          PackAsAnalyzer="true"
-                          ReferenceOutputAssembly="false"/>
+        <ProjectReference Include="..\MuseDashMirror.CodeAnalysis\MuseDashMirror.CodeAnalysis.csproj" OutputItemType="Analyzer" PackAsAnalyzer="true" ReferenceOutputAssembly="false" />
     </ItemGroup>
 
     <Target Name="CopyMods" AfterTargets="Build" Condition="'$(WORKER)' != 'GitHub'">

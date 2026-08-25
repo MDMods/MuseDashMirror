@@ -1,4 +1,4 @@
-namespace MuseDashMirror.SourceGenerators;
+namespace MuseDashMirror.CodeAnalysis;
 
 internal static class AttributeNameHelper
 {

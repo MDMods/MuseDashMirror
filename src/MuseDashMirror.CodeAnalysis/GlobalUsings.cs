@@ -1,0 +1,16 @@
+global using System.Collections.Immutable;
+global using System.Text;
+global using System.Text.RegularExpressions;
+global using Microsoft.CodeAnalysis;
+global using Microsoft.CodeAnalysis.CSharp;
+global using Microsoft.CodeAnalysis.CSharp.Syntax;
+global using Microsoft.CodeAnalysis.Diagnostics;
+global using Microsoft.CodeAnalysis.Text;
+global using MuseDashMirror.Shared;
+global using MuseDashMirror.CodeAnalysis.Localization;
+global using static MuseDashMirror.CodeAnalysis.AttributeNameHelper;
+global using static MuseDashMirror.CodeAnalysis.BuildInfo;
+global using static MuseDashMirror.CodeAnalysis.DiagnosticDescriptors;
+global using static MuseDashMirror.CodeAnalysis.Localization.Resources;
+global using static MuseDashMirror.CodeAnalysis.SourceGenerationTexts;
+global using static MuseDashMirror.CodeAnalysis.Utils;

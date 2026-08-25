@@ -1,4 +1,6 @@
-namespace MuseDashMirror.SourceGenerators;
+using MuseDashMirror.CodeAnalysis.Localization;
+
+namespace MuseDashMirror.CodeAnalysis;
 
 internal static class Utils
 {

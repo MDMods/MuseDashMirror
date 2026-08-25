@@ -1,13 +1,13 @@
 <Solution>
     <Folder Name="/Solution Items/">
-        <File Path=".github/workflows/page-deploy.yml"/>
-        <File Path=".gitignore"/>
-        <File Path="Directory.Build.props"/>
-        <File Path="Directory.Packages.props"/>
-        <File Path="PackAsAnalyzer.props"/>
-        <File Path="README.md"/>
+        <File Path=".github/workflows/page-deploy.yml" />
+        <File Path=".gitignore" />
+        <File Path="Directory.Build.props" />
+        <File Path="Directory.Packages.props" />
+        <File Path="PackAsAnalyzer.props" />
+        <File Path="README.md" />
     </Folder>
-    <Project Path="src/MuseDashMirror.Shared/MuseDashMirror.Shared.shproj"/>
-    <Project Path="src/MuseDashMirror.SourceGenerators/MuseDashMirror.SourceGenerators.csproj"/>
-    <Project Path="src/MuseDashMirror/MuseDashMirror.csproj"/>
+    <Project Path="src/MuseDashMirror.CodeAnalysis/MuseDashMirror.CodeAnalysis.csproj" />
+    <Project Path="src/MuseDashMirror.Shared/MuseDashMirror.Shared.shproj" />
+    <Project Path="src/MuseDashMirror/MuseDashMirror.csproj" />
 </Solution>

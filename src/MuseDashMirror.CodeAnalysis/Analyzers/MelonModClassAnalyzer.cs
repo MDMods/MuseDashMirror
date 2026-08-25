@@ -1,4 +1,4 @@
-namespace MuseDashMirror.SourceGenerators.Analyzers;
+namespace MuseDashMirror.CodeAnalysis.Analyzers;
 
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 public sealed class MelonModClassAnalyzer : DiagnosticAnalyzer
