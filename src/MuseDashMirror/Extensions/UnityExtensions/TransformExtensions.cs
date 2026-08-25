@@ -11,7 +11,7 @@ public static class TransformExtensions
     /// <param name="transform">Transform</param>
     /// <param name="indexes">Indexes</param>
     /// <returns>Transform</returns>
-    public static Transform GetChild(this Transform transform, params int[] indexes)
+    public static Transform GetChild(this Transform transform, params ReadOnlySpan<int> indexes)
     {
         foreach (var index in indexes)
         {

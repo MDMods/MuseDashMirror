@@ -108,21 +108,20 @@ public static partial class GameObjectExtensions
     /// <returns>Component</returns>
     public static T FindComponentInAncestors<T>(this GameObject gameObject, bool includeSelf = true) where T : Component
     {
-        var component = includeSelf ? gameObject.GetComponent<T>() : null;
-        var parentTransform = gameObject.GetParentTransform();
+        var currentTransform = includeSelf ? gameObject.transform : gameObject.GetParentTransform();
 
-        while (parentTransform != null)
+        while (currentTransform != null)
         {
-            component = parentTransform.gameObject.GetComponent<T>();
+            var component = currentTransform.gameObject.GetComponent<T>();
             if (component != null)
             {
                 return component;
             }
 
-            parentTransform = parentTransform.parent;
+            currentTransform = currentTransform.parent;
         }
 
-        return component;
+        return null;
     }
 
     /// <summary>
@@ -135,20 +134,20 @@ public static partial class GameObjectExtensions
     /// <returns>Found</returns>
     public static bool TryFindComponentInAncestors<T>(this GameObject gameObject, out T component, bool includeSelf = true) where T : Component
     {
-        component = includeSelf ? gameObject.GetComponent<T>() : null;
-        var parentTransform = gameObject.GetParentTransform();
+        var currentTransform = includeSelf ? gameObject.transform : gameObject.GetParentTransform();
 
-        while (parentTransform != null)
+        while (currentTransform != null)
         {
-            component = parentTransform.gameObject.GetComponent<T>();
+            component = currentTransform.gameObject.GetComponent<T>();
             if (component != null)
             {
                 return true;
             }
 
-            parentTransform = parentTransform.parent;
+            currentTransform = currentTransform.parent;
         }
 
+        component = null;
         return false;
     }
 
