@@ -8,7 +8,7 @@ using static MuseDashMirror.MelonBuildInfo;
 [assembly: AssemblyCompany(Name)]
 [assembly: AssemblyVersion(ModVersion)]
 [assembly: AssemblyFileVersion(ModVersion)]
-[assembly: AssemblyCopyright("Copyright © lxy 2024")]
+[assembly: AssemblyCopyright(Copyright)]
 [assembly: MelonInfo(typeof(Main), Name, ModVersion, Author)]
 [assembly: MelonGame("PeroPeroGames", "MuseDash")]
 [assembly: MelonPriority(int.MinValue)]

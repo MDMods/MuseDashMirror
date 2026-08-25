@@ -1,4 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="MuseDashMirror.targets"/>
+    <Import Project="..\MuseDashMirror.Shared\MuseDashMirror.Shared.projitems" Label="Shared"/>
 
     <PropertyGroup>
         <Nullable>disable</Nullable>
@@ -9,19 +11,19 @@
         <PackageId>MuseDashMirror</PackageId>
         <Title>Muse Dash Mirror</Title>
         <Authors>lxy</Authors>
-        <PackageVersion>3.2.0</PackageVersion>
+        <Version>3.3.0</Version>
         <PackageProjectUrl>https://github.com/MDMods/MuseDashMirror</PackageProjectUrl>
         <RepositoryUrl>https://github.com/MDMods/MuseDashMirror</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
         <Description>Library to easier modding in Muse Dash</Description>
-        <Copyright>Copyright © lxy 2024</Copyright>
+        <Copyright>Copyright © 2024-$([System.DateTime]::Now.Year) lxy</Copyright>
         <PackageTags>musedash;mod;game;library</PackageTags>
     </PropertyGroup>
 
     <PropertyGroup>
-        <NoWarn>1701;1702;CS9113</NoWarn>
+        <NoWarn>CS9113</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
@@ -40,15 +42,6 @@
         </Reference>
         <Reference Include="Il2CppDOTween">
             <HintPath>$(MelonAssemblies)\Il2CppDOTween.dll</HintPath>
-        </Reference>
-        <Reference Include="Il2CppGoogle.Protobuf">
-            <HintPath>$(MelonAssemblies)\Il2CppGoogle.Protobuf.dll</HintPath>
-        </Reference>
-        <Reference Include="Il2CppInterop.Common">
-            <HintPath>$(MelonNET6)\Il2CppInterop.Common.dll</HintPath>
-        </Reference>
-        <Reference Include="Il2CppInterop.Generator">
-            <HintPath>$(MelonNET6)\Il2CppInterop.Generator.dll</HintPath>
         </Reference>
         <Reference Include="Il2CppInterop.Runtime">
             <HintPath>$(MelonNET6)\Il2CppInterop.Runtime.dll</HintPath>
@@ -71,9 +64,6 @@
         <Reference Include="Il2CppPeroTools2.Account">
             <HintPath>$(MelonAssemblies)\Il2CppPeroTools2.Account.dll</HintPath>
         </Reference>
-        <Reference Include="Il2CppPeroTools2.Resources">
-            <HintPath>$(MelonAssemblies)\Il2CppPeroTools2.Resources.dll</HintPath>
-        </Reference>
         <Reference Include="Il2CppSirenix.Serialization">
             <HintPath>$(MelonAssemblies)\Il2CppSirenix.Serialization.dll</HintPath>
         </Reference>
@@ -86,14 +76,8 @@
         <Reference Include="Il2CppSystem.Core">
             <HintPath>$(MelonAssemblies)\Il2CppSystem.Core.dll</HintPath>
         </Reference>
-        <Reference Include="Il2CppSystem.Runtime.InteropServices">
-            <HintPath>$(MelonAssemblies)\Il2CppSystem.Runtime.InteropServices.dll</HintPath>
-        </Reference>
         <Reference Include="MelonLoader">
             <HintPath>$(MelonNET6)\MelonLoader.dll</HintPath>
-        </Reference>
-        <Reference Include="Tomlet">
-            <HintPath>$(MelonNet6)\Tomlet.dll</HintPath>
         </Reference>
         <Reference Include="Unity.Addressables">
             <HintPath>$(MelonAssemblies)\Unity.Addressables.dll</HintPath>
@@ -138,6 +122,4 @@
         <Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="$(GameFolder)\Mods"/>
         <Message Text="Copied DLL -&gt; $(GameFolder)\Mods\$(AssemblyName).dll" Importance="High"/>
     </Target>
-
-    <Import Project="..\MuseDashMirror.Shared\MuseDashMirror.Shared.projitems" Label="Shared"/>
 </Project>
