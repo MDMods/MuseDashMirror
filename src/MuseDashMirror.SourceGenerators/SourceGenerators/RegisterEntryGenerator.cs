@@ -3,20 +3,47 @@ namespace MuseDashMirror.SourceGenerators;
 [Generator(LanguageNames.CSharp)]
 public sealed class RegisterEntryGenerator : IIncrementalGenerator
 {
-    private static string? MelonClassName { get; set; }
-    private static string? MelonClassNameSpace { get; set; }
-
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
+        var melonModClasses = context.SyntaxProvider
+            .ForAttributeWithMetadataName(
+                MelonInfoAttributeName,
+                static (_, _) => true,
+                ExtractMelonModClassData)
+            .Where(static data => data is not null)
+            .Select(static (data, _) => data!)
+            .Collect();
+
+        var registerClasses = context.SyntaxProvider
+            .CreateSyntaxProvider(FilterNode, ExtractRegisterClassData)
+            .Where(static data => data is not null)
+            .Select(static (data, _) => data!)
+            .Collect();
+
         context.RegisterSourceOutput(
-            context.SyntaxProvider.CreateSyntaxProvider(
-                FilterNode, ExtractDataFromContext).Collect(),
+            melonModClasses.Combine(registerClasses),
             GenerateFromData);
     }
 
     private static bool FilterNode(SyntaxNode node, CancellationToken _) => node is ClassDeclarationSyntax;
 
-    private static RegisterClassData? ExtractDataFromContext(GeneratorSyntaxContext context, CancellationToken _)
+    private static MelonModClassData? ExtractMelonModClassData(GeneratorAttributeSyntaxContext context, CancellationToken _)
+    {
+        var attribute = context.Attributes.FirstOrDefault();
+        if (attribute is null || attribute.ConstructorArguments.Length == 0 ||
+            attribute.ConstructorArguments[0].Value is not INamedTypeSymbol melonModClass)
+        {
+            return null;
+        }
+
+        var @namespace = melonModClass.ContainingNamespace.IsGlobalNamespace
+            ? string.Empty
+            : melonModClass.ContainingNamespace.ToDisplayString();
+
+        return new MelonModClassData(@namespace, melonModClass.Name);
+    }
+
+    private static RegisterClassData? ExtractRegisterClassData(GeneratorSyntaxContext context, CancellationToken ct)
     {
         if (context is not
             {
@@ -27,16 +54,8 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
             return null;
         }
 
-        var classSymbol = semanticModel.GetDeclaredSymbol(classDeclaration)!;
+        var classSymbol = semanticModel.GetDeclaredSymbol(classDeclaration, ct)!;
         var className = classSymbol.Name;
-        var @namespace = classSymbol.ContainingNamespace.ToDisplayString();
-
-        if (classDeclaration is { BaseList.Types: var types }
-            && types.Any(x => x.Type.ToString().StartsWith("MelonMod")))
-        {
-            MelonClassName = className;
-            MelonClassNameSpace = @namespace;
-        }
 
         var methodSymbols = classSymbol.GetMembers().OfType<IMethodSymbol>().ToList();
         var fieldSymbols = classSymbol.GetMembers().OfType<IFieldSymbol>().ToList();
@@ -45,45 +64,57 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
         var registerMethodNames = ExtractMethodNames(methodSymbols, className)
             .Concat(ExtractFieldNames(fieldSymbols, className))
             .Concat(ExtractPropertyNames(propertySymbols, className))
-            .ToList();
+            .Distinct(StringComparer.Ordinal)
+            .OrderBy(static name => name, StringComparer.Ordinal)
+            .ToArray();
 
-        return registerMethodNames is [] ? null : new RegisterClassData(@namespace, className, registerMethodNames);
+        if (registerMethodNames is [])
+        {
+            return null;
+        }
+
+        var fullyQualifiedClassName = classSymbol.ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat);
+        var registerStatements = string.Join("\n", registerMethodNames.Select(static name => $"\t\t{name};"));
+        return new RegisterClassData(fullyQualifiedClassName, registerStatements);
     }
 
-    private static void GenerateFromData(SourceProductionContext spc, ImmutableArray<RegisterClassData?> dataList)
+    private static void GenerateFromData(
+        SourceProductionContext spc,
+        (ImmutableArray<MelonModClassData> MelonModClasses, ImmutableArray<RegisterClassData> RegisterClasses) data)
     {
-        if (MelonClassName is null || MelonClassNameSpace is null || !dataList.Any(x => x is not null))
+        if (data.MelonModClasses.Length != 1 || data.RegisterClasses.IsDefaultOrEmpty)
         {
             return;
         }
 
+        var melonModClass = data.MelonModClasses[0];
         var usingStringBuilder = new StringBuilder();
         var methodStringBuilder = new StringBuilder();
         var nameList = new HashSet<string>();
-        foreach (var data in dataList)
+        foreach (var registerClass in data.RegisterClasses.OrderBy(static item => item.FullyQualifiedClassName, StringComparer.Ordinal))
         {
-            if (data is not var (@namespace, className, registerMethodNames) || !nameList.Add($"{@namespace}.{className}"))
+            if (!nameList.Add(registerClass.FullyQualifiedClassName))
             {
                 continue;
             }
 
-            usingStringBuilder.AppendLine($"using static global::{@namespace}.{className};");
-            foreach (var registerMethodName in registerMethodNames)
-            {
-                methodStringBuilder.AppendLine($"\t\t{registerMethodName};");
-            }
+            usingStringBuilder.AppendLine($"using static {registerClass.FullyQualifiedClassName};");
+            methodStringBuilder.AppendLine(registerClass.RegisterStatements);
         }
 
-        spc.AddSource($"{MelonClassName}.RegisterEntry.g.cs",
+        var namespaceDeclaration = string.IsNullOrEmpty(melonModClass.Namespace)
+            ? string.Empty
+            : $"namespace {melonModClass.Namespace};\n\n";
+
+        spc.AddSource($"{melonModClass.ClassName}.RegisterEntry.g.cs",
             Header +
             $$"""
-              {{usingStringBuilder.ToString()}}
-              namespace {{MelonClassNameSpace}};
+              {{usingStringBuilder.ToString().TrimEnd()}}
 
-              partial class {{MelonClassName}}
+              {{namespaceDeclaration}}partial class {{melonModClass.ClassName}}
               {
                   {{GetGeneratedCodeAttribute(typeof(RegisterEntryGenerator))}}
-                  static {{MelonClassName}}()
+                  static {{melonModClass.ClassName}}()
                   {
               {{methodStringBuilder.ToString().TrimEnd()}}
                   }
@@ -125,5 +156,7 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
             .Select(propertySymbol => $"Register{className}{propertySymbol.Name}ToPnlMenuEvent()");
     }
 
-    private sealed record RegisterClassData(string Namespace, string ClassName, List<string> RegisterMethodNames);
+    private sealed record MelonModClassData(string Namespace, string ClassName);
+
+    private sealed record RegisterClassData(string FullyQualifiedClassName, string RegisterStatements);
 }
