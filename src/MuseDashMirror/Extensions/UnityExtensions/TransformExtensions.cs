@@ -12,7 +12,14 @@ public static class TransformExtensions
     /// <param name="indexes">Indexes</param>
     /// <returns>Transform</returns>
     public static Transform GetChild(this Transform transform, params int[] indexes)
-        => indexes.Aggregate(transform, (current, index) => current.GetChild(index));
+    {
+        foreach (var index in indexes)
+        {
+            transform = transform.GetChild(index);
+        }
+
+        return transform;
+    }
 
     /// <summary>
     ///     Get the Ancestor Transform of a Transform with a specified number of levels up.

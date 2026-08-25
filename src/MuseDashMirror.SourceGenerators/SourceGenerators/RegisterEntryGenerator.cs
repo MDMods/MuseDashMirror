@@ -57,8 +57,8 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
             return;
         }
 
-        using var usingStringBuilder = ZString.CreateStringBuilder();
-        using var methodStringBuilder = ZString.CreateStringBuilder();
+        var usingStringBuilder = new StringBuilder();
+        var methodStringBuilder = new StringBuilder();
         var nameList = new HashSet<string>();
         foreach (var data in dataList)
         {

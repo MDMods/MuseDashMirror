@@ -42,10 +42,15 @@ public static partial class GameObjectUtils
             GameObjectCache[ancestorGameObjectName] = ancestorGameObject;
         }
 
-        return nodePaths.Length == 1 ? ancestorGameObject : GetGameObjectWithSplitPath(ancestorGameObject, cacheNodeGameObjects, nodePaths[1..]);
+        return nodePaths.Length == 1
+            ? ancestorGameObject
+            : GetGameObjectWithSplitPath(ancestorGameObject, cacheNodeGameObjects, nodePaths.AsSpan(1));
     }
 
-    private static GameObject GetGameObjectWithSplitPath(GameObject ancestorGameObject, bool cacheNodeGameObjects = false, params string[] nodePaths)
+    private static GameObject GetGameObjectWithSplitPath(
+        GameObject ancestorGameObject,
+        bool cacheNodeGameObjects,
+        ReadOnlySpan<string> nodePaths)
     {
         var currentGameObject = ancestorGameObject;
         foreach (var nodePath in nodePaths)
