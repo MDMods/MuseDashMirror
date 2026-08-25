@@ -91,7 +91,12 @@ public class ToggleParameters
     /// <param name="callBack">Boolean Callback</param>
     /// <param name="toggleGroup">Toggle Group</param>
     /// <param name="textColor">Toggle Text Color</param>
-    public ToggleParameters(string toggleName, TextParameters textParameters, bool initialValue, Action<bool> callBack, ToggleGroup toggleGroup,
+    public ToggleParameters(
+        string toggleName,
+        TextParameters textParameters,
+        bool initialValue,
+        Action<bool> callBack,
+        ToggleGroup toggleGroup,
         Color textColor)
         : this(toggleName, textParameters, initialValue, callBack, toggleGroup) => TextColor = textColor;
 
@@ -105,7 +110,12 @@ public class ToggleParameters
     /// <param name="toggleGroup">Toggle Group</param>
     /// <param name="textColor">Toggle Text Color</param>
     /// <param name="checkMarkColor">CheckMark Color</param>
-    public ToggleParameters(string toggleName, TextParameters textParameters, bool initialValue, Action<bool> callBack, ToggleGroup toggleGroup,
+    public ToggleParameters(
+        string toggleName,
+        TextParameters textParameters,
+        bool initialValue,
+        Action<bool> callBack,
+        ToggleGroup toggleGroup,
         Color textColor,
         Color checkMarkColor) : this(toggleName, textParameters, initialValue, callBack, toggleGroup, textColor) => CheckMarkColor = checkMarkColor;
 }

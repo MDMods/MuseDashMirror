@@ -1,5 +1,3 @@
-using MuseDashMirror.CodeAnalysis.Localization;
-
 namespace MuseDashMirror.CodeAnalysis;
 
 internal static class Utils

@@ -16,7 +16,8 @@ public static class TypeCollectionExtensions
     /// </param>
     /// <typeparam name="T">Attribute Type</typeparam>
     /// <returns>A sequence of FieldInfo that match the given attribute type</returns>
-    public static IEnumerable<FieldInfo> GetFieldInfosFromTypesByAttribute<T>(this IEnumerable<Type> types,
+    public static IEnumerable<FieldInfo> GetFieldInfosFromTypesByAttribute<T>(
+        this IEnumerable<Type> types,
         BindingFlags flags = BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic) where T : Attribute
     {
         return types.SelectMany(type => type.GetFields(flags))
@@ -32,7 +33,9 @@ public static class TypeCollectionExtensions
     ///     Defaults are <see cref="BindingFlags.Static" /> | <see cref="BindingFlags.Public" /> | <see cref="BindingFlags.NonPublic" />
     /// </param>
     /// <returns>A sequence of FieldInfo that match the given attribute type</returns>
-    public static IEnumerable<FieldInfo> GetFieldInfosFromTypesByAttribute(this IEnumerable<Type> types, Type attributeType,
+    public static IEnumerable<FieldInfo> GetFieldInfosFromTypesByAttribute(
+        this IEnumerable<Type> types,
+        Type attributeType,
         BindingFlags flags = BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic)
     {
         return types.SelectMany(type => type.GetFields(flags))
@@ -48,7 +51,8 @@ public static class TypeCollectionExtensions
     /// </param>
     /// <typeparam name="T">Attribute Type</typeparam>
     /// <returns>A sequence of MemberInfo that match the given attribute type</returns>
-    public static IEnumerable<MemberInfo> GetMemberInfosFromTypesByAttribute<T>(this IEnumerable<Type> types,
+    public static IEnumerable<MemberInfo> GetMemberInfosFromTypesByAttribute<T>(
+        this IEnumerable<Type> types,
         BindingFlags flags = BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic) where T : Attribute
     {
         return types.SelectMany(type => type.GetMembers(flags))
@@ -64,7 +68,9 @@ public static class TypeCollectionExtensions
     ///     Defaults are <see cref="BindingFlags.Static" /> | <see cref="BindingFlags.Public" /> | <see cref="BindingFlags.NonPublic" />
     /// </param>
     /// <returns>A sequence of MemberInfo that match the given attribute type</returns>
-    public static IEnumerable<MemberInfo> GetMemberInfosFromTypesByAttribute(this IEnumerable<Type> types, Type attributeType,
+    public static IEnumerable<MemberInfo> GetMemberInfosFromTypesByAttribute(
+        this IEnumerable<Type> types,
+        Type attributeType,
         BindingFlags flags = BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic)
     {
         return types.SelectMany(type => type.GetMembers(flags))
@@ -80,7 +86,8 @@ public static class TypeCollectionExtensions
     /// </param>
     /// <typeparam name="T">Attribute Type</typeparam>
     /// <returns>A sequence of MethodInfo that match the given attribute type</returns>
-    public static IEnumerable<MethodInfo> GetMethodInfosFromTypesByAttribute<T>(this IEnumerable<Type> types,
+    public static IEnumerable<MethodInfo> GetMethodInfosFromTypesByAttribute<T>(
+        this IEnumerable<Type> types,
         BindingFlags flags = BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic) where T : Attribute
     {
         return types.SelectMany(type => type.GetMethods(flags)
@@ -96,7 +103,9 @@ public static class TypeCollectionExtensions
     ///     Defaults are <see cref="BindingFlags.Static" /> | <see cref="BindingFlags.Public" /> | <see cref="BindingFlags.NonPublic" />
     /// </param>
     /// <returns>A sequence of MethodInfo that match the given attribute type</returns>
-    public static IEnumerable<MethodInfo> GetMethodInfosFromTypesByAttribute(this IEnumerable<Type> types, Type attributeType,
+    public static IEnumerable<MethodInfo> GetMethodInfosFromTypesByAttribute(
+        this IEnumerable<Type> types,
+        Type attributeType,
         BindingFlags flags = BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic)
     {
         return types.SelectMany(type => type.GetMethods(flags)
@@ -112,7 +121,8 @@ public static class TypeCollectionExtensions
     /// </param>
     /// <typeparam name="T">Attribute Type</typeparam>
     /// <returns>A sequence of PropertyInfo that match the given attribute type</returns>
-    public static IEnumerable<PropertyInfo> GetPropertyInfosFromTypesByAttribute<T>(this IEnumerable<Type> types,
+    public static IEnumerable<PropertyInfo> GetPropertyInfosFromTypesByAttribute<T>(
+        this IEnumerable<Type> types,
         BindingFlags flags = BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic) where T : Attribute
     {
         return types.SelectMany(type => type.GetProperties(flags))
@@ -128,7 +138,9 @@ public static class TypeCollectionExtensions
     ///     Defaults are <see cref="BindingFlags.Static" /> | <see cref="BindingFlags.Public" /> | <see cref="BindingFlags.NonPublic" />
     /// </param>
     /// <returns>A sequence of PropertyInfo that match the given attribute type</returns>
-    public static IEnumerable<PropertyInfo> GetPropertyInfosFromTypesByAttribute(this IEnumerable<Type> types, Type attributeType,
+    public static IEnumerable<PropertyInfo> GetPropertyInfosFromTypesByAttribute(
+        this IEnumerable<Type> types,
+        Type attributeType,
         BindingFlags flags = BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic)
     {
         return types.SelectMany(type => type.GetProperties(flags))

@@ -25,8 +25,8 @@
         </PackageReference>
         <PackageReference Include="Microsoft.CodeAnalysis.CSharp"/>
         <PackageReference Include="Polyfill">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
     </ItemGroup>
 

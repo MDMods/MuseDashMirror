@@ -1,2 +1,3 @@
 [*.cs]
+insert_final_newline = true
 resharper_member_can_be_private_global_highlighting = none

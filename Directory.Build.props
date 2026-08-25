@@ -9,7 +9,7 @@
         <MelonAssemblies>$(MelonLoader)\Il2CppAssemblies\</MelonAssemblies>
         <UseArtifactsOutput>true</UseArtifactsOutput>
     </PropertyGroup>
-    
+
     <ItemDefinitionGroup>
         <Reference Private="false"/>
     </ItemDefinitionGroup>

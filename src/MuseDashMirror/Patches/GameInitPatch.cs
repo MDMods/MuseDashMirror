@@ -1,5 +1,4 @@
 using Il2CppAssets.Scripts.GameCore;
-using MelonLoader;
 
 namespace MuseDashMirror.Patches;
 
