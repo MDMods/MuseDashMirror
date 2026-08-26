@@ -15,4 +15,4 @@ namespace MuseDashMirror.Attributes.EventAttributes.PatchEvents;
 ///     </example>
 /// </summary>
 [AttributeUsage(AttributeTargets.Method)]
-public sealed class SwitchLanguagePatchAttribute : Attribute;
+public sealed class SwitchLanguagesPatchAttribute : Attribute;
