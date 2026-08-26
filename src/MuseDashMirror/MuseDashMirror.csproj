@@ -11,7 +11,7 @@
         <PackageId>MuseDashMirror</PackageId>
         <Title>Muse Dash Mirror</Title>
         <Authors>lxy</Authors>
-        <Version>3.4.0</Version>
+        <Version>3.4.1</Version>
         <PackageProjectUrl>https://github.com/MDMods/MuseDashMirror</PackageProjectUrl>
         <RepositoryUrl>https://github.com/MDMods/MuseDashMirror</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
