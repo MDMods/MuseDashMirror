@@ -3,7 +3,7 @@ namespace MuseDashMirror.CodeAnalysis.Analyzers.EventAnalyzers;
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 public sealed class PatchEventAnalyzer : DiagnosticAnalyzer
 {
-    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(PatchEventAttributeInvalidArgsError);
+    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => [PatchEventAttributeInvalidArgsError];
 
     public override void Initialize(AnalysisContext context)
     {
@@ -23,14 +23,15 @@ public sealed class PatchEventAnalyzer : DiagnosticAnalyzer
             return;
         }
 
-        var attribute = context.ContainingSymbol!.GetAttributes().FirstOrDefault(x => PatchEventRegex.IsMatch(x.AttributeClass!.ToDisplayString()));
-        if (attribute is null)
+        var patchEventName = context.ContainingSymbol!.GetAttributes()
+            .Select(static attribute => GetPatchEventName(attribute.AttributeClass))
+            .FirstOrDefault(static eventName => eventName is not null);
+
+        if (patchEventName is null)
         {
             return;
         }
 
-        var match = PatchEventRegex.Match(attribute.AttributeClass!.ToDisplayString());
-        var patchEventName = match.Groups[1].Value;
         var desiredParameterType = $"{patchEventName[..^5]}EventArgs";
 
         if (parameters.Count != 2 || parameters[1].Type is not IdentifierNameSyntax { Identifier.ValueText: var parameterType } ||

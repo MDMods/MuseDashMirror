@@ -19,12 +19,9 @@ public sealed class PatchEventGenerator : IIncrementalGenerator
         },
         ParameterList.Parameters.Count: 2,
         Parent: ClassDeclarationSyntax
-        {
-            Modifiers: var classModifiers and not []
-        }
-    } && classModifiers.Any(SyntaxKind.PartialKeyword);
+    };
 
-    private static PatchEventData? ExtractDataFromContext(GeneratorSyntaxContext ctx, CancellationToken _)
+    private static PatchEventData? ExtractDataFromContext(GeneratorSyntaxContext ctx, CancellationToken ct)
     {
         if (ctx.Node is not MethodDeclarationSyntax
             {
@@ -35,12 +32,11 @@ public sealed class PatchEventGenerator : IIncrementalGenerator
             return null;
         }
 
-        var symbol = ctx.SemanticModel.GetDeclaredSymbol(ctx.Node)!;
+        var symbol = ctx.SemanticModel.GetDeclaredSymbol(ctx.Node, ct)!;
 
         var patchEventName = symbol.GetAttributes()
-            .Select(static attribute => PatchEventRegex.Match(attribute.AttributeClass!.ToDisplayString()))
-            .FirstOrDefault(static match => match.Success)
-            ?.Groups[1].Value;
+            .Select(static attribute => GetPatchEventName(attribute.AttributeClass))
+            .FirstOrDefault(static eventName => eventName is not null);
 
         if (patchEventName is null)
         {

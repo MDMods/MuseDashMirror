@@ -13,103 +13,76 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
         </value>
     </resheader>
-    <data name="MDM0000Description" xml:space="preserve">
-        <value>Logger 特性只能被用在 partial 类上。</value>
-    </data>
-    <data name="MDM0000MessageFormat" xml:space="preserve">
-        <value>为生成 Logger，{0} 类必须在声明中含有 partial 关键词</value>
-    </data>
     <data name="MDM0000Title" xml:space="preserve">
-        <value>Logger 特性只能被用在 partial 类上</value>
-    </data>
-    <data name="MDM0001Title" xml:space="preserve">
-        <value>继承自 MelonMod 的类应为 partial 类</value>
-    </data>
-    <data name="MDM0001Description" xml:space="preserve">
-        <value>继承自 MelonMod 的类应为 partial 类，以便注册方法。</value>
-    </data>
-    <data name="MDM0001MessageFormat" xml:space="preserve">
-        <value>为确保 MuseDashMirror 特性能够正确注册，类 {0} 应声明为 partial</value>
-    </data>
-    <data name="MDM0100Title" xml:space="preserve">
         <value>参数类型不正确</value>
     </data>
-    <data name="MDM0100Description" xml:space="preserve">
+    <data name="MDM0000Description" xml:space="preserve">
         <value>带有 PatchEvent 特性的方法必须使用 object 和 EventArgs 参数类型。</value>
     </data>
-    <data name="MDM0100MessageFormat" xml:space="preserve">
+    <data name="MDM0000MessageFormat" xml:space="preserve">
         <value>带有 {1} 特性的方法 {0} 的参数类型必须为 object 和 {2}</value>
     </data>
-    <data name="MDM0101Description" xml:space="preserve">
+    <data name="MDM0001Description" xml:space="preserve">
         <value>带有 SceneEvent 特性的方法必须使用 object 和 SceneEventArgs 参数类型。</value>
     </data>
-    <data name="MDM0101MessageFormat" xml:space="preserve">
+    <data name="MDM0001MessageFormat" xml:space="preserve">
         <value>带有 {1} 特性的方法 {0} 的参数类型必须为 object 和 SceneEventArgs</value>
     </data>
-    <data name="MDM0101Title" xml:space="preserve">
+    <data name="MDM0001Title" xml:space="preserve">
         <value>参数类型不正确</value>
     </data>
-    <data name="MDM0102Description" xml:space="preserve">
+    <data name="MDM0002Description" xml:space="preserve">
         <value>带有 Event 特性的方法的返回类型必须为 void。</value>
     </data>
-    <data name="MDM0102MessageFormat" xml:space="preserve">
+    <data name="MDM0002MessageFormat" xml:space="preserve">
         <value>带有 {1} 特性的方法 {0} 的返回类型必须为 void</value>
     </data>
-    <data name="MDM0102Title" xml:space="preserve">
+    <data name="MDM0002Title" xml:space="preserve">
         <value>返回类型不正确</value>
     </data>
-    <data name="MDM0103Description" xml:space="preserve">
+    <data name="MDM0003Description" xml:space="preserve">
         <value>静态类中的方法必须声明为 static，以便注册。</value>
     </data>
-    <data name="MDM0103MessageFormat" xml:space="preserve">
+    <data name="MDM0003MessageFormat" xml:space="preserve">
         <value>方法 {0} 必须声明为 static 才能被正确注册</value>
     </data>
-    <data name="MDM0103Title" xml:space="preserve">
+    <data name="MDM0003Title" xml:space="preserve">
         <value>方法应为 static</value>
     </data>
-    <data name="MDM0104Description" xml:space="preserve">
-        <value>带有 Event 特性的方法必须位于 partial 类中。</value>
-    </data>
-    <data name="MDM0104MessageFormat" xml:space="preserve">
-        <value>类 {0} 必须为 partial 类，才能正确生成 {1} 的注册方法</value>
-    </data>
-    <data name="MDM0104Title" xml:space="preserve">
-        <value>方法应位于 partial 类中</value>
-    </data>
-    <data name="MDM0200Title" xml:space="preserve">
-        <value>属性/字段应位于 partial 类中</value>
-    </data>
-    <data name="MDM0200Description" xml:space="preserve">
-        <value>带有 PnlMenuToggle 特性的属性/字段必须声明在 partial 类中。</value>
-    </data>
-    <data name="MDM0200MessageFormat" xml:space="preserve">
-        <value>类 {0} 必须为 partial 类，才能正确生成 {1} 的注册方法</value>
-    </data>
-    <data name="MDM0201Title" xml:space="preserve">
+    <data name="MDM0004Title" xml:space="preserve">
         <value>声明类型不正确</value>
     </data>
-    <data name="MDM0201Description" xml:space="preserve">
+    <data name="MDM0004Description" xml:space="preserve">
         <value>带有 PnlMenuToggle 特性的属性/字段类型应为 UnityEngine.GameObject。</value>
     </data>
-    <data name="MDM0201MessageFormat" xml:space="preserve">
+    <data name="MDM0004MessageFormat" xml:space="preserve">
         <value>属性/字段 {0} 的类型应为 UnityEngine.GameObject</value>
     </data>
-    <data name="MDM0202Title" xml:space="preserve">
+    <data name="MDM0005Title" xml:space="preserve">
         <value>属性/字段应为 static</value>
     </data>
-    <data name="MDM0202Description" xml:space="preserve">
+    <data name="MDM0005Description" xml:space="preserve">
         <value>属性/字段应为 static，才能被 MuseDashMirror 注册。</value>
     </data>
-    <data name="MDM0202MessageFormat" xml:space="preserve">
+    <data name="MDM0005MessageFormat" xml:space="preserve">
         <value>属性/字段 {0} 应为 static 才能被正确注册</value>
     </data>
-    <data name="MDM0203Title" xml:space="preserve">
+    <data name="MDM0006Title" xml:space="preserve">
         <value>字段声明不正确</value>
     </data>
-    <data name="MDM0203Description" xml:space="preserve">
+    <data name="MDM0006Description" xml:space="preserve">
         <value>PnlMenuToggle 特性只能应用于一个字段。</value>
     </data>
-    <data name="MDM0203MessageFormat" xml:space="preserve">
+    <data name="MDM0006MessageFormat" xml:space="preserve">
         <value>PnlMenuToggle 特性只能应用于一个字段；请仅保留 {0} 以便正确生成代码</value>
+    </data>
+    <data name="MDM0007Title" xml:space="preserve">
+        <value>成员参数必须使用 nameof</value>
+    </data>
+    <data name="MDM0007Description" xml:space="preserve">
+        <value>PnlMenuToggle 的 Boolean 和 ToggleGroup 成员参数必须使用 nameof 引用字段或属性。</value>
+    </data>
+    <data name="MDM0007MessageFormat" xml:space="preserve">
+        <value>PnlMenuToggle 的第 {0} 个参数必须使用 nameof 引用字段或属性</value>
     </data>
 </root>

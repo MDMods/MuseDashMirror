@@ -71,7 +71,7 @@ A scene method may have more than one compatible scene attribute. See [Events an
 
 ## Generated option-menu toggle
 
-`[PnlMenuToggle]` creates a toggle whenever `PnlMenu.Awake` runs, assigns the resulting `GameObject` to the attributed member, and binds it to a Boolean expression supplied as text.
+`[PnlMenuToggle]` creates a toggle whenever `PnlMenu.Awake` runs, assigns the resulting `GameObject` to the attributed member, and binds it to a static Boolean field or property identified by its declaring type and member name.
 
 ```csharp
 using MuseDashMirror.Attributes;
@@ -83,7 +83,7 @@ internal static partial class Options
 {
     private static bool IsEnabled { get; set; } = true;
 
-    [PnlMenuToggle("ExampleMod.Enabled", "Example Mod", "IsEnabled")]
+    [PnlMenuToggle("ExampleMod.Enabled", "Example Mod", nameof(Options.IsEnabled))]
     private static GameObject EnabledToggle { get; set; } = null!;
 }
 ```
@@ -92,9 +92,22 @@ The three constructor arguments are:
 
 1. The created GameObject name.
 2. The visible label text.
-3. A Boolean field or property expression inserted into generated code, such as `IsEnabled` or `Settings.IsEnabled`.
+3. The bound static Boolean field or property, supplied with `nameof`.
 
-The attributed field or property must be a single, static `GameObject` declaration in a partial class. The generated field assignment and Boolean expression must be accessible from that class.
+An optional fourth argument identifies a static `ToggleGroup` field or property, also supplied with `nameof`. Toggles that pass the same group participate in that group:
+
+```csharp
+[PnlMenuToggle(
+    "ExampleMod.ModeA",
+    "Mode A",
+    nameof(Settings.IsModeA),
+    nameof(Options.ModeToggleGroup))]
+private static GameObject ModeAToggle { get; set; } = null!;
+```
+
+Although `nameof` evaluates to an unqualified string, the source generator resolves its operand with Roslyn and emits the fully qualified declaring type and member name. The Boolean and group members must be static and accessible from the attributed class, and the `ToggleGroup` must exist when `PnlMenu.Awake` runs.
+
+The attributed field or property must be a single, static `GameObject` declaration in a partial class.
 
 > [!NOTE]
 > The label is emitted as a string literal; `[PnlMenuToggle]` does not automatically localize it. Use `ToggleUtils` directly when the label must be selected dynamically.
@@ -105,16 +118,13 @@ The bundled analyzers report invalid declarations as errors before broken genera
 
 | Rule | Meaning | Fix |
 | --- | --- | --- |
-| `MDM0000` | `[Logger]` is on a non-partial class. | Add the `partial` modifier. |
-| `MDM0001` | The `MelonMod` entry class is not partial. | Make the class referenced by `MelonInfo` partial. |
-| `MDM0100` | A patch callback has the wrong parameters. | Use `object` and the matching patch `EventArgs` type. |
-| `MDM0101` | A scene callback has the wrong parameters. | Use `object` and `SceneEventArgs`. |
-| `MDM0102` | An attributed callback does not return `void`. | Change its return type to `void`. |
-| `MDM0103` | A generated callback that must be static is not static. | Add the `static` modifier. |
-| `MDM0104` | An attributed callback is in a non-partial class. | Add the `partial` modifier to its class. |
-| `MDM0200` | A generated toggle member is in a non-partial class. | Add the `partial` modifier. |
-| `MDM0201` | A generated toggle member is not a `GameObject`. | Change the field or property type to `GameObject`. |
-| `MDM0202` | A generated toggle member is not static. | Add the `static` modifier. |
-| `MDM0203` | `[PnlMenuToggle]` is used on a declaration containing multiple fields. | Put the attributed field in its own declaration. |
+| `MDM0000` | A patch callback has the wrong parameters. | Use `object` and the matching patch `EventArgs` type. |
+| `MDM0001` | A scene callback has the wrong parameters. | Use `object` and `SceneEventArgs`. |
+| `MDM0002` | An attributed callback does not return `void`. | Change its return type to `void`. |
+| `MDM0003` | A generated callback that must be static is not static. | Add the `static` modifier. |
+| `MDM0004` | A generated toggle member is not a `GameObject`. | Change the field or property type to `GameObject`. |
+| `MDM0005` | A generated toggle member is not static. | Add the `static` modifier. |
+| `MDM0006` | `[PnlMenuToggle]` is used on a declaration containing multiple fields. | Put the attributed field in its own declaration. |
+| `MDM0007` | A Boolean or `ToggleGroup` member argument does not use `nameof` to reference a field or property. | Replace the string or other expression with `nameof(Type.Member)`. |
 
-If an attributed declaration compiles but does not run, first verify that the assembly contains one `MelonInfo`, its mod class is partial, and the generated member is in the same compilation as that mod class.
+If an attributed declaration compiles but does not run, first verify that the assembly contains one `MelonInfo` and that the generated member is in the same compilation as that mod class.

@@ -33,24 +33,20 @@ public sealed class SceneEventGenerator : IIncrementalGenerator
             }
         ],
         Parent: ClassDeclarationSyntax
-        {
-            Modifiers: var classModifiers and not []
-        }
-    } && classModifiers.Any(SyntaxKind.PartialKeyword);
+    };
 
-    private static SceneEventData? ExtractDataFromContext(GeneratorSyntaxContext ctx, CancellationToken _)
+    private static SceneEventData? ExtractDataFromContext(GeneratorSyntaxContext ctx, CancellationToken ct)
     {
         if (ctx.Node is not MethodDeclarationSyntax { Parent : ClassDeclarationSyntax parent })
         {
             return null;
         }
 
-        var symbol = ctx.SemanticModel.GetDeclaredSymbol(ctx.Node)!;
+        var symbol = ctx.SemanticModel.GetDeclaredSymbol(ctx.Node, ct)!;
 
         var sceneEventNames = symbol.GetAttributes()
-            .Select(static attribute => SceneEventRegex.Match(attribute.AttributeClass!.ToDisplayString()))
-            .Where(static match => match.Success)
-            .Select(static match => match.Groups[1].Value)
+            .Select(static attribute => GetSceneEventName(attribute.AttributeClass))
+            .OfType<string>()
             .ToArray();
 
         return new SceneEventData(symbol.ContainingNamespace.ToDisplayString(), parent.Identifier.ValueText, symbol.Name, sceneEventNames);

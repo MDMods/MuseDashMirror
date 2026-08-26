@@ -60,7 +60,7 @@ namespace MuseDashMirror.CodeAnalysis.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Logger attribute can only be used on partial class..
+        ///   Looks up a localized string similar to Method with PatchEvent attribute must have parameter types object and EventArgs..
         /// </summary>
         internal static string MDM0000Description {
             get {
@@ -69,7 +69,7 @@ namespace MuseDashMirror.CodeAnalysis.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Class {0} must have partial keyword in its declaration for generating Logger.
+        ///   Looks up a localized string similar to Method {0} with attribute {1} must have parameter types object and {2}.
         /// </summary>
         internal static string MDM0000MessageFormat {
             get {
@@ -78,7 +78,7 @@ namespace MuseDashMirror.CodeAnalysis.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Logger attribute can only be used on partial class.
+        ///   Looks up a localized string similar to Incorrect parameter types.
         /// </summary>
         internal static string MDM0000Title {
             get {
@@ -87,7 +87,7 @@ namespace MuseDashMirror.CodeAnalysis.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Class inherited from MelonMod class should be partial to register methods..
+        ///   Looks up a localized string similar to Method with SceneEvent attribute must have parameter types object and SceneEventArgs..
         /// </summary>
         internal static string MDM0001Description {
             get {
@@ -96,7 +96,7 @@ namespace MuseDashMirror.CodeAnalysis.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to To ensure the correct registry of MuseDashMirror attributes, {0} class should be partial.
+        ///   Looks up a localized string similar to Method {0} with attribute {1} must have parameter types object and SceneEventArgs.
         /// </summary>
         internal static string MDM0001MessageFormat {
             get {
@@ -105,7 +105,7 @@ namespace MuseDashMirror.CodeAnalysis.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Class inherited from MelonMod class should be partial.
+        ///   Looks up a localized string similar to Incorrect parameter types.
         /// </summary>
         internal static string MDM0001Title {
             get {
@@ -114,245 +114,164 @@ namespace MuseDashMirror.CodeAnalysis.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Method with PatchEvent attribute must have parameter types object and EventArgs..
-        /// </summary>
-        internal static string MDM0100Description {
-            get {
-                return ResourceManager.GetString("MDM0100Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Method {0} with attribute {1} must have parameter types object and {2}.
-        /// </summary>
-        internal static string MDM0100MessageFormat {
-            get {
-                return ResourceManager.GetString("MDM0100MessageFormat", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Incorrect parameter types.
-        /// </summary>
-        internal static string MDM0100Title {
-            get {
-                return ResourceManager.GetString("MDM0100Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Method with SceneEvent attribute must have parameter types object and SceneEventArgs..
-        /// </summary>
-        internal static string MDM0101Description {
-            get {
-                return ResourceManager.GetString("MDM0101Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Method {0} with attribute {1} must have parameter types object and SceneEventArgs.
-        /// </summary>
-        internal static string MDM0101MessageFormat {
-            get {
-                return ResourceManager.GetString("MDM0101MessageFormat", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Incorrect parameter types.
-        /// </summary>
-        internal static string MDM0101Title {
-            get {
-                return ResourceManager.GetString("MDM0101Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Method with Event attribute must have return type void..
         /// </summary>
-        internal static string MDM0102Description {
+        internal static string MDM0002Description {
             get {
-                return ResourceManager.GetString("MDM0102Description", resourceCulture);
+                return ResourceManager.GetString("MDM0002Description", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Method {0} with attribute {1} must have return type void.
         /// </summary>
-        internal static string MDM0102MessageFormat {
+        internal static string MDM0002MessageFormat {
             get {
-                return ResourceManager.GetString("MDM0102MessageFormat", resourceCulture);
+                return ResourceManager.GetString("MDM0002MessageFormat", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Incorrect return type.
         /// </summary>
-        internal static string MDM0102Title {
+        internal static string MDM0002Title {
             get {
-                return ResourceManager.GetString("MDM0102Title", resourceCulture);
+                return ResourceManager.GetString("MDM0002Title", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Method with static class or register type static constructor must be declared as static..
         /// </summary>
-        internal static string MDM0103Description {
+        internal static string MDM0003Description {
             get {
-                return ResourceManager.GetString("MDM0103Description", resourceCulture);
+                return ResourceManager.GetString("MDM0003Description", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Method {0} must be declared as static in order to be correctly registered.
         /// </summary>
-        internal static string MDM0103MessageFormat {
+        internal static string MDM0003MessageFormat {
             get {
-                return ResourceManager.GetString("MDM0103MessageFormat", resourceCulture);
+                return ResourceManager.GetString("MDM0003MessageFormat", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Method should be static.
         /// </summary>
-        internal static string MDM0103Title {
+        internal static string MDM0003Title {
             get {
-                return ResourceManager.GetString("MDM0103Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Method with Event attribute must be in a partial class..
-        /// </summary>
-        internal static string MDM0104Description {
-            get {
-                return ResourceManager.GetString("MDM0104Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Class {0} must be a partial class for {1}&apos;s register method to be correctly generated.
-        /// </summary>
-        internal static string MDM0104MessageFormat {
-            get {
-                return ResourceManager.GetString("MDM0104MessageFormat", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Method should be in a partial class.
-        /// </summary>
-        internal static string MDM0104Title {
-            get {
-                return ResourceManager.GetString("MDM0104Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Property/Field with PnlMenuToggle attribute must be declared in a partial class..
-        /// </summary>
-        internal static string MDM0200Description {
-            get {
-                return ResourceManager.GetString("MDM0200Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Class {0} must be a partial class for {1}&apos;s register method to be correctly generated.
-        /// </summary>
-        internal static string MDM0200MessageFormat {
-            get {
-                return ResourceManager.GetString("MDM0200MessageFormat", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Property/Field should be in a partial class.
-        /// </summary>
-        internal static string MDM0200Title {
-            get {
-                return ResourceManager.GetString("MDM0200Title", resourceCulture);
+                return ResourceManager.GetString("MDM0003Title", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Property/Field with attribute PnlMenuToggle should be type UnityEngine.GameObject.
         /// </summary>
-        internal static string MDM0201Description {
+        internal static string MDM0004Description {
             get {
-                return ResourceManager.GetString("MDM0201Description", resourceCulture);
+                return ResourceManager.GetString("MDM0004Description", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Property/Field {0} should be type UnityEngine.GameObject.
         /// </summary>
-        internal static string MDM0201MessageFormat {
+        internal static string MDM0004MessageFormat {
             get {
-                return ResourceManager.GetString("MDM0201MessageFormat", resourceCulture);
+                return ResourceManager.GetString("MDM0004MessageFormat", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Incorrect declare type.
         /// </summary>
-        internal static string MDM0201Title {
+        internal static string MDM0004Title {
             get {
-                return ResourceManager.GetString("MDM0201Title", resourceCulture);
+                return ResourceManager.GetString("MDM0004Title", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Property/Field should be static to be registered by MuseDashMirror.
         /// </summary>
-        internal static string MDM0202Description {
+        internal static string MDM0005Description {
             get {
-                return ResourceManager.GetString("MDM0202Description", resourceCulture);
+                return ResourceManager.GetString("MDM0005Description", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Property/Field {0} should be static for correct register.
         /// </summary>
-        internal static string MDM0202MessageFormat {
+        internal static string MDM0005MessageFormat {
             get {
-                return ResourceManager.GetString("MDM0202MessageFormat", resourceCulture);
+                return ResourceManager.GetString("MDM0005MessageFormat", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Property/Field should be static.
         /// </summary>
-        internal static string MDM0202Title {
+        internal static string MDM0005Title {
             get {
-                return ResourceManager.GetString("MDM0202Title", resourceCulture);
+                return ResourceManager.GetString("MDM0005Title", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to PnlMenuToggle attribute can only apply to one field..
         /// </summary>
-        internal static string MDM0203Description {
+        internal static string MDM0006Description {
             get {
-                return ResourceManager.GetString("MDM0203Description", resourceCulture);
+                return ResourceManager.GetString("MDM0006Description", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to PnlMenuToggle attribute can only apply to one field, leave {0} only for correct code generation.
         /// </summary>
-        internal static string MDM0203MessageFormat {
+        internal static string MDM0006MessageFormat {
             get {
-                return ResourceManager.GetString("MDM0203MessageFormat", resourceCulture);
+                return ResourceManager.GetString("MDM0006MessageFormat", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Incorrect field declaration.
         /// </summary>
-        internal static string MDM0203Title {
+        internal static string MDM0006Title {
             get {
-                return ResourceManager.GetString("MDM0203Title", resourceCulture);
+                return ResourceManager.GetString("MDM0006Title", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Boolean and ToggleGroup member arguments of PnlMenuToggle must use nameof to reference a field or property..
+        /// </summary>
+        internal static string MDM0007Description {
+            get {
+                return ResourceManager.GetString("MDM0007Description", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Argument {0} of PnlMenuToggle must use nameof to reference a field or property.
+        /// </summary>
+        internal static string MDM0007MessageFormat {
+            get {
+                return ResourceManager.GetString("MDM0007MessageFormat", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Member argument must use nameof.
+        /// </summary>
+        internal static string MDM0007Title {
+            get {
+                return ResourceManager.GetString("MDM0007Title", resourceCulture);
             }
         }
     }

@@ -11,8 +11,7 @@ public sealed class LoggerGenerator : IIncrementalGenerator
             GenerateFromData);
     }
 
-    private static bool FilterNode(SyntaxNode node, CancellationToken _) =>
-        node is ClassDeclarationSyntax { Modifiers: var modifiers and not [] } && modifiers.Any(SyntaxKind.PartialKeyword);
+    private static bool FilterNode(SyntaxNode node, CancellationToken _) => node is ClassDeclarationSyntax;
 
     private static LoggerData? ExtractDataFromContext(GeneratorAttributeSyntaxContext ctx, CancellationToken _)
     {

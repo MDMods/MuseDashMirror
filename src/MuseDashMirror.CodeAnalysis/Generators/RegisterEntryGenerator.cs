@@ -129,13 +129,11 @@ public sealed class RegisterEntryGenerator : IIncrementalGenerator
             var methodName = methodSymbol.Name;
             var attributes = methodSymbol.GetAttributes();
             var sceneEventNames = attributes
-                .Select(static attribute => SceneEventRegex.Match(attribute.AttributeClass!.ToDisplayString()))
-                .Where(static match => match.Success)
-                .Select(static match => match.Groups[1].Value);
+                .Select(static attribute => GetSceneEventName(attribute.AttributeClass))
+                .OfType<string>();
             var patchEventNames = attributes
-                .Select(static attribute => PatchEventRegex.Match(attribute.AttributeClass!.ToDisplayString()))
-                .Where(static match => match.Success)
-                .Select(static match => match.Groups[1].Value);
+                .Select(static attribute => GetPatchEventName(attribute.AttributeClass))
+                .OfType<string>();
 
             return sceneEventNames.Select(sceneEventName => $"Register{className}{methodName}To{sceneEventName}Event()")
                 .Concat(patchEventNames.Select(patchEventName => $"Register{className}{methodName}To{patchEventName}Event()"));

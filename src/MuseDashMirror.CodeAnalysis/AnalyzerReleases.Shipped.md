@@ -4,14 +4,11 @@
 
 | Rule ID | Category | Severity | Notes                                                                   |
 |---------|----------|----------|-------------------------------------------------------------------------|
-| MDM0000 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.LoggerAnalyzer                    |
-| MDM0001 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.MelonModClassAnalyzer             |
-| MDM0100 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.EventAnalyzers.PatchEventAnalyzer |
-| MDM0101 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.EventAnalyzers.SceneEventAnalyzer |
-| MDM0102 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.EventAnalyzers.EventAnalyzer      |
-| MDM0103 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.EventAnalyzers.EventAnalyzer      |
-| MDM0104 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.EventAnalyzers.EventAnalyzer      |
-| MDM0200 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.PnlMenuToggleAnalyzer             |
-| MDM0201 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.PnlMenuToggleAnalyzer             |
-| MDM0202 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.PnlMenuToggleAnalyzer             |
-| MDM0203 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.PnlMenuToggleAnalyzer             |
+| MDM0000 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.EventAnalyzers.PatchEventAnalyzer |
+| MDM0001 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.EventAnalyzers.SceneEventAnalyzer |
+| MDM0002 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.EventAnalyzers.EventAnalyzer      |
+| MDM0003 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.EventAnalyzers.EventAnalyzer      |
+| MDM0004 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.PnlMenuToggleAnalyzer             |
+| MDM0005 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.PnlMenuToggleAnalyzer             |
+| MDM0006 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.PnlMenuToggleAnalyzer             |
+| MDM0007 | Usage    | Error    | MuseDashMirror.CodeAnalysis.Analyzers.PnlMenuToggleAnalyzer             |

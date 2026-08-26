@@ -1,0 +1,4 @@
+[*.cs]
+dotnet_diagnostic.RCS1163.severity = none
+resharper_unused_parameter_global_highlighting = none
+resharper_unused_parameter_local_highlighting = none

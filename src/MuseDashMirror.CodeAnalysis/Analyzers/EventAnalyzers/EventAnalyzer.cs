@@ -3,10 +3,11 @@ namespace MuseDashMirror.CodeAnalysis.Analyzers.EventAnalyzers;
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 public sealed class EventAnalyzer : DiagnosticAnalyzer
 {
-    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(
+    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics =>
+    [
         EventAttributeInvalidReturnTypeError,
-        EventAttributeNonStaticMethodForStaticConstructorError,
-        EventAttributeInNonPartialClassError);
+        EventAttributeNonStaticMethodForStaticConstructorError
+    ];
 
     public override void Initialize(AnalysisContext context)
     {
@@ -20,7 +21,7 @@ public sealed class EventAnalyzer : DiagnosticAnalyzer
         if (context.Node is not MethodDeclarationSyntax
             {
                 ReturnType: var returnType,
-                Parent: ClassDeclarationSyntax { Modifiers: var modifiers and not [] } classDeclaration
+                Parent: ClassDeclarationSyntax classDeclaration
             } methodDeclaration)
         {
             return;
@@ -31,7 +32,7 @@ public sealed class EventAnalyzer : DiagnosticAnalyzer
             return;
         }
 
-        var classSymbol = context.SemanticModel.GetDeclaredSymbol(classDeclaration);
+        var classSymbol = context.SemanticModel.GetDeclaredSymbol(classDeclaration, context.CancellationToken);
         if (classSymbol is null)
         {
             return;
@@ -44,27 +45,14 @@ public sealed class EventAnalyzer : DiagnosticAnalyzer
             return;
         }
 
-        var methodAttribute = context.ContainingSymbol.GetAttributes().FirstOrDefault(x =>
-            SceneEventRegex.IsMatch(x.AttributeClass!.ToDisplayString()) || PatchEventRegex.IsMatch(x.AttributeClass!.ToDisplayString()));
+        var eventName = context.ContainingSymbol.GetAttributes()
+            .Select(static attribute => GetSceneEventName(attribute.AttributeClass) ?? GetPatchEventName(attribute.AttributeClass))
+            .FirstOrDefault(static name => name is not null);
 
-        if (methodAttribute is null)
+        if (eventName is null)
         {
             return;
         }
-
-        if (!modifiers.Any(SyntaxKind.PartialKeyword))
-        {
-            var location = GetClassDeclarationLocation(classDeclaration);
-            context.ReportDiagnostic(Diagnostic.Create(EventAttributeInNonPartialClassError, location,
-                classSymbol.Name, context.ContainingSymbol.Name));
-            return;
-        }
-
-        var match = SceneEventRegex.IsMatch(methodAttribute.AttributeClass!.ToDisplayString())
-            ? SceneEventRegex.Match(methodAttribute.AttributeClass!.ToDisplayString())
-            : PatchEventRegex.Match(methodAttribute.AttributeClass!.ToDisplayString());
-
-        var eventName = match.Groups[1].Value;
 
         if (returnType is not PredefinedTypeSyntax { Keyword.RawKind: (int)SyntaxKind.VoidKeyword })
         {

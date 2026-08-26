@@ -3,7 +3,7 @@ namespace MuseDashMirror.CodeAnalysis.Analyzers.EventAnalyzers;
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 public sealed class SceneEventAnalyzer : DiagnosticAnalyzer
 {
-    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(SceneEventAttributeInvalidArgsError);
+    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => [SceneEventAttributeInvalidArgsError];
 
     public override void Initialize(AnalysisContext context)
     {
@@ -23,14 +23,14 @@ public sealed class SceneEventAnalyzer : DiagnosticAnalyzer
             return;
         }
 
-        var attribute = context.ContainingSymbol!.GetAttributes().FirstOrDefault(x => SceneEventRegex.IsMatch(x.AttributeClass!.ToDisplayString()));
-        if (attribute is null)
+        var sceneEventName = context.ContainingSymbol!.GetAttributes()
+            .Select(static attribute => GetSceneEventName(attribute.AttributeClass))
+            .FirstOrDefault(static eventName => eventName is not null);
+
+        if (sceneEventName is null)
         {
             return;
         }
-
-        var match = SceneEventRegex.Match(attribute.AttributeClass!.ToDisplayString());
-        var sceneEventName = match.Groups[1].Value;
 
         var correctParameters = parameters is
         [
