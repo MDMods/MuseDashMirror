@@ -14,6 +14,10 @@ MuseDashMirror provides events, game data access, UI helpers, utilities, and sou
 - UI and utility helpers
 - Compile-time code generation
 
+## Requirements
+
+Projects using MuseDashMirror must be built with the .NET 10 SDK because the bundled source generator depends on compiler packages that require it. The project's target framework can remain `net6.0`.
+
 ## Installation
 
 Install the [MuseDashMirror NuGet package](https://www.nuget.org/packages/MuseDashMirror):
