@@ -30,7 +30,7 @@ public static class PatchEvents
     /// <summary>
     ///     An event to invoke methods when <see cref="SwitchLanguages" />'s <see cref="SwitchLanguages.OnClick" /> method invokes
     /// </summary>
-    public static event EventHandler SwitchLanguagesPatch;
+    public static event EventHandler<SwitchLanguagesEventArgs> SwitchLanguagesPatch;
 
     internal static void SwitchLanguagesPatchInvoke(SwitchLanguages switchLanguages) =>
         SwitchLanguagesPatch?.Invoke(null, new SwitchLanguagesEventArgs(switchLanguages));
