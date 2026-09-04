@@ -4,6 +4,9 @@
 
 MuseDashMirror is intended for a Muse Dash IL2CPP mod project using MelonLoader and targeting .NET 6. The project must already reference the MelonLoader, Unity, and generated Muse Dash assemblies it uses.
 
+> [!IMPORTANT]
+> Build the consuming project with the .NET 10 SDK because the bundled source generator depends on its compiler packages. The mod can and should continue to target `net6.0`; the SDK requirement does not change the runtime target.
+
 The recommended setup is [MuseDash.Mod.Template](https://github.com/lxymahatma/MuseDash.Mod.Template). Select `MuseDashMirror` in its `UsefulLibs` option and let the template configure the game references and build layout.
 
 For an existing project, add the package directly:

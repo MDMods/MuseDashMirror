@@ -12,8 +12,12 @@ For registration to work:
 2. The class passed to `MelonInfo` must inherit `MelonMod` and be `partial`.
 3. A class containing an event handler, generated logger, or generated toggle must be `partial`.
 4. Generated event handlers and toggle targets must be static.
+5. Generated declarations must be top-level, non-generic classes in a named namespace.
+6. The mod entry class must not declare another static constructor when generated registrations are present.
 
 You do not call the generated `Register...` methods yourself.
+
+Missing `partial` modifiers are reported by the C# compiler as `CS0260`; they are not separate `MDM` diagnostics.
 
 ## Generated logger
 

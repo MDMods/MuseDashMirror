@@ -1,7 +1,10 @@
+name: Documentation
+
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -17,10 +20,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    env:
-      WORKER: GitHub
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -28,25 +29,19 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
 
-      - name: Dotnet Setup
-        uses: actions/setup-dotnet@v6
+      - name: Install uv
+        uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
         with:
-          dotnet-version: 10.0
-
-      - name: Install docfx Tools
-        run: |
-          dotnet tool update -g docfx
-          dotnet tool install -g DocFxTocGenerator
+          version: "latest"
+          python-version: "3.14"
 
       - name: Build Docs
-        run: |
-          DocFxTocGenerator -d ./Documentation/docs -s
-          docfx ./Documentation/docfx.json
+        run: uv run --locked zensical build --clean --strict
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: './site'
+          path: site
 
       - name: Deploy to GitHub Pages
         id: deployment

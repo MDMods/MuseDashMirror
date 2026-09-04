@@ -65,14 +65,16 @@ var shortened = "A very long chart title".GetVisibleTextWithEllipsisOrDefault(ne
 
 If the source string is shorter than the two requested visible lengths combined, the original string is returned. `EllipseTextParameters` applies the same operation before creating a text component.
 
-## Collection helpers
+## Collection helper
 
-Import `MuseDashMirror.Extensions.CollectionExtensions` for these helpers:
+Import `MuseDashMirror.Extensions.CollectionExtensions` to use `Execute`, which invokes an action for each element and safely does nothing when the sequence is `null`:
 
-- `Execute` invokes an action for each element and safely does nothing when the sequence is `null`.
-- `GetFieldInfosFromTypesByAttribute`, `GetPropertyInfosFromTypesByAttribute`, `GetMethodInfosFromTypesByAttribute`, and `GetMemberInfosFromTypesByAttribute` filter reflected members from a sequence of `Type` values.
-- Each reflection helper has a generic attribute overload and a `Type` overload, with optional `BindingFlags`.
+```csharp
+using MelonLoader;
+using MuseDashMirror.Extensions.CollectionExtensions;
 
-These reflection helpers are general utilities. MuseDashMirror's own attributed callback registration uses source generation and does not require them.
+var values = new[] { 1, 2, 3 };
+values.Execute(value => MelonLogger.Msg(value));
+```
 
 See [UI components](ui-components.md) for higher-level canvas, text, toggle, and positioning APIs.

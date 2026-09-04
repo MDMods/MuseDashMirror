@@ -14,7 +14,7 @@ body:
     id: checking2
     attributes:
       label: There are no similar issues on the issue list
-      description: https://github.com/MDModsDev/MuseDashMirror/issues
+      description: https://github.com/MDMods/MuseDashMirror/issues
       options:
         - label: "Yes"
           required: true
@@ -23,7 +23,7 @@ body:
     id: checking3
     attributes:
       label: I've already read the instructions but there's no description telling me about this issue
-      description: https://github.com/MDModsDev/MuseDashMirror/blob/main/README.md
+      description: https://mdmods.github.io/MuseDashMirror/
       options:
         - label: "Yes"
           required: true
@@ -42,10 +42,10 @@ body:
       required: true
 
   - type: textarea
-    id: version
+    id: versions
     attributes:
-      label: Game version and Melonloader version
-      placeholder: "Game version: [e.g. 3.0.0] Melonloader version: [e.g. 0.5.7]"
+      label: Environment versions
+      placeholder: "Muse Dash: [version]; MelonLoader: [version]; MuseDashMirror: [version]; .NET SDK: [output of dotnet --version]"
     validations:
       required: true
 

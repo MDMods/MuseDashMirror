@@ -1,5 +1,6 @@
 ---
-_disableToc: true
+hide:
+  - toc
 ---
 
 # MuseDashMirror
@@ -8,14 +9,13 @@ MuseDashMirror is a library for Muse Dash mods built with MelonLoader. It provid
 
 ## Start here
 
-- [Getting started](docs/getting-started.md) covers project setup and a first scene callback.
-- [Events and scenes](docs/events-and-scenes.md) lists the available lifecycle and game patch hooks.
-- [Source generators](docs/source-generators.md) explains generated loggers, callbacks, and option-menu toggles.
-- [Game data](docs/game-data.md) describes `PlayerData` and `BattleComponent` and when their values are available.
-- [UI components](docs/ui-components.md) covers canvases, text, toggles, fonts, layout, and positioning.
-- [Utilities and extensions](docs/utilities-and-extensions.md) covers GameObject lookup and the general extension methods.
-
-For exact signatures and overloads, see the [API documentation](xref:MuseDashMirror).
+- [Getting started](getting-started.md) covers project setup and a first scene callback.
+- [Events and scenes](events-and-scenes.md) lists the available lifecycle and game patch hooks.
+- [Source generators](source-generators.md) explains generated loggers, callbacks, and option-menu toggles.
+- [Game data](game-data.md) describes `PlayerData` and `BattleComponent` and when their values are available.
+- [UI components](ui-components.md) covers canvases, text, toggles, fonts, layout, and positioning.
+- [Utilities and extensions](utilities-and-extensions.md) covers GameObject lookup and the general extension methods.
+- [Troubleshooting](troubleshooting.md) collects common build, source-generation, lifecycle, and data-availability problems.
 
 ## Installation
 

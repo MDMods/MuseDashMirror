@@ -33,6 +33,8 @@ internal static partial class SceneHooks
 }
 ```
 
+Use the unqualified `SceneEventArgs` name with the corresponding `using` directive as shown above. The current generator matches this declaration syntax directly.
+
 The following attributes and events are available:
 
 | Scene | Enter attribute / event | Exit attribute / event | Unity scene name |
@@ -75,6 +77,8 @@ internal static partial class GameHooks
 }
 ```
 
+Use the matching unqualified event-argument type with its `using` directive for generated patch handlers as well.
+
 | Attribute | Public event | Runs after | Event arguments |
 | --- | --- | --- | --- |
 | `GameInitPatch` | `PatchEvents.GameInitPatch` | `GameInit.Awake` | `GameInitEventArgs` |
@@ -84,27 +88,46 @@ internal static partial class GameHooks
 | `PnlVictoryPatch` | `PatchEvents.PnlVictoryPatch` | `PnlVictory.OnVictory` | `PnlVictoryEventArgs` |
 | `GameStartPatch` | `PatchEvents.GameStartPatch` | `StageBattleComponent.GameStart` | `GameStartEventArgs` |
 | `AddScorePatch` | `PatchEvents.AddScorePatch` | `TaskStageTarget.AddScore` | `AddScoreEventArgs` |
-| Direct event only | `PatchEvents.SwitchLanguagesPatch` | `SwitchLanguages.OnClick` | `SwitchLanguagesEventArgs` |
+| `SwitchLanguagesPatch` | `PatchEvents.SwitchLanguagesPatch` | `SwitchLanguages.OnClick` | `SwitchLanguagesEventArgs` |
 
 All current event invocations pass `null` as `sender`; use the strongly typed event arguments instead of depending on `sender`.
 
-### Language-switch event
+### Callback payloads
 
-Subscribe to the language-switch event directly:
+Each patch callback exposes either the patched game object, the original method values, or both:
+
+| Event arguments | Available data |
+| --- | --- |
+| `GameInitEventArgs` | `GameInit` instance. |
+| `PnlMenuEventArgs` | `PnlMenu` instance. |
+| `PnlStageEventArgs` | `PnlStage` instance. |
+| `MenuSelectEventArgs` | Raw `ListIndex`, item `Index`, and `IsOn` state supplied by the game. |
+| `PnlVictoryEventArgs` | `PnlVictory` instance. |
+| `GameStartEventArgs` | `StageBattleComponent` instance. |
+| `AddScoreEventArgs` | `TaskStageTarget`, score `Value`, note `Id`, `NoteType`, `IsAir`, and `Time`. |
+| `SwitchLanguagesEventArgs` | `SwitchLanguages` instance. |
+
+### Language-switch callback
+
+The language callback supports the same generated-attribute form as the other patch events:
 
 ```csharp
-using MuseDashMirror;
+using MuseDashMirror.Attributes.EventAttributes.PatchEvents;
 using MuseDashMirror.EventArguments;
 
-PatchEvents.SwitchLanguagesPatch += (_, args) =>
+namespace ExampleMod;
+
+internal static partial class LanguageHooks
 {
-    var languageArgs = (SwitchLanguagesEventArgs)args;
-    var switchLanguages = languageArgs.SwitchLanguages;
-};
+    [SwitchLanguagesPatch]
+    private static void OnSwitchLanguages(object _, SwitchLanguagesEventArgs args)
+    {
+        var switchLanguages = args.SwitchLanguages;
+    }
+}
 ```
 
-> [!WARNING]
-> The current `SwitchLanguagePatchAttribute` name does not match the plural public event and event-argument names, so its generated subscription is invalid. Use `PatchEvents.SwitchLanguagesPatch` until those API names are aligned.
+Subscribe to `PatchEvents.SwitchLanguagesPatch` directly instead when explicit subscription lifetime is preferable.
 
 ## Choosing the right callback
 

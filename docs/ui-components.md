@@ -145,7 +145,7 @@ internal static partial class OptionUi
 
 `CreatePnlMenuToggle` clones the game's `TglOn`, removes its localization component and original actions, binds the callback, and places up to four toggles in each column. Use a unique GameObject name so it does not collide with another mod or an internal cache entry.
 
-For custom text, colors, checkmark color, or a `ToggleGroup`, construct `ToggleParameters`:
+For custom label styling, checkmark color, or a `ToggleGroup`, construct `ToggleParameters`:
 
 ```csharp
 using MuseDashMirror.Models;
@@ -154,15 +154,23 @@ using UnityEngine;
 
 var parameters = new ToggleParameters(
     "ExampleMod.Enabled",
-    new TextParameters("Example Mod", fontSize: 36, alignment: TextAnchor.MiddleLeft),
+    new TextParameters("Example Mod", fontSize: 36, alignment: TextAnchor.MiddleLeft)
+    {
+        Color = Colors.Blue
+    },
     IsEnabled,
     value => IsEnabled = value)
 {
-    CheckMarkColor = Colors.Blue
+    CheckMarkColor = Colors.Silver
 };
 
 ToggleUtils.CreatePnlMenuToggle(parameters);
 ```
+
+Set the label color through `TextParameters.Color`. The current `ToggleParameters.TextColor` property and constructor overloads do not update the nested text parameters after construction.
+
+> [!WARNING]
+> Avoid the generic `CreatePnlMenuToggle<T>(name, text, target, expression)` overload in the current release. An instance-member expression such as `settings => settings.Enabled` throws while its setter is being compiled. Use the callback overload shown above until that implementation is corrected.
 
 `ToggleUtils.CreateToggle` provides overloads for a custom parent name, GameObject, or Transform and accepts a separate `TransformParameters`. It still clones the cached game toggle, so call it only after `GameInit.Awake` has initialized that template.
 

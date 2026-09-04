@@ -30,5 +30,6 @@ The NuGet package also contains `MuseDashMirror.CodeAnalysis` as an analyzer. It
 - Player and chart state: [Game data](game-data.md)
 - UI construction: [UI components](ui-components.md)
 - GameObject and extension helpers: [Utilities and extensions](utilities-and-extensions.md)
+- Build and runtime problems: [Troubleshooting](troubleshooting.md)
 
-The guides focus on correct lifecycle and common usage. The [API documentation](xref:MuseDashMirror) remains the source for every overload and member.
+The guides focus on correct lifecycle and common usage patterns.
