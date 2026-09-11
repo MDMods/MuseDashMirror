@@ -44,6 +44,8 @@ The default `LoggerType.StaticReadonly` produces a `private static readonly` fie
 using MuseDashMirror.Attributes;
 using MuseDashMirror.Shared;
 
+namespace ExampleMod;
+
 [Logger(LoggerType.Readonly)]
 internal partial class Worker
 {

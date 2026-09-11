@@ -56,7 +56,7 @@ The chart-name and difficulty metadata is updated by patches in the selection fl
 
 ## Active battle information
 
-During gameplay, the following values are read from the live `StageBattleComponent` and `TaskStageTarget` singletons:
+During gameplay, the following values are read from the live `StageBattleComponent` and `TaskStageTarget` singletons or populated by the chart-start flow:
 
 - `IsInGame` becomes true after the ready/go sequence.
 - `Tick` is the current real gameplay time.

@@ -40,6 +40,8 @@ Example hierarchy traversal:
 
 ```csharp
 using MuseDashMirror.Extensions.UnityExtensions;
+using UnityEngine;
+using UnityEngine.UI;
 
 var icon = panel.transform.GetChild(2, 3, 0).gameObject;
 var canvas = icon.FindComponentInAncestors<Canvas>();

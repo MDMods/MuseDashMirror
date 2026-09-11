@@ -32,7 +32,7 @@ For a new mod, [MuseDash.Mod.Template](https://github.com/lxymahatma/MuseDash.Mo
 
 Read the [guides](https://mdmods.github.io/MuseDashMirror) for setup, lifecycle, source-generator, game-data, UI, and utility examples.
 
-Preview the documentation locally with `uv run zensical serve`, or validate the production build with `uv run zensical build --clean --strict`.
+Preview the documentation locally with `uv run --locked zensical serve`, or validate the production build with `uv run --locked zensical build --clean --strict`.
 
 ## Package layout
 

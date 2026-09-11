@@ -34,6 +34,7 @@ features = [
     "navigation.instant",
     "navigation.path",
     "navigation.sections",
+    "navigation.top",
     "search.highlight",
 ]
 
@@ -53,6 +54,9 @@ media = "(prefers-color-scheme: dark)"
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to system preference"
+
+[project.markdown_extensions.toc]
+permalink = true
 
 [project.markdown_extensions.pymdownx.highlight]
 anchor_linenums = true

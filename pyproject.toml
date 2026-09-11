@@ -3,5 +3,5 @@ name = "musedashmirror-docs"
 version = "0.0.0"
 requires-python = ">=3.10"
 dependencies = [
-    "zensical==0.0.59",
+    "zensical==0.0.62",
 ]
